@@ -1,0 +1,375 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_Zr6muconate.cif
+_audit_block_doi                 10.5517/cct7kq9
+_database_code_depnum_ccdc_archive 'CCDC 752051'
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.1039/b914919h 2010
+_audit_update_record             
+;
+2009-10-21 deposited with the CCDC.	2022-10-20 downloaded from the CCDC.
+;
+
+# 7. CHEMICAL, STRUCTURAL AND CRYSTAL DATA
+
+_pd_char_particle_morphology     ?
+
+_chemical_name_systematic        
+; ?
+;
+_chemical_name_common            ?
+_chemical_formula_moiety         ?
+_chemical_formula_structural     ?
+_chemical_formula_analytical     ?
+_chemical_melting_point          ?
+_chemical_compound_source        ? # for minerals and
+# natural products
+_symmetry_space_group_name_Hall  ?
+
+_exptl_crystal_F_000             ?
+_exptl_crystal_density_diffrn    ?
+_exptl_crystal_density_meas      ?
+_exptl_crystal_density_method    ?
+
+_cell_measurement_temperature    ?
+
+_cell_special_details            
+; ?
+;
+
+_geom_special_details            ?
+
+# The following item identifies the program(s) used (if appropriate).
+_computing_structure_solution    ?
+
+#==============================================================================
+
+# 8. Phase information from Fullprof
+
+_pd_phase_name                   
+'from C:/Documents and Settings/Stu/Bureau/ZrMu/Zr6muconate_vrai.ci'
+_cell_length_a                   20.9550(23)
+_cell_length_b                   20.955
+_cell_length_c                   20.955
+_cell_angle_alpha                90.0
+_cell_angle_beta                 90.0
+_cell_angle_gamma                90.0
+_cell_volume                     9201.6(30)
+_symmetry_cell_setting           cubic
+_symmetry_space_group_name_H-M   'F m -3 m'
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 +x,+y,+z
+2 +z,+x,+y
+3 +y,+z,+x
+4 +x,+y,-z
+5 -z,+x,+y
+6 +y,-z,+x
+7 -z,+x,-y
+8 -y,-z,+x
+9 +y,-z,-x
+10 -x,+y,-z
+11 -z,-x,+y
+12 +x,-y,-z
+13 +y,+x,+z
+14 +z,+y,+x
+15 +x,+z,+y
+16 +y,+x,-z
+17 -z,+y,+x
+18 +x,-z,+y
+19 -z,+y,-x
+20 -x,-z,+y
+21 +x,-z,-y
+22 -y,+x,-z
+23 -z,-y,+x
+24 +y,-x,-z
+-1 -x,-y,-z
+-2 -z,-x,-y
+-3 -y,-z,-x
+-4 -x,-y,+z
+-5 +z,-x,-y
+-6 -y,+z,-x
+-7 +z,-x,+y
+-8 +y,+z,-x
+-9 -y,+z,+x
+-10 +x,-y,+z
+-11 +z,+x,-y
+-12 -x,+y,+z
+-13 -y,-x,-z
+-14 -z,-y,-x
+-15 -x,-z,-y
+-16 -y,-x,+z
+-17 +z,-y,-x
+-18 -x,+z,-y
+-19 +z,-y,+x
+-20 +x,+z,-y
+-21 -x,+z,+y
+-22 +y,-x,+z
+-23 +z,+y,-x
+-24 -y,+x,+z
+101 +x,+y+1/2,+z+1/2
+102 +z,+x+1/2,+y+1/2
+103 +y,+z+1/2,+x+1/2
+104 +x,+y+1/2,-z+1/2
+105 -z,+x+1/2,+y+1/2
+106 +y,-z+1/2,+x+1/2
+107 -z,+x+1/2,-y+1/2
+108 -y,-z+1/2,+x+1/2
+109 +y,-z+1/2,-x+1/2
+110 -x,+y+1/2,-z+1/2
+111 -z,-x+1/2,+y+1/2
+112 +x,-y+1/2,-z+1/2
+113 +y,+x+1/2,+z+1/2
+114 +z,+y+1/2,+x+1/2
+115 +x,+z+1/2,+y+1/2
+116 +y,+x+1/2,-z+1/2
+117 -z,+y+1/2,+x+1/2
+118 +x,-z+1/2,+y+1/2
+119 -z,+y+1/2,-x+1/2
+120 -x,-z+1/2,+y+1/2
+121 +x,-z+1/2,-y+1/2
+122 -y,+x+1/2,-z+1/2
+123 -z,-y+1/2,+x+1/2
+124 +y,-x+1/2,-z+1/2
+-101 -x,-y+1/2,-z+1/2
+-102 -z,-x+1/2,-y+1/2
+-103 -y,-z+1/2,-x+1/2
+-104 -x,-y+1/2,+z+1/2
+-105 +z,-x+1/2,-y+1/2
+-106 -y,+z+1/2,-x+1/2
+-107 +z,-x+1/2,+y+1/2
+-108 +y,+z+1/2,-x+1/2
+-109 -y,+z+1/2,+x+1/2
+-110 +x,-y+1/2,+z+1/2
+-111 +z,+x+1/2,-y+1/2
+-112 -x,+y+1/2,+z+1/2
+-113 -y,-x+1/2,-z+1/2
+-114 -z,-y+1/2,-x+1/2
+-115 -x,-z+1/2,-y+1/2
+-116 -y,-x+1/2,+z+1/2
+-117 +z,-y+1/2,-x+1/2
+-118 -x,+z+1/2,-y+1/2
+-119 +z,-y+1/2,+x+1/2
+-120 +x,+z+1/2,-y+1/2
+-121 -x,+z+1/2,+y+1/2
+-122 +y,-x+1/2,+z+1/2
+-123 +z,+y+1/2,-x+1/2
+-124 -y,+x+1/2,+z+1/2
+201 +x+1/2,+y,+z+1/2
+202 +z+1/2,+x,+y+1/2
+203 +y+1/2,+z,+x+1/2
+204 +x+1/2,+y,-z+1/2
+205 -z+1/2,+x,+y+1/2
+206 +y+1/2,-z,+x+1/2
+207 -z+1/2,+x,-y+1/2
+208 -y+1/2,-z,+x+1/2
+209 +y+1/2,-z,-x+1/2
+210 -x+1/2,+y,-z+1/2
+211 -z+1/2,-x,+y+1/2
+212 +x+1/2,-y,-z+1/2
+213 +y+1/2,+x,+z+1/2
+214 +z+1/2,+y,+x+1/2
+215 +x+1/2,+z,+y+1/2
+216 +y+1/2,+x,-z+1/2
+217 -z+1/2,+y,+x+1/2
+218 +x+1/2,-z,+y+1/2
+219 -z+1/2,+y,-x+1/2
+220 -x+1/2,-z,+y+1/2
+221 +x+1/2,-z,-y+1/2
+222 -y+1/2,+x,-z+1/2
+223 -z+1/2,-y,+x+1/2
+224 +y+1/2,-x,-z+1/2
+-201 -x+1/2,-y,-z+1/2
+-202 -z+1/2,-x,-y+1/2
+-203 -y+1/2,-z,-x+1/2
+-204 -x+1/2,-y,+z+1/2
+-205 +z+1/2,-x,-y+1/2
+-206 -y+1/2,+z,-x+1/2
+-207 +z+1/2,-x,+y+1/2
+-208 +y+1/2,+z,-x+1/2
+-209 -y+1/2,+z,+x+1/2
+-210 +x+1/2,-y,+z+1/2
+-211 +z+1/2,+x,-y+1/2
+-212 -x+1/2,+y,+z+1/2
+-213 -y+1/2,-x,-z+1/2
+-214 -z+1/2,-y,-x+1/2
+-215 -x+1/2,-z,-y+1/2
+-216 -y+1/2,-x,+z+1/2
+-217 +z+1/2,-y,-x+1/2
+-218 -x+1/2,+z,-y+1/2
+-219 +z+1/2,-y,+x+1/2
+-220 +x+1/2,+z,-y+1/2
+-221 -x+1/2,+z,+y+1/2
+-222 +y+1/2,-x,+z+1/2
+-223 +z+1/2,+y,-x+1/2
+-224 -y+1/2,+x,+z+1/2
+301 +x+1/2,+y+1/2,+z
+302 +z+1/2,+x+1/2,+y
+303 +y+1/2,+z+1/2,+x
+304 +x+1/2,+y+1/2,-z
+305 -z+1/2,+x+1/2,+y
+306 +y+1/2,-z+1/2,+x
+307 -z+1/2,+x+1/2,-y
+308 -y+1/2,-z+1/2,+x
+309 +y+1/2,-z+1/2,-x
+310 -x+1/2,+y+1/2,-z
+311 -z+1/2,-x+1/2,+y
+312 +x+1/2,-y+1/2,-z
+313 +y+1/2,+x+1/2,+z
+314 +z+1/2,+y+1/2,+x
+315 +x+1/2,+z+1/2,+y
+316 +y+1/2,+x+1/2,-z
+317 -z+1/2,+y+1/2,+x
+318 +x+1/2,-z+1/2,+y
+319 -z+1/2,+y+1/2,-x
+320 -x+1/2,-z+1/2,+y
+321 +x+1/2,-z+1/2,-y
+322 -y+1/2,+x+1/2,-z
+323 -z+1/2,-y+1/2,+x
+324 +y+1/2,-x+1/2,-z
+-301 -x+1/2,-y+1/2,-z
+-302 -z+1/2,-x+1/2,-y
+-303 -y+1/2,-z+1/2,-x
+-304 -x+1/2,-y+1/2,+z
+-305 +z+1/2,-x+1/2,-y
+-306 -y+1/2,+z+1/2,-x
+-307 +z+1/2,-x+1/2,+y
+-308 +y+1/2,+z+1/2,-x
+-309 -y+1/2,+z+1/2,+x
+-310 +x+1/2,-y+1/2,+z
+-311 +z+1/2,+x+1/2,-y
+-312 -x+1/2,+y+1/2,+z
+-313 -y+1/2,-x+1/2,-z
+-314 -z+1/2,-y+1/2,-x
+-315 -x+1/2,-z+1/2,-y
+-316 -y+1/2,-x+1/2,+z
+-317 +z+1/2,-y+1/2,-x
+-318 -x+1/2,+z+1/2,-y
+-319 +z+1/2,-y+1/2,+x
+-320 +x+1/2,+z+1/2,-y
+-321 -x+1/2,+z+1/2,+y
+-322 +y+1/2,-x+1/2,+z
+-323 +z+1/2,+y+1/2,-x
+-324 -y+1/2,+x+1/2,+z
+
+# ATOMIC COORDINATES AND DISPLACEMENT PARAMETERS
+
+
+loop_
+_atom_site_type_symbol
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+_atom_site_thermal_displace_type
+_atom_site_U_iso_or_equiv
+_atom_site_symmetry_multiplicity
+Zr Zr 0.0 0.0 0.1237 1.0 Uiso 0.0 24
+O O1 0.0712 0.0712 0.0712 1.0 Uiso 0.0 32
+O O2 0.0988 0.0 0.1743 1.0 Uiso 0.0 96
+C C1 0.1563 0.0 0.1563 1.0 Uiso 0.0 48
+C C2 0.2033 0.0 0.2033 1.0 Uiso 0.0 48
+C C3 0.2626 0.0 0.1851 1.0 Uiso 0.0 96
+
+# If you change Z, be sure to change all 3 of the following
+_chemical_formula_sum            'C24 O16 Zr3'
+_chemical_formula_weight         817.91
+_cell_formula_units_Z            8
+
+# MOLECULAR GEOMETRY
+
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_1
+_geom_bond_site_symmetry_2
+_geom_bond_publ_flag
+Zr O1 2.37958(21) . 1_555 N
+Zr O1 2.37958(21) . 5_555 N
+Zr O1 2.37958(21) . 6_555 N
+Zr O1 2.37958(21) . 8_555 N
+Zr O2 2.32608(21) . 1_555 N
+Zr O2 2.32608(21) . 13_555 N
+Zr O2 2.32608(21) . -4_555 N
+Zr O2 2.32608(21) . -16_555 N
+O1 Zr 2.37958(21) . 1_555 N
+O1 Zr 2.37958(19) . 2_555 N
+O1 Zr 2.37958(19) . 3_555 N
+O2 Zr 2.32608(21) . 1_555 N
+O2 C1 1.26257(13) . 1_555 N
+C1 O2 1.26257(13) . 1_555 N
+C1 O2 1.26257(13) . 14_555 N
+C1 C2 1.39284(11) . 1_555 N
+C2 C1 1.39284(11) . 1_555 N
+C2 C3 1.29984(13) . 1_555 N
+C2 C3 1.29984(13) . 14_555 N
+C3 C2 1.29984(13) . 1_555 N
+C3 C3 1.54990(12) . 219_555 N
+
+loop_
+_geom_angle_atom_site_label_1
+_geom_angle_atom_site_label_2
+_geom_angle_atom_site_label_3
+_geom_angle
+_geom_angle_site_symmetry_1
+_geom_angle_site_symmetry_2
+_geom_angle_site_symmetry_3
+_geom_angle_publ_flag
+O1 Zr O1 77.6582(31) 1_555 . 5_555 N
+O1 Zr O1 77.6582(31) 1_555 . 6_555 N
+O1 Zr O1 124.926(7) 1_555 . 8_555 N
+O1 Zr O2 69.676(5) 1_555 . 1_555 N
+O1 Zr O2 69.676(5) 1_555 . 13_555 N
+O1 Zr O2 140.2475(14) 1_555 . -4_555 N
+O1 Zr O2 140.2475(14) 1_555 . -16_555 N
+O1 Zr O1 124.926(7) 5_555 . 6_555 N
+O1 Zr O1 77.6582(31) 5_555 . 8_555 N
+O1 Zr O2 140.2475(14) 5_555 . 1_555 N
+O1 Zr O2 69.676(5) 5_555 . 13_555 N
+O1 Zr O2 69.676(5) 5_555 . -4_555 N
+O1 Zr O2 140.2475(14) 5_555 . -16_555 N
+O1 Zr O1 77.6582(31) 6_555 . 8_555 N
+O1 Zr O2 69.676(5) 6_555 . 1_555 N
+O1 Zr O2 140.2475(14) 6_555 . 13_555 N
+O1 Zr O2 140.2475(14) 6_555 . -4_555 N
+O1 Zr O2 69.676(5) 6_555 . -16_555 N
+O1 Zr O2 140.2475(14) 8_555 . 1_555 N
+O1 Zr O2 140.2475(14) 8_555 . 13_555 N
+O1 Zr O2 69.676(5) 8_555 . -4_555 N
+O1 Zr O2 69.676(5) 8_555 . -16_555 N
+O2 Zr O2 78.0071(30) 1_555 . 13_555 N
+O2 Zr O2 125.762(7) 1_555 . -4_555 N
+O2 Zr O2 78.0071(30) 1_555 . -16_555 N
+O2 Zr O2 78.0071(30) 13_555 . -4_555 N
+O2 Zr O2 125.762(7) 13_555 . -16_555 N
+O2 Zr O2 78.0071(30) -4_555 . -16_555 N
+Zr O1 Zr 100.756(4) 1_555 . 2_555 N
+Zr O1 Zr 100.756(4) 1_555 . 3_555 N
+Zr O1 Zr 100.756(9) 2_555 . 3_555 N
+Zr O2 C1 135.499(6) 1_555 . 1_555 N
+O2 C1 O2 124.7648 1_555 . 14_555 N
+O2 C1 C2 117.618(7) 1_555 . 1_555 N
+O2 C1 C2 117.618(7) 14_555 . 1_555 N
+C1 C2 C3 117.938(7) 1_555 . 1_555 N
+C1 C2 C3 117.938(7) 1_555 . 14_555 N
+C3 C2 C3 124.124 1_555 . 14_555 N
+C2 C3 C3 117.938(7) 1_555 . 219_555 N
