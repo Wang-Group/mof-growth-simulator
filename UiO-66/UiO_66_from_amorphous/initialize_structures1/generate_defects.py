@@ -111,38 +111,45 @@ def select_defect_entities_from_objects(entities, shell_entities,
         entities: collection of entity objects
         shell_entities: set of entity objects in the outer shell (to preserve)
         defect_ratio: fraction of interior entities to remove (0.0 to 1.0)
-        entity_type: 'Zr6' or 'BDC' or None (both types)
+        entity_type: 'Zr6', 'BDC', 'Mixed', or None
     
     Returns:
         set: entity objects to remove
     """
-    # Get interior entities (not in shell)
     interior_entities = []
+    interior_bdc = []
+    interior_zr = []
     for entity in entities:
-        if entity not in shell_entities:
-            # Check entity type
-            ent_type = getattr(entity, 'entity_type', None)
-            ent_subtype = getattr(entity, 'entity_subtype', None)
-            
-            if entity_type is None:
-                interior_entities.append(entity)
-            elif entity_type == 'Zr6' and ent_type == 'Zr':
-                interior_entities.append(entity)
-            elif entity_type == 'BDC' and ent_type == 'Ligand':
-                interior_entities.append(entity)
-    
-    # Calculate number of defects
+        if entity in shell_entities:
+            continue
+
+        ent_type = getattr(entity, 'entity_type', None)
+        if ent_type == 'Ligand':
+            interior_bdc.append(entity)
+        elif ent_type == 'Zr':
+            interior_zr.append(entity)
+
+        if entity_type is None:
+            interior_entities.append(entity)
+        elif entity_type == 'Zr6' and ent_type == 'Zr':
+            interior_entities.append(entity)
+        elif entity_type == 'BDC' and ent_type == 'Ligand':
+            interior_entities.append(entity)
+
+    if entity_type == 'Mixed':
+        selected = set()
+        num_bdc_defects = int(len(interior_bdc) * defect_ratio)
+        num_zr_defects = int(len(interior_zr) * defect_ratio)
+        if num_bdc_defects > 0:
+            selected.update(np.random.choice(interior_bdc, size=num_bdc_defects, replace=False))
+        if num_zr_defects > 0:
+            selected.update(np.random.choice(interior_zr, size=num_zr_defects, replace=False))
+        return selected
+
     num_defects = int(len(interior_entities) * defect_ratio)
-    
-    # Randomly select entities to remove
     if num_defects > 0:
-        defect_entities = set(np.random.choice(interior_entities, 
-                                               size=num_defects, 
-                                               replace=False))
-    else:
-        defect_entities = set()
-    
-    return defect_entities
+        return set(np.random.choice(interior_entities, size=num_defects, replace=False))
+    return set()
 
 
 def remove_defect_entities_from_assembly(entities, defect_entities, 
@@ -177,6 +184,24 @@ def remove_defect_entities_from_assembly(entities, defect_entities,
         else:
             return set([item for item in original_set if filter_func(item)])
     
+    # Collect counterpart carboxylates on surviving entities. These become
+    # newly exposed growth sites when their paired defect-side linker/cluster
+    # is removed.
+    released_carboxylates = set()
+    for pair_collection in (linked_pairs, ready_pairs):
+        for pair in pair_collection:
+            left, right = pair
+            left_is_defect = left in defect_carboxylates
+            right_is_defect = right in defect_carboxylates
+            if left_is_defect == right_is_defect:
+                continue
+
+            surviving = right if left_is_defect else left
+            surviving_entity = getattr(surviving, "belonging_entity", None)
+            if surviving_entity is None or surviving_entity in defect_entities:
+                continue
+            released_carboxylates.add(surviving)
+
     # Remove defect entities
     updated_entities = create_updated_set(entities, lambda e: e not in defect_entities)
     
@@ -203,6 +228,17 @@ def remove_defect_entities_from_assembly(entities, defect_entities,
            pair[0] not in defect_carboxylates and 
            pair[1] not in defect_carboxylates
     }
+
+    # Re-expose newly released carboxylates as free growth sites.
+    for carb in released_carboxylates:
+        updated_free_cs.add(carb)
+        entity = getattr(carb, "belonging_entity", None)
+        if entity is None:
+            continue
+        if getattr(entity, "entity_type", None) == "Zr":
+            updated_MC_free.add(carb)
+        elif getattr(entity, "entity_type", None) == "Ligand":
+            updated_Linker_free.add(carb)
     
     return (updated_entities, updated_free_cs, updated_MC_free, updated_Linker_free,
             updated_linked_pairs, updated_pair_index, updated_ready_pairs)

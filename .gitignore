@@ -1,0 +1,21 @@
+__pycache__/
+.vscode/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.DS_Store
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Generated UiO-66 defect-growth structures / trajectory checkpoints
+UiO-66/UiO_66_from_amorphous/initialize_structures1/output/**/*.mol2
+UiO-66/UiO_66_from_amorphous/initialize_structures1/output/**/*.pkl
+UiO-66/UiO_66_from_amorphous/initialize_structures1/output/**/*.json
+
+# Generated planning / seed metadata in the active UiO-66 defect workspace
+UiO-66/UiO_66_from_amorphous/initialize_structures1/*.json

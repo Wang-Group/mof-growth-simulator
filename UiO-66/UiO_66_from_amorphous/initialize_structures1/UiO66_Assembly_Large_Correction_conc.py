@@ -3,12 +3,31 @@ MAX_DEPTH = 3
 
 import itertools
 import random
-import matplotlib.pyplot as plt
-from scipy.spatial import cKDTree
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    plt = None
 import time
-import matplotlib.pyplot as plt
 import numpy as np
-from scipy.linalg import svd
+try:
+    from scipy.spatial import cKDTree
+except ImportError:
+    class cKDTree:
+        def __init__(self, data):
+            self.data = np.asarray(data, dtype=float)
+
+        def query_ball_tree(self, other, r):
+            if self.data.size == 0 or other.data.size == 0:
+                return [[] for _ in range(len(self.data))]
+            radius_sq = float(r) ** 2
+            diff = self.data[:, None, :] - other.data[None, :, :]
+            dist_sq = np.sum(diff * diff, axis=2)
+            return [np.where(row <= radius_sq)[0].tolist() for row in dist_sq]
+
+try:
+    from scipy.linalg import svd
+except ImportError:
+    from numpy.linalg import svd
 import copy
 import weakref
 from collections import deque
@@ -320,8 +339,11 @@ class SBU_Entity:
         return carboxylate_to_align
 
 def _input_monomer_path(filename):
-    repo_root = Path(__file__).resolve().parents[3]
-    return str(repo_root / 'KMC_example' / 'input_monomers' / filename)
+    for parent in Path(__file__).resolve().parents:
+        candidate = parent / 'KMC_example' / 'input_monomers' / filename
+        if candidate.exists():
+            return str(candidate)
+    raise FileNotFoundError(f'Could not resolve local monomer file: {filename}')
 
 
 PRELOADED_DATA = {

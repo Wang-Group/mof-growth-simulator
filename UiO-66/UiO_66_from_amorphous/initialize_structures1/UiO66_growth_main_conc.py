@@ -12,11 +12,15 @@ pkl_path = None
 max_entities = None
 output_inter = None
 last_saved = None
+MAX_SIM_TIME_SECONDS = None
+DISSOLUTION_UPDATE_INTERVAL_STEPS = None
+EXCHANGE_RXN_TIME_SECONDS = None
 
 import time
 import gc
 from IPython.display import clear_output
 from UiO66_Assembly_Large_Correction_conc import *
+import fragment_cleanup
 import numpy as np
 from scipy.optimize import fsolve
 from matplotlib import pyplot as plt
@@ -68,7 +72,7 @@ exp_time = 3 #h
 DMF_decomposition_rate = end_DMF_decomposition_conc/(exp_time* 3.6 * 10**3) # mM/s
 
 #estimated time for the exchange reaction to happen in one step
-exchange_rxn_time = 0.1 #s
+exchange_rxn_time = EXCHANGE_RXN_TIME_SECONDS if EXCHANGE_RXN_TIME_SECONDS is not None else 0.1 #s
 
 def dissolution_probability(time_passed, DMF_decomposition_rate):
     dimethylamine_conc = time_passed*DMF_decomposition_rate # from DMF decomposition, needs to be determined by other models
@@ -168,18 +172,27 @@ time_for_calculate_DMF = 0
 
 step = 0
 entities_number = []
+entities_number_seconds = []
 
 for cycle in range(Total_steps + 1):
     date_index_process = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')  
     start_time = time.time()
+    sim_time_seconds = timing * exchange_rxn_time
 
     # Check if max_entities limit is reached (only if max_entities is not None)
     if max_entities is not None and max_entities > 0 and len(assembly.entities) > max_entities:
         break
-    if step == 0:
-        DISSOLUTION_PROBABILITY, FORMATE_BENZOATE_RATIO = dissolution_probability(timing, DMF_decomposition_rate)
+    if MAX_SIM_TIME_SECONDS is not None and MAX_SIM_TIME_SECONDS > 0 and sim_time_seconds >= MAX_SIM_TIME_SECONDS:
+        break
+    if step == 0 or (
+        DISSOLUTION_UPDATE_INTERVAL_STEPS is not None
+        and DISSOLUTION_UPDATE_INTERVAL_STEPS > 0
+        and step % DISSOLUTION_UPDATE_INTERVAL_STEPS == 0
+    ):
+        DISSOLUTION_PROBABILITY, FORMATE_BENZOATE_RATIO = dissolution_probability(sim_time_seconds, DMF_decomposition_rate)
     # save the time and entity number
     entities_number.append([timing, len(assembly.entities)])
+    entities_number_seconds.append([sim_time_seconds, len(assembly.entities)])
     
     time_for_calculate_DMF += (time.time()-start_time)
     step +=1
@@ -210,6 +223,7 @@ for cycle in range(Total_steps + 1):
         # print('dissolve')
         start_time = time.time()
         assembly.remove_linkage(selected_pair)
+        fragment_cleanup.prune_disconnected_fragments(assembly)
         end_time = time.time()
         time_for_remove += (end_time-start_time)
         event_num_remove += 1
@@ -271,10 +285,12 @@ safe_pickle_save(
 with open(current_folder + "/entities_number.pkl", "wb") as f:
     pickle.dump(entities_number, f)
 
+with open(current_folder + "/entities_number_seconds.pkl", "wb") as f:
+    pickle.dump(entities_number_seconds, f)
+
 assembly.get_mol2_file(current_folder + f'/assembly.mol2') 
 
 # %%
 # assembly.get_mol2_file(f'assembly.mol2')
 
 # %%
-

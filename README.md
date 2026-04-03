@@ -30,7 +30,8 @@ This README is intended to be the primary top-level documentation for the reposi
 |-- MOL_nucleation/                    # Post-processing for MOL nucleation probability analysis
 |-- UiO-66/
 |   |-- code/                          # UiO-66 KMC engine + 100-condition input table
-|   `-- UiO_66_batch0/                 # Packaged UiO-66 simulation outputs and analysis notebook
+|   |-- UiO_66_batch0/                 # Packaged UiO-66 simulation outputs and analysis notebook
+|   `-- UiO_66_from_amorphous/         # Active defect-seeded / amorphous-derived UiO-66 workspace
 |-- HKUST-1/                           # HKUST-1 KMC engine snapshot
 `-- PCN-240/                           # PCN-240 KMC engine snapshot
 ```
@@ -105,6 +106,22 @@ The `dir_path` column preserves original Linux workspace paths for provenance on
 - `analyze_growth_rate_4_20.ipynb` for post-processing nucleation and growth statistics
 
 The 400 folders correspond to `100 conditions x 4 repeats`, matching the `repeat_number = 4` field in `UiO66_batch0.xlsx`.
+
+`UiO-66/UiO_66_from_amorphous/initialize_structures1/` is the active research workspace for defect-seeded and amorphous-derived UiO-66 continuation studies.
+
+The current retained manuscript-oriented case there is:
+
+- `UiO-66/UiO_66_from_amorphous/initialize_structures1/output/mixeddef800_zx2_seed800_continuous_from2124/`
+
+That case follows an artificial mixed-defect UiO-66 seed under one fixed Zr-rich condition and currently documents:
+
+- `Zr fill = 1.000`
+- `BDC fill = 0.870` at the current latest endpoint
+- continued growth from `2124` to `3651` entities
+
+The workspace README for that line is:
+
+- `UiO-66/UiO_66_from_amorphous/initialize_structures1/README.md`
 
 ### `HKUST-1/`
 
