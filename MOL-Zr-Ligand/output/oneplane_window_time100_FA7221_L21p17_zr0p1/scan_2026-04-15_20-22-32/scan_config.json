@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-04-15T20:22:32",
+  "zr_values": [
+    0.1
+  ],
+  "repeats": 24,
+  "target_entities": 100,
+  "max_steps": 100000000,
+  "distorted_chemistry_model": "multisite_first_binding_only",
+  "distorted_ligand_association_constant": null,
+  "distorted_site_equilibrium_constant": null,
+  "distorted_second_step_equivalents": 0.0,
+  "distorted_num_sites_on_cluster": 12,
+  "distorted_num_sites_on_linker": 3,
+  "workers": 8,
+  "output_root": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/MOL-Zr-Ligand/output/oneplane_window_time100_FA7221_L21p17_zr0p1/scan_2026-04-15_20-22-32"
+}

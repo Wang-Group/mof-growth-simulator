@@ -336,6 +336,7 @@ PRELOADED_DATA = {
 }
 
 DISTORTED_LINKER_ATTACHMENT_CARBOXYLATE_INDEX = 0
+DISTORTED_LINKER_INTERNAL_CARBOXYLATE_INDEX = 1
 DISTORTED_LINKER_BEND_DEGREES = 80.0
 DISTORTED_LINKER_INSET_DISTANCE = 1.2
 
@@ -402,6 +403,7 @@ class DistortedBDC(BDC):
         super().__init__()
         self.entity_subtype = 1
         self.attachment_carboxylate_index = DISTORTED_LINKER_ATTACHMENT_CARBOXYLATE_INDEX
+        self.internal_carboxylate_index = DISTORTED_LINKER_INTERNAL_CARBOXYLATE_INDEX
         self.requires_selected_entity_bump_check = True
         self.last_aligned_carboxylate = None
 
@@ -466,6 +468,9 @@ class DistortedBDC(BDC):
 
         return carboxylate_to_align
 
+    def get_internal_carboxylate(self):
+        return self.carboxylates[self.internal_carboxylate_index]
+
 # class BTBb(SBU_Entity):
 #     def __init__(self):
 #         self.entity_type = 'Ligand'
@@ -519,6 +524,13 @@ class Assembly:
         self.ENTROPY_GAIN = ENTROPY_GAIN
         self.BUMPING_THRESHOLD = BUMPING_THRESHOLD
         self.distorted_linker_fraction = min(max(float(distorted_linker_fraction), 0.0), 1.0)
+        self.prebound_growth_attempts = 0
+        self.prebound_growth_successes = 0
+        self.prebound_growth_failures = 0
+        self.prebound_entities_added = 0
+        self.prebound_linkages_formed = 0
+        self.prebound_free_growth_site_delta = 0
+        self.prebound_ready_pair_delta = 0
 
     def ROI_prepare(self):
         # Set four entities Zr6, Zr12, BTBa, BTBb
@@ -648,15 +660,24 @@ class Assembly:
         aligning it, and connecting it to the assembly.
         :param selected_carboxylate: The carboxylate where the growth occurs.
         """
+        if (
+            selected_carboxylate.carboxylate_type != 'benzoate'
+            and random.random() < self.distorted_linker_fraction
+        ):
+            self.prebound_growth_attempts += 1
+            grow_succeeded = self.grow_prebound_zr_bdc_step(selected_carboxylate)
+            if grow_succeeded:
+                self.prebound_growth_successes += 1
+            else:
+                self.prebound_growth_failures += 1
+            return grow_succeeded
+
         start_time = time.time()
         # Decide on the new entity type based on the carboxylate type
         if selected_carboxylate.carboxylate_type == 'benzoate':
             new_entity = Zr6_AA() if random.random() < self.ZR6_PERCENTAGE else Zr12_AA()
         else:
-            if random.random() < self.distorted_linker_fraction:
-                new_entity = DistortedBDC()
-            else:
-                new_entity = BDC() # Create a new Zr6 or BTB entity
+            new_entity = BDC() # Create a new Zr6 or BTB entity
             # print('preparing new entity ',new_entity)
         self.time_for_creating_new_entity += (time.time()-start_time)   
 
@@ -700,6 +721,199 @@ class Assembly:
         # del results
         return output
 
+    def entity_pair_bump_check(
+        self,
+        entity1,
+        entity2,
+        skip_carboxylate_on_entity1=None,
+        skip_carboxylate_on_entity2=None,
+    ):
+        if entity1 is None or entity2 is None:
+            return False
+
+        skip_entity1 = (
+            set(skip_carboxylate_on_entity1.atom_indexes)
+            if skip_carboxylate_on_entity1 is not None
+            else set()
+        )
+        skip_entity2 = (
+            set(skip_carboxylate_on_entity2.atom_indexes)
+            if skip_carboxylate_on_entity2 is not None
+            else set()
+        )
+        if not skip_entity1 and not skip_entity2:
+            return self.kdtree_method(entity1, entity2)
+
+        entity1_coords = np.array(
+            [coord for atom_index, coord in enumerate(entity1.coordinates) if atom_index not in skip_entity1],
+            dtype=float,
+        )
+        entity2_coords = np.array(
+            [coord for atom_index, coord in enumerate(entity2.coordinates) if atom_index not in skip_entity2],
+            dtype=float,
+        )
+        if entity1_coords.size == 0 or entity2_coords.size == 0:
+            return False
+
+        threshold_sq = float(self.BUMPING_THRESHOLD) ** 2
+        diff = entity1_coords[:, None, :] - entity2_coords[None, :, :]
+        dist_sq = np.sum(diff * diff, axis=2)
+        return bool(np.any(dist_sq <= threshold_sq))
+
+    def find_entities_of_interest(self, new_entity, excluded_entities=None):
+        start_time = time.time()
+        excluded_entities = set(excluded_entities or [])
+
+        if len(self.entities) > 30:
+            cube_index = tuple(np.floor(new_entity.center/self.ROI_range).astype(int))
+            possible_ranges = list(itertools.product(
+                range(cube_index[0]-1, cube_index[0]+2),
+                range(cube_index[1]-1, cube_index[1]+2),
+                range(cube_index[2]-1, cube_index[2]+2),
+            ))
+            entity_of_interest = []
+            seen_entities = set()
+            for idx in possible_ranges:
+                if idx not in self.node_mapping:
+                    continue
+                for entity in self.node_mapping[idx]:
+                    if entity in seen_entities or entity in excluded_entities:
+                        continue
+                    entity_of_interest.append(entity)
+                    seen_entities.add(entity)
+        else:
+            entity_of_interest = [
+                entity for entity in self.entities.to_list()
+                if entity not in excluded_entities
+            ]
+        self.time_for_finding_ROI += (time.time()-start_time)
+
+        if len(entity_of_interest) == 0:
+            return []
+
+        start_time = time.time()
+        entity_centers = np.array([entity.center for entity in entity_of_interest])
+        entity_radius = np.array([entity.radius for entity in entity_of_interest])
+        distances = np.linalg.norm(entity_centers - new_entity.center, axis=1)
+        mask = distances <= (entity_radius + new_entity.radius)
+        indices = np.where(mask)[0]
+        filtered_entities = [entity_of_interest[i] for i in indices]
+        self.time_for_finding_ROI += (time.time()-start_time)
+        return filtered_entities
+
+    def probe_entity_against_entities(
+        self,
+        new_entity,
+        entity_of_interest,
+        blocked_new_entity_carboxylates=None,
+    ):
+        blocked_new_entity_carboxylates = set(blocked_new_entity_carboxylates or [])
+        additional_to_be_connect_carboxylate_pairs = []
+        additional_to_be_connect_carboxylate_on_new_entity = []
+
+        for entity in entity_of_interest:
+            is_bumping = True
+            if entity.entity_type != new_entity.entity_type:
+                for carboxylate1 in entity.carboxylates:
+                    for carboxylate2 in new_entity.carboxylates:
+                        if carboxylate2 in blocked_new_entity_carboxylates:
+                            continue
+                        if carboxylate1.carboxylates_superimposed(carboxylate2):
+                            pair = (carboxylate1, carboxylate2)
+                            additional_to_be_connect_carboxylate_pairs.append(pair)
+                            additional_to_be_connect_carboxylate_on_new_entity.append(carboxylate2)
+                            is_bumping = False
+                            break
+                    if not is_bumping:
+                        break
+
+            if is_bumping and self.kdtree_method(new_entity, entity):
+                return True, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity
+
+        return False, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity
+
+    def cleanup_unadded_entities(self, entities):
+        for entity in entities:
+            if entity is None:
+                continue
+            for carboxylate in entity.carboxylates:
+                carboxylate.belonging_entity = None
+            entity.connected_entities = None
+            entity.kdtree = None
+
+    def grow_prebound_zr_bdc_step(self, selected_carboxylate):
+        entities_before = len(self.entities)
+        free_growth_sites_before = len(self.free_carboxylates)
+        linked_pairs_before = len(self.linked_carboxylate_pairs)
+        ready_pairs_before = len(self.ready_to_connect_carboxylate_pairs)
+
+        start_time = time.time()
+        distorted_bdc = DistortedBDC()
+        new_zr6 = Zr6_AA()
+        self.time_for_creating_new_entity += (time.time()-start_time)
+
+        start_time = time.time()
+        bdc_attachment_carboxylate = distorted_bdc.align_carboxylates(selected_carboxylate, visualize_steps=False)
+        internal_bdc_carboxylate = distorted_bdc.get_internal_carboxylate()
+        zr6_attachment_carboxylate = new_zr6.align_carboxylates(internal_bdc_carboxylate, visualize_steps=False)
+        self.time_for_align_new_entity += (time.time()-start_time)
+
+        selected_entity = selected_carboxylate.belonging_entity
+
+        start_time = time.time()
+        if self.entity_pair_bump_check(new_zr6, selected_entity):
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+            return False
+
+        distorted_bdc_roi = self.find_entities_of_interest(
+            distorted_bdc,
+            excluded_entities=[selected_entity],
+        )
+        for entity in distorted_bdc_roi:
+            if self.entity_pair_bump_check(distorted_bdc, entity):
+                self.time_for_find_connection += (time.time()-start_time)
+                self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+                return False
+
+        zr6_roi = self.find_entities_of_interest(
+            new_zr6,
+            excluded_entities=[selected_entity],
+        )
+        is_bumping, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity = self.probe_entity_against_entities(
+            new_zr6,
+            zr6_roi,
+            blocked_new_entity_carboxylates=[zr6_attachment_carboxylate],
+        )
+        self.time_for_find_connection += (time.time()-start_time)
+        if is_bumping:
+            self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+            return False
+
+        start_time = time.time()
+        self.add_entity(
+            selected_carboxylate,
+            distorted_bdc,
+            bdc_attachment_carboxylate,
+            [],
+            [internal_bdc_carboxylate],
+        )
+        self.add_entity(
+            internal_bdc_carboxylate,
+            new_zr6,
+            zr6_attachment_carboxylate,
+            additional_to_be_connect_carboxylate_pairs,
+            additional_to_be_connect_carboxylate_on_new_entity,
+        )
+        self.prebound_entities_added += len(self.entities) - entities_before
+        self.prebound_linkages_formed += len(self.linked_carboxylate_pairs) - linked_pairs_before
+        self.prebound_free_growth_site_delta += len(self.free_carboxylates) - free_growth_sites_before
+        self.prebound_ready_pair_delta += (
+            len(self.ready_to_connect_carboxylate_pairs) - ready_pairs_before
+        )
+        self.time_for_add_new_entity += (time.time()-start_time)
+        return True
+
     def selected_entity_bump_check(self, new_entity, selected_carboxylate):
         if not getattr(new_entity, 'requires_selected_entity_bump_check', False):
             return False
@@ -712,23 +926,12 @@ class Assembly:
         if selected_entity is None:
             return False
 
-        skip_new = set(aligned_carboxylate.atom_indexes)
-        skip_selected = set(selected_carboxylate.atom_indexes)
-        new_coords = np.array(
-            [coord for atom_index, coord in enumerate(new_entity.coordinates) if atom_index not in skip_new],
-            dtype=float,
+        return self.entity_pair_bump_check(
+            new_entity,
+            selected_entity,
+            skip_carboxylate_on_entity1=aligned_carboxylate,
+            skip_carboxylate_on_entity2=selected_carboxylate,
         )
-        selected_coords = np.array(
-            [coord for atom_index, coord in enumerate(selected_entity.coordinates) if atom_index not in skip_selected],
-            dtype=float,
-        )
-        if new_coords.size == 0 or selected_coords.size == 0:
-            return False
-
-        threshold_sq = float(self.BUMPING_THRESHOLD) ** 2
-        diff = new_coords[:, None, :] - selected_coords[None, :, :]
-        dist_sq = np.sum(diff * diff, axis=2)
-        return bool(np.any(dist_sq <= threshold_sq))
 
     def find_potential_connection(self, new_entity, selected_carboxylate): 
         """
@@ -738,78 +941,20 @@ class Assembly:
         :return: Tuple (Is_bumping, to_be_link_carboxylate_on_new_entity, additional_to_be_connect_carboxylate_pairs,
                 to_be_link_entity, additional_to_be_connect_entity).
         """
-        start_time = time.time()
         additional_to_be_connect_carboxylate_pairs = []
         additional_to_be_connect_carboxylate_on_new_entity = []
-        to_be_link_entity = selected_carboxylate.belonging_entity 
-        # print('to_be_link_entity:',to_be_link_entity)
-
-        Is_bumping = False
         if self.selected_entity_bump_check(new_entity, selected_carboxylate):
             return True, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity
 
-        # Find potential connections for the new entity
-
-        # search for nearby entities ROI
+        entity_of_interest = self.find_entities_of_interest(
+            new_entity,
+            excluded_entities=[selected_carboxylate.belonging_entity],
+        )
         start_time = time.time()
-        if len(self.entities) > 30:
-            cube_index = tuple(np.floor(new_entity.center/self.ROI_range).astype(int))
-            possible_ranges = list(itertools.product(range(cube_index[0]-1, cube_index[0]+2), 
-                                    range(cube_index[1]-1, cube_index[1]+2), 
-                                    range(cube_index[2]-1, cube_index[2]+2)))
-            entity_of_interest = []
-            for idx in possible_ranges:
-                    if idx in self.node_mapping:
-                        entity_of_interest.extend(self.node_mapping[idx])
-            # print('entity_of_interest:',entity_of_interest)
-            # print('to_be_link_entity:',to_be_link_entity)
-            entity_of_interest.remove(to_be_link_entity)
-
-        else:
-            # entity_of_interest = self.entities.copy()
-            entity_of_interest = self.entities.to_list()  ### Modified
-            # print('entity_of_interest:',entity_of_interest)
-            # print('to_be_link_entity:',to_be_link_entity)
-            entity_of_interest.remove(to_be_link_entity)                             
-        self.time_for_finding_ROI += (time.time()-start_time)
-
-        # search for nearby entities ROI
-        if len(entity_of_interest) > 0:
-            start_time = time.time()
-            entity_centers = np.array([entity.center for entity in entity_of_interest])
-            entity_radius = np.array([entity.radius for entity in entity_of_interest])
-            distances = np.linalg.norm(entity_centers - new_entity.center, axis=1)
-            mask = distances <= (entity_radius + new_entity.radius)
-            # mask = distances <= self.ROI_range
-            indices = np.where(mask)[0]
-            entity_of_interest = [entity_of_interest[i] for i in indices]
-            # distances = distances[mask]
-            self.time_for_finding_ROI += (time.time()-start_time)
-
-            # Check for additional connections and bumping
-            start_time = time.time()
-            Is_bumping = False
-            for entity in entity_of_interest:
-                Is_bumping = True
-                if  entity.entity_type != new_entity.entity_type:
-                    for carboxylate1 in entity.carboxylates:
-                        for carboxylate2 in new_entity.carboxylates:
-                            if carboxylate1.carboxylates_superimposed(carboxylate2):
-                                pair = (carboxylate1, carboxylate2)
-                                additional_to_be_connect_carboxylate_pairs.append(pair)
-                                additional_to_be_connect_carboxylate_on_new_entity.append(carboxylate2)
-                                Is_bumping = False
-                                break
-                        if not Is_bumping:
-                            break
-
-                # Check for bumping if no connections are found
-                if Is_bumping:
-                    Is_bumping = self.kdtree_method(new_entity, entity)
-                if Is_bumping:
-                    self.time_for_judge_bumping += (time.time()-start_time)
-                    return Is_bumping, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity
-
+        Is_bumping, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity = self.probe_entity_against_entities(
+            new_entity,
+            entity_of_interest,
+        )
         self.time_for_judge_bumping += (time.time()-start_time)
         return Is_bumping, additional_to_be_connect_carboxylate_pairs, additional_to_be_connect_carboxylate_on_new_entity
     

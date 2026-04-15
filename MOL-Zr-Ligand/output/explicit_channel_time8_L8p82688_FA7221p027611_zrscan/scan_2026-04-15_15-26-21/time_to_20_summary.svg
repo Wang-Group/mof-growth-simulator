@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="90" y="32" font-size="22" font-weight="bold" fill="#222222">Distorted/Prebound Time To 8 Entities</text>
+<text x="90" y="52" font-size="12" fill="#222222">Repeated runs per Zr, stopping when 8 entities is reached or the large step cap is hit.</text>
+<text x="90" y="54" font-size="15" font-weight="bold" fill="#222222">Mean Time To 8</text>
+<line x1="90" y1="260.00" x2="430" y2="260.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="264.00" text-anchor="end" font-size="11" fill="#222222">0.00</text>
+<line x1="90" y1="212.50" x2="430" y2="212.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="216.50" text-anchor="end" font-size="11" fill="#222222">103.18</text>
+<line x1="90" y1="165.00" x2="430" y2="165.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="169.00" text-anchor="end" font-size="11" fill="#222222">206.37</text>
+<line x1="90" y1="117.50" x2="430" y2="117.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="121.50" text-anchor="end" font-size="11" fill="#222222">309.55</text>
+<line x1="90" y1="70.00" x2="430" y2="70.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="74.00" text-anchor="end" font-size="11" fill="#222222">412.73</text>
+<line x1="90.00" y1="70" x2="90.00" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="90.00" y="278" text-anchor="middle" font-size="11" fill="#222222">3.38305</text>
+<line x1="95.40" y1="70" x2="95.40" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="95.40" y="278" text-anchor="middle" font-size="11" fill="#222222">6.7661</text>
+<line x1="106.19" y1="70" x2="106.19" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="106.19" y="278" text-anchor="middle" font-size="11" fill="#222222">13.5322</text>
+<line x1="127.78" y1="70" x2="127.78" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="127.78" y="278" text-anchor="middle" font-size="11" fill="#222222">27.0644</text>
+<line x1="170.95" y1="70" x2="170.95" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="170.95" y="278" text-anchor="middle" font-size="11" fill="#222222">54.1288</text>
+<line x1="257.30" y1="70" x2="257.30" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="257.30" y="278" text-anchor="middle" font-size="11" fill="#222222">108.258</text>
+<line x1="430.00" y1="70" x2="430.00" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="430.00" y="278" text-anchor="middle" font-size="11" fill="#222222">216.515</text>
+<line x1="90" y1="260" x2="430" y2="260" stroke="#333333" stroke-width="1.3"/>
+<line x1="90" y1="70" x2="90" y2="260" stroke="#333333" stroke-width="1.3"/>
+<text x="260.00" y="300" text-anchor="middle" font-size="12" fill="#222222">Total Zr concentration (mM)</text>
+<text x="38" y="165.00" transform="rotate(-90 38 165.00)" text-anchor="middle" font-size="12" fill="#222222">Time to 8 (s)</text>
+<circle cx="90.00" cy="190.55" r="4.5" fill="#d95f02"/>
+<circle cx="95.40" cy="185.53" r="4.5" fill="#d95f02"/>
+<circle cx="106.19" cy="191.91" r="4.5" fill="#d95f02"/>
+<circle cx="127.78" cy="172.12" r="4.5" fill="#d95f02"/>
+<circle cx="170.95" cy="169.48" r="4.5" fill="#d95f02"/>
+<circle cx="257.30" cy="99.67" r="4.5" fill="#d95f02"/>
+<circle cx="430.00" cy="79.21" r="4.5" fill="#d95f02"/>
+<polyline fill="none" stroke="#d95f02" stroke-width="2.5" points="90.00,190.55 95.40,185.53 106.19,191.91 127.78,172.12 170.95,169.48 257.30,99.67 430.00,79.21"/>
+<text x="520" y="54" font-size="15" font-weight="bold" fill="#222222">Reach Fraction To 8</text>
+<line x1="520" y1="260.00" x2="860" y2="260.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="264.00" text-anchor="end" font-size="11" fill="#222222">0.00</text>
+<line x1="520" y1="212.50" x2="860" y2="212.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="216.50" text-anchor="end" font-size="11" fill="#222222">0.25</text>
+<line x1="520" y1="165.00" x2="860" y2="165.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="169.00" text-anchor="end" font-size="11" fill="#222222">0.50</text>
+<line x1="520" y1="117.50" x2="860" y2="117.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="121.50" text-anchor="end" font-size="11" fill="#222222">0.75</text>
+<line x1="520" y1="70.00" x2="860" y2="70.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="74.00" text-anchor="end" font-size="11" fill="#222222">1.00</text>
+<line x1="520.00" y1="70" x2="520.00" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="520.00" y="278" text-anchor="middle" font-size="11" fill="#222222">3.38305</text>
+<line x1="525.40" y1="70" x2="525.40" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="525.40" y="278" text-anchor="middle" font-size="11" fill="#222222">6.7661</text>
+<line x1="536.19" y1="70" x2="536.19" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="536.19" y="278" text-anchor="middle" font-size="11" fill="#222222">13.5322</text>
+<line x1="557.78" y1="70" x2="557.78" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="557.78" y="278" text-anchor="middle" font-size="11" fill="#222222">27.0644</text>
+<line x1="600.95" y1="70" x2="600.95" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="600.95" y="278" text-anchor="middle" font-size="11" fill="#222222">54.1288</text>
+<line x1="687.30" y1="70" x2="687.30" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="687.30" y="278" text-anchor="middle" font-size="11" fill="#222222">108.258</text>
+<line x1="860.00" y1="70" x2="860.00" y2="260" stroke="#d9d9d9" stroke-width="1"/>
+<text x="860.00" y="278" text-anchor="middle" font-size="11" fill="#222222">216.515</text>
+<line x1="520" y1="260" x2="860" y2="260" stroke="#333333" stroke-width="1.3"/>
+<line x1="520" y1="70" x2="520" y2="260" stroke="#333333" stroke-width="1.3"/>
+<text x="690.00" y="300" text-anchor="middle" font-size="12" fill="#222222">Total Zr concentration (mM)</text>
+<text x="468" y="165.00" transform="rotate(-90 468 165.00)" text-anchor="middle" font-size="12" fill="#222222">Reach fraction</text>
+<circle cx="520.00" cy="70.00" r="4.5" fill="#d95f02"/>
+<circle cx="525.40" cy="70.00" r="4.5" fill="#d95f02"/>
+<circle cx="536.19" cy="70.00" r="4.5" fill="#d95f02"/>
+<circle cx="557.78" cy="70.00" r="4.5" fill="#d95f02"/>
+<circle cx="600.95" cy="70.00" r="4.5" fill="#d95f02"/>
+<circle cx="687.30" cy="70.00" r="4.5" fill="#d95f02"/>
+<circle cx="860.00" cy="70.00" r="4.5" fill="#d95f02"/>
+<polyline fill="none" stroke="#d95f02" stroke-width="2.5" points="520.00,70.00 525.40,70.00 536.19,70.00 557.78,70.00 600.95,70.00 687.30,70.00 860.00,70.00"/>
+<text x="90" y="334" font-size="15" font-weight="bold" fill="#222222">Mean Final Entities</text>
+<line x1="90" y1="540.00" x2="430" y2="540.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="544.00" text-anchor="end" font-size="11" fill="#222222">0.00</text>
+<line x1="90" y1="492.50" x2="430" y2="492.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="496.50" text-anchor="end" font-size="11" fill="#222222">2.27</text>
+<line x1="90" y1="445.00" x2="430" y2="445.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="449.00" text-anchor="end" font-size="11" fill="#222222">4.54</text>
+<line x1="90" y1="397.50" x2="430" y2="397.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="401.50" text-anchor="end" font-size="11" fill="#222222">6.81</text>
+<line x1="90" y1="350.00" x2="430" y2="350.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="80" y="354.00" text-anchor="end" font-size="11" fill="#222222">9.08</text>
+<line x1="90.00" y1="350" x2="90.00" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="90.00" y="558" text-anchor="middle" font-size="11" fill="#222222">3.38305</text>
+<line x1="95.40" y1="350" x2="95.40" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="95.40" y="558" text-anchor="middle" font-size="11" fill="#222222">6.7661</text>
+<line x1="106.19" y1="350" x2="106.19" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="106.19" y="558" text-anchor="middle" font-size="11" fill="#222222">13.5322</text>
+<line x1="127.78" y1="350" x2="127.78" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="127.78" y="558" text-anchor="middle" font-size="11" fill="#222222">27.0644</text>
+<line x1="170.95" y1="350" x2="170.95" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="170.95" y="558" text-anchor="middle" font-size="11" fill="#222222">54.1288</text>
+<line x1="257.30" y1="350" x2="257.30" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="257.30" y="558" text-anchor="middle" font-size="11" fill="#222222">108.258</text>
+<line x1="430.00" y1="350" x2="430.00" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="430.00" y="558" text-anchor="middle" font-size="11" fill="#222222">216.515</text>
+<line x1="90" y1="540" x2="430" y2="540" stroke="#333333" stroke-width="1.3"/>
+<line x1="90" y1="350" x2="90" y2="540" stroke="#333333" stroke-width="1.3"/>
+<text x="260.00" y="580" text-anchor="middle" font-size="12" fill="#222222">Total Zr concentration (mM)</text>
+<text x="38" y="445.00" transform="rotate(-90 38 445.00)" text-anchor="middle" font-size="12" fill="#222222">Final entities</text>
+<circle cx="90.00" cy="370.92" r="4.5" fill="#d95f02"/>
+<circle cx="95.40" cy="370.92" r="4.5" fill="#d95f02"/>
+<circle cx="106.19" cy="371.79" r="4.5" fill="#d95f02"/>
+<circle cx="127.78" cy="370.92" r="4.5" fill="#d95f02"/>
+<circle cx="170.95" cy="370.92" r="4.5" fill="#d95f02"/>
+<circle cx="257.30" cy="371.79" r="4.5" fill="#d95f02"/>
+<circle cx="430.00" cy="372.66" r="4.5" fill="#d95f02"/>
+<polyline fill="none" stroke="#d95f02" stroke-width="2.5" points="90.00,370.92 95.40,370.92 106.19,371.79 127.78,370.92 170.95,370.92 257.30,371.79 430.00,372.66"/>
+<text x="520" y="334" font-size="15" font-weight="bold" fill="#222222">Mean Prebound Fraction</text>
+<line x1="520" y1="540.00" x2="860" y2="540.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="544.00" text-anchor="end" font-size="11" fill="#222222">0.00</text>
+<line x1="520" y1="492.50" x2="860" y2="492.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="496.50" text-anchor="end" font-size="11" fill="#222222">0.07</text>
+<line x1="520" y1="445.00" x2="860" y2="445.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="449.00" text-anchor="end" font-size="11" fill="#222222">0.15</text>
+<line x1="520" y1="397.50" x2="860" y2="397.50" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="401.50" text-anchor="end" font-size="11" fill="#222222">0.22</text>
+<line x1="520" y1="350.00" x2="860" y2="350.00" stroke="#d9d9d9" stroke-width="1"/>
+<text x="510" y="354.00" text-anchor="end" font-size="11" fill="#222222">0.30</text>
+<line x1="520.00" y1="350" x2="520.00" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="520.00" y="558" text-anchor="middle" font-size="11" fill="#222222">3.38305</text>
+<line x1="525.40" y1="350" x2="525.40" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="525.40" y="558" text-anchor="middle" font-size="11" fill="#222222">6.7661</text>
+<line x1="536.19" y1="350" x2="536.19" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="536.19" y="558" text-anchor="middle" font-size="11" fill="#222222">13.5322</text>
+<line x1="557.78" y1="350" x2="557.78" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="557.78" y="558" text-anchor="middle" font-size="11" fill="#222222">27.0644</text>
+<line x1="600.95" y1="350" x2="600.95" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="600.95" y="558" text-anchor="middle" font-size="11" fill="#222222">54.1288</text>
+<line x1="687.30" y1="350" x2="687.30" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="687.30" y="558" text-anchor="middle" font-size="11" fill="#222222">108.258</text>
+<line x1="860.00" y1="350" x2="860.00" y2="540" stroke="#d9d9d9" stroke-width="1"/>
+<text x="860.00" y="558" text-anchor="middle" font-size="11" fill="#222222">216.515</text>
+<line x1="520" y1="540" x2="860" y2="540" stroke="#333333" stroke-width="1.3"/>
+<line x1="520" y1="350" x2="520" y2="540" stroke="#333333" stroke-width="1.3"/>
+<text x="690.00" y="580" text-anchor="middle" font-size="12" fill="#222222">Total Zr concentration (mM)</text>
+<text x="468" y="445.00" transform="rotate(-90 468 445.00)" text-anchor="middle" font-size="12" fill="#222222">Prebound fraction</text>
+<circle cx="520.00" cy="536.20" r="4.5" fill="#2a9d8f"/>
+<circle cx="525.40" cy="532.44" r="4.5" fill="#2a9d8f"/>
+<circle cx="536.19" cy="525.06" r="4.5" fill="#2a9d8f"/>
+<circle cx="557.78" cy="510.81" r="4.5" fill="#2a9d8f"/>
+<circle cx="600.95" cy="484.14" r="4.5" fill="#2a9d8f"/>
+<circle cx="687.30" cy="437.22" r="4.5" fill="#2a9d8f"/>
+<circle cx="860.00" cy="362.79" r="4.5" fill="#2a9d8f"/>
+<polyline fill="none" stroke="#2a9d8f" stroke-width="2.5" points="520.00,536.20 525.40,532.44 536.19,525.06 557.78,510.81 600.95,484.14 687.30,437.22 860.00,362.79"/>
+</svg>

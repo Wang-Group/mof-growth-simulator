@@ -1,0 +1,187 @@
+{
+  "created_at": "2026-04-15T16:58:26",
+  "template_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/MOL-Zr-Ligand/MOL_growth_main_20250811.py",
+  "output_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/MOL-Zr-Ligand/output/oneplane_window_structures/zr3_L21p17_FA7221_case",
+  "config": {
+    "ZR6_PERCENTAGE": 1.0,
+    "Zr_conc": 3.0,
+    "entropy_correction_coefficient": 0.789387907185137,
+    "equilibrium_constant_coefficient": 1.32975172557788,
+    "H2O_DMF_RATIO": 0.0,
+    "Capping_agent_conc": 7221.027611,
+    "Linker_conc": 21.17285487779732,
+    "Total_steps": 100000000,
+    "current_folder": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/MOL-Zr-Ligand/output/oneplane_window_structures/zr3_L21p17_FA7221_case",
+    "BUMPING_THRESHOLD": 1.8,
+    "max_entities": 100,
+    "output_inter": 0,
+    "EXCHANGE_RXN_TIME_SECONDS": 0.1,
+    "DISSOLUTION_UPDATE_INTERVAL_STEPS": 1000000,
+    "DISTORTED_LINKER_ENABLED": true,
+    "DISTORTED_CHEMISTRY_MODEL": "multisite_first_binding_only",
+    "DISTORTED_LIGAND_ASSOCIATION_CONSTANT": null,
+    "DISTORTED_SITE_EQUILIBRIUM_CONSTANT": null,
+    "DISTORTED_SECOND_STEP_EQUIVALENTS": 0.0,
+    "DISTORTED_NUM_SITES_ON_CLUSTER": 12,
+    "DISTORTED_NUM_SITES_ON_LINKER": 3
+  },
+  "chemistry_preview": {
+    "model_name": "multisite_first_binding_only",
+    "assumptions": [
+      "Treat K_eff as a site-level exchange constant for one Zr-AA site exchanging with one linker.",
+      "Each Zr6 cluster has a fixed number of equivalent exchangeable sites.",
+      "A free BTB linker contributes three equivalent first-binding sites by default.",
+      "Once a linker binds through one end, the remaining linker ends are not allowed to react further in this model.",
+      "Released AA is added back to the solution reservoir with 1:1 stoichiometry."
+    ],
+    "association_constant": 2.1425178342671307,
+    "site_equilibrium_constant": 2.1425178342671307,
+    "effective_exchange_equilibrium_constant": 2.1425178342671307,
+    "acid_speciation": {
+      "linker_carboxylate_to_acid_ratio": 0.0,
+      "formate_to_acid_ratio": 0.0,
+      "linker_carboxylic_acid_conc": 63.51856463339196,
+      "formic_acid_conc": 7221.027611
+    },
+    "second_step_equivalents": 0.0,
+    "num_sites_on_cluster": 12,
+    "num_sites_on_linker": 3,
+    "reactive_linker_sites_per_free_linker": 3.0,
+    "total_zr6_conc": 0.5,
+    "total_linker_conc": 21.17285487779732,
+    "prebound_zr_bdc_conc": 0.11041632828024864,
+    "prebound_zr_bdc_fraction": 0.005214994809038979,
+    "prebound_zr_btb_conc": 0.11041632828024864,
+    "prebound_zr_btb_fraction": 0.005214994809038979,
+    "prebound_zr6_cluster_conc": 0.0998985249154034,
+    "prebound_zr6_cluster_fraction": 0.1997970498308068,
+    "distorted_ligand_conc": 0.11041632828024864,
+    "polymerized_distorted_conc": 0.0,
+    "off_pathway_zr6_conc": 0.0,
+    "off_pathway_linker_conc": 0.0,
+    "distorted_ligand_fraction": 0.005214994809038979,
+    "off_pathway_linker_fraction": 0.0,
+    "off_pathway_zr6_fraction": 0.0,
+    "bound_linker_conc": 0.11041632828024864,
+    "free_linker_conc": 21.062438549517072,
+    "free_linker_fraction": 0.994785005190961,
+    "bound_zr_site_conc": 0.11041632828024864,
+    "free_zr_site_conc": 5.889583671719751,
+    "bound_zr_site_fraction": 0.01840272138004144,
+    "site_occupancy_probability": 0.01840272138004144,
+    "activity_ratio": 0.018747730643583368,
+    "mean_bound_linkers_per_cluster": 0.22083265656049728,
+    "released_capping_agent_conc": 0.11041632828024864,
+    "free_capping_agent_conc": 7221.13802732828,
+    "free_zr6_conc": 0.49079863930997925,
+    "free_zr6_fraction": 0.9815972786199585,
+    "growth_eligible_zr6_conc": 0.5000000000000001,
+    "growth_eligible_zr6_fraction": 1.0000000000000002,
+    "cluster_occupancy_distribution": [
+      {
+        "bound_linkers_per_cluster": 0,
+        "cluster_fraction": 0.8002029501691933,
+        "cluster_conc": 0.40010147508459665,
+        "bound_linker_conc": 0.0,
+        "remaining_aa_sites_per_cluster": 12,
+        "remaining_aa_site_conc": 4.80121770101516
+      },
+      {
+        "bound_linkers_per_cluster": 1,
+        "cluster_fraction": 0.1800238724396736,
+        "cluster_conc": 0.0900119362198368,
+        "bound_linker_conc": 0.0900119362198368,
+        "remaining_aa_sites_per_cluster": 11,
+        "remaining_aa_site_conc": 0.9901312984182048
+      },
+      {
+        "bound_linkers_per_cluster": 2,
+        "cluster_fraction": 0.01856271488452597,
+        "cluster_conc": 0.009281357442262985,
+        "bound_linker_conc": 0.01856271488452597,
+        "remaining_aa_sites_per_cluster": 10,
+        "remaining_aa_site_conc": 0.09281357442262986
+      },
+      {
+        "bound_linkers_per_cluster": 3,
+        "cluster_fraction": 0.0011600292622290953,
+        "cluster_conc": 0.0005800146311145477,
+        "bound_linker_conc": 0.0017400438933436431,
+        "remaining_aa_sites_per_cluster": 9,
+        "remaining_aa_site_conc": 0.005220131680030929
+      },
+      {
+        "bound_linkers_per_cluster": 4,
+        "cluster_fraction": 4.893281133062809e-05,
+        "cluster_conc": 2.4466405665314047e-05,
+        "bound_linker_conc": 9.786562266125619e-05,
+        "remaining_aa_sites_per_cluster": 8,
+        "remaining_aa_site_conc": 0.00019573124532251237
+      },
+      {
+        "bound_linkers_per_cluster": 5,
+        "cluster_fraction": 1.4678066663358397e-06,
+        "cluster_conc": 7.339033331679198e-07,
+        "bound_linker_conc": 3.6695166658395994e-06,
+        "remaining_aa_sites_per_cluster": 7,
+        "remaining_aa_site_conc": 5.137323332175439e-06
+      },
+      {
+        "bound_linkers_per_cluster": 6,
+        "cluster_fraction": 3.210438468687376e-08,
+        "cluster_conc": 1.605219234343688e-08,
+        "bound_linker_conc": 9.631315406062127e-08,
+        "remaining_aa_sites_per_cluster": 6,
+        "remaining_aa_site_conc": 9.631315406062127e-08
+      },
+      {
+        "bound_linkers_per_cluster": 7,
+        "cluster_fraction": 5.15900877074993e-10,
+        "cluster_conc": 2.579504385374965e-10,
+        "bound_linker_conc": 1.8056530697624756e-09,
+        "remaining_aa_sites_per_cluster": 5,
+        "remaining_aa_site_conc": 1.2897521926874826e-09
+      },
+      {
+        "bound_linkers_per_cluster": 8,
+        "cluster_fraction": 6.04498167636899e-12,
+        "cluster_conc": 3.022490838184495e-12,
+        "bound_linker_conc": 2.417992670547596e-11,
+        "remaining_aa_sites_per_cluster": 4,
+        "remaining_aa_site_conc": 1.208996335273798e-11
+      },
+      {
+        "bound_linkers_per_cluster": 9,
+        "cluster_fraction": 5.036875031731682e-14,
+        "cluster_conc": 2.518437515865841e-14,
+        "bound_linker_conc": 2.266593764279257e-13,
+        "remaining_aa_sites_per_cluster": 3,
+        "remaining_aa_site_conc": 7.555312547597523e-14
+      },
+      {
+        "bound_linkers_per_cluster": 10,
+        "cluster_fraction": 2.8328992914088805e-16,
+        "cluster_conc": 1.4164496457044403e-16,
+        "bound_linker_conc": 1.4164496457044402e-15,
+        "remaining_aa_sites_per_cluster": 2,
+        "remaining_aa_site_conc": 2.8328992914088805e-16
+      },
+      {
+        "bound_linkers_per_cluster": 11,
+        "cluster_fraction": 9.656442337405797e-19,
+        "cluster_conc": 4.828221168702899e-19,
+        "bound_linker_conc": 5.3110432855731885e-18,
+        "remaining_aa_sites_per_cluster": 1,
+        "remaining_aa_site_conc": 4.828221168702899e-19
+      },
+      {
+        "bound_linkers_per_cluster": 12,
+        "cluster_fraction": 1.5086364993081539e-21,
+        "cluster_conc": 7.543182496540769e-22,
+        "bound_linker_conc": 9.051818995848923e-21,
+        "remaining_aa_sites_per_cluster": 0,
+        "remaining_aa_site_conc": 0.0
+      }
+    ]
+  }
+}

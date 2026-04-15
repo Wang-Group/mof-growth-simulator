@@ -4,7 +4,10 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-from distorted_ligand_model import compute_distorted_ligand_state
+from distorted_ligand_model import (
+    PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+    compute_prebound_chemistry_state,
+)
 
 
 DEFAULTS = {
@@ -22,8 +25,12 @@ DEFAULTS = {
     "EXCHANGE_RXN_TIME_SECONDS": 0.1,
     "DISSOLUTION_UPDATE_INTERVAL_STEPS": 1000000,
     "DISTORTED_LINKER_ENABLED": False,
+    "DISTORTED_CHEMISTRY_MODEL": PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
     "DISTORTED_LIGAND_ASSOCIATION_CONSTANT": None,
-    "DISTORTED_SECOND_STEP_EQUIVALENTS": 1.0,
+    "DISTORTED_SITE_EQUILIBRIUM_CONSTANT": None,
+    "DISTORTED_SECOND_STEP_EQUIVALENTS": 0.0,
+    "DISTORTED_NUM_SITES_ON_CLUSTER": 12,
+    "DISTORTED_NUM_SITES_ON_LINKER": 2,
     "Index": 0,
 }
 
@@ -32,7 +39,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description=(
             "Run a UiO-66 case from the normal code baseline, optionally enabling "
-            "a distorted-linker branch derived from the existing KC chemistry."
+            "a prebound Zr-BDC branch derived from the existing KC chemistry."
         )
     )
     parser.add_argument("--zr6-percentage", type=float, default=DEFAULTS["ZR6_PERCENTAGE"])
@@ -70,19 +77,44 @@ def parse_args():
         help="Enable the distorted-linker branch derived from KC.",
     )
     parser.add_argument(
+        "--distorted-chemistry-model",
+        default=DEFAULTS["DISTORTED_CHEMISTRY_MODEL"],
+        help=(
+            "Chemistry model for the prebound branch. "
+            "Use 'cluster_one_to_one' for the old coarse model or "
+            "'multisite_first_binding_only' for the 12-site/2-site model."
+        ),
+    )
+    parser.add_argument(
         "--distorted-ligand-association-constant",
         type=float,
         default=DEFAULTS["DISTORTED_LIGAND_ASSOCIATION_CONSTANT"],
         help="Optional direct override for the effective distorted-linker association constant.",
     )
     parser.add_argument(
+        "--distorted-site-equilibrium-constant",
+        type=float,
+        default=DEFAULTS["DISTORTED_SITE_EQUILIBRIUM_CONSTANT"],
+        help="Optional direct override for the multisite site-level exchange constant.",
+    )
+    parser.add_argument(
         "--distorted-second-step-equivalents",
         type=float,
         default=DEFAULTS["DISTORTED_SECOND_STEP_EQUIVALENTS"],
         help=(
-            "Number of additional Zr6+linker pairs irreversibly captured per distorted seed "
-            "in the minimal two-step off-pathway model."
+            "Optional extra irreversible sink for the older two-step model. "
+            "Leave at 0 to keep only the 1:1 prebound Zr-BDC species."
         ),
+    )
+    parser.add_argument(
+        "--distorted-num-sites-on-cluster",
+        type=int,
+        default=DEFAULTS["DISTORTED_NUM_SITES_ON_CLUSTER"],
+    )
+    parser.add_argument(
+        "--distorted-num-sites-on-linker",
+        type=int,
+        default=DEFAULTS["DISTORTED_NUM_SITES_ON_LINKER"],
     )
     parser.add_argument("--index", type=int, default=DEFAULTS["Index"])
     parser.add_argument(
@@ -122,11 +154,14 @@ def tokenise_float(value):
 def build_folder_name(args, timestamp):
     step_mag = int(len(str(int(args.total_steps))) - 1) if args.total_steps > 0 else 0
     distorted_token = "on" if args.enable_distorted_linker else "off"
+    model_token = str(args.distorted_chemistry_model).replace("-", "_")
     return (
         f"Zr_{args.zr_conc}_FA_{args.capping_agent_conc}_L_{args.linker_conc}"
         f"_Ratio_{args.h2o_dmf_ratio}_Step_1e{step_mag}_Index_{args.index}"
         f"_SC_{args.entropy_correction_coefficient}_KC_{args.equilibrium_constant_coefficient}"
-        f"_Nmax_{args.max_entities}_DL_{distorted_token}_AK_{tokenise_float(args.distorted_ligand_association_constant)}"
+        f"_Nmax_{args.max_entities}_DL_{distorted_token}_PM_{model_token}"
+        f"_AK_{tokenise_float(args.distorted_ligand_association_constant)}"
+        f"_SK_{tokenise_float(args.distorted_site_equilibrium_constant)}"
         f"_S2_{tokenise_float(args.distorted_second_step_equivalents)}"
         f"_{timestamp}"
     )
@@ -151,16 +186,20 @@ def main():
         template_path = (Path(__file__).resolve().parent / template_path).resolve()
 
     chemistry_preview = (
-        compute_distorted_ligand_state(
+        compute_prebound_chemistry_state(
             zr_conc=args.zr_conc,
             linker_conc=args.linker_conc,
             equilibrium_constant_coefficient=args.equilibrium_constant_coefficient,
             h2o_dmf_ratio=args.h2o_dmf_ratio,
             capping_agent_conc=args.capping_agent_conc,
             zr6_percentage=args.zr6_percentage,
+            model_name=args.distorted_chemistry_model,
             association_constant_override=args.distorted_ligand_association_constant,
+            site_equilibrium_constant_override=args.distorted_site_equilibrium_constant,
             dimethylamine_conc=0.0,
             second_step_equivalents=args.distorted_second_step_equivalents,
+            num_sites_on_cluster=args.distorted_num_sites_on_cluster,
+            num_sites_on_linker=args.distorted_num_sites_on_linker,
         )
         if args.enable_distorted_linker
         else None
@@ -182,8 +221,12 @@ def main():
         "EXCHANGE_RXN_TIME_SECONDS": args.exchange_rxn_time_seconds,
         "DISSOLUTION_UPDATE_INTERVAL_STEPS": args.dissolution_update_interval_steps,
         "DISTORTED_LINKER_ENABLED": args.enable_distorted_linker,
+        "DISTORTED_CHEMISTRY_MODEL": args.distorted_chemistry_model,
         "DISTORTED_LIGAND_ASSOCIATION_CONSTANT": args.distorted_ligand_association_constant,
+        "DISTORTED_SITE_EQUILIBRIUM_CONSTANT": args.distorted_site_equilibrium_constant,
         "DISTORTED_SECOND_STEP_EQUIVALENTS": args.distorted_second_step_equivalents,
+        "DISTORTED_NUM_SITES_ON_CLUSTER": args.distorted_num_sites_on_cluster,
+        "DISTORTED_NUM_SITES_ON_LINKER": args.distorted_num_sites_on_linker,
     }
 
     launcher_payload = {

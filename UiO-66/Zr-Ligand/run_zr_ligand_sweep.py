@@ -43,20 +43,36 @@ def parse_args():
     parser.add_argument("--linker-conc", type=float, default=4.0)
     parser.add_argument("--bumping-threshold", type=float, default=2.0)
     parser.add_argument(
+        "--distorted-chemistry-model",
+        default="cluster_one_to_one",
+        help=(
+            "Prebound chemistry model. "
+            "Use 'cluster_one_to_one' or 'multisite_first_binding_only'."
+        ),
+    )
+    parser.add_argument(
         "--distorted-ligand-association-constant",
         type=float,
         default=None,
         help="Optional direct override for the effective distorted-linker association constant.",
     )
     parser.add_argument(
+        "--distorted-site-equilibrium-constant",
+        type=float,
+        default=None,
+        help="Optional direct override for the multisite site-level exchange constant.",
+    )
+    parser.add_argument(
         "--distorted-second-step-equivalents",
         type=float,
-        default=1.0,
+        default=0.0,
         help=(
-            "Number of additional Zr6+linker pairs irreversibly captured per distorted seed "
-            "in the minimal two-step off-pathway model."
+            "Optional extra irreversible sink for the older two-step model. "
+            "Leave at 0 to keep only the 1:1 prebound Zr-BDC species."
         ),
     )
+    parser.add_argument("--distorted-num-sites-on-cluster", type=int, default=12)
+    parser.add_argument("--distorted-num-sites-on-linker", type=int, default=2)
     return parser.parse_args()
 
 
@@ -80,6 +96,9 @@ def run_case(script_path, base_args, output_root, zr_value, distorted_enabled):
         "--dissolution-update-interval-steps", str(base_args.dissolution_update_interval_steps),
         "--output-root", str(output_root),
         "--basename", label,
+        "--distorted-chemistry-model", str(base_args.distorted_chemistry_model),
+        "--distorted-num-sites-on-cluster", str(base_args.distorted_num_sites_on_cluster),
+        "--distorted-num-sites-on-linker", str(base_args.distorted_num_sites_on_linker),
     ]
     if distorted_enabled:
         command.append("--enable-distorted-linker")
@@ -88,6 +107,13 @@ def run_case(script_path, base_args, output_root, zr_value, distorted_enabled):
             [
                 "--distorted-ligand-association-constant",
                 str(base_args.distorted_ligand_association_constant),
+            ]
+        )
+    if base_args.distorted_site_equilibrium_constant is not None:
+        command.extend(
+            [
+                "--distorted-site-equilibrium-constant",
+                str(base_args.distorted_site_equilibrium_constant),
             ]
         )
     command.extend(
@@ -176,7 +202,7 @@ def build_growth_curve_svg(results_by_zr, output_path):
         '.tick { font-size: 11px; fill: #555; }',
         '</style>',
         f'<text x="{left_margin}" y="28" class="title">UiO-66 Growth Curves</text>',
-        f'<text x="{left_margin}" y="44" class="subtitle">Number of entities vs time. Control vs distorted-linker branch with a two-step off-pathway sink derived from KC.</text>',
+        f'<text x="{left_margin}" y="44" class="subtitle">Number of entities vs time. Control vs prebound Zr-BDC branch derived from KC.</text>',
     ]
 
     legend_y = top_margin - 10
@@ -243,13 +269,16 @@ def build_growth_curve_svg(results_by_zr, output_path):
         annotation_x = left_margin + panel_width - 5
         control_fail = payload["control_summary"]["event_num_grow_fail"]
         distorted_fail = payload["distorted_summary"]["event_num_grow_fail"]
-        distorted_fraction = payload["distorted_summary"]["distorted_linker_fraction"]
+        distorted_fraction = payload["distorted_summary"].get(
+            "prebound_zr_bdc_fraction",
+            payload["distorted_summary"]["distorted_linker_fraction"],
+        )
         off_pathway_fraction = payload["distorted_summary"].get("off_pathway_linker_fraction", 0.0)
         svg_lines.append(
             f'<text x="{annotation_x}" y="{top + 16}" text-anchor="end" class="subtitle">failures: control {control_fail}, distorted {distorted_fail}</text>'
         )
         svg_lines.append(
-            f'<text x="{annotation_x}" y="{top + 32}" text-anchor="end" class="subtitle">distorted fraction: {distorted_fraction:.3f}, off-pathway: {off_pathway_fraction:.3f}</text>'
+            f'<text x="{annotation_x}" y="{top + 32}" text-anchor="end" class="subtitle">prebound fraction: {distorted_fraction:.3f}, off-pathway: {off_pathway_fraction:.3f}</text>'
         )
 
     svg_lines.append(f'<text x="{left_margin + panel_width / 2:.2f}" y="{height - 14}" text-anchor="middle" class="subtitle">Time (s)</text>')

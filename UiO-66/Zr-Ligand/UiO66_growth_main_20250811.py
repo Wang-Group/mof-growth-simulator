@@ -13,8 +13,12 @@ output_inter = None
 EXCHANGE_RXN_TIME_SECONDS = None
 DISSOLUTION_UPDATE_INTERVAL_STEPS = None
 DISTORTED_LINKER_ENABLED = None
+DISTORTED_CHEMISTRY_MODEL = None
 DISTORTED_LIGAND_ASSOCIATION_CONSTANT = None
+DISTORTED_SITE_EQUILIBRIUM_CONSTANT = None
 DISTORTED_SECOND_STEP_EQUIVALENTS = None
+DISTORTED_NUM_SITES_ON_CLUSTER = None
+DISTORTED_NUM_SITES_ON_LINKER = None
 
 import time
 import gc
@@ -25,7 +29,9 @@ except ImportError:
         return None
 from UiO66_Assembly_Large_Correction_20250811 import *
 from distorted_ligand_model import (
-    compute_distorted_ligand_state,
+    PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+    compute_prebound_chemistry_state,
+    default_prebound_state,
     solve_linker_carboxylate_to_acid_ratio,
     zr6_cluster_add_probability,
 )
@@ -135,51 +141,75 @@ def entropy_assembly(ENTROPY_GAIN, num_entity, limit =150):
 
 Entropy_correction_table = [entropy_assembly(ENTROPY_GAIN, i) for i in range(20000)]
 if DISTORTED_LINKER_ENABLED:
-    distorted_ligand_state = compute_distorted_ligand_state(
+    distorted_ligand_state = compute_prebound_chemistry_state(
         zr_conc=Zr_conc,
         linker_conc=Linker_conc,
         equilibrium_constant_coefficient=equilibrium_constant_coefficient,
         h2o_dmf_ratio=H2O_DMF_RATIO,
         capping_agent_conc=Capping_agent_conc,
         zr6_percentage=ZR6_PERCENTAGE,
+        model_name=(
+            DISTORTED_CHEMISTRY_MODEL
+            if DISTORTED_CHEMISTRY_MODEL is not None
+            else PREBOUND_MODEL_CLUSTER_ONE_TO_ONE
+        ),
         association_constant_override=DISTORTED_LIGAND_ASSOCIATION_CONSTANT,
+        site_equilibrium_constant_override=DISTORTED_SITE_EQUILIBRIUM_CONSTANT,
         dimethylamine_conc=0.0,
         second_step_equivalents=(
             DISTORTED_SECOND_STEP_EQUIVALENTS
             if DISTORTED_SECOND_STEP_EQUIVALENTS is not None
-            else 1.0
+            else 0.0
+        ),
+        num_sites_on_cluster=(
+            DISTORTED_NUM_SITES_ON_CLUSTER
+            if DISTORTED_NUM_SITES_ON_CLUSTER is not None
+            else 12
+        ),
+        num_sites_on_linker=(
+            DISTORTED_NUM_SITES_ON_LINKER
+            if DISTORTED_NUM_SITES_ON_LINKER is not None
+            else num_carboxylate_on_linker
         ),
     )
 else:
-    distorted_ligand_state = {
-        "association_constant": 0.0,
-        "effective_exchange_equilibrium_constant": effective_equilibrium_constant,
-        "acid_speciation": None,
-        "second_step_equivalents": (
+    distorted_ligand_state = default_prebound_state(
+        zr_conc=Zr_conc,
+        linker_conc=Linker_conc,
+        zr6_percentage=ZR6_PERCENTAGE,
+        effective_equilibrium_constant=effective_equilibrium_constant,
+        second_step_equivalents=(
             DISTORTED_SECOND_STEP_EQUIVALENTS
             if DISTORTED_SECOND_STEP_EQUIVALENTS is not None
-            else 1.0
+            else 0.0
         ),
-        "total_zr6_conc": Zr_conc*ZR6_PERCENTAGE/6,
-        "total_linker_conc": Linker_conc,
-        "distorted_ligand_conc": 0.0,
-        "polymerized_distorted_conc": 0.0,
-        "off_pathway_zr6_conc": 0.0,
-        "off_pathway_linker_conc": 0.0,
-        "distorted_ligand_fraction": 0.0,
-        "off_pathway_linker_fraction": 0.0,
-        "off_pathway_zr6_fraction": 0.0,
-        "free_zr6_conc": Zr_conc*ZR6_PERCENTAGE/6,
-        "free_linker_conc": Linker_conc,
-        "free_zr6_fraction": 1.0,
-        "free_linker_fraction": 1.0,
-    }
+        model_name=(
+            DISTORTED_CHEMISTRY_MODEL
+            if DISTORTED_CHEMISTRY_MODEL is not None
+            else PREBOUND_MODEL_CLUSTER_ONE_TO_ONE
+        ),
+        num_sites_on_cluster=(
+            DISTORTED_NUM_SITES_ON_CLUSTER
+            if DISTORTED_NUM_SITES_ON_CLUSTER is not None
+            else 12
+        ),
+        num_sites_on_linker=(
+            DISTORTED_NUM_SITES_ON_LINKER
+            if DISTORTED_NUM_SITES_ON_LINKER is not None
+            else num_carboxylate_on_linker
+        ),
+    )
 
 # the concentration of Zr in the unit of mM
 Zr6_conc = Zr_conc*ZR6_PERCENTAGE/6
 Zr12_conc = Zr_conc*(1-ZR6_PERCENTAGE)/12
 Zr6_conc_for_growth = max(float(distorted_ligand_state["free_zr6_conc"]), 0.0)
 LINKER_CONC_FOR_GROWTH = max(float(distorted_ligand_state["free_linker_conc"]), 0.0)
+effective_zr6_fraction_for_growth = (
+    Zr6_conc_for_growth / distorted_ligand_state["total_zr6_conc"]
+    if distorted_ligand_state["total_zr6_conc"] > 0.0
+    else 0.0
+)
 Zr6_conc_0 = LINKER_CONC_FOR_GROWTH*2/12
 Zr12_conc_0 = Zr6_conc_0/2
 D_ENTROPY_ZR6_BTB = 3.6 # the entropy difference between Zr6 and BTB in the unit of R
@@ -191,7 +221,7 @@ Zr6_conc_adding_probability = zr6_cluster_add_probability(
 )
 EXTERNAL_ADDITION_ACTIVITY = float(
     np.sqrt(
-        distorted_ligand_state["free_zr6_fraction"]
+        effective_zr6_fraction_for_growth
         * distorted_ligand_state["free_linker_fraction"]
     )
 )
@@ -206,8 +236,11 @@ chemistry_summary = {
     "equilibrium_constant_coefficient": equilibrium_constant_coefficient,
     "effective_equilibrium_constant": effective_equilibrium_constant,
     "distorted_linker_enabled": bool(DISTORTED_LINKER_ENABLED),
+    "distorted_chemistry_model": distorted_ligand_state["model_name"],
     "distorted_ligand_state": distorted_ligand_state,
+    "prebound_zr_bdc_fraction": distorted_ligand_state["prebound_zr_bdc_fraction"],
     "effective_zr6_conc_for_growth": Zr6_conc_for_growth,
+    "effective_zr6_fraction_for_growth": effective_zr6_fraction_for_growth,
     "effective_linker_conc_for_growth": LINKER_CONC_FOR_GROWTH,
     "Zr6_conc_adding_probability": Zr6_conc_adding_probability,
     "external_addition_activity": EXTERNAL_ADDITION_ACTIVITY,
@@ -228,7 +261,7 @@ assembly = Assembly(
     ZR6_PERCENTAGE,
     ENTROPY_GAIN,
     BUMPING_THRESHOLD,
-    distorted_linker_fraction=distorted_ligand_state["distorted_ligand_fraction"],
+    distorted_linker_fraction=distorted_ligand_state["prebound_zr_bdc_fraction"],
 )
 
 timing = 0
@@ -360,11 +393,26 @@ run_summary = {
     "event_num_remove": event_num_remove,
     "event_num_to_do_nothing": event_num_to_do_nothing,
     "distorted_linker_enabled": bool(DISTORTED_LINKER_ENABLED),
+    "distorted_chemistry_model": distorted_ligand_state["model_name"],
+    "prebound_growth_attempts": assembly.prebound_growth_attempts,
+    "prebound_growth_successes": assembly.prebound_growth_successes,
+    "prebound_growth_failures": assembly.prebound_growth_failures,
+    "prebound_entities_added": assembly.prebound_entities_added,
+    "prebound_linkages_formed": assembly.prebound_linkages_formed,
+    "prebound_free_growth_site_delta": assembly.prebound_free_growth_site_delta,
+    "prebound_ready_pair_delta": assembly.prebound_ready_pair_delta,
+    "prebound_zr_bdc_fraction": distorted_ligand_state["prebound_zr_bdc_fraction"],
     "distorted_linker_fraction": distorted_ligand_state["distorted_ligand_fraction"],
     "off_pathway_linker_fraction": distorted_ligand_state["off_pathway_linker_fraction"],
     "effective_zr6_conc": Zr6_conc_for_growth,
+    "effective_zr6_fraction_for_growth": effective_zr6_fraction_for_growth,
     "effective_linker_conc": LINKER_CONC_FOR_GROWTH,
     "external_addition_activity": EXTERNAL_ADDITION_ACTIVITY,
+    "final_free_growth_sites": len(assembly.free_carboxylates),
+    "final_metal_growth_sites": len(assembly.MC_free_carboxylates),
+    "final_linker_growth_sites": len(assembly.Linker_free_carboxylates),
+    "final_linked_pairs": len(assembly.linked_carboxylate_pairs),
+    "final_ready_to_connect_pairs": len(assembly.ready_to_connect_carboxylate_pairs),
 }
 with open(current_folder + "/run_summary.json", "w", encoding="utf-8") as f:
     json.dump(run_summary, f, indent=2)

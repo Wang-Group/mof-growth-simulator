@@ -8,7 +8,9 @@ DMF_PURE = 12900.0
 H2O_FORMATE_COEFFICIENT = 0.01
 DMF_FORMATE_COEFFICIENT = 0.01
 NUM_CARBOXYLATE_ON_LINKER = 2
-SECOND_STEP_EQUIVALENTS = 1.0
+SECOND_STEP_EQUIVALENTS = 0.0
+PREBOUND_MODEL_CLUSTER_ONE_TO_ONE = "cluster_one_to_one"
+PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY = "multisite_first_binding_only"
 
 
 def solve_one_to_one_association(total_cluster_conc, total_linker_conc, association_constant):
@@ -254,24 +256,31 @@ def compute_distorted_ligand_state(
         total_linker_conc=total_linker_conc,
         association_constant=association_constant,
     )
-    polymerized_distorted_conc = irreversible_second_step_capture(
-        seed_complex_conc=distorted_ligand_conc,
-        total_cluster_conc=total_zr6_conc,
-        total_linker_conc=total_linker_conc,
-        second_step_equivalents=second_step_equivalents,
-    )
+    polymerized_distorted_conc = 0.0
+    if second_step_equivalents > 0.0:
+        polymerized_distorted_conc = irreversible_second_step_capture(
+            seed_complex_conc=distorted_ligand_conc,
+            total_cluster_conc=total_zr6_conc,
+            total_linker_conc=total_linker_conc,
+            second_step_equivalents=second_step_equivalents,
+        )
     off_pathway_zr6_conc = distorted_ligand_conc + polymerized_distorted_conc
     off_pathway_linker_conc = distorted_ligand_conc + polymerized_distorted_conc
     free_zr6_conc = max(total_zr6_conc - off_pathway_zr6_conc, 0.0)
     free_linker_conc = max(total_linker_conc - off_pathway_linker_conc, 0.0)
 
     return {
+        "model_name": PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
         "association_constant": association_constant,
         "effective_exchange_equilibrium_constant": exchange_mapping["effective_exchange_equilibrium_constant"],
         "acid_speciation": exchange_mapping["acid_speciation"],
         "second_step_equivalents": second_step_equivalents,
         "total_zr6_conc": total_zr6_conc,
         "total_linker_conc": total_linker_conc,
+        "prebound_zr_bdc_conc": distorted_ligand_conc,
+        "prebound_zr_bdc_fraction": (
+            distorted_ligand_conc / total_linker_conc if total_linker_conc > 0.0 else 0.0
+        ),
         "distorted_ligand_conc": distorted_ligand_conc,
         "polymerized_distorted_conc": polymerized_distorted_conc,
         "off_pathway_zr6_conc": off_pathway_zr6_conc,
@@ -292,6 +301,128 @@ def compute_distorted_ligand_state(
             free_linker_conc / total_linker_conc if total_linker_conc > 0.0 else 0.0
         ),
     }
+
+
+def default_prebound_state(
+    zr_conc,
+    linker_conc,
+    zr6_percentage=1.0,
+    effective_equilibrium_constant=0.0,
+    second_step_equivalents=0.0,
+    model_name=PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+    num_sites_on_cluster=NUM_CARBOXYLATE_ON_LINKER * 6,
+    num_sites_on_linker=NUM_CARBOXYLATE_ON_LINKER,
+):
+    total_zr6_conc = max(float(zr_conc), 0.0) * max(float(zr6_percentage), 0.0) / 6.0
+    total_linker_conc = max(float(linker_conc), 0.0)
+    return {
+        "model_name": model_name,
+        "association_constant": 0.0,
+        "site_equilibrium_constant": 0.0,
+        "effective_exchange_equilibrium_constant": effective_equilibrium_constant,
+        "acid_speciation": None,
+        "second_step_equivalents": second_step_equivalents,
+        "num_sites_on_cluster": int(num_sites_on_cluster),
+        "num_sites_on_linker": int(num_sites_on_linker),
+        "total_zr6_conc": total_zr6_conc,
+        "total_linker_conc": total_linker_conc,
+        "prebound_zr_bdc_conc": 0.0,
+        "prebound_zr_bdc_fraction": 0.0,
+        "prebound_zr6_cluster_conc": 0.0,
+        "prebound_zr6_cluster_fraction": 0.0,
+        "distorted_ligand_conc": 0.0,
+        "polymerized_distorted_conc": 0.0,
+        "off_pathway_zr6_conc": 0.0,
+        "off_pathway_linker_conc": 0.0,
+        "distorted_ligand_fraction": 0.0,
+        "off_pathway_linker_fraction": 0.0,
+        "off_pathway_zr6_fraction": 0.0,
+        "bound_linker_conc": 0.0,
+        "free_linker_conc": total_linker_conc,
+        "free_linker_fraction": 1.0 if total_linker_conc > 0.0 else 0.0,
+        "bound_zr_site_conc": 0.0,
+        "free_zr_site_conc": total_zr6_conc * int(num_sites_on_cluster),
+        "bound_zr_site_fraction": 0.0,
+        "site_occupancy_probability": 0.0,
+        "activity_ratio": 0.0,
+        "mean_bound_linkers_per_cluster": 0.0,
+        "released_capping_agent_conc": 0.0,
+        "free_capping_agent_conc": 0.0,
+        "free_zr6_conc": total_zr6_conc,
+        "free_zr6_fraction": 1.0 if total_zr6_conc > 0.0 else 0.0,
+        "growth_eligible_zr6_conc": total_zr6_conc,
+        "growth_eligible_zr6_fraction": 1.0 if total_zr6_conc > 0.0 else 0.0,
+        "cluster_occupancy_distribution": [],
+    }
+
+
+def normalize_prebound_model_name(model_name):
+    normalized = (
+        PREBOUND_MODEL_CLUSTER_ONE_TO_ONE
+        if model_name is None
+        else str(model_name).strip().lower().replace("-", "_")
+    )
+    aliases = {
+        PREBOUND_MODEL_CLUSTER_ONE_TO_ONE: PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+        "one_to_one": PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+        "cluster_1to1": PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+        "cluster_one_to_one": PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+        PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY: PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY,
+        "multisite": PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY,
+        "multisite_first_binding": PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY,
+        "multisite_first_binding_only": PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY,
+    }
+    if normalized not in aliases:
+        raise ValueError(f"Unsupported prebound chemistry model: {model_name}")
+    return aliases[normalized]
+
+
+def compute_prebound_chemistry_state(
+    zr_conc,
+    linker_conc,
+    equilibrium_constant_coefficient,
+    h2o_dmf_ratio,
+    capping_agent_conc,
+    zr6_percentage=1.0,
+    association_constant_override=None,
+    site_equilibrium_constant_override=None,
+    dimethylamine_conc=0.0,
+    second_step_equivalents=SECOND_STEP_EQUIVALENTS,
+    model_name=PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
+    num_sites_on_cluster=12,
+    num_sites_on_linker=NUM_CARBOXYLATE_ON_LINKER,
+):
+    normalized_model_name = normalize_prebound_model_name(model_name)
+    if normalized_model_name == PREBOUND_MODEL_MULTISITE_FIRST_BINDING_ONLY:
+        from multisite_linker_exchange_model import compute_multisite_prebound_state
+
+        return compute_multisite_prebound_state(
+            zr_conc=zr_conc,
+            linker_conc=linker_conc,
+            equilibrium_constant_coefficient=equilibrium_constant_coefficient,
+            h2o_dmf_ratio=h2o_dmf_ratio,
+            capping_agent_conc=capping_agent_conc,
+            zr6_percentage=zr6_percentage,
+            site_equilibrium_constant_override=(
+                association_constant_override
+                if site_equilibrium_constant_override is None
+                else site_equilibrium_constant_override
+            ),
+            dimethylamine_conc=dimethylamine_conc,
+            num_sites_on_cluster=num_sites_on_cluster,
+            num_sites_on_linker=num_sites_on_linker,
+        )
+    return compute_distorted_ligand_state(
+        zr_conc=zr_conc,
+        linker_conc=linker_conc,
+        equilibrium_constant_coefficient=equilibrium_constant_coefficient,
+        h2o_dmf_ratio=h2o_dmf_ratio,
+        capping_agent_conc=capping_agent_conc,
+        zr6_percentage=zr6_percentage,
+        association_constant_override=association_constant_override,
+        dimethylamine_conc=dimethylamine_conc,
+        second_step_equivalents=second_step_equivalents,
+    )
 
 
 def logistic_from_log_ratio(log_ratio):

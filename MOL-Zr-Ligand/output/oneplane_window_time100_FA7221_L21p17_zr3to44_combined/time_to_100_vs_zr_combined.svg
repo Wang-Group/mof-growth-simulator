@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="90" y="32" font-size="24" font-weight="bold" fill="#222">MOL One-Plane Window: Time To 100 vs Zr</text>
+<text x="90" y="54" font-size="13" fill="#444">BTB = 21.1728548778 mM, FA = 7221.027611 mM, distorted/prebound model, 24 repeats per Zr</text>
+<line x1="90" y1="540.00" x2="940" y2="540.00" stroke="#e0e0e0" stroke-width="1"/>
+<text x="80" y="544.00" text-anchor="end" font-size="11" fill="#444">0.0</text>
+<line x1="90" y1="446.00" x2="940" y2="446.00" stroke="#e0e0e0" stroke-width="1"/>
+<text x="80" y="450.00" text-anchor="end" font-size="11" fill="#444">12.2</text>
+<line x1="90" y1="352.00" x2="940" y2="352.00" stroke="#e0e0e0" stroke-width="1"/>
+<text x="80" y="356.00" text-anchor="end" font-size="11" fill="#444">24.3</text>
+<line x1="90" y1="258.00" x2="940" y2="258.00" stroke="#e0e0e0" stroke-width="1"/>
+<text x="80" y="262.00" text-anchor="end" font-size="11" fill="#444">36.5</text>
+<line x1="90" y1="164.00" x2="940" y2="164.00" stroke="#e0e0e0" stroke-width="1"/>
+<text x="80" y="168.00" text-anchor="end" font-size="11" fill="#444">48.7</text>
+<line x1="90" y1="70.00" x2="940" y2="70.00" stroke="#e0e0e0" stroke-width="1"/>
+<text x="80" y="74.00" text-anchor="end" font-size="11" fill="#444">60.8</text>
+<line x1="90.00" y1="70" x2="90.00" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="90.00" y="562" text-anchor="middle" font-size="11" fill="#444">3</text>
+<line x1="152.20" y1="70" x2="152.20" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="152.20" y="562" text-anchor="middle" font-size="11" fill="#444">6</text>
+<line x1="214.39" y1="70" x2="214.39" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="214.39" y="562" text-anchor="middle" font-size="11" fill="#444">9</text>
+<line x1="276.59" y1="70" x2="276.59" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="276.59" y="562" text-anchor="middle" font-size="11" fill="#444">12</text>
+<line x1="359.51" y1="70" x2="359.51" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="359.51" y="562" text-anchor="middle" font-size="11" fill="#444">16</text>
+<line x1="442.44" y1="70" x2="442.44" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="442.44" y="562" text-anchor="middle" font-size="11" fill="#444">20</text>
+<line x1="525.37" y1="70" x2="525.37" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="525.37" y="562" text-anchor="middle" font-size="11" fill="#444">24</text>
+<line x1="608.29" y1="70" x2="608.29" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="608.29" y="562" text-anchor="middle" font-size="11" fill="#444">28</text>
+<line x1="691.22" y1="70" x2="691.22" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="691.22" y="562" text-anchor="middle" font-size="11" fill="#444">32</text>
+<line x1="774.15" y1="70" x2="774.15" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="774.15" y="562" text-anchor="middle" font-size="11" fill="#444">36</text>
+<line x1="857.07" y1="70" x2="857.07" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="857.07" y="562" text-anchor="middle" font-size="11" fill="#444">40</text>
+<line x1="940.00" y1="70" x2="940.00" y2="540" stroke="#efefef" stroke-width="1"/>
+<text x="940.00" y="562" text-anchor="middle" font-size="11" fill="#444">44</text>
+<line x1="90" y1="540" x2="940" y2="540" stroke="#333" stroke-width="1.4"/>
+<line x1="90" y1="70" x2="90" y2="540" stroke="#333" stroke-width="1.4"/>
+<text x="515.00" y="592" text-anchor="middle" font-size="13" fill="#222">Total Zr concentration (mM)</text>
+<text x="28" y="305.00" transform="rotate(-90 28 305.00)" text-anchor="middle" font-size="13" fill="#222">Time to 100 (s)</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.4" points="90.00,205.51 152.20,312.85 214.39,250.31 276.59,248.68 359.51,266.62 442.44,255.70 525.37,270.33 608.29,210.40 691.22,231.48 774.15,206.77 857.07,153.68 940.00,131.30"/>
+<polyline fill="none" stroke="#d95f02" stroke-width="2.8" points="90.00,245.41 152.20,342.12 214.39,322.49 276.59,338.77 359.51,328.02 442.44,325.75 525.37,355.29 608.29,267.78 691.22,315.80 774.15,265.40 857.07,200.64 940.00,153.98"/>
+<circle cx="90.00" cy="205.51" r="4" fill="#1f77b4"/>
+<circle cx="152.20" cy="312.85" r="4" fill="#1f77b4"/>
+<circle cx="214.39" cy="250.31" r="4" fill="#1f77b4"/>
+<circle cx="276.59" cy="248.68" r="4" fill="#1f77b4"/>
+<circle cx="359.51" cy="266.62" r="4" fill="#1f77b4"/>
+<circle cx="442.44" cy="255.70" r="4" fill="#1f77b4"/>
+<circle cx="525.37" cy="270.33" r="4" fill="#1f77b4"/>
+<circle cx="608.29" cy="210.40" r="4" fill="#1f77b4"/>
+<circle cx="691.22" cy="231.48" r="4" fill="#1f77b4"/>
+<circle cx="774.15" cy="206.77" r="4" fill="#1f77b4"/>
+<circle cx="857.07" cy="153.68" r="4" fill="#1f77b4"/>
+<circle cx="940.00" cy="131.30" r="4" fill="#1f77b4"/>
+<circle cx="90.00" cy="245.41" r="4.5" fill="#d95f02"/>
+<circle cx="152.20" cy="342.12" r="4.5" fill="#d95f02"/>
+<circle cx="214.39" cy="322.49" r="4.5" fill="#d95f02"/>
+<circle cx="276.59" cy="338.77" r="4.5" fill="#d95f02"/>
+<circle cx="359.51" cy="328.02" r="4.5" fill="#d95f02"/>
+<circle cx="442.44" cy="325.75" r="4.5" fill="#d95f02"/>
+<circle cx="525.37" cy="355.29" r="4.5" fill="#d95f02"/>
+<circle cx="608.29" cy="267.78" r="4.5" fill="#d95f02"/>
+<circle cx="691.22" cy="315.80" r="4.5" fill="#d95f02"/>
+<circle cx="774.15" cy="265.40" r="4.5" fill="#d95f02"/>
+<circle cx="857.07" cy="200.64" r="4.5" fill="#d95f02"/>
+<circle cx="940.00" cy="153.98" r="4.5" fill="#d95f02"/>
+<rect x="730" y="86" width="170" height="54" rx="8" fill="#fafafa" stroke="#d0d0d0"/>
+<line x1="744" y1="104" x2="774" y2="104" stroke="#1f77b4" stroke-width="2.4"/>
+<circle cx="759" cy="104" r="4" fill="#1f77b4"/>
+<text x="784" y="108" font-size="12" fill="#222">Mean</text>
+<line x1="744" y1="124" x2="774" y2="124" stroke="#d95f02" stroke-width="2.8"/>
+<circle cx="759" cy="124" r="4.5" fill="#d95f02"/>
+<text x="784" y="128" font-size="12" fill="#222">Median</text>
+</svg>

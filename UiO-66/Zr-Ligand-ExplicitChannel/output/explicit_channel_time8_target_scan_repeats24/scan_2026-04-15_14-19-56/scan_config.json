@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-04-15T14:19:56",
+  "zr_values": [
+    24.0,
+    32.0,
+    40.0,
+    48.0,
+    64.0
+  ],
+  "repeats": 24,
+  "target_entities": 8,
+  "max_steps": 100000000,
+  "distorted_chemistry_model": "multisite_first_binding_only",
+  "distorted_ligand_association_constant": null,
+  "distorted_site_equilibrium_constant": null,
+  "distorted_second_step_equivalents": 0.0,
+  "distorted_num_sites_on_cluster": 12,
+  "distorted_num_sites_on_linker": 2,
+  "workers": 8,
+  "output_root": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand-ExplicitChannel/output/explicit_channel_time8_target_scan_repeats24/scan_2026-04-15_14-19-56"
+}
