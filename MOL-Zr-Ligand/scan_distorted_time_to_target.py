@@ -15,7 +15,6 @@ import numpy as np
 from MOL_Assembly_Large_Correction_20250811 import Assembly, Zr6
 from distorted_ligand_model import (
     PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
-    compute_absolute_external_channel_activities,
     compute_prebound_chemistry_state,
     solve_linker_carboxylate_to_acid_ratio,
     zr6_cluster_add_probability,
@@ -158,10 +157,27 @@ def build_case_inputs(job):
         )
     )
     legacy_external_addition_activity = min(max(legacy_external_addition_activity, 0.0), 1.0)
-    external_channel_activity_state = compute_absolute_external_channel_activities(
-        distorted_state,
-        zr6_conc_for_growth=zr6_conc_for_growth,
-        linker_conc_for_growth=linker_conc_for_growth,
+    free_zr6_addition_activity = min(max(float(effective_zr6_fraction_for_growth), 0.0), 1.0)
+    free_linker_addition_activity = min(
+        max(float(distorted_state["free_linker_fraction"]), 0.0),
+        1.0,
+    )
+    prebound_zr_btb_addition_activity = min(
+        max(
+            float(
+                distorted_state.get(
+                    "prebound_zr6_cluster_fraction",
+                    distorted_state.get("prebound_zr_btb_fraction", 0.0),
+                )
+            ),
+            0.0,
+        ),
+        1.0,
+    )
+    total_external_addition_channel_activity = (
+        free_zr6_addition_activity
+        + free_linker_addition_activity
+        + prebound_zr_btb_addition_activity
     )
     return {
         "effective_equilibrium_constant": effective_equilibrium_constant,
@@ -171,13 +187,13 @@ def build_case_inputs(job):
         "effective_zr6_fraction_for_growth": effective_zr6_fraction_for_growth,
         "zr6_conc_adding_probability": zr6_conc_adding_probability,
         "external_addition_activity": legacy_external_addition_activity,
-        "total_external_addition_channel_activity": external_channel_activity_state["total_external_addition_channel_activity"],
+        "total_external_addition_channel_activity": total_external_addition_channel_activity,
         "legacy_external_addition_activity": legacy_external_addition_activity,
-        "free_zr6_addition_activity": external_channel_activity_state["free_zr6_addition_activity"],
-        "free_linker_addition_activity": external_channel_activity_state["free_linker_addition_activity"],
-        "prebound_zr_btb_addition_activity": external_channel_activity_state["prebound_zr_btb_addition_activity"],
-        "external_channel_activity_basis": external_channel_activity_state["external_channel_activity_basis"],
-        "prebound_external_channel_species": external_channel_activity_state["prebound_external_channel_species"],
+        "free_zr6_addition_activity": free_zr6_addition_activity,
+        "free_linker_addition_activity": free_linker_addition_activity,
+        "prebound_zr_btb_addition_activity": prebound_zr_btb_addition_activity,
+        "external_channel_activity_basis": "normalized_fractions_matching_uio66",
+        "prebound_external_channel_species": "prebound_zr6_cluster_fraction",
     }
 
 
@@ -307,6 +323,12 @@ def run_case(job):
         "prebound_growth_attempts": assembly.prebound_growth_attempts,
         "prebound_growth_successes": assembly.prebound_growth_successes,
         "prebound_growth_failures": assembly.prebound_growth_failures,
+        "prebound_metal_site_attempts": assembly.prebound_metal_site_attempts,
+        "prebound_metal_site_successes": assembly.prebound_metal_site_successes,
+        "prebound_metal_site_failures": assembly.prebound_metal_site_failures,
+        "prebound_linker_site_attempts": assembly.prebound_linker_site_attempts,
+        "prebound_linker_site_successes": assembly.prebound_linker_site_successes,
+        "prebound_linker_site_failures": assembly.prebound_linker_site_failures,
         "prebound_entities_added": assembly.prebound_entities_added,
         "prebound_linkages_formed": assembly.prebound_linkages_formed,
         "prebound_free_growth_site_delta": assembly.prebound_free_growth_site_delta,
@@ -341,6 +363,12 @@ def write_per_run_csv(rows, output_path):
         "prebound_growth_attempts",
         "prebound_growth_successes",
         "prebound_growth_failures",
+        "prebound_metal_site_attempts",
+        "prebound_metal_site_successes",
+        "prebound_metal_site_failures",
+        "prebound_linker_site_attempts",
+        "prebound_linker_site_successes",
+        "prebound_linker_site_failures",
         "prebound_entities_added",
         "prebound_linkages_formed",
         "prebound_free_growth_site_delta",
@@ -383,6 +411,12 @@ def write_summary_csv(summary_rows, output_path):
         "mean_prebound_growth_attempts",
         "mean_prebound_growth_successes",
         "mean_prebound_growth_failures",
+        "mean_prebound_metal_site_attempts",
+        "mean_prebound_metal_site_successes",
+        "mean_prebound_metal_site_failures",
+        "mean_prebound_linker_site_attempts",
+        "mean_prebound_linker_site_successes",
+        "mean_prebound_linker_site_failures",
         "mean_prebound_entities_added",
         "mean_prebound_linkages_formed",
         "mean_prebound_free_growth_site_delta",
@@ -417,6 +451,12 @@ def build_summary_rows(rows, zr_values):
                 "mean_prebound_growth_attempts": statistics.mean(row["prebound_growth_attempts"] for row in zr_rows),
                 "mean_prebound_growth_successes": statistics.mean(row["prebound_growth_successes"] for row in zr_rows),
                 "mean_prebound_growth_failures": statistics.mean(row["prebound_growth_failures"] for row in zr_rows),
+                "mean_prebound_metal_site_attempts": statistics.mean(row["prebound_metal_site_attempts"] for row in zr_rows),
+                "mean_prebound_metal_site_successes": statistics.mean(row["prebound_metal_site_successes"] for row in zr_rows),
+                "mean_prebound_metal_site_failures": statistics.mean(row["prebound_metal_site_failures"] for row in zr_rows),
+                "mean_prebound_linker_site_attempts": statistics.mean(row["prebound_linker_site_attempts"] for row in zr_rows),
+                "mean_prebound_linker_site_successes": statistics.mean(row["prebound_linker_site_successes"] for row in zr_rows),
+                "mean_prebound_linker_site_failures": statistics.mean(row["prebound_linker_site_failures"] for row in zr_rows),
                 "mean_prebound_entities_added": statistics.mean(row["prebound_entities_added"] for row in zr_rows),
                 "mean_prebound_linkages_formed": statistics.mean(row["prebound_linkages_formed"] for row in zr_rows),
                 "mean_prebound_free_growth_site_delta": statistics.mean(row["prebound_free_growth_site_delta"] for row in zr_rows),

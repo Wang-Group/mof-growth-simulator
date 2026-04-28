@@ -19,3 +19,39 @@ UiO-66/UiO_66_from_amorphous/initialize_structures1/output/**/*.json
 
 # Generated planning / seed metadata in the active UiO-66 defect workspace
 UiO-66/UiO_66_from_amorphous/initialize_structures1/*.json
+
+# Curated Zr-link study keeps only the lightweight summary packages in
+# `zr_ligand_one_shot_minimal_summary/` and `figure7_zr_ligand_data/`.
+# The raw exploratory output folders below are intentionally kept local only.
+MOL-Zr-Ligand/output/mol_active_experiment_zr_points_target20_one_shot_prebound_r24/
+MOL-Zr-Ligand/output/mol_active_experiment_zr_points_target100_both_endpoints_r24/
+MOL-Zr-Ligand/output/mol_active_experiment_zr_points_target20_both_endpoints_r24/
+MOL-Zr-Ligand/output/mol_active_experiment_zr_points_target8_both_endpoints_r24/
+MOL-Zr-Ligand/output/mol_active_experiment_targets8_20_100_comparison/
+MOL-Zr-Ligand/output/mol_low_zr6_target20_r24/
+MOL-Zr-Ligand/output/mol_one_shot_k_conc_pilot/
+MOL-Zr-Ligand/output/mol_one_shot_strong_nonmonotonic_target20_r24/
+MOL-Zr-Ligand/output/mol_one_shot_strong_refine_target20_r8/
+MOL-Zr-Ligand/output/mol_one_shot_targeted_linker18_target20_r8/
+MOL-Zr-Ligand/output/mol_target20_experiment_comparison/
+MOL-Zr-Ligand/output/mol_target20_low_zr6_comparison/
+MOL-Zr-Ligand/output/mol_target20_one_shot_experiment_comparison/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_both_endpoints_time8_zr24to64_r8/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_both_endpoints_time8_zr24to64_r24/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_exp_L4_AA2400_fit_graph_kmc/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_exp_conditions_coordinate_max1e8_r2/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_exp_conditions_coordinate_pilot_r2/
+UiO-66/Zr-Ligand-ExplicitChannel/output/explicit_channel_time8_target_scan_repeats24/**/uio66_explicit_channel_diagnostics.*
+UiO-66/Zr-Ligand-ExplicitChannel/output/explicit_channel_time8_target_scan_repeats24/**/uio66_seed_waiting_diagnostic.*
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_exp_conditions_one_shot_target8_final_report/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_exp_conditions_one_shot_target8_zr2to32_AA2400_r24/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_experiment_consistent_comparison/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_comparison/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_target20_success_terminal_time/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_target8_vs_target20_final/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_time20_partial_comparison/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_time20_zr24to64_r24/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_time20_zr24to64_r24_background/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_one_shot_time8_zr24to64_r24/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_survival_model_experiment_link/
+UiO-66/Zr-Ligand-ExplicitChannel/output/uio66_target8_growth_vs_zr/

@@ -12,6 +12,20 @@ Event probabilities are controlled by reagent concentrations, an effective ligan
 
 This README is intended to be the primary top-level documentation for the repository.
 
+## Curated Zr-link study package
+
+The current manuscript-oriented comparison between `Hf-BTB-MOL` and `UiO-66`
+under the simplified one-shot `Zr-link` model is preserved in two lightweight
+folders at the repository root:
+
+- [zr_ligand_one_shot_minimal_summary](zr_ligand_one_shot_minimal_summary/README.md)
+- [figure7_zr_ligand_data](figure7_zr_ligand_data/README.md)
+
+These folders contain the final curated CSV tables, manuscript-ready figures,
+and the `Figure 7` assembly script. The larger exploratory output directories
+used to derive these tables remain local only and are intentionally ignored by
+`.gitignore` so that the pushable branch stays lightweight.
+
 ## Systems covered
 
 - BTB-based MOL growth (the Hf/Zr-BTB layered system used as the main 2D case study)

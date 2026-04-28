@@ -323,6 +323,12 @@ def run_case(job):
         "prebound_linkages_formed": assembly.prebound_linkages_formed,
         "prebound_free_growth_site_delta": assembly.prebound_free_growth_site_delta,
         "prebound_ready_pair_delta": assembly.prebound_ready_pair_delta,
+        "prebound_metal_site_attempts": assembly.prebound_metal_site_attempts,
+        "prebound_metal_site_successes": assembly.prebound_metal_site_successes,
+        "prebound_metal_site_failures": assembly.prebound_metal_site_failures,
+        "prebound_linker_site_attempts": assembly.prebound_linker_site_attempts,
+        "prebound_linker_site_successes": assembly.prebound_linker_site_successes,
+        "prebound_linker_site_failures": assembly.prebound_linker_site_failures,
         "wall_seconds": wall_seconds,
     }
 
@@ -355,6 +361,12 @@ def write_per_run_csv(rows, output_path):
         "prebound_linkages_formed",
         "prebound_free_growth_site_delta",
         "prebound_ready_pair_delta",
+        "prebound_metal_site_attempts",
+        "prebound_metal_site_successes",
+        "prebound_metal_site_failures",
+        "prebound_linker_site_attempts",
+        "prebound_linker_site_successes",
+        "prebound_linker_site_failures",
         "wall_seconds",
     ]
     with open(output_path, "w", newline="", encoding="utf-8") as handle:
@@ -397,6 +409,12 @@ def write_summary_csv(summary_rows, output_path):
         "mean_prebound_linkages_formed",
         "mean_prebound_free_growth_site_delta",
         "mean_prebound_ready_pair_delta",
+        "mean_prebound_metal_site_attempts",
+        "mean_prebound_metal_site_successes",
+        "mean_prebound_metal_site_failures",
+        "mean_prebound_linker_site_attempts",
+        "mean_prebound_linker_site_successes",
+        "mean_prebound_linker_site_failures",
     ]
     with open(output_path, "w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
@@ -431,6 +449,12 @@ def build_summary_rows(rows, zr_values):
                 "mean_prebound_linkages_formed": statistics.mean(row["prebound_linkages_formed"] for row in zr_rows),
                 "mean_prebound_free_growth_site_delta": statistics.mean(row["prebound_free_growth_site_delta"] for row in zr_rows),
                 "mean_prebound_ready_pair_delta": statistics.mean(row["prebound_ready_pair_delta"] for row in zr_rows),
+                "mean_prebound_metal_site_attempts": statistics.mean(row["prebound_metal_site_attempts"] for row in zr_rows),
+                "mean_prebound_metal_site_successes": statistics.mean(row["prebound_metal_site_successes"] for row in zr_rows),
+                "mean_prebound_metal_site_failures": statistics.mean(row["prebound_metal_site_failures"] for row in zr_rows),
+                "mean_prebound_linker_site_attempts": statistics.mean(row["prebound_linker_site_attempts"] for row in zr_rows),
+                "mean_prebound_linker_site_successes": statistics.mean(row["prebound_linker_site_successes"] for row in zr_rows),
+                "mean_prebound_linker_site_failures": statistics.mean(row["prebound_linker_site_failures"] for row in zr_rows),
             }
         )
     return summary_rows

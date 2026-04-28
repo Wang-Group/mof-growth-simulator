@@ -1,0 +1,5 @@
+group,risk_at_0.01_s,risk_at_0.1_s,risk_at_1_s,risk_at_10_s,risk_at_100_s
+Q1_lowZr,200,187,158,107,51
+Q2_midlowZr,200,189,145,79,48
+Q3_midhighZr,199,188,147,67,41
+Q4_highZr,197,184,141,72,46

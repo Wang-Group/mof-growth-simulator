@@ -399,11 +399,17 @@ class BDC(SBU_Entity):
 
 
 class DistortedBDC(BDC):
-    def __init__(self):
+    def __init__(
+        self,
+        attachment_carboxylate_index=DISTORTED_LINKER_ATTACHMENT_CARBOXYLATE_INDEX,
+        internal_carboxylate_index=DISTORTED_LINKER_INTERNAL_CARBOXYLATE_INDEX,
+        bend_sign_preference=None,
+    ):
         super().__init__()
         self.entity_subtype = 1
-        self.attachment_carboxylate_index = DISTORTED_LINKER_ATTACHMENT_CARBOXYLATE_INDEX
-        self.internal_carboxylate_index = DISTORTED_LINKER_INTERNAL_CARBOXYLATE_INDEX
+        self.attachment_carboxylate_index = int(attachment_carboxylate_index)
+        self.internal_carboxylate_index = int(internal_carboxylate_index)
+        self.bend_sign_preference = bend_sign_preference
         self.requires_selected_entity_bump_check = True
         self.last_aligned_carboxylate = None
 
@@ -421,8 +427,13 @@ class DistortedBDC(BDC):
             return
 
         reference_center = reference_carboxylate.belonging_entity.center
+        candidate_signs = (
+            (float(self.bend_sign_preference),)
+            if self.bend_sign_preference is not None
+            else (-1.0, 1.0)
+        )
         candidate_coordinates = []
-        for sign in (-1.0, 1.0):
+        for sign in candidate_signs:
             rotation_matrix = _axis_angle_rotation_matrix(
                 axis,
                 sign * np.deg2rad(DISTORTED_LINKER_BEND_DEGREES),
@@ -470,6 +481,13 @@ class DistortedBDC(BDC):
 
     def get_internal_carboxylate(self):
         return self.carboxylates[self.internal_carboxylate_index]
+
+    def candidate_internal_carboxylate_indexes(self):
+        return [
+            index
+            for index in range(len(self.carboxylates))
+            if index != self.attachment_carboxylate_index
+        ]
 
 # class BTBb(SBU_Entity):
 #     def __init__(self):
@@ -531,6 +549,12 @@ class Assembly:
         self.prebound_linkages_formed = 0
         self.prebound_free_growth_site_delta = 0
         self.prebound_ready_pair_delta = 0
+        self.prebound_metal_site_attempts = 0
+        self.prebound_metal_site_successes = 0
+        self.prebound_metal_site_failures = 0
+        self.prebound_linker_site_attempts = 0
+        self.prebound_linker_site_successes = 0
+        self.prebound_linker_site_failures = 0
 
     def ROI_prepare(self):
         # Set four entities Zr6, Zr12, BTBa, BTBb
@@ -596,8 +620,15 @@ class Assembly:
                 free_linker_external_rate = (
                     num_metal_free_carboxylate_sites * free_linker_addition_activity
                 )
-                prebound_external_rate = (
+                prebound_metal_site_external_rate = (
                     num_metal_free_carboxylate_sites * prebound_zr_bdc_addition_activity
+                )
+                prebound_linker_site_external_rate = (
+                    num_linker_free_carboxylate_sites * prebound_zr_bdc_addition_activity
+                )
+                prebound_external_rate = (
+                    prebound_metal_site_external_rate
+                    + prebound_linker_site_external_rate
                 )
                 external_growth_rate = (
                     free_zr6_external_rate
@@ -645,8 +676,14 @@ class Assembly:
                             selected_carboxylate = self.free_carboxylates.get_random()
                         return 1, selected_carboxylate, growth_total, None, "free_linker"
 
-                    if prebound_external_rate > 0.0 and len(self.MC_free_carboxylates) > 0:
+                    channel_random -= free_linker_external_rate
+                    if (
+                        channel_random < prebound_metal_site_external_rate
+                        and len(self.MC_free_carboxylates) > 0
+                    ):
                         selected_carboxylate = self.MC_free_carboxylates.get_random()
+                    elif prebound_linker_site_external_rate > 0.0 and len(self.Linker_free_carboxylates) > 0:
+                        selected_carboxylate = self.Linker_free_carboxylates.get_random()
                     else:
                         selected_carboxylate = self.free_carboxylates.get_random()
                     return 1, selected_carboxylate, growth_total, None, "prebound_zr_bdc"
@@ -685,8 +722,15 @@ class Assembly:
                 free_linker_external_rate = (
                     num_metal_free_carboxylate_sites * free_linker_addition_activity
                 )
-                prebound_external_rate = (
+                prebound_metal_site_external_rate = (
                     num_metal_free_carboxylate_sites * prebound_zr_bdc_addition_activity
+                )
+                prebound_linker_site_external_rate = (
+                    num_linker_free_carboxylate_sites * prebound_zr_bdc_addition_activity
+                )
+                prebound_external_rate = (
+                    prebound_metal_site_external_rate
+                    + prebound_linker_site_external_rate
                 )
                 external_total = (
                     free_zr6_external_rate
@@ -705,8 +749,15 @@ class Assembly:
                         selected_carboxylate = self.MC_free_carboxylates.get_random()
                         return 1, selected_carboxylate, growth_total, None, "free_linker"
 
-                    if prebound_external_rate > 0.0 and len(self.MC_free_carboxylates) > 0:
+                    channel_random -= free_linker_external_rate
+                    if (
+                        channel_random < prebound_metal_site_external_rate
+                        and len(self.MC_free_carboxylates) > 0
+                    ):
                         selected_carboxylate = self.MC_free_carboxylates.get_random()
+                        return 1, selected_carboxylate, growth_total, None, "prebound_zr_bdc"
+                    if prebound_linker_site_external_rate > 0.0 and len(self.Linker_free_carboxylates) > 0:
+                        selected_carboxylate = self.Linker_free_carboxylates.get_random()
                         return 1, selected_carboxylate, growth_total, None, "prebound_zr_bdc"
 
             selected_carboxylate = self.free_carboxylates.get_random()  ### Modified
@@ -929,14 +980,48 @@ class Assembly:
             entity.connected_entities = None
             entity.kdtree = None
 
+    def align_specific_carboxylate(self, entity, carboxylate_to_align, reference_carboxylate):
+        rotation_translation_matrix = carboxylate_to_align.calculate_rotation_translation_matrix(reference_carboxylate)
+        entity.apply_transformation(rotation_translation_matrix)
+        del rotation_translation_matrix
+        return carboxylate_to_align
+
+    def record_prebound_success(self, entities_before, free_growth_sites_before, linked_pairs_before, ready_pairs_before):
+        self.prebound_entities_added += len(self.entities) - entities_before
+        self.prebound_linkages_formed += len(self.linked_carboxylate_pairs) - linked_pairs_before
+        self.prebound_free_growth_site_delta += len(self.free_carboxylates) - free_growth_sites_before
+        self.prebound_ready_pair_delta += (
+            len(self.ready_to_connect_carboxylate_pairs) - ready_pairs_before
+        )
+
     def grow_prebound_zr_bdc_step(self, selected_carboxylate):
+        if selected_carboxylate.carboxylate_type == 'benzoate':
+            return self.grow_prebound_zr_bdc_from_linker_site(selected_carboxylate)
+        return self.grow_prebound_zr_bdc_from_metal_site(selected_carboxylate)
+
+    def grow_prebound_zr_bdc_from_metal_site(self, selected_carboxylate):
+        self.prebound_metal_site_attempts += 1
         entities_before = len(self.entities)
         free_growth_sites_before = len(self.free_carboxylates)
         linked_pairs_before = len(self.linked_carboxylate_pairs)
         ready_pairs_before = len(self.ready_to_connect_carboxylate_pairs)
 
+        candidate_template = DistortedBDC()
+        candidate_internal_indexes = candidate_template.candidate_internal_carboxylate_indexes()
+        self.cleanup_unadded_entities([candidate_template])
+
+        if not candidate_internal_indexes:
+            self.prebound_metal_site_failures += 1
+            return False
+
+        internal_index = random.choice(candidate_internal_indexes)
+        bend_sign = random.choice((-1.0, 1.0))
+
         start_time = time.time()
-        distorted_bdc = DistortedBDC()
+        distorted_bdc = DistortedBDC(
+            internal_carboxylate_index=internal_index,
+            bend_sign_preference=bend_sign,
+        )
         new_zr6 = Zr6_AA()
         self.time_for_creating_new_entity += (time.time()-start_time)
 
@@ -949,20 +1034,32 @@ class Assembly:
         selected_entity = selected_carboxylate.belonging_entity
 
         start_time = time.time()
+        if self.selected_entity_bump_check(distorted_bdc, selected_carboxylate):
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+            self.prebound_metal_site_failures += 1
+            return False
+
         if self.entity_pair_bump_check(new_zr6, selected_entity):
             self.time_for_find_connection += (time.time()-start_time)
             self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+            self.prebound_metal_site_failures += 1
             return False
 
         distorted_bdc_roi = self.find_entities_of_interest(
             distorted_bdc,
             excluded_entities=[selected_entity],
         )
-        for entity in distorted_bdc_roi:
-            if self.entity_pair_bump_check(distorted_bdc, entity):
-                self.time_for_find_connection += (time.time()-start_time)
-                self.cleanup_unadded_entities([distorted_bdc, new_zr6])
-                return False
+        is_bumping, distorted_bdc_pairs, distorted_bdc_blocked = self.probe_entity_against_entities(
+            distorted_bdc,
+            distorted_bdc_roi,
+            blocked_new_entity_carboxylates=[bdc_attachment_carboxylate, internal_bdc_carboxylate],
+        )
+        if is_bumping:
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+            self.prebound_metal_site_failures += 1
+            return False
 
         zr6_roi = self.find_entities_of_interest(
             new_zr6,
@@ -976,6 +1073,7 @@ class Assembly:
         self.time_for_find_connection += (time.time()-start_time)
         if is_bumping:
             self.cleanup_unadded_entities([distorted_bdc, new_zr6])
+            self.prebound_metal_site_failures += 1
             return False
 
         start_time = time.time()
@@ -983,8 +1081,8 @@ class Assembly:
             selected_carboxylate,
             distorted_bdc,
             bdc_attachment_carboxylate,
-            [],
-            [internal_bdc_carboxylate],
+            distorted_bdc_pairs,
+            list(set(distorted_bdc_blocked + [internal_bdc_carboxylate])),
         )
         self.add_entity(
             internal_bdc_carboxylate,
@@ -993,12 +1091,147 @@ class Assembly:
             additional_to_be_connect_carboxylate_pairs,
             additional_to_be_connect_carboxylate_on_new_entity,
         )
-        self.prebound_entities_added += len(self.entities) - entities_before
-        self.prebound_linkages_formed += len(self.linked_carboxylate_pairs) - linked_pairs_before
-        self.prebound_free_growth_site_delta += len(self.free_carboxylates) - free_growth_sites_before
-        self.prebound_ready_pair_delta += (
-            len(self.ready_to_connect_carboxylate_pairs) - ready_pairs_before
+        self.record_prebound_success(
+            entities_before,
+            free_growth_sites_before,
+            linked_pairs_before,
+            ready_pairs_before,
         )
+        self.prebound_metal_site_successes += 1
+        self.time_for_add_new_entity += (time.time()-start_time)
+        return True
+
+    def grow_prebound_zr_bdc_from_linker_site(self, selected_carboxylate):
+        self.prebound_linker_site_attempts += 1
+        entities_before = len(self.entities)
+        free_growth_sites_before = len(self.free_carboxylates)
+        linked_pairs_before = len(self.linked_carboxylate_pairs)
+        ready_pairs_before = len(self.ready_to_connect_carboxylate_pairs)
+
+        zr6_template = Zr6_AA()
+        zr6_carboxylate_indexes = list(range(len(zr6_template.carboxylates)))
+        distorted_template = DistortedBDC()
+        bdc_carboxylate_indexes = list(range(len(distorted_template.carboxylates)))
+        self.cleanup_unadded_entities([zr6_template, distorted_template])
+
+        selected_entity = selected_carboxylate.belonging_entity
+        if len(zr6_carboxylate_indexes) < 2 or len(bdc_carboxylate_indexes) == 0:
+            self.prebound_linker_site_failures += 1
+            return False
+
+        selected_zr6_index = random.choice(zr6_carboxylate_indexes)
+        prebound_zr6_index = random.choice(
+            [index for index in zr6_carboxylate_indexes if index != selected_zr6_index]
+        )
+        bdc_attachment_index = random.choice(bdc_carboxylate_indexes)
+        bend_sign = random.choice((-1.0, 1.0))
+
+        start_time = time.time()
+        new_zr6 = Zr6_AA()
+        distorted_bdc = DistortedBDC(
+            attachment_carboxylate_index=bdc_attachment_index,
+            internal_carboxylate_index=bdc_attachment_index,
+            bend_sign_preference=bend_sign,
+        )
+        self.time_for_creating_new_entity += (time.time()-start_time)
+
+        start_time = time.time()
+        zr6_attachment_carboxylate = self.align_specific_carboxylate(
+            new_zr6,
+            new_zr6.carboxylates[selected_zr6_index],
+            selected_carboxylate,
+        )
+        zr6_prebound_carboxylate = new_zr6.carboxylates[prebound_zr6_index]
+        bdc_attachment_carboxylate = distorted_bdc.align_carboxylates(
+            zr6_prebound_carboxylate,
+            visualize_steps=False,
+        )
+        self.time_for_align_new_entity += (time.time()-start_time)
+
+        start_time = time.time()
+        if self.entity_pair_bump_check(
+            new_zr6,
+            selected_entity,
+            skip_carboxylate_on_entity1=zr6_attachment_carboxylate,
+            skip_carboxylate_on_entity2=selected_carboxylate,
+        ):
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([new_zr6, distorted_bdc])
+            self.prebound_linker_site_failures += 1
+            return False
+
+        if self.entity_pair_bump_check(distorted_bdc, selected_entity):
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([new_zr6, distorted_bdc])
+            self.prebound_linker_site_failures += 1
+            return False
+
+        if self.entity_pair_bump_check(
+            distorted_bdc,
+            new_zr6,
+            skip_carboxylate_on_entity1=bdc_attachment_carboxylate,
+            skip_carboxylate_on_entity2=zr6_prebound_carboxylate,
+        ):
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([new_zr6, distorted_bdc])
+            self.prebound_linker_site_failures += 1
+            return False
+
+        zr6_roi = self.find_entities_of_interest(
+            new_zr6,
+            excluded_entities=[selected_entity],
+        )
+        is_bumping, zr6_pairs, zr6_blocked = self.probe_entity_against_entities(
+            new_zr6,
+            zr6_roi,
+            blocked_new_entity_carboxylates=[
+                zr6_attachment_carboxylate,
+                zr6_prebound_carboxylate,
+            ],
+        )
+        if is_bumping:
+            self.time_for_find_connection += (time.time()-start_time)
+            self.cleanup_unadded_entities([new_zr6, distorted_bdc])
+            self.prebound_linker_site_failures += 1
+            return False
+
+        distorted_bdc_roi = self.find_entities_of_interest(
+            distorted_bdc,
+            excluded_entities=[selected_entity],
+        )
+        is_bumping, distorted_bdc_pairs, distorted_bdc_blocked = self.probe_entity_against_entities(
+            distorted_bdc,
+            distorted_bdc_roi,
+            blocked_new_entity_carboxylates=[bdc_attachment_carboxylate],
+        )
+        self.time_for_find_connection += (time.time()-start_time)
+        if is_bumping:
+            self.cleanup_unadded_entities([new_zr6, distorted_bdc])
+            self.prebound_linker_site_failures += 1
+            return False
+
+        start_time = time.time()
+        self.add_entity(
+            selected_carboxylate,
+            new_zr6,
+            zr6_attachment_carboxylate,
+            zr6_pairs,
+            zr6_blocked,
+        )
+        self.add_entity(
+            zr6_prebound_carboxylate,
+            distorted_bdc,
+            bdc_attachment_carboxylate,
+            distorted_bdc_pairs,
+            distorted_bdc_blocked,
+        )
+        self.record_prebound_success(
+            entities_before,
+            free_growth_sites_before,
+            linked_pairs_before,
+            ready_pairs_before,
+        )
+        self.prebound_linker_site_successes += 1
         self.time_for_add_new_entity += (time.time()-start_time)
         return True
 

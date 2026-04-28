@@ -51,7 +51,6 @@ except ImportError:
 from MOL_Assembly_Large_Correction_20250811 import *
 from distorted_ligand_model import (
     PREBOUND_MODEL_CLUSTER_ONE_TO_ONE,
-    compute_absolute_external_channel_activities,
     compute_prebound_chemistry_state,
     default_prebound_state,
     solve_linker_carboxylate_to_acid_ratio,
@@ -220,15 +219,28 @@ LEGACY_EXTERNAL_ADDITION_ACTIVITY = float(
     )
 )
 LEGACY_EXTERNAL_ADDITION_ACTIVITY = min(max(LEGACY_EXTERNAL_ADDITION_ACTIVITY, 0.0), 1.0)
-EXTERNAL_CHANNEL_ACTIVITY_STATE = compute_absolute_external_channel_activities(
-    distorted_ligand_state,
-    zr6_conc_for_growth=Zr6_conc_for_growth,
-    linker_conc_for_growth=LINKER_CONC_FOR_GROWTH,
+FREE_ZR6_ADDITION_ACTIVITY = min(max(float(effective_zr6_fraction_for_growth), 0.0), 1.0)
+FREE_LINKER_ADDITION_ACTIVITY = min(
+    max(float(distorted_ligand_state["free_linker_fraction"]), 0.0),
+    1.0,
 )
-FREE_ZR6_ADDITION_ACTIVITY = EXTERNAL_CHANNEL_ACTIVITY_STATE["free_zr6_addition_activity"]
-FREE_LINKER_ADDITION_ACTIVITY = EXTERNAL_CHANNEL_ACTIVITY_STATE["free_linker_addition_activity"]
-PREBOUND_ZR_BTB_ADDITION_ACTIVITY = EXTERNAL_CHANNEL_ACTIVITY_STATE["prebound_zr_btb_addition_activity"]
-TOTAL_EXTERNAL_ADDITION_CHANNEL_ACTIVITY = EXTERNAL_CHANNEL_ACTIVITY_STATE["total_external_addition_channel_activity"]
+PREBOUND_ZR_BTB_ADDITION_ACTIVITY = min(
+    max(
+        float(
+            distorted_ligand_state.get(
+                "prebound_zr6_cluster_fraction",
+                distorted_ligand_state.get("prebound_zr_btb_fraction", 0.0),
+            )
+        ),
+        0.0,
+    ),
+    1.0,
+)
+TOTAL_EXTERNAL_ADDITION_CHANNEL_ACTIVITY = (
+    FREE_ZR6_ADDITION_ACTIVITY
+    + FREE_LINKER_ADDITION_ACTIVITY
+    + PREBOUND_ZR_BTB_ADDITION_ACTIVITY
+)
 
 chemistry_summary = {
     "ZR6_PERCENTAGE": ZR6_PERCENTAGE,
@@ -251,8 +263,8 @@ chemistry_summary = {
     "free_zr6_addition_activity": FREE_ZR6_ADDITION_ACTIVITY,
     "free_linker_addition_activity": FREE_LINKER_ADDITION_ACTIVITY,
     "prebound_zr_btb_addition_activity": PREBOUND_ZR_BTB_ADDITION_ACTIVITY,
-    "external_channel_activity_basis": EXTERNAL_CHANNEL_ACTIVITY_STATE["external_channel_activity_basis"],
-    "prebound_external_channel_species": EXTERNAL_CHANNEL_ACTIVITY_STATE["prebound_external_channel_species"],
+    "external_channel_activity_basis": "normalized_fractions_matching_uio66",
+    "prebound_external_channel_species": "prebound_zr6_cluster_fraction",
 }
 if current_folder is not None:
     with open(os.path.join(current_folder, "chemistry_summary.json"), "w", encoding="utf-8") as handle:
@@ -384,6 +396,12 @@ run_summary = {
     "prebound_growth_attempts": assembly.prebound_growth_attempts,
     "prebound_growth_successes": assembly.prebound_growth_successes,
     "prebound_growth_failures": assembly.prebound_growth_failures,
+    "prebound_metal_site_attempts": assembly.prebound_metal_site_attempts,
+    "prebound_metal_site_successes": assembly.prebound_metal_site_successes,
+    "prebound_metal_site_failures": assembly.prebound_metal_site_failures,
+    "prebound_linker_site_attempts": assembly.prebound_linker_site_attempts,
+    "prebound_linker_site_successes": assembly.prebound_linker_site_successes,
+    "prebound_linker_site_failures": assembly.prebound_linker_site_failures,
     "prebound_entities_added": assembly.prebound_entities_added,
     "prebound_linkages_formed": assembly.prebound_linkages_formed,
     "prebound_free_growth_site_delta": assembly.prebound_free_growth_site_delta,
@@ -400,8 +418,8 @@ run_summary = {
     "free_zr6_addition_activity": FREE_ZR6_ADDITION_ACTIVITY,
     "free_linker_addition_activity": FREE_LINKER_ADDITION_ACTIVITY,
     "prebound_zr_btb_addition_activity": PREBOUND_ZR_BTB_ADDITION_ACTIVITY,
-    "external_channel_activity_basis": EXTERNAL_CHANNEL_ACTIVITY_STATE["external_channel_activity_basis"],
-    "prebound_external_channel_species": EXTERNAL_CHANNEL_ACTIVITY_STATE["prebound_external_channel_species"],
+    "external_channel_activity_basis": "normalized_fractions_matching_uio66",
+    "prebound_external_channel_species": "prebound_zr6_cluster_fraction",
     "final_free_growth_sites": len(assembly.free_carboxylates),
     "final_metal_growth_sites": len(assembly.MC_free_carboxylates),
     "final_linker_growth_sites": len(assembly.Linker_free_carboxylates),

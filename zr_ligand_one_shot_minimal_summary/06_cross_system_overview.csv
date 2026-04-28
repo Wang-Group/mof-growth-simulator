@@ -1,0 +1,18 @@
+system,regime,target_entities,zr_mM,success_fraction,median_time_s,experimental_time_min,note
+Hf-BTB-MOL,one-shot target20,20,3.3830513,1.0,86.39267466301385,36.0,all 24/24 runs reached entity=20
+Hf-BTB-MOL,one-shot target20,20,6.766102599,1.0,109.17077330711312,17.0,all 24/24 runs reached entity=20
+Hf-BTB-MOL,one-shot target20,20,13.5322052,1.0,63.74071461922614,13.0,all 24/24 runs reached entity=20
+Hf-BTB-MOL,one-shot target20,20,27.0644104,1.0,106.56900361610342,11.0,all 24/24 runs reached entity=20
+Hf-BTB-MOL,one-shot target20,20,54.12882079,1.0,162.08629046765026,11.0,all 24/24 runs reached entity=20
+Hf-BTB-MOL,one-shot target20,20,108.2576416,1.0,201.06151713623692,12.0,all 24/24 runs reached entity=20
+Hf-BTB-MOL,one-shot target20,20,216.5152832,1.0,487.1465741599056,15.0,all 24/24 runs reached entity=20
+UiO-66,experiment-consistent one-shot target8,8,2.0,0.2083333333333333,7243.065967679926,,use survival analysis because many runs are censored
+UiO-66,experiment-consistent one-shot target8,8,4.0,0.1666666666666666,5905.708671238148,,use survival analysis because many runs are censored
+UiO-66,experiment-consistent one-shot target8,8,8.0,0.2083333333333333,359626.4615647576,,use survival analysis because many runs are censored
+UiO-66,experiment-consistent one-shot target8,8,16.0,0.0833333333333333,6563.556758688803,,use survival analysis because many runs are censored
+UiO-66,experiment-consistent one-shot target8,8,32.0,0.0,,,use survival analysis because many runs are censored
+UiO-66,mechanism-scan one-shot target20,20,24.0,0.08333333333333334,3027.7513349270994,,high-Zr collapse; many runs fail before entity=20
+UiO-66,mechanism-scan one-shot target20,20,32.0,0.16666666666666669,4895.894491293006,,high-Zr collapse; many runs fail before entity=20
+UiO-66,mechanism-scan one-shot target20,20,40.0,0.04166666666666667,584.9756921888455,,high-Zr collapse; many runs fail before entity=20
+UiO-66,mechanism-scan one-shot target20,20,48.0,0.0,,,high-Zr collapse; many runs fail before entity=20
+UiO-66,mechanism-scan one-shot target20,20,64.0,0.0,,,high-Zr collapse; many runs fail before entity=20
