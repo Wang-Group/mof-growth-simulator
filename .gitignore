@@ -11,7 +11,8 @@ __pycache__/
 *.tmp
 *.swp
 *.swo
-
+*.svg
+*.mol2
 # Generated UiO-66 defect-growth structures / trajectory checkpoints
 UiO-66/UiO_66_from_amorphous/initialize_structures1/output/**/*.mol2
 UiO-66/UiO_66_from_amorphous/initialize_structures1/output/**/*.pkl
