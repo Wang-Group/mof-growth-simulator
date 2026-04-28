@@ -1,0 +1,37 @@
+{
+  "ZR6_PERCENTAGE": 1.0,
+  "Zr_conc_total": 96.0,
+  "Linker_conc_total": 4.0,
+  "Capping_agent_conc": 300.0,
+  "equilibrium_constant_coefficient": 1.32975172557788,
+  "effective_equilibrium_constant": 1.5250299510123937,
+  "distorted_linker_enabled": true,
+  "distorted_ligand_state": {
+    "association_constant": 0.010166866340082625,
+    "effective_exchange_equilibrium_constant": 1.5250299510123937,
+    "acid_speciation": {
+      "linker_carboxylate_to_acid_ratio": 0.0,
+      "formate_to_acid_ratio": 0.0,
+      "linker_carboxylic_acid_conc": 8.0,
+      "formic_acid_conc": 300.0
+    },
+    "second_step_equivalents": 1.0,
+    "total_zr6_conc": 16.0,
+    "total_linker_conc": 4.0,
+    "distorted_ligand_conc": 0.5432222335419898,
+    "polymerized_distorted_conc": 0.5432222335419898,
+    "off_pathway_zr6_conc": 1.0864444670839797,
+    "off_pathway_linker_conc": 1.0864444670839797,
+    "distorted_ligand_fraction": 0.13580555838549746,
+    "off_pathway_linker_fraction": 0.2716111167709949,
+    "off_pathway_zr6_fraction": 0.06790277919274873,
+    "free_zr6_conc": 14.913555532916021,
+    "free_linker_conc": 2.9135555329160203,
+    "free_zr6_fraction": 0.9320972208072513,
+    "free_linker_fraction": 0.7283888832290051
+  },
+  "effective_zr6_conc_for_growth": 14.913555532916021,
+  "effective_linker_conc_for_growth": 2.9135555329160203,
+  "Zr6_conc_adding_probability": 0.4562759363714627,
+  "external_addition_activity": 0.823971634053414
+}

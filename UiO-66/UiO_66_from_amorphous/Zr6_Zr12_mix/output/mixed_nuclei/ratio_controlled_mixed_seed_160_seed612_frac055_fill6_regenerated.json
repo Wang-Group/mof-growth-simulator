@@ -1,0 +1,1415 @@
+{
+  "rng_seed": 612,
+  "target_entities": 160,
+  "attempts_per_step": 1000,
+  "max_growth_steps": 30000,
+  "cluster_add_probability": 0.65,
+  "internal_link_probability": 0.2,
+  "target_zr12_fraction": 0.55,
+  "initial_internal_zr12_count": 5,
+  "seed_zr6_branches": 4,
+  "initial_zr6_branches_per_zr12": 1,
+  "inner_zr6_fill_count": 6,
+  "inner_zr6_radial_min": 0.08,
+  "inner_zr6_radial_max": 0.58,
+  "inner_zr6_target_radial": 0.32,
+  "max_zr12_coordination": 8,
+  "max_axis_ratio_1_3": null,
+  "pick_preference": "sparse_outer",
+  "counts": {
+    "Zr6_AA": 37,
+    "Zr12_AA": 37,
+    "BDC": 98,
+    "total_entities": 172,
+    "linked_pairs": 175,
+    "ready_pairs": 0,
+    "free_carboxylates": 956
+  },
+  "cluster_shape": {
+    "covariance_eigenvalues": [
+      811.3879443062078,
+      553.0425862054333,
+      524.075098528185
+    ],
+    "principal_axis_ratio_1_2": 1.4671346557113227,
+    "principal_axis_ratio_2_3": 1.0552735433501816,
+    "principal_axis_ratio_1_3": 1.548228386704336,
+    "span_xyz": [
+      97.45468879508113,
+      107.63780072014708,
+      120.86181151560933
+    ],
+    "span_ratio_max_min": 1.2401846746414282
+  },
+  "zr12_to_zr6_ratio": 1.0,
+  "zr12_radial_fraction_stats": {
+    "min": 0.0273972602739726,
+    "median": 0.5068493150684932,
+    "max": 1.0
+  },
+  "cluster_coordination": [
+    {
+      "cluster_id": 6,
+      "kind": "Zr6_AA",
+      "coordination": 7,
+      "max_sites": 12,
+      "free_sites": 5,
+      "radius_from_cluster_centroid": 7.690628054492365,
+      "center": [
+        20.8063,
+        -0.5813,
+        -0.1479
+      ],
+      "radial_rank_inner_to_outer": 0,
+      "radial_fraction": 0.0
+    },
+    {
+      "cluster_id": 0,
+      "kind": "Zr6_AA",
+      "coordination": 6,
+      "max_sites": 12,
+      "free_sites": 6,
+      "radius_from_cluster_centroid": 9.341292505256046,
+      "center": [
+        20.955,
+        10.4775,
+        10.4775
+      ],
+      "radial_rank_inner_to_outer": 1,
+      "radial_fraction": 0.0136986301369863
+    },
+    {
+      "cluster_id": 5,
+      "kind": "Zr12_AA",
+      "coordination": 8,
+      "max_sites": 18,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 10.29364342908447,
+      "center": [
+        12.3102,
+        -1.8951,
+        12.4071
+      ],
+      "radial_rank_inner_to_outer": 2,
+      "radial_fraction": 0.0273972602739726
+    },
+    {
+      "cluster_id": 4,
+      "kind": "Zr6_AA",
+      "coordination": 7,
+      "max_sites": 12,
+      "free_sites": 5,
+      "radius_from_cluster_centroid": 11.896402850596315,
+      "center": [
+        31.6339,
+        -0.2012,
+        10.4776
+      ],
+      "radial_rank_inner_to_outer": 3,
+      "radial_fraction": 0.0410958904109589
+    },
+    {
+      "cluster_id": 33,
+      "kind": "Zr6_AA",
+      "coordination": 2,
+      "max_sites": 12,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 15.220235830367928,
+      "center": [
+        10.2722,
+        10.2366,
+        -0.4327
+      ],
+      "radial_rank_inner_to_outer": 4,
+      "radial_fraction": 0.0547945205479452
+    },
+    {
+      "cluster_id": 1,
+      "kind": "Zr6_AA",
+      "coordination": 3,
+      "max_sites": 12,
+      "free_sites": 9,
+      "radius_from_cluster_centroid": 16.027830649421688,
+      "center": [
+        31.6337,
+        10.4776,
+        -0.2014
+      ],
+      "radial_rank_inner_to_outer": 5,
+      "radial_fraction": 0.0684931506849315
+    },
+    {
+      "cluster_id": 16,
+      "kind": "Zr12_AA",
+      "coordination": 5,
+      "max_sites": 18,
+      "free_sites": 13,
+      "radius_from_cluster_centroid": 17.21814909416023,
+      "center": [
+        27.1882,
+        -10.4115,
+        17.258
+      ],
+      "radial_rank_inner_to_outer": 6,
+      "radial_fraction": 0.0821917808219178
+    },
+    {
+      "cluster_id": 3,
+      "kind": "Zr6_AA",
+      "coordination": 2,
+      "max_sites": 12,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 19.333300614294618,
+      "center": [
+        10.2763,
+        10.4774,
+        21.1564
+      ],
+      "radial_rank_inner_to_outer": 7,
+      "radial_fraction": 0.0958904109589041
+    },
+    {
+      "cluster_id": 21,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 19.433339377788286,
+      "center": [
+        29.7041,
+        8.4436,
+        22.8502
+      ],
+      "radial_rank_inner_to_outer": 8,
+      "radial_fraction": 0.1095890410958904
+    },
+    {
+      "cluster_id": 29,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 20.03710444929904,
+      "center": [
+        20.7999,
+        9.6622,
+        -11.245
+      ],
+      "radial_rank_inner_to_outer": 9,
+      "radial_fraction": 0.1232876712328767
+    },
+    {
+      "cluster_id": 7,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 20.75219854646274,
+      "center": [
+        8.2727,
+        -12.8159,
+        -1.2962
+      ],
+      "radial_rank_inner_to_outer": 10,
+      "radial_fraction": 0.136986301369863
+    },
+    {
+      "cluster_id": 15,
+      "kind": "Zr12_AA",
+      "coordination": 4,
+      "max_sites": 18,
+      "free_sites": 14,
+      "radius_from_cluster_centroid": 21.378613045835,
+      "center": [
+        33.4439,
+        -12.5467,
+        -1.8677
+      ],
+      "radial_rank_inner_to_outer": 11,
+      "radial_fraction": 0.1506849315068493
+    },
+    {
+      "cluster_id": 42,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 22.117088999089695,
+      "center": [
+        18.7972,
+        22.8561,
+        0.7045
+      ],
+      "radial_rank_inner_to_outer": 12,
+      "radial_fraction": 0.1643835616438356
+    },
+    {
+      "cluster_id": 2,
+      "kind": "Zr6_AA",
+      "coordination": 3,
+      "max_sites": 12,
+      "free_sites": 9,
+      "radius_from_cluster_centroid": 22.66675158126715,
+      "center": [
+        31.6339,
+        21.1562,
+        10.4776
+      ],
+      "radial_rank_inner_to_outer": 13,
+      "radial_fraction": 0.1780821917808219
+    },
+    {
+      "cluster_id": 32,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 23.80521451027543,
+      "center": [
+        14.1273,
+        -7.18,
+        28.3219
+      ],
+      "radial_rank_inner_to_outer": 14,
+      "radial_fraction": 0.1917808219178082
+    },
+    {
+      "cluster_id": 39,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 24.533200683943313,
+      "center": [
+        44.0065,
+        -2.1308,
+        1.8328
+      ],
+      "radial_rank_inner_to_outer": 15,
+      "radial_fraction": 0.2054794520547945
+    },
+    {
+      "cluster_id": 20,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 26.045612808910747,
+      "center": [
+        25.4702,
+        -11.4888,
+        -14.6726
+      ],
+      "radial_rank_inner_to_outer": 16,
+      "radial_fraction": 0.2191780821917808
+    },
+    {
+      "cluster_id": 17,
+      "kind": "Zr12_AA",
+      "coordination": 5,
+      "max_sites": 18,
+      "free_sites": 13,
+      "radius_from_cluster_centroid": 26.28762397451083,
+      "center": [
+        43.9793,
+        12.1441,
+        12.2879
+      ],
+      "radial_rank_inner_to_outer": 17,
+      "radial_fraction": 0.2328767123287671
+    },
+    {
+      "cluster_id": 34,
+      "kind": "Zr12_AA",
+      "coordination": 7,
+      "max_sites": 18,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 28.477110651140784,
+      "center": [
+        10.9442,
+        -20.8587,
+        21.6633
+      ],
+      "radial_rank_inner_to_outer": 18,
+      "radial_fraction": 0.2465753424657534
+    },
+    {
+      "cluster_id": 68,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 28.54885889010329,
+      "center": [
+        -0.3502,
+        9.931,
+        -10.6864
+      ],
+      "radial_rank_inner_to_outer": 19,
+      "radial_fraction": 0.2602739726027397
+    },
+    {
+      "cluster_id": 22,
+      "kind": "Zr6_AA",
+      "coordination": 2,
+      "max_sites": 12,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 28.857508242374298,
+      "center": [
+        41.6731,
+        -10.991,
+        21.8827
+      ],
+      "radial_rank_inner_to_outer": 20,
+      "radial_fraction": 0.273972602739726
+    },
+    {
+      "cluster_id": 11,
+      "kind": "Zr12_AA",
+      "coordination": 3,
+      "max_sites": 18,
+      "free_sites": 15,
+      "radius_from_cluster_centroid": 29.337398235084166,
+      "center": [
+        44.0066,
+        8.5484,
+        -8.8462
+      ],
+      "radial_rank_inner_to_outer": 21,
+      "radial_fraction": 0.2876712328767123
+    },
+    {
+      "cluster_id": 38,
+      "kind": "Zr12_AA",
+      "coordination": 6,
+      "max_sites": 18,
+      "free_sites": 12,
+      "radius_from_cluster_centroid": 29.981297837971155,
+      "center": [
+        12.0749,
+        22.0535,
+        -13.2859
+      ],
+      "radial_rank_inner_to_outer": 22,
+      "radial_fraction": 0.3013698630136986
+    },
+    {
+      "cluster_id": 69,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 30.53720011249858,
+      "center": [
+        46.3895,
+        17.3037,
+        3.3688
+      ],
+      "radial_rank_inner_to_outer": 23,
+      "radial_fraction": 0.3150684931506849
+    },
+    {
+      "cluster_id": 31,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 31.50823858748386,
+      "center": [
+        29.9871,
+        -16.6718,
+        30.8415
+      ],
+      "radial_rank_inner_to_outer": 24,
+      "radial_fraction": 0.3287671232876712
+    },
+    {
+      "cluster_id": 18,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 31.750000804342633,
+      "center": [
+        26.6884,
+        -26.5229,
+        -5.8039
+      ],
+      "radial_rank_inner_to_outer": 25,
+      "radial_fraction": 0.3424657534246575
+    },
+    {
+      "cluster_id": 9,
+      "kind": "Zr12_AA",
+      "coordination": 3,
+      "max_sites": 18,
+      "free_sites": 15,
+      "radius_from_cluster_centroid": 32.397855375294405,
+      "center": [
+        1.6315,
+        22.85,
+        23.086
+      ],
+      "radial_rank_inner_to_outer": 26,
+      "radial_fraction": 0.3561643835616438
+    },
+    {
+      "cluster_id": 24,
+      "kind": "Zr12_AA",
+      "coordination": 6,
+      "max_sites": 18,
+      "free_sites": 12,
+      "radius_from_cluster_centroid": 33.87452986146919,
+      "center": [
+        44.9656,
+        -21.2047,
+        11.0948
+      ],
+      "radial_rank_inner_to_outer": 27,
+      "radial_fraction": 0.3698630136986301
+    },
+    {
+      "cluster_id": 70,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 34.29166664450343,
+      "center": [
+        -1.5356,
+        -23.8449,
+        13.4857
+      ],
+      "radial_rank_inner_to_outer": 28,
+      "radial_fraction": 0.3835616438356164
+    },
+    {
+      "cluster_id": 51,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 35.51814618870852,
+      "center": [
+        31.1066,
+        -31.8006,
+        11.6309
+      ],
+      "radial_rank_inner_to_outer": 29,
+      "radial_fraction": 0.3972602739726027
+    },
+    {
+      "cluster_id": 8,
+      "kind": "Zr6_AA",
+      "coordination": 2,
+      "max_sites": 12,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 36.24423246166377,
+      "center": [
+        2.5479,
+        -18.7975,
+        -16.7732
+      ],
+      "radial_rank_inner_to_outer": 30,
+      "radial_fraction": 0.410958904109589
+    },
+    {
+      "cluster_id": 47,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 36.629980033228776,
+      "center": [
+        56.2559,
+        3.3975,
+        14.367
+      ],
+      "radial_rank_inner_to_outer": 31,
+      "radial_fraction": 0.4246575342465753
+    },
+    {
+      "cluster_id": 28,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 37.098758577009136,
+      "center": [
+        48.8571,
+        -17.6098,
+        -6.6191
+      ],
+      "radial_rank_inner_to_outer": 32,
+      "radial_fraction": 0.4383561643835616
+    },
+    {
+      "cluster_id": 13,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 37.166863756496504,
+      "center": [
+        -8.4263,
+        -8.6605,
+        -13.8841
+      ],
+      "radial_rank_inner_to_outer": 33,
+      "radial_fraction": 0.4520547945205479
+    },
+    {
+      "cluster_id": 41,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 37.24446463940764,
+      "center": [
+        27.8504,
+        27.0452,
+        -19.1436
+      ],
+      "radial_rank_inner_to_outer": 34,
+      "radial_fraction": 0.4657534246575342
+    },
+    {
+      "cluster_id": 19,
+      "kind": "Zr12_AA",
+      "coordination": 5,
+      "max_sites": 18,
+      "free_sites": 13,
+      "radius_from_cluster_centroid": 37.53918933869457,
+      "center": [
+        38.1021,
+        -21.0315,
+        -16.825
+      ],
+      "radial_rank_inner_to_outer": 35,
+      "radial_fraction": 0.4794520547945205
+    },
+    {
+      "cluster_id": 43,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 37.72352110030619,
+      "center": [
+        11.4811,
+        -34.1872,
+        14.342
+      ],
+      "radial_rank_inner_to_outer": 36,
+      "radial_fraction": 0.4931506849315068
+    },
+    {
+      "cluster_id": 45,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 39.580715203391755,
+      "center": [
+        43.9794,
+        33.5015,
+        8.6673
+      ],
+      "radial_rank_inner_to_outer": 37,
+      "radial_fraction": 0.5068493150684932
+    },
+    {
+      "cluster_id": 25,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 40.889006231543334,
+      "center": [
+        59.8932,
+        2.8053,
+        -3.2948
+      ],
+      "radial_rank_inner_to_outer": 38,
+      "radial_fraction": 0.5205479452054794
+    },
+    {
+      "cluster_id": 27,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 40.92403421417502,
+      "center": [
+        39.3533,
+        -4.6769,
+        -28.5184
+      ],
+      "radial_rank_inner_to_outer": 39,
+      "radial_fraction": 0.5342465753424658
+    },
+    {
+      "cluster_id": 58,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 40.99087006319906,
+      "center": [
+        -11.8466,
+        -16.92,
+        24.2749
+      ],
+      "radial_rank_inner_to_outer": 40,
+      "radial_fraction": 0.547945205479452
+    },
+    {
+      "cluster_id": 12,
+      "kind": "Zr6_AA",
+      "coordination": 3,
+      "max_sites": 12,
+      "free_sites": 9,
+      "radius_from_cluster_centroid": 41.64836588919919,
+      "center": [
+        56.4677,
+        17.0632,
+        -6.9079
+      ],
+      "radial_rank_inner_to_outer": 41,
+      "radial_fraction": 0.5616438356164384
+    },
+    {
+      "cluster_id": 54,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 41.91072985225349,
+      "center": [
+        29.1532,
+        21.8704,
+        42.874
+      ],
+      "radial_rank_inner_to_outer": 42,
+      "radial_fraction": 0.5753424657534246
+    },
+    {
+      "cluster_id": 37,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 42.41136770262042,
+      "center": [
+        18.299,
+        -31.1483,
+        33.834
+      ],
+      "radial_rank_inner_to_outer": 43,
+      "radial_fraction": 0.589041095890411
+    },
+    {
+      "cluster_id": 49,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 42.80312035455059,
+      "center": [
+        43.57,
+        -33.9869,
+        3.1366
+      ],
+      "radial_rank_inner_to_outer": 44,
+      "radial_fraction": 0.6027397260273972
+    },
+    {
+      "cluster_id": 10,
+      "kind": "Zr6_AA",
+      "coordination": 2,
+      "max_sites": 12,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 43.33184836686438,
+      "center": [
+        7.0212,
+        27.9622,
+        38.9892
+      ],
+      "radial_rank_inner_to_outer": 45,
+      "radial_fraction": 0.6164383561643836
+    },
+    {
+      "cluster_id": 60,
+      "kind": "Zr6_AA",
+      "coordination": 3,
+      "max_sites": 12,
+      "free_sites": 9,
+      "radius_from_cluster_centroid": 44.68203729399459,
+      "center": [
+        17.5136,
+        37.5885,
+        -19.3834
+      ],
+      "radial_rank_inner_to_outer": 46,
+      "radial_fraction": 0.6301369863013698
+    },
+    {
+      "cluster_id": 71,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 45.557485099570194,
+      "center": [
+        -7.0917,
+        24.6098,
+        35.4289
+      ],
+      "radial_rank_inner_to_outer": 47,
+      "radial_fraction": 0.6438356164383562
+    },
+    {
+      "cluster_id": 46,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 45.56755934574874,
+      "center": [
+        -18.1774,
+        2.6667,
+        -17.106
+      ],
+      "radial_rank_inner_to_outer": 48,
+      "radial_fraction": 0.6575342465753424
+    },
+    {
+      "cluster_id": 35,
+      "kind": "Zr6_AA",
+      "coordination": 2,
+      "max_sites": 12,
+      "free_sites": 10,
+      "radius_from_cluster_centroid": 45.85467635555824,
+      "center": [
+        5.8045,
+        -36.4086,
+        27.9782
+      ],
+      "radial_rank_inner_to_outer": 49,
+      "radial_fraction": 0.6712328767123288
+    },
+    {
+      "cluster_id": 52,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 46.2790203222041,
+      "center": [
+        61.4301,
+        19.3147,
+        19.3469
+      ],
+      "radial_rank_inner_to_outer": 50,
+      "radial_fraction": 0.684931506849315
+    },
+    {
+      "cluster_id": 36,
+      "kind": "Zr12_AA",
+      "coordination": 3,
+      "max_sites": 18,
+      "free_sites": 15,
+      "radius_from_cluster_centroid": 47.15237965738924,
+      "center": [
+        -5.7482,
+        -27.8391,
+        32.9421
+      ],
+      "radial_rank_inner_to_outer": 51,
+      "radial_fraction": 0.6986301369863014
+    },
+    {
+      "cluster_id": 30,
+      "kind": "Zr12_AA",
+      "coordination": 3,
+      "max_sites": 18,
+      "free_sites": 15,
+      "radius_from_cluster_centroid": 48.24875811395273,
+      "center": [
+        46.72,
+        -37.3341,
+        17.4358
+      ],
+      "radial_rank_inner_to_outer": 52,
+      "radial_fraction": 0.7123287671232876
+    },
+    {
+      "cluster_id": 40,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 48.3388292694509,
+      "center": [
+        -11.3764,
+        -22.4121,
+        -20.1097
+      ],
+      "radial_rank_inner_to_outer": 53,
+      "radial_fraction": 0.726027397260274
+    },
+    {
+      "cluster_id": 72,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 48.555239598385164,
+      "center": [
+        28.4994,
+        -38.8689,
+        -18.1486
+      ],
+      "radial_rank_inner_to_outer": 54,
+      "radial_fraction": 0.7397260273972602
+    },
+    {
+      "cluster_id": 23,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 49.14256339159353,
+      "center": [
+        53.7307,
+        19.9645,
+        -24.0013
+      ],
+      "radial_rank_inner_to_outer": 55,
+      "radial_fraction": 0.7534246575342466
+    },
+    {
+      "cluster_id": 73,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 49.54604593999113,
+      "center": [
+        60.9266,
+        -26.6954,
+        6.2789
+      ],
+      "radial_rank_inner_to_outer": 56,
+      "radial_fraction": 0.7671232876712328
+    },
+    {
+      "cluster_id": 53,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 50.33626333852617,
+      "center": [
+        34.3262,
+        -45.9078,
+        15.3329
+      ],
+      "radial_rank_inner_to_outer": 57,
+      "radial_fraction": 0.7808219178082192
+    },
+    {
+      "cluster_id": 64,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 50.81620813921471,
+      "center": [
+        31.7336,
+        40.7897,
+        -23.3354
+      ],
+      "radial_rank_inner_to_outer": 58,
+      "radial_fraction": 0.7945205479452054
+    },
+    {
+      "cluster_id": 48,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 50.951500502548996,
+      "center": [
+        -22.4071,
+        -22.3826,
+        -6.3444
+      ],
+      "radial_rank_inner_to_outer": 59,
+      "radial_fraction": 0.8082191780821918
+    },
+    {
+      "cluster_id": 14,
+      "kind": "Zr6_AA",
+      "coordination": 7,
+      "max_sites": 12,
+      "free_sites": 5,
+      "radius_from_cluster_centroid": 52.150869929907955,
+      "center": [
+        -21.9457,
+        -11.6253,
+        -20.2066
+      ],
+      "radial_rank_inner_to_outer": 60,
+      "radial_fraction": 0.821917808219178
+    },
+    {
+      "cluster_id": 26,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 53.0624895764003,
+      "center": [
+        44.5467,
+        -23.3601,
+        -32.8403
+      ],
+      "radial_rank_inner_to_outer": 61,
+      "radial_fraction": 0.8356164383561644
+    },
+    {
+      "cluster_id": 50,
+      "kind": "Zr12_AA",
+      "coordination": 5,
+      "max_sites": 18,
+      "free_sites": 13,
+      "radius_from_cluster_centroid": 54.08672806278278,
+      "center": [
+        13.7466,
+        30.7321,
+        52.3546
+      ],
+      "radial_rank_inner_to_outer": 62,
+      "radial_fraction": 0.8493150684931506
+    },
+    {
+      "cluster_id": 61,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 56.35967651861746,
+      "center": [
+        6.4191,
+        47.4441,
+        -22.7481
+      ],
+      "radial_rank_inner_to_outer": 63,
+      "radial_fraction": 0.863013698630137
+    },
+    {
+      "cluster_id": 56,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 59.21361333040708,
+      "center": [
+        -35.2803,
+        -10.575,
+        -8.8409
+      ],
+      "radial_rank_inner_to_outer": 64,
+      "radial_fraction": 0.8767123287671232
+    },
+    {
+      "cluster_id": 55,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 59.9876590665647,
+      "center": [
+        10.9682,
+        20.5785,
+        63.342
+      ],
+      "radial_rank_inner_to_outer": 65,
+      "radial_fraction": 0.8904109589041096
+    },
+    {
+      "cluster_id": 62,
+      "kind": "Zr6_AA",
+      "coordination": 4,
+      "max_sites": 12,
+      "free_sites": 8,
+      "radius_from_cluster_centroid": 61.10191577616505,
+      "center": [
+        19.5271,
+        50.3135,
+        -29.9238
+      ],
+      "radial_rank_inner_to_outer": 66,
+      "radial_fraction": 0.9041095890410958
+    },
+    {
+      "cluster_id": 44,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 62.181376071697436,
+      "center": [
+        -34.3077,
+        -2.9476,
+        -22.0553
+      ],
+      "radial_rank_inner_to_outer": 67,
+      "radial_fraction": 0.9178082191780822
+    },
+    {
+      "cluster_id": 67,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 63.393167183198585,
+      "center": [
+        10.5185,
+        40.9223,
+        -41.7028
+      ],
+      "radial_rank_inner_to_outer": 68,
+      "radial_fraction": 0.9315068493150684
+    },
+    {
+      "cluster_id": 59,
+      "kind": "Zr6_AA",
+      "coordination": 1,
+      "max_sites": 12,
+      "free_sites": 11,
+      "radius_from_cluster_centroid": 65.49385844380373,
+      "center": [
+        -36.0246,
+        -25.0252,
+        -12.5988
+      ],
+      "radial_rank_inner_to_outer": 69,
+      "radial_fraction": 0.9452054794520548
+    },
+    {
+      "cluster_id": 57,
+      "kind": "Zr12_AA",
+      "coordination": 2,
+      "max_sites": 18,
+      "free_sites": 16,
+      "radius_from_cluster_centroid": 69.53093989517455,
+      "center": [
+        20.2376,
+        36.2058,
+        67.5646
+      ],
+      "radial_rank_inner_to_outer": 70,
+      "radial_fraction": 0.958904109589041
+    },
+    {
+      "cluster_id": 65,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 84.47662126956516,
+      "center": [
+        4.2348,
+        42.902,
+        79.159
+      ],
+      "radial_rank_inner_to_outer": 71,
+      "radial_fraction": 0.9726027397260274
+    },
+    {
+      "cluster_id": 63,
+      "kind": "Zr12_AA",
+      "coordination": 5,
+      "max_sites": 18,
+      "free_sites": 13,
+      "radius_from_cluster_centroid": 85.8627055641838,
+      "center": [
+        14.3758,
+        53.9518,
+        75.0808
+      ],
+      "radial_rank_inner_to_outer": 72,
+      "radial_fraction": 0.9863013698630136
+    },
+    {
+      "cluster_id": 66,
+      "kind": "Zr12_AA",
+      "coordination": 1,
+      "max_sites": 18,
+      "free_sites": 17,
+      "radius_from_cluster_centroid": 88.74203216372422,
+      "center": [
+        29.6387,
+        61.73,
+        71.92
+      ],
+      "radial_rank_inner_to_outer": 73,
+      "radial_fraction": 1.0
+    }
+  ],
+  "core_build_log": [
+    {
+      "step": "seed",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "seed_branch",
+      "branch_index": 0,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "seed_branch",
+      "branch_index": 1,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "seed_branch",
+      "branch_index": 2,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "seed_branch",
+      "branch_index": 3,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "core_zr12",
+      "z12_index": 0,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr12_AA"
+    },
+    {
+      "step": "z12_branch",
+      "z12_index": 0,
+      "branch_index": 0,
+      "anchor_kind": "Zr12_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "core_zr12",
+      "z12_index": 1,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr12_AA"
+    },
+    {
+      "step": "z12_branch",
+      "z12_index": 1,
+      "branch_index": 0,
+      "anchor_kind": "Zr12_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "core_zr12",
+      "z12_index": 2,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr12_AA"
+    },
+    {
+      "step": "z12_branch",
+      "z12_index": 2,
+      "branch_index": 0,
+      "anchor_kind": "Zr12_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "core_zr12",
+      "z12_index": 3,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr12_AA"
+    },
+    {
+      "step": "z12_branch",
+      "z12_index": 3,
+      "branch_index": 0,
+      "anchor_kind": "Zr12_AA",
+      "entity": "Zr6_AA"
+    },
+    {
+      "step": "core_zr12",
+      "z12_index": 4,
+      "anchor_kind": "Zr6_AA",
+      "entity": "Zr12_AA"
+    },
+    {
+      "step": "z12_branch",
+      "z12_index": 4,
+      "branch_index": 0,
+      "anchor_kind": "Zr12_AA",
+      "entity": "Zr6_AA"
+    }
+  ],
+  "growth_summary": {
+    "cleanup_links_consumed": 0,
+    "progress_snapshots": [
+      {
+        "step": 22,
+        "total_entities": 40,
+        "Zr6_AA": 10,
+        "Zr12_AA": 8,
+        "BDC": 22,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      },
+      {
+        "step": 23,
+        "total_entities": 40,
+        "Zr6_AA": 10,
+        "Zr12_AA": 8,
+        "BDC": 22,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 1
+      },
+      {
+        "step": 24,
+        "total_entities": 40,
+        "Zr6_AA": 10,
+        "Zr12_AA": 8,
+        "BDC": 22,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 2
+      },
+      {
+        "step": 25,
+        "total_entities": 40,
+        "Zr6_AA": 10,
+        "Zr12_AA": 8,
+        "BDC": 22,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 3
+      },
+      {
+        "step": 26,
+        "total_entities": 40,
+        "Zr6_AA": 10,
+        "Zr12_AA": 8,
+        "BDC": 22,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 4
+      },
+      {
+        "step": 60,
+        "total_entities": 60,
+        "Zr6_AA": 12,
+        "Zr12_AA": 14,
+        "BDC": 34,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      },
+      {
+        "step": 87,
+        "total_entities": 80,
+        "Zr6_AA": 15,
+        "Zr12_AA": 17,
+        "BDC": 48,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      },
+      {
+        "step": 116,
+        "total_entities": 100,
+        "Zr6_AA": 19,
+        "Zr12_AA": 22,
+        "BDC": 59,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      },
+      {
+        "step": 138,
+        "total_entities": 120,
+        "Zr6_AA": 23,
+        "Zr12_AA": 27,
+        "BDC": 70,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      },
+      {
+        "step": 169,
+        "total_entities": 140,
+        "Zr6_AA": 27,
+        "Zr12_AA": 32,
+        "BDC": 81,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      },
+      {
+        "step": 200,
+        "total_entities": 160,
+        "Zr6_AA": 31,
+        "Zr12_AA": 37,
+        "BDC": 92,
+        "ready_pairs": 0,
+        "stalled_external_attempts": 0
+      }
+    ],
+    "target_reached": true
+  },
+  "inner_fill_summary": {
+    "requested_fill_count": 6,
+    "inserted_fill_count": 6,
+    "cleanup_links_consumed": 0,
+    "insertions": [
+      {
+        "insert_index": 0,
+        "anchor_kind": "Zr12_AA",
+        "anchor_coordination_before": 5,
+        "anchor_radial_fraction": 0.31343283582089554,
+        "anchor_radius": 29.623492965884438
+      },
+      {
+        "insert_index": 1,
+        "anchor_kind": "Zr12_AA",
+        "anchor_coordination_before": 2,
+        "anchor_radial_fraction": 0.3088235294117647,
+        "anchor_radius": 29.421194302311616
+      },
+      {
+        "insert_index": 2,
+        "anchor_kind": "Zr12_AA",
+        "anchor_coordination_before": 6,
+        "anchor_radial_fraction": 0.30434782608695654,
+        "anchor_radius": 29.361863975119054
+      },
+      {
+        "insert_index": 3,
+        "anchor_kind": "Zr12_AA",
+        "anchor_coordination_before": 2,
+        "anchor_radial_fraction": 0.34285714285714286,
+        "anchor_radius": 31.818210435645558
+      },
+      {
+        "insert_index": 4,
+        "anchor_kind": "Zr12_AA",
+        "anchor_coordination_before": 1,
+        "anchor_radial_fraction": 0.36619718309859156,
+        "anchor_radius": 32.891109803678326
+      },
+      {
+        "insert_index": 5,
+        "anchor_kind": "Zr12_AA",
+        "anchor_coordination_before": 5,
+        "anchor_radial_fraction": 0.3888888888888889,
+        "anchor_radius": 34.54085194898926
+      }
+    ]
+  },
+  "outputs": {
+    "mol2": "C:\\Users\\yibinjiang\\Documents\\GitHub\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.mol2",
+    "pkl": "C:\\Users\\yibinjiang\\Documents\\GitHub\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl"
+  }
+}

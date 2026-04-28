@@ -1,0 +1,16 @@
+{
+  "final_entities": 2,
+  "simulated_time_seconds": 373.41244457822745,
+  "event_num_link": 0,
+  "event_num_grow": 15251,
+  "event_num_grow_success": 14871,
+  "event_num_grow_fail": 380,
+  "event_num_remove": 14749,
+  "event_num_to_do_nothing": 0,
+  "distorted_linker_enabled": true,
+  "distorted_linker_fraction": 0.03766191931502315,
+  "off_pathway_linker_fraction": 0.0753238386300463,
+  "effective_zr6_conc": 3.6987046454798147,
+  "effective_linker_conc": 3.6987046454798147,
+  "external_addition_activity": 0.9246761613699537
+}

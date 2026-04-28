@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-04-10T16:30:29",
+  "template_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand/UiO66_growth_main_20250811.py",
+  "output_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand/output/smoke_compare/control_short2",
+  "config": {
+    "ZR6_PERCENTAGE": 1.0,
+    "Zr_conc": 32.0,
+    "entropy_correction_coefficient": 0.789387907185137,
+    "equilibrium_constant_coefficient": 1.32975172557788,
+    "H2O_DMF_RATIO": 0.0,
+    "Capping_agent_conc": 300.0,
+    "Linker_conc": 4.0,
+    "Total_steps": 5000,
+    "current_folder": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand/output/smoke_compare/control_short2",
+    "BUMPING_THRESHOLD": 2.0,
+    "max_entities": 60,
+    "output_inter": 100000,
+    "EXCHANGE_RXN_TIME_SECONDS": 0.1,
+    "DISSOLUTION_UPDATE_INTERVAL_STEPS": 1000000,
+    "DISTORTED_LINKER_ENABLED": false,
+    "DISTORTED_LIGAND_ASSOCIATION_CONSTANT": null
+  },
+  "chemistry_preview": null
+}

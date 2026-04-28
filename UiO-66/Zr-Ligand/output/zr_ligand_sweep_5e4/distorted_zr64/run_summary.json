@@ -1,0 +1,12 @@
+{
+  "final_entities": 3,
+  "simulated_time_seconds": 537.3286664740859,
+  "event_num_link": 1,
+  "event_num_grow": 25955,
+  "event_num_grow_success": 24548,
+  "event_num_grow_fail": 1407,
+  "event_num_remove": 24044,
+  "event_num_to_do_nothing": 0,
+  "distorted_linker_enabled": true,
+  "distorted_linker_fraction": 0.09469140032530496
+}

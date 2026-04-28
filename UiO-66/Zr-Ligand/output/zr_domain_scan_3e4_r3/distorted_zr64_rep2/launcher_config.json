@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-04-10T17:57:53",
+  "template_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand/UiO66_growth_main_20250811.py",
+  "output_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand/output/zr_domain_scan_3e4_r3/distorted_zr64_rep2",
+  "config": {
+    "ZR6_PERCENTAGE": 1.0,
+    "Zr_conc": 64.0,
+    "entropy_correction_coefficient": 0.789387907185137,
+    "equilibrium_constant_coefficient": 1.32975172557788,
+    "H2O_DMF_RATIO": 0.0,
+    "Capping_agent_conc": 300.0,
+    "Linker_conc": 4.0,
+    "Total_steps": 30000,
+    "current_folder": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/Zr-Ligand/output/zr_domain_scan_3e4_r3/distorted_zr64_rep2",
+    "BUMPING_THRESHOLD": 2.0,
+    "max_entities": 60,
+    "output_inter": 100000,
+    "EXCHANGE_RXN_TIME_SECONDS": 0.1,
+    "DISSOLUTION_UPDATE_INTERVAL_STEPS": 1000000,
+    "DISTORTED_LINKER_ENABLED": true,
+    "DISTORTED_LIGAND_ASSOCIATION_CONSTANT": null,
+    "DISTORTED_SECOND_STEP_EQUIVALENTS": 1.0
+  },
+  "chemistry_preview": {
+    "association_constant": 0.010166866340082625,
+    "effective_exchange_equilibrium_constant": 1.5250299510123937,
+    "acid_speciation": {
+      "linker_carboxylate_to_acid_ratio": 0.0,
+      "formate_to_acid_ratio": 0.0,
+      "linker_carboxylic_acid_conc": 8.0,
+      "formic_acid_conc": 300.0
+    },
+    "second_step_equivalents": 1.0,
+    "total_zr6_conc": 10.666666666666666,
+    "total_linker_conc": 4.0,
+    "distorted_ligand_conc": 0.37876560130121983,
+    "polymerized_distorted_conc": 0.37876560130121983,
+    "off_pathway_zr6_conc": 0.7575312026024397,
+    "off_pathway_linker_conc": 0.7575312026024397,
+    "distorted_ligand_fraction": 0.09469140032530496,
+    "off_pathway_linker_fraction": 0.18938280065060992,
+    "off_pathway_zr6_fraction": 0.07101855024397873,
+    "free_zr6_conc": 9.909135464064226,
+    "free_linker_conc": 3.24246879739756,
+    "free_zr6_fraction": 0.9289814497560213,
+    "free_linker_fraction": 0.81061719934939
+  }
+}
