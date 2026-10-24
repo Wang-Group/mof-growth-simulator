@@ -1,0 +1,269 @@
+{
+  "long_growth": {
+    "rows": 24,
+    "all_reach_1000": true,
+    "raw_trajectories_present": 24,
+    "raw_sizes_match_manifest": 24,
+    "entity13_snapshots_present": 24,
+    "source_hash_checks": {
+      "run_local_stage1_long1000.py": true,
+      "UiO66_260206_long1000_stage_1.xlsx": true,
+      "UiO66_Assembly_Large_Correction_conc.py": true,
+      "UiO66_generate_excel_conc.py": true,
+      "UiO66_growth_main_case00_snapshot.py": true,
+      "UiO66_growth_main_template.py": true
+    },
+    "medians": {
+      "t_entity_5_s": {
+        "stored_scaled_value": 0.2801368293554267,
+        "raw_algorithmic_u": 1.60078188203101
+      },
+      "t_entity_9_s": {
+        "stored_scaled_value": 74.55593758460856,
+        "raw_algorithmic_u": 426.0339290549061
+      },
+      "t_entity_13_s": {
+        "stored_scaled_value": 4688.117116151288,
+        "raw_algorithmic_u": 26789.240663721648
+      },
+      "t_entity_30_s": {
+        "stored_scaled_value": 5583.912167392985,
+        "raw_algorithmic_u": 31908.069527959917
+      },
+      "t_9_to_13_s": {
+        "stored_scaled_value": 4643.026944401976,
+        "raw_algorithmic_u": 26531.582539439863
+      },
+      "t_13_to_30_s": {
+        "stored_scaled_value": 9.031810467328341,
+        "raw_algorithmic_u": 51.610345527590525
+      },
+      "t_30_to_1000_s": {
+        "stored_scaled_value": 21.89876076375253,
+        "raw_algorithmic_u": 125.13577579287161
+      }
+    },
+    "representative_t30_u": {
+      "11": 3496.3158289960893,
+      "12": 33330.75753973021,
+      "14": 153478.7359984202
+    },
+    "slowest_13_to_30": {
+      "case_index": 3.0,
+      "t_13_to_30_s": 6738.657518615364
+    }
+  },
+  "entity13": {
+    "topologies": 9,
+    "snapshots": 24,
+    "largest_group": 11,
+    "Zr5_BDC8": 21,
+    "Zr4_BDC9": 3
+  },
+  "dls": {
+    "sha256": "2364e652ad4bcba27f786b6e7ca9d11ef5cf55a59d2e7036079d57e599b14422",
+    "source_hash_matches": true,
+    "n_points": 40,
+    "time_range_s": [
+      117.0,
+      1170.0
+    ],
+    "nG": 2,
+    "aN_s": 215.53882740461037,
+    "bN_s": 2.5122048297718993,
+    "kG_per_s": 0.0019279948415726232,
+    "r2_alpha": 0.9726582834248372,
+    "rmse_alpha": 0.05174987346952163,
+    "parameters_match_stored": true,
+    "nG_selection": "Script searches discrete nG candidates 1, 2, 3, then refines continuous parameters for selected nG."
+  },
+  "repair": [
+    {
+      "label": "reference_seed",
+      "file_name": "UiO-66_R3_Mixeddef_0.40_seed800.pkl",
+      "total_entities": 2124,
+      "total_bdc": 1857,
+      "total_zr": 267,
+      "missing_bdc_sites": 591,
+      "missing_zr_sites": 54,
+      "filled_bdc_sites": 0,
+      "filled_zr_sites": 0,
+      "bdc_fill": 0.0,
+      "zr_fill": 0.0
+    },
+    {
+      "label": "tracked_milestone",
+      "file_name": "assembly_2026-04-03_15-42-13_entity_number_2800.pkl",
+      "total_entities": 2800,
+      "total_bdc": 2153,
+      "total_zr": 647,
+      "missing_bdc_sites": 591,
+      "missing_zr_sites": 54,
+      "filled_bdc_sites": 132,
+      "filled_zr_sites": 54,
+      "bdc_fill": 0.2233502538071066,
+      "zr_fill": 1.0
+    },
+    {
+      "label": "final_endpoint",
+      "file_name": "assembly_final_entity_number_100001.pkl",
+      "total_entities": 100001,
+      "total_bdc": 77614,
+      "total_zr": 22387,
+      "missing_bdc_sites": 591,
+      "missing_zr_sites": 54,
+      "filled_bdc_sites": 584,
+      "filled_zr_sites": 54,
+      "bdc_fill": 0.988155668358714,
+      "zr_fill": 1.0
+    }
+  ],
+  "mixed_seed": {
+    "config": {
+      "seed_pkls": [
+        "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl"
+      ],
+      "replicates": 4,
+      "base_rng_seed": 2026041001,
+      "total_steps": 100000,
+      "max_entities_delta": 600,
+      "entropy_correction_coefficient": 0.0,
+      "h2o_dmf_ratio": 3e-10,
+      "dissolution_update_interval_steps": null,
+      "bumping_threshold": 2.0
+    },
+    "candidate": {
+      "label": "fixed_run",
+      "exchange_rxn_time_seconds": 0.1,
+      "zr_conc": 5000.0,
+      "linker_conc": 69.1596872253079,
+      "capping_agent_conc": 180.0,
+      "equilibrium_constant_coefficient": 2.0,
+      "cluster_add_probability": 0.6639116592653332,
+      "formate_benzoate_ratio_t0": 0.6810854768994709
+    },
+    "seed_metadata": {
+      "ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated": {
+        "Zr6_AA": 37,
+        "Zr12_AA": 37,
+        "BDC": 98,
+        "total_entities": 172,
+        "linked_pairs": 175,
+        "ready_pairs": 0,
+        "free_carboxylates": 956
+      }
+    },
+    "runs": [
+      {
+        "rng_seed": 2026041001,
+        "start_counts": {
+          "Zr6_AA": 37,
+          "Zr12_AA": 37,
+          "BDC": 98,
+          "total_entities": 172,
+          "linked_pairs": 175,
+          "ready_pairs": 0,
+          "free_carboxylates": 956
+        },
+        "end_counts": {
+          "Zr6_AA": 290,
+          "Zr12_AA": 0,
+          "BDC": 483,
+          "total_entities": 773,
+          "linked_pairs": 799,
+          "ready_pairs": 166,
+          "free_carboxylates": 2516
+        },
+        "sim_time_seconds": 0.687590244518351
+      },
+      {
+        "rng_seed": 2026041002,
+        "start_counts": {
+          "Zr6_AA": 37,
+          "Zr12_AA": 37,
+          "BDC": 98,
+          "total_entities": 172,
+          "linked_pairs": 175,
+          "ready_pairs": 0,
+          "free_carboxylates": 956
+        },
+        "end_counts": {
+          "Zr6_AA": 270,
+          "Zr12_AA": 0,
+          "BDC": 503,
+          "total_entities": 773,
+          "linked_pairs": 814,
+          "ready_pairs": 190,
+          "free_carboxylates": 2238
+        },
+        "sim_time_seconds": 0.8056460203427878
+      },
+      {
+        "rng_seed": 2026041003,
+        "start_counts": {
+          "Zr6_AA": 37,
+          "Zr12_AA": 37,
+          "BDC": 98,
+          "total_entities": 172,
+          "linked_pairs": 175,
+          "ready_pairs": 0,
+          "free_carboxylates": 956
+        },
+        "end_counts": {
+          "Zr6_AA": 296,
+          "Zr12_AA": 0,
+          "BDC": 477,
+          "total_entities": 773,
+          "linked_pairs": 798,
+          "ready_pairs": 155,
+          "free_carboxylates": 2600
+        },
+        "sim_time_seconds": 1.092431159350357
+      },
+      {
+        "rng_seed": 2026041004,
+        "start_counts": {
+          "Zr6_AA": 37,
+          "Zr12_AA": 37,
+          "BDC": 98,
+          "total_entities": 172,
+          "linked_pairs": 175,
+          "ready_pairs": 0,
+          "free_carboxylates": 956
+        },
+        "end_counts": {
+          "Zr6_AA": 276,
+          "Zr12_AA": 0,
+          "BDC": 497,
+          "total_entities": 773,
+          "linked_pairs": 814,
+          "ready_pairs": 179,
+          "free_carboxylates": 2320
+        },
+        "sim_time_seconds": 0.8793040920906995
+      }
+    ]
+  },
+  "embedded_artwork": [
+    {
+      "paragraph": "MS-P0059",
+      "file": "MS-P0059_image3.png",
+      "sha256": "35ec9570ba8674634beaa2abcb3011a87b4eccf51ec4f7a3f4c2066753443ed7"
+    },
+    {
+      "paragraph": "MS-P0094",
+      "file": "MS-P0094_image5.png",
+      "sha256": "478cd1115c1c134515a71209fde2d28b0fe45688a7d2875dd1faa1f1b8c256b4"
+    },
+    {
+      "paragraph": "MS-P0108",
+      "file": "MS-P0108_image7.png",
+      "sha256": "43f56a0f49861a584ab50567be0d2c6f754ac63c40f0916f894e2e4fbff612db"
+    },
+    {
+      "paragraph": "SI-P0341",
+      "file": "SI-P0341_image7.png",
+      "sha256": "fbc24f41cb737717d0ea8d0f34721045cb974d23c9e4410b0bb7f7591ebff999"
+    }
+  ]
+}

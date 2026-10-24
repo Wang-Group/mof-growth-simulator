@@ -1,0 +1,2 @@
+source_csv,time_column_zero_based_index,size_column_zero_based_index,baseline_nm,plateau_nm,nG,aN_s,bN_s,kG_per_s,kN_per_s,rmse_alpha,r2_alpha
+C:\Users\yibinjiang\Documents\xwechat_files\wxid_w2m1w39nju0q22_a138\msg\file\2026-05\260316.csv,2,3,1.835,48.657,2,215.53882740461037,2.5122048297718993,0.0019279948415726232,0.004639535308052854,0.05174987346952163,0.9726582834248372

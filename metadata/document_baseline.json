@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-10-22",
+  "repository_head": "2a9b1897538430c141c24c17cab746b82a26595c",
+  "document_reading_rule": "Final view includes insertions, excludes deletions and moved-from content; no revisions accepted",
+  "documents": [
+    {
+      "role": "MS",
+      "filename": "manuscript_defect_section_to_SI_20261018.docx",
+      "sha256": "682d0418f02450818162cae6682a6d95cf493ca769bafdb3174c5ad67115caa2",
+      "tracked_insertion_elements": 13,
+      "tracked_deletion_elements": 41
+    },
+    {
+      "role": "SI",
+      "filename": "supporting_information_defect_section_to_SI_20261019.docx",
+      "sha256": "6d78cd1f7a28cb1dfd39780b8ef747ee24526b8e76fcef06d200e3c4c070eb75",
+      "tracked_insertion_elements": 39,
+      "tracked_deletion_elements": 9
+    }
+  ],
+  "included_in_package": false,
+  "edited": false
+}

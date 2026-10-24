@@ -1,0 +1,2 @@
+source_csv,source_sha256,time_column_zero_based_index,size_column_zero_based_index,n_points,time_start_s,time_end_s,baseline_nm,plateau_nm,nG,aN_s,bN_s,kG_per_s,kN_per_s,rmse_alpha,r2_alpha
+data/260316.csv,2364e652ad4bcba27f786b6e7ca9d11ef5cf55a59d2e7036079d57e599b14422,2,3,40,117.0,1170.0,1.835,48.657,2,215.53882740461037,2.5122048297718993,0.0019279948415726232,0.004639535308052854,0.05174987346952163,0.9726582834248372

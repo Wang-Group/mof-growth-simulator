@@ -1,0 +1,6 @@
+# Preserve exact source bytes across Windows/Linux checkouts for SHA-256 checks.
+* -text whitespace=cr-at-eol
+
+*.png binary
+*.xlsx binary
+*.gz binary

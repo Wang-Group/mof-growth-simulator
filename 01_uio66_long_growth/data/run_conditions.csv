@@ -1,0 +1,2 @@
+ZR6_PERCENTAGE,Zr_conc,entropy_correction_coefficient,equilibrium_constant_coefficient,H2O_DMF_RATIO,Capping_agent_conc,Linker_conc,Total_steps,max_entities,repeat_number,output_inter,current_folder,BUMPING_THRESHOLD,MAX_DEPTH,pkl_path,trajectory_time_scale_s,time_scale_basis
+1,22.9154705859894,0.789387907185137,1.32975172557788,0,1473.06341756944,34.57984361265395,1000000000000000,1000,24,500,/mnt/syh/MOF_growth_data/UiO66_260319,2,3,,0.175,25 degC ligand-exchange estimate

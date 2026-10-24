@@ -1,0 +1,16 @@
+{
+  "raw_path": "Z:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\Figures\\Figures\\Figure3\\Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29\\entities_number_3124.8659233585645_index2.pkl",
+  "raw_sha256": "e1a0c3f933be7be169f13c594b62e48ed9e2866e7aab356ab7769bc68a93b2d4",
+  "raw_bytes": 125694297,
+  "raw_rows": 5000001,
+  "constant_segments": 148692,
+  "source_columns": [
+    "stored_time",
+    "entity"
+  ],
+  "first_time_at_entity20": 2864.3551050593273,
+  "retained": "All constant-segment starts and ends, entities and row spans; unchanged time values",
+  "omitted": "Internal timestamps within constant segments; no event-level kinetic reanalysis from this export",
+  "plot_equivalence": "Exact step-post coordinates used by original plot_crystal_growth_annotations.py",
+  "time_unit": "Unconfirmed source clock; no conversion to ms or seconds applied"
+}

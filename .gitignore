@@ -1,0 +1,35 @@
+# Python and local tools
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Full simulation checkpoints and archives are intentionally external.
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.log
+
+# Author documents and credentials never belong in this data branch.
+*.docx
+*.doc
+*.pdf
+~$*
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Optional local rerenders and reports; supplied reference outputs stay tracked.
+/reproduced_local/
+/verification_local.json

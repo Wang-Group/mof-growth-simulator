@@ -1,0 +1,689 @@
+{
+  "figure3D": {
+    "cases": 24,
+    "thresholds": [
+      5,
+      9,
+      13,
+      20,
+      30,
+      100,
+      300,
+      500,
+      1000
+    ],
+    "compared_values": 216,
+    "max_absolute_difference": 0.0,
+    "all_match": true,
+    "plot_script": {
+      "path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\mof-growth-simulator\\crystallization_model_fits\\render_uio66_entity13_dls_linkage.py",
+      "bytes": 5212,
+      "sha256": "f9bd4b0b7a82f956562ef44fa52c7622134e1a481da1e100e01760d596a67d78"
+    },
+    "plot_data": {
+      "path": "C:\\Users\\yibinjiang\\Documents\\GitHub\\mof-growth-simulator\\crystallization_model_fits\\output\\uio66_induction_vs_dls_first_passage_curves.csv",
+      "bytes": 1209840,
+      "sha256": "d4663e4bce35ad66beb816537301b39dac4d4af94c950fcb5147c7c150528897"
+    }
+  },
+  "figure5A": {
+    "raw": {
+      "path": "Z:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\Figures\\Figures\\Figure3\\Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29\\entities_number_3124.8659233585645_index2.pkl",
+      "bytes": 125694297,
+      "sha256": "e1a0c3f933be7be169f13c594b62e48ed9e2866e7aab356ab7769bc68a93b2d4"
+    },
+    "plot_script": {
+      "path": "Z:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\Figures\\Figures\\Figure3\\Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29\\plot_crystal_growth_annotations.py",
+      "bytes": 12541,
+      "sha256": "5b9e6b27971d7ace8e52aa2ad6d245c43ad2ba89548d21c17f28e5819cf40fb4"
+    },
+    "png": {
+      "path": "Z:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\Figures\\Figures\\Figure3\\Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29\\annotated_plots\\entities_number_3124.8659233585645_index2_entity_vs_time.png",
+      "bytes": 68104,
+      "sha256": "2486e1199c06e70e8914452ed00630b0e265a3cc2146a1f55e798edfeb634f0e"
+    },
+    "match_basis": "Visual match of trajectory, time range, spikes and plateaus; executed time-scale command not yet recovered."
+  },
+  "figure5D_candidate": {
+    "source": {
+      "path": "Z:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\Figures\\Figures\\Figure3\\unique_structures_result.csv",
+      "bytes": 57512,
+      "sha256": "c9f360fb93aa8866b915e862f721a430458068b368939415dda94cecd359f008"
+    },
+    "rows": 284,
+    "conditions": 71,
+    "frequencies": [
+      {
+        "entity": 1,
+        "structure_index": 2,
+        "count": 153,
+        "denominator": 283,
+        "percent": 54.063604240282686
+      },
+      {
+        "entity": 1,
+        "structure_index": 1,
+        "count": 130,
+        "denominator": 283,
+        "percent": 45.936395759717314
+      },
+      {
+        "entity": 2,
+        "structure_index": 1,
+        "count": 284,
+        "denominator": 284,
+        "percent": 100.0
+      },
+      {
+        "entity": 3,
+        "structure_index": 1,
+        "count": 154,
+        "denominator": 284,
+        "percent": 54.225352112676056
+      },
+      {
+        "entity": 3,
+        "structure_index": 2,
+        "count": 130,
+        "denominator": 284,
+        "percent": 45.774647887323944
+      },
+      {
+        "entity": 4,
+        "structure_index": 1,
+        "count": 284,
+        "denominator": 284,
+        "percent": 100.0
+      },
+      {
+        "entity": 5,
+        "structure_index": 1,
+        "count": 156,
+        "denominator": 284,
+        "percent": 54.929577464788736
+      },
+      {
+        "entity": 5,
+        "structure_index": 2,
+        "count": 128,
+        "denominator": 284,
+        "percent": 45.070422535211264
+      },
+      {
+        "entity": 6,
+        "structure_index": 1,
+        "count": 269,
+        "denominator": 284,
+        "percent": 94.71830985915493
+      },
+      {
+        "entity": 6,
+        "structure_index": 2,
+        "count": 9,
+        "denominator": 284,
+        "percent": 3.1690140845070425
+      },
+      {
+        "entity": 6,
+        "structure_index": 4,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 6,
+        "structure_index": 3,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 6,
+        "structure_index": 6,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 6,
+        "structure_index": 5,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 7,
+        "structure_index": 1,
+        "count": 266,
+        "denominator": 284,
+        "percent": 93.66197183098592
+      },
+      {
+        "entity": 7,
+        "structure_index": 2,
+        "count": 6,
+        "denominator": 284,
+        "percent": 2.112676056338028
+      },
+      {
+        "entity": 7,
+        "structure_index": 3,
+        "count": 5,
+        "denominator": 284,
+        "percent": 1.7605633802816902
+      },
+      {
+        "entity": 7,
+        "structure_index": 4,
+        "count": 3,
+        "denominator": 284,
+        "percent": 1.056338028169014
+      },
+      {
+        "entity": 7,
+        "structure_index": 5,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 7,
+        "structure_index": 7,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 7,
+        "structure_index": 6,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 8,
+        "structure_index": 1,
+        "count": 141,
+        "denominator": 284,
+        "percent": 49.647887323943664
+      },
+      {
+        "entity": 8,
+        "structure_index": 2,
+        "count": 132,
+        "denominator": 284,
+        "percent": 46.478873239436616
+      },
+      {
+        "entity": 8,
+        "structure_index": 3,
+        "count": 5,
+        "denominator": 284,
+        "percent": 1.7605633802816902
+      },
+      {
+        "entity": 8,
+        "structure_index": 5,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 8,
+        "structure_index": 8,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 8,
+        "structure_index": 7,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 8,
+        "structure_index": 6,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 8,
+        "structure_index": 4,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 9,
+        "structure_index": 1,
+        "count": 262,
+        "denominator": 284,
+        "percent": 92.25352112676056
+      },
+      {
+        "entity": 9,
+        "structure_index": 2,
+        "count": 8,
+        "denominator": 284,
+        "percent": 2.816901408450704
+      },
+      {
+        "entity": 9,
+        "structure_index": 4,
+        "count": 5,
+        "denominator": 284,
+        "percent": 1.7605633802816902
+      },
+      {
+        "entity": 9,
+        "structure_index": 6,
+        "count": 4,
+        "denominator": 284,
+        "percent": 1.408450704225352
+      },
+      {
+        "entity": 9,
+        "structure_index": 5,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 9,
+        "structure_index": 3,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 9,
+        "structure_index": 8,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 9,
+        "structure_index": 7,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 10,
+        "structure_index": 1,
+        "count": 256,
+        "denominator": 284,
+        "percent": 90.14084507042253
+      },
+      {
+        "entity": 10,
+        "structure_index": 4,
+        "count": 8,
+        "denominator": 284,
+        "percent": 2.816901408450704
+      },
+      {
+        "entity": 10,
+        "structure_index": 6,
+        "count": 7,
+        "denominator": 284,
+        "percent": 2.464788732394366
+      },
+      {
+        "entity": 10,
+        "structure_index": 7,
+        "count": 5,
+        "denominator": 284,
+        "percent": 1.7605633802816902
+      },
+      {
+        "entity": 10,
+        "structure_index": 2,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 10,
+        "structure_index": 3,
+        "count": 2,
+        "denominator": 284,
+        "percent": 0.704225352112676
+      },
+      {
+        "entity": 10,
+        "structure_index": 5,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 10,
+        "structure_index": 9,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 10,
+        "structure_index": 10,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 10,
+        "structure_index": 8,
+        "count": 1,
+        "denominator": 284,
+        "percent": 0.352112676056338
+      },
+      {
+        "entity": 11,
+        "structure_index": 1,
+        "count": 145,
+        "denominator": 283,
+        "percent": 51.236749116607776
+      },
+      {
+        "entity": 11,
+        "structure_index": 2,
+        "count": 120,
+        "denominator": 283,
+        "percent": 42.40282685512368
+      },
+      {
+        "entity": 11,
+        "structure_index": 7,
+        "count": 4,
+        "denominator": 283,
+        "percent": 1.4134275618374559
+      },
+      {
+        "entity": 11,
+        "structure_index": 5,
+        "count": 3,
+        "denominator": 283,
+        "percent": 1.0600706713780919
+      },
+      {
+        "entity": 11,
+        "structure_index": 6,
+        "count": 3,
+        "denominator": 283,
+        "percent": 1.0600706713780919
+      },
+      {
+        "entity": 11,
+        "structure_index": 4,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 8,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 12,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 3,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 13,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 10,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 9,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 11,
+        "structure_index": 11,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 1,
+        "count": 240,
+        "denominator": 283,
+        "percent": 84.80565371024736
+      },
+      {
+        "entity": 12,
+        "structure_index": 4,
+        "count": 17,
+        "denominator": 283,
+        "percent": 6.007067137809187
+      },
+      {
+        "entity": 12,
+        "structure_index": 6,
+        "count": 10,
+        "denominator": 283,
+        "percent": 3.5335689045936394
+      },
+      {
+        "entity": 12,
+        "structure_index": 2,
+        "count": 4,
+        "denominator": 283,
+        "percent": 1.4134275618374559
+      },
+      {
+        "entity": 12,
+        "structure_index": 7,
+        "count": 3,
+        "denominator": 283,
+        "percent": 1.0600706713780919
+      },
+      {
+        "entity": 12,
+        "structure_index": 5,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 3,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 14,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 11,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 8,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 10,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 13,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 9,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 12,
+        "structure_index": 12,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 1,
+        "count": 240,
+        "denominator": 283,
+        "percent": 84.80565371024736
+      },
+      {
+        "entity": 13,
+        "structure_index": 5,
+        "count": 8,
+        "denominator": 283,
+        "percent": 2.8268551236749118
+      },
+      {
+        "entity": 13,
+        "structure_index": 4,
+        "count": 8,
+        "denominator": 283,
+        "percent": 2.8268551236749118
+      },
+      {
+        "entity": 13,
+        "structure_index": 2,
+        "count": 7,
+        "denominator": 283,
+        "percent": 2.4734982332155475
+      },
+      {
+        "entity": 13,
+        "structure_index": 9,
+        "count": 5,
+        "denominator": 283,
+        "percent": 1.7667844522968197
+      },
+      {
+        "entity": 13,
+        "structure_index": 12,
+        "count": 3,
+        "denominator": 283,
+        "percent": 1.0600706713780919
+      },
+      {
+        "entity": 13,
+        "structure_index": 14,
+        "count": 2,
+        "denominator": 283,
+        "percent": 0.7067137809187279
+      },
+      {
+        "entity": 13,
+        "structure_index": 13,
+        "count": 2,
+        "denominator": 283,
+        "percent": 0.7067137809187279
+      },
+      {
+        "entity": 13,
+        "structure_index": 6,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 3,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 15,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 11,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 8,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 7,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 10,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      },
+      {
+        "entity": 13,
+        "structure_index": 16,
+        "count": 1,
+        "denominator": 283,
+        "percent": 0.35335689045936397
+      }
+    ],
+    "limitation": "Counts recovered; verify per-size structure-index mapping and original selection rule before updating manuscript provenance."
+  }
+}

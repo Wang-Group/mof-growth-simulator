@@ -1,0 +1,112 @@
+{
+  "recovered_at": "2026-04-10T16:24:08",
+  "workspace_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6",
+  "source_root": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/initialize_structures1",
+  "source_case_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/initialize_structures1/output/mixeddef800_seed800_zr6only_candidate01_continuous",
+  "local_case_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous",
+  "curated_result_only": true,
+  "notes": [
+    "The original source case contains about 3.9 GB of checkpoints and is not fully duplicated here.",
+    "This workspace keeps the seed, one tracked repaired milestone, the final endpoint, logs, entity-count traces, and regenerated figures."
+  ],
+  "fixed_condition": {
+    "ZR6_PERCENTAGE": 1.0,
+    "Zr_conc": 5000.0,
+    "entropy_correction_coefficient": 0.789387907185137,
+    "equilibrium_constant_coefficient": 10.0,
+    "H2O_DMF_RATIO": 3e-10,
+    "Capping_agent_conc": 200.0,
+    "Linker_conc": 100.0,
+    "BUMPING_THRESHOLD": 2.0,
+    "EXCHANGE_RXN_TIME_SECONDS": 0.1
+  },
+  "seed_row": {
+    "total_entities": 2124,
+    "total_bdc": 1857,
+    "total_zr": 267,
+    "missing_bdc_sites": 591,
+    "missing_zr_sites": 54,
+    "filled_bdc_sites": 0,
+    "filled_zr_sites": 0,
+    "bdc_fill": 0.0,
+    "zr_fill": 0.0,
+    "label": "reference_seed",
+    "file_name": "UiO-66_R3_Mixeddef_0.40_seed800.pkl"
+  },
+  "milestone_row": {
+    "total_entities": 2800,
+    "total_bdc": 2153,
+    "total_zr": 647,
+    "missing_bdc_sites": 591,
+    "missing_zr_sites": 54,
+    "filled_bdc_sites": 132,
+    "filled_zr_sites": 54,
+    "bdc_fill": 0.2233502538071066,
+    "zr_fill": 1.0,
+    "label": "tracked_milestone",
+    "file_name": "assembly_2026-04-03_15-42-13_entity_number_2800.pkl"
+  },
+  "first_zr_full_row": {
+    "total_entities": 2800,
+    "total_bdc": 2153,
+    "total_zr": 647,
+    "missing_bdc_sites": 591,
+    "missing_zr_sites": 54,
+    "filled_bdc_sites": 132,
+    "filled_zr_sites": 54,
+    "bdc_fill": 0.2233502538071066,
+    "zr_fill": 1.0,
+    "label": "tracked_milestone",
+    "file_name": "assembly_2026-04-03_15-42-13_entity_number_2800.pkl"
+  },
+  "best_bdc_row": {
+    "total_entities": 100001,
+    "total_bdc": 77614,
+    "total_zr": 22387,
+    "missing_bdc_sites": 591,
+    "missing_zr_sites": 54,
+    "filled_bdc_sites": 584,
+    "filled_zr_sites": 54,
+    "bdc_fill": 0.988155668358714,
+    "zr_fill": 1.0,
+    "label": "final_endpoint",
+    "file_name": "assembly_final_entity_number_100001.pkl"
+  },
+  "final_row": {
+    "total_entities": 100001,
+    "total_bdc": 77614,
+    "total_zr": 22387,
+    "missing_bdc_sites": 591,
+    "missing_zr_sites": 54,
+    "filled_bdc_sites": 584,
+    "filled_zr_sites": 54,
+    "bdc_fill": 0.988155668358714,
+    "zr_fill": 1.0,
+    "label": "final_endpoint",
+    "file_name": "assembly_final_entity_number_100001.pkl"
+  },
+  "copied_files": [
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/assembly_final_entity_number_100001.pkl",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/assembly_final_entity_number_100001.mol2",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/entities_number.pkl",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/entities_number_seconds.pkl",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment01_seed_to6500.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment02_resume_to11000.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment03_resume_to20000.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment04_resume_to40000.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment05_resume_to40000_after_entropy_fix.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment06_resume_to60000.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/segment07_resume_to100000.log",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/references/UiO-66_R3_Mixeddef_0.40_seed800.pkl",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/references/UiO-66_R3_Mixeddef_0.40_seed800.mol2",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/references/assembly_2026-04-03_15-42-13_entity_number_2800.pkl",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/references/assembly_2026-04-03_15-42-13_entity_number_2800.mol2"
+  ],
+  "generated_files": [
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/repair_progress_vs_growth.csv",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/repair_progress_vs_growth.png",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/repair_progress_vs_growth.svg",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/seed_initial_final_structure_triptych.png",
+    "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Missing_BDC_Zr6/output/mixeddef800_seed800_zr6only_candidate01_continuous/seed_initial_final_structure_triptych.svg"
+  ]
+}
