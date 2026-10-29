@@ -1,0 +1,30 @@
+{
+  "figure": "SI_Figure_S19",
+  "input_level": "Existing simulation statistical summaries; not full per-event raw trajectories; no image digitization",
+  "entrypoint": "run_panels.py",
+  "output_location": "panel_A, panel_B",
+  "core_file": "plot_figure5_surface_nucleation_v2.py",
+  "core_function": {
+    "A": "panel_c",
+    "B": "panel_d"
+  },
+  "inputs": [
+    {
+      "file": "source_data/figure5_surface_vs_seeded_growth_sc1_v1_matched_surface_control.csv",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\02_main_figure_sources\\Figure_05\\source_data\\figure5_surface_vs_seeded_growth_sc1_v1_matched_surface_control.csv",
+      "sha256": "fde1dc6efab43f5dfbd2de41bd2900000a901c3c8db17ddfb786a22b38eda730"
+    },
+    {
+      "file": "source_data/figure5_surface_vs_seeded_growth_sc1_v1_mismatched_surface.csv",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\02_main_figure_sources\\Figure_05\\source_data\\figure5_surface_vs_seeded_growth_sc1_v1_mismatched_surface.csv",
+      "sha256": "04515de3e03fa1d10f322c606b3441c4709575437ae32f87275bb5f0ba2fe918"
+    },
+    {
+      "file": "source_data/figure5_surface_vs_seeded_growth_sc1_v1_seeded.csv",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\02_main_figure_sources\\Figure_05\\source_data\\figure5_surface_vs_seeded_growth_sc1_v1_seeded.csv",
+      "sha256": "342c010d642a7c70636b99d9a3266dd72c55a5e1f151cd9e9a980a33aed40c73"
+    }
+  ],
+  "runtime_note": "run_panels.py and panel_runtime.py are local path/panel adapters, not the original simulation program",
+  "core_note": "S17 uses a prior standalone-export function; S19 calls the original panel_c/panel_d. Other functions in the historical core are not invoked."
+}

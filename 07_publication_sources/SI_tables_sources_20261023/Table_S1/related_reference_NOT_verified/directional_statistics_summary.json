@@ -1,0 +1,18 @@
+{
+  "primary_larger_cases": 9,
+  "primary_smaller_cases": 1,
+  "inclusive_smaller_cases": 3,
+  "broad_larger_carboxylic_acid_cases": 40,
+  "broad_smaller_cases": 3,
+  "outputs": [
+    "directional_case_dataset.csv",
+    "directional_descriptive_statistics.csv",
+    "directional_continuous_tests.csv",
+    "directional_identity_counts.csv",
+    "directional_categorical_tests.csv",
+    "directional_persistence_assessment.csv",
+    "directional_statistics_figure.svg",
+    "directional_statistics_figure.pdf",
+    "directional_statistics_report.html"
+  ]
+}

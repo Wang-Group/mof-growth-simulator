@@ -1,0 +1,14 @@
+{
+  "catalogue_before": 1020,
+  "new_doi_records": 11,
+  "catalogue_after": 1031,
+  "new_primary_article_records": 10,
+  "new_correction_records": 1,
+  "existing_records_with_added_evidence": 2,
+  "identity_papers": 29,
+  "paper_identity_pairs": 133,
+  "paper_linked_identities": 56,
+  "descriptor_library_identities": 66,
+  "size_dose_screening_counts_changed": false,
+  "reason": "Added records concern deferred defect/etching evidence; no new eligible directional size-dose comparison was certified."
+}

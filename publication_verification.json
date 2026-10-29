@@ -1,0 +1,221 @@
+{
+  "status": "PASS_FOR_DECLARED_LOCAL_CHECKS",
+  "publication_ready": false,
+  "checks": {
+    "sources": {
+      "verified_copies": 670,
+      "decisions": {
+        "COPY": 670,
+        "EXTERNAL_BINARY_OR_ARTWORK": 23,
+        "EXTERNAL_LARGE_FILE": 3,
+        "HASH_MISMATCH_REVIEW_REQUIRED": 3,
+        "EXTERNAL_NOTEBOOK_OUTPUTS_NOT_REVIEWED": 4,
+        "EXTERNAL_RAW_EXPERIMENT": 213
+      },
+      "copy_bytes": 112308744
+    },
+    "figure5b": {
+      "conditions": 1260,
+      "repeats_per_condition": 32,
+      "results": [
+        {
+          "parameter": "s_close",
+          "first_order": 0.026624792801560077,
+          "total_effect": 0.1500325251385379
+        },
+        {
+          "parameter": "atomic_metal_linker_ratio",
+          "first_order": 0.005969576156529221,
+          "total_effect": 0.05959729984054935
+        },
+        {
+          "parameter": "rho_off",
+          "first_order": 0.8210854201390468,
+          "total_effect": 0.9661670255544478
+        }
+      ],
+      "bootstrap_intervals_recomputed": false
+    },
+    "s25": {
+      "A": {
+        "rows": 130,
+        "endpoint_entities": 3651,
+        "final_BDC_fill": 0.8697123519458545,
+        "final_Zr_fill": 1.0
+      },
+      "B": {
+        "rows": 103,
+        "endpoint_entities": 100001,
+        "final_BDC_fill": 0.988155668358714,
+        "final_Zr_fill": 1.0
+      }
+    },
+    "selector_smoke": {
+      "status": "PASS",
+      "scope": "Pure selector weights and clock smoke checks, not full geometry or KMC validation"
+    },
+    "additional_sources": {
+      "entropy_tables_verified": 13,
+      "btb_run_source_files_verified": 2,
+      "scope": "Byte verification only; not Gaussian recalculation or historical KMC rerun"
+    }
+  },
+  "executed_code_coverage": [
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho0p1_rep00.json",
+      "component": "engine",
+      "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "matching_packaged_paths": [],
+      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho0p1_rep00.json",
+      "component": "runner",
+      "recorded_sha256": "b5354813246ae10e5013af58422d980fe092323ebab1e7926263a6d8bccf527b",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/seeded_molecular_runner.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho0p1_rep00.json",
+      "component": "selector",
+      "recorded_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/common_kmc_selector.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho0p3_rep00.json",
+      "component": "engine",
+      "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "matching_packaged_paths": [],
+      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho0p3_rep00.json",
+      "component": "runner",
+      "recorded_sha256": "b5354813246ae10e5013af58422d980fe092323ebab1e7926263a6d8bccf527b",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/seeded_molecular_runner.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho0p3_rep00.json",
+      "component": "selector",
+      "recorded_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/common_kmc_selector.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2.json",
+      "component": "engine",
+      "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "matching_packaged_paths": [],
+      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2.json",
+      "component": "runner",
+      "recorded_sha256": "b5354813246ae10e5013af58422d980fe092323ebab1e7926263a6d8bccf527b",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/seeded_molecular_runner.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2.json",
+      "component": "selector",
+      "recorded_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/common_kmc_selector.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho1_rep00.json",
+      "component": "engine",
+      "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "matching_packaged_paths": [],
+      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho1_rep00.json",
+      "component": "runner",
+      "recorded_sha256": "b5354813246ae10e5013af58422d980fe092323ebab1e7926263a6d8bccf527b",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/seeded_molecular_runner.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho1_rep00.json",
+      "component": "selector",
+      "recorded_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/common_kmc_selector.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho30_rep00.json",
+      "component": "engine",
+      "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "matching_packaged_paths": [],
+      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho30_rep00.json",
+      "component": "runner",
+      "recorded_sha256": "b5354813246ae10e5013af58422d980fe092323ebab1e7926263a6d8bccf527b",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/seeded_molecular_runner.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho30_rep00.json",
+      "component": "selector",
+      "recorded_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/common_kmc_selector.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho3_rep00.json",
+      "component": "engine",
+      "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "matching_packaged_paths": [],
+      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho3_rep00.json",
+      "component": "runner",
+      "recorded_sha256": "b5354813246ae10e5013af58422d980fe092323ebab1e7926263a6d8bccf527b",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/seeded_molecular_runner.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    },
+    {
+      "result": "uio66_growth_N10000_sc1_q1_rho3_rep00.json",
+      "component": "selector",
+      "recorded_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "matching_packaged_paths": [
+        "07_publication_sources/SI_tables_sources_20261023/Table_S28/code/common_kmc_selector.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
+    }
+  ],
+  "limits": [
+    "No production KMC rerun",
+    "Not every archived plotter is portable",
+    "No complete-paper reproducibility claim",
+    "Author license and archive decisions pending"
+  ]
+}

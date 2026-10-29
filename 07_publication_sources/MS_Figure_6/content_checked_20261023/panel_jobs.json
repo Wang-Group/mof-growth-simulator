@@ -1,0 +1,18 @@
+{
+  "A": {
+    "figure": "MS_Figure_6",
+    "kind": "btb_growth"
+  },
+  "B": {
+    "figure": "MS_Figure_6",
+    "kind": "btb_growth"
+  },
+  "C": {
+    "figure": "MS_Figure_6",
+    "kind": "pxrd6C"
+  },
+  "D": {
+    "figure": "MS_Figure_6",
+    "kind": "growth_count"
+  }
+}

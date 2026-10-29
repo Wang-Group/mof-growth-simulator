@@ -1,0 +1,47 @@
+{
+  "schema": "uio66-surface-registry-pilot-v1",
+  "diagnostic_only": true,
+  "parent_seed": "D:\\SynologyDrive\\Wave\\projects working on\\MOL-growth modelling\\analysis_workspace\\rewrite\\uio66_surface_secondary_nucleation_20260830\\seed\\UiO66_n4_111_octahedron.pkl",
+  "outer_registry_seed": "D:\\SynologyDrive\\Wave\\projects working on\\MOL-growth modelling\\analysis_workspace\\rewrite\\uio66_surface_secondary_nucleation_20260830\\seed\\UiO66_n6_111_octahedron.pkl",
+  "R_sim": 10.0,
+  "p_Zr": 0.35,
+  "E_sim": 100.0,
+  "event_cap": 5000,
+  "growth_increment": 50,
+  "attempted_events": 5000,
+  "elapsed_model_time": 11.415987614186124,
+  "integrated_exposed_site_time": 2206.5440097739624,
+  "accepted_additions": 1383,
+  "registered_additions": 1377,
+  "off_registry_additions": 6,
+  "maximum_post_seed_component": {
+    "entities": 5,
+    "cycle_rank": 0,
+    "seed_anchors": 4,
+    "off_registry_entities": 1
+  },
+  "registry_diagnostics": {
+    "translation_outer_to_parent_A": [
+      -20.955000916600742,
+      -20.955000766118367,
+      -20.955000782012938
+    ],
+    "types": {
+      "Ligand": {
+        "parent_sites": 168,
+        "outer_sites": 660,
+        "matched_parent_shell": 168,
+        "ghost_registry_sites": 492,
+        "maximum_matched_distance_A": 1.5195977478722526e-05
+      },
+      "Zr": {
+        "parent_sites": 41,
+        "outer_sites": 143,
+        "matched_parent_shell": 41,
+        "ghost_registry_sites": 102,
+        "maximum_matched_distance_A": 3.1624790964248865e-05
+      }
+    }
+  },
+  "interpretation_rule": "If off-registry additions are absent, the archived geometry engine contains only epitaxial extension and cannot estimate secondary-surface nucleation without a new adsorbed-embryo or misregistry event channel."
+}

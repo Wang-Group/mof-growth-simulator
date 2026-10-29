@@ -1,0 +1,10 @@
+framework,lower_nm,higher_nm,source_doi,source_basis,manuscript_value_before,manuscript_value_after
+UiO-68-NH2,50,1500,10.1021/acs.inorgchem.5c01769,"reported approximately 50 nm to 1.5 um",1500,1500
+MOF-808,40,1000,10.3390/nano11061398,"SEM series: <40 nm at 200 eq HCOOH and approximately 1000 nm at 450-500 eq",600,1000
+UiO-66 seeds,56,753,10.1016/j.memsci.2026.125701,"AcOH seed series: approximately 56 nm at 100:1 modulator:linker and approximately 753 nm at 200:1",753,753
+UiO-66-NDC,80,800,10.1021/acs.cgd.7b00892,"approximately 80 nm to 800 nm",800,800
+PCN-224,35,290.5,10.1016/j.cej.2025.164016,"35.0 +/- 3.6 nm to 290.5 +/- 43.3 nm",290.5,290.5
+UiO-66-NH2,42,217,10.1021/acscatal.5c08257,"TEM octahedron edge length 42 to 217 nm",217,217
+UiO-66-NH(CN),71.4,300,10.1021/acsami.1c18625,"SEM side length 71.4 to 300 nm",300,300
+UiO-66-2I,100,400,10.1021/acs.inorgchem.7b01801,"endpoint digitized from accepted Figure 1D source; same-acid series",400,400
+UiO-66,130,350,10.1021/acs.chemmater.2c00242,"130 +/- 20 nm to 350 +/- 30 nm",350,350

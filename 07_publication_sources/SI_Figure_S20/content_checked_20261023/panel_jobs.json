@@ -1,0 +1,46 @@
+{
+  "A": {
+    "figure": "SI_Figure_S20",
+    "kind": "native_exporter",
+    "function": "export_s29_standalone",
+    "tokens": {
+      "A": "S29_A",
+      "B": "S29_B",
+      "C": "S29_C",
+      "D": "S29_D"
+    }
+  },
+  "B": {
+    "figure": "SI_Figure_S20",
+    "kind": "native_exporter",
+    "function": "export_s29_standalone",
+    "tokens": {
+      "A": "S29_A",
+      "B": "S29_B",
+      "C": "S29_C",
+      "D": "S29_D"
+    }
+  },
+  "C": {
+    "figure": "SI_Figure_S20",
+    "kind": "native_exporter",
+    "function": "export_s29_standalone",
+    "tokens": {
+      "A": "S29_A",
+      "B": "S29_B",
+      "C": "S29_C",
+      "D": "S29_D"
+    }
+  },
+  "D": {
+    "figure": "SI_Figure_S20",
+    "kind": "native_exporter",
+    "function": "export_s29_standalone",
+    "tokens": {
+      "A": "S29_A",
+      "B": "S29_B",
+      "C": "S29_C",
+      "D": "S29_D"
+    }
+  }
+}

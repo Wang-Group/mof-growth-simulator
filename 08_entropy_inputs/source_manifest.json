@@ -1,0 +1,85 @@
+{
+  "source_archive": "Entropy calculation/data.zip",
+  "source_archive_sha256": "e699f2346a8f1b3c77e4bc91ef83b5e14dfbc70144ad7b8d46731d670e1404c5",
+  "scope": "Supplied derived tables, not original Gaussian outputs or an independently verified entropy calculation.",
+  "files": [
+    {
+      "path": "08_entropy_inputs/data/250412-2_result.csv",
+      "bytes": 10413,
+      "sha256": "91e1a1150051a165b481b9c36ed79b4a8d5ef3d7709ec05fc2a677486b6268a7",
+      "source_member": "data/250412-2_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-3_result.csv",
+      "bytes": 10481,
+      "sha256": "e5c71a90693590780720bf4c5db852d0a31be765f01b23e550cde98db78700ca",
+      "source_member": "data/250412-3_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-4_result.csv",
+      "bytes": 1058,
+      "sha256": "e67a07500574d9566ddefc301986d4c7e18e779ead58e9a635a5155a8532c66c",
+      "source_member": "data/250412-4_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-A2_result.csv",
+      "bytes": 10406,
+      "sha256": "e7ac3f41f9792dbc2cf03879ff4b52962457a0827723ef01b2ca527bf8428307",
+      "source_member": "data/250412-A2_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-A4_result.csv",
+      "bytes": 13841,
+      "sha256": "059bf7594f3700b060858e9c809c93d0c1c800f06b455858de8851a884673704",
+      "source_member": "data/250412-A4_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-A5_result.csv",
+      "bytes": 7844,
+      "sha256": "c0e4f420ba89b2230521f55680e093df14ad4570163a38c92c2a5ed70553eb79",
+      "source_member": "data/250412-A5_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-A7_result.csv",
+      "bytes": 22014,
+      "sha256": "86826e59eab8e94924c8dc12db18a86fb1749c9fb300cec834237e0316498bd1",
+      "source_member": "data/250412-A7_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250412-A9_result.csv",
+      "bytes": 25599,
+      "sha256": "c8056a7d00ae1f2e639affda850ed50213db6a0ddc1e97a54eb23b183186b456",
+      "source_member": "data/250412-A9_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/250414-4_result.csv",
+      "bytes": 9937,
+      "sha256": "11dff1bd9f86bdeeb7d5c28e2bcd7f3d53a0f29c18bd55b8dd7a5f030284ac1c",
+      "source_member": "data/250414-4_result.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/data_new.xlsx",
+      "bytes": 14123,
+      "sha256": "1cf2edd161102479e0bf2be3556f96e43e6399c576a65425867c6865d6a3df9a",
+      "source_member": "data/data_new.xlsx"
+    },
+    {
+      "path": "08_entropy_inputs/data/entropy_results.csv",
+      "bytes": 1467,
+      "sha256": "e5da9c263ea450d504d6970fa45fca177b7506cf65f224930dfeaf3ee7e55059",
+      "source_member": "data/entropy_results.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/molecular_properties.csv",
+      "bytes": 2494,
+      "sha256": "f563a6ff1e04dc127d75f6ff42c833ac0fc6f2a2fd2329e4820affa667628763",
+      "source_member": "data/molecular_properties.csv"
+    },
+    {
+      "path": "08_entropy_inputs/data/mol_export_result.csv",
+      "bytes": 3597,
+      "sha256": "b7a46d7dcd3f299b17b3dee536d5c4d8246638c1bb361e010682cd81e0e06b74",
+      "source_member": "data/mol_export_result.csv"
+    }
+  ]
+}

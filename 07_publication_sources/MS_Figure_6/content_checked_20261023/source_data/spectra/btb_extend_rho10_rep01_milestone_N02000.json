@@ -1,0 +1,111 @@
+{
+  "source": {
+    "requested_entities": 2000,
+    "observed_entities": 2000,
+    "event": 1435908,
+    "model_time": 88.30935710877768,
+    "path": "/home/wave/MOL_growth_recalculation_20260830/btb_size_extension_20260916_v1/results/btb_extend_rho10_rep01/N02000.mol2",
+    "sha256": "b5f433a0b814019646d315721ec29e327d3e0316bca8c7b32dd6e4a5fcfc9b1e",
+    "kind": "milestone",
+    "run_id": "btb_extend_rho10_rep01",
+    "rho_off": 10.0,
+    "replicate": 1
+  },
+  "pattern": "/home/wave/MOL_growth_recalculation_20260830/btb_size_extension_20260916_v1/pxrd/btb_extend_rho10_rep01_milestone_N02000.csv",
+  "pattern_sha256": "8551ff179f632ad24e36611347e8e255301e9b62b2db5ec361706d068cf738a9",
+  "calculation": {
+    "block_size": 4096,
+    "distance_bins": 21109,
+    "maximum_distance_angstrom": 422.18,
+    "pair_counts": {
+      "C-C": 1034874765,
+      "C-H": 977915025,
+      "C-Hf": 154773990,
+      "C-O": 1216627290,
+      "H-H": 231006765,
+      "H-Hf": 73125990,
+      "H-O": 574819290,
+      "Hf-Hf": 5785101,
+      "Hf-O": 90976284,
+      "O-O": 357553911
+    },
+    "wall_seconds": 0.8792556549888104,
+    "element_counts": {
+      "C": 45495,
+      "H": 21495,
+      "Hf": 3402,
+      "O": 26742
+    }
+  },
+  "geometry": {
+    "valid_six_metal_groups": true,
+    "nodes": 567,
+    "rms_normal_angstrom": 26.6870174407959,
+    "normal_span_angstrom": 147.61358642578125,
+    "principal_rms_angstrom": [
+      60.562015533447266,
+      46.017494201660156,
+      26.6870174407959
+    ],
+    "note": "Best-fit plane is a diagnostic; growth was not constrained to this plane."
+  },
+  "peaks": [
+    {
+      "two_theta_deg": 5.069999999999935,
+      "height": 1.0,
+      "prominence": 0.6986980834343097,
+      "half_prominence_width_deg": 0.9817924752335353
+    },
+    {
+      "two_theta_deg": 9.139999999999848,
+      "height": 0.3992663379413996,
+      "prominence": 0.24377139496980907,
+      "half_prominence_width_deg": 0.518083260696933
+    },
+    {
+      "two_theta_deg": 10.549999999999818,
+      "height": 0.13250646790192686,
+      "prominence": 0.05299256600984176,
+      "half_prominence_width_deg": 0.4766517319378602
+    },
+    {
+      "two_theta_deg": 21.30999999999959,
+      "height": 0.042401188418574265,
+      "prominence": 0.02016218429007375,
+      "half_prominence_width_deg": 0.6208235398239799
+    },
+    {
+      "two_theta_deg": 23.259999999999547,
+      "height": 0.0503636218134306,
+      "prominence": 0.02156871742814619,
+      "half_prominence_width_deg": 0.5561296020551617
+    },
+    {
+      "two_theta_deg": 27.82999999999945,
+      "height": 0.0591813779342931,
+      "prominence": 0.028760846031513677,
+      "half_prominence_width_deg": 0.7430577560836673
+    }
+  ],
+  "shoulder_candidates": [],
+  "settings": {
+    "wavelength_angstrom": 1.5406,
+    "distance_bin_angstrom": 0.02,
+    "angle_step_deg": 0.01,
+    "smooth_sigma_deg": 0.1,
+    "block_size": 4096,
+    "geometry_metal": "Zr",
+    "scattering_metal": "Hf",
+    "raw_unsmoothed_preserved": true,
+    "normalized": "each pattern separately; not a phase fraction or yield",
+    "shoulder": "Peak detection threshold is descriptive, not statistical significance"
+  },
+  "software": {
+    "torch": "2.7.1+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "source_hashes": {
+      "compute_finite_cluster_pxrd.py": "4cb5cbeea527e53eaa7928c6dadb15446b7c8ce8fd0fafe9ccf5ab158b6cdfb5",
+      "compute_large_cluster_pxrd.py": "64a8f9014b2d0d1805c071bd1296bbbc66eb9d2367f500dff7b6d1503de8def5"
+    }
+  }
+}

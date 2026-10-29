@@ -1,0 +1,20 @@
+{
+  "A": {
+    "figure": "MS_Figure_5",
+    "kind": "trajectory",
+    "input": "trajectory/entities_number_3124.8659233585645_index2.pkl",
+    "x_range": [
+      620,
+      690
+    ],
+    "y_range": [
+      0,
+      20
+    ],
+    "tick": 2
+  },
+  "B": {
+    "figure": "MS_Figure_5",
+    "kind": "variance"
+  }
+}

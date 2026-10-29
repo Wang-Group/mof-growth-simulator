@@ -1,0 +1,12 @@
+{
+  "A": {
+    "figure": "SI_Figure_S19",
+    "kind": "surface",
+    "function": "panel_c"
+  },
+  "B": {
+    "figure": "SI_Figure_S19",
+    "kind": "surface",
+    "function": "panel_d"
+  }
+}

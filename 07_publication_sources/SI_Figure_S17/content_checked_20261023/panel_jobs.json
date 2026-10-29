@@ -1,0 +1,32 @@
+{
+  "A": {
+    "figure": "SI_Figure_S17",
+    "kind": "native_exporter",
+    "function": "export_s27_standalone",
+    "tokens": {
+      "A": "S27_A",
+      "B": "S27_B",
+      "C": "S27_C"
+    }
+  },
+  "B": {
+    "figure": "SI_Figure_S17",
+    "kind": "native_exporter",
+    "function": "export_s27_standalone",
+    "tokens": {
+      "A": "S27_A",
+      "B": "S27_B",
+      "C": "S27_C"
+    }
+  },
+  "C": {
+    "figure": "SI_Figure_S17",
+    "kind": "native_exporter",
+    "function": "export_s27_standalone",
+    "tokens": {
+      "A": "S27_A",
+      "B": "S27_B",
+      "C": "S27_C"
+    }
+  }
+}

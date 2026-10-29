@@ -17,7 +17,8 @@ def digest(path):
         return hashlib.file_digest(handle, "sha256").hexdigest()
 
 
-def verify():
+def verify(output_dir=None):
+    output_dir = Path(output_dir).resolve() if output_dir is not None else ROOT / "reproduced"
     checks = {}
     manifest = pd.read_csv(ROOT / "metadata/source_manifest.csv")
     copied = manifest.loc[manifest.operation == "byte-identical copy"]
@@ -54,7 +55,7 @@ def verify():
 
     raw = ROOT / "02_dls/data/260316.csv"
     assert digest(raw) == "2364e652ad4bcba27f786b6e7ca9d11ef5cf55a59d2e7036079d57e599b14422"
-    p = pd.read_csv(ROOT / "reproduced/DLS/uio66_dls_gualtieri_parameters.csv").iloc[0]
+    p = pd.read_csv(output_dir / "DLS/uio66_dls_gualtieri_parameters.csv").iloc[0]
     expected = dict(nG=2, aN_s=215.53882740461037, bN_s=2.5122048297718993,
                     kG_per_s=.0019279948415726232, r2_alpha=.9726582834248372)
     for key, value in expected.items():
@@ -62,7 +63,7 @@ def verify():
     assert p.n_points == 40 and p.time_start_s == 117 and p.time_end_s == 1170
     # The historical linkage panel and refit must use the same experimental observations.
     old = pd.read_csv(root / "linkage_original/output/uio66_dls_size_gualtieri_overlay_v2_trace.csv")
-    new = pd.read_csv(ROOT / "reproduced/DLS/uio66_dls_gualtieri_processed_trace.csv")
+    new = pd.read_csv(output_dir / "DLS/uio66_dls_gualtieri_processed_trace.csv")
     assert np.array_equal(old.raw_size_nm, new.raw_size_nm)
     assert np.array_equal(old.time_s, new.time_s_with_preparation)
     checks["dls_refit"] = {key: float(p[key]) for key in expected}
@@ -80,7 +81,7 @@ def verify():
 
     keys = ["entity", "structure_index"]
     expected_freq = pd.read_csv(ROOT / "04_btb_motifs/data/verified_frequencies.csv").sort_values(keys).reset_index(drop=True)
-    actual = pd.read_csv(ROOT / "reproduced/btb_motif_frequencies.csv").sort_values(keys).reset_index(drop=True)
+    actual = pd.read_csv(output_dir / "btb_motif_frequencies.csv").sort_values(keys).reset_index(drop=True)
     pd.testing.assert_frame_equal(expected_freq, actual, check_dtype=False, rtol=1e-12)
     for row in actual.itertuples():
         assert (ROOT / f"04_btb_motifs/structures/entity_{row.entity}/unique_structure_{row.structure_index}.mol2").is_file()
@@ -105,7 +106,7 @@ def verify():
     for name in ("Fig3D_raw_u", "FigS7_raw_u", "Fig5A_source_clock", "Fig5D_frequency_check",
                  "FigS21_mixed_counts_check", "FigS23_vacancy_fill_check"):
         for ext in ("png", "svg"):
-            assert (ROOT / "reproduced" / f"{name}.{ext}").stat().st_size > 100
+            assert (output_dir / f"{name}.{ext}").stat().st_size > 100
     assert not list(ROOT.rglob("*.docx")) and not list(ROOT.rglob("*.pkl"))
     return dict(status="PASS", python=platform.python_version(), numpy=np.__version__,
                 pandas=pd.__version__, matplotlib=matplotlib.__version__, checks=checks,
@@ -116,8 +117,9 @@ def verify():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--report", type=Path)
+    parser.add_argument("--output-dir", type=Path, help="Check fresh renders here instead of supplied reproduced/")
     args = parser.parse_args()
-    report = verify()
+    report = verify(args.output_dir)
     if args.report:
         args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))

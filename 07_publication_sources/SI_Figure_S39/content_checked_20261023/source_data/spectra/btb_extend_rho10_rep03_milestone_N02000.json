@@ -1,0 +1,130 @@
+{
+  "source": {
+    "requested_entities": 2000,
+    "observed_entities": 2000,
+    "event": 1347201,
+    "model_time": 92.98636648455843,
+    "path": "/home/wave/MOL_growth_recalculation_20260830/btb_size_extension_20260916_v1/results/btb_extend_rho10_rep03/N02000.mol2",
+    "sha256": "9b5d879ec9dcdeeacb7f9a511c47360a1666e5157a1a8b9d38f0af751d85aafe",
+    "kind": "milestone",
+    "run_id": "btb_extend_rho10_rep03",
+    "rho_off": 10.0,
+    "replicate": 3
+  },
+  "pattern": "/home/wave/MOL_growth_recalculation_20260830/btb_size_extension_20260916_v1/pxrd/btb_extend_rho10_rep03_milestone_N02000.csv",
+  "pattern_sha256": "72a74d801162aa01139bb44d1ef24149f58cb02b0d622633ec294fe2b46c658c",
+  "calculation": {
+    "block_size": 4096,
+    "distance_bins": 19764,
+    "maximum_distance_angstrom": 395.28000000000003,
+    "pair_counts": {
+      "C-C": 1025342970,
+      "C-H": 963891225,
+      "C-Hf": 157863510,
+      "C-O": 1227495210,
+      "H-H": 226514970,
+      "H-Hf": 74199510,
+      "H-O": 576951210,
+      "Hf-Hf": 6074355,
+      "Hf-O": 94491516,
+      "O-O": 367354065
+    },
+    "wall_seconds": 0.9071837910450995,
+    "element_counts": {
+      "C": 45285,
+      "H": 21285,
+      "Hf": 3486,
+      "O": 27106
+    }
+  },
+  "geometry": {
+    "valid_six_metal_groups": true,
+    "nodes": 581,
+    "rms_normal_angstrom": 29.04159927368164,
+    "normal_span_angstrom": 169.99734497070312,
+    "principal_rms_angstrom": [
+      55.0672607421875,
+      45.512752532958984,
+      29.041601181030273
+    ],
+    "note": "Best-fit plane is a diagnostic; growth was not constrained to this plane."
+  },
+  "peaks": [
+    {
+      "two_theta_deg": 5.019999999999936,
+      "height": 1.0,
+      "prominence": 0.7345288294624885,
+      "half_prominence_width_deg": 1.3199919811299554
+    },
+    {
+      "two_theta_deg": 5.789999999999919,
+      "height": 0.737931542045649,
+      "prominence": 0.05977935964009018,
+      "half_prominence_width_deg": 0.26862255658915957
+    },
+    {
+      "two_theta_deg": 9.149999999999848,
+      "height": 0.41385580304653347,
+      "prominence": 0.2501057817510556,
+      "half_prominence_width_deg": 0.5298587021981905
+    },
+    {
+      "two_theta_deg": 10.549999999999818,
+      "height": 0.1426702434462776,
+      "prominence": 0.059728030219321424,
+      "half_prominence_width_deg": 0.4704029556645662
+    },
+    {
+      "two_theta_deg": 18.32999999999965,
+      "height": 0.02930628560083992,
+      "prominence": 0.011182375203631145,
+      "half_prominence_width_deg": 0.6663110792454472
+    },
+    {
+      "two_theta_deg": 21.29999999999959,
+      "height": 0.044231678184381125,
+      "prominence": 0.021850099174607503,
+      "half_prominence_width_deg": 0.6002004347891944
+    },
+    {
+      "two_theta_deg": 23.26999999999955,
+      "height": 0.05151116743113249,
+      "prominence": 0.02326989986785056,
+      "half_prominence_width_deg": 0.6287949183798628
+    },
+    {
+      "two_theta_deg": 27.82999999999945,
+      "height": 0.061157252211890466,
+      "prominence": 0.03173461489468622,
+      "half_prominence_width_deg": 0.7697606186713211
+    }
+  ],
+  "shoulder_candidates": [
+    {
+      "two_theta_deg": 5.789999999999919,
+      "height": 0.737931542045649,
+      "prominence": 0.05977935964009018,
+      "half_prominence_width_deg": 0.26862255658915957
+    }
+  ],
+  "settings": {
+    "wavelength_angstrom": 1.5406,
+    "distance_bin_angstrom": 0.02,
+    "angle_step_deg": 0.01,
+    "smooth_sigma_deg": 0.1,
+    "block_size": 4096,
+    "geometry_metal": "Zr",
+    "scattering_metal": "Hf",
+    "raw_unsmoothed_preserved": true,
+    "normalized": "each pattern separately; not a phase fraction or yield",
+    "shoulder": "Peak detection threshold is descriptive, not statistical significance"
+  },
+  "software": {
+    "torch": "2.7.1+cu128",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "source_hashes": {
+      "compute_finite_cluster_pxrd.py": "4cb5cbeea527e53eaa7928c6dadb15446b7c8ce8fd0fafe9ccf5ab158b6cdfb5",
+      "compute_large_cluster_pxrd.py": "64a8f9014b2d0d1805c071bd1296bbbc66eb9d2367f500dff7b6d1503de8def5"
+    }
+  }
+}

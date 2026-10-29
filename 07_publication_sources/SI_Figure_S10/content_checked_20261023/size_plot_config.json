@@ -1,0 +1,5 @@
+{
+  "kind": "zr_size",
+  "script": "recompute_zr_core_sizes_from_unique_structures.py",
+  "output": "zr_core_size_distribution_verified.svg"
+}

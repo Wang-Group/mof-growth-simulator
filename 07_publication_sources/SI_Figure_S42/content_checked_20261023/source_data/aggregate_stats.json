@@ -1,0 +1,64 @@
+{
+  "stage_dirs": [
+    "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\HKUST_1_260209\\Cu2_BTC_260122\\Stage_1",
+    "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\HKUST_1_260215\\Cu2_BTC_260122\\Stage_1"
+  ],
+  "source_tags": [
+    "S1_HKUST_1_260209_Cu2_BTC_260122",
+    "S2_HKUST_1_260215_Cu2_BTC_260122"
+  ],
+  "stage_summaries": [
+    {
+      "source_tag": "S1_HKUST_1_260209_Cu2_BTC_260122",
+      "stage_dir": "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\HKUST_1_260209\\Cu2_BTC_260122\\Stage_1",
+      "condition_count": 10
+    },
+    {
+      "source_tag": "S2_HKUST_1_260215_Cu2_BTC_260122",
+      "stage_dir": "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\HKUST_1_260215\\Cu2_BTC_260122\\Stage_1",
+      "condition_count": 10
+    }
+  ],
+  "entity_min": 1,
+  "entity_max": 50,
+  "conditions_total": 20,
+  "group_mode": "pairwise_tol",
+  "pairwise_tolerance": 0.2,
+  "dedup_tolerance": 0.0001,
+  "entities_requested": 50,
+  "entities_with_any_file": 50,
+  "entities_full_coverage": 13,
+  "unique_structure_count_histogram": {
+    "2": 4,
+    "3": 8,
+    "4": 13,
+    "6": 2,
+    "7": 2,
+    "8": 2,
+    "9": 1,
+    "12": 2,
+    "14": 2,
+    "15": 1,
+    "16": 3,
+    "17": 4,
+    "18": 4,
+    "19": 1,
+    "20": 1
+  },
+  "coverage_fraction_histogram": {
+    "0.15": 7,
+    "0.2": 14,
+    "0.45": 1,
+    "0.6": 1,
+    "0.65": 1,
+    "0.7": 1,
+    "0.85": 4,
+    "0.9": 3,
+    "0.95": 5,
+    "1.0": 13
+  },
+  "mean_unique_structures": 8.58,
+  "median_unique_structures": 5.0,
+  "mean_dominant_group_fraction": 0.277809932069994,
+  "mean_normalized_entropy": 0.9475356538081553
+}

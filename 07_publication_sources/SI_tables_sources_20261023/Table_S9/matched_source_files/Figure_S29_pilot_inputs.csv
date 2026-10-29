@@ -1,0 +1,6 @@
+pilot_id,source,R_sim_as_executed,p_Zr_as_executed,E_sim_as_executed,scope
+1,D:\SynologyDrive\Wave\projects working on\MOL-growth modelling\analysis_workspace\rewrite\uio66_surface_secondary_nucleation_20260830\pilot_R0.1_p0.35_E10.summary.json,0.1,0.35,10.0,geometry diagnostic only; not current direct-coordinate kinetics
+2,D:\SynologyDrive\Wave\projects working on\MOL-growth modelling\analysis_workspace\rewrite\uio66_surface_secondary_nucleation_20260830\pilot_R0.1_p0.65_E100.summary.json,0.1,0.65,100.0,geometry diagnostic only; not current direct-coordinate kinetics
+3,D:\SynologyDrive\Wave\projects working on\MOL-growth modelling\analysis_workspace\rewrite\uio66_surface_secondary_nucleation_20260830\pilot_R10_p0.35_E100.summary.json,10.0,0.35,100.0,geometry diagnostic only; not current direct-coordinate kinetics
+4,D:\SynologyDrive\Wave\projects working on\MOL-growth modelling\analysis_workspace\rewrite\uio66_surface_secondary_nucleation_20260830\pilot_R10_p0.65_E100.summary.json,10.0,0.65,100.0,geometry diagnostic only; not current direct-coordinate kinetics
+5,D:\SynologyDrive\Wave\projects working on\MOL-growth modelling\analysis_workspace\rewrite\uio66_surface_secondary_nucleation_20260830\pilot_R1_p05_E100.summary.json,1.0,0.5,100.0,geometry diagnostic only; not current direct-coordinate kinetics

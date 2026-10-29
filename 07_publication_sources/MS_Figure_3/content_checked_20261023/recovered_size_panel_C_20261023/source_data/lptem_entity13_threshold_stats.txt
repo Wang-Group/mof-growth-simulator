@@ -1,0 +1,5 @@
+LPTEM N = 82
+LPTEM mean = 1.710851 nm
+Entity 13 simulated mean = 3.204071 nm
+LPTEM particles smaller than entity 13 mean = 78/82
+Percentage smaller than entity 13 mean = 95.121951%

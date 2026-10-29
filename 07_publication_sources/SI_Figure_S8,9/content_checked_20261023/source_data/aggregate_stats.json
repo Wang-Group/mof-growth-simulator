@@ -1,0 +1,49 @@
+{
+  "stage_dirs": [
+    "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\UiO66_260224\\UiO66_260206\\Stage_1",
+    "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\UiO66_260224_1\\UiO66_260206\\Stage_1"
+  ],
+  "source_tags": [
+    "S1_UiO66_260224_UiO66_260206",
+    "S2_UiO66_260224_1_UiO66_260206"
+  ],
+  "stage_summaries": [
+    {
+      "source_tag": "S1_UiO66_260224_UiO66_260206",
+      "stage_dir": "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\UiO66_260224\\UiO66_260206\\Stage_1",
+      "condition_count": 5
+    },
+    {
+      "source_tag": "S2_UiO66_260224_1_UiO66_260206",
+      "stage_dir": "C:\\Users\\yibinjiang\\Desktop\\mnt\\syh\\MOF_growth_data\\UiO66_260224_1\\UiO66_260206\\Stage_1",
+      "condition_count": 10
+    }
+  ],
+  "entity_min": 1,
+  "entity_max": 50,
+  "conditions_total": 15,
+  "group_mode": "pairwise_tol",
+  "pairwise_tolerance": 0.2,
+  "dedup_tolerance": 0.0001,
+  "entities_requested": 50,
+  "entities_with_any_file": 50,
+  "entities_full_coverage": 50,
+  "unique_structure_count_histogram": {
+    "1": 1,
+    "2": 2,
+    "3": 2,
+    "6": 2,
+    "7": 1,
+    "8": 1,
+    "12": 3,
+    "14": 5,
+    "15": 33
+  },
+  "coverage_fraction_histogram": {
+    "1.0": 50
+  },
+  "mean_unique_structures": 12.78,
+  "median_unique_structures": 15.0,
+  "mean_dominant_group_fraction": 0.17866666666666667,
+  "mean_normalized_entropy": 0.9364411983545393
+}

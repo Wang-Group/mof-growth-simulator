@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-10-29",
+  "documents": [
+    {
+      "role": "MS",
+      "filename": "manuscript_defect_section_to_SI_20261018.docx",
+      "bytes": 60490042,
+      "sha256": "6adc5771d2e35f2a46c0bc9726a15357b5e2cf9633b99dfc69c0f57146628035",
+      "insertions_in_document_xml": 17,
+      "deletions_in_document_xml": 45
+    },
+    {
+      "role": "SI",
+      "filename": "supporting_information_defect_section_to_SI_20261019.docx",
+      "bytes": 13064774,
+      "sha256": "6d78cd1f7a28cb1dfd39780b8ef747ee24526b8e76fcef06d200e3c4c070eb75",
+      "insertions_in_document_xml": 39,
+      "deletions_in_document_xml": 9
+    }
+  ],
+  "documents_included_or_edited": false,
+  "view": "Final text includes insertions and excludes deletions, moved-from content, and deleted rows."
+}

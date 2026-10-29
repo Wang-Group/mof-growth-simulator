@@ -1,0 +1,27 @@
+{
+  "A": {
+    "figure": "MS_Figure_4",
+    "kind": "figure4"
+  },
+  "B": {
+    "figure": "MS_Figure_4",
+    "kind": "figure4"
+  },
+  "C": {
+    "figure": "MS_Figure_4",
+    "kind": "figure4"
+  },
+  "D": {
+    "figure": "MS_Figure_4",
+    "kind": "figure4"
+  },
+  "E": {
+    "figure": "MS_Figure_4",
+    "kind": "figure4"
+  },
+  "G": {
+    "figure": "MS_Figure_4",
+    "kind": "surface",
+    "function": "panel_b"
+  }
+}

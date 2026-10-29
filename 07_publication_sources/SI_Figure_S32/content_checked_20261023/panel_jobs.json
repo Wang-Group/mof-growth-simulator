@@ -1,0 +1,80 @@
+{
+  "A": {
+    "figure": "SI_Figure_S32",
+    "kind": "native_exporter",
+    "function": "export_s24",
+    "tokens": {
+      "A": "S24_A",
+      "B": "S24_B",
+      "C": "S24_C",
+      "D": "S24_D",
+      "E": "S24_E",
+      "F": "S24_F"
+    }
+  },
+  "B": {
+    "figure": "SI_Figure_S32",
+    "kind": "native_exporter",
+    "function": "export_s24",
+    "tokens": {
+      "A": "S24_A",
+      "B": "S24_B",
+      "C": "S24_C",
+      "D": "S24_D",
+      "E": "S24_E",
+      "F": "S24_F"
+    }
+  },
+  "C": {
+    "figure": "SI_Figure_S32",
+    "kind": "native_exporter",
+    "function": "export_s24",
+    "tokens": {
+      "A": "S24_A",
+      "B": "S24_B",
+      "C": "S24_C",
+      "D": "S24_D",
+      "E": "S24_E",
+      "F": "S24_F"
+    }
+  },
+  "D": {
+    "figure": "SI_Figure_S32",
+    "kind": "native_exporter",
+    "function": "export_s24",
+    "tokens": {
+      "A": "S24_A",
+      "B": "S24_B",
+      "C": "S24_C",
+      "D": "S24_D",
+      "E": "S24_E",
+      "F": "S24_F"
+    }
+  },
+  "E": {
+    "figure": "SI_Figure_S32",
+    "kind": "native_exporter",
+    "function": "export_s24",
+    "tokens": {
+      "A": "S24_A",
+      "B": "S24_B",
+      "C": "S24_C",
+      "D": "S24_D",
+      "E": "S24_E",
+      "F": "S24_F"
+    }
+  },
+  "F": {
+    "figure": "SI_Figure_S32",
+    "kind": "native_exporter",
+    "function": "export_s24",
+    "tokens": {
+      "A": "S24_A",
+      "B": "S24_B",
+      "C": "S24_C",
+      "D": "S24_D",
+      "E": "S24_E",
+      "F": "S24_F"
+    }
+  }
+}

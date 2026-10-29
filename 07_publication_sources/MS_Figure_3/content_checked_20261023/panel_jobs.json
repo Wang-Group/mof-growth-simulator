@@ -1,0 +1,25 @@
+{
+  "A": {
+    "figure": "MS_Figure_3",
+    "kind": "trajectory",
+    "core": "trajectory_core.py",
+    "input": "trajectory/entities_number.pkl",
+    "x_range": [
+      3350,
+      3435
+    ],
+    "y_range": [
+      0,
+      30
+    ],
+    "tick": 5
+  },
+  "D": {
+    "figure": "MS_Figure_3",
+    "kind": "linkage"
+  },
+  "E": {
+    "figure": "MS_Figure_3",
+    "kind": "linkage"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "original_N_ge1000": 209,
+  "new_size_target": 142,
+  "unique_N_ge1000": 351,
+  "old_size_followon": 113,
+  "unchanged_overlapping_endpoints": 113,
+  "newly_added_size_endpoints": 29,
+  "new_condition_additions": {
+    "d00_rho3p0_finite": 6,
+    "d00_rho3p0_fixed": 12,
+    "d06_rho0p1_fixed": 2,
+    "d08_rho0p1_fixed": 9
+  },
+  "eligible20_original": 209,
+  "eligible20_followon": 141,
+  "vacancy_positive_original": 198,
+  "vacancy_positive_followon": 118,
+  "dangling_positive_original": 138,
+  "dangling_positive_followon": 63,
+  "warning": "Catalog only: original and size-target outcomes are not a common-endpoint defect yield."
+}

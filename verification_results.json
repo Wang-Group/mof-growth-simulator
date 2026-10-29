@@ -6,7 +6,7 @@
   "matplotlib": "3.10.0",
   "checks": {
     "copied_sources_hash_verified": 209,
-    "immutable_package_files_hash_verified": 224,
+    "immutable_package_files_hash_verified": 919,
     "long_growth": {
       "completed": 24,
       "panel_values_matched": 216,

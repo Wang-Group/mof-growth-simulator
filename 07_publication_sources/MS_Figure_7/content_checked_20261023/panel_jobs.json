@@ -1,0 +1,30 @@
+{
+  "A": {
+    "figure": "MS_Figure_7",
+    "kind": "trajectory",
+    "input": "HKUST1/entities_number.pkl",
+    "x_range": [
+      8500,
+      9400
+    ],
+    "y_range": [
+      0,
+      30
+    ],
+    "tick": 5
+  },
+  "B": {
+    "figure": "MS_Figure_7",
+    "kind": "trajectory",
+    "input": "PCN240/entities_number.pkl",
+    "x_range": [
+      80500,
+      83100
+    ],
+    "y_range": [
+      0,
+      60
+    ],
+    "tick": 10
+  }
+}

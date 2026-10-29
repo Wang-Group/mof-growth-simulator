@@ -1,0 +1,59 @@
+{
+  "canonical_figure": "D:\\\u8bfe\u9898\u76f8\u5173\u6587\u732e\\\u8bfe\u9898\\MOL\u751f\u957f\u6a21\u62df\\\u8bba\u6587\\student_handoff_20260915_v5\\MOL_handoff\\03_workspace\\analysis_workspace\\rewrite\\recalculation_campaign_20260830\\figure3_rebuild_20260901\\figure3_revision_blue_teal_CDE_20260917_v3\\figure3_revision_blue_teal_CDE_v3.png",
+  "final_width_mm": 190,
+  "panel_g_entity_count": 10000,
+  "panel_g_rho_off_values": [
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0
+  ],
+  "panel_g_excluded_peer": "rho_off=30: trajectory was censored at N=2922 after the finite 1-billion-event/24-hour attempt and is not shown as an N=10000 peer",
+  "panel_g_reviewed_seed_shown": false,
+  "panel_b_to_e_x_label": "rho_off",
+  "panel_a_aspect_policy": "equal x/y display scaling; natural molecular geometry; no anisotropic stretch",
+  "panel_b_native_box_aspect_height_over_width": 0.7291666666666667,
+  "panel_b_uniform_scale_in_composite": 0.86,
+  "panel_b_vertical_drop_fraction": 0.012,
+  "panel_b_annotation_policy": "fixed-condition note in title-to-plot gutter; no data overlap",
+  "panel_order": [
+    "definitions",
+    "reference slice",
+    "nucleation response",
+    "growth-probability response",
+    "growth-rate response",
+    "local sensitivity",
+    "N=10000 PXRD"
+  ],
+  "presentation_revision_only": true,
+  "response_palette_revision": {
+    "panels": [
+      "C",
+      "D",
+      "E"
+    ],
+    "C_palette_unchanged": [
+      "#EEF6FB",
+      "#C9E0F0",
+      "#91C1DC",
+      "#5B9FC4",
+      "#2F78A5"
+    ],
+    "D_palette_revised": [
+      "#EEF8FA",
+      "#C6E5EC",
+      "#8FC8D3",
+      "#58A9B8",
+      "#2D788D"
+    ],
+    "E_palette_unchanged": [
+      "#EEF9F7",
+      "#C7E9E3",
+      "#8BD1C6",
+      "#4DAFA4",
+      "#237F78"
+    ],
+    "data_norms_unchanged": true
+  }
+}
