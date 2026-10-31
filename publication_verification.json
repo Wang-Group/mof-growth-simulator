@@ -314,6 +314,27 @@
       "status": "EXACT_HASH_PRESENT"
     }
   ],
+  "user_confirmed_release_decisions": {
+    "date": "2026-10-31",
+    "evidence": "User clarification in the project conversation; not a new MS/SI audit",
+    "S7": {
+      "status": "CONFIRMED",
+      "time_coordinate": "raw algorithm time u",
+      "conversion": "u = already-scaled CSV time_s / 0.175",
+      "entry_point": "10_plot_versions/render_s7.py",
+      "seconds_variant": "Historical archive only; not the publication entry point"
+    },
+    "Figure5D": {
+      "percentages": "Previously independently recomputed",
+      "structures": "Confirmed by user; no new independent artwork check in this update",
+      "remaining": "Map each classification-table row to its original trajectory file"
+    },
+    "Figure6": {
+      "status": "FINAL_FILE_REGISTRATION_PENDING",
+      "remaining": "Register adopted file path and SHA-256; do not infer adoption from file date"
+    },
+    "scope": "Remaining work is primarily provenance reconciliation and submission preparation, not a claim of incorrect data"
+  },
   "limits": [
     "No production KMC rerun",
     "Not every archived plotter is portable",

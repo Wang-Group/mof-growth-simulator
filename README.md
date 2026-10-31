@@ -23,7 +23,7 @@ a file is not the same as reproducing its full scientific workflow.
 | [01_uio66_long_growth](01_uio66_long_growth/) | 24 completed trajectories: first-passage statistics, residence times, representative traces, conditions, historical simulation source, and entity-13 structures | Main Fig. 3D; SI Fig. S7 |
 | [02_dls](02_dls/) | Original `260316.csv`, processing and Gualtieri fitting code, parameters, and curves | Main Fig. 3E; SI Section S3.2 |
 | [03_btb_trajectory](03_btb_trajectory/) | Compact full step-curve export, original plotting script/PNG, optional exporter, and raw-file fingerprint | Main Fig. 5A; time calibration still pending |
-| [04_btb_motifs](04_btb_motifs/) | Historical 284-row source table, 90 motif classes at entity 1-13, frequencies, and candidate MOL2 structures | Main Fig. 5D; exact structure-to-artwork mapping pending |
+| [04_btb_motifs](04_btb_motifs/) | Historical 284-row source table, 90 motif classes at entity 1-13, frequencies, and MOL2 structures | Main Fig. 5D; percentages recomputed and structures user-confirmed; row-to-trajectory provenance pending |
 | [05_mixed_zr6_zr12](05_mixed_zr6_zr12/) | Four April 10 rerun records, composition traces, conditions, and initial/final structures | Historical comparison family; do not substitute for the April 3 S21 source in group 11 |
 | [06_vacancy_repair](06_vacancy_repair/) | Original-vacancy recovery table, initial/N=2800 structures, historical analysis code, and reference figures | Source family associated with SI Figs. S23-S24 |
 | [07_publication_sources](07_publication_sources/) | 670 byte-verified code/data/configuration copies, retaining supplied figure/table paths and version labels | Current figure/table source bundles; panel-specific limits apply |
@@ -83,12 +83,17 @@ The new S21 source can be drawn without simulation using the separate plotting-o
 helper documented in [group 11](11_s21_april03/README.md). This does not change
 `reproduce.py --group mixed`, which intentionally still draws the April 10 rerun.
 
+**The confirmed S7 publication coordinate is algorithm time u.** Run
+`python 10_plot_versions/render_s7.py` for standalone S7 A-D SVGs and QA PNGs.
+The seconds renderer is retained only as a historical version.
+
 ## Figure Mapping and Evidence
 
 - [FIGURE_MAP.csv](FIGURE_MAP.csv): data-to-current-figure correspondence, plotting entry points, and confidence limits.
 - [metadata/source_manifest.csv](metadata/source_manifest.csv): copied-file hashes, original locations, and documented transformations. Historical paths are provenance only; they are not required at runtime.
 - [metadata/publication_sources.csv](metadata/publication_sources.csv): current source selection, hashes, exclusions and evidence scope for the added figure/table material.
 - [metadata/recovered_sources_20261031.json](metadata/recovered_sources_20261031.json): 42 byte-identical additions with original host/project or shared-directory paths; no login credentials.
+- [metadata/publication_decisions_20261031.json](metadata/publication_decisions_20261031.json): user-confirmed S7 time coordinate and Fig. 5D structure status, distinguished from independently tested facts.
 - [publication_verification.json](publication_verification.json): new numerical checks and exact-hash coverage of executed code recorded in six UiO-66 results.
 - [verification_results.json](verification_results.json): results from the complete local verification workflow.
 - [YUHANG_CONFIRMATION_CHECKLIST.md](YUHANG_CONFIRMATION_CHECKLIST.md): outstanding author confirmations and newer missing source families, in Chinese.
@@ -104,7 +109,7 @@ is still the latest document content.
 
 ## Scientific Limits
 
-- **UiO-66 clock:** historical `_s` tables contain raw algorithm time multiplied by 0.175. The existing lightweight S7 replot divides by 0.175 to recover `u`. Group 10 separately preserves the shared-directory seconds renderer, which uses the already-scaled CSV values without multiplying again. Neither convention is a new physical-clock calibration; final MS/SI clock adoption remains an author decision.
+- **UiO-66 clock:** historical `_s` tables contain raw algorithm time multiplied by 0.175. The confirmed S7 publication entry divides by 0.175 to recover `u`. Group 10 preserves the seconds renderer only as history. This is not a new physical-clock calibration and does not automatically relabel other figures.
 - **Entity 13:** 24 last-saved snapshots form nine reconstructed topologies, not one unique deterministic nucleus. They are not first-passage structures and are separate from the historical 20-run motif cohort. I03 remains a delayed-growth exception.
 - **DLS:** the last two raw columns already include preparation time. The fit uses 40 points spanning 117-1170 s, while the original display ends at 600 s. R-squared = 0.972658 refers to the processed monotonic apparent-progress proxy, not raw diameter or crystallinity. The implementation selects nG from {1, 2, 3}.
 - **BTB trajectory:** all step-plot changes are retained in 148,692 constant segments from 5,000,001 original rows. Interior timestamps within constant segments are omitted. The stored source clock is not relabeled as calibrated milliseconds.

@@ -168,8 +168,12 @@ def main():
               'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks(),
               'recovered_sources': verify_recovered_sources()}
     dependencies = dependency_audit()
+    decisions = json.loads((ROOT/'metadata/publication_decisions_20261031.json').read_text(encoding='utf-8'))
+    require(decisions['S7']['time_coordinate'] == 'raw algorithm time u', 'Wrong S7 publication coordinate')
+    require((ROOT/decisions['S7']['entry_point']).is_file(), 'S7 publication entry missing')
     report = {'status': 'PASS_FOR_DECLARED_LOCAL_CHECKS', 'publication_ready': False,
               'checks': checks, 'executed_code_coverage': dependencies,
+              'user_confirmed_release_decisions': decisions,
               'limits': ['No production KMC rerun', 'Not every archived plotter is portable',
                          'No complete-paper reproducibility claim', 'Author license and archive decisions pending']}
     if args.report:

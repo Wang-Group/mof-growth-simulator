@@ -18,7 +18,23 @@ manifest. The three former `HASH_MISMATCH_REVIEW_REQUIRED` ledger rows now read
 `VERSION_VARIANT_ARCHIVED`: `sha256` is the shared revision; `expected_sha256`
 still documents the original version, not a claimed match to the new bytes.
 
-## Time Conventions
+## Publication Entry Point
+
+Confirmed by the user on 2026-10-31: **S7 uses algorithm time u**. From the
+repository root, run:
+
+```bash
+python 10_plot_versions/render_s7.py
+```
+
+This uses the archived raw-u numerical renderer, writes `SI_Figure_S7_A-D.svg`
+and QA PNGs under `reproduced_local/S7_publication_u/`, and changes only the
+historical S8 export filenames to current S7 names. No source data or renderer
+bytes are edited. The older generic runtime selecting seconds remains an
+archival record, not the release launcher. Fig. 6's adopted file still needs
+registration. See `metadata/publication_decisions_20261031.json`.
+
+## Historical Time Conventions
 
 Both S7 renderers are preserved under
 `shared_20261031/SI_Figure_S7/original_code/`:
@@ -27,10 +43,10 @@ Both S7 renderers are preserved under
 - `export_figure_s7_panels_seconds.py`: CSV time directly, already `t_s = 0.175 * u`.
 
 The latter is a room-temperature reference scaling, not an independently
-validated absolute framework-growth clock. Do not apply 0.175 twice. Author
-confirmation of the final MS/SI labels remains separate from source recovery.
+validated absolute framework-growth clock. Do not apply 0.175 twice. It is
+retained for historical comparison only, not as a competing publication default.
 
-Optional offline seconds rendering, from the repository root:
+Historical seconds rendering only, from the repository root:
 
 ```bash
 python 10_plot_versions/shared_20261031/SI_Figure_S7/original_code/export_figure_s7_panels_seconds.py --data-dir 07_publication_sources/SI_Figure_S7/content_checked_20261023/source_data --output-dir reproduced_local/S7_seconds --qa-dir reproduced_local/S7_seconds/qa

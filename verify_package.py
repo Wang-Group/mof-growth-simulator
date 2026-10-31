@@ -85,8 +85,11 @@ def verify(output_dir=None):
     pd.testing.assert_frame_equal(expected_freq, actual, check_dtype=False, rtol=1e-12)
     for row in actual.itertuples():
         assert (ROOT / f"04_btb_motifs/structures/entity_{row.entity}/unique_structure_{row.structure_index}.mol2").is_file()
+    decisions = json.loads((ROOT / "metadata/publication_decisions_20261031.json").read_text(encoding="utf-8"))
     checks["btb_frequencies"] = dict(classes=len(actual), numerical_frequencies_match=True,
-                                     candidate_mol2_files_present=True, artwork_mapping="pending")
+                                     candidate_mol2_files_present=True,
+                                     structure_confirmation=decisions["Figure5D"]["structures"],
+                                     remaining_provenance=decisions["Figure5D"]["remaining"])
 
     path = next((ROOT / "05_mixed_zr6_zr12/data").glob("*.summary_trace.json"))
     mixed = json.loads(path.read_text(encoding="utf-8"))
