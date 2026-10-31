@@ -1,0 +1,8 @@
+{
+  "pid": 339545,
+  "utc": "2026-09-12T20:34:19.336827+00:00",
+  "manifest_sha256": "a033a62f3c6ec3669748d39941e04cc3a8933f14b045117f8f8eacab6efa7674",
+  "planned_traces": 1152,
+  "initial_workers": 8,
+  "maximum_workers": 64
+}

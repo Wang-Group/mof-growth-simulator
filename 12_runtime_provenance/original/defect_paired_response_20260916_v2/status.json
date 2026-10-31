@@ -1,0 +1,17 @@
+{
+  "state": "completed",
+  "pid": 3835966,
+  "planned": 384,
+  "submitted": 384,
+  "running": 0,
+  "completed": 384,
+  "queued": 0,
+  "analysis_running": 0,
+  "analysis_completed": 384,
+  "analysis_failed": 0,
+  "status_counts": {
+    "time_target_reached": 161,
+    "wall_time_cap": 223
+  },
+  "available_GiB": 109.65596008300781
+}

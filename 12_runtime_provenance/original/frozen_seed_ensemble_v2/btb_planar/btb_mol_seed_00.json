@@ -1,0 +1,63 @@
+{
+  "schema_version": "common-molecular-seed-v1",
+  "system": "btb_mol",
+  "topology_mode": "planar_mol",
+  "random_seed": 20270831,
+  "generation_coordinates": {
+    "atomic_metal_to_linker_ratio": 3.0,
+    "external_activity": 1.0,
+    "node_activity_share": 0.3333333333333333,
+    "bond_removal_weight": 0.1,
+    "closure_coefficient": 0.5,
+    "m6_node_fraction": 1.0,
+    "m12_node_fraction": 0.0,
+    "initial_node_class": "Zr6"
+  },
+  "generation_model_time": 2.7249417945198884,
+  "event_counts": {
+    "add_linker_accepted": 15,
+    "remove_bond": 2,
+    "add_node_accepted": 6,
+    "close_internal": 4
+  },
+  "state": {
+    "entities": 20,
+    "linked_bonds": 23,
+    "cycle_rank": 4,
+    "linker_free_sites": 15,
+    "metal_free_sites": 60,
+    "ready_internal_pairs": 1,
+    "entity_type_counts": {
+      "Zr": 7,
+      "Ligand": 13
+    }
+  },
+  "connected_component_sizes": [
+    20
+  ],
+  "geometry": {
+    "center_singular_value_1": 93.38997869543485,
+    "center_singular_value_2": 56.285917188461546,
+    "center_singular_value_3": 0.2123781101025095,
+    "planarity_ratio_s3_over_sum": 0.0014169094382327232,
+    "rms_thickness": 0.06346176095953097,
+    "maximum_absolute_thickness": 0.17231785046586,
+    "pca_out_of_plane_fraction": 3.7935304747455093e-06
+  },
+  "provenance": {
+    "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+    "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+    "engine_import_redirects": [
+      "numpy-compatible scipy.spatial.cKDTree and scipy.linalg.svd shim",
+      "unused matplotlib.pyplot import shim",
+      "/public/home/yibinjiang/workspace/mol/BTBa.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/BTBa.mol",
+      "/public/home/yibinjiang/workspace/mol/BTBb.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/BTBb.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr12.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/Zr12.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr6.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/Zr6.mol"
+    ],
+    "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+  },
+  "seed_id": "btb_mol_seed_00",
+  "pickle_sha256": "147c600b4cb8dfb8a2276d96bef0e536ece5912be45f1c0d89ca2f1230d21a52",
+  "pickle_round_trip_validation": "passed"
+}

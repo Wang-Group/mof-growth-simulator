@@ -5,6 +5,11 @@ The 13 CSV/XLSX files in `data/` were extracted byte-for-byte from the supplied
 member hashes. No table was edited, refitted or relabelled.
 
 These are supplied calculation/processing tables associated with the entropy
-discussion. They are not a substitute for original Gaussian outputs, molecular
-configuration provenance or the entropy-calculation program. The exact mapping
-to every value in SI Table S6 remains an author confirmation item.
+discussion. The 2026-10-31 audit matched all 18 displayed S6 numbers to the six
+reference-species rows of `entropy_results.csv`; the shared standalone CSV has
+the same bytes. See [the value audit](../13_table_source_audit/README.md).
+
+This closes the numerical-table correspondence, not the complete calculation
+chain. The actual entropy program, molecular geometry mapping and solvent/model
+inputs still need confirmation. The SI describes a solution-entropy correction;
+Gaussian outputs are not assumed to be mandatory inputs without further evidence.

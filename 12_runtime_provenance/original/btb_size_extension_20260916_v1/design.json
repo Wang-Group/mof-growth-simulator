@@ -1,0 +1,27 @@
+{
+  "planned": 16,
+  "workers": 8,
+  "target": 10000,
+  "rho_off": [
+    10,
+    30,
+    50,
+    100
+  ],
+  "replicate_selection": "first four indices 0-3 at every condition, no outcome selection",
+  "wall_seconds_per_trajectory": 7200,
+  "maximum_worker_hours": 32,
+  "seed_entities": 30,
+  "node_fraction": 0.14285714285714285,
+  "s_close": 1,
+  "external_activity": 1,
+  "constant_pool": true,
+  "molecular_growth": "unrestricted 3D; all 12 node directions",
+  "relationship_to_previous": "deterministic replay and extension, not independent new replicates",
+  "checkpoint": "Full assembly and three RNG states; 120 s checks and every size milestone",
+  "limitations": [
+    "Finite cap does not guarantee N=10000.",
+    "Higher N does not impose a flat layer or remove genuine secondary scattering.",
+    "Retain capped structures; compare matched sizes before comparing endpoints."
+  ]
+}

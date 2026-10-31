@@ -1,0 +1,428 @@
+[
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20270831,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 1.4056622139173474,
+    "event_counts": {
+      "add_linker_accepted": 15,
+      "remove_bond": 1,
+      "add_node_accepted": 5
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 19,
+      "cycle_rank": 0,
+      "linker_free_sites": 23,
+      "metal_free_sites": 53,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Zr": 6,
+        "Ligand": 14
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 66.55838370439268,
+      "center_singular_value_2": 51.67095158588459,
+      "center_singular_value_3": 27.756432262101686,
+      "planarity_ratio_s3_over_sum": 0.19013108419725105
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [
+        "numpy-compatible scipy.spatial.cKDTree and scipy.linalg.svd shim",
+        "unused matplotlib.pyplot import shim",
+        "/public/home/yibinjiang/workspace/mol/BTBa.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/BTBa.mol",
+        "/public/home/yibinjiang/workspace/mol/BTBb.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/BTBb.mol",
+        "/public/home/yibinjiang/workspace/mol/Zr12.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/Zr12.mol",
+        "/public/home/yibinjiang/workspace/mol/Zr6.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/input_monomers/Zr6.mol"
+      ],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_00",
+    "pickle_sha256": "5e3e8c8a1ae26c674e834f878bcd5828622560ad04b40b025ad734be428b2833",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20278750,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 0.9924743900793982,
+    "event_counts": {
+      "add_linker_accepted": 15,
+      "add_node_accepted": 4
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 19,
+      "cycle_rank": 0,
+      "linker_free_sites": 26,
+      "metal_free_sites": 41,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Zr": 5,
+        "Ligand": 15
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 67.85490857586194,
+      "center_singular_value_2": 34.600024905751596,
+      "center_singular_value_3": 27.612788287070433,
+      "planarity_ratio_s3_over_sum": 0.2122954712482608
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_01",
+    "pickle_sha256": "184de3864455b05a34aeb89507dacdb7760e48efacd4d4be1be5ad607213a686",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20286669,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 0.7112004201361046,
+    "event_counts": {
+      "add_linker_accepted": 14,
+      "add_node_accepted": 5,
+      "close_internal": 1,
+      "add_linker_collision_rejected": 1
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 20,
+      "cycle_rank": 1,
+      "linker_free_sites": 22,
+      "metal_free_sites": 52,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Zr": 6,
+        "Ligand": 14
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 60.84513614109168,
+      "center_singular_value_2": 44.06120046497405,
+      "center_singular_value_3": 31.4573908365155,
+      "planarity_ratio_s3_over_sum": 0.23068737872218462
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_02",
+    "pickle_sha256": "43dce51c97d9ef8d7039a751841f238b4249be12b9d9d05bcab52c6d68d0a4a9",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20294588,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 0.9861494687839694,
+    "event_counts": {
+      "add_linker_accepted": 14,
+      "add_node_accepted": 5
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 19,
+      "cycle_rank": 0,
+      "linker_free_sites": 23,
+      "metal_free_sites": 53,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Zr": 6,
+        "Ligand": 14
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 70.88854715423355,
+      "center_singular_value_2": 37.67284943067869,
+      "center_singular_value_3": 30.02094641155527,
+      "planarity_ratio_s3_over_sum": 0.21662894249320427
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_03",
+    "pickle_sha256": "f2189ded73272cf2528bfca438f4f07fab49ffdc189952f9b8ae1815406aa306",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20302507,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 1.6272480680086965,
+    "event_counts": {
+      "add_linker_accepted": 18,
+      "remove_bond": 3,
+      "add_node_accepted": 3,
+      "close_internal": 3
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 21,
+      "cycle_rank": 2,
+      "linker_free_sites": 27,
+      "metal_free_sites": 27,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Zr": 4,
+        "Ligand": 16
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 63.55624776845704,
+      "center_singular_value_2": 40.33132422865875,
+      "center_singular_value_3": 25.98229751486326,
+      "planarity_ratio_s3_over_sum": 0.20006409194448815
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_04",
+    "pickle_sha256": "7c3c988a7072c7eb324f5517df21b19d9bcc7db87e9102716dbca2273c89e648",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20310426,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 1.209811902607796,
+    "event_counts": {
+      "add_linker_accepted": 17,
+      "add_node_accepted": 2,
+      "close_internal": 1,
+      "add_linker_collision_rejected": 3
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 20,
+      "cycle_rank": 1,
+      "linker_free_sites": 31,
+      "metal_free_sites": 16,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Zr": 3,
+        "Ligand": 17
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 47.31993577200508,
+      "center_singular_value_2": 37.499606406401206,
+      "center_singular_value_3": 28.185329404815505,
+      "planarity_ratio_s3_over_sum": 0.24941694114539636
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_05",
+    "pickle_sha256": "337ac60bed55ab3f2faf90c47f39469646002c564f2a6c2bed553ce2e0e14426",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20318345,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 6.526474058632149,
+    "event_counts": {
+      "add_linker_accepted": 16,
+      "remove_bond": 1,
+      "add_node_accepted": 4,
+      "close_internal": 2
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 21,
+      "cycle_rank": 2,
+      "linker_free_sites": 27,
+      "metal_free_sites": 27,
+      "ready_internal_pairs": 0,
+      "entity_type_counts": {
+        "Ligand": 16,
+        "Zr": 4
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 57.698099279981314,
+      "center_singular_value_2": 33.55326396674963,
+      "center_singular_value_3": 27.046700139653346,
+      "planarity_ratio_s3_over_sum": 0.2286318082090119
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_06",
+    "pickle_sha256": "29334cd7e84d040a373a725e6ac99aed069cf20cfe69adde0ddbdc24a704777c",
+    "pickle_round_trip_validation": "passed"
+  },
+  {
+    "schema_version": "common-molecular-seed-v1",
+    "system": "btb_mol",
+    "topology_mode": "unrestricted",
+    "random_seed": 20326264,
+    "generation_coordinates": {
+      "atomic_metal_to_linker_ratio": 3.0,
+      "external_activity": 1.0,
+      "node_activity_share": 0.3333333333333333,
+      "bond_removal_weight": 0.1,
+      "closure_coefficient": 0.5,
+      "m6_node_fraction": 1.0,
+      "m12_node_fraction": 0.0,
+      "initial_node_class": "Zr6"
+    },
+    "generation_model_time": 1.7867457057650813,
+    "event_counts": {
+      "add_linker_accepted": 17,
+      "add_node_accepted": 3,
+      "add_linker_collision_rejected": 3,
+      "remove_bond": 1
+    },
+    "state": {
+      "entities": 20,
+      "linked_bonds": 19,
+      "cycle_rank": 0,
+      "linker_free_sites": 28,
+      "metal_free_sites": 28,
+      "ready_internal_pairs": 1,
+      "entity_type_counts": {
+        "Zr": 4,
+        "Ligand": 16
+      }
+    },
+    "connected_component_sizes": [
+      20
+    ],
+    "geometry": {
+      "center_singular_value_1": 57.84781037168612,
+      "center_singular_value_2": 39.28719711140704,
+      "center_singular_value_3": 33.314076624704875,
+      "planarity_ratio_s3_over_sum": 0.25537991970242907
+    },
+    "provenance": {
+      "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/KMC_example/MOL_KMC/MOL_Assembly_Large_Correction_20250811.py",
+      "engine_sha256": "90d76b5ed7e077264b7df07f77c26b5491717f75934b51631d738b9569b94a49",
+      "engine_import_redirects": [],
+      "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+    },
+    "seed_id": "btb_mol_seed_07",
+    "pickle_sha256": "5c01af32e03fb2319f61282e5c0ff6f1916e701f51cde0590ac33ab456db7b63",
+    "pickle_round_trip_validation": "passed"
+  }
+]

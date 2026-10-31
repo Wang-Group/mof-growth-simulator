@@ -1,0 +1,52 @@
+{
+  "schema_version": "common-molecular-seed-v1",
+  "system": "uio66",
+  "topology_mode": "unrestricted",
+  "random_seed": 20276669,
+  "generation_coordinates": {
+    "atomic_metal_to_linker_ratio": 1.0,
+    "external_activity": 1.0,
+    "node_activity_share": 0.14285714285714285,
+    "bond_removal_weight": 0.1,
+    "closure_coefficient": 0.5,
+    "m6_node_fraction": 1.0,
+    "m12_node_fraction": 0.0,
+    "initial_node_class": "Zr6_AA"
+  },
+  "generation_model_time": 1.6153077606906883,
+  "event_counts": {
+    "add_linker_accepted": 18,
+    "remove_bond": 1,
+    "add_node_accepted": 2
+  },
+  "state": {
+    "entities": 20,
+    "linked_bonds": 19,
+    "cycle_rank": 0,
+    "linker_free_sites": 15,
+    "metal_free_sites": 17,
+    "ready_internal_pairs": 0,
+    "entity_type_counts": {
+      "Zr": 3,
+      "Ligand": 17
+    }
+  },
+  "connected_component_sizes": [
+    20
+  ],
+  "geometry": {
+    "center_singular_value_1": 49.42673083131459,
+    "center_singular_value_2": 22.99049069024062,
+    "center_singular_value_3": 16.773066387312152,
+    "planarity_ratio_s3_over_sum": 0.1880593367346285
+  },
+  "provenance": {
+    "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/code/UiO66_Assembly_Large_Correction_20250811.py",
+    "engine_sha256": "0a8aac74b8fd68210261bf2746164349fce96582d842bf5203433b5edf095912",
+    "engine_import_redirects": [],
+    "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+  },
+  "seed_id": "uio66_seed_02",
+  "pickle_sha256": "80d69b1be34c0407e056ce1bb6850fec81139f81c358022a89e7bc3644b422d4",
+  "pickle_round_trip_validation": "passed"
+}

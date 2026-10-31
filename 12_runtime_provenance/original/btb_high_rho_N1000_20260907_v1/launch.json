@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-09-07T06:23:50.529616+00:00",
+  "supervisor_pid": 2243646,
+  "workers": 16,
+  "command": [
+    "/usr/bin/python3",
+    "/home/wave/MOL_growth_recalculation_20260830/btb_high_rho_N1000_20260907_v1/remote_control.py",
+    "supervise"
+  ],
+  "manifest_sha256": "5154b435b84bfa130a13292345993e55dbcd36c29affbb6fea31bf5efa574e65",
+  "remote_output": "/home/wave/MOL_growth_recalculation_20260830/btb_high_rho_N1000_20260907_v1"
+}

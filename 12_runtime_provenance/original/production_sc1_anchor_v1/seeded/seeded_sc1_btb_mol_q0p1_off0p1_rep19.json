@@ -1,0 +1,1854 @@
+{
+  "bath_mapping": {},
+  "bond_opening_model": "one equal per-bond opening weight",
+  "clock": {
+    "model_time": 0.6937001186892783,
+    "physical_seconds": 0.00016683487854477142,
+    "reference": "one dimensionless unit equals one declared site-opening time",
+    "site_opening_seconds": 0.0002405
+  },
+  "composition_mapping": {
+    "atomic_metal_to_linker_ratio": 0.1,
+    "kind": "atomic_q_to_zr6_entity_share_q_over_q_plus_6",
+    "node_fraction": 0.01639344262295082
+  },
+  "condition_id": "seeded_sc1_btb_mol_q0p1_off0p1",
+  "continuation_replicate": 19,
+  "coordinates": {
+    "closure_entropy_coefficient": 1.0,
+    "closure_entropy_scale": 30.9,
+    "closure_weight": 26284486128017.19,
+    "external_activity": 1.0,
+    "linker_activity": 0.9836065573770492,
+    "node_activity": 0.01639344262295082,
+    "node_fraction": 0.01639344262295082,
+    "normalized_closure_ratio": 26284486128017.19,
+    "normalized_off_ratio": 0.1,
+    "off_weight": 0.1
+  },
+  "derived": {
+    "initial_btb_dimensionality": {
+      "angle_tolerance_deg": 7.5,
+      "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+      "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+      "geometric_shape_class_provisional": "two_dimensional_like",
+      "global_center_angstrom": [
+        -17.091228433633283,
+        59.75242078356733,
+        81.05542989847207
+      ],
+      "global_covariance_eigenvalues_angstrom2": [
+        460.8194730730733,
+        219.82283575484814,
+        0.0018726732701184834
+      ],
+      "global_flatness_ratio_lambda3_over_lambda2": 8.519011519835613e-06,
+      "global_linearity_ratio_lambda2_over_lambda1": 0.4770259257685282,
+      "global_plane_normal": [
+        -0.5625805671206586,
+        0.5958360893121494,
+        -0.573133893755554
+      ],
+      "global_rms_thickness_angstrom": 0.04105369585197555,
+      "global_thickness_span_angstrom": 0.12686137911369766,
+      "largest_domain_metal_fraction": 1.0,
+      "largest_domain_tripodal_linker_fraction": 1.0,
+      "layer_domain_count": 1,
+      "layer_domains": [
+        {
+          "center_angstrom": [
+            -17.091228433633283,
+            59.75242078356733,
+            81.05542989847207
+          ],
+          "local_plane_observations": 9,
+          "normal": [
+            -0.5625805671206586,
+            0.5958360893121494,
+            -0.573133893755554
+          ],
+          "rms_support_thickness_angstrom": 0.04105369585197555,
+          "support_covariance_eigenvalues_angstrom2": [
+            460.8194730730733,
+            219.82283575484814,
+            0.0018726732701184834
+          ],
+          "support_thickness_span_angstrom": 0.12686137911369766,
+          "supporting_metal_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "supporting_metal_nodes": 10
+        }
+      ],
+      "linkers": 20,
+      "local_tripodal_planes": 9,
+      "metal_nodes": 10,
+      "minimum_local_planes_for_stable_layer": 2,
+      "offset_tolerance_angstrom": 3.0,
+      "stable_layer_domain_count": 1,
+      "status": "measured"
+    },
+    "mean_entities_time_weighted": 54.38126376107312,
+    "net_entity_change": 50,
+    "post_growth_structure_evolution": [
+      {
+        "event": 10,
+        "metrics": {
+          "angle_tolerance_deg": 7.5,
+          "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+          "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+          "geometric_shape_class_provisional": "two_dimensional_like",
+          "global_center_angstrom": [
+            -17.091228433633283,
+            59.75242078356733,
+            81.05542989847207
+          ],
+          "global_covariance_eigenvalues_angstrom2": [
+            460.8194730730733,
+            219.82283575484814,
+            0.0018726732701184834
+          ],
+          "global_flatness_ratio_lambda3_over_lambda2": 8.519011519835613e-06,
+          "global_linearity_ratio_lambda2_over_lambda1": 0.4770259257685282,
+          "global_plane_normal": [
+            -0.5625805671206586,
+            0.5958360893121494,
+            -0.573133893755554
+          ],
+          "global_rms_thickness_angstrom": 0.04105369585197555,
+          "global_thickness_span_angstrom": 0.12686137911369766,
+          "largest_domain_metal_fraction": 1.0,
+          "largest_domain_tripodal_linker_fraction": 1.0,
+          "layer_domain_count": 1,
+          "layer_domains": [
+            {
+              "center_angstrom": [
+                -17.091228433633283,
+                59.75242078356733,
+                81.05542989847207
+              ],
+              "local_plane_observations": 9,
+              "normal": [
+                -0.5625805671206586,
+                0.5958360893121494,
+                -0.573133893755554
+              ],
+              "rms_support_thickness_angstrom": 0.04105369585197555,
+              "support_covariance_eigenvalues_angstrom2": [
+                460.8194730730733,
+                219.82283575484814,
+                0.0018726732701184834
+              ],
+              "support_thickness_span_angstrom": 0.12686137911369766,
+              "supporting_metal_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "linkers": 30,
+          "local_tripodal_planes": 9,
+          "metal_nodes": 10,
+          "minimum_local_planes_for_stable_layer": 2,
+          "offset_tolerance_angstrom": 3.0,
+          "stable_layer_domain_count": 1,
+          "status": "measured"
+        },
+        "model_time": 0.1457434173493434,
+        "observed_entities": 40,
+        "relative_to_seed_layer": {
+          "daughter_layer_domains": 0,
+          "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+          "domains": [
+            {
+              "angle_from_seed_plane_deg": 0.0,
+              "domain_index": 0,
+              "local_plane_observations": 9,
+              "normal_offset_from_seed_plane_angstrom": 0.0,
+              "registered_with_seed_plane": true,
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "largest_daughter_supporting_metal_fraction": 0.0,
+          "largest_daughter_supporting_metal_nodes": 0,
+          "largest_primary_supporting_metal_fraction": 1.0,
+          "largest_primary_supporting_metal_nodes": 10,
+          "primary_registered_domains": 1,
+          "status": "measured"
+        },
+        "requested_entity_milestone": 40
+      },
+      {
+        "event": 24,
+        "metrics": {
+          "angle_tolerance_deg": 7.5,
+          "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+          "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+          "geometric_shape_class_provisional": "three_dimensional_like",
+          "global_center_angstrom": [
+            -16.89494450138328,
+            56.7366907352319,
+            80.78062782233073
+          ],
+          "global_covariance_eigenvalues_angstrom2": [
+            449.57617096271105,
+            238.52692176891497,
+            25.77205478243452
+          ],
+          "global_flatness_ratio_lambda3_over_lambda2": 0.10804673364041692,
+          "global_linearity_ratio_lambda2_over_lambda1": 0.5305595295634541,
+          "global_plane_normal": [
+            0.5625686702565991,
+            -0.46306973914728305,
+            0.6848962753087429
+          ],
+          "global_rms_thickness_angstrom": 4.840365762140721,
+          "global_thickness_span_angstrom": 18.0809662084607,
+          "largest_domain_metal_fraction": 0.9090909090909091,
+          "largest_domain_tripodal_linker_fraction": 1.0,
+          "layer_domain_count": 1,
+          "layer_domains": [
+            {
+              "center_angstrom": [
+                -17.091228433633283,
+                59.75242078356733,
+                81.05542989847207
+              ],
+              "local_plane_observations": 9,
+              "normal": [
+                -0.5625805671206586,
+                0.5958360893121494,
+                -0.573133893755554
+              ],
+              "rms_support_thickness_angstrom": 0.04105369585197555,
+              "support_covariance_eigenvalues_angstrom2": [
+                460.8194730730733,
+                219.82283575484814,
+                0.0018726732701184834
+              ],
+              "support_thickness_span_angstrom": 0.12686137911369766,
+              "supporting_metal_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "linkers": 39,
+          "local_tripodal_planes": 9,
+          "metal_nodes": 11,
+          "minimum_local_planes_for_stable_layer": 2,
+          "offset_tolerance_angstrom": 3.0,
+          "stable_layer_domain_count": 1,
+          "status": "measured"
+        },
+        "model_time": 0.26544575724458924,
+        "observed_entities": 50,
+        "relative_to_seed_layer": {
+          "daughter_layer_domains": 0,
+          "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+          "domains": [
+            {
+              "angle_from_seed_plane_deg": 0.0,
+              "domain_index": 0,
+              "local_plane_observations": 9,
+              "normal_offset_from_seed_plane_angstrom": 0.0,
+              "registered_with_seed_plane": true,
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "largest_daughter_supporting_metal_fraction": 0.0,
+          "largest_daughter_supporting_metal_nodes": 0,
+          "largest_primary_supporting_metal_fraction": 0.9090909090909091,
+          "largest_primary_supporting_metal_nodes": 10,
+          "primary_registered_domains": 1,
+          "status": "measured"
+        },
+        "requested_entity_milestone": 50
+      },
+      {
+        "event": 38,
+        "metrics": {
+          "angle_tolerance_deg": 7.5,
+          "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+          "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+          "geometric_shape_class_provisional": "three_dimensional_like",
+          "global_center_angstrom": [
+            -16.89494450138328,
+            56.7366907352319,
+            80.78062782233073
+          ],
+          "global_covariance_eigenvalues_angstrom2": [
+            449.57617096271105,
+            238.52692176891497,
+            25.77205478243452
+          ],
+          "global_flatness_ratio_lambda3_over_lambda2": 0.10804673364041692,
+          "global_linearity_ratio_lambda2_over_lambda1": 0.5305595295634541,
+          "global_plane_normal": [
+            0.5625686702565991,
+            -0.46306973914728305,
+            0.6848962753087429
+          ],
+          "global_rms_thickness_angstrom": 4.840365762140721,
+          "global_thickness_span_angstrom": 18.0809662084607,
+          "largest_domain_metal_fraction": 0.9090909090909091,
+          "largest_domain_tripodal_linker_fraction": 1.0,
+          "layer_domain_count": 1,
+          "layer_domains": [
+            {
+              "center_angstrom": [
+                -17.091228433633283,
+                59.75242078356733,
+                81.05542989847207
+              ],
+              "local_plane_observations": 9,
+              "normal": [
+                -0.5625805671206586,
+                0.5958360893121494,
+                -0.573133893755554
+              ],
+              "rms_support_thickness_angstrom": 0.04105369585197555,
+              "support_covariance_eigenvalues_angstrom2": [
+                460.8194730730733,
+                219.82283575484814,
+                0.0018726732701184834
+              ],
+              "support_thickness_span_angstrom": 0.12686137911369766,
+              "supporting_metal_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "linkers": 49,
+          "local_tripodal_planes": 9,
+          "metal_nodes": 11,
+          "minimum_local_planes_for_stable_layer": 2,
+          "offset_tolerance_angstrom": 3.0,
+          "stable_layer_domain_count": 1,
+          "status": "measured"
+        },
+        "model_time": 0.39837256715396757,
+        "observed_entities": 60,
+        "relative_to_seed_layer": {
+          "daughter_layer_domains": 0,
+          "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+          "domains": [
+            {
+              "angle_from_seed_plane_deg": 0.0,
+              "domain_index": 0,
+              "local_plane_observations": 9,
+              "normal_offset_from_seed_plane_angstrom": 0.0,
+              "registered_with_seed_plane": true,
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "largest_daughter_supporting_metal_fraction": 0.0,
+          "largest_daughter_supporting_metal_nodes": 0,
+          "largest_primary_supporting_metal_fraction": 0.9090909090909091,
+          "largest_primary_supporting_metal_nodes": 10,
+          "primary_registered_domains": 1,
+          "status": "measured"
+        },
+        "requested_entity_milestone": 60
+      },
+      {
+        "event": 52,
+        "metrics": {
+          "angle_tolerance_deg": 7.5,
+          "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+          "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+          "geometric_shape_class_provisional": "three_dimensional_like",
+          "global_center_angstrom": [
+            -16.89494450138328,
+            56.7366907352319,
+            80.78062782233073
+          ],
+          "global_covariance_eigenvalues_angstrom2": [
+            449.57617096271105,
+            238.52692176891497,
+            25.77205478243452
+          ],
+          "global_flatness_ratio_lambda3_over_lambda2": 0.10804673364041692,
+          "global_linearity_ratio_lambda2_over_lambda1": 0.5305595295634541,
+          "global_plane_normal": [
+            0.5625686702565991,
+            -0.46306973914728305,
+            0.6848962753087429
+          ],
+          "global_rms_thickness_angstrom": 4.840365762140721,
+          "global_thickness_span_angstrom": 18.0809662084607,
+          "largest_domain_metal_fraction": 0.9090909090909091,
+          "largest_domain_tripodal_linker_fraction": 1.0,
+          "layer_domain_count": 1,
+          "layer_domains": [
+            {
+              "center_angstrom": [
+                -17.091228433633283,
+                59.75242078356733,
+                81.05542989847207
+              ],
+              "local_plane_observations": 9,
+              "normal": [
+                -0.5625805671206586,
+                0.5958360893121494,
+                -0.573133893755554
+              ],
+              "rms_support_thickness_angstrom": 0.04105369585197555,
+              "support_covariance_eigenvalues_angstrom2": [
+                460.8194730730733,
+                219.82283575484814,
+                0.0018726732701184834
+              ],
+              "support_thickness_span_angstrom": 0.12686137911369766,
+              "supporting_metal_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "linkers": 59,
+          "local_tripodal_planes": 9,
+          "metal_nodes": 11,
+          "minimum_local_planes_for_stable_layer": 2,
+          "offset_tolerance_angstrom": 3.0,
+          "stable_layer_domain_count": 1,
+          "status": "measured"
+        },
+        "model_time": 0.5683825319764332,
+        "observed_entities": 70,
+        "relative_to_seed_layer": {
+          "daughter_layer_domains": 0,
+          "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+          "domains": [
+            {
+              "angle_from_seed_plane_deg": 0.0,
+              "domain_index": 0,
+              "local_plane_observations": 9,
+              "normal_offset_from_seed_plane_angstrom": 0.0,
+              "registered_with_seed_plane": true,
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "largest_daughter_supporting_metal_fraction": 0.0,
+          "largest_daughter_supporting_metal_nodes": 0,
+          "largest_primary_supporting_metal_fraction": 0.9090909090909091,
+          "largest_primary_supporting_metal_nodes": 10,
+          "primary_registered_domains": 1,
+          "status": "measured"
+        },
+        "requested_entity_milestone": 70
+      },
+      {
+        "event": 64,
+        "metrics": {
+          "angle_tolerance_deg": 7.5,
+          "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+          "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+          "geometric_shape_class_provisional": "three_dimensional_like",
+          "global_center_angstrom": [
+            -19.513120884929737,
+            56.28381523123161,
+            84.0377583860434
+          ],
+          "global_covariance_eigenvalues_angstrom2": [
+            532.6560798358224,
+            298.9511194762022,
+            29.396327197601565
+          ],
+          "global_flatness_ratio_lambda3_over_lambda2": 0.09833155082043984,
+          "global_linearity_ratio_lambda2_over_lambda1": 0.5612460474840468,
+          "global_plane_normal": [
+            0.6346003228061008,
+            -0.4884222859013495,
+            0.5989374766445101
+          ],
+          "global_rms_thickness_angstrom": 5.191014666177323,
+          "global_thickness_span_angstrom": 20.10387951007583,
+          "largest_domain_metal_fraction": 0.8333333333333334,
+          "largest_domain_tripodal_linker_fraction": 1.0,
+          "layer_domain_count": 1,
+          "layer_domains": [
+            {
+              "center_angstrom": [
+                -17.091228433633283,
+                59.75242078356733,
+                81.05542989847207
+              ],
+              "local_plane_observations": 9,
+              "normal": [
+                -0.5625805671206586,
+                0.5958360893121494,
+                -0.573133893755554
+              ],
+              "rms_support_thickness_angstrom": 0.04105369585197555,
+              "support_covariance_eigenvalues_angstrom2": [
+                460.8194730730733,
+                219.82283575484814,
+                0.0018726732701184834
+              ],
+              "support_thickness_span_angstrom": 0.12686137911369766,
+              "supporting_metal_indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "linkers": 68,
+          "local_tripodal_planes": 9,
+          "metal_nodes": 12,
+          "minimum_local_planes_for_stable_layer": 2,
+          "offset_tolerance_angstrom": 3.0,
+          "stable_layer_domain_count": 1,
+          "status": "measured"
+        },
+        "model_time": 0.6937001186892783,
+        "observed_entities": 80,
+        "relative_to_seed_layer": {
+          "daughter_layer_domains": 0,
+          "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+          "domains": [
+            {
+              "angle_from_seed_plane_deg": 0.0,
+              "domain_index": 0,
+              "local_plane_observations": 9,
+              "normal_offset_from_seed_plane_angstrom": 0.0,
+              "registered_with_seed_plane": true,
+              "supporting_metal_nodes": 10
+            }
+          ],
+          "largest_daughter_supporting_metal_fraction": 0.0,
+          "largest_daughter_supporting_metal_nodes": 0,
+          "largest_primary_supporting_metal_fraction": 0.8333333333333334,
+          "largest_primary_supporting_metal_nodes": 10,
+          "primary_registered_domains": 1,
+          "status": "measured"
+        },
+        "requested_entity_milestone": 80
+      }
+    ],
+    "seed_layer_reference": {
+      "center_angstrom": [
+        -17.091228433633283,
+        59.75242078356733,
+        81.05542989847207
+      ],
+      "local_plane_observations": 9,
+      "normal": [
+        -0.5625805671206586,
+        0.5958360893121494,
+        -0.573133893755554
+      ],
+      "rms_support_thickness_angstrom": 0.04105369585197555,
+      "support_covariance_eigenvalues_angstrom2": [
+        460.8194730730733,
+        219.82283575484814,
+        0.0018726732701184834
+      ],
+      "support_thickness_span_angstrom": 0.12686137911369766,
+      "supporting_metal_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "supporting_metal_nodes": 10
+    },
+    "target_reached": true
+  },
+  "design_block": "seeded_crystal_layer_delta50_sc1_anchor_v1",
+  "event_counts": {
+    "add_linker_accepted": 49,
+    "add_linker_attempt": 50,
+    "add_linker_collision_rejected": 1,
+    "add_node_accepted": 2,
+    "add_node_attempt": 2,
+    "close_internal": 6,
+    "remove_bond": 6
+  },
+  "final_state": {
+    "connected_component_sizes": [
+      80
+    ],
+    "cycle_rank": 15,
+    "entities": 80,
+    "entity_type_counts": {
+      "Ligand": 68,
+      "Zr": 12
+    },
+    "is_single_connected_component": true,
+    "layer_domains_relative_to_seed": {
+      "daughter_layer_domains": 0,
+      "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+      "domains": [
+        {
+          "angle_from_seed_plane_deg": 0.0,
+          "domain_index": 0,
+          "local_plane_observations": 9,
+          "normal_offset_from_seed_plane_angstrom": 0.0,
+          "registered_with_seed_plane": true,
+          "supporting_metal_nodes": 10
+        }
+      ],
+      "largest_daughter_supporting_metal_fraction": 0.0,
+      "largest_daughter_supporting_metal_nodes": 0,
+      "largest_primary_supporting_metal_fraction": 0.8333333333333334,
+      "largest_primary_supporting_metal_nodes": 10,
+      "primary_registered_domains": 1,
+      "status": "measured"
+    },
+    "linked_bonds": 94,
+    "linker_free_sites": 110,
+    "metal_free_sites": 50,
+    "post_growth_dimensionality": {
+      "angle_tolerance_deg": 7.5,
+      "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+      "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+      "geometric_shape_class_provisional": "three_dimensional_like",
+      "global_center_angstrom": [
+        -19.513120884929737,
+        56.28381523123161,
+        84.0377583860434
+      ],
+      "global_covariance_eigenvalues_angstrom2": [
+        532.6560798358224,
+        298.9511194762022,
+        29.396327197601565
+      ],
+      "global_flatness_ratio_lambda3_over_lambda2": 0.09833155082043984,
+      "global_linearity_ratio_lambda2_over_lambda1": 0.5612460474840468,
+      "global_plane_normal": [
+        0.6346003228061008,
+        -0.4884222859013495,
+        0.5989374766445101
+      ],
+      "global_rms_thickness_angstrom": 5.191014666177323,
+      "global_thickness_span_angstrom": 20.10387951007583,
+      "largest_domain_metal_fraction": 0.8333333333333334,
+      "largest_domain_tripodal_linker_fraction": 1.0,
+      "layer_domain_count": 1,
+      "layer_domains": [
+        {
+          "center_angstrom": [
+            -17.091228433633283,
+            59.75242078356733,
+            81.05542989847207
+          ],
+          "local_plane_observations": 9,
+          "normal": [
+            -0.5625805671206586,
+            0.5958360893121494,
+            -0.573133893755554
+          ],
+          "rms_support_thickness_angstrom": 0.04105369585197555,
+          "support_covariance_eigenvalues_angstrom2": [
+            460.8194730730733,
+            219.82283575484814,
+            0.0018726732701184834
+          ],
+          "support_thickness_span_angstrom": 0.12686137911369766,
+          "supporting_metal_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "supporting_metal_nodes": 10
+        }
+      ],
+      "linkers": 68,
+      "local_tripodal_planes": 9,
+      "metal_nodes": 12,
+      "minimum_local_planes_for_stable_layer": 2,
+      "offset_tolerance_angstrom": 3.0,
+      "stable_layer_domain_count": 1,
+      "status": "measured"
+    },
+    "ready_internal_pairs": 0
+  },
+  "first_passage_event": {
+    "31": 1,
+    "32": 2,
+    "33": 3,
+    "34": 4,
+    "35": 5,
+    "36": 6,
+    "37": 7,
+    "38": 8,
+    "39": 9,
+    "40": 10,
+    "41": 11,
+    "42": 14,
+    "43": 17,
+    "44": 18,
+    "45": 19,
+    "46": 20,
+    "47": 21,
+    "48": 22,
+    "49": 23,
+    "50": 24,
+    "51": 25,
+    "52": 26,
+    "53": 27,
+    "54": 28,
+    "55": 29,
+    "56": 30,
+    "57": 31,
+    "58": 34,
+    "59": 35,
+    "60": 38,
+    "61": 39,
+    "62": 40,
+    "63": 41,
+    "64": 44,
+    "65": 47,
+    "66": 48,
+    "67": 49,
+    "68": 50,
+    "69": 51,
+    "70": 52,
+    "71": 54,
+    "72": 55,
+    "73": 57,
+    "74": 58,
+    "75": 59,
+    "76": 60,
+    "77": 61,
+    "78": 62,
+    "79": 63,
+    "80": 64
+  },
+  "first_passage_model_time": {
+    "31": 0.032335807679666616,
+    "32": 0.05539014101576431,
+    "33": 0.05757057291833414,
+    "34": 0.06463009299426993,
+    "35": 0.07103349183943232,
+    "36": 0.08112566798823609,
+    "37": 0.08203716142949648,
+    "38": 0.11917622332364625,
+    "39": 0.1420892151350536,
+    "40": 0.1457434173493434,
+    "41": 0.1730380423111521,
+    "42": 0.19251984894443244,
+    "43": 0.20407292214815903,
+    "44": 0.20645027167378152,
+    "45": 0.2167366968550396,
+    "46": 0.22520844426892347,
+    "47": 0.22607739196215154,
+    "48": 0.2295623523287666,
+    "49": 0.26018739719154876,
+    "50": 0.26544575724458924,
+    "51": 0.26631838706274163,
+    "52": 0.27739898693848475,
+    "53": 0.295748402090603,
+    "54": 0.3156241613538253,
+    "55": 0.3188580462061731,
+    "56": 0.33673117588649804,
+    "57": 0.3523037522717906,
+    "58": 0.38187927234997976,
+    "59": 0.3885501599973277,
+    "60": 0.39837256715396757,
+    "61": 0.4040825973109066,
+    "62": 0.40928359976400347,
+    "63": 0.4163464339226952,
+    "64": 0.4818022321424142,
+    "65": 0.5152342633087308,
+    "66": 0.5271286727892269,
+    "67": 0.535295488323551,
+    "68": 0.5521275617331414,
+    "69": 0.5586626050302286,
+    "70": 0.5683825319764332,
+    "71": 0.5858195537945564,
+    "72": 0.6170458482618086,
+    "73": 0.6176764154021033,
+    "74": 0.6326343100293889,
+    "75": 0.633745525746263,
+    "76": 0.6429043054488564,
+    "77": 0.6458502422082633,
+    "78": 0.6556461717977304,
+    "79": 0.6914716746448709,
+    "80": 0.6937001186892783
+  },
+  "provenance": {
+    "btb_layer_domain_measurement": "post-growth measurement only; growth remained unrestricted",
+    "engine_import_redirects": [
+      "NumPy-2 pickle module aliases for NumPy-1 runtimes",
+      "numpy-compatible scipy.spatial.cKDTree and scipy.linalg.svd shim",
+      "discard-only serialized SciPy cKDTree cache shim",
+      "unused matplotlib.pyplot import shim",
+      "/public/home/yibinjiang/workspace/mol/BTBa.mol -> /home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/BTBa.mol",
+      "/public/home/yibinjiang/workspace/mol/BTBb.mol -> /home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/BTBb.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr12.mol -> /home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr12.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr6.mol -> /home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr6.mol"
+    ],
+    "engine_path": "/home/wave/MOL_growth_recalculation_20260830/code/candidate_corrected/MOL_Assembly_Large_Correction_20250811_candidate.py",
+    "engine_sha256": "65d3bc03ec853b789d1f94fe36dc935894bb03083d7620028f8507aa5ff2adc2",
+    "fragment_removal": "exact search depth at least target_entities + 1",
+    "mol2_output": null,
+    "runner_path": "/home/wave/MOL_growth_recalculation_20260830/code/proposed/seeded_molecular_runner.py",
+    "runner_sha256": "d4824c72382a67c8c517092d4f7a0e84ff7424c0bb8a1e686e5abf1b5eae1668",
+    "selector_path": "/home/wave/MOL_growth_recalculation_20260830/code/proposed/common_kmc_selector.py",
+    "selector_sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed"
+  },
+  "random_seed": 1408530368,
+  "replicate": 19,
+  "run_id": "seeded_sc1_btb_mol_q0p1_off0p1_rep19",
+  "sampled_growth_curve": [
+    {
+      "cycle_rank": 14,
+      "entities": 30,
+      "entity_type_counts": {
+        "Ligand": 20,
+        "Zr": 10
+      },
+      "event": 0,
+      "linked_bonds": 43,
+      "linker_free_sites": 17,
+      "metal_free_sites": 77,
+      "model_time": 0.0,
+      "ready_internal_pairs": 0
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 31,
+      "entity_type_counts": {
+        "Ligand": 21,
+        "Zr": 10
+      },
+      "event": 1,
+      "linked_bonds": 44,
+      "linker_free_sites": 19,
+      "metal_free_sites": 76,
+      "model_time": 0.032335807679666616,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 32,
+      "entity_type_counts": {
+        "Ligand": 22,
+        "Zr": 10
+      },
+      "event": 2,
+      "linked_bonds": 45,
+      "linker_free_sites": 21,
+      "metal_free_sites": 75,
+      "model_time": 0.05539014101576431,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 33,
+      "entity_type_counts": {
+        "Ligand": 23,
+        "Zr": 10
+      },
+      "event": 3,
+      "linked_bonds": 46,
+      "linker_free_sites": 23,
+      "metal_free_sites": 74,
+      "model_time": 0.05757057291833414,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 34,
+      "entity_type_counts": {
+        "Ligand": 24,
+        "Zr": 10
+      },
+      "event": 4,
+      "linked_bonds": 47,
+      "linker_free_sites": 25,
+      "metal_free_sites": 73,
+      "model_time": 0.06463009299426993,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 35,
+      "entity_type_counts": {
+        "Ligand": 25,
+        "Zr": 10
+      },
+      "event": 5,
+      "linked_bonds": 48,
+      "linker_free_sites": 27,
+      "metal_free_sites": 72,
+      "model_time": 0.07103349183943232,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 36,
+      "entity_type_counts": {
+        "Ligand": 26,
+        "Zr": 10
+      },
+      "event": 6,
+      "linked_bonds": 49,
+      "linker_free_sites": 29,
+      "metal_free_sites": 71,
+      "model_time": 0.08112566798823609,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 37,
+      "entity_type_counts": {
+        "Ligand": 27,
+        "Zr": 10
+      },
+      "event": 7,
+      "linked_bonds": 50,
+      "linker_free_sites": 31,
+      "metal_free_sites": 70,
+      "model_time": 0.08203716142949648,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 38,
+      "entity_type_counts": {
+        "Ligand": 28,
+        "Zr": 10
+      },
+      "event": 8,
+      "linked_bonds": 51,
+      "linker_free_sites": 33,
+      "metal_free_sites": 69,
+      "model_time": 0.11917622332364625,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 39,
+      "entity_type_counts": {
+        "Ligand": 29,
+        "Zr": 10
+      },
+      "event": 9,
+      "linked_bonds": 52,
+      "linker_free_sites": 35,
+      "metal_free_sites": 68,
+      "model_time": 0.1420892151350536,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 40,
+      "entity_type_counts": {
+        "Ligand": 30,
+        "Zr": 10
+      },
+      "event": 10,
+      "linked_bonds": 53,
+      "linker_free_sites": 37,
+      "metal_free_sites": 67,
+      "model_time": 0.1457434173493434,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 41,
+      "entity_type_counts": {
+        "Ligand": 31,
+        "Zr": 10
+      },
+      "event": 11,
+      "linked_bonds": 54,
+      "linker_free_sites": 39,
+      "metal_free_sites": 66,
+      "model_time": 0.1730380423111521,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 13,
+      "entities": 41,
+      "entity_type_counts": {
+        "Ligand": 31,
+        "Zr": 10
+      },
+      "event": 12,
+      "linked_bonds": 53,
+      "linker_free_sites": 39,
+      "metal_free_sites": 66,
+      "model_time": 0.18503310858573457,
+      "ready_internal_pairs": 1,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 41,
+      "entity_type_counts": {
+        "Ligand": 31,
+        "Zr": 10
+      },
+      "event": 13,
+      "linked_bonds": 54,
+      "linker_free_sites": 39,
+      "metal_free_sites": 66,
+      "model_time": 0.18503310858574448,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 42,
+      "entity_type_counts": {
+        "Ligand": 32,
+        "Zr": 10
+      },
+      "event": 14,
+      "linked_bonds": 55,
+      "linker_free_sites": 41,
+      "metal_free_sites": 65,
+      "model_time": 0.19251984894443244,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 13,
+      "entities": 42,
+      "entity_type_counts": {
+        "Ligand": 32,
+        "Zr": 10
+      },
+      "event": 15,
+      "linked_bonds": 54,
+      "linker_free_sites": 41,
+      "metal_free_sites": 65,
+      "model_time": 0.1942894992838016,
+      "ready_internal_pairs": 1,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 42,
+      "entity_type_counts": {
+        "Ligand": 32,
+        "Zr": 10
+      },
+      "event": 16,
+      "linked_bonds": 55,
+      "linker_free_sites": 41,
+      "metal_free_sites": 65,
+      "model_time": 0.1942894992838035,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 43,
+      "entity_type_counts": {
+        "Ligand": 32,
+        "Zr": 11
+      },
+      "event": 17,
+      "linked_bonds": 56,
+      "linker_free_sites": 40,
+      "metal_free_sites": 76,
+      "model_time": 0.20407292214815903,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 44,
+      "entity_type_counts": {
+        "Ligand": 33,
+        "Zr": 11
+      },
+      "event": 18,
+      "linked_bonds": 57,
+      "linker_free_sites": 42,
+      "metal_free_sites": 75,
+      "model_time": 0.20645027167378152,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 45,
+      "entity_type_counts": {
+        "Ligand": 34,
+        "Zr": 11
+      },
+      "event": 19,
+      "linked_bonds": 58,
+      "linker_free_sites": 44,
+      "metal_free_sites": 74,
+      "model_time": 0.2167366968550396,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 46,
+      "entity_type_counts": {
+        "Ligand": 35,
+        "Zr": 11
+      },
+      "event": 20,
+      "linked_bonds": 59,
+      "linker_free_sites": 46,
+      "metal_free_sites": 73,
+      "model_time": 0.22520844426892347,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 47,
+      "entity_type_counts": {
+        "Ligand": 36,
+        "Zr": 11
+      },
+      "event": 21,
+      "linked_bonds": 60,
+      "linker_free_sites": 48,
+      "metal_free_sites": 72,
+      "model_time": 0.22607739196215154,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 48,
+      "entity_type_counts": {
+        "Ligand": 37,
+        "Zr": 11
+      },
+      "event": 22,
+      "linked_bonds": 61,
+      "linker_free_sites": 50,
+      "metal_free_sites": 71,
+      "model_time": 0.2295623523287666,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 49,
+      "entity_type_counts": {
+        "Ligand": 38,
+        "Zr": 11
+      },
+      "event": 23,
+      "linked_bonds": 62,
+      "linker_free_sites": 52,
+      "metal_free_sites": 70,
+      "model_time": 0.26018739719154876,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 50,
+      "entity_type_counts": {
+        "Ligand": 39,
+        "Zr": 11
+      },
+      "event": 24,
+      "linked_bonds": 63,
+      "linker_free_sites": 54,
+      "metal_free_sites": 69,
+      "model_time": 0.26544575724458924,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 51,
+      "entity_type_counts": {
+        "Ligand": 40,
+        "Zr": 11
+      },
+      "event": 25,
+      "linked_bonds": 64,
+      "linker_free_sites": 56,
+      "metal_free_sites": 68,
+      "model_time": 0.26631838706274163,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 52,
+      "entity_type_counts": {
+        "Ligand": 41,
+        "Zr": 11
+      },
+      "event": 26,
+      "linked_bonds": 65,
+      "linker_free_sites": 58,
+      "metal_free_sites": 67,
+      "model_time": 0.27739898693848475,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 53,
+      "entity_type_counts": {
+        "Ligand": 42,
+        "Zr": 11
+      },
+      "event": 27,
+      "linked_bonds": 66,
+      "linker_free_sites": 60,
+      "metal_free_sites": 66,
+      "model_time": 0.295748402090603,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 54,
+      "entity_type_counts": {
+        "Ligand": 43,
+        "Zr": 11
+      },
+      "event": 28,
+      "linked_bonds": 67,
+      "linker_free_sites": 62,
+      "metal_free_sites": 65,
+      "model_time": 0.3156241613538253,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 55,
+      "entity_type_counts": {
+        "Ligand": 44,
+        "Zr": 11
+      },
+      "event": 29,
+      "linked_bonds": 68,
+      "linker_free_sites": 64,
+      "metal_free_sites": 64,
+      "model_time": 0.3188580462061731,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 56,
+      "entity_type_counts": {
+        "Ligand": 45,
+        "Zr": 11
+      },
+      "event": 30,
+      "linked_bonds": 69,
+      "linker_free_sites": 66,
+      "metal_free_sites": 63,
+      "model_time": 0.33673117588649804,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 57,
+      "entity_type_counts": {
+        "Ligand": 46,
+        "Zr": 11
+      },
+      "event": 31,
+      "linked_bonds": 70,
+      "linker_free_sites": 68,
+      "metal_free_sites": 62,
+      "model_time": 0.3523037522717906,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 30
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 56,
+      "entity_type_counts": {
+        "Ligand": 45,
+        "Zr": 11
+      },
+      "event": 32,
+      "linked_bonds": 69,
+      "linker_free_sites": 66,
+      "metal_free_sites": 63,
+      "model_time": 0.35901659525408725,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 57,
+      "entity_type_counts": {
+        "Ligand": 46,
+        "Zr": 11
+      },
+      "event": 33,
+      "linked_bonds": 70,
+      "linker_free_sites": 68,
+      "metal_free_sites": 62,
+      "model_time": 0.3636809846293571,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 58,
+      "entity_type_counts": {
+        "Ligand": 47,
+        "Zr": 11
+      },
+      "event": 34,
+      "linked_bonds": 71,
+      "linker_free_sites": 70,
+      "metal_free_sites": 61,
+      "model_time": 0.38187927234997976,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 59,
+      "entity_type_counts": {
+        "Ligand": 48,
+        "Zr": 11
+      },
+      "event": 35,
+      "linked_bonds": 72,
+      "linker_free_sites": 72,
+      "metal_free_sites": 60,
+      "model_time": 0.3885501599973277,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 13,
+      "entities": 59,
+      "entity_type_counts": {
+        "Ligand": 48,
+        "Zr": 11
+      },
+      "event": 36,
+      "linked_bonds": 71,
+      "linker_free_sites": 72,
+      "metal_free_sites": 60,
+      "model_time": 0.39252588897099333,
+      "ready_internal_pairs": 1,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 59,
+      "entity_type_counts": {
+        "Ligand": 48,
+        "Zr": 11
+      },
+      "event": 37,
+      "linked_bonds": 72,
+      "linker_free_sites": 72,
+      "metal_free_sites": 60,
+      "model_time": 0.39252588897100765,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 60,
+      "entity_type_counts": {
+        "Ligand": 49,
+        "Zr": 11
+      },
+      "event": 38,
+      "linked_bonds": 73,
+      "linker_free_sites": 74,
+      "metal_free_sites": 59,
+      "model_time": 0.39837256715396757,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 61,
+      "entity_type_counts": {
+        "Ligand": 50,
+        "Zr": 11
+      },
+      "event": 39,
+      "linked_bonds": 74,
+      "linker_free_sites": 76,
+      "metal_free_sites": 58,
+      "model_time": 0.4040825973109066,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 62,
+      "entity_type_counts": {
+        "Ligand": 51,
+        "Zr": 11
+      },
+      "event": 40,
+      "linked_bonds": 75,
+      "linker_free_sites": 78,
+      "metal_free_sites": 57,
+      "model_time": 0.40928359976400347,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 63,
+      "entity_type_counts": {
+        "Ligand": 52,
+        "Zr": 11
+      },
+      "event": 41,
+      "linked_bonds": 76,
+      "linker_free_sites": 80,
+      "metal_free_sites": 56,
+      "model_time": 0.4163464339226952,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 13,
+      "entities": 63,
+      "entity_type_counts": {
+        "Ligand": 52,
+        "Zr": 11
+      },
+      "event": 42,
+      "linked_bonds": 75,
+      "linker_free_sites": 80,
+      "metal_free_sites": 56,
+      "model_time": 0.42365852285322164,
+      "ready_internal_pairs": 1,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 63,
+      "entity_type_counts": {
+        "Ligand": 52,
+        "Zr": 11
+      },
+      "event": 43,
+      "linked_bonds": 76,
+      "linker_free_sites": 80,
+      "metal_free_sites": 56,
+      "model_time": 0.4236585228532674,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 64,
+      "entity_type_counts": {
+        "Ligand": 53,
+        "Zr": 11
+      },
+      "event": 44,
+      "linked_bonds": 77,
+      "linker_free_sites": 82,
+      "metal_free_sites": 55,
+      "model_time": 0.4818022321424142,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 13,
+      "entities": 64,
+      "entity_type_counts": {
+        "Ligand": 53,
+        "Zr": 11
+      },
+      "event": 45,
+      "linked_bonds": 76,
+      "linker_free_sites": 82,
+      "metal_free_sites": 55,
+      "model_time": 0.5084459003915859,
+      "ready_internal_pairs": 1,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 64,
+      "entity_type_counts": {
+        "Ligand": 53,
+        "Zr": 11
+      },
+      "event": 46,
+      "linked_bonds": 77,
+      "linker_free_sites": 82,
+      "metal_free_sites": 55,
+      "model_time": 0.5084459003916589,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 65,
+      "entity_type_counts": {
+        "Ligand": 54,
+        "Zr": 11
+      },
+      "event": 47,
+      "linked_bonds": 78,
+      "linker_free_sites": 84,
+      "metal_free_sites": 54,
+      "model_time": 0.5152342633087308,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 66,
+      "entity_type_counts": {
+        "Ligand": 55,
+        "Zr": 11
+      },
+      "event": 48,
+      "linked_bonds": 79,
+      "linker_free_sites": 86,
+      "metal_free_sites": 53,
+      "model_time": 0.5271286727892269,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 67,
+      "entity_type_counts": {
+        "Ligand": 56,
+        "Zr": 11
+      },
+      "event": 49,
+      "linked_bonds": 80,
+      "linker_free_sites": 88,
+      "metal_free_sites": 52,
+      "model_time": 0.535295488323551,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 68,
+      "entity_type_counts": {
+        "Ligand": 57,
+        "Zr": 11
+      },
+      "event": 50,
+      "linked_bonds": 81,
+      "linker_free_sites": 90,
+      "metal_free_sites": 51,
+      "model_time": 0.5521275617331414,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 70,
+      "entity_type_counts": {
+        "Ligand": 59,
+        "Zr": 11
+      },
+      "event": 52,
+      "linked_bonds": 83,
+      "linker_free_sites": 94,
+      "metal_free_sites": 49,
+      "model_time": 0.5683825319764332,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 14,
+      "entities": 72,
+      "entity_type_counts": {
+        "Ligand": 61,
+        "Zr": 11
+      },
+      "event": 55,
+      "linked_bonds": 85,
+      "linker_free_sites": 97,
+      "metal_free_sites": 46,
+      "model_time": 0.6170458482618086,
+      "ready_internal_pairs": 1,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 15,
+      "entities": 73,
+      "entity_type_counts": {
+        "Ligand": 61,
+        "Zr": 12
+      },
+      "event": 57,
+      "linked_bonds": 87,
+      "linker_free_sites": 96,
+      "metal_free_sites": 57,
+      "model_time": 0.6176764154021033,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 15,
+      "entities": 76,
+      "entity_type_counts": {
+        "Ligand": 64,
+        "Zr": 12
+      },
+      "event": 60,
+      "linked_bonds": 90,
+      "linker_free_sites": 102,
+      "metal_free_sites": 54,
+      "model_time": 0.6429043054488564,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "cycle_rank": 15,
+      "entities": 79,
+      "entity_type_counts": {
+        "Ligand": 67,
+        "Zr": 12
+      },
+      "event": 63,
+      "linked_bonds": 93,
+      "linker_free_sites": 108,
+      "metal_free_sites": 51,
+      "model_time": 0.6914716746448709,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    },
+    {
+      "connected_component_sizes": [
+        80
+      ],
+      "cycle_rank": 15,
+      "entities": 80,
+      "entity_type_counts": {
+        "Ligand": 68,
+        "Zr": 12
+      },
+      "event": 64,
+      "is_single_connected_component": true,
+      "layer_domains_relative_to_seed": {
+        "daughter_layer_domains": 0,
+        "definition": "A stable domain is registered with the original layer when its plane normal is within 7.5 degrees and its normal offset is within 3 angstrom. Other stable domains are counted as daughter layer domains.",
+        "domains": [
+          {
+            "angle_from_seed_plane_deg": 0.0,
+            "domain_index": 0,
+            "local_plane_observations": 9,
+            "normal_offset_from_seed_plane_angstrom": 0.0,
+            "registered_with_seed_plane": true,
+            "supporting_metal_nodes": 10
+          }
+        ],
+        "largest_daughter_supporting_metal_fraction": 0.0,
+        "largest_daughter_supporting_metal_nodes": 0,
+        "largest_primary_supporting_metal_fraction": 0.8333333333333334,
+        "largest_primary_supporting_metal_nodes": 10,
+        "primary_registered_domains": 1,
+        "status": "measured"
+      },
+      "linked_bonds": 94,
+      "linker_free_sites": 110,
+      "metal_free_sites": 50,
+      "model_time": 0.6937001186892783,
+      "post_growth_dimensionality": {
+        "angle_tolerance_deg": 7.5,
+        "classification_warning": "The provisional label uses raw PCA ratios of 0.05. Manuscript use requires calibration against the archived plane-count routine and visual inspection of representative molecular structures.",
+        "definition": "Post-growth analysis only; all twelve M6 carboxylate directions were available during growth. Local planes are defined by tripodal BTB linkers bound to three distinct metal nodes.",
+        "geometric_shape_class_provisional": "three_dimensional_like",
+        "global_center_angstrom": [
+          -19.513120884929737,
+          56.28381523123161,
+          84.0377583860434
+        ],
+        "global_covariance_eigenvalues_angstrom2": [
+          532.6560798358224,
+          298.9511194762022,
+          29.396327197601565
+        ],
+        "global_flatness_ratio_lambda3_over_lambda2": 0.09833155082043984,
+        "global_linearity_ratio_lambda2_over_lambda1": 0.5612460474840468,
+        "global_plane_normal": [
+          0.6346003228061008,
+          -0.4884222859013495,
+          0.5989374766445101
+        ],
+        "global_rms_thickness_angstrom": 5.191014666177323,
+        "global_thickness_span_angstrom": 20.10387951007583,
+        "largest_domain_metal_fraction": 0.8333333333333334,
+        "largest_domain_tripodal_linker_fraction": 1.0,
+        "layer_domain_count": 1,
+        "layer_domains": [
+          {
+            "center_angstrom": [
+              -17.091228433633283,
+              59.75242078356733,
+              81.05542989847207
+            ],
+            "local_plane_observations": 9,
+            "normal": [
+              -0.5625805671206586,
+              0.5958360893121494,
+              -0.573133893755554
+            ],
+            "rms_support_thickness_angstrom": 0.04105369585197555,
+            "support_covariance_eigenvalues_angstrom2": [
+              460.8194730730733,
+              219.82283575484814,
+              0.0018726732701184834
+            ],
+            "support_thickness_span_angstrom": 0.12686137911369766,
+            "supporting_metal_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "supporting_metal_nodes": 10
+          }
+        ],
+        "linkers": 68,
+        "local_tripodal_planes": 9,
+        "metal_nodes": 12,
+        "minimum_local_planes_for_stable_layer": 2,
+        "offset_tolerance_angstrom": 3.0,
+        "stable_layer_domain_count": 1,
+        "status": "measured"
+      },
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 29
+    }
+  ],
+  "schema_version": "common-seeded-molecular-kmc-v1",
+  "seed": {
+    "final_retained_entities": 29,
+    "final_retained_fraction": 0.9666666666666667,
+    "first_loss_event": null,
+    "first_loss_model_time": null,
+    "initial_entity_count": 30,
+    "initial_state": {
+      "cycle_rank": 14,
+      "entities": 30,
+      "entity_type_counts": {
+        "Ligand": 20,
+        "Zr": 10
+      },
+      "linked_bonds": 43,
+      "linker_free_sites": 17,
+      "metal_free_sites": 77,
+      "ready_internal_pairs": 0
+    },
+    "minimum_retained_entities": 29,
+    "preparation_seconds_excluded_from_model_clock": 0.006545985932461917,
+    "retention_threshold": 0.8,
+    "source": {
+      "kind": "pickle",
+      "path": "/home/wave/MOL_growth_recalculation_20260830/reviewed_structures/btb_q10_off10_sc2_seed1708319965_n30.pkl",
+      "sha256": "e98bb24e620e05213755b49755dc2723ff7309d718870f60a96bc4fc8a0281ee"
+    },
+    "structural_fingerprint_sha256": "1b9ab71c35805f16539b017bc3fa70a8b373b37133b85c3721a3c6bc419fbd65"
+  },
+  "system": "btb_mol",
+  "termination": {
+    "effective_fragment_search_depth": 81,
+    "event_cap": 200000,
+    "executed_events": 64,
+    "maximum_entities": 80,
+    "status": "target_reached",
+    "target_entities": 80,
+    "wall_time_cap_s": 90.0
+  },
+  "topology_mode": "unrestricted",
+  "wall_seconds": 0.06066707998979837
+}

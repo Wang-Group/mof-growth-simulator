@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "manifest_sha256": "70c5fd17efec1c2cc8d29b55ea7f0bec299ce76f8f5aaa8749579667d8c9ebcb",
+  "twelve_conditions": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0
+  },
+  "identical_initial_structure": true,
+  "exact_clock_boundary": true,
+  "checkpoint_replay": true,
+  "measurement_pipeline": true
+}

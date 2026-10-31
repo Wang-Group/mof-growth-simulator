@@ -7,8 +7,11 @@ figure/table-organized sources supplied for the current manuscript and SI.
 New response-surface, seeded/surface-growth and finite-bath code and processed
 data are now included. On 2026-10-31, the exact corrected engines and eight
 models were recovered, plot revisions were separated, and the S21 April 3
-source package was added. Required seeds/checkpoints, the Fig. 5C analysis,
-and author release decisions remain unresolved. Manuscript/SI files,
+source package was added. A second recovery now links small seeds/hosts, exact
+code versions and 975 external checkpoint/result pairs; S6's 18 displayed
+numbers match the recovered numerical source. Remaining gaps include the Fig. 5C
+analysis, final literature coding, upstream entropy computation, original S8
+turbidity observations and author release decisions. Manuscript/SI files,
 large binary trajectories and credentials are not included.
 
 Start with [the publication checklist](docs/PUBLICATION_RELEASE.md), then use
@@ -27,10 +30,12 @@ a file is not the same as reproducing its full scientific workflow.
 | [05_mixed_zr6_zr12](05_mixed_zr6_zr12/) | Four April 10 rerun records, composition traces, conditions, and initial/final structures | Historical comparison family; do not substitute for the April 3 S21 source in group 11 |
 | [06_vacancy_repair](06_vacancy_repair/) | Original-vacancy recovery table, initial/N=2800 structures, historical analysis code, and reference figures | Source family associated with SI Figs. S23-S24 |
 | [07_publication_sources](07_publication_sources/) | 670 byte-verified code/data/configuration copies, retaining supplied figure/table paths and version labels | Current figure/table source bundles; panel-specific limits apply |
-| [08_entropy_inputs](08_entropy_inputs/) | 13 supplied entropy-related tables extracted without changing their contents | Candidate inputs associated with SI Table S6, not verified Gaussian originals |
+| [08_entropy_inputs](08_entropy_inputs/) | 13 supplied entropy-related tables extracted without changing their contents | S6's 18 numbers match entropy_results.csv; full computation chain remains open |
 | [09_recovered_runtime](09_recovered_runtime/) | Two corrected engines and eight molecular models, recovered byte-identically from the 5090 | Exact UiO-66 engine matches all six recorded runs; full campaign replay still requires upstream inputs |
 | [10_plot_versions](10_plot_versions/) | Historical and shared-directory revisions of Fig. 6/S7 plotting code, including raw-u and seconds S7 renderers | Three former hash discrepancies now have separate, documented versions |
 | [11_s21_april03](11_s21_april03/) | April 3 Zr6/Zr12 saved trajectories, plotting code, artwork and an explicitly separated alternative source | Shared-source README identifies the main variant as S21; final document adoption still requires author confirmation |
+| [12_runtime_provenance](12_runtime_provenance/) | 206 recovered source locations, small seed/host inputs, 197 exact code/seed references, 1327 lineage rows and remote checkpoint hashes | Separate campaign families; six S7 results and four sampled historical results linked to seed/RNG/parameters/code |
+| [13_table_source_audit](13_table_source_audit/) | Original S1 selection evidence, final-view SI table extracts and S6 value comparison | S1 has 69 DOI records but 68 publication groups; S2 final labels and S8 original turbidity records remain missing |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical
@@ -47,6 +52,7 @@ python -m pip install -r requirements.txt
 python reproduce.py
 python verify_package.py
 python verify_publication.py --report publication_verification.json
+python -m unittest discover -s tests -v
 ```
 
 These commands read only local, packaged inputs. They do not run KMC, access
@@ -57,7 +63,9 @@ Arial is used for figures; install it to reproduce the original typography.
 source hashes, independently recomputes Fig. 5B, checks S25 and smoke-tests the
 pure event selector. It now verifies the recovered sources, all three mixed-seed
 variant means, and all 18 engine/runner/selector hash references in six UiO-66
-result records. A passing
+result records. The group 12/13 audit also checks source decompression, saved
+checkpoint lineage, exact seed/RNG/parameter matches and S1/S6 numerical evidence.
+A passing
 check is deliberately not labelled publication-ready.
 
 To draw only one group or preserve the supplied previews:
@@ -94,6 +102,7 @@ The seconds renderer is retained only as a historical version.
 - [metadata/publication_sources.csv](metadata/publication_sources.csv): current source selection, hashes, exclusions and evidence scope for the added figure/table material.
 - [metadata/recovered_sources_20261031.json](metadata/recovered_sources_20261031.json): 42 byte-identical additions with original host/project or shared-directory paths; no login credentials.
 - [metadata/publication_decisions_20261031.json](metadata/publication_decisions_20261031.json): user-confirmed S7 time coordinate and Fig. 5D structure status, distinguished from independently tested facts.
+- [metadata/runtime_table_audit_20261031.json](metadata/runtime_table_audit_20261031.json): latest seed/code/checkpoint and S1/S2/S6/S8 audit, including explicit limits and document hashes.
 - [publication_verification.json](publication_verification.json): new numerical checks and exact-hash coverage of executed code recorded in six UiO-66 results.
 - [verification_results.json](verification_results.json): results from the complete local verification workflow.
 - [YUHANG_CONFIRMATION_CHECKLIST.md](YUHANG_CONFIRMATION_CHECKLIST.md): outstanding author confirmations and newer missing source families, in Chinese.
@@ -103,9 +112,10 @@ The last document review baseline, including the changed MS file with its unchan
 October 18 filename, is [recorded here](metadata/release_document_baseline.json).
 Insertions were included and deletions excluded when reading the documents.
 The older [baseline](metadata/document_baseline.json) is retained for history;
-neither document is included or modified. The October 31 source integration did
-not re-read or update the manuscripts; it does not assert that this older baseline
-is still the latest document content.
+neither document is included or modified. The latest recovery read only S1/S2/S6/S8
+in two SI files, including the October 31 text-synced version; their final-view
+table values agree. That narrow baseline is in group 13. It does not replace the
+older full-document review or assert that the MS has been re-reviewed.
 
 ## Scientific Limits
 
@@ -127,7 +137,8 @@ a normal merge-back branch and must not replace the full historical archive.
 The numerical source package was assembled on 2026-10-22 from repository state
 `2a9b1897538430c141c24c17cab746b82a26595c` plus documented shared-drive sources.
 The publication candidate was prepared on 2026-10-29 and extended on 2026-10-31
-with approximately 14.3 MiB of source payload. The prior source repository's Git
+with approximately 14.3 MiB in the first source integration, then another
+5.4 MiB of runtime source payload plus provenance/table metadata. The prior source repository's Git
 history remains the authority for earlier authorship; this curated root commit
 does not imply sole authorship of archived code.
 

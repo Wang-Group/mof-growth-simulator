@@ -1,0 +1,145 @@
+{
+  "sources": {
+    "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/finalize_validation.py": {
+      "sha256": "e558ad839734f917ec14d91c7d0e476c5a5d5cebde2df9c7aaa047f4fab540a4",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/e558ad839734_finalize_validation.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/runtime.py": {
+      "sha256": "b326e372c7dd523ea55dc77b6af51d8a28fd9b46629f7a457af03cedf6781102",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/b326e372c7dd_runtime.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/code/proposed/common_kmc_selector.py": {
+      "sha256": "91de30bd57bd24472cff4c326d1436cc40da3ea29ed026d9ec47f56a50a524ed",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/91de30bd57bd_common_kmc_selector.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/code/proposed/btb_postgrowth_structure.py": {
+      "sha256": "42049cc67ba651cf6ae20002078f3cd3df37fa20d39375e1d4015b34841467b1",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/42049cc67ba6_btb_postgrowth_structure.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/code/proposed/common_molecular_runner.py": {
+      "sha256": "5886301c8051a92094f3b3640a447f64544236f6624a4c5f669774838ea52551",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/5886301c8051_common_molecular_runner.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py": {
+      "sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/4cda9182267e_UiO66_Assembly_Large_Correction_20250811_candidate.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/acetate_cap_library.py": {
+      "sha256": "2eadc099dba0d686012a0ce6fc215f858516201c9b3846b1b93eab8c8c797768",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/2eadc099dba0_acetate_cap_library.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/cap_geometry_preflight.py": {
+      "sha256": "bb71bd57fe206a51302d821502774c7936b07fbd86143ae58746dd58a578d219",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/bb71bd57fe20_cap_geometry_preflight.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/validate_replaceable_caps.py": {
+      "sha256": "dcabab9f2b043c2a006b3c9f442b6e4e533cb384f4327e8e633e193fed975d35",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/dcabab9f2b04_validate_replaceable_caps.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/explicit_cap_kmc.py": {
+      "sha256": "1352822983a3039659bae392305bb4df307c6038c4b9149c0be7fd979854ee61",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/1352822983a3_explicit_cap_kmc.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/solvent_competition_20260912_v1/solvent_channel.py": {
+      "sha256": "2f0bd1a2647c9f03f69a8657ad98da98785a831cc666b3ab220064ac612ff77a",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/2f0bd1a2647c_solvent_channel.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/solvent_competition_20260912_v1/mixed_solvent_kmc.py": {
+      "sha256": "9a2020487532185af57202884298c3e44cf064ee6b7918ff851767b017016297",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/9a2020487532_mixed_solvent_kmc.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/preflight_crowded_geometry.py": {
+      "sha256": "6cb8a4d4e1b8bd150fab878b35795da30dbb531c07aab070ad620bf9845aceba",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/6cb8a4d4e1b8_preflight_crowded_geometry.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/defect_model.py": {
+      "sha256": "084f00d8ee66c70ea123dd411c430476e57d8c6ad98033fdde52ff28f785ceb6",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/084f00d8ee66_defect_model.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/pool_clock.py": {
+      "sha256": "2ac4105ab3632346d03e93ce6cbd6f9bf4d0716bbbb8e51519a459b4ee395ddc",
+      "kind": "python_source",
+      "frozen_copy": "validated_release/dependencies/2ac4105ab363_pool_clock.py"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr6_AA.mol": {
+      "sha256": "ae2b840ae1f9e8ff9699623d008be96c50bf3a1ded2d863be8afeaed6c860b2e",
+      "kind": "molecular_input",
+      "frozen_copy": "validated_release/dependencies/ae2b840ae1f9_Zr6_AA.mol"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr12_AA.mol": {
+      "sha256": "25094eb84259a9e0c1cc088c767d796843eb3af1d949e872a7939937d9032ae1",
+      "kind": "molecular_input",
+      "frozen_copy": "validated_release/dependencies/25094eb84259_Zr12_AA.mol"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/models/approved_derived/BDC_explicit_H.mol": {
+      "sha256": "b67069e53051b2aefbb273b6a08d9339191486cf8ab1b261420686ef12847864",
+      "kind": "molecular_input",
+      "frozen_copy": "validated_release/dependencies/b67069e53051_BDC_explicit_H.mol"
+    },
+    "/home/wave/MOL_growth_reviewed_20260831/models/candidate_explicit_H_INCOMPLETE/uio66__Zr6_AA.mol": {
+      "sha256": "eacc7ef08be79274dbf5cc89a61ae023029df32e1e6cc26a883a1bbdec87c4c3",
+      "kind": "molecular_input",
+      "frozen_copy": "validated_release/dependencies/eacc7ef08be7_uio66__Zr6_AA.mol"
+    },
+    "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/framework_inputs/UiO66_N76_reviewed.pkl": {
+      "sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+      "kind": "molecular_input",
+      "frozen_copy": "validated_release/dependencies/9b08834d55e0_UiO66_N76_reviewed.pkl"
+    }
+  },
+  "runtime": {
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]"
+  },
+  "validated_reports": [
+    "checks_04/integration_checks.json",
+    "timed_checks_02/trajectory_checks.json"
+  ],
+  "model": {
+    "acetate": {
+      "source": "/home/wave/MOL_growth_reviewed_20260831/models/candidate_explicit_H_INCOMPLETE/uio66__Zr6_AA.mol",
+      "source_sha256": "eacc7ef08be79274dbf5cc89a61ae023029df32e1e6cc26a883a1bbdec87c4c3",
+      "source_atom_indices_zero_based": [
+        14,
+        35,
+        38,
+        39,
+        62,
+        63,
+        64
+      ],
+      "anchor_indices_in_fragment": [
+        2,
+        0,
+        1
+      ],
+      "geometry": "first existing explicit-H acetate fragment; all source coordinates retained",
+      "candidate_library": "one rigid source geometry, two oxygen assignments",
+      "energy": "none; not an optimized intermediate or calibrated barrier"
+    },
+    "seed_N": 76,
+    "all_node_sites": 12,
+    "BDC_aromatic_H": 4
+  },
+  "unit_tests": {
+    "count": 13,
+    "exit_code": 0
+  },
+  "molecular_test_groups": 11,
+  "timed_test_groups": 14,
+  "production_launched": false,
+  "interpretation_gate": "interior-linker coverage inadequate in the bounded size checks"
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "table-source-audit-1",
+  "checked_date": "2026-10-31",
+  "shared_project": "2025-宋宇航-MOL_growth_mechanism",
+  "files": [
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/B_seed_studies_original.csv",
+      "release_path": "13_table_source_audit/s1_original/B_seed_studies_original.csv",
+      "sha256": "ab141b629ba2fa8233758bb3e7c37ced3c09d0f98c6289cf00f9c103d0b0cda3",
+      "bytes": 35617,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/B_family_counts_original.json",
+      "release_path": "13_table_source_audit/s1_original/B_family_counts_original.json",
+      "sha256": "12bc05ac4580d8ca6fac56e3933c8801eb2a51e539e1a93dd03422f7e1de4740",
+      "bytes": 750,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/B_counting_scope_caveat_original.md",
+      "release_path": "13_table_source_audit/s1_original/B_counting_scope_caveat_original.md",
+      "sha256": "b9ea23223af2444adbfca5cc67628141c108d51de559024f0b387d97b31fc144",
+      "bytes": 2980,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/B_upstream_statistics_NOT_plotting.py",
+      "release_path": "13_table_source_audit/s1_original/B_upstream_statistics_NOT_plotting.py",
+      "sha256": "aa0c01d006ced64f00158b8ecfbb8b5b4d2305ed2114a13b1de485c20adec3dc",
+      "bytes": 12852,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/C_SI_displayed_Table_S1.csv",
+      "release_path": "13_table_source_audit/s1_original/C_SI_displayed_Table_S1.csv",
+      "sha256": "87b21325861222de69e5f3d873ef3ac26d11ab18d614e77e18d1f7a2e04a0bfd",
+      "bytes": 647,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/source_provenance.json",
+      "release_path": "13_table_source_audit/s1_original/source_provenance.json",
+      "sha256": "0b50947e629fb8e026cdc08b218ea82fa1c206ce066dd4288e2157ab5fb0735b",
+      "bytes": 7387,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_1/source_data/BCE_source_evidence_20261024/README.md",
+      "release_path": "13_table_source_audit/s1_original/README.md",
+      "sha256": "a4910f0638c2050de2d335a505e43a2ed50489f4c05495db444adb9c13d9d8f4",
+      "bytes": 1711,
+      "transformation": "none"
+    },
+    {
+      "source_relative": "MOF_growth_Data/Entropy calculation/entropy_results.csv",
+      "release_path": "08_entropy_inputs/data/entropy_results.csv",
+      "sha256": "e5da9c263ea450d504d6970fa45fca177b7506cf65f224930dfeaf3ee7e55059",
+      "bytes": 1467,
+      "transformation": "existing exact copy"
+    }
+  ]
+}

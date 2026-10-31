@@ -1,0 +1,3514 @@
+{
+  "bath_mapping": {
+    "bath_bond_opening_scale": "1.0",
+    "bath_free_linker_exchange_fate": "topology_loss",
+    "bath_linker_activity": "0.009900990099009901",
+    "bath_linker_to_solvent_weight": "0.01",
+    "bath_mapping_equations": "WL=c; WM=r*c; WS=1; CM6=q*c/6; aL=WL/(WL+WM+WS); aM=CM6*T/(T+WL+WM+WS); Doff=T+WL+WM+WS; aoff=b*(WM+eta*WS+[WL if topology_loss else 0])/Doff",
+    "bath_modulator_to_linker_weight": "0.0",
+    "bath_node_activity": "0.0008291873963515756",
+    "bath_solvent_capping_efficiency": "1.0",
+    "bath_solvent_weight": "1.0",
+    "bath_tethered_linker_weight": "1.0"
+  },
+  "bond_accessibility_mode": "all_bonds",
+  "clock": {
+    "model_time": 3920838.5917226193,
+    "physical_seconds": 942.9616813092899,
+    "reference": "one dimensionless unit equals one declared site-opening time",
+    "site_opening_seconds": 0.0002405
+  },
+  "composition_mapping": {
+    "atomic_metal_to_linker_ratio": 1.0,
+    "kind": "explicit_competitive_bath_path",
+    "node_fraction": 0.07727620504973222
+  },
+  "condition_id": "uio66_all_bonds_loss_c0_r0_b1_s0",
+  "continuation_replicate": 0,
+  "coordinates": {
+    "closure_entropy_coefficient": 0.5,
+    "closure_entropy_scale": 30.9,
+    "closure_weight": 5126839.779827061,
+    "external_activity": 0.010730177495361476,
+    "linker_activity": 0.009900990099009901,
+    "node_activity": 0.0008291873963515755,
+    "node_fraction": 0.07727620504973222,
+    "normalized_closure_ratio": 477796362.83214617,
+    "normalized_off_ratio": 46.829380260137725,
+    "off_weight": 0.5024875621890548
+  },
+  "derived": {
+    "mean_entities_time_weighted": 1.0075229946872934,
+    "net_entity_change": -18,
+    "target_reached": false
+  },
+  "design_block": "competitive_bath_seeded_path_pilot_v2",
+  "event_counts": {
+    "add_linker_accepted": 8637,
+    "add_linker_attempt": 8637,
+    "add_node_accepted": 6358,
+    "add_node_attempt": 6358,
+    "remove_bond": 15005
+  },
+  "final_state": {
+    "connected_component_sizes": [
+      2
+    ],
+    "cycle_rank": 0,
+    "entities": 2,
+    "entity_type_counts": {
+      "Ligand": 1,
+      "Zr": 1
+    },
+    "is_single_connected_component": true,
+    "linked_bonds": 1,
+    "linker_free_sites": 1,
+    "metal_free_sites": 11,
+    "ready_internal_pairs": 0
+  },
+  "first_passage_event": {
+    "21": null,
+    "22": null,
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null,
+    "27": null,
+    "28": null,
+    "29": null,
+    "30": null
+  },
+  "first_passage_model_time": {
+    "21": null,
+    "22": null,
+    "23": null,
+    "24": null,
+    "25": null,
+    "26": null,
+    "27": null,
+    "28": null,
+    "29": null,
+    "30": null
+  },
+  "provenance": {
+    "engine_import_redirects": [
+      "numpy-compatible scipy.spatial.cKDTree and scipy.linalg.svd shim",
+      "unused matplotlib.pyplot import shim",
+      "/public/home/yibinjiang/workspace/mol/BDC.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/Zr-Ligand-ExplicitChannel/input_monomers/BDC.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr12_AA.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/Zr-Ligand-ExplicitChannel/input_monomers/Zr12_AA.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr6_AA.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/Zr-Ligand-ExplicitChannel/input_monomers/Zr6_AA.mol"
+    ],
+    "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/code/UiO66_Assembly_Large_Correction_20250811.py",
+    "engine_sha256": "0a8aac74b8fd68210261bf2746164349fce96582d842bf5203433b5edf095912",
+    "fragment_removal": "exact search depth at least target_entities + 1",
+    "runner_path": "/home/wave/MOL_growth_recalculation_20260830/campaign/seeded_molecular_runner.py",
+    "runner_sha256": "eb6894cf8328bd7c83beeb967a363e917009f9948c21d5e3f6fa1eb44730fba6",
+    "selector_path": "/home/wave/MOL_growth_recalculation_20260830/campaign/common_kmc_selector.py",
+    "selector_sha256": "e5401fa20c1c58d3488720dc213f8543efbf308f661603aee76d628f6ee9b57b"
+  },
+  "random_seed": 1161307042,
+  "replicate": 1,
+  "run_id": "seeded_uio66_all_bonds_loss_c0_r0_b1_s0_r01",
+  "sampled_growth_curve": [
+    {
+      "cycle_rank": 0,
+      "entities": 20,
+      "entity_type_counts": {
+        "Ligand": 17,
+        "Zr": 3
+      },
+      "event": 0,
+      "linked_bonds": 19,
+      "linker_free_sites": 15,
+      "metal_free_sites": 17,
+      "model_time": 0.0,
+      "ready_internal_pairs": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 19,
+      "entity_type_counts": {
+        "Ligand": 16,
+        "Zr": 3
+      },
+      "event": 1,
+      "linked_bonds": 18,
+      "linker_free_sites": 14,
+      "metal_free_sites": 18,
+      "model_time": 0.017950987433596962,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 19
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 18,
+      "entity_type_counts": {
+        "Ligand": 15,
+        "Zr": 3
+      },
+      "event": 2,
+      "linked_bonds": 17,
+      "linker_free_sites": 13,
+      "metal_free_sites": 19,
+      "model_time": 0.025856361831113468,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 18
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 17,
+      "entity_type_counts": {
+        "Ligand": 14,
+        "Zr": 3
+      },
+      "event": 3,
+      "linked_bonds": 16,
+      "linker_free_sites": 12,
+      "metal_free_sites": 20,
+      "model_time": 0.09026989965209581,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 17
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 16,
+      "entity_type_counts": {
+        "Ligand": 13,
+        "Zr": 3
+      },
+      "event": 4,
+      "linked_bonds": 15,
+      "linker_free_sites": 11,
+      "metal_free_sites": 21,
+      "model_time": 0.10238343329153995,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 16
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 15,
+      "entity_type_counts": {
+        "Ligand": 12,
+        "Zr": 3
+      },
+      "event": 5,
+      "linked_bonds": 14,
+      "linker_free_sites": 10,
+      "metal_free_sites": 22,
+      "model_time": 0.386912905908397,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 15
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 14,
+      "entity_type_counts": {
+        "Ligand": 11,
+        "Zr": 3
+      },
+      "event": 6,
+      "linked_bonds": 13,
+      "linker_free_sites": 9,
+      "metal_free_sites": 23,
+      "model_time": 0.4198063893188714,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 14
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 13,
+      "entity_type_counts": {
+        "Ligand": 10,
+        "Zr": 3
+      },
+      "event": 7,
+      "linked_bonds": 12,
+      "linker_free_sites": 8,
+      "metal_free_sites": 24,
+      "model_time": 0.42512304056847,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 13
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 12,
+      "entity_type_counts": {
+        "Ligand": 9,
+        "Zr": 3
+      },
+      "event": 8,
+      "linked_bonds": 11,
+      "linker_free_sites": 7,
+      "metal_free_sites": 25,
+      "model_time": 0.6198979255638569,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 12
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 7,
+      "entity_type_counts": {
+        "Ligand": 5,
+        "Zr": 2
+      },
+      "event": 9,
+      "linked_bonds": 6,
+      "linker_free_sites": 4,
+      "metal_free_sites": 18,
+      "model_time": 0.7157587351343907,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 7
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 8,
+      "entity_type_counts": {
+        "Ligand": 6,
+        "Zr": 2
+      },
+      "event": 10,
+      "linked_bonds": 7,
+      "linker_free_sites": 5,
+      "metal_free_sites": 17,
+      "model_time": 0.9299158117885595,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 7
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 7,
+      "entity_type_counts": {
+        "Ligand": 5,
+        "Zr": 2
+      },
+      "event": 11,
+      "linked_bonds": 6,
+      "linker_free_sites": 4,
+      "metal_free_sites": 18,
+      "model_time": 1.1027769617321599,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 6
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 6,
+      "entity_type_counts": {
+        "Ligand": 4,
+        "Zr": 2
+      },
+      "event": 12,
+      "linked_bonds": 5,
+      "linker_free_sites": 3,
+      "metal_free_sites": 19,
+      "model_time": 1.5491140979270437,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 6
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 5,
+      "entity_type_counts": {
+        "Ligand": 4,
+        "Zr": 1
+      },
+      "event": 13,
+      "linked_bonds": 4,
+      "linker_free_sites": 4,
+      "metal_free_sites": 8,
+      "model_time": 1.5998088453834785,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 5
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 4,
+      "entity_type_counts": {
+        "Ligand": 3,
+        "Zr": 1
+      },
+      "event": 14,
+      "linked_bonds": 3,
+      "linker_free_sites": 3,
+      "metal_free_sites": 9,
+      "model_time": 2.185813429215208,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 4
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 15,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 2.890438273397427,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 3
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 16,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 5.158528139841986,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 2
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 17,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 5.201343563029593,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 1
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 18,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 6.136286071291599,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 1
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 19,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 9.834552864682776,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 20,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 143.56425407396398,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 21,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 144.29280124403073,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 22,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 154.32576299594805,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 23,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 154.53109424205124,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 24,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 296.1629243231454,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 25,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 297.7747022764543,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 26,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 299.4259380129332,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 27,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 301.5410032954662,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 28,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2229.5249707793073,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 29,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2229.8805281496266,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 30,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2233.970877651922,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 31,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 2235.2640062441697,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 32,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2609.0762599421573,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 33,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2612.8573281434506,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 34,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2622.891638857488,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 35,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 2623.0549982238103,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 36,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3090.8035678066194,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 37,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 3092.7650759944167,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 38,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3093.8374826700197,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 39,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 3098.5770889044425,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 40,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3963.042070843115,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 41,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 3963.972729646498,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 42,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3982.046779538826,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 43,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 3982.60821064299,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 44,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 4779.69584147127,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 45,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 4781.512885753653,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 46,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 4784.693197657534,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 47,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 4786.998322119327,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 48,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 4787.901052675403,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 49,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 4788.5378935523695,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 50,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 5887.938882190931,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 52,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 5890.292510606056,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 54,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 5958.471530337743,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 56,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 5959.699722469174,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 58,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 5960.987627191189,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 60,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 6438.348828437923,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 62,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 6461.623430270891,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 64,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 6649.151586970834,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 67,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 6651.763669984689,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 69,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 6964.758607161423,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 71,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 6969.5412116173975,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 74,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 7609.411400111987,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 77,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 8177.5467624978655,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 80,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 8562.661932265979,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 82,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 8565.057255267631,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 85,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 8578.33443853933,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 89,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 8894.742794049997,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 92,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 9046.943812784779,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 95,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 9066.44346156255,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 99,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 9228.066281703921,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 102,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 9274.584399443485,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 106,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 9630.880042072647,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 110,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 11064.308879203,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 114,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 11762.419942638562,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 118,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 12002.191858420541,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 122,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 12265.184671732095,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 127,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 12273.414003556218,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 131,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 12877.368875878907,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 136,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 13842.771309132642,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 141,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 13982.404529413583,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 146,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 14205.590431601748,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 151,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 17460.466444495538,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 157,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 17501.272868984703,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 163,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 18763.925241312656,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 169,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 19086.258399835897,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 175,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 19675.42145284408,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 181,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 20936.307254290117,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 188,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 21468.071571254415,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 194,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 24768.42598611373,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 201,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 25507.864606979532,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 209,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 27137.707845575118,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 216,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 31455.477961526503,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 224,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 32908.93261055958,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 232,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 34304.816868901056,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 241,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 36134.786933903204,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 250,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 37546.217259052464,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 259,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 37793.25253576334,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 268,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 41437.89076458203,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 278,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 41467.832707236455,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 288,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 42271.51320074802,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 299,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 44089.49104565752,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 309,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 46429.15461149746,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 321,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 46943.41052791196,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 332,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 48809.48288220389,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 344,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 50856.697363103376,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 357,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 52603.50654563146,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 370,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 53456.255606981926,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 383,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 57059.615019983874,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 397,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 58521.293608458545,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 412,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 60523.311446718115,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 427,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 61459.011479107874,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 442,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 63767.8419542455,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 458,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 66105.73706869059,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 475,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 68459.94956061586,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 492,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 69631.52253806793,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 510,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 72112.68281925675,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 529,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 74493.9125738909,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 548,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 75857.75622874935,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 568,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 78972.41268609997,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 589,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 80080.79504167673,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 610,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 82163.61604196044,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 632,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 84654.69015394537,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 655,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 89153.96130512567,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 679,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 94663.11444469159,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 704,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 98594.38387934575,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 729,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 100587.79208719866,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 756,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 105650.6876373759,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 784,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 109305.98352861608,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 812,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 115274.85608082509,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 842,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 121467.46593706163,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 872,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 123780.86145024463,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 904,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 128024.5311037144,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 937,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 131809.77221116156,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 971,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 137281.0127975813,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1006,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 143243.23978258425,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1043,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 146317.66045564314,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1081,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 152213.08948945766,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1120,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 156780.68727168295,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1161,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 159506.47931051007,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1203,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 162267.25306794955,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1247,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 170156.82379627635,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1292,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 177720.1602578101,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 1339,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 185139.41070689238,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1388,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 192360.544831161,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1438,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 197400.53795356266,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1491,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 204194.3436537168,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 1545,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 215282.43009114347,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1601,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 221543.2627819248,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 1659,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 226934.53048071024,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1720,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 235408.40627023167,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1782,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 244666.71697846483,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 1847,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 251270.54564591832,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1914,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 259616.65711480557,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 1984,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 270925.45638034184,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 2056,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 276192.81709797465,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 2131,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 287822.73062790814,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 2209,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 295545.27400590695,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 2289,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 304168.6507874447,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 2372,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 314078.6595833788,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 2459,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 325992.8211877789,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 4,
+      "entity_type_counts": {
+        "Ligand": 3,
+        "Zr": 1
+      },
+      "event": 2548,
+      "linked_bonds": 3,
+      "linker_free_sites": 3,
+      "metal_free_sites": 9,
+      "model_time": 340589.66313184914,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 2641,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 351305.22157713823,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 2737,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 367055.81745133194,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 2836,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 379051.4561980217,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 2940,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 396296.66767169867,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 3047,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 410441.38404362067,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 3157,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 424275.88055547536,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 3272,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 450233.838718506,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 3391,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 467420.874101487,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 3515,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 487769.2076542387,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 3643,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 498774.85193647695,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 3775,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 511859.248083275,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 3913,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 540353.7543627366,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 4055,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 570016.6232483413,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 4202,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 582921.1879317871,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 4355,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 594658.0315219447,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 4514,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 612694.1206545609,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 4678,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 628008.469034963,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 4848,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 642771.653712348,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 5025,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 664599.3057191989,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 5207,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 686383.2781268541,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 5397,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 711472.493051776,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 5593,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 736010.1396327087,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 3,
+      "entity_type_counts": {
+        "Ligand": 2,
+        "Zr": 1
+      },
+      "event": 5797,
+      "linked_bonds": 2,
+      "linker_free_sites": 2,
+      "metal_free_sites": 10,
+      "model_time": 765298.3187130238,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 6008,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 798108.1367178211,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 6226,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 827910.333341243,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 6453,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 861203.2854468005,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 6688,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 899379.1740817651,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 6931,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 931667.2388789639,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 7183,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 966138.6250357301,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 7444,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 995735.1111952083,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 7715,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 1031142.417263214,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 7996,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1072442.0103045153,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 8287,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 1111861.1502809678,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 8588,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1154370.164793275,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 8901,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1206803.4758448678,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 9225,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1244792.4565967428,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 9560,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 1289062.5436037516,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 9908,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 1334622.0037581327,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 10269,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1378069.7235520016,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 10642,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 1431209.5704579013,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 11029,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1484962.4949876377,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 11431,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1533787.8395588472,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 11847,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1589699.7901164247,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 12278,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 1639577.206190323,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 12724,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 1699701.360080246,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 13187,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1771642.320780939,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 13667,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 1834321.5216520776,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 14164,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 1890049.6504664284,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 14680,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 1957881.6845130257,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 15214,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 2022269.8357869969,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 15767,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2100185.868061406,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 16341,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2168586.649223833,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 16935,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2247682.629984194,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 17552,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2321801.1073164777,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 18190,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2401621.4192543686,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 18852,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2487324.8792061717,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 19538,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 2572403.023973641,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 20249,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2664234.9022520212,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 20985,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2752303.2891670745,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 21749,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2857060.4440886243,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 22540,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 2956448.039233583,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 23360,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3054297.7905888148,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 24210,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3162177.2242409145,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 25091,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 3285297.746449675,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 26004,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3406684.741338809,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 26950,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3537151.8725822535,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Zr": 1
+      },
+      "event": 27931,
+      "linked_bonds": 0,
+      "linker_free_sites": 0,
+      "metal_free_sites": 12,
+      "model_time": 3660425.497642396,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 1,
+      "entity_type_counts": {
+        "Ligand": 1
+      },
+      "event": 28947,
+      "linked_bonds": 0,
+      "linker_free_sites": 2,
+      "metal_free_sites": 0,
+      "model_time": 3785739.9052459393,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    },
+    {
+      "cycle_rank": 0,
+      "entities": 2,
+      "entity_type_counts": {
+        "Ligand": 1,
+        "Zr": 1
+      },
+      "event": 30000,
+      "linked_bonds": 1,
+      "linker_free_sites": 1,
+      "metal_free_sites": 11,
+      "model_time": 3920838.5917226193,
+      "ready_internal_pairs": 0,
+      "retained_seed_entities": 0
+    }
+  ],
+  "schema_version": "common-seeded-molecular-kmc-v1",
+  "seed": {
+    "final_retained_entities": 0,
+    "final_retained_fraction": 0.0,
+    "first_loss_event": 5,
+    "first_loss_model_time": 0.386912905908397,
+    "initial_entity_count": 20,
+    "initial_state": {
+      "cycle_rank": 0,
+      "entities": 20,
+      "entity_type_counts": {
+        "Ligand": 17,
+        "Zr": 3
+      },
+      "linked_bonds": 19,
+      "linker_free_sites": 15,
+      "metal_free_sites": 17,
+      "ready_internal_pairs": 0
+    },
+    "minimum_retained_entities": 0,
+    "preparation_seconds_excluded_from_model_clock": 0.005775957950390875,
+    "retention_threshold": 0.8,
+    "source": {
+      "kind": "pickle",
+      "path": "/home/wave/MOL_growth_recalculation_20260830/frozen_seed_ensemble_v2/uio66/uio66_seed_01.pkl",
+      "sha256": "f3400e980d1a4195da19088015ade90de001fd15d7807c7a73cb4d0e5ee4301f"
+    },
+    "structural_fingerprint_sha256": "c6db7c0b075d67fbfc6a4ac5d2fae3a8c113ddebedbf78e8cf7b6f4b9341f34f"
+  },
+  "system": "uio66",
+  "termination": {
+    "effective_fragment_search_depth": 31,
+    "event_cap": 30000,
+    "executed_events": 30000,
+    "maximum_entities": 20,
+    "status": "event_cap",
+    "target_entities": 30,
+    "wall_time_cap_s": 30.0
+  },
+  "topology_mode": "unrestricted",
+  "wall_seconds": 2.4943502509268
+}

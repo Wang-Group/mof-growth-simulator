@@ -28,6 +28,15 @@ The old 26.4 GB long-growth tree is
 not automatically required in full, but compact summaries alone do not preserve
 every event or molecular state.
 
+The subsequent group 12 audit located and remotely hash-verified **975 checkpoint
+files plus 975 associated result JSONs**, totalling **545,387,724 bytes**.
+Their exact project-relative paths and hashes are in
+`12_runtime_provenance/remote_checkpoint_verification.json`; continuation and
+paired-branch relationships are in `checkpoint_lineage.csv`. These payloads were
+not downloaded into the Git branch. Do not simply add this total to the older
+606 MB ledger without checking overlap. Small seed/host pickles and compressed
+parameter manifests are already packaged; they need not be requested again.
+
 ## Proposed Datasets
 
 1. **Historical trajectory sources:** original pickles, run-folder parameters,
@@ -38,9 +47,11 @@ every event or molecular state.
    provenance, condition grids, per-trace records and necessary checkpoints.
    Distinguish independent repeats from continuations and unsuccessful/censored
    runs. Include a manifest linking raw inputs to the GitHub processed tables.
-3. **Experimental and quantum-chemical inputs:** only author-confirmed raw
-   acquisitions and Gaussian inputs/outputs supporting the published analyses.
-   Derived entropy spreadsheets or Word-table transcriptions are not originals.
+3. **Experimental and entropy-calculation inputs:** author-confirmed raw
+   acquisitions, S8 turbidity observation records, and the actual geometry,
+   solvent/model inputs and scripts behind the solution-entropy calculation.
+   Include Gaussian inputs/outputs only if they were actually used. S6 now matches
+   its derived source CSV, but this is not a full upstream calculation replay.
 
 ## Release Procedure
 

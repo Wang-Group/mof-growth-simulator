@@ -1,0 +1,493 @@
+{
+  "status": "PASS_FOR_STATED_PROVENANCE_CHECKS",
+  "publication_ready": false,
+  "runtime": {
+    "source_records": 206,
+    "source_bytes_before_deduplication": 61787533,
+    "csv_manifests": [
+      {
+        "source_manifest": "btb_high_rho_N1000_20260907_v1/manifest.csv",
+        "design_rows": 32,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "btb_size_extension_20260916_v1/manifest.csv",
+        "design_rows": 16,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "campaign/manifest_common_response_surface_v2.csv",
+        "design_rows": 80640,
+        "rng_column": "seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "campaign/manifest_competitive_bath_de_novo_pilot_v2.csv",
+        "design_rows": 7680,
+        "rng_column": "seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "campaign/manifest_competitive_bath_seeded_pilot_v2.csv",
+        "design_rows": 7680,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "campaign/manifest_seeded_propagation_v2_fixed_seeds.csv",
+        "design_rows": 46080,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_absolute_concentration_horizon_btb_smoke.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_absolute_concentration_horizon_review_v1.csv",
+        "design_rows": 64,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_absolute_concentration_horizon_smoke.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_figure10_absolute_metal_linker_unrestricted_v1.csv",
+        "design_rows": 1056,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_figure8_absolute_formic_acid_unrestricted_v1.csv",
+        "design_rows": 2304,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_seeded_crystal_layer_sc1_anchor_v1.csv",
+        "design_rows": 2688,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_seeded_crystal_layer_sc1_anchor_v1.remote.csv",
+        "design_rows": 2688,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_seeded_sc1_smoke.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_surface_sc1_smoke.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_surface_target30_sc1_anchor_v1.csv",
+        "design_rows": 1536,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/manifest_surface_target30_sc1_anchor_v1.remote.csv",
+        "design_rows": 1536,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.csv",
+        "design_rows": 5,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.remote.csv",
+        "design_rows": 5,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho10_replay_v1.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho10_replay_v1.remote.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho10_replay_v2.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho10_replay_v2.remote.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho30_v1.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho30_v1.remote.csv",
+        "design_rows": 1,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n1000_growth_campaign_v1/manifest_uio66_growth_N1000_pxrd_v1.csv",
+        "design_rows": 48,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "figure_rebuild_20260901/n1000_growth_campaign_v1/manifest_uio66_growth_N1000_pxrd_v1.remote.csv",
+        "design_rows": 48,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "steric_mixed_solvent_20260912_v1/solvent_competition_20260912_v1/grid_manifest.csv",
+        "design_rows": 27648,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      },
+      {
+        "source_manifest": "steric_mixed_solvent_20260912_v1/solvent_competition_20260912_v1/pilot_manifest.csv",
+        "design_rows": 288,
+        "rng_column": "random_seed",
+        "evidence": "design rows, not proof of completed runs"
+      }
+    ],
+    "frozen_seed_metadata": [
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_00.json",
+        "random_seed": 20270831,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_01.json",
+        "random_seed": 20278750,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_02.json",
+        "random_seed": 20286669,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_03.json",
+        "random_seed": 20294588,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_04.json",
+        "random_seed": 20302507,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_05.json",
+        "random_seed": 20310426,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_06.json",
+        "random_seed": 20318345,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_network/btb_mol_seed_07.json",
+        "random_seed": 20326264,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_00.json",
+        "random_seed": 20270831,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_01.json",
+        "random_seed": 20278750,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_02.json",
+        "random_seed": 20286669,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_03.json",
+        "random_seed": 20294588,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_04.json",
+        "random_seed": 20302507,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_05.json",
+        "random_seed": 20310426,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_06.json",
+        "random_seed": 20318345,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_07.json",
+        "random_seed": 20326264,
+        "entities": 20,
+        "topology_mode": "planar_mol"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_00.json",
+        "random_seed": 20260831,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_01.json",
+        "random_seed": 20268750,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_02.json",
+        "random_seed": 20276669,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_03.json",
+        "random_seed": 20284588,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_04.json",
+        "random_seed": 20292507,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_05.json",
+        "random_seed": 20300426,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_06.json",
+        "random_seed": 20308345,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      },
+      {
+        "source": "frozen_seed_ensemble_v2/uio66/uio66_seed_07.json",
+        "random_seed": 20316264,
+        "entities": 20,
+        "topology_mode": "unrestricted"
+      }
+    ],
+    "code_and_seed_reference_count": 197,
+    "unmatched_version_references": [],
+    "fixed_event_design_rows": 1152,
+    "size_continuation_rows": 943,
+    "paired_branches": 384,
+    "paired_independent_source_particles": 32,
+    "lineage_rows": 1327,
+    "remote_files_hash_verified": 1950,
+    "remote_checkpoint_count": 975,
+    "remote_bytes": 545387724,
+    "remote_checked_utc": "2026-10-31T05:24:55.781300+00:00",
+    "executed_result_links": [
+      {
+        "result": "campaign/competitive_bath_seeded_v2/seeded_uio66_all_bonds_loss_c0_r0_b1_s0_r01.json",
+        "run_id": "seeded_uio66_all_bonds_loss_c0_r0_b1_s0_r01",
+        "random_seed": 1161307042,
+        "seed_sha256": "f3400e980d1a4195da19088015ade90de001fd15d7807c7a73cb4d0e5ee4301f",
+        "matching_manifests": [
+          "campaign/manifest_competitive_bath_seeded_pilot_v2.csv"
+        ]
+      },
+      {
+        "result": "campaign/competitive_bath_seeded_v2/seeded_uio66_all_bonds_loss_c0_r1_b0_s0_r00.json",
+        "run_id": "seeded_uio66_all_bonds_loss_c0_r1_b0_s0_r00",
+        "random_seed": 204610606,
+        "seed_sha256": "387854394f642c743e535ed021dd6c33b0c810392007d94b96247d78be5d328d",
+        "matching_manifests": [
+          "campaign/manifest_competitive_bath_seeded_pilot_v2.csv"
+        ]
+      },
+      {
+        "result": "production_sc1_anchor_v1/seeded/seeded_sc1_btb_mol_q0p1_off0p1_rep19.json",
+        "run_id": "seeded_sc1_btb_mol_q0p1_off0p1_rep19",
+        "random_seed": 1408530368,
+        "seed_sha256": "e98bb24e620e05213755b49755dc2723ff7309d718870f60a96bc4fc8a0281ee",
+        "matching_manifests": [
+          "figure_rebuild_20260901/manifest_seeded_crystal_layer_sc1_anchor_v1.csv",
+          "figure_rebuild_20260901/manifest_seeded_crystal_layer_sc1_anchor_v1.remote.csv"
+        ]
+      },
+      {
+        "result": "production_sc1_anchor_v1/seeded/seeded_sc1_btb_mol_q0p1_off0p1_rep25.json",
+        "run_id": "seeded_sc1_btb_mol_q0p1_off0p1_rep25",
+        "random_seed": 3235395659,
+        "seed_sha256": "e98bb24e620e05213755b49755dc2723ff7309d718870f60a96bc4fc8a0281ee",
+        "matching_manifests": [
+          "figure_rebuild_20260901/manifest_seeded_crystal_layer_sc1_anchor_v1.csv",
+          "figure_rebuild_20260901/manifest_seeded_crystal_layer_sc1_anchor_v1.remote.csv"
+        ]
+      },
+      {
+        "result": "07_publication_sources/SI_tables_sources_20261023/Table_S7/matched_source_files/uio66_growth_N10000_sc1_q1_rho0p1_rep00.json",
+        "run_id": "uio66_growth_N10000_sc1_q1_rho0p1_rep00",
+        "random_seed": 3649908966,
+        "seed_sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+        "matching_manifests": [
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.csv",
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.remote.csv"
+        ]
+      },
+      {
+        "result": "07_publication_sources/SI_tables_sources_20261023/Table_S7/matched_source_files/uio66_growth_N10000_sc1_q1_rho0p3_rep00.json",
+        "run_id": "uio66_growth_N10000_sc1_q1_rho0p3_rep00",
+        "random_seed": 2489778447,
+        "seed_sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+        "matching_manifests": [
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.csv",
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.remote.csv"
+        ]
+      },
+      {
+        "result": "07_publication_sources/SI_tables_sources_20261023/Table_S7/matched_source_files/uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2.json",
+        "run_id": "uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2",
+        "random_seed": 1955101498,
+        "seed_sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+        "matching_manifests": [
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho10_replay_v2.csv",
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho10_replay_v2.remote.csv"
+        ]
+      },
+      {
+        "result": "07_publication_sources/SI_tables_sources_20261023/Table_S7/matched_source_files/uio66_growth_N10000_sc1_q1_rho1_rep00.json",
+        "run_id": "uio66_growth_N10000_sc1_q1_rho1_rep00",
+        "random_seed": 694308724,
+        "seed_sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+        "matching_manifests": [
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.csv",
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.remote.csv"
+        ]
+      },
+      {
+        "result": "07_publication_sources/SI_tables_sources_20261023/Table_S7/matched_source_files/uio66_growth_N10000_sc1_q1_rho30_rep00.json",
+        "run_id": "uio66_growth_N10000_sc1_q1_rho30_rep00",
+        "random_seed": 3551667034,
+        "seed_sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+        "matching_manifests": [
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho30_v1.csv",
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_rho30_v1.remote.csv"
+        ]
+      },
+      {
+        "result": "07_publication_sources/SI_tables_sources_20261023/Table_S7/matched_source_files/uio66_growth_N10000_sc1_q1_rho3_rep00.json",
+        "run_id": "uio66_growth_N10000_sc1_q1_rho3_rep00",
+        "random_seed": 1661907309,
+        "seed_sha256": "9b08834d55e0e1674d6e379eb991594947d000adeea6831d430e1f69b98e48c7",
+        "matching_manifests": [
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.csv",
+          "figure_rebuild_20260901/n10000_growth_campaign_v1/manifest_uio66_growth_N10000_pxrd_v1.remote.csv"
+        ]
+      }
+    ],
+    "limits": [
+      "Manifest row count is not a completed-run count.",
+      "Seed/checkpoint pickle contents were never deserialized.",
+      "Remote checkpoint payloads are external and are not rechecked by this offline verifier.",
+      "Fixed-event, size-followon and paired-response datasets are not pooled as independent repeats.",
+      "No full KMC replay, scientific recalibration or final figure adoption is claimed."
+    ]
+  },
+  "tables": {
+    "source_files_checked": 8,
+    "selected_document_hashes": {
+      "supporting_information_defect_section_to_SI_20261019.docx": "c232b12594aba4d57891bfae644bb2c29174baeb72a9052496c662d9f2d913e3",
+      "supporting_information_defect_section_to_SI_20261019_text_synced_20261031.docx": "8828fa2409fb58b787a81a0dcb78f0a6d8e6c2568dd7f2d96d05eeb6e587398c"
+    },
+    "s1": {
+      "dose_doi_records": 69,
+      "distinct_publication_groups": 68,
+      "doi_family_counts": {
+        "ZIF": 2,
+        "Zr/Hf": 53,
+        "Zn-carboxylate": 4,
+        "Cd-carboxylate": 1,
+        "Cu-carboxylate": 6,
+        "Fe-carboxylate": 2,
+        "Al-carboxylate": 1
+      },
+      "duplicate_groups": {
+        "publication::10.1002/anie.201907074": [
+          "10.1002/ange.201907074",
+          "10.1002/anie.201907074"
+        ]
+      },
+      "zr_hf_doi_records": 53,
+      "zr_hf_publication_groups": 52,
+      "status": "COUNTING_UNIT_REQUIRES_AUTHOR_CONFIRMATION",
+      "limit": "Current SI labels 69/53 as publications; source gives 68/52 distinct publication groups. Final 40/12/1 direction coding is not reconstructed."
+    },
+    "s2": {
+      "displayed_total": 31,
+      "status": "FINAL_31_PUBLICATION_SELECTION_AND_DIRECTION_CODING_NOT_LOCATED"
+    },
+    "s6": {
+      "matched_values": 18,
+      "maximum_absolute_difference": 4.546038212538406e-09,
+      "status": "DERIVED_NUMERICAL_TABLE_MATCHED_NOT_FULL_CALCULATION_REPRODUCED",
+      "limit": "Need actual entropy computation script, geometry-to-species mapping and solvent/model inputs. The SI describes a solution-entropy correction; Gaussian outputs are not assumed mandatory."
+    },
+    "s8": {
+      "displayed_observations": 12,
+      "status": "ORIGINAL_TURBIDITY_OBSERVATION_RECORDS_NOT_LOCATED",
+      "limit": "12 observations in minutes, not the single in-situ DLS size trace. Do not infer extra repeats."
+    }
+  }
+}

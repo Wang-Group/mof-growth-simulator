@@ -1,0 +1,3074 @@
+{
+  "d2_rho1_finite100_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1109,
+    "tau": 20.0,
+    "events": 46057,
+    "wall_seconds": 2373.6961237310898
+  },
+  "d2_rho1_finite100_r02": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1100,
+    "tau": 20.0,
+    "events": 45850,
+    "wall_seconds": 2522.3259249909315
+  },
+  "d2_rho1_finite100_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1100,
+    "tau": 20.0,
+    "events": 46449,
+    "wall_seconds": 2603.5096664370503
+  },
+  "d2_rho1_finite100_r03": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1101,
+    "tau": 20.0,
+    "events": 46042,
+    "wall_seconds": 2647.623347091954
+  },
+  "d2_rho1_finite250_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1199,
+    "tau": 20.0,
+    "events": 49741,
+    "wall_seconds": 2922.6133945311885
+  },
+  "d2_rho1_finite250_r03": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1166,
+    "tau": 20.0,
+    "events": 48173,
+    "wall_seconds": 2810.9018923330586
+  },
+  "d2_rho1_finite250_r02": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1138,
+    "tau": 20.0,
+    "events": 47907,
+    "wall_seconds": 2833.507350028027
+  },
+  "d2_rho1_finite250_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1179,
+    "tau": 20.0,
+    "events": 49872,
+    "wall_seconds": 2899.2591825549025
+  },
+  "d2_rho1_finite250_r04": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1172,
+    "tau": 20.0,
+    "events": 48964,
+    "wall_seconds": 2988.412384027848
+  },
+  "d2_rho1_fixed_r02": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1317,
+    "tau": 20.0,
+    "events": 51636,
+    "wall_seconds": 3403.6578183460515
+  },
+  "d2_rho1_fixed_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1421,
+    "tau": 20.0,
+    "events": 55341,
+    "wall_seconds": 3574.7220021989197
+  },
+  "d2_rho1_fixed_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1438,
+    "tau": 20.0,
+    "events": 55293,
+    "wall_seconds": 3666.090488031972
+  },
+  "d2_rho1_fixed_r04": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1406,
+    "tau": 20.0,
+    "events": 53950,
+    "wall_seconds": 3756.8892381531186
+  },
+  "d2_rho1_fixed_r03": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1401,
+    "tau": 20.0,
+    "events": 55573,
+    "wall_seconds": 3993.339736368973
+  },
+  "d2_rho1_finite100_r04": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1094,
+    "tau": 20.0,
+    "events": 46421,
+    "wall_seconds": 2589.6671274569817
+  },
+  "d2_rho3_finite100_r02": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 988,
+    "tau": 20.0,
+    "events": 122924,
+    "wall_seconds": 5873.562691768864
+  },
+  "d0_rho1_finite100_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1280,
+    "tau": 20.0,
+    "events": 65122,
+    "wall_seconds": 5921.308053467888
+  },
+  "d2_rho3_finite100_r03": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 989,
+    "tau": 20.0,
+    "events": 123911,
+    "wall_seconds": 6060.228113936959
+  },
+  "d2_rho3_finite100_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1021,
+    "tau": 20.0,
+    "events": 126065,
+    "wall_seconds": 6164.024398518959
+  },
+  "d2_rho3_finite250_r02": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1016,
+    "tau": 20.0,
+    "events": 125672,
+    "wall_seconds": 6178.149761809036
+  },
+  "d2_rho3_finite250_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1024,
+    "tau": 20.0,
+    "events": 125968,
+    "wall_seconds": 6285.872583332937
+  },
+  "d2_rho1_finite100_r05": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1134,
+    "tau": 20.0,
+    "events": 46687,
+    "wall_seconds": 2875.21782919392
+  },
+  "d2_rho3_finite250_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1018,
+    "tau": 20.0,
+    "events": 127644,
+    "wall_seconds": 6358.99984503095
+  },
+  "d2_rho3_fixed_r02": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1055,
+    "tau": 20.0,
+    "events": 127009,
+    "wall_seconds": 6359.124027378159
+  },
+  "d2_rho3_finite100_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1019,
+    "tau": 20.0,
+    "events": 126126,
+    "wall_seconds": 6399.484714202117
+  },
+  "d2_rho3_fixed_r01": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1075,
+    "tau": 20.0,
+    "events": 129630,
+    "wall_seconds": 6556.073122980073
+  },
+  "d2_rho3_finite250_r03": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1036,
+    "tau": 20.0,
+    "events": 128029,
+    "wall_seconds": 6620.946559777018
+  },
+  "d2_rho1_finite250_r05": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1170,
+    "tau": 20.0,
+    "events": 48805,
+    "wall_seconds": 3227.050515999086
+  },
+  "d0_rho1_finite100_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1303,
+    "tau": 20.0,
+    "events": 65940,
+    "wall_seconds": 7041.185285773128
+  },
+  "d2_rho1_fixed_r05": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1343,
+    "tau": 20.0,
+    "events": 54142,
+    "wall_seconds": 3764.2213025358506
+  },
+  "d2_rho3_fixed_r00": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1148,
+    "tau": 20.0,
+    "events": 132406,
+    "wall_seconds": 7010.498628471978
+  },
+  "d2_rho3_fixed_r03": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1089,
+    "tau": 20.0,
+    "events": 131476,
+    "wall_seconds": 7015.308814265998
+  },
+  "d0_rho1_fixed_r00": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2118,
+    "tau": 11.036752317614944,
+    "events": 46463,
+    "wall_seconds": 7200.4269266878255
+  },
+  "d0_rho1_finite250_r00": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1651,
+    "tau": 14.62997372583762,
+    "events": 55169,
+    "wall_seconds": 7200.427723150002
+  },
+  "d0_rho3_fixed_r00": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1373,
+    "tau": 9.420774446699893,
+    "events": 87633,
+    "wall_seconds": 7200.350513283163
+  },
+  "d0_rho3_finite250_r00": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1235,
+    "tau": 10.625991038931852,
+    "events": 96776,
+    "wall_seconds": 7200.243731193943
+  },
+  "d0_rho3_finite100_r00": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1129,
+    "tau": 12.456330654243734,
+    "events": 107762,
+    "wall_seconds": 7200.256899784086
+  },
+  "d0_rho1_fixed_r01": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2018,
+    "tau": 10.263690753573826,
+    "events": 41968,
+    "wall_seconds": 7200.588498287136
+  },
+  "d0_rho1_finite250_r01": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1689,
+    "tau": 15.293966459006313,
+    "events": 58649,
+    "wall_seconds": 7200.537592142122
+  },
+  "d0_rho3_fixed_r01": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1333,
+    "tau": 8.971379778526932,
+    "events": 82900,
+    "wall_seconds": 7200.375803622883
+  },
+  "d0_rho3_finite250_r01": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1255,
+    "tau": 10.469690298820016,
+    "events": 95455,
+    "wall_seconds": 7200.269635822857
+  },
+  "d0_rho3_finite100_r01": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1196,
+    "tau": 11.036477517951004,
+    "events": 97781,
+    "wall_seconds": 7200.243477999931
+  },
+  "d0_rho1_fixed_r02": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2025,
+    "tau": 9.71670174289945,
+    "events": 40052,
+    "wall_seconds": 7200.746172885178
+  },
+  "d0_rho1_finite250_r02": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1577,
+    "tau": 15.326204119854307,
+    "events": 54538,
+    "wall_seconds": 7200.557729589986
+  },
+  "d0_rho1_finite100_r02": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1296,
+    "tau": 19.916854969476944,
+    "events": 65022,
+    "wall_seconds": 7200.375618326943
+  },
+  "d0_rho3_fixed_r02": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1255,
+    "tau": 9.44173503814544,
+    "events": 82781,
+    "wall_seconds": 7200.283031552099
+  },
+  "d0_rho3_finite250_r02": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1187,
+    "tau": 10.380865654511776,
+    "events": 90430,
+    "wall_seconds": 7200.263828065945
+  },
+  "d0_rho3_finite100_r02": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1078,
+    "tau": 11.157918500378916,
+    "events": 92768,
+    "wall_seconds": 7200.216831016121
+  },
+  "d0_rho1_fixed_r03": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1938,
+    "tau": 9.680560297668372,
+    "events": 37669,
+    "wall_seconds": 7200.867085944163
+  },
+  "d0_rho1_finite250_r03": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1580,
+    "tau": 13.170356346387097,
+    "events": 47179,
+    "wall_seconds": 7200.469273312017
+  },
+  "d0_rho1_finite100_r03": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1294,
+    "tau": 19.002658702226885,
+    "events": 60699,
+    "wall_seconds": 7200.241804172052
+  },
+  "d0_rho3_fixed_r03": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1306,
+    "tau": 8.766695036423286,
+    "events": 77451,
+    "wall_seconds": 7200.35891545401
+  },
+  "d0_rho3_finite250_r03": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1220,
+    "tau": 8.888385373243674,
+    "events": 77634,
+    "wall_seconds": 7200.333423878066
+  },
+  "d0_rho3_finite100_r03": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1176,
+    "tau": 10.36812522542237,
+    "events": 89464,
+    "wall_seconds": 7200.304750175914
+  },
+  "d0_rho1_fixed_r04": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2001,
+    "tau": 10.04366854509938,
+    "events": 39753,
+    "wall_seconds": 7200.580966451904
+  },
+  "d0_rho1_finite250_r04": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1528,
+    "tau": 12.957859797974814,
+    "events": 46375,
+    "wall_seconds": 7200.513964517042
+  },
+  "d0_rho1_finite100_r04": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1293,
+    "tau": 19.79872162326278,
+    "events": 63240,
+    "wall_seconds": 7200.458833012963
+  },
+  "d0_rho3_fixed_r04": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1298,
+    "tau": 8.957919698842698,
+    "events": 79131,
+    "wall_seconds": 7200.3320826708805
+  },
+  "d0_rho3_finite250_r04": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1208,
+    "tau": 8.98268764968742,
+    "events": 79077,
+    "wall_seconds": 7200.416575474897
+  },
+  "d0_rho3_finite100_r04": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1120,
+    "tau": 10.550648914749122,
+    "events": 89821,
+    "wall_seconds": 7200.351225152146
+  },
+  "d2_rho3_finite100_r04": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 991,
+    "tau": 20.0,
+    "events": 123536,
+    "wall_seconds": 5933.21644692705
+  },
+  "d2_rho3_fixed_r04": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1074,
+    "tau": 20.0,
+    "events": 127743,
+    "wall_seconds": 6419.6000041349325
+  },
+  "d2_rho1_finite100_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1066,
+    "tau": 20.0,
+    "events": 45364,
+    "wall_seconds": 2552.7374856909737
+  },
+  "d2_rho3_finite250_r04": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1056,
+    "tau": 20.0,
+    "events": 128168,
+    "wall_seconds": 6588.097476280993
+  },
+  "d2_rho1_finite250_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1179,
+    "tau": 20.0,
+    "events": 49590,
+    "wall_seconds": 3087.133295181906
+  },
+  "d2_rho1_finite250_r07": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1153,
+    "tau": 20.0,
+    "events": 47508,
+    "wall_seconds": 2662.801325079985
+  },
+  "d2_rho1_finite100_r07": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1151,
+    "tau": 20.0,
+    "events": 46344,
+    "wall_seconds": 2616.9595447541215
+  },
+  "d2_rho1_finite100_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1123,
+    "tau": 20.0,
+    "events": 46647,
+    "wall_seconds": 2556.570927873021
+  },
+  "d0_rho1_fixed_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1957,
+    "tau": 8.085309689801223,
+    "events": 31498,
+    "wall_seconds": 7200.758259441936
+  },
+  "d0_rho1_finite250_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1581,
+    "tau": 9.934362675731618,
+    "events": 35941,
+    "wall_seconds": 7200.705907142954
+  },
+  "d0_rho1_finite100_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1290,
+    "tau": 16.04260327227539,
+    "events": 51691,
+    "wall_seconds": 7200.385642739013
+  },
+  "d2_rho1_finite100_r08": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1129,
+    "tau": 20.0,
+    "events": 47819,
+    "wall_seconds": 2827.469151847996
+  },
+  "d0_rho3_fixed_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1244,
+    "tau": 7.733317347068124,
+    "events": 68905,
+    "wall_seconds": 7200.4025810929015
+  },
+  "d0_rho3_finite250_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1202,
+    "tau": 8.269497157200432,
+    "events": 72824,
+    "wall_seconds": 7200.374283204088
+  },
+  "d0_rho3_finite100_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1172,
+    "tau": 9.455503325860809,
+    "events": 83020,
+    "wall_seconds": 7200.2543783450965
+  },
+  "d2_rho1_fixed_r07": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1331,
+    "tau": 20.0,
+    "events": 51290,
+    "wall_seconds": 3351.5367676368915
+  },
+  "d2_rho3_finite100_r05": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 989,
+    "tau": 20.0,
+    "events": 124107,
+    "wall_seconds": 6234.818917315919
+  },
+  "d2_rho1_finite250_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1240,
+    "tau": 20.0,
+    "events": 50361,
+    "wall_seconds": 3099.0802911298815
+  },
+  "d2_rho1_finite250_r08": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1212,
+    "tau": 20.0,
+    "events": 50584,
+    "wall_seconds": 3224.2689764220268
+  },
+  "d2_rho1_fixed_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1444,
+    "tau": 20.0,
+    "events": 55717,
+    "wall_seconds": 4258.942098666914
+  },
+  "d2_rho3_finite250_r05": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1039,
+    "tau": 20.0,
+    "events": 128855,
+    "wall_seconds": 6948.913033602992
+  },
+  "d2_rho3_fixed_r05": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1108,
+    "tau": 19.70089264836409,
+    "events": 130647,
+    "wall_seconds": 7200.25126337097
+  },
+  "d2_rho1_fixed_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1373,
+    "tau": 20.0,
+    "events": 54808,
+    "wall_seconds": 3765.2218828829937
+  },
+  "d2_rho1_fixed_r08": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1346,
+    "tau": 20.0,
+    "events": 54159,
+    "wall_seconds": 3851.7873971220106
+  },
+  "d2_rho1_finite100_r10": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1147,
+    "tau": 20.0,
+    "events": 47520,
+    "wall_seconds": 2680.595630921889
+  },
+  "d2_rho1_finite250_r10": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1201,
+    "tau": 20.0,
+    "events": 49814,
+    "wall_seconds": 3003.669265558012
+  },
+  "d0_rho1_fixed_r06": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1948,
+    "tau": 8.137617101160714,
+    "events": 32095,
+    "wall_seconds": 7200.868180247955
+  },
+  "d2_rho1_fixed_r10": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1339,
+    "tau": 20.0,
+    "events": 53038,
+    "wall_seconds": 3547.106127453968
+  },
+  "d2_rho3_finite100_r07": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 997,
+    "tau": 20.0,
+    "events": 122407,
+    "wall_seconds": 5824.456985936966
+  },
+  "d2_rho3_finite250_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1021,
+    "tau": 20.0,
+    "events": 126961,
+    "wall_seconds": 6489.367340691853
+  },
+  "d2_rho3_finite100_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1026,
+    "tau": 20.0,
+    "events": 125047,
+    "wall_seconds": 6335.809912750032
+  },
+  "d0_rho1_finite100_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1263,
+    "tau": 20.0,
+    "events": 63304,
+    "wall_seconds": 7053.1490255401
+  },
+  "d0_rho1_finite250_r06": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1606,
+    "tau": 10.85105794156458,
+    "events": 40350,
+    "wall_seconds": 7200.590172619093
+  },
+  "d2_rho1_finite100_r11": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1126,
+    "tau": 20.0,
+    "events": 47720,
+    "wall_seconds": 2903.2141379311215
+  },
+  "d2_rho3_finite100_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1023,
+    "tau": 20.0,
+    "events": 124911,
+    "wall_seconds": 5988.318875707919
+  },
+  "d2_rho3_finite250_r07": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1058,
+    "tau": 20.0,
+    "events": 124932,
+    "wall_seconds": 6195.484366888879
+  },
+  "d0_rho3_fixed_r06": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1188,
+    "tau": 8.275295451440178,
+    "events": 71788,
+    "wall_seconds": 7200.3146233530715
+  },
+  "d2_rho3_finite100_r08": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1013,
+    "tau": 20.0,
+    "events": 124191,
+    "wall_seconds": 6141.067835421069
+  },
+  "d0_rho3_finite250_r06": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1169,
+    "tau": 8.837245922948378,
+    "events": 76658,
+    "wall_seconds": 7200.282241783803
+  },
+  "d0_rho3_finite100_r06": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1123,
+    "tau": 9.792546021673196,
+    "events": 83211,
+    "wall_seconds": 7200.306193798082
+  },
+  "d2_rho1_finite250_r11": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1199,
+    "tau": 20.0,
+    "events": 50385,
+    "wall_seconds": 3166.2186659208965
+  },
+  "d2_rho3_fixed_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1041,
+    "tau": 20.0,
+    "events": 127512,
+    "wall_seconds": 6240.181010225788
+  },
+  "d2_rho3_finite250_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1023,
+    "tau": 20.0,
+    "events": 126183,
+    "wall_seconds": 6241.779050772078
+  },
+  "d2_rho3_fixed_r06": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1086,
+    "tau": 20.0,
+    "events": 131816,
+    "wall_seconds": 7111.563132596901
+  },
+  "d2_rho3_fixed_r07": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1106,
+    "tau": 20.0,
+    "events": 129565,
+    "wall_seconds": 6729.43953836197
+  },
+  "d0_rho1_fixed_r07": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1878,
+    "tau": 9.399293609255057,
+    "events": 36525,
+    "wall_seconds": 7200.77371065598
+  },
+  "d0_rho1_finite250_r07": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1642,
+    "tau": 11.58671529404744,
+    "events": 43416,
+    "wall_seconds": 7200.614923734916
+  },
+  "d2_rho3_finite250_r08": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1012,
+    "tau": 20.0,
+    "events": 127056,
+    "wall_seconds": 6626.422995032044
+  },
+  "d0_rho1_finite100_r07": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1345,
+    "tau": 17.67268932056889,
+    "events": 58787,
+    "wall_seconds": 7200.386198125081
+  },
+  "d0_rho1_finite100_r09": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1289,
+    "tau": 20.0,
+    "events": 66403,
+    "wall_seconds": 6755.289061043877
+  },
+  "d0_rho3_fixed_r07": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1298,
+    "tau": 8.94269799181021,
+    "events": 80257,
+    "wall_seconds": 7200.454215816921
+  },
+  "d0_rho3_finite250_r07": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1200,
+    "tau": 9.570041120940186,
+    "events": 83534,
+    "wall_seconds": 7200.350603302941
+  },
+  "d0_rho3_finite100_r07": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1125,
+    "tau": 10.603458937982376,
+    "events": 90196,
+    "wall_seconds": 7200.391929466976
+  },
+  "d2_rho1_fixed_r11": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1431,
+    "tau": 20.0,
+    "events": 54777,
+    "wall_seconds": 3883.281790593872
+  },
+  "d0_rho1_fixed_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1899,
+    "tau": 8.299828788549073,
+    "events": 32621,
+    "wall_seconds": 7200.819683269132
+  },
+  "d0_rho1_finite250_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1578,
+    "tau": 11.643668595704021,
+    "events": 43051,
+    "wall_seconds": 7200.386299435049
+  },
+  "d0_rho1_finite100_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1338,
+    "tau": 15.913485735669852,
+    "events": 52665,
+    "wall_seconds": 7200.588581640972
+  },
+  "d0_rho3_fixed_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1260,
+    "tau": 7.522618357752972,
+    "events": 67739,
+    "wall_seconds": 7200.433395768981
+  },
+  "d0_rho3_finite250_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1204,
+    "tau": 7.98113095428184,
+    "events": 69783,
+    "wall_seconds": 7200.489357604878
+  },
+  "d0_rho1_finite100_r10": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1338,
+    "tau": 20.0,
+    "events": 66641,
+    "wall_seconds": 7135.129268679069
+  },
+  "d0_rho3_finite100_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1138,
+    "tau": 8.686033550129423,
+    "events": 73849,
+    "wall_seconds": 7200.280449388083
+  },
+  "d2_rho3_fixed_r08": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1079,
+    "tau": 19.45562330551183,
+    "events": 128587,
+    "wall_seconds": 7200.249644889031
+  },
+  "d0_rho3_finite250_r09": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1234,
+    "tau": 10.286787548266398,
+    "events": 92722,
+    "wall_seconds": 7200.325038562994
+  },
+  "d0_rho3_finite100_r09": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1141,
+    "tau": 11.715663414719177,
+    "events": 102718,
+    "wall_seconds": 7200.302665608935
+  },
+  "d0_rho1_fixed_r09": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2131,
+    "tau": 9.73145176982076,
+    "events": 40665,
+    "wall_seconds": 7200.956417944981
+  },
+  "d0_rho1_finite250_r09": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1642,
+    "tau": 14.600489422164717,
+    "events": 54723,
+    "wall_seconds": 7200.677499182057
+  },
+  "d0_rho3_fixed_r09": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1324,
+    "tau": 8.68214135801452,
+    "events": 79808,
+    "wall_seconds": 7200.4056507169735
+  },
+  "d0_rho1_fixed_r10": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2084,
+    "tau": 8.717881932159257,
+    "events": 36792,
+    "wall_seconds": 7200.785259583034
+  },
+  "d0_rho1_finite250_r10": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1615,
+    "tau": 13.625766616986668,
+    "events": 51023,
+    "wall_seconds": 7200.475108286133
+  },
+  "d0_rho3_fixed_r10": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1305,
+    "tau": 8.655107429702191,
+    "events": 78193,
+    "wall_seconds": 7200.411087084096
+  },
+  "d2_rho1_finite250_r12": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1201,
+    "tau": 20.0,
+    "events": 50020,
+    "wall_seconds": 3093.3615393978544
+  },
+  "d2_rho1_finite100_r12": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1120,
+    "tau": 20.0,
+    "events": 46921,
+    "wall_seconds": 2754.65757241915
+  },
+  "d2_rho1_fixed_r12": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1373,
+    "tau": 20.0,
+    "events": 52757,
+    "wall_seconds": 3506.084033701103
+  },
+  "d0_rho3_finite250_r10": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1234,
+    "tau": 9.37883815538322,
+    "events": 85465,
+    "wall_seconds": 7200.225130497012
+  },
+  "d0_rho3_finite100_r10": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1125,
+    "tau": 10.442465397044986,
+    "events": 91401,
+    "wall_seconds": 7200.299298351165
+  },
+  "d2_rho3_finite250_r10": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1029,
+    "tau": 20.0,
+    "events": 127368,
+    "wall_seconds": 6560.10506304889
+  },
+  "d2_rho1_finite100_r13": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1133,
+    "tau": 20.0,
+    "events": 46765,
+    "wall_seconds": 2745.0839981730096
+  },
+  "d2_rho3_finite100_r10": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1044,
+    "tau": 20.0,
+    "events": 128218,
+    "wall_seconds": 6551.6172253680415
+  },
+  "d2_rho1_finite250_r13": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1176,
+    "tau": 20.0,
+    "events": 49644,
+    "wall_seconds": 3114.9508900269866
+  },
+  "d2_rho1_finite100_r14": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1089,
+    "tau": 20.0,
+    "events": 46331,
+    "wall_seconds": 2601.32840896002
+  },
+  "d2_rho3_fixed_r10": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1131,
+    "tau": 19.37414625885511,
+    "events": 128981,
+    "wall_seconds": 7200.414667424047
+  },
+  "d2_rho3_finite100_r11": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1021,
+    "tau": 20.0,
+    "events": 126470,
+    "wall_seconds": 6348.663219174137
+  },
+  "d2_rho1_finite100_r15": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1091,
+    "tau": 20.0,
+    "events": 45538,
+    "wall_seconds": 2611.1224485118873
+  },
+  "d0_rho1_fixed_r11": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1975,
+    "tau": 7.94331133602205,
+    "events": 32409,
+    "wall_seconds": 7201.185990718892
+  },
+  "d0_rho1_finite250_r11": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1543,
+    "tau": 11.570447810381655,
+    "events": 42005,
+    "wall_seconds": 7200.79089294211
+  },
+  "d0_rho1_finite100_r11": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1338,
+    "tau": 16.953886638583896,
+    "events": 56907,
+    "wall_seconds": 7200.576194477966
+  },
+  "d0_rho3_fixed_r11": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1283,
+    "tau": 8.10108374047415,
+    "events": 74443,
+    "wall_seconds": 7200.362263806164
+  },
+  "d0_rho3_finite250_r11": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1242,
+    "tau": 8.309235171760239,
+    "events": 75059,
+    "wall_seconds": 7200.267738935072
+  },
+  "d0_rho3_finite100_r11": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1084,
+    "tau": 10.248670488513127,
+    "events": 87663,
+    "wall_seconds": 7200.236842625076
+  },
+  "d2_rho1_fixed_r13": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1414,
+    "tau": 20.0,
+    "events": 55233,
+    "wall_seconds": 3989.6588792949915
+  },
+  "d2_rho3_finite250_r11": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1035,
+    "tau": 20.0,
+    "events": 127186,
+    "wall_seconds": 6975.360582948197
+  },
+  "d2_rho3_fixed_r11": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1086,
+    "tau": 20.0,
+    "events": 130471,
+    "wall_seconds": 7136.078713945113
+  },
+  "d2_rho1_fixed_r14": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1391,
+    "tau": 20.0,
+    "events": 53786,
+    "wall_seconds": 3652.7255550338887
+  },
+  "d2_rho1_finite250_r14": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1190,
+    "tau": 20.0,
+    "events": 49624,
+    "wall_seconds": 3723.4300756510347
+  },
+  "d2_rho1_finite250_r15": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1220,
+    "tau": 20.0,
+    "events": 49769,
+    "wall_seconds": 3480.419935785001
+  },
+  "d0_rho1_fixed_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1939,
+    "tau": 9.661810096136163,
+    "events": 38292,
+    "wall_seconds": 7200.53428213601
+  },
+  "d0_rho1_finite250_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1616,
+    "tau": 12.398286124141656,
+    "events": 45342,
+    "wall_seconds": 7200.60269910912
+  },
+  "d0_rho1_finite100_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1347,
+    "tau": 18.994890065082487,
+    "events": 64552,
+    "wall_seconds": 7200.267311604926
+  },
+  "d0_rho3_fixed_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1260,
+    "tau": 9.218967188558793,
+    "events": 81975,
+    "wall_seconds": 7200.280657948926
+  },
+  "d2_rho1_fixed_r15": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1322,
+    "tau": 20.0,
+    "events": 52874,
+    "wall_seconds": 4056.012475355994
+  },
+  "d0_rho3_finite250_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1179,
+    "tau": 10.29874772735386,
+    "events": 90536,
+    "wall_seconds": 7200.217874001013
+  },
+  "d0_rho3_finite100_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1090,
+    "tau": 9.455317637535236,
+    "events": 78961,
+    "wall_seconds": 7200.318816958927
+  },
+  "d2_rho3_fixed_r13": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1046,
+    "tau": 20.0,
+    "events": 127808,
+    "wall_seconds": 6077.369091375032
+  },
+  "d2_rho1_finite100_r16": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1133,
+    "tau": 20.0,
+    "events": 48137,
+    "wall_seconds": 3580.393515935866
+  },
+  "d2_rho3_finite250_r13": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1066,
+    "tau": 20.0,
+    "events": 129528,
+    "wall_seconds": 6351.977665637853
+  },
+  "d2_rho1_finite250_r16": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1171,
+    "tau": 20.0,
+    "events": 49963,
+    "wall_seconds": 3792.617040790152
+  },
+  "d2_rho3_fixed_r14": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1048,
+    "tau": 20.0,
+    "events": 127476,
+    "wall_seconds": 5832.561866322067
+  },
+  "d2_rho3_fixed_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1125,
+    "tau": 17.710554162684108,
+    "events": 118099,
+    "wall_seconds": 7200.3503244998865
+  },
+  "d2_rho3_finite250_r12": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1002,
+    "tau": 19.981842264852244,
+    "events": 125586,
+    "wall_seconds": 7200.284257011022
+  },
+  "d2_rho1_finite100_r17": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1085,
+    "tau": 20.0,
+    "events": 46082,
+    "wall_seconds": 2789.26378455502
+  },
+  "d2_rho3_finite100_r12": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1014,
+    "tau": 20.0,
+    "events": 124873,
+    "wall_seconds": 7138.646665127017
+  },
+  "d0_rho1_fixed_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1725,
+    "tau": 8.04038942122584,
+    "events": 28633,
+    "wall_seconds": 7201.167310622986
+  },
+  "d0_rho1_finite250_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1517,
+    "tau": 12.188531955023231,
+    "events": 43107,
+    "wall_seconds": 7200.514734335942
+  },
+  "d0_rho1_finite100_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1309,
+    "tau": 13.213887255411995,
+    "events": 43252,
+    "wall_seconds": 7200.457852486987
+  },
+  "d0_rho3_fixed_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1253,
+    "tau": 7.033375334801047,
+    "events": 61564,
+    "wall_seconds": 7200.704334094888
+  },
+  "d0_rho3_finite250_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1203,
+    "tau": 8.630129986630676,
+    "events": 76847,
+    "wall_seconds": 7200.268209127011
+  },
+  "d0_rho3_finite100_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1141,
+    "tau": 9.883865200468168,
+    "events": 84769,
+    "wall_seconds": 7200.207530160202
+  },
+  "d2_rho3_finite100_r13": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 999,
+    "tau": 19.048921388377018,
+    "events": 119459,
+    "wall_seconds": 7200.282807217911
+  },
+  "d0_rho1_fixed_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1751,
+    "tau": 7.467630309061439,
+    "events": 28188,
+    "wall_seconds": 7201.155119627016
+  },
+  "d0_rho1_finite250_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1611,
+    "tau": 12.879712609465013,
+    "events": 48010,
+    "wall_seconds": 7200.457735671895
+  },
+  "d0_rho1_finite100_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1238,
+    "tau": 14.11837776211513,
+    "events": 44341,
+    "wall_seconds": 7200.5284679320175
+  },
+  "d0_rho3_fixed_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1287,
+    "tau": 9.994175280989039,
+    "events": 88903,
+    "wall_seconds": 7200.350827623159
+  },
+  "d0_rho3_finite250_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1216,
+    "tau": 10.234333520453061,
+    "events": 91284,
+    "wall_seconds": 7200.396855812985
+  },
+  "d0_rho3_finite100_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1092,
+    "tau": 8.3480933674528,
+    "events": 70721,
+    "wall_seconds": 7200.536072783871
+  },
+  "d2_rho1_fixed_r16": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1340,
+    "tau": 20.0,
+    "events": 53776,
+    "wall_seconds": 5158.648418233963
+  },
+  "d2_rho3_finite250_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1016,
+    "tau": 18.174776903086176,
+    "events": 114235,
+    "wall_seconds": 7200.355360102141
+  },
+  "d2_rho3_finite100_r14": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 984,
+    "tau": 19.39009543818524,
+    "events": 118557,
+    "wall_seconds": 7200.223075706977
+  },
+  "d0_rho1_fixed_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1859,
+    "tau": 7.726411608988409,
+    "events": 30198,
+    "wall_seconds": 7201.1883135451935
+  },
+  "d0_rho1_finite250_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1516,
+    "tau": 11.073930905596896,
+    "events": 38570,
+    "wall_seconds": 7200.681072026957
+  },
+  "d0_rho1_finite100_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1328,
+    "tau": 15.418798096774236,
+    "events": 50662,
+    "wall_seconds": 7200.624187468085
+  },
+  "d0_rho3_fixed_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1264,
+    "tau": 7.612305163068295,
+    "events": 69323,
+    "wall_seconds": 7200.579182477901
+  },
+  "d2_rho1_finite250_r17": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1190,
+    "tau": 20.0,
+    "events": 49601,
+    "wall_seconds": 4320.608121885918
+  },
+  "d0_rho3_finite250_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1167,
+    "tau": 6.924173404643817,
+    "events": 59624,
+    "wall_seconds": 7200.392508293036
+  },
+  "d0_rho3_finite100_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1121,
+    "tau": 7.931147779534819,
+    "events": 67539,
+    "wall_seconds": 7200.543687666999
+  },
+  "d2_rho3_fixed_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1067,
+    "tau": 17.131079957768005,
+    "events": 110720,
+    "wall_seconds": 7200.259688061196
+  },
+  "d2_rho3_finite250_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1047,
+    "tau": 17.27792836441914,
+    "events": 111347,
+    "wall_seconds": 7200.37474758504
+  },
+  "d2_rho3_finite100_r15": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1028,
+    "tau": 17.11050435659692,
+    "events": 107370,
+    "wall_seconds": 7200.250481684925
+  },
+  "d0_rho1_fixed_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1774,
+    "tau": 7.230489397968559,
+    "events": 28011,
+    "wall_seconds": 7201.211096871179
+  },
+  "d0_rho1_finite250_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1520,
+    "tau": 9.7209279802283,
+    "events": 34573,
+    "wall_seconds": 7200.649685489945
+  },
+  "d2_rho3_fixed_r16": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1057,
+    "tau": 20.0,
+    "events": 130043,
+    "wall_seconds": 5693.009442523122
+  },
+  "d2_rho1_finite100_r19": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1127,
+    "tau": 20.0,
+    "events": 47471,
+    "wall_seconds": 2350.5044623629656
+  },
+  "d0_rho1_finite100_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1286,
+    "tau": 13.768049791920491,
+    "events": 44353,
+    "wall_seconds": 7200.689152471023
+  },
+  "d0_rho3_fixed_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1222,
+    "tau": 5.618359365383023,
+    "events": 49482,
+    "wall_seconds": 7200.461468487978
+  },
+  "d0_rho3_finite250_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1124,
+    "tau": 6.848082737723868,
+    "events": 58807,
+    "wall_seconds": 7200.620699075051
+  },
+  "d0_rho3_finite100_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1114,
+    "tau": 6.576557744843486,
+    "events": 56031,
+    "wall_seconds": 7200.294485382037
+  },
+  "d2_rho1_fixed_r17": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1351,
+    "tau": 20.0,
+    "events": 54076,
+    "wall_seconds": 5857.439870662987
+  },
+  "d2_rho3_finite250_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1042,
+    "tau": 15.419834899875779,
+    "events": 98019,
+    "wall_seconds": 7200.357174760895
+  },
+  "d2_rho1_finite250_r18": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1181,
+    "tau": 20.0,
+    "events": 49295,
+    "wall_seconds": 5310.2520120770205
+  },
+  "d2_rho3_finite100_r16": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1008,
+    "tau": 14.258407405268082,
+    "events": 90125,
+    "wall_seconds": 7200.38335484406
+  },
+  "d0_rho1_fixed_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1758,
+    "tau": 7.300215569503687,
+    "events": 27732,
+    "wall_seconds": 7201.22610648605
+  },
+  "d2_rho1_finite100_r18": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1081,
+    "tau": 20.0,
+    "events": 46065,
+    "wall_seconds": 4700.010666119168
+  },
+  "d0_rho1_finite250_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1547,
+    "tau": 9.248143856637938,
+    "events": 33473,
+    "wall_seconds": 7200.958159955917
+  },
+  "d0_rho1_finite100_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1261,
+    "tau": 12.627714714464663,
+    "events": 39410,
+    "wall_seconds": 7200.6846062820405
+  },
+  "d0_rho3_fixed_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1133,
+    "tau": 5.522076149373696,
+    "events": 46632,
+    "wall_seconds": 7200.457631332101
+  },
+  "d0_rho3_finite250_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1112,
+    "tau": 6.2421211301329995,
+    "events": 51816,
+    "wall_seconds": 7200.505482419161
+  },
+  "d0_rho3_finite100_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1099,
+    "tau": 7.304373353216042,
+    "events": 61519,
+    "wall_seconds": 7200.422625971027
+  },
+  "d2_rho3_fixed_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1076,
+    "tau": 15.796652426669054,
+    "events": 102593,
+    "wall_seconds": 7200.243250272004
+  },
+  "d2_rho3_finite250_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1031,
+    "tau": 14.284797457508413,
+    "events": 90664,
+    "wall_seconds": 7200.219714045059
+  },
+  "d2_rho3_finite100_r17": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 978,
+    "tau": 14.014869843924137,
+    "events": 87022,
+    "wall_seconds": 7200.260534105822
+  },
+  "d2_rho1_fixed_r18": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1355,
+    "tau": 20.0,
+    "events": 54624,
+    "wall_seconds": 6396.610240603797
+  },
+  "d0_rho1_fixed_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1662,
+    "tau": 6.424434127040775,
+    "events": 23712,
+    "wall_seconds": 7200.741116969148
+  },
+  "d2_rho1_finite100_r20": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1112,
+    "tau": 20.0,
+    "events": 45443,
+    "wall_seconds": 3743.6503523860592
+  },
+  "d0_rho1_finite250_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1447,
+    "tau": 7.025021493465339,
+    "events": 24077,
+    "wall_seconds": 7200.988305052044
+  },
+  "d0_rho1_finite100_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1308,
+    "tau": 9.121859465870921,
+    "events": 29308,
+    "wall_seconds": 7200.923431497067
+  },
+  "d0_rho3_fixed_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1155,
+    "tau": 5.493013304383942,
+    "events": 46205,
+    "wall_seconds": 7200.489957195008
+  },
+  "d0_rho3_finite250_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1102,
+    "tau": 5.530942908163956,
+    "events": 46302,
+    "wall_seconds": 7200.60992838582
+  },
+  "d0_rho3_finite100_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1071,
+    "tau": 6.193015975555323,
+    "events": 51073,
+    "wall_seconds": 7200.320375703042
+  },
+  "d2_rho1_finite250_r20": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1173,
+    "tau": 20.0,
+    "events": 48383,
+    "wall_seconds": 4479.481467586942
+  },
+  "d2_rho1_finite250_r19": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1185,
+    "tau": 20.0,
+    "events": 49486,
+    "wall_seconds": 5396.546080585802
+  },
+  "d2_rho1_finite100_r21": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1099,
+    "tau": 20.0,
+    "events": 45976,
+    "wall_seconds": 4089.674459286034
+  },
+  "d2_rho1_fixed_r20": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1379,
+    "tau": 20.0,
+    "events": 53751,
+    "wall_seconds": 4683.943597178906
+  },
+  "d2_rho1_finite250_r21": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1209,
+    "tau": 20.0,
+    "events": 48428,
+    "wall_seconds": 4383.866036704974
+  },
+  "d2_rho3_fixed_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1035,
+    "tau": 15.423414997679327,
+    "events": 98562,
+    "wall_seconds": 7200.25138871884
+  },
+  "d2_rho3_finite250_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1031,
+    "tau": 14.473592144788924,
+    "events": 92958,
+    "wall_seconds": 7200.326982597122
+  },
+  "d2_rho1_fixed_r21": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1346,
+    "tau": 20.0,
+    "events": 53985,
+    "wall_seconds": 5168.765538271051
+  },
+  "d2_rho3_finite100_r18": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1018,
+    "tau": 14.838788014900105,
+    "events": 93769,
+    "wall_seconds": 7200.2415894570295
+  },
+  "d0_rho1_fixed_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1625,
+    "tau": 5.727825009174107,
+    "events": 20497,
+    "wall_seconds": 7201.257700867951
+  },
+  "d0_rho1_finite250_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1494,
+    "tau": 6.929734847340526,
+    "events": 23920,
+    "wall_seconds": 7200.815549534978
+  },
+  "d2_rho1_finite100_r22": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1157,
+    "tau": 20.0,
+    "events": 47134,
+    "wall_seconds": 3228.4515314579476
+  },
+  "d0_rho1_finite100_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1277,
+    "tau": 10.97091488555258,
+    "events": 34756,
+    "wall_seconds": 7200.358724085847
+  },
+  "d0_rho3_fixed_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1161,
+    "tau": 5.415763326547708,
+    "events": 45942,
+    "wall_seconds": 7200.399301995989
+  },
+  "d0_rho3_finite250_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1127,
+    "tau": 5.644450900262583,
+    "events": 47900,
+    "wall_seconds": 7200.358701362042
+  },
+  "d0_rho3_finite100_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1073,
+    "tau": 6.643081026635853,
+    "events": 54807,
+    "wall_seconds": 7200.369585277047
+  },
+  "d2_rho1_fixed_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1399,
+    "tau": 19.98022836285742,
+    "events": 56599,
+    "wall_seconds": 7200.330375480931
+  },
+  "d2_rho1_finite250_r22": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1192,
+    "tau": 20.0,
+    "events": 48790,
+    "wall_seconds": 3655.627819254063
+  },
+  "d2_rho3_fixed_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1026,
+    "tau": 14.50754361273057,
+    "events": 92958,
+    "wall_seconds": 7200.239086462185
+  },
+  "d2_rho3_finite250_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1021,
+    "tau": 13.849823656007779,
+    "events": 88650,
+    "wall_seconds": 7200.240729944082
+  },
+  "d2_rho1_fixed_r22": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1335,
+    "tau": 20.0,
+    "events": 52594,
+    "wall_seconds": 3923.1512432340533
+  },
+  "d2_rho3_finite100_r19": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1007,
+    "tau": 13.8654478318477,
+    "events": 87253,
+    "wall_seconds": 7200.251348735066
+  },
+  "d0_rho1_fixed_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2028,
+    "tau": 8.746125712464377,
+    "events": 35351,
+    "wall_seconds": 7200.809646592941
+  },
+  "d0_rho1_finite250_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1536,
+    "tau": 12.747581418765938,
+    "events": 45503,
+    "wall_seconds": 7200.651374622015
+  },
+  "d0_rho1_finite100_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1302,
+    "tau": 16.721426931541014,
+    "events": 54404,
+    "wall_seconds": 7200.4191220351495
+  },
+  "d0_rho3_fixed_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1255,
+    "tau": 7.993229617585805,
+    "events": 70416,
+    "wall_seconds": 7200.464501596987
+  },
+  "d2_rho1_finite100_r23": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1125,
+    "tau": 20.0,
+    "events": 46779,
+    "wall_seconds": 3291.4049583279993
+  },
+  "d0_rho3_finite250_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1135,
+    "tau": 8.99658127557306,
+    "events": 76513,
+    "wall_seconds": 7200.33354394394
+  },
+  "d0_rho3_finite100_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1124,
+    "tau": 9.871622195622468,
+    "events": 84147,
+    "wall_seconds": 7200.212925337022
+  },
+  "d2_rho1_finite250_r23": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1193,
+    "tau": 20.0,
+    "events": 49958,
+    "wall_seconds": 3867.5074214851484
+  },
+  "d2_rho3_fixed_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1048,
+    "tau": 16.234358039319236,
+    "events": 102980,
+    "wall_seconds": 7200.277297825087
+  },
+  "d2_rho3_finite250_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1021,
+    "tau": 18.256740331513793,
+    "events": 114204,
+    "wall_seconds": 7200.255654987879
+  },
+  "d2_rho3_finite100_r20": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1004,
+    "tau": 17.141176124731757,
+    "events": 106069,
+    "wall_seconds": 7200.3507614200935
+  },
+  "d0_rho1_fixed_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1815,
+    "tau": 7.498064798909135,
+    "events": 27864,
+    "wall_seconds": 7200.8961836099625
+  },
+  "d0_rho1_finite250_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1504,
+    "tau": 10.021471163815226,
+    "events": 35419,
+    "wall_seconds": 7200.578912483994
+  },
+  "d0_rho1_finite100_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1285,
+    "tau": 15.815788169880134,
+    "events": 50655,
+    "wall_seconds": 7200.440268606879
+  },
+  "d0_rho3_fixed_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1192,
+    "tau": 6.857386131168353,
+    "events": 58803,
+    "wall_seconds": 7200.405823257985
+  },
+  "d2_rho1_finite100_r24": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1097,
+    "tau": 20.0,
+    "events": 45253,
+    "wall_seconds": 2264.278632272966
+  },
+  "d0_rho3_finite250_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1160,
+    "tau": 7.259630034637976,
+    "events": 61792,
+    "wall_seconds": 7200.36331220204
+  },
+  "d0_rho3_finite100_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1116,
+    "tau": 7.982846864015323,
+    "events": 66808,
+    "wall_seconds": 7200.399701655144
+  },
+  "d2_rho3_fixed_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1054,
+    "tau": 15.899811610033654,
+    "events": 103157,
+    "wall_seconds": 7200.351251979824
+  },
+  "d2_rho3_finite250_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1027,
+    "tau": 15.334201119643355,
+    "events": 97332,
+    "wall_seconds": 7200.351322128903
+  },
+  "d2_rho3_finite100_r21": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1006,
+    "tau": 17.605816406512538,
+    "events": 109670,
+    "wall_seconds": 7200.210711537162
+  },
+  "d2_rho3_finite250_r22": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1055,
+    "tau": 20.0,
+    "events": 127257,
+    "wall_seconds": 5622.920017134165
+  },
+  "d2_rho1_fixed_r23": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1443,
+    "tau": 20.0,
+    "events": 54781,
+    "wall_seconds": 5168.575995268067
+  },
+  "d0_rho1_fixed_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2068,
+    "tau": 9.259675300475754,
+    "events": 37846,
+    "wall_seconds": 7201.349667801056
+  },
+  "d0_rho1_finite250_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1554,
+    "tau": 13.2817131430851,
+    "events": 46924,
+    "wall_seconds": 7200.801404531114
+  },
+  "d0_rho1_finite100_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1331,
+    "tau": 15.125148486641676,
+    "events": 48865,
+    "wall_seconds": 7200.4938293069135
+  },
+  "d0_rho3_fixed_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1227,
+    "tau": 6.849293020338406,
+    "events": 59832,
+    "wall_seconds": 7200.562339755008
+  },
+  "d0_rho3_finite250_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1194,
+    "tau": 7.089224428164904,
+    "events": 61973,
+    "wall_seconds": 7200.487012122059
+  },
+  "d0_rho3_finite100_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1121,
+    "tau": 8.551394100031704,
+    "events": 72691,
+    "wall_seconds": 7200.422945911996
+  },
+  "d2_rho1_finite250_r24": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1206,
+    "tau": 20.0,
+    "events": 49184,
+    "wall_seconds": 4464.388155203778
+  },
+  "d2_rho1_fixed_r24": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1350,
+    "tau": 20.0,
+    "events": 52707,
+    "wall_seconds": 4892.091412466019
+  },
+  "d2_rho1_finite100_r26": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1120,
+    "tau": 20.0,
+    "events": 45852,
+    "wall_seconds": 2167.406913778046
+  },
+  "d0_rho1_finite100_r24": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1316,
+    "tau": 20.0,
+    "events": 66638,
+    "wall_seconds": 5500.23643414001
+  },
+  "d2_rho3_fixed_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1055,
+    "tau": 16.066932384726723,
+    "events": 102894,
+    "wall_seconds": 7200.372982853092
+  },
+  "d2_rho1_finite100_r25": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1119,
+    "tau": 20.0,
+    "events": 45452,
+    "wall_seconds": 3737.872825548984
+  },
+  "d2_rho3_finite100_r22": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1010,
+    "tau": 16.806686231527017,
+    "events": 105182,
+    "wall_seconds": 7200.361523468979
+  },
+  "d0_rho1_fixed_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1845,
+    "tau": 7.837110696162494,
+    "events": 29841,
+    "wall_seconds": 7200.803465971025
+  },
+  "d0_rho1_finite250_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1526,
+    "tau": 10.537982215543831,
+    "events": 36386,
+    "wall_seconds": 7200.469395447988
+  },
+  "d0_rho1_finite100_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1317,
+    "tau": 14.599158626910654,
+    "events": 47629,
+    "wall_seconds": 7200.7855564211495
+  },
+  "d0_rho3_fixed_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1190,
+    "tau": 5.939067970109303,
+    "events": 52160,
+    "wall_seconds": 7200.583894270007
+  },
+  "d2_rho3_finite250_r24": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1014,
+    "tau": 20.0,
+    "events": 125541,
+    "wall_seconds": 4972.7420821911655
+  },
+  "d0_rho3_finite250_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1231,
+    "tau": 8.321089686564264,
+    "events": 73806,
+    "wall_seconds": 7200.557706762105
+  },
+  "d0_rho3_finite100_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1127,
+    "tau": 9.867399699830333,
+    "events": 84036,
+    "wall_seconds": 7200.2537368000485
+  },
+  "d2_rho1_finite250_r25": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1185,
+    "tau": 20.0,
+    "events": 48824,
+    "wall_seconds": 4637.821847854881
+  },
+  "d2_rho3_fixed_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1092,
+    "tau": 15.189759277846555,
+    "events": 99901,
+    "wall_seconds": 7200.209731708048
+  },
+  "d2_rho3_finite250_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1038,
+    "tau": 16.138293718766587,
+    "events": 104247,
+    "wall_seconds": 7200.23560520797
+  },
+  "d2_rho3_finite100_r23": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 999,
+    "tau": 16.181958264886532,
+    "events": 102238,
+    "wall_seconds": 7200.278408000944
+  },
+  "d0_rho1_fixed_r24": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1909,
+    "tau": 7.617419367467171,
+    "events": 29835,
+    "wall_seconds": 7200.4946835029405
+  },
+  "d2_rho1_finite250_r26": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1164,
+    "tau": 20.0,
+    "events": 47867,
+    "wall_seconds": 4086.712755014887
+  },
+  "d0_rho1_finite250_r24": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1647,
+    "tau": 12.872107840897216,
+    "events": 48283,
+    "wall_seconds": 7200.483287584968
+  },
+  "d2_rho1_fixed_r25": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1384,
+    "tau": 20.0,
+    "events": 53088,
+    "wall_seconds": 5250.509303621016
+  },
+  "d2_rho1_finite100_r27": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1143,
+    "tau": 20.0,
+    "events": 47302,
+    "wall_seconds": 3883.0963976620696
+  },
+  "d2_rho1_finite100_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1099,
+    "tau": 20.0,
+    "events": 45506,
+    "wall_seconds": 2112.621112813009
+  },
+  "d0_rho3_fixed_r24": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1226,
+    "tau": 7.775452982278621,
+    "events": 67755,
+    "wall_seconds": 7200.264119434869
+  },
+  "d0_rho3_finite250_r24": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1191,
+    "tau": 7.525107016785242,
+    "events": 65188,
+    "wall_seconds": 7200.347371770069
+  },
+  "d0_rho3_finite100_r24": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1113,
+    "tau": 8.367003947835832,
+    "events": 70347,
+    "wall_seconds": 7200.324954597047
+  },
+  "d2_rho1_finite250_r27": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1218,
+    "tau": 20.0,
+    "events": 50430,
+    "wall_seconds": 4272.149576885859
+  },
+  "d2_rho3_finite100_r24": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 998,
+    "tau": 20.0,
+    "events": 123464,
+    "wall_seconds": 6480.708361309022
+  },
+  "d2_rho1_fixed_r26": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1409,
+    "tau": 20.0,
+    "events": 55528,
+    "wall_seconds": 5482.69073655596
+  },
+  "d2_rho1_finite250_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1141,
+    "tau": 20.0,
+    "events": 47447,
+    "wall_seconds": 3198.629785645986
+  },
+  "d2_rho3_fixed_r24": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1026,
+    "tau": 16.67607118288553,
+    "events": 107207,
+    "wall_seconds": 7200.198695875937
+  },
+  "d2_rho1_fixed_r27": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1524,
+    "tau": 20.0,
+    "events": 57693,
+    "wall_seconds": 5298.961426887894
+  },
+  "d0_rho1_fixed_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1886,
+    "tau": 8.645649473033513,
+    "events": 34007,
+    "wall_seconds": 7200.798639084911
+  },
+  "d0_rho1_finite250_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1612,
+    "tau": 11.360778848988813,
+    "events": 41290,
+    "wall_seconds": 7200.453655811958
+  },
+  "d0_rho1_finite100_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1299,
+    "tau": 16.090750496663013,
+    "events": 51414,
+    "wall_seconds": 7200.368782972917
+  },
+  "d0_rho3_fixed_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1230,
+    "tau": 8.890287529187175,
+    "events": 77826,
+    "wall_seconds": 7200.2980205779895
+  },
+  "d2_rho1_fixed_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1359,
+    "tau": 20.0,
+    "events": 53394,
+    "wall_seconds": 3963.566597871948
+  },
+  "d0_rho3_finite250_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1172,
+    "tau": 9.258984034909554,
+    "events": 80535,
+    "wall_seconds": 7200.3020872159395
+  },
+  "d0_rho3_finite100_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1093,
+    "tau": 9.38592223145392,
+    "events": 78688,
+    "wall_seconds": 7200.240664777812
+  },
+  "d2_rho1_finite250_r29": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1153,
+    "tau": 20.0,
+    "events": 48559,
+    "wall_seconds": 2812.2448048179504
+  },
+  "d2_rho1_finite100_r29": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1122,
+    "tau": 20.0,
+    "events": 47215,
+    "wall_seconds": 2696.7618397439364
+  },
+  "d2_rho3_fixed_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1050,
+    "tau": 18.358616324603815,
+    "events": 115944,
+    "wall_seconds": 7200.202253544005
+  },
+  "d2_rho3_finite250_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1017,
+    "tau": 18.30283378409689,
+    "events": 114225,
+    "wall_seconds": 7200.205749194138
+  },
+  "d2_rho3_finite100_r25": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 997,
+    "tau": 19.194122677435317,
+    "events": 117732,
+    "wall_seconds": 7200.185699464986
+  },
+  "d0_rho1_fixed_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1914,
+    "tau": 8.768798683204492,
+    "events": 33451,
+    "wall_seconds": 7200.581276325975
+  },
+  "d0_rho1_finite250_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1527,
+    "tau": 11.972769992490168,
+    "events": 42282,
+    "wall_seconds": 7200.519641616847
+  },
+  "d0_rho1_finite100_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1320,
+    "tau": 16.946633394651013,
+    "events": 55120,
+    "wall_seconds": 7200.283262942918
+  },
+  "d0_rho3_fixed_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1215,
+    "tau": 7.654318308752283,
+    "events": 66358,
+    "wall_seconds": 7200.33973494987
+  },
+  "d2_rho1_finite100_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1098,
+    "tau": 20.0,
+    "events": 45684,
+    "wall_seconds": 2474.780820948072
+  },
+  "d0_rho3_finite250_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1133,
+    "tau": 8.48087267038405,
+    "events": 71528,
+    "wall_seconds": 7200.319738495164
+  },
+  "d0_rho3_finite100_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1081,
+    "tau": 10.274449988182452,
+    "events": 83424,
+    "wall_seconds": 7200.174232076155
+  },
+  "d2_rho1_fixed_r29": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1382,
+    "tau": 20.0,
+    "events": 54540,
+    "wall_seconds": 3765.9030886939727
+  },
+  "d2_rho1_finite250_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1187,
+    "tau": 20.0,
+    "events": 48535,
+    "wall_seconds": 2773.7081673489884
+  },
+  "d2_rho3_finite100_r26": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 996,
+    "tau": 20.0,
+    "events": 121802,
+    "wall_seconds": 7035.88555565197
+  },
+  "d2_rho3_finite250_r26": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 984,
+    "tau": 20.0,
+    "events": 122908,
+    "wall_seconds": 7070.183983281953
+  },
+  "d2_rho3_fixed_r26": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1065,
+    "tau": 18.12687556372712,
+    "events": 115708,
+    "wall_seconds": 7200.196895373054
+  },
+  "d0_rho1_fixed_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2113,
+    "tau": 9.609095343434133,
+    "events": 39749,
+    "wall_seconds": 7200.544590180041
+  },
+  "d0_rho1_finite250_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1715,
+    "tau": 12.498252642898587,
+    "events": 47766,
+    "wall_seconds": 7200.295930649154
+  },
+  "d0_rho1_finite100_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1372,
+    "tau": 18.089899323796434,
+    "events": 61587,
+    "wall_seconds": 7200.31628901884
+  },
+  "d0_rho3_fixed_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1293,
+    "tau": 8.713068663286235,
+    "events": 78746,
+    "wall_seconds": 7200.237456433009
+  },
+  "d0_rho3_finite250_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1202,
+    "tau": 9.896373000690264,
+    "events": 89129,
+    "wall_seconds": 7200.233358615078
+  },
+  "d0_rho3_finite100_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1162,
+    "tau": 10.227959468895726,
+    "events": 90095,
+    "wall_seconds": 7200.192191520007
+  },
+  "d2_rho1_fixed_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1419,
+    "tau": 20.0,
+    "events": 54152,
+    "wall_seconds": 3232.7766211628914
+  },
+  "d2_rho3_fixed_r27": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1071,
+    "tau": 19.12994777926312,
+    "events": 125771,
+    "wall_seconds": 7200.182363126893
+  },
+  "d2_rho3_finite250_r27": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1070,
+    "tau": 20.0,
+    "events": 130676,
+    "wall_seconds": 7147.226798935095
+  },
+  "d2_rho3_finite100_r27": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1030,
+    "tau": 20.0,
+    "events": 128196,
+    "wall_seconds": 7200.1158586670645
+  },
+  "d0_rho1_fixed_r28": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2132,
+    "tau": 9.073628011725638,
+    "events": 37191,
+    "wall_seconds": 7200.696514724055
+  },
+  "d2_rho3_finite250_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1010,
+    "tau": 20.0,
+    "events": 122931,
+    "wall_seconds": 5971.963692349149
+  },
+  "d0_rho1_finite100_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1301,
+    "tau": 20.0,
+    "events": 66498,
+    "wall_seconds": 7117.669083870947
+  },
+  "d0_rho1_finite250_r28": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1644,
+    "tau": 15.28086985123139,
+    "events": 55677,
+    "wall_seconds": 7200.288905011956
+  },
+  "d2_rho1_finite250_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1200,
+    "tau": 20.0,
+    "events": 50238,
+    "wall_seconds": 2774.109991495032
+  },
+  "d2_rho1_finite100_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1114,
+    "tau": 20.0,
+    "events": 46736,
+    "wall_seconds": 2761.0256241669413
+  },
+  "d0_rho3_fixed_r28": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1352,
+    "tau": 8.579542544866666,
+    "events": 79452,
+    "wall_seconds": 7200.237023546826
+  },
+  "d2_rho3_finite100_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1002,
+    "tau": 20.0,
+    "events": 123324,
+    "wall_seconds": 6121.207943650894
+  },
+  "d0_rho3_finite250_r28": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1202,
+    "tau": 10.609719243569053,
+    "events": 91901,
+    "wall_seconds": 7200.243936553132
+  },
+  "d2_rho3_fixed_r28": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1058,
+    "tau": 20.0,
+    "events": 126265,
+    "wall_seconds": 6496.487747373059
+  },
+  "d0_rho3_finite100_r28": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1111,
+    "tau": 11.833771610568078,
+    "events": 99994,
+    "wall_seconds": 7200.239074680954
+  },
+  "d2_rho1_fixed_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1379,
+    "tau": 20.0,
+    "events": 55222,
+    "wall_seconds": 3543.72037677397
+  },
+  "d2_rho3_finite100_r29": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 994,
+    "tau": 20.0,
+    "events": 124884,
+    "wall_seconds": 5693.144793533953
+  },
+  "d2_rho3_finite250_r29": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1027,
+    "tau": 20.0,
+    "events": 127382,
+    "wall_seconds": 6182.086531198816
+  },
+  "d0_rho1_fixed_r29": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2026,
+    "tau": 8.3143390430328,
+    "events": 33455,
+    "wall_seconds": 7200.67158486601
+  },
+  "d0_rho1_finite250_r29": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1595,
+    "tau": 13.45302074084435,
+    "events": 49114,
+    "wall_seconds": 7200.38142949203
+  },
+  "d0_rho1_finite100_r29": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1344,
+    "tau": 18.884448623424877,
+    "events": 62529,
+    "wall_seconds": 7200.339164817939
+  },
+  "d0_rho1_finite100_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1315,
+    "tau": 20.0,
+    "events": 65423,
+    "wall_seconds": 6224.515659931116
+  },
+  "d2_rho3_fixed_r29": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1115,
+    "tau": 20.0,
+    "events": 132704,
+    "wall_seconds": 6553.2959953490645
+  },
+  "d0_rho3_fixed_r29": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1300,
+    "tau": 8.54092793339685,
+    "events": 78979,
+    "wall_seconds": 7200.320966400905
+  },
+  "d0_rho3_finite250_r29": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1273,
+    "tau": 8.996298954828559,
+    "events": 81871,
+    "wall_seconds": 7200.233848157106
+  },
+  "d2_rho3_finite100_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 996,
+    "tau": 20.0,
+    "events": 123424,
+    "wall_seconds": 5103.988043301972
+  },
+  "d2_rho3_fixed_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1079,
+    "tau": 20.0,
+    "events": 130382,
+    "wall_seconds": 5814.322447675047
+  },
+  "d0_rho3_finite100_r29": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1127,
+    "tau": 10.448123965276803,
+    "events": 90542,
+    "wall_seconds": 7200.2028194561135
+  },
+  "d2_rho3_finite250_r30": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1059,
+    "tau": 20.0,
+    "events": 126904,
+    "wall_seconds": 5726.930102989078
+  },
+  "d0_rho1_fixed_r30": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2080,
+    "tau": 10.661705199284395,
+    "events": 43926,
+    "wall_seconds": 7200.586758488091
+  },
+  "d0_rho1_finite250_r30": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1612,
+    "tau": 19.050904342956855,
+    "events": 70483,
+    "wall_seconds": 7200.252059054095
+  },
+  "d0_rho3_fixed_r30": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1294,
+    "tau": 10.920498805567485,
+    "events": 96830,
+    "wall_seconds": 7200.317316046916
+  },
+  "d2_rho3_finite250_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1008,
+    "tau": 20.0,
+    "events": 126422,
+    "wall_seconds": 5233.5687930760905
+  },
+  "d0_rho3_finite250_r30": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1275,
+    "tau": 10.82544594386934,
+    "events": 97622,
+    "wall_seconds": 7200.205533078872
+  },
+  "d2_rho3_finite100_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 997,
+    "tau": 20.0,
+    "events": 124017,
+    "wall_seconds": 5245.797003147891
+  },
+  "d0_rho3_finite100_r30": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1150,
+    "tau": 13.222889573663254,
+    "events": 113265,
+    "wall_seconds": 7200.1998589690775
+  },
+  "d2_rho3_fixed_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1066,
+    "tau": 20.0,
+    "events": 130296,
+    "wall_seconds": 5734.99456793908
+  },
+  "d0_rho1_finite100_r31": {
+    "status": "time_target_reached",
+    "valid": true,
+    "final_N": 1321,
+    "tau": 20.0,
+    "events": 66392,
+    "wall_seconds": 6390.943227999145
+  },
+  "d0_rho1_fixed_r31": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 2117,
+    "tau": 10.160560663960748,
+    "events": 42308,
+    "wall_seconds": 7200.480589831946
+  },
+  "d0_rho1_finite250_r31": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1657,
+    "tau": 16.1864605043058,
+    "events": 60741,
+    "wall_seconds": 7200.345688211033
+  },
+  "d0_rho3_fixed_r31": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1362,
+    "tau": 10.199115511767861,
+    "events": 95269,
+    "wall_seconds": 7200.276598610915
+  },
+  "d0_rho3_finite250_r31": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1224,
+    "tau": 11.402754873532553,
+    "events": 102550,
+    "wall_seconds": 7200.183935754001
+  },
+  "d0_rho3_finite100_r31": {
+    "status": "wall_time_cap",
+    "valid": true,
+    "final_N": 1128,
+    "tau": 12.869984549944954,
+    "events": 111230,
+    "wall_seconds": 7200.205743600847
+  }
+}

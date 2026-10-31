@@ -1,0 +1,58 @@
+{
+  "schema_version": "common-molecular-seed-v1",
+  "system": "uio66",
+  "topology_mode": "unrestricted",
+  "random_seed": 20260831,
+  "generation_coordinates": {
+    "atomic_metal_to_linker_ratio": 1.0,
+    "external_activity": 1.0,
+    "node_activity_share": 0.14285714285714285,
+    "bond_removal_weight": 0.1,
+    "closure_coefficient": 0.5,
+    "m6_node_fraction": 1.0,
+    "m12_node_fraction": 0.0,
+    "initial_node_class": "Zr6_AA"
+  },
+  "generation_model_time": 1.9420852666223107,
+  "event_counts": {
+    "add_linker_accepted": 18,
+    "remove_bond": 1,
+    "add_node_accepted": 2
+  },
+  "state": {
+    "entities": 20,
+    "linked_bonds": 19,
+    "cycle_rank": 0,
+    "linker_free_sites": 15,
+    "metal_free_sites": 17,
+    "ready_internal_pairs": 0,
+    "entity_type_counts": {
+      "Zr": 3,
+      "Ligand": 17
+    }
+  },
+  "connected_component_sizes": [
+    20
+  ],
+  "geometry": {
+    "center_singular_value_1": 42.14939498111897,
+    "center_singular_value_2": 18.49393501112742,
+    "center_singular_value_3": 17.45526764962942,
+    "planarity_ratio_s3_over_sum": 0.22350295878129894
+  },
+  "provenance": {
+    "engine_path": "/home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/code/UiO66_Assembly_Large_Correction_20250811.py",
+    "engine_sha256": "0a8aac74b8fd68210261bf2746164349fce96582d842bf5203433b5edf095912",
+    "engine_import_redirects": [
+      "numpy-compatible scipy.spatial.cKDTree and scipy.linalg.svd shim",
+      "unused matplotlib.pyplot import shim",
+      "/public/home/yibinjiang/workspace/mol/BDC.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/Zr-Ligand-ExplicitChannel/input_monomers/BDC.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr12_AA.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/Zr-Ligand-ExplicitChannel/input_monomers/Zr12_AA.mol",
+      "/public/home/yibinjiang/workspace/mol/Zr6_AA.mol -> /home/wave/MOL_growth_recalculation_20260830/source_snapshot/UiO-66/Zr-Ligand-ExplicitChannel/input_monomers/Zr6_AA.mol"
+    ],
+    "generator_sha256": "22facb57964f475ec680c5a3fed97039eb0cfe3f0327c783e7d2d5ea4a5e0c36"
+  },
+  "seed_id": "uio66_seed_00",
+  "pickle_sha256": "387854394f642c743e535ed021dd6c33b0c810392007d94b96247d78be5d328d",
+  "pickle_round_trip_validation": "passed"
+}

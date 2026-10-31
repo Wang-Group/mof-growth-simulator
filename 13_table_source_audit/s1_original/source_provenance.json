@@ -1,0 +1,133 @@
+{
+  "current_panel_mapping": {
+    "B": "Framework families",
+    "C": "Zr/Hf dose studies",
+    "E": "XRD and DLS size"
+  },
+  "original_numerical_plotting_scripts_found": false,
+  "searched_archives": [
+    "student_handoff_20260906_v4_light.zip",
+    "student_handoff_20260915_v5.zip",
+    "MOL_student_handoff_20260926_v2.zip",
+    "student_handoff_20260915_v5/MS-260919.zip"
+  ],
+  "archive_search_report": "C:\\Users\\SYH\\Documents\\ChatGPT\\mol_simulation\\figure_content_audit_20261023\\cleanup_BCE_20261024\\figure1_original_search.json",
+  "B_verified_counts": {
+    "ZIF": 2,
+    "Zr/Hf": 53,
+    "Zn-carboxylate": 4,
+    "Cd-carboxylate": 1,
+    "Cu-carboxylate": 6,
+    "Fe-carboxylate": 2,
+    "Al-carboxylate": 1
+  },
+  "B_doi_records": 69,
+  "B_distinct_publication_groups": 68,
+  "C_status": "当前摘要40/12/1有SI展示表支持，最终53篇逐条编码未唯一闭合；未重新计算或改动统计。",
+  "E_values": [
+    {
+      "BA_per_Zr": 0,
+      "PXRD_coherent_domain_nm": 85,
+      "DLS_water_distribution_maximum_nm": 220,
+      "source_DOI": "10.1002/chem.201003211",
+      "source_anchor": "Table 1",
+      "data_level": "published_table_values_preserved_in_local_text_extraction"
+    },
+    {
+      "BA_per_Zr": 1,
+      "PXRD_coherent_domain_nm": 39,
+      "DLS_water_distribution_maximum_nm": 255,
+      "source_DOI": "10.1002/chem.201003211",
+      "source_anchor": "Table 1",
+      "data_level": "published_table_values_preserved_in_local_text_extraction"
+    },
+    {
+      "BA_per_Zr": 3,
+      "PXRD_coherent_domain_nm": 67,
+      "DLS_water_distribution_maximum_nm": 164,
+      "source_DOI": "10.1002/chem.201003211",
+      "source_anchor": "Table 1",
+      "data_level": "published_table_values_preserved_in_local_text_extraction"
+    },
+    {
+      "BA_per_Zr": 5,
+      "PXRD_coherent_domain_nm": 95,
+      "DLS_water_distribution_maximum_nm": 164,
+      "source_DOI": "10.1002/chem.201003211",
+      "source_anchor": "Table 1",
+      "data_level": "published_table_values_preserved_in_local_text_extraction"
+    },
+    {
+      "BA_per_Zr": 10,
+      "PXRD_coherent_domain_nm": 120,
+      "DLS_water_distribution_maximum_nm": 105,
+      "source_DOI": "10.1002/chem.201003211",
+      "source_anchor": "Table 1",
+      "data_level": "published_table_values_preserved_in_local_text_extraction"
+    }
+  ],
+  "files": [
+    {
+      "file": "B_seed_studies_original.csv",
+      "role": "原始保存的文献筛选记录表；包含dose_or_presence与identity两种范围，不是实验原始仪器数据。",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\seed_studies.csv",
+      "original_sha256": "ab141b629ba2fa8233758bb3e7c37ced3c09d0f98c6289cf00f9c103d0b0cda3",
+      "copy_sha256": "ab141b629ba2fa8233758bb3e7c37ced3c09d0f98c6289cf00f9c103d0b0cda3",
+      "copied_without_change": true
+    },
+    {
+      "file": "B_family_counts_original.json",
+      "role": "原文献统计汇总；69 DOI records，68 publication groups。",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\seed_manifest_summary.json",
+      "original_sha256": "12bc05ac4580d8ca6fac56e3933c8801eb2a51e539e1a93dd03422f7e1de4740",
+      "copy_sha256": "12bc05ac4580d8ca6fac56e3933c8801eb2a51e539e1a93dd03422f7e1de4740",
+      "copied_without_change": true
+    },
+    {
+      "file": "B_counting_scope_caveat_original.md",
+      "role": "原资料已记录双语版本重复；不能将69 DOI记录直接称69篇独立出版物。",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\COHORT_CORRECTIONS.md",
+      "original_sha256": "b9ea23223af2444adbfca5cc67628141c108d51de559024f0b387d97b31fc144",
+      "copy_sha256": "b9ea23223af2444adbfca5cc67628141c108d51de559024f0b387d97b31fc144",
+      "copied_without_change": true
+    },
+    {
+      "file": "B_upstream_statistics_NOT_plotting.py",
+      "role": "找到的真实原统计脚本，不是Figure1B的绘图脚本，未改路径或运行。",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\build_seed_manifest.py",
+      "original_sha256": "aa0c01d006ced64f00158b8ecfbb8b5b4d2305ed2114a13b1de485c20adec3dc",
+      "copy_sha256": "aa0c01d006ced64f00158b8ecfbb8b5b4d2305ed2114a13b1de485c20adec3dc",
+      "copied_without_change": true
+    },
+    {
+      "file": "C_SI_displayed_Table_S1.csv",
+      "role": "当前SI展示值转存，可支持40/12/1，不能替代最终53条逐篇分类表。",
+      "original_absolute_path": "C:\\Users\\SYH\\Desktop\\MOL_figure_source_bundles_20261022_v4\\SI_tables_sources_20261023\\01_SI_displayed_tables\\Table_S1_SI_displayed.csv",
+      "original_sha256": "87b21325861222de69e5f3d873ef3ac26d11ab18d614e77e18d1f7a2e04a0bfd",
+      "copy_sha256": "87b21325861222de69e5f3d873ef3ac26d11ab18d614e77e18d1f7a2e04a0bfd",
+      "copied_without_change": true
+    },
+    {
+      "file": "E_Schaate2011_source_evidence.txt",
+      "role": "保存的Schaate2011全文证据摘录，其中含Table1及脚注。原文章数据，非本研究实验仪器原文件。",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\evidence_packets\\10.1002_chem.201003211.txt",
+      "original_sha256": "82ce5dba756b814a1471d92e8f691ca3eccfbc7be347628c75bbe15381ec31b3",
+      "copy_sha256": "82ce5dba756b814a1471d92e8f691ca3eccfbc7be347628c75bbe15381ec31b3",
+      "copied_without_change": true
+    },
+    {
+      "file": "E_plotting_values_from_saved_table.csv",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\observations_reaudited.csv",
+      "original_sha256": "2a260214c7e22f6f4266e28353e17be77dcac4bc4a66dba8ffba708890484ad7",
+      "role": "从保存的文本数值记录解析成逐点表；没有读取图片或SVG坐标。",
+      "copied_without_change": false
+    },
+    {
+      "file": "E_original_observation_rows.csv",
+      "original_absolute_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\student_handoff_20260915_v5\\MOL_handoff\\08_historical_source_library\\06_literature_data\\systematic_review\\modulator_conditions_reaudit_20260826\\observations_reaudited.csv",
+      "original_sha256": "2a260214c7e22f6f4266e28353e17be77dcac4bc4a66dba8ffba708890484ad7",
+      "role": "从原观察表筛出对应两行；各字段值保留。",
+      "copied_without_change": false
+    }
+  ]
+}

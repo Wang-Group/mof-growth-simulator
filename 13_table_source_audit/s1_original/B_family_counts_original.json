@@ -1,0 +1,25 @@
+{
+  "unique_papers": 86,
+  "unique_dose_or_presence_papers": 69,
+  "unique_identity_only_papers": 17,
+  "distinct_publication_groups": 85,
+  "distinct_dose_or_presence_publication_groups": 68,
+  "qualifying_study_rows_after_exact_deduplication": 100,
+  "qualifying_size_outcomes_after_exact_deduplication": 101,
+  "raw_record_counts_before_doi_deduplication": {
+    "qualifying_records": 86,
+    "dose_records": 69,
+    "identity_records": 17
+  },
+  "papers_with_multiple_batch_records": {},
+  "unresolved_family_dois": [],
+  "dose_family_counts_by_doi_record": {
+    "ZIF": 2,
+    "Zr/Hf": 53,
+    "Zn-carboxylate": 4,
+    "Cd-carboxylate": 1,
+    "Cu-carboxylate": 6,
+    "Fe-carboxylate": 2,
+    "Al-carboxylate": 1
+  }
+}

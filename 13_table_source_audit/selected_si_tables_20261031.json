@@ -1,0 +1,440 @@
+{
+  "scope": "Read-only final-view extraction of S1/S2/S6/S8 only; not a full MS/SI review.",
+  "text": "w:t and m:t in document order; insertions kept; w:del/moveFrom/deleted rows omitted.",
+  "documents": [
+    {
+      "file": "supporting_information_defect_section_to_SI_20261019.docx",
+      "sha256": "c232b12594aba4d57891bfae644bb2c29174baeb72a9052496c662d9f2d913e3",
+      "view": "insertions included; deletions/moveFrom/deleted rows excluded",
+      "tables": [
+        {
+          "caption": "Table S1. Publication-level modulator-dose comparisons.",
+          "rows": [
+            [
+              "Framework group",
+              "Publications",
+              "Directional result",
+              "Interpretation"
+            ],
+            [
+              "Zr/Hf",
+              "53",
+              "40 enlargement; 12 ambiguous/other; 1 clean shrinkage",
+              "Dominant enlargement with a high-dose boundary"
+            ],
+            [
+              "MIL-53(Fe)",
+              "1",
+              "Long axis decreases; short axis and composition change",
+              "Anisotropic morphology/ composition trajectory"
+            ],
+            [
+              "MIL-88B(Fe)",
+              "1",
+              "Rod shortening at low dose, then high-dose enlargement",
+              "Not monotonic equivalent-particle shrinkage"
+            ],
+            [
+              "Other framework families",
+              "14",
+              "Framework-specific",
+              "Base-additive and other framework responses summarized separately"
+            ],
+            [
+              "All eligible dose/presence studies",
+              "69",
+              "Framework-specific",
+              "Primary, coherent-domain, and hydrodynamic sizes kept separate"
+            ]
+          ],
+          "preceding_context": [
+            "The literature survey establishes the experimental size trends discussed in main Figure 1. The search and classification criteria are followed by same-acid dose comparisons, base-additive comparisons and the DOI-level catalogue. Crystal, coherent-domain and hydrodynamic dimensions remain separate observables.",
+            "S1.1. Literature search and publication level classification",
+            "The literature collection was assembled through targeted database searches, full-text recall searches, and backward and forward citation snowballing. Search concepts included coordination modulation, monocarboxylic-acid identity or dose, MOF crystallization, morphology, particle size, and specific framework families. Search records, seed papers, citation links, screening decisions, retrieval status, and parsed text were retained.",
+            "The discovery table contains 40,892 deduplicated records and 1,970 retrieved full texts. Of these, 979 passed screening for information about MOF or MOL formation, growth, morphology, or size. Eighty-six papers explicitly related a carboxylic-acid variable to size. Sixty-nine unique publications contained an eligible dose or presence/absence comparison, and 53 of these concerned Zr/Hf frameworks. The remaining 14 publications concerned other framework families and are summarized separately in Table S1.",
+            "An eligible dose comparison changed acid presence or the amount of one acid. Modulator-identity substitutions were extracted separately. Each observation records the framework, metal precursor, linker, acid, dose, solvent, water, temperature, reaction time, stoichiometry, phase evidence, and size method where reported. Primary crystals, coherent domains, aggregates, and hydrodynamic objects were treated as different observables. Multivariable or incompletely specified comparisons were retained but did not support the primary Zr/Hf directional conclusion.",
+            "For the publication-level Zr/Hf summary, a paper entered the enlargement category when it contained primary-crystal enlargement in at least one phase-retaining same-acid dose or presence/absence window. Qualified enlargement retained studies with a clear enlargement window plus a coupled variable or non-monotonic boundary. Ambiguous or other studies contained only no-clear-change, phase-changing, morphology-dominated, aggregation-sensitive, or incompletely specified evidence. Clean shrinkage required decreasing primary-crystal dimensions in a fully reconstructed phase-retaining same-acid series.",
+            "Table S1. Publication-level modulator-dose comparisons."
+          ]
+        },
+        {
+          "caption": "Table S2. Publication-level directions in the base-additive subset.",
+          "rows": [
+            [
+              "Publication-level directional class",
+              "Number of MOF papers"
+            ],
+            [
+              "Only smaller or thinner",
+              "21"
+            ],
+            [
+              "Non-monotonic",
+              "4"
+            ],
+            [
+              "Only larger",
+              "3"
+            ],
+            [
+              "Mixed larger and no change",
+              "1"
+            ],
+            [
+              "Identity-only or other",
+              "2"
+            ]
+          ],
+          "preceding_context": [
+            "Quantitative enlargement extends across several Zr/Hf frameworks. UiO-66 increased from 130 ± 20 to 350 ± 30 nm as acetic acid rose from 6 to 100 equivalents per Zr 1; UiO-66-NH2 increased from 42 to 217 nm 2; UiO-66-NH(CN) increased from 71.4 to 300 nm 3; and benzoic acid increased PCN-224 from 35.0 to 290.5 nm 4. Larger reported changes include UiO-68-NH2 from approximately 50 nm to 1.5 μm 5, UiO-66-NDC from approximately 80 to 800 nm 6, and MOF-808 from below 40 to approximately 600 nm 7. In a preformed-Zr6 system, increasing benzoic acid from 1.0 to 1.9 M delayed particle appearance and increased UiO-66 size, while slow BDC feeding enlarged the particles further 8.",
+            "Primary-crystal enlargement can accompany reduced aggregation. In a benzoic-acid UiO-66 series, the coherent-domain size increased while the hydrodynamic dimension decreased 9. A separate UiO-66 series changed from aggregated 100–150 nm particles to isolated 300–400 nm particles at higher acetic-acid loading 10. In another benzoic-acid series, 10 equivalents mainly reduced aggregation, whereas 60 equivalents produced much larger individual crystals 11. These comparisons are why coherent-domain, primary-particle, and hydrodynamic sizes are stored as separate observables.",
+            "The reconstructed Zr/Hf shrinkage series concerns amino-functionalized UiO-66-NH2 12. Acidification can protonate the amino group and change linker solubility, deprotonation, and coordination, rather than acting only as an external competing ligand. When the amino group was already protonated by HCl, varying formic acid recovered the usual enlargement direction 13. The Fe studies instead report anisotropic morphology or composition changes: MIL-53(Fe) becomes shorter and wider as dose changes, while MIL-88B(Fe) first becomes shorter and wider and then enlarges at high dose 14, 15.",
+            "The Zr/Hf classification follows the main-text interpretation: enlargement is the dominant phase-retaining response. The exceptional amino-linker series is interpreted through acid-induced linker protonation 12, with the HCl-containing UiO-66-NH2 comparison discussed as supporting context 13. A formic-acid-rich solvent endpoint is not relabeled as an independent opposite trend. Primary crystals, coherent scattering domains, aggregates, and hydrodynamic sizes are not pooled into a single size measure.",
+            "S1.3. Base additives and other framework families",
+            "After excluding two non-MOF records, the base-additive subset contained 31 MOF publications. Twenty-one reported only smaller crystals or thinner products after added base, four were non-monotonic, three reported only enlargement, one contained both enlargement and no-change comparisons, and two varied base identity without a directional dose comparison. Seven of the 31 studies co-added a monocarboxylic acid and therefore represent buffered acid/base co-modulation rather than base alone: 16–22. The publication counts and outcome classes are tabulated in Table S2.",
+            "Table S2. Publication-level directions in the base-additive subset."
+          ]
+        },
+        {
+          "caption": "Table S6. Translational, rotational, and total entropies of the BTB reference species.",
+          "rows": [
+            [
+              "Species",
+              "St/R",
+              "Sr/R",
+              "S/R"
+            ],
+            [
+              "SBU",
+              "17.78298806",
+              "14.97229805",
+              "32.75528611"
+            ],
+            [
+              "BTB",
+              "15.57961001",
+              "13.53717069",
+              "29.1167807"
+            ],
+            [
+              "MOL1",
+              "18.93070913",
+              "14.1554827",
+              "33.08619183"
+            ],
+            [
+              "MOL1'",
+              "19.61447463",
+              "15.1034972",
+              "34.71797183"
+            ],
+            [
+              "MOL2",
+              "19.9352083",
+              "15.29776214",
+              "35.23297044"
+            ],
+            [
+              "MOL3",
+              "19.88922272",
+              "15.2839931",
+              "35.17321582"
+            ]
+          ],
+          "preceding_context": [
+            "Reaction 2 (Internal Linking):",
+            "MOL2 K2 MOL3 + Formic Acid    (S21)",
+            "Reaction 3 (Experimentally-Measured):",
+            "MOLinf + BTB K3 MOLinf-BTB + Formic Acid    (S22)",
+            "Now the problem has turned into how to quantify the differences in the equilibrium constants (K1, K'1, K2, K3) theoretically. Their differences originate from the corresponding differences in Gibbs free energy changes, which can be decomposed into enthalpic and entropic contributions: ∆G = -RTlnK = ∆H-T∆S, where ∆S = ∆Strans + ∆Srot + ∆Svib. Because these reactions involve the same general coordination-exchange motif, we assume as a first approximation that differences in enthalpic contributions are smaller than the corresponding differences in translational and rotational entropy. Therefore, the differences in entropy changes become the key factor. Further analysis shows that the entropy differences among these reactions are governed primarily by translational and rotational contributions. By contrast, the difference in vibrational entropy between external addition and internal linking is expected to be small and is therefore neglected in the present analysis. We thus focus on evaluating the translational and rotational entropy terms.",
+            "Mainstream quantum chemistry software, such as Gaussian, usually treats translational and rotational contributions using the ideal gas model31, which is inaccurate for reactions in solution32. While molecular dynamics simulations could provide an alternative, they are computationally expensive and prone to errors due to insufficient sampling. We therefore used translational and rotational partition functions derived from the ideal gas model, with appropriate corrections for solution-phase systems, to calculate the translational and rotational entropies in solution. For the full derivation, we refer to the original work by Alejandro J. Garza33; here, we only present the resulting expressions and the calculated results.",
+            "Table S6. Translational, rotational, and total entropies of the BTB reference species."
+          ]
+        },
+        {
+          "caption": "Table S8. Numerical acetic-acid-dependent UiO-66 induction times. Each row is one supplied observation; the source reports time in minutes. No additional replication is inferred.",
+          "rows": [
+            [
+              "Acetic acid (mM)",
+              "Induction time (min)"
+            ],
+            [
+              "50",
+              "153"
+            ],
+            [
+              "100",
+              "153"
+            ],
+            [
+              "200",
+              "127"
+            ],
+            [
+              "300",
+              "103"
+            ],
+            [
+              "400",
+              "72"
+            ],
+            [
+              "500",
+              "62"
+            ],
+            [
+              "600",
+              "64"
+            ],
+            [
+              "800",
+              "65"
+            ],
+            [
+              "1200",
+              "85"
+            ],
+            [
+              "1600",
+              "97"
+            ],
+            [
+              "2000",
+              "108"
+            ],
+            [
+              "2400",
+              "108"
+            ]
+          ],
+          "preceding_context": [
+            "S4.6.1. UiO-66 synthesis conditions",
+            "ZrCl4 (9.3 mg, 0.04 mmol) and H2BDC (6.6 mg, 0.04 mmol) were dissolved in a mixture of DMF (8.63 mL) in a glass vial, then acetic acid (1.37 mL) was slowly added into the system. The mixture was kept at 120 oC for 1 day19. After the reaction was completed, the reaction system was cooled slowly to room temperature. White precipitates were obtained after centrifugation and washing with DMF more than 3 times.",
+            "S4.6.2. Induction time and morphology under acetic acid modulation",
+            "Acetic acid was varied from 50 to 2,400 mM while metal and linker concentrations and the other preparation conditions were held fixed. The time to first visible turbidity is reported in minutes in the supplied numerical series (Figure S14 and Table S8). The induction time decreases from 153 min at 50–100 mM to 62 min at 500 mM and subsequently rises to 108 min at 2,000–2,400 mM. TEM characterized products from the acid series (Figure S15). Turbidity is a detection threshold and is not a direct count of molecular nuclei.",
+            "",
+            "Figure S14. Time to first visible turbidity in the acetic-acid series for UiO-66. The twelve supplied observations are plotted against acid concentration; metal and linker concentrations are held fixed. Connecting lines guide the eye. Replicate uncertainty was not supplied. Time is reported in minutes; the original plot and supplied observations are retained.",
+            "Table S8. Numerical acetic-acid-dependent UiO-66 induction times. Each row is one supplied observation; the source reports time in minutes. No additional replication is inferred."
+          ]
+        }
+      ]
+    },
+    {
+      "file": "supporting_information_defect_section_to_SI_20261019_text_synced_20261031.docx",
+      "sha256": "8828fa2409fb58b787a81a0dcb78f0a6d8e6c2568dd7f2d96d05eeb6e587398c",
+      "view": "insertions included; deletions/moveFrom/deleted rows excluded",
+      "tables": [
+        {
+          "caption": "Table S1. Publication-level modulator-dose comparisons.",
+          "rows": [
+            [
+              "Framework group",
+              "Publications",
+              "Directional result",
+              "Interpretation"
+            ],
+            [
+              "Zr/Hf",
+              "53",
+              "40 enlargement; 12 ambiguous/other; 1 clean shrinkage",
+              "Dominant enlargement with a high-dose boundary"
+            ],
+            [
+              "MIL-53(Fe)",
+              "1",
+              "Long axis decreases; short axis and composition change",
+              "Anisotropic morphology/ composition trajectory"
+            ],
+            [
+              "MIL-88B(Fe)",
+              "1",
+              "Rod shortening at low dose, then high-dose enlargement",
+              "Not monotonic equivalent-particle shrinkage"
+            ],
+            [
+              "Other framework families",
+              "14",
+              "Framework-specific",
+              "Base-additive and other framework responses summarized separately"
+            ],
+            [
+              "All eligible dose/presence studies",
+              "69",
+              "Framework-specific",
+              "Primary, coherent-domain, and hydrodynamic sizes kept separate"
+            ]
+          ],
+          "preceding_context": [
+            "The literature survey establishes the experimental size trends discussed in main Figure 1. The search and classification criteria are followed by same-acid dose comparisons, base-additive comparisons and the DOI-level catalogue. Crystal, coherent-domain and hydrodynamic dimensions remain separate observables.",
+            "S1.1. Literature search and publication level classification",
+            "The literature collection was assembled through targeted database searches, full-text recall searches, and backward and forward citation snowballing. Search concepts included coordination modulation, monocarboxylic-acid identity or dose, MOF crystallization, morphology, particle size, and specific framework families. Search records, seed papers, citation links, screening decisions, retrieval status, and parsed text were retained.",
+            "The discovery table contains 40,892 deduplicated records and 1,970 retrieved full texts. Of these, 979 passed screening for information about MOF or MOL formation, growth, morphology, or size. Eighty-six papers explicitly related a carboxylic-acid variable to size. Sixty-nine unique publications contained an eligible dose or presence/absence comparison, and 53 of these concerned Zr/Hf frameworks. The remaining 16 publications comprised two Fe-framework studies and 14 studies of other framework families, as summarized in Table S1.",
+            "An eligible dose comparison changed acid presence or the amount of one acid. Modulator-identity substitutions were extracted separately. Each observation records the framework, metal precursor, linker, acid, dose, solvent, water, temperature, reaction time, stoichiometry, phase evidence, and size method where reported. Primary crystals, coherent domains, aggregates, and hydrodynamic objects were treated as different observables. Multivariable or incompletely specified comparisons were retained but did not support the primary Zr/Hf directional conclusion.",
+            "For the publication-level Zr/Hf summary, a paper entered the enlargement category when it contained primary-crystal enlargement in at least one phase-retaining same-acid dose or presence/absence window. Qualified enlargement retained studies with a clear enlargement window plus a coupled variable or non-monotonic boundary. Ambiguous or other studies contained only no-clear-change, phase-changing, morphology-dominated, aggregation-sensitive, or incompletely specified evidence. Clean shrinkage required decreasing primary-crystal dimensions in a fully reconstructed phase-retaining same-acid series.",
+            "Table S1. Publication-level modulator-dose comparisons."
+          ]
+        },
+        {
+          "caption": "Table S2. Publication-level directions in the base-additive subset.",
+          "rows": [
+            [
+              "Publication-level directional class",
+              "Number of MOF papers"
+            ],
+            [
+              "Only smaller or thinner",
+              "21"
+            ],
+            [
+              "Non-monotonic",
+              "4"
+            ],
+            [
+              "Only larger",
+              "3"
+            ],
+            [
+              "Mixed larger and no change",
+              "1"
+            ],
+            [
+              "Identity-only or other",
+              "2"
+            ]
+          ],
+          "preceding_context": [
+            "Quantitative enlargement extends across several Zr/Hf frameworks. UiO-66 increased from 130 ± 20 to 350 ± 30 nm as acetic acid rose from 6 to 100 equivalents per Zr 1; UiO-66-NH2 increased from 42 to 217 nm 2; UiO-66-NH(CN) increased from 71.4 to 300 nm 3; and benzoic acid increased PCN-224 from 35.0 to 290.5 nm 4. Larger reported changes include UiO-68-NH2 from approximately 50 nm to 1.5 μm 5, UiO-66-NDC from approximately 80 to 800 nm 6, and MOF-808 from below 40 to approximately 1000 nm 7. In a preformed-Zr6 system, increasing benzoic acid from 1.0 to 1.9 M delayed particle appearance and increased UiO-66 size, while slow BDC feeding enlarged the particles further 8.",
+            "Primary-crystal enlargement can accompany reduced aggregation. In a benzoic-acid UiO-66 series, the coherent-domain size increased while the hydrodynamic dimension decreased 9. A separate UiO-66 series changed from aggregated 100–150 nm particles to isolated 300–400 nm particles at higher acetic-acid loading 10. In another benzoic-acid series, 10 equivalents mainly reduced aggregation, whereas 60 equivalents produced much larger individual crystals 11. These comparisons are why coherent-domain, primary-particle, and hydrodynamic sizes are stored as separate observables.",
+            "The reconstructed Zr/Hf shrinkage series concerns amino-functionalized UiO-66-NH2 12. Acidification can protonate the amino group and change linker solubility, deprotonation, and coordination, rather than acting only as an external competing ligand. When the amino group was already protonated by HCl, varying formic acid recovered the usual enlargement direction 13. The Fe studies instead report anisotropic morphology or composition changes: MIL-53(Fe) becomes shorter and wider as dose changes, while MIL-88B(Fe) first becomes shorter and wider and then enlarges at high dose 14, 15.",
+            "The Zr/Hf classification follows the main-text interpretation: enlargement is the dominant phase-retaining response. The exceptional amino-linker series is interpreted through acid-induced linker protonation 12, with the HCl-containing UiO-66-NH2 comparison discussed as supporting context 13. A formic-acid-rich solvent endpoint is not relabeled as an independent opposite trend. Primary crystals, coherent scattering domains, aggregates, and hydrodynamic sizes are not pooled into a single size measure.",
+            "S1.3. Base additives and other framework families",
+            "After excluding two non-MOF records, the base-additive subset contained 31 MOF publications. Twenty-one reported only smaller crystals or thinner products after added base, four were non-monotonic, three reported only enlargement, one contained both enlargement and no-change comparisons, and two varied base identity without a directional dose comparison. Seven of the 31 studies co-added a monocarboxylic acid and therefore represent buffered acid/base co-modulation rather than base alone: 16–22. The publication counts and outcome classes are tabulated in Table S2.",
+            "Table S2. Publication-level directions in the base-additive subset."
+          ]
+        },
+        {
+          "caption": "Table S6. Translational, rotational, and total entropies of the BTB reference species.",
+          "rows": [
+            [
+              "Species",
+              "St/R",
+              "Sr/R",
+              "S/R"
+            ],
+            [
+              "SBU",
+              "17.78298806",
+              "14.97229805",
+              "32.75528611"
+            ],
+            [
+              "BTB",
+              "15.57961001",
+              "13.53717069",
+              "29.1167807"
+            ],
+            [
+              "MOL1",
+              "18.93070913",
+              "14.1554827",
+              "33.08619183"
+            ],
+            [
+              "MOL1'",
+              "19.61447463",
+              "15.1034972",
+              "34.71797183"
+            ],
+            [
+              "MOL2",
+              "19.9352083",
+              "15.29776214",
+              "35.23297044"
+            ],
+            [
+              "MOL3",
+              "19.88922272",
+              "15.2839931",
+              "35.17321582"
+            ]
+          ],
+          "preceding_context": [
+            "Reaction 2 (Internal Linking):",
+            "MOL2 K2 MOL3 + Formic Acid    (S21)",
+            "Reaction 3 (Experimentally-Measured):",
+            "MOLinf + BTB K3 MOLinf-BTB + Formic Acid    (S22)",
+            "Now the problem has turned into how to quantify the differences in the equilibrium constants (K1, K'1, K2, K3) theoretically. Their differences originate from the corresponding differences in Gibbs free energy changes, which can be decomposed into enthalpic and entropic contributions: ∆G = -RTlnK = ∆H-T∆S, where ∆S = ∆Strans + ∆Srot + ∆Svib. Because these reactions involve the same general coordination-exchange motif, we assume as a first approximation that differences in enthalpic contributions are smaller than the corresponding differences in translational and rotational entropy. Therefore, the differences in entropy changes become the key factor. Further analysis shows that the entropy differences among these reactions are governed primarily by translational and rotational contributions. By contrast, the difference in vibrational entropy between external addition and internal linking is expected to be small and is therefore neglected in the present analysis. We thus focus on evaluating the translational and rotational entropy terms.",
+            "Mainstream quantum chemistry software, such as Gaussian, usually treats translational and rotational contributions using the ideal gas model31, which is inaccurate for reactions in solution32. While molecular dynamics simulations could provide an alternative, they are computationally expensive and prone to errors due to insufficient sampling. We therefore used translational and rotational partition functions derived from the ideal gas model, with appropriate corrections for solution-phase systems, to calculate the translational and rotational entropies in solution. For the full derivation, we refer to the original work by Alejandro J. Garza33; here, we only present the resulting expressions and the calculated results.",
+            "Table S6. Translational, rotational, and total entropies of the BTB reference species."
+          ]
+        },
+        {
+          "caption": "Table S8. Numerical acetic-acid-dependent UiO-66 induction times. Each row is one supplied observation; the source reports time in minutes. No additional replication is inferred.",
+          "rows": [
+            [
+              "Acetic acid (mM)",
+              "Induction time (min)"
+            ],
+            [
+              "50",
+              "153"
+            ],
+            [
+              "100",
+              "153"
+            ],
+            [
+              "200",
+              "127"
+            ],
+            [
+              "300",
+              "103"
+            ],
+            [
+              "400",
+              "72"
+            ],
+            [
+              "500",
+              "62"
+            ],
+            [
+              "600",
+              "64"
+            ],
+            [
+              "800",
+              "65"
+            ],
+            [
+              "1200",
+              "85"
+            ],
+            [
+              "1600",
+              "97"
+            ],
+            [
+              "2000",
+              "108"
+            ],
+            [
+              "2400",
+              "108"
+            ]
+          ],
+          "preceding_context": [
+            "S4.6.1. UiO-66 synthesis conditions",
+            "ZrCl4 (9.3 mg, 0.04 mmol) and H2BDC (6.6 mg, 0.04 mmol) were dissolved in a mixture of DMF (8.63 mL) in a glass vial, then acetic acid (1.37 mL) was slowly added into the system. The mixture was kept at 120 oC for 1 day19. After the reaction was completed, the reaction system was cooled slowly to room temperature. White precipitates were obtained after centrifugation and washing with DMF more than 3 times.",
+            "S4.6.2. Induction time and morphology under acetic acid modulation",
+            "Acetic acid was varied from 50 to 2,400 mM while metal and linker concentrations and the other preparation conditions were held fixed. The time to first visible turbidity is reported in minutes in the supplied numerical series (Figure S14 and Table S8). The induction time decreases from 153 min at 50–100 mM to 62 min at 500 mM and subsequently rises to 108 min at 2,000–2,400 mM. TEM characterized products from the acid series (Figure S15). Turbidity is a detection threshold and is not a direct count of molecular nuclei.",
+            "",
+            "Figure S14. Time to first visible turbidity in the acetic-acid series for UiO-66. The twelve supplied observations are plotted against acid concentration; metal and linker concentrations are held fixed. Connecting lines guide the eye. Replicate uncertainty was not supplied. Time is reported in minutes; the original plot and supplied observations are retained.",
+            "Table S8. Numerical acetic-acid-dependent UiO-66 induction times. Each row is one supplied observation; the source reports time in minutes. No additional replication is inferred."
+          ]
+        }
+      ]
+    }
+  ]
+}

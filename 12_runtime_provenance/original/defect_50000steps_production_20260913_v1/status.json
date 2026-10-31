@@ -1,0 +1,17 @@
+{
+  "submitted": 1152,
+  "planned": 1152,
+  "completed": 1152,
+  "status_counts": {
+    "step_target_reached": 1042,
+    "wall_time_cap": 110
+  },
+  "all_submitted": true,
+  "utc": "2026-09-13T01:02:00.900265+00:00",
+  "state": "completed",
+  "running": 0,
+  "queued": 0,
+  "analysis_running": 0,
+  "analysis_completed": 1152,
+  "analysis_failed": 0
+}

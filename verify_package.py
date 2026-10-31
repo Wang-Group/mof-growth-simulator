@@ -17,6 +17,36 @@ def digest(path):
         return hashlib.file_digest(handle, "sha256").hexdigest()
 
 
+def serialized_input_policy():
+    assert not list(ROOT.rglob('*.docx')), 'Word manuscripts must stay outside the package'
+    manifest = json.loads((ROOT / '12_runtime_provenance/source_manifest.json').read_text(encoding='utf-8'))
+    allowed = {}
+    packaged = set()
+    for row in manifest['files']:
+        if not row['source_relative'].endswith('.pkl'):
+            continue
+        assert row['encoding'] == 'identity' and 0 < row['source_bytes'] < 200000
+        path = (ROOT / row['release_path']).resolve()
+        assert path.is_relative_to(ROOT / '12_runtime_provenance/original')
+        assert path.is_file(), path
+        allowed[path] = row
+        packaged.add(path)
+        # Optional materialization is ignored by Git but must retain exact bytes.
+        base = ROOT / 'reproduced_local/runtime_source_tree'
+        materialized = (base / row['source_relative']).resolve()
+        assert materialized.is_relative_to(base)
+        allowed[materialized] = row
+    assert len(packaged) == 28, 'Expected 28 distinct packaged small seed/host inputs'
+    checked = 0
+    for path in ROOT.rglob('*.pkl'):
+        row = allowed.get(path.resolve())
+        assert row is not None, f'Unlisted pickle: {path}'
+        assert path.stat().st_size == row['source_bytes'] and digest(path) == row['source_sha256'], path
+        checked += 1
+    return dict(packaged_seed_host_files=len(packaged), checked_pickles=checked,
+                deserialized=False, unlisted_pickles_allowed=False)
+
+
 def verify(output_dir=None):
     output_dir = Path(output_dir).resolve() if output_dir is not None else ROOT / "reproduced"
     checks = {}
@@ -110,7 +140,7 @@ def verify(output_dir=None):
                  "FigS21_mixed_counts_check", "FigS23_vacancy_fill_check"):
         for ext in ("png", "svg"):
             assert (output_dir / f"{name}.{ext}").stat().st_size > 100
-    assert not list(ROOT.rglob("*.docx")) and not list(ROOT.rglob("*.pkl"))
+    checks['small_seed_host_policy'] = serialized_input_policy()
     return dict(status="PASS", python=platform.python_version(), numpy=np.__version__,
                 pandas=pd.__version__, matplotlib=matplotlib.__version__, checks=checks,
                 limits=["No KMC production rerun", "No new atom-occupancy reconstruction",

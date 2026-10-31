@@ -13,6 +13,7 @@ import sys
 import numpy as np
 import pandas as pd
 from tools.verify_recovered_sources import verify as verify_recovered_sources
+from tools.audit_runtime_and_tables import verify as verify_runtime_and_tables
 
 ROOT = Path(__file__).resolve().parent
 SOURCES = ROOT / '07_publication_sources'
@@ -166,7 +167,8 @@ def main():
     args = parser.parse_args()
     checks = {'sources': manifest_checks(), 'figure5b': variance_checks(), 's25': repair_checks(),
               'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks(),
-              'recovered_sources': verify_recovered_sources()}
+              'recovered_sources': verify_recovered_sources(),
+              'runtime_and_table_provenance': verify_runtime_and_tables()}
     dependencies = dependency_audit()
     decisions = json.loads((ROOT/'metadata/publication_decisions_20261031.json').read_text(encoding='utf-8'))
     require(decisions['S7']['time_coordinate'] == 'raw algorithm time u', 'Wrong S7 publication coordinate')

@@ -1,0 +1,11 @@
+{
+  "submitted": 943,
+  "planned": 943,
+  "completed": 943,
+  "status_counts": {
+    "size_target_reached": 142,
+    "resource_stop": 801
+  },
+  "all_submitted": true,
+  "utc": "2026-09-15T15:50:08.096363+00:00"
+}

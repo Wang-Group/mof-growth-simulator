@@ -1,0 +1,69 @@
+{
+  "author_authorization": "please go ahead with the test and grid run",
+  "source_manifest_sha256": "f4a62281e564537168c75cc711b301b307dcd0506fec42948cb814f7f305b44f",
+  "identities": [
+    "2-F",
+    "2-Me",
+    "2-NO2",
+    "2-OMe",
+    "4-CF3",
+    "4-CN",
+    "4-Cl",
+    "4-F",
+    "4-Me",
+    "4-OMe",
+    "4-tBu",
+    "benzoate"
+  ],
+  "rho_off": [
+    0.1,
+    1,
+    3,
+    10
+  ],
+  "q_atomic_Zr_BDC": [
+    0.3,
+    1,
+    3
+  ],
+  "eta_S_uncrowded": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "s_close": 1,
+  "conditions": 432,
+  "assays": [
+    "nucleation N1->30",
+    "seeded growth N76->126"
+  ],
+  "replicates_per_assay": 32,
+  "grid_records": 27648,
+  "pilot_records": 288,
+  "model_time_windows": {
+    "nucleation": 100,
+    "growth": 20
+  },
+  "wall_caps_seconds": {
+    "nucleation": 120,
+    "growth": 600
+  },
+  "event_caps": {
+    "nucleation": 1000000,
+    "growth": 5000000
+  },
+  "pilot_workers": 16,
+  "maximum_grid_workers": 96,
+  "replicate_geometry_exports": "replicate 0; all invalid dynamic records additionally retained",
+  "large_raw_artifacts_remote": true,
+  "analysis": "first-passage probabilities with censoring and time distributions; conditional growth speed labelled; invalid geometry separate",
+  "pilot_and_grid_overlap": "pilot replicates are deterministic paired repeats; do not pool pilot and grid as independent data",
+  "random_seed_pairing": "seed label common across identities and eta at fixed rho,q,assay,replicate",
+  "not_measured_occupancies": true,
+  "pre_result_predictions": [
+    "Steric discrimination may decrease as solvent preference increases; this is a hypothesis, not a required result",
+    "Uncrowded chemical framework coefficients remain identical at matched rho,q,s_close",
+    "Crowded-site solvent occupancy may exceed its uncrowded preference",
+    "Neither null identity differences nor remaining geometry failures will be hidden"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "common-response-surface-design-v2",
+  "systems": [
+    "uio66",
+    "btb_mol"
+  ],
+  "q_atomic_metal_to_linker": [
+    0.01,
+    0.03,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    5.0,
+    10.0,
+    30.0,
+    100.0
+  ],
+  "node_fraction": [
+    0.0016638935108153079,
+    0.004975124378109453,
+    0.01639344262295082,
+    0.04,
+    0.07692307692307693,
+    0.1111111111111111,
+    0.14285714285714285,
+    0.2,
+    0.25,
+    0.3333333333333333,
+    0.45454545454545453,
+    0.625,
+    0.8333333333333334,
+    0.9433962264150944
+  ],
+  "off_weight_at_external_activity_one": [
+    0.01,
+    0.04,
+    0.16,
+    0.63,
+    2.5,
+    10.0,
+    40.0,
+    160.0,
+    630.0,
+    1500.0
+  ],
+  "SC": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "replicates": 32,
+  "matrix_shape_per_system": [
+    14,
+    10,
+    9
+  ],
+  "conditions_per_system": 1260,
+  "conditions_total": 2520,
+  "traces_total": 80640,
+  "paired_seed_rule": "The same seed is used at matched q/off/SC coordinates in the two geometry engines; paired traces are not counted as independent cross-system evidence.",
+  "range_rationale": {
+    "q": "ordinary-scale density from 0.1 to 10 plus two-sided limiting-reagent controls",
+    "off_weight": "log-spaced 0.01 to 1500, matching the requested three-order-plus range",
+    "SC": "author values plus 0.2, 0.3, and 0.4 to resolve the pilot transition"
+  },
+  "termination": {
+    "target_entities": 30,
+    "event_cap": 100000,
+    "wall_time_cap_s": 90,
+    "fragment_search_depth": 31
+  },
+  "supersedes": "v1 was quarantined because the inherited depth-3 bond-fragment search could retain disconnected components."
+}

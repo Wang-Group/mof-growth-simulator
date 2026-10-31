@@ -1,0 +1,106 @@
+{
+  "utc": "2026-09-14T06:06:54.857062+00:00",
+  "manifest_sha256": "360fa9d18433fc8e316139538f790678ee7fe226647a6400e8c5348be5af13b0",
+  "rows": [
+    {
+      "id": "d00_rho0p1_fixed_r02",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r02/result.json",
+      "source_result_sha256": "cf3195496d2b2aedba1695948cf0361c32de4fda8c5532cf4377cb95c7c471d0",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r02/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "ba82650c8d4f1b2e9ba02084387110fc82f2625d54be03b4d123478e7d482085",
+      "N": 10641,
+      "events": 36279,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r05",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r05/result.json",
+      "source_result_sha256": "7a4594060c8bbf1675cac418195efcc81fab4de78c27821b296abbc95bd8e38f",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r05/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "b160dc4ab3339b3de568e480960ad422dcf829a21b0f55361086c6849c350757",
+      "N": 10858,
+      "events": 36483,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r07",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r07/result.json",
+      "source_result_sha256": "7e591a9f2bc1fdd09d3b12f5db3c2e7670d4c6769da976493a771e588c587c36",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r07/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "6f2678febb8c9859b12c4389f78e1b132e99f47fb8d1ca7f862829219b6b2681",
+      "N": 10482,
+      "events": 36555,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r09",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r09/result.json",
+      "source_result_sha256": "e848062752eb02705fa530fc22093bc46706c106a119a2a7fad2c0277e402e57",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r09/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "e23c347cae2deb5b2881afc01236df78f32b3130c94350cb5ac88a436db34517",
+      "N": 10539,
+      "events": 34791,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r13",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r13/result.json",
+      "source_result_sha256": "96900949bed73552465da6c37fdc02f1d0d90c00b91a40bdd572f944fee8bf38",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r13/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "58db1e53a16605867dd7ee2d9626498a5c7bb876401ede69a4e12ccee5c500ef",
+      "N": 10979,
+      "events": 37754,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r18",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r18/result.json",
+      "source_result_sha256": "2606f46116eed6665edd0b7adf20a67d26bc6c6095a64069e7711e6a737c0bb5",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r18/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "a46cb31de81045a9467273af1b55edcabcdaad3bf652affa5d311e93e086f616",
+      "N": 11069,
+      "events": 36498,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r21",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r21/result.json",
+      "source_result_sha256": "ceeeeba83919474ed32d27cf25e3b9b9fce4b497678ca7ffab015daac2bbb2bb",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r21/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "fb99b4da7a764c23e17d0ee1660c37fffa6b6f1121cebd87ae7217e613dda2f2",
+      "N": 10662,
+      "events": 36680,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r24",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r24/result.json",
+      "source_result_sha256": "efaf2da22d686384947728dc9b0ac9639a2e5f73591ff97bf387478a95d0a19f",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r24/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "da8b77a2b31306cc33eba3786cea32688fb83a8dd869d76e5e15a5ebcab8a5f1",
+      "N": 10750,
+      "events": 36300,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    },
+    {
+      "id": "d00_rho0p1_fixed_r26",
+      "source_result": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r26/result.json",
+      "source_result_sha256": "01c6395c0301130687edc3d8e0959a6391aa0ba5224f070c2645b3b5b5c6ea4d",
+      "source_checkpoint": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_continuation_20260913_v1/traces/d00_rho0p1_fixed_r26/snapshots/terminal/checkpoint.pkl",
+      "source_checkpoint_sha256": "57dc0074eec72b286c1783cecee198af7b4ba312b7c08997f7cfc0105da4febf",
+      "N": 10261,
+      "events": 34237,
+      "source_status": "wall_time_cap",
+      "selection": "skip_N_ge_1000"
+    }
+  ],
+  "all_already_large": true
+}

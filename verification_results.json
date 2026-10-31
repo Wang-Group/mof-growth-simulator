@@ -6,7 +6,7 @@
   "matplotlib": "3.10.0",
   "checks": {
     "copied_sources_hash_verified": 209,
-    "immutable_package_files_hash_verified": 970,
+    "immutable_package_files_hash_verified": 1174,
     "long_growth": {
       "completed": 24,
       "panel_values_matched": 216,
@@ -54,6 +54,12 @@
         584,
         54
       ]
+    },
+    "small_seed_host_policy": {
+      "packaged_seed_host_files": 28,
+      "checked_pickles": 60,
+      "deserialized": false,
+      "unlisted_pickles_allowed": false
     }
   },
   "limits": [
