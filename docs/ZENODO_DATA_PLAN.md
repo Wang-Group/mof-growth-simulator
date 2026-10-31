@@ -16,12 +16,15 @@ belong to GitHub; the other decisions require the handling below.
 | EXTERNAL_BINARY_OR_ARTWORK | 23 | Review individually: necessary smaller checkpoints/raw trajectories may belong in Zenodo; exported artwork is not a substitute for raw data |
 | EXTERNAL_NOTEBOOK_OUTPUTS_NOT_REVIEWED | 4 | Review source cells and embedded outputs first; do not publish credentials, personal output or unrestricted execution history |
 | EXTERNAL_RAW_EXPERIMENT | 213 | NMR acquisition candidates; confirm the exact acquisitions behind the paper's table rows before selecting complete acquisition folders |
-| HASH_MISMATCH_REVIEW_REQUIRED | 3 | Obtain version confirmation and update the provenance ledger; do not publish as the earlier hash-matched version |
+| VERSION_VARIANT_ARCHIVED | 3 | Now included separately in group 10 with both original and shared-revision provenance; final figure adoption still needs confirmation |
 
 These are file counts, not independent simulations or experiments. External
 records total about 606 MB in this selection; this is not the size of a complete
-research archive. Missing corrected engines/models and required molecular
-checkpoints may expand the final archive. The old 26.4 GB long-growth tree is
+research archive. The two corrected engines and eight models are now included
+in group 09; required molecular seeds/hosts/checkpoints may expand the final
+archive. Group 11 retains April 3 sources separately from the April 10 rerun;
+its small saved JSON traces need not be treated as missing external payloads.
+The old 26.4 GB long-growth tree is
 not automatically required in full, but compact summaries alone do not preserve
 every event or molecular state.
 

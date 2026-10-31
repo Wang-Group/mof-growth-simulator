@@ -1,0 +1,21 @@
+{
+  "trace_sha256": "d7be8f68b070266eb327d84e2d62d3cb00b7cb4cfa4008a6652b29e9e7391a89",
+  "runs": [
+    2026040311,
+    2026040312,
+    2026040313,
+    2026040314
+  ],
+  "mean_alignment": "time",
+  "grid_points": 400,
+  "mean_max_abs_difference_on_recalculation": 0,
+  "Zr12_mean_first_zero_seconds": 0.7013265983130673,
+  "run_end_times_seconds": [
+    0.7318066498097089,
+    0.4997239685392869,
+    0.38756309160097474,
+    1.028784237966595
+  ],
+  "source_match_evidence": "Saved replot and SI image have matching mean and individual-trajectory features, including zero line at 0.7013265983 s. Styling/title/axis-label edits differ.",
+  "not_digitized": true
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "role": "matching saved replay trajectories, four runs",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\source_data\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.json",
+    "relative_path": "source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.json",
+    "bytes": 4110673,
+    "source_sha256": "d7be8f68b070266eb327d84e2d62d3cb00b7cb4cfa4008a6652b29e9e7391a89",
+    "copy_sha256": "d7be8f68b070266eb327d84e2d62d3cb00b7cb4cfa4008a6652b29e9e7391a89",
+    "identical": true
+  },
+  {
+    "role": "matching family run summary",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\source_data\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary.json",
+    "relative_path": "source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary.json",
+    "bytes": 14799,
+    "source_sha256": "fcc2bdcdf39127217e47c1826da37c23fb38d430b5dcc6cedd32dab5f2f1ef77",
+    "copy_sha256": "fcc2bdcdf39127217e47c1826da37c23fb38d430b5dcc6cedd32dab5f2f1ef77",
+    "identical": true
+  },
+  {
+    "role": "matching family per-run metadata",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\source_data\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.json",
+    "relative_path": "source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.json",
+    "bytes": 2717,
+    "source_sha256": "1391ef0497b4d8301aebd9a6ce8d9fa26e6264c473f5bb5479815a932a5cfa0c",
+    "copy_sha256": "1391ef0497b4d8301aebd9a6ce8d9fa26e6264c473f5bb5479815a932a5cfa0c",
+    "identical": true
+  },
+  {
+    "role": "matching family per-run metadata",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\source_data\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.json",
+    "relative_path": "source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.json",
+    "bytes": 2718,
+    "source_sha256": "bc40b730a29378e5459b3abae28b849a1f995fedff77a34ad1393fdd6b80c64c",
+    "copy_sha256": "bc40b730a29378e5459b3abae28b849a1f995fedff77a34ad1393fdd6b80c64c",
+    "identical": true
+  },
+  {
+    "role": "matching family per-run metadata",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\source_data\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.json",
+    "relative_path": "source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.json",
+    "bytes": 2722,
+    "source_sha256": "4a6d62feef42b60314b93f8b2e85a98c10e82001efbb8552accf41c16da9f6b4",
+    "copy_sha256": "4a6d62feef42b60314b93f8b2e85a98c10e82001efbb8552accf41c16da9f6b4",
+    "identical": true
+  },
+  {
+    "role": "matching family per-run metadata",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\source_data\\ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.json",
+    "relative_path": "source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.json",
+    "bytes": 2719,
+    "source_sha256": "36a3a82be4e106cd14f6b3b17e70a334484b773319eb3f373a7188219edc44d0",
+    "copy_sha256": "36a3a82be4e106cd14f6b3b17e70a334484b773319eb3f373a7188219edc44d0",
+    "identical": true
+  },
+  {
+    "role": "existing source artwork; not generated by this audit",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.svg",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\original_artwork\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.svg",
+    "relative_path": "original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.svg",
+    "bytes": 296128,
+    "source_sha256": "ca243b5a58cf6a3fc6f236f1f0dacb04b18cfff17ca08e6443230f9ab9af302e",
+    "copy_sha256": "ca243b5a58cf6a3fc6f236f1f0dacb04b18cfff17ca08e6443230f9ab9af302e",
+    "identical": true
+  },
+  {
+    "role": "existing source artwork; not generated by this audit",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.png",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\original_artwork\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.png",
+    "relative_path": "original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.png",
+    "bytes": 758420,
+    "source_sha256": "01047e1023e79ad0d2d603bb37358237eab3de89b4bae8a9ce0cb35d7dd768ff",
+    "copy_sha256": "01047e1023e79ad0d2d603bb37358237eab3de89b4bae8a9ce0cb35d7dd768ff",
+    "identical": true
+  },
+  {
+    "role": "existing source artwork; not generated by this audit",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\output\\mixed_nuclei\\zr6_only_growth_runs\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.svg",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\original_artwork\\oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.svg",
+    "relative_path": "original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.svg",
+    "bytes": 881260,
+    "source_sha256": "509382434dba75c76d61a7a1dc277d92e10832bd320e93987a92db77a0fea79c",
+    "copy_sha256": "509382434dba75c76d61a7a1dc277d92e10832bd320e93987a92db77a0fea79c",
+    "identical": true
+  },
+  {
+    "role": "original replay and plotting script; includes simulation imports",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\plot_zr6_only_growth_trace.py",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\plot_code\\plot_zr6_only_growth_trace.py",
+    "relative_path": "plot_code/plot_zr6_only_growth_trace.py",
+    "bytes": 18752,
+    "source_sha256": "8c13c32c8abd1bd35be898e5036144aeba1e8b7cbccbc4ffbbbbff4058dfe6fa",
+    "copy_sha256": "8c13c32c8abd1bd35be898e5036144aeba1e8b7cbccbc4ffbbbbff4058dfe6fa",
+    "identical": true
+  },
+  {
+    "role": "original optional PNG renderer",
+    "original_path": "D:\\SYH\\课题\\MOL生长模拟\\论文\\data1\\mof-growth-simulator\\UiO-66\\UiO_66_from_amorphous\\Zr6_Zr12_mix\\render_trace_png.py",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\plot_code\\render_trace_png.py",
+    "relative_path": "plot_code/render_trace_png.py",
+    "bytes": 7053,
+    "source_sha256": "b8095bf1f9b47a7ba6d3774468126a2ce2f589192a85f1d13aa48da2b73e470a",
+    "copy_sha256": "b8095bf1f9b47a7ba6d3774468126a2ce2f589192a85f1d13aa48da2b73e470a",
+    "identical": true
+  },
+  {
+    "role": "Word-embedded image for comparison only",
+    "original_path": "C:\\Users\\SYH\\Documents\\ChatGPT\\mol_simulation\\provenance_audit_20261029\\word_FigureS21_20261019.png",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\verification\\SI_S21_reference_20261019.png",
+    "relative_path": "verification/SI_S21_reference_20261019.png",
+    "bytes": 257574,
+    "source_sha256": "e07957380015d3b439ed6b39f0519d19495c1beb4aacb96b41efc992d491a283",
+    "copy_sha256": "e07957380015d3b439ed6b39f0519d19495c1beb4aacb96b41efc992d491a283",
+    "identical": true
+  },
+  {
+    "role": "previously cited alternative replay; does NOT match the SI curve",
+    "original_path": "C:\\Users\\SYH\\Documents\\ChatGPT\\mol_simulation\\provenance_audit_20261029\\mixed_old_trace_schema.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\other_versions\\initialize_structures1\\mixed_old_trace_schema.json",
+    "relative_path": "other_versions/initialize_structures1/mixed_old_trace_schema.json",
+    "bytes": 6181715,
+    "source_sha256": "f08ad2680b27bf1f337aa424de66abb3279d14bbf1e650bc5cdde03cb69fca03",
+    "copy_sha256": "f08ad2680b27bf1f337aa424de66abb3279d14bbf1e650bc5cdde03cb69fca03",
+    "identical": true
+  },
+  {
+    "role": "previously cited alternative replay; does NOT match the SI curve",
+    "original_path": "C:\\Users\\SYH\\Documents\\ChatGPT\\mol_simulation\\provenance_audit_20261029\\mixed_April03_stored_traces.svg",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\other_versions\\initialize_structures1\\mixed_April03_stored_traces.svg",
+    "relative_path": "other_versions/initialize_structures1/mixed_April03_stored_traces.svg",
+    "bytes": 1271581,
+    "source_sha256": "8039a0a55af718ea8b535e57ca350a7dd15d95b728ec80601bafe5565e9b343f",
+    "copy_sha256": "8039a0a55af718ea8b535e57ca350a7dd15d95b728ec80601bafe5565e9b343f",
+    "identical": true
+  },
+  {
+    "role": "previously cited alternative replay; does NOT match the SI curve",
+    "original_path": "C:\\Users\\SYH\\Documents\\ChatGPT\\mol_simulation\\provenance_audit_20261029\\mixed_April03_preview.png",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\other_versions\\initialize_structures1\\mixed_April03_preview.png",
+    "relative_path": "other_versions/initialize_structures1/mixed_April03_preview.png",
+    "bytes": 158287,
+    "source_sha256": "128b6744e4597ddfa9f3ebe9fe6b58426ba87581b64a6fcec12907766dbba955",
+    "copy_sha256": "128b6744e4597ddfa9f3ebe9fe6b58426ba87581b64a6fcec12907766dbba955",
+    "identical": true
+  },
+  {
+    "role": "previously cited alternative replay; does NOT match the SI curve",
+    "original_path": "C:\\Users\\SYH\\Documents\\ChatGPT\\mol_simulation\\provenance_audit_20261029\\mixed_April03_verified.json",
+    "copied_path": "W:\\光催化小组\\0-papers-in-progress\\2025-宋宇航-MOL_growth_mechanism\\MOF_growth_Data\\MOL_figure_source_bundles_20261022_v4\\SI_Figure_S21\\April03_source_copy_20261030\\other_versions\\initialize_structures1\\mixed_April03_verified.json",
+    "relative_path": "other_versions/initialize_structures1/mixed_April03_verified.json",
+    "bytes": 16930,
+    "source_sha256": "9cf54e96c5aee323afefd19cb74f729a3747f1583d5d5b2d05443cd703762ac8",
+    "copy_sha256": "9cf54e96c5aee323afefd19cb74f729a3747f1583d5d5b2d05443cd703762ac8",
+    "identical": true
+  }
+]

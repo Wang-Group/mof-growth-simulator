@@ -1,0 +1,356 @@
+{
+  "created_at": "2026-04-10T16:10:27",
+  "output_dir": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned",
+  "config": {
+    "seed_pkls": [
+      "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl"
+    ],
+    "replicates": 4,
+    "base_rng_seed": 2026040311,
+    "total_steps": 100000,
+    "max_entities_delta": 600,
+    "entropy_correction_coefficient": 0.0,
+    "h2o_dmf_ratio": 3e-10,
+    "dissolution_update_interval_steps": null,
+    "bumping_threshold": 2.0
+  },
+  "candidate": {
+    "label": "fixed_run",
+    "exchange_rxn_time_seconds": 0.1,
+    "zr_conc": 5000.0,
+    "linker_conc": 69.1596872253079,
+    "capping_agent_conc": 180.0,
+    "equilibrium_constant_coefficient": 2.0,
+    "cluster_add_probability": 0.6639116592653332,
+    "formate_benzoate_ratio_t0": 0.6810854768994709
+  },
+  "seed_metadata": {
+    "ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated": {
+      "Zr6_AA": 37,
+      "Zr12_AA": 37,
+      "BDC": 98,
+      "total_entities": 172,
+      "linked_pairs": 175,
+      "ready_pairs": 0,
+      "free_carboxylates": 956
+    }
+  },
+  "runs": [
+    {
+      "seed_name": "ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated",
+      "rng_seed": 2026040311,
+      "steps_completed": 5306,
+      "sim_time_seconds": 0.8742598580427705,
+      "start_counts": {
+        "Zr6_AA": 37,
+        "Zr12_AA": 37,
+        "BDC": 98,
+        "total_entities": 172,
+        "linked_pairs": 175,
+        "ready_pairs": 0,
+        "free_carboxylates": 956
+      },
+      "end_counts": {
+        "Zr6_AA": 287,
+        "Zr12_AA": 0,
+        "BDC": 486,
+        "total_entities": 773,
+        "linked_pairs": 806,
+        "ready_pairs": 165,
+        "free_carboxylates": 2474
+      },
+      "delta_zr6": 250,
+      "delta_zr12": -37,
+      "delta_bdc": 388,
+      "delta_total_entities": 601,
+      "zr12_loss_count": 37,
+      "zr12_remaining_fraction": 0.0,
+      "event_counts": {
+        "link": 143,
+        "grow_attempt": 4393,
+        "grow_success": 3787,
+        "grow_fail": 606,
+        "remove": 770,
+        "zr6_add": 1667,
+        "bdc_add": 2120,
+        "fragment_prune": 216,
+        "fragment_pruned_entities": 2454,
+        "fragment_pruned_components": 216
+      },
+      "end_zr12_summary": {
+        "count": 0,
+        "coord_min": null,
+        "coord_mean": null,
+        "coord_max": null
+      },
+      "seed_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl",
+      "candidate": {
+        "label": "fixed_run",
+        "exchange_rxn_time_seconds": 0.1,
+        "zr_conc": 5000.0,
+        "linker_conc": 69.1596872253079,
+        "capping_agent_conc": 180.0,
+        "equilibrium_constant_coefficient": 2.0,
+        "cluster_add_probability": 0.6639116592653332,
+        "formate_benzoate_ratio_t0": 0.6810854768994709
+      },
+      "pkl_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.pkl",
+      "mol2_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.mol2",
+      "shape_metrics": {
+        "covariance_eigenvalues": [
+          1565.1772234701252,
+          710.161743142744,
+          499.75499471319637
+        ],
+        "principal_axis_ratio_1_2": 2.2039728816475,
+        "principal_axis_ratio_2_3": 1.4210198010132897,
+        "principal_axis_ratio_1_3": 3.131889105717417,
+        "span_xyz": [
+          106.79084344842606,
+          127.40289637188897,
+          173.32982493956544
+        ],
+        "span_ratio_max_min": 1.6230775911351796
+      },
+      "zr12_rows": [],
+      "json_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.json"
+    },
+    {
+      "seed_name": "ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated",
+      "rng_seed": 2026040312,
+      "steps_completed": 6669,
+      "sim_time_seconds": 0.7402777140784814,
+      "start_counts": {
+        "Zr6_AA": 37,
+        "Zr12_AA": 37,
+        "BDC": 98,
+        "total_entities": 172,
+        "linked_pairs": 175,
+        "ready_pairs": 0,
+        "free_carboxylates": 956
+      },
+      "end_counts": {
+        "Zr6_AA": 287,
+        "Zr12_AA": 0,
+        "BDC": 486,
+        "total_entities": 773,
+        "linked_pairs": 800,
+        "ready_pairs": 171,
+        "free_carboxylates": 2474
+      },
+      "delta_zr6": 250,
+      "delta_zr12": -37,
+      "delta_bdc": 388,
+      "delta_total_entities": 601,
+      "zr12_loss_count": 37,
+      "zr12_remaining_fraction": 0.0,
+      "event_counts": {
+        "link": 204,
+        "grow_attempt": 5494,
+        "grow_success": 4933,
+        "grow_fail": 561,
+        "remove": 971,
+        "zr6_add": 2153,
+        "bdc_add": 2780,
+        "fragment_prune": 238,
+        "fragment_pruned_entities": 3395,
+        "fragment_pruned_components": 238
+      },
+      "end_zr12_summary": {
+        "count": 0,
+        "coord_min": null,
+        "coord_mean": null,
+        "coord_max": null
+      },
+      "seed_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl",
+      "candidate": {
+        "label": "fixed_run",
+        "exchange_rxn_time_seconds": 0.1,
+        "zr_conc": 5000.0,
+        "linker_conc": 69.1596872253079,
+        "capping_agent_conc": 180.0,
+        "equilibrium_constant_coefficient": 2.0,
+        "cluster_add_probability": 0.6639116592653332,
+        "formate_benzoate_ratio_t0": 0.6810854768994709
+      },
+      "pkl_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.pkl",
+      "mol2_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.mol2",
+      "shape_metrics": {
+        "covariance_eigenvalues": [
+          1201.1818388391284,
+          914.4891410601433,
+          472.76088573584644
+        ],
+        "principal_axis_ratio_1_2": 1.3135003849762827,
+        "principal_axis_ratio_2_3": 1.9343587184391373,
+        "principal_axis_ratio_1_3": 2.540780921352036,
+        "span_xyz": [
+          152.5869283374936,
+          131.50728044813354,
+          121.170425908505
+        ],
+        "span_ratio_max_min": 1.2592753321896466
+      },
+      "zr12_rows": [],
+      "json_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.json"
+    },
+    {
+      "seed_name": "ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated",
+      "rng_seed": 2026040313,
+      "steps_completed": 7716,
+      "sim_time_seconds": 0.9605392488606901,
+      "start_counts": {
+        "Zr6_AA": 37,
+        "Zr12_AA": 37,
+        "BDC": 98,
+        "total_entities": 172,
+        "linked_pairs": 175,
+        "ready_pairs": 0,
+        "free_carboxylates": 956
+      },
+      "end_counts": {
+        "Zr6_AA": 293,
+        "Zr12_AA": 0,
+        "BDC": 480,
+        "total_entities": 773,
+        "linked_pairs": 801,
+        "ready_pairs": 158,
+        "free_carboxylates": 2558
+      },
+      "delta_zr6": 256,
+      "delta_zr12": -37,
+      "delta_bdc": 382,
+      "delta_total_entities": 601,
+      "zr12_loss_count": 37,
+      "zr12_remaining_fraction": 0.0,
+      "event_counts": {
+        "link": 264,
+        "grow_attempt": 6255,
+        "grow_success": 5779,
+        "grow_fail": 476,
+        "remove": 1197,
+        "zr6_add": 2542,
+        "bdc_add": 3237,
+        "fragment_prune": 289,
+        "fragment_pruned_entities": 4048,
+        "fragment_pruned_components": 289
+      },
+      "end_zr12_summary": {
+        "count": 0,
+        "coord_min": null,
+        "coord_mean": null,
+        "coord_max": null
+      },
+      "seed_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl",
+      "candidate": {
+        "label": "fixed_run",
+        "exchange_rxn_time_seconds": 0.1,
+        "zr_conc": 5000.0,
+        "linker_conc": 69.1596872253079,
+        "capping_agent_conc": 180.0,
+        "equilibrium_constant_coefficient": 2.0,
+        "cluster_add_probability": 0.6639116592653332,
+        "formate_benzoate_ratio_t0": 0.6810854768994709
+      },
+      "pkl_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.pkl",
+      "mol2_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.mol2",
+      "shape_metrics": {
+        "covariance_eigenvalues": [
+          1238.4196478885638,
+          900.4929497361098,
+          504.7954015356314
+        ],
+        "principal_axis_ratio_1_2": 1.3752685662352866,
+        "principal_axis_ratio_2_3": 1.7838770856405033,
+        "principal_axis_ratio_1_3": 2.4533100819087967,
+        "span_xyz": [
+          128.14566267338415,
+          128.14578596442783,
+          170.86140838579303
+        ],
+        "span_ratio_max_min": 1.3333374288389468
+      },
+      "zr12_rows": [],
+      "json_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.json"
+    },
+    {
+      "seed_name": "ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated",
+      "rng_seed": 2026040314,
+      "steps_completed": 5339,
+      "sim_time_seconds": 0.8350970667311339,
+      "start_counts": {
+        "Zr6_AA": 37,
+        "Zr12_AA": 37,
+        "BDC": 98,
+        "total_entities": 172,
+        "linked_pairs": 175,
+        "ready_pairs": 0,
+        "free_carboxylates": 956
+      },
+      "end_counts": {
+        "Zr6_AA": 295,
+        "Zr12_AA": 0,
+        "BDC": 478,
+        "total_entities": 773,
+        "linked_pairs": 801,
+        "ready_pairs": 155,
+        "free_carboxylates": 2584
+      },
+      "delta_zr6": 258,
+      "delta_zr12": -37,
+      "delta_bdc": 380,
+      "delta_total_entities": 601,
+      "zr12_loss_count": 37,
+      "zr12_remaining_fraction": 0.0,
+      "event_counts": {
+        "link": 161,
+        "grow_attempt": 4372,
+        "grow_success": 3487,
+        "grow_fail": 885,
+        "remove": 806,
+        "zr6_add": 1534,
+        "bdc_add": 1953,
+        "fragment_prune": 174,
+        "fragment_pruned_entities": 2070,
+        "fragment_pruned_components": 174
+      },
+      "end_zr12_summary": {
+        "count": 0,
+        "coord_min": null,
+        "coord_mean": null,
+        "coord_max": null
+      },
+      "seed_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated.pkl",
+      "candidate": {
+        "label": "fixed_run",
+        "exchange_rxn_time_seconds": 0.1,
+        "zr_conc": 5000.0,
+        "linker_conc": 69.1596872253079,
+        "capping_agent_conc": 180.0,
+        "equilibrium_constant_coefficient": 2.0,
+        "cluster_add_probability": 0.6639116592653332,
+        "formate_benzoate_ratio_t0": 0.6810854768994709
+      },
+      "pkl_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.pkl",
+      "mol2_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.mol2",
+      "shape_metrics": {
+        "covariance_eigenvalues": [
+          1329.0411977226845,
+          723.6808686952645,
+          486.191393349459
+        ],
+        "principal_axis_ratio_1_2": 1.8365017720018404,
+        "principal_axis_ratio_2_3": 1.4884691061881994,
+        "principal_axis_ratio_1_3": 2.7335761510846237,
+        "span_xyz": [
+          121.09260839539226,
+          134.2283576065169,
+          145.75755655053234
+        ],
+        "span_ratio_max_min": 1.2036866533967454
+      },
+      "zr12_rows": [],
+      "json_path": "C:/Users/yibinjiang/Documents/GitHub/mof-growth-simulator/UiO-66/UiO_66_from_amorphous/Zr6_Zr12_mix/output/mixed_nuclei/zr6_only_growth_runs/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.json"
+    }
+  ]
+}

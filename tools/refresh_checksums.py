@@ -13,7 +13,7 @@ def main():
             continue
         if any(part in {".git", "__pycache__", ".venv", "reproduced", "reproduced_local"} for part in relative.parts):
             continue
-        if path.suffix == ".pyc" or path.name in {"CHECKSUMS.sha256", "verification_results.json", "verification_local.json"}:
+        if path.suffix == ".pyc" or path.name in {"CHECKSUMS.sha256", "verification_results.json", "verification_local.json", "publication_verification.json"}:
             continue
         with path.open("rb") as handle:
             digest = hashlib.file_digest(handle, "sha256").hexdigest()

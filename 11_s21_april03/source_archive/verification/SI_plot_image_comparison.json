@@ -1,0 +1,21 @@
+{
+  "comparison_only": true,
+  "purpose": "Image correspondence check; no data digitization",
+  "Word_image_size": [
+    1473,
+    895
+  ],
+  "source_preview_size": [
+    1472,
+    895
+  ],
+  "resize_for_comparison": "source preview resized to Word image size",
+  "plot_interior_crop_xyxy": [
+    150,
+    125,
+    1450,
+    820
+  ],
+  "mean_absolute_RGB_difference_0_to_255": 1.068830105146652,
+  "interpretation": "Mean and thin trajectories agree visually. Titles/axis labels differ. Not byte-identical images."
+}

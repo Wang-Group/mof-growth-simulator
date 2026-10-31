@@ -5,8 +5,10 @@ figure/table-organized sources supplied for the current manuscript and SI.
 
 **Status: local release candidate, not a complete-paper reproducibility release.**
 New response-surface, seeded/surface-growth and finite-bath code and processed
-data are now included. Some executed geometry dependencies, original analysis
-versions, and author release decisions remain unresolved. Manuscript/SI files,
+data are now included. On 2026-10-31, the exact corrected engines and eight
+models were recovered, plot revisions were separated, and the S21 April 3
+source package was added. Required seeds/checkpoints, the Fig. 5C analysis,
+and author release decisions remain unresolved. Manuscript/SI files,
 large binary trajectories and credentials are not included.
 
 Start with [the publication checklist](docs/PUBLICATION_RELEASE.md), then use
@@ -22,10 +24,13 @@ a file is not the same as reproducing its full scientific workflow.
 | [02_dls](02_dls/) | Original `260316.csv`, processing and Gualtieri fitting code, parameters, and curves | Main Fig. 3E; SI Section S3.2 |
 | [03_btb_trajectory](03_btb_trajectory/) | Compact full step-curve export, original plotting script/PNG, optional exporter, and raw-file fingerprint | Main Fig. 5A; time calibration still pending |
 | [04_btb_motifs](04_btb_motifs/) | Historical 284-row source table, 90 motif classes at entity 1-13, frequencies, and candidate MOL2 structures | Main Fig. 5D; exact structure-to-artwork mapping pending |
-| [05_mixed_zr6_zr12](05_mixed_zr6_zr12/) | Four regenerated-seed growth records, composition traces, conditions, and initial/final structures | Source family associated with SI Figs. S21-S22 |
+| [05_mixed_zr6_zr12](05_mixed_zr6_zr12/) | Four April 10 rerun records, composition traces, conditions, and initial/final structures | Historical comparison family; do not substitute for the April 3 S21 source in group 11 |
 | [06_vacancy_repair](06_vacancy_repair/) | Original-vacancy recovery table, initial/N=2800 structures, historical analysis code, and reference figures | Source family associated with SI Figs. S23-S24 |
 | [07_publication_sources](07_publication_sources/) | 670 byte-verified code/data/configuration copies, retaining supplied figure/table paths and version labels | Current figure/table source bundles; panel-specific limits apply |
 | [08_entropy_inputs](08_entropy_inputs/) | 13 supplied entropy-related tables extracted without changing their contents | Candidate inputs associated with SI Table S6, not verified Gaussian originals |
+| [09_recovered_runtime](09_recovered_runtime/) | Two corrected engines and eight molecular models, recovered byte-identically from the 5090 | Exact UiO-66 engine matches all six recorded runs; full campaign replay still requires upstream inputs |
+| [10_plot_versions](10_plot_versions/) | Historical and shared-directory revisions of Fig. 6/S7 plotting code, including raw-u and seconds S7 renderers | Three former hash discrepancies now have separate, documented versions |
+| [11_s21_april03](11_s21_april03/) | April 3 Zr6/Zr12 saved trajectories, plotting code, artwork and an explicitly separated alternative source | Shared-source README identifies the main variant as S21; final document adoption still requires author confirmation |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical
@@ -50,7 +55,9 @@ Outputs are PNG, editable SVG, and numerical CSV files in [reproduced/](reproduc
 Arial is used for figures; install it to reproduce the original typography.
 `reproduce.py` covers groups 01-06 only. `verify_publication.py` verifies the new
 source hashes, independently recomputes Fig. 5B, checks S25 and smoke-tests the
-pure event selector. It also reports absent executed-code hashes. A passing
+pure event selector. It now verifies the recovered sources, all three mixed-seed
+variant means, and all 18 engine/runner/selector hash references in six UiO-66
+result records. A passing
 check is deliberately not labelled publication-ready.
 
 To draw only one group or preserve the supplied previews:
@@ -72,31 +79,38 @@ presence documents provenance; it does not promise a standalone production KMC
 rerun. The original mixed-seed plotting script actually replays simulations and
 is not invoked by the lightweight renderer.
 
+The new S21 source can be drawn without simulation using the separate plotting-only
+helper documented in [group 11](11_s21_april03/README.md). This does not change
+`reproduce.py --group mixed`, which intentionally still draws the April 10 rerun.
+
 ## Figure Mapping and Evidence
 
 - [FIGURE_MAP.csv](FIGURE_MAP.csv): data-to-current-figure correspondence, plotting entry points, and confidence limits.
 - [metadata/source_manifest.csv](metadata/source_manifest.csv): copied-file hashes, original locations, and documented transformations. Historical paths are provenance only; they are not required at runtime.
 - [metadata/publication_sources.csv](metadata/publication_sources.csv): current source selection, hashes, exclusions and evidence scope for the added figure/table material.
+- [metadata/recovered_sources_20261031.json](metadata/recovered_sources_20261031.json): 42 byte-identical additions with original host/project or shared-directory paths; no login credentials.
 - [publication_verification.json](publication_verification.json): new numerical checks and exact-hash coverage of executed code recorded in six UiO-66 results.
 - [verification_results.json](verification_results.json): results from the complete local verification workflow.
 - [YUHANG_CONFIRMATION_CHECKLIST.md](YUHANG_CONFIRMATION_CHECKLIST.md): outstanding author confirmations and newer missing source families, in Chinese.
 - [docs/HANDOFF_20261022.md](docs/HANDOFF_20261022.md): the detailed original handoff note. Its package paths refer to the repository root, not the `docs/` folder.
 
-The current review baseline, including the changed MS file with its unchanged
+The last document review baseline, including the changed MS file with its unchanged
 October 18 filename, is [recorded here](metadata/release_document_baseline.json).
 Insertions were included and deletions excluded when reading the documents.
 The older [baseline](metadata/document_baseline.json) is retained for history;
-neither document is included or modified.
+neither document is included or modified. The October 31 source integration did
+not re-read or update the manuscripts; it does not assert that this older baseline
+is still the latest document content.
 
 ## Scientific Limits
 
-- **UiO-66 clock:** historical `_s` tables contain raw algorithm time multiplied by 0.175. The SI S7 replot divides by 0.175 to recover `u`; this is not a new physical-clock calibration. The archived Fig. 3D-E rendering retains the old seconds axis for comparison only.
+- **UiO-66 clock:** historical `_s` tables contain raw algorithm time multiplied by 0.175. The existing lightweight S7 replot divides by 0.175 to recover `u`. Group 10 separately preserves the shared-directory seconds renderer, which uses the already-scaled CSV values without multiplying again. Neither convention is a new physical-clock calibration; final MS/SI clock adoption remains an author decision.
 - **Entity 13:** 24 last-saved snapshots form nine reconstructed topologies, not one unique deterministic nucleus. They are not first-passage structures and are separate from the historical 20-run motif cohort. I03 remains a delayed-growth exception.
 - **DLS:** the last two raw columns already include preparation time. The fit uses 40 points spanning 117-1170 s, while the original display ends at 600 s. R-squared = 0.972658 refers to the processed monotonic apparent-progress proxy, not raw diameter or crystallinity. The implementation selects nG from {1, 2, 3}.
 - **BTB trajectory:** all step-plot changes are retained in 148,692 constant segments from 5,000,001 original rows. Interior timestamps within constant segments are omitted. The stored source clock is not relabeled as calibrated milliseconds.
 - **Recovered BTB run:** the Fig. 5A pickle matches archived run Index_2 by SHA-256. Its run-folder source saves raw `timing`, without multiplying by 0.1. The later plotter multiplies by 0.2405; this recovers the numeric plotting convention, not a new physical calibration. See [the recovered source note](03_btb_trajectory/source/README.md).
 - **BTB motifs:** frequencies are historical conditional statistics pooled over 71 encoded conditions, with per-size denominators of 283 or 284; they are not probabilities from the newer response-surface campaign.
-- **Defect examples:** the mixed-seed archive is the regenerated four-repeat family. Vacancy-fill fractions use the original 591 BDC and 54 Zr vacancies as denominators. No new occupancy reconstruction from the omitted large checkpoints was performed.
+- **Defect examples:** three distinct mixed-seed variants are preserved: April 3 `Zr6_Zr12_mix`, April 3 `initialize_structures1`, and the April 10 rerun. Their stored mean-Zr12-zero times differ (0.701327, 0.306265, and 0.270601 s); they must not be relabeled or pooled as the same cohort. Vacancy-fill fractions retain the original 591 BDC and 54 Zr vacancies as denominators. No new occupancy reconstruction from omitted checkpoints was performed.
 
 ## Branch and Release Status
 
@@ -107,7 +121,8 @@ a normal merge-back branch and must not replace the full historical archive.
 
 The numerical source package was assembled on 2026-10-22 from repository state
 `2a9b1897538430c141c24c17cab746b82a26595c` plus documented shared-drive sources.
-The publication-candidate preparation date is 2026-10-29. The prior source repository's Git
+The publication candidate was prepared on 2026-10-29 and extended on 2026-10-31
+with approximately 14.3 MiB of source payload. The prior source repository's Git
 history remains the authority for earlier authorship; this curated root commit
 does not imply sole authorship of archived code.
 

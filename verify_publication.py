@@ -12,6 +12,7 @@ import sys
 
 import numpy as np
 import pandas as pd
+from tools.verify_recovered_sources import verify as verify_recovered_sources
 
 ROOT = Path(__file__).resolve().parent
 SOURCES = ROOT / '07_publication_sources'
@@ -32,7 +33,12 @@ def manifest_checks():
     with (ROOT/'metadata/publication_sources.csv').open(encoding='utf-8', newline='') as stream:
         records = list(csv.DictReader(stream))
     included = [r for r in records if r['decision'] == 'COPY']
-    for row in included:
+    variants = [r for r in records if r['decision'] == 'VERSION_VARIANT_ARCHIVED']
+    require(len(variants) == 3, 'Expected three resolved plot-version records')
+    historical_hashes = {digest(p) for p in (ROOT/'10_plot_versions/historical').rglob('*.py')}
+    for row in variants:
+        require(row['expected_sha256'] in historical_hashes, 'Historical plot version not retained')
+    for row in included + variants:
         path = (ROOT/row['release_path']).resolve()
         require(path.is_relative_to(ROOT), f'Escaping path: {path}')
         require(path.is_file(), f'Missing packaged input: {path}')
@@ -42,7 +48,8 @@ def manifest_checks():
     forbidden = [str(p.relative_to(ROOT)) for p in SOURCES.rglob('*') if p.is_file() and
                  (p.suffix.lower() in {'.docx', '.pkl', '.pickle', '.pem', '.key'} or p.name.startswith('id_rsa'))]
     require(not forbidden, f'Forbidden publication payloads: {forbidden}')
-    return {'verified_copies': len(included), 'decisions': dict(Counter(r['decision'] for r in records)),
+    return {'verified_copies': len(included), 'version_variants_verified': len(variants),
+            'decisions': dict(Counter(r['decision'] for r in records)),
             'copy_bytes': sum(int(r['bytes']) for r in included)}
 
 
@@ -115,8 +122,9 @@ def selector_smoke_checks():
 
 def dependency_audit():
     by_hash = {}
-    for path in SOURCES.rglob('*.py'):
-        by_hash.setdefault(digest(path), []).append(path.relative_to(ROOT).as_posix())
+    for folder in (SOURCES, ROOT/'09_recovered_runtime'):
+        for path in folder.rglob('*.py'):
+            by_hash.setdefault(digest(path), []).append(path.relative_to(ROOT).as_posix())
     results = []
     records = sorted((TABLES/'Table_S7/matched_source_files').glob('uio66*.json'))
     require(len(records) == 6, 'Expected six executed UiO-66 result records')
@@ -129,6 +137,8 @@ def dependency_audit():
                 results.append({'result': path.name, 'component': kind, 'recorded_sha256': expected,
                                 'matching_packaged_paths': by_hash.get(expected, []),
                                 'status': 'EXACT_HASH_PRESENT' if expected in by_hash else 'EXECUTED_VERSION_NOT_PACKAGED'})
+    require(all(r['status'] == 'EXACT_HASH_PRESENT' for r in results),
+            'A recorded UiO-66 engine/runner/selector version is missing')
     return results
 
 
@@ -155,7 +165,8 @@ def main():
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
     checks = {'sources': manifest_checks(), 'figure5b': variance_checks(), 's25': repair_checks(),
-              'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks()}
+              'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks(),
+              'recovered_sources': verify_recovered_sources()}
     dependencies = dependency_audit()
     report = {'status': 'PASS_FOR_DECLARED_LOCAL_CHECKS', 'publication_ready': False,
               'checks': checks, 'executed_code_coverage': dependencies,

@@ -4,11 +4,12 @@
   "checks": {
     "sources": {
       "verified_copies": 670,
+      "version_variants_verified": 3,
       "decisions": {
         "COPY": 670,
         "EXTERNAL_BINARY_OR_ARTWORK": 23,
         "EXTERNAL_LARGE_FILE": 3,
-        "HASH_MISMATCH_REVIEW_REQUIRED": 3,
+        "VERSION_VARIANT_ARCHIVED": 3,
         "EXTERNAL_NOTEBOOK_OUTPUTS_NOT_REVIEWED": 4,
         "EXTERNAL_RAW_EXPERIMENT": 213
       },
@@ -58,6 +59,95 @@
       "entropy_tables_verified": 13,
       "btb_run_source_files_verified": 2,
       "scope": "Byte verification only; not Gaussian recalculation or historical KMC rerun"
+    },
+    "recovered_sources": {
+      "status": "PASS",
+      "copied_files": 42,
+      "copy_bytes": 15005026,
+      "groups": {
+        "09_recovered_runtime": 10,
+        "10_plot_versions": 8,
+        "11_s21_april03": 24
+      },
+      "python_syntax_checks": 13,
+      "version_pairs_verified": 3,
+      "models": {
+        "BDC_explicit_H.mol": {
+          "atoms": 16,
+          "explicit_hydrogens": 4
+        },
+        "BTBa.mol": {
+          "atoms": 48,
+          "explicit_hydrogens": 15
+        },
+        "BTBb.mol": {
+          "atoms": 48,
+          "explicit_hydrogens": 15
+        },
+        "BTC.mol": {
+          "atoms": 18,
+          "explicit_hydrogens": 3
+        },
+        "Zr12.mol": {
+          "atoms": 88,
+          "explicit_hydrogens": 0
+        },
+        "Zr12_AA.mol": {
+          "atoms": 106,
+          "explicit_hydrogens": 0
+        },
+        "Zr6.mol": {
+          "atoms": 50,
+          "explicit_hydrogens": 0
+        },
+        "Zr6_AA.mol": {
+          "atoms": 62,
+          "explicit_hydrogens": 0
+        }
+      },
+      "mixed_seed_variants": {
+        "april03_zr6_zr12_mix": {
+          "path": "11_s21_april03/source_archive/source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.json",
+          "sha256": "d7be8f68b070266eb327d84e2d62d3cb00b7cb4cfa4008a6652b29e9e7391a89",
+          "repeats": 4,
+          "grid_points": 400,
+          "mean_max_absolute_error": {
+            "Zr12_AA": 0.0,
+            "Zr6_AA": 0.0,
+            "BDC": 0.0
+          },
+          "first_mean_zr12_zero_time_s_as_saved": 0.7013265983130673
+        },
+        "april03_initialize_structures1": {
+          "path": "11_s21_april03/source_archive/other_versions/initialize_structures1/mixed_old_trace_schema.json",
+          "sha256": "f08ad2680b27bf1f337aa424de66abb3279d14bbf1e650bc5cdde03cb69fca03",
+          "repeats": 4,
+          "grid_points": 400,
+          "mean_max_absolute_error": {
+            "Zr12_AA": 0.0,
+            "Zr6_AA": 0.0,
+            "BDC": 0.0
+          },
+          "first_mean_zr12_zero_time_s_as_saved": 0.3062654532685836
+        },
+        "april10_rerun": {
+          "path": "05_mixed_zr6_zr12/data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned_rerun_20260410.summary_trace.json",
+          "sha256": "827fa5f219fad17a6602fe50193996b80c020756b810afb5620f2397fadc3be6",
+          "repeats": 4,
+          "grid_points": 400,
+          "mean_max_absolute_error": {
+            "Zr12_AA": 0.0,
+            "Zr6_AA": 0.0,
+            "BDC": 0.0
+          },
+          "first_mean_zr12_zero_time_s_as_saved": 0.270600817133439
+        }
+      },
+      "limits": [
+        "No KMC execution",
+        "No independent MS/SI artwork matching",
+        "Stored time conventions are not newly calibrated physical clocks"
+      ]
     }
   },
   "executed_code_coverage": [
@@ -65,8 +155,10 @@
       "result": "uio66_growth_N10000_sc1_q1_rho0p1_rep00.json",
       "component": "engine",
       "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
-      "matching_packaged_paths": [],
-      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+      "matching_packaged_paths": [
+        "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
     },
     {
       "result": "uio66_growth_N10000_sc1_q1_rho0p1_rep00.json",
@@ -90,8 +182,10 @@
       "result": "uio66_growth_N10000_sc1_q1_rho0p3_rep00.json",
       "component": "engine",
       "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
-      "matching_packaged_paths": [],
-      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+      "matching_packaged_paths": [
+        "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
     },
     {
       "result": "uio66_growth_N10000_sc1_q1_rho0p3_rep00.json",
@@ -115,8 +209,10 @@
       "result": "uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2.json",
       "component": "engine",
       "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
-      "matching_packaged_paths": [],
-      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+      "matching_packaged_paths": [
+        "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
     },
     {
       "result": "uio66_growth_N10000_sc1_q1_rho10_rep00_replay_v2.json",
@@ -140,8 +236,10 @@
       "result": "uio66_growth_N10000_sc1_q1_rho1_rep00.json",
       "component": "engine",
       "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
-      "matching_packaged_paths": [],
-      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+      "matching_packaged_paths": [
+        "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
     },
     {
       "result": "uio66_growth_N10000_sc1_q1_rho1_rep00.json",
@@ -165,8 +263,10 @@
       "result": "uio66_growth_N10000_sc1_q1_rho30_rep00.json",
       "component": "engine",
       "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
-      "matching_packaged_paths": [],
-      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+      "matching_packaged_paths": [
+        "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
     },
     {
       "result": "uio66_growth_N10000_sc1_q1_rho30_rep00.json",
@@ -190,8 +290,10 @@
       "result": "uio66_growth_N10000_sc1_q1_rho3_rep00.json",
       "component": "engine",
       "recorded_sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
-      "matching_packaged_paths": [],
-      "status": "EXECUTED_VERSION_NOT_PACKAGED"
+      "matching_packaged_paths": [
+        "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py"
+      ],
+      "status": "EXACT_HASH_PRESENT"
     },
     {
       "result": "uio66_growth_N10000_sc1_q1_rho3_rep00.json",

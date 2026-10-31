@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "import_date": "2026-10-31",
+  "base_commit": "d2fd39a47d5deb000e05130fc01c1ef529bbbd7e",
+  "index_provenance": {
+    "provided_archive_sha256": "dcbc91afdab03ac673433efeca0e112e7742bfc6c69a6ba0aacf72f1b34f38cf",
+    "remote_file_index_sha256": "47726db192f5dcebe33cbe642bf8c17c098896463430ac51cc2d8a3e683f1c71"
+  },
+  "files": [
+    {
+      "release_path": "09_recovered_runtime/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py",
+      "bytes": 45579,
+      "sha256": "4cda9182267ef4fc29a5537a60c23d0fd592b27c92221c7dc1b7731b291e24e9",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/code/candidate_corrected/UiO66_Assembly_Large_Correction_20250811_candidate.py",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/code/candidate_corrected/MOL_Assembly_Large_Correction_20250811_candidate.py",
+      "bytes": 45336,
+      "sha256": "65d3bc03ec853b789d1f94fe36dc935894bb03083d7620028f8507aa5ff2adc2",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/code/candidate_corrected/MOL_Assembly_Large_Correction_20250811_candidate.py",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/approved_derived/BDC_explicit_H.mol",
+      "bytes": 1427,
+      "sha256": "b67069e53051b2aefbb273b6a08d9339191486cf8ab1b261420686ef12847864",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/approved_derived/BDC_explicit_H.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/BTC.mol",
+      "bytes": 1640,
+      "sha256": "4d116680b211ab7fc1e4ec66f7d1c6284d7568c8e8d6b812a1c9ae48d290878f",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/BTC.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/Zr6_AA.mol",
+      "bytes": 5824,
+      "sha256": "ae2b840ae1f9e8ff9699623d008be96c50bf3a1ded2d863be8afeaed6c860b2e",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr6_AA.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/Zr12_AA.mol",
+      "bytes": 10424,
+      "sha256": "25094eb84259a9e0c1cc088c767d796843eb3af1d949e872a7939937d9032ae1",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr12_AA.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/Zr6.mol",
+      "bytes": 4807,
+      "sha256": "14f008e531dedfac90f315f4f4ccca3149b34990edab3798c5e6e88b3b97a000",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr6.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/Zr12.mol",
+      "bytes": 8898,
+      "sha256": "c4d435b3072dda2173463cc3d82f5c711c79348e71e8c3189e46a588376a3022",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/Zr12.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/BTBa.mol",
+      "bytes": 4253,
+      "sha256": "1f62f1bcfd2c28ba98089e34e5b4de55dbd16c5e7c5a046ddfe40b05027f021f",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/BTBa.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "09_recovered_runtime/models/workstation_source_20260831/mol/BTBb.mol",
+      "bytes": 4253,
+      "sha256": "4dbef310958f61732a7b9bb6cbf2b7670fca71aead27d8eddd2ab5258e142ee4",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "authorized read-only SSH export",
+        "host_alias": "5090",
+        "project_path": "/home/wave/MOL_growth_recalculation_20260830/models/workstation_source_20260831/mol/BTBb.mol",
+        "audit_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/historical/figure6/build_figure7_kinetic_window_v2.py",
+      "bytes": 16082,
+      "sha256": "b2a288c3096c7da83da0ef2008336ebf67913d667b7f8e813e971f86443e421e",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S32/content_checked_20261023/original_code/build_figure7_kinetic_window_v2.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/historical/common/panel_runtime.py",
+      "bytes": 20286,
+      "sha256": "15d48882e1c9c7b2aedaf2c25e12282c2caac3781c32516b34d41aafe479a90f",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S7/content_checked_20261023/backup_raw_u_20261027/panel_runtime.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/shared_20261031/MS_Figure_6/original_code/build_figure7_kinetic_window_v2.py",
+      "bytes": 16082,
+      "sha256": "2f1f6ce0bfc1b0c4c94ce2a86e2b32b96ff3172504673d27e75aa5cb2ae5ec36",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_6/content_checked_20261023/original_code/build_figure7_kinetic_window_v2.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/shared_20261031/MS_Figure_6/panel_runtime.py",
+      "bytes": 20467,
+      "sha256": "113e81d846f2cb1059e18fa8ee6347599e80739c02c108fd6fb63c181af169c6",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_6/content_checked_20261023/panel_runtime.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/shared_20261031/MS_Figure_6/figure6B_reference_style.py",
+      "bytes": 4271,
+      "sha256": "49f14a969d8ce4dfe8c804e34d8f4d59b8d40079613c07659b31f7618341bef3",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/MS_Figure_6/content_checked_20261023/figure6B_reference_style.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/shared_20261031/SI_Figure_S7/panel_runtime.py",
+      "bytes": 20347,
+      "sha256": "db715f6e27474340cd0e1b6ce3195184e8fc7dcf08d8dc9890d1133452e9ff64",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S7/content_checked_20261023/panel_runtime.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/shared_20261031/SI_Figure_S7/original_code/export_figure_s7_panels.py",
+      "bytes": 12765,
+      "sha256": "9d86c33c640afb6915285401c0168eff80852d8d6e6380478fa9d900fe37cc35",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S7/content_checked_20261023/original_code/export_figure_s7_panels.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "10_plot_versions/shared_20261031/SI_Figure_S7/original_code/export_figure_s7_panels_seconds.py",
+      "bytes": 13707,
+      "sha256": "24edbc6013ad26358a8282c400cfd3ab2aee8971905037c689b01d6fb5a8034d",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S7/content_checked_20261023/original_code/export_figure_s7_panels_seconds.py",
+        "snapshot_date": "2026-10-31"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.png",
+      "bytes": 758420,
+      "sha256": "01047e1023e79ad0d2d603bb37358237eab3de89b4bae8a9ce0cb35d7dd768ff",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.png",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.svg",
+      "bytes": 296128,
+      "sha256": "ca243b5a58cf6a3fc6f236f1f0dacb04b18cfff17ca08e6443230f9ab9af302e",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.replot.svg",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.svg",
+      "bytes": 881260,
+      "sha256": "509382434dba75c76d61a7a1dc277d92e10832bd320e93987a92db77a0fea79c",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/original_artwork/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.svg",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/other_versions/initialize_structures1/mixed_April03_preview.png",
+      "bytes": 158287,
+      "sha256": "128b6744e4597ddfa9f3ebe9fe6b58426ba87581b64a6fcec12907766dbba955",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/other_versions/initialize_structures1/mixed_April03_preview.png",
+        "snapshot_date": "2026-10-31",
+        "variant": "initialize_structures1 alternative"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/other_versions/initialize_structures1/mixed_April03_stored_traces.svg",
+      "bytes": 1271581,
+      "sha256": "8039a0a55af718ea8b535e57ca350a7dd15d95b728ec80601bafe5565e9b343f",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/other_versions/initialize_structures1/mixed_April03_stored_traces.svg",
+        "snapshot_date": "2026-10-31",
+        "variant": "initialize_structures1 alternative"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/other_versions/initialize_structures1/mixed_April03_verified.json",
+      "bytes": 16930,
+      "sha256": "9cf54e96c5aee323afefd19cb74f729a3747f1583d5d5b2d05443cd703762ac8",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/other_versions/initialize_structures1/mixed_April03_verified.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "initialize_structures1 alternative"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/other_versions/initialize_structures1/mixed_old_trace_schema.json",
+      "bytes": 6181715,
+      "sha256": "f08ad2680b27bf1f337aa424de66abb3279d14bbf1e650bc5cdde03cb69fca03",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/other_versions/initialize_structures1/mixed_old_trace_schema.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "initialize_structures1 alternative"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/plot_code/plot_zr6_only_growth_trace.py",
+      "bytes": 18752,
+      "sha256": "8c13c32c8abd1bd35be898e5036144aeba1e8b7cbccbc4ffbbbbff4058dfe6fa",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/plot_code/plot_zr6_only_growth_trace.py",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/plot_code/render_trace_png.py",
+      "bytes": 7053,
+      "sha256": "b8095bf1f9b47a7ba6d3774468126a2ce2f589192a85f1d13aa48da2b73e470a",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/plot_code/render_trace_png.py",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/plot_code/replot_saved_trace.py",
+      "bytes": 2836,
+      "sha256": "fefa87dfb1b7f4f74ac16c2f478568d6bc65a630b746ddc49e38adab487c1a15",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/plot_code/replot_saved_trace.py",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/README_来源说明.md",
+      "bytes": 2575,
+      "sha256": "3ffd63a97f834bbd254a80734621467c0f4d6a8625be51f3f63c089d74f8445f",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/README_来源说明.md",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/redrawn_verification/S21_saved_trace_verification.png",
+      "bytes": 286308,
+      "sha256": "23e7e2771fba3fefebfef7ec9d6041be0c400f435e653b21f4b33abbf41b7b90",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/redrawn_verification/S21_saved_trace_verification.png",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/redrawn_verification/S21_saved_trace_verification.svg",
+      "bytes": 436965,
+      "sha256": "0ea189d6e8e0894e0cf7467a16e26e1aa7b77fe922fec20205e156d57e7bfe89",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/redrawn_verification/S21_saved_trace_verification.svg",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/mean_trace_checked.csv",
+      "bytes": 19744,
+      "sha256": "d5516e3b41bdc47a15abd67819bf994bd72d04f092e7fca76a2a3723378b08f1",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/mean_trace_checked.csv",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary.json",
+      "bytes": 14799,
+      "sha256": "fcc2bdcdf39127217e47c1826da37c23fb38d430b5dcc6cedd32dab5f2f1ef77",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.json",
+      "bytes": 4110673,
+      "sha256": "d7be8f68b070266eb327d84e2d62d3cb00b7cb4cfa4008a6652b29e9e7391a89",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/oneshot_regenerated_seed160_eq2_cap180_zr5000_pruned.summary_trace.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.json",
+      "bytes": 2717,
+      "sha256": "1391ef0497b4d8301aebd9a6ce8d9fa26e6264c473f5bb5479815a932a5cfa0c",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep01__seed2026040311.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.json",
+      "bytes": 2718,
+      "sha256": "bc40b730a29378e5459b3abae28b849a1f995fedff77a34ad1393fdd6b80c64c",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep02__seed2026040312.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.json",
+      "bytes": 2722,
+      "sha256": "4a6d62feef42b60314b93f8b2e85a98c10e82001efbb8552accf41c16da9f6b4",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep03__seed2026040313.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.json",
+      "bytes": 2719,
+      "sha256": "36a3a82be4e106cd14f6b3b17e70a334484b773319eb3f373a7188219edc44d0",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/source_data/ratio_controlled_mixed_seed_160_seed612_frac055_fill6_regenerated__zr6only_opt__rep04__seed2026040314.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/verification/mean_recalculation.json",
+      "bytes": 684,
+      "sha256": "707eaa3c518f4ccfda3513f2886f12dd6ca3b89c8a4a9a301c09b5dba641ad71",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/verification/mean_recalculation.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/verification/SI_plot_image_comparison.json",
+      "bytes": 536,
+      "sha256": "4a3efc6f5da1980312c54724a62deade9c7ec2d6bde7f510039f5475d9977580",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/verification/SI_plot_image_comparison.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/verification/SI_S21_reference_20261019.png",
+      "bytes": 257574,
+      "sha256": "e07957380015d3b439ed6b39f0519d19495c1beb4aacb96b41efc992d491a283",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/verification/SI_S21_reference_20261019.png",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    },
+    {
+      "release_path": "11_s21_april03/source_archive/verification/source_copy_manifest.json",
+      "bytes": 14882,
+      "sha256": "5247808a9995f4d2e4f189cb582f30a2923197e541055ace0deec7cc36b0bb24",
+      "operation": "byte-identical copy",
+      "origin": {
+        "kind": "shared project file",
+        "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S21/April03_source_copy_20261030/verification/source_copy_manifest.json",
+        "snapshot_date": "2026-10-31",
+        "variant": "Zr6_Zr12_mix April03 source package"
+      }
+    }
+  ],
+  "limits": [
+    "No KMC rerun",
+    "No MS/SI modification or fresh document matching",
+    "Archived paths are provenance, not runtime requirements"
+  ]
+}
