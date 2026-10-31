@@ -4,3 +4,4 @@
 *.png binary
 *.xlsx binary
 *.gz binary
+*.pkl binary

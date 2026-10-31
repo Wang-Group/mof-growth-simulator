@@ -18,6 +18,15 @@ Thumbs.db
 *.tar.gz
 *.log
 
+# Audited small seed/host inputs only; verify_package.py enforces the hash allowlist.
+!/12_runtime_provenance/original/frozen_seed_ensemble_v2/btb_network/btb_mol_seed_0[0-7].pkl
+!/12_runtime_provenance/original/frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_0[0-7].pkl
+!/12_runtime_provenance/original/frozen_seed_ensemble_v2/uio66/uio66_seed_0[0-7].pkl
+!/12_runtime_provenance/original/reviewed_structures/UiO66_n3_current_explicit_H.pkl
+!/12_runtime_provenance/original/reviewed_structures/UiO66_n3_fixed_host.pkl
+!/12_runtime_provenance/original/reviewed_structures/mof808_ccdc1871192_shell2.pkl
+!/12_runtime_provenance/original/btb_high_rho_N1000_20260907_v1/snapshot/reviewed_structures/btb_q10_off10_sc2_seed1708319965_n30.pkl
+
 # Author documents and credentials never belong in this data branch.
 *.docx
 *.doc
