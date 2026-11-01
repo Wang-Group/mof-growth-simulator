@@ -277,6 +277,12 @@ def table_checks():
                                'column': column, 'si_value': value, 'source_value': original[column],
                                'absolute_difference': error, 'status': 'MATCH_AT_DISPLAYED_PRECISION'})
     require(len(comparison) == 18, 'S6 expected 18 values')
+    decisions = json.loads((ROOT / 'metadata/publication_decisions_20261031.json').read_text(encoding='utf-8'))
+    s8 = decisions['TableS8']
+    require(s8['status'] == 'CLOSED_AUTHOR_CONFIRMED', 'S8 closure must retain its author-confirmation basis')
+    require(s8['additional_raw_record_request'] is False, 'S8 must not request another raw record')
+    require(s8['observations'] == len(tables['Table S8']['rows']) - 1 == 12 and s8['time_unit'] == 'min',
+            'S8 confirmation must refer to the unchanged 12-row minute-scale table')
     report = {
         'source_files_checked': len(manifest['files']),
         'selected_document_hashes': {d['file']: d['sha256'] for d in documents},
@@ -292,7 +298,7 @@ def table_checks():
                'status': 'DERIVED_NUMERICAL_TABLE_MATCHED_NOT_FULL_CALCULATION_REPRODUCED',
                'limit': 'Need actual entropy computation script, geometry-to-species mapping and solvent/model inputs. The SI describes a solution-entropy correction; Gaussian outputs are not assumed mandatory.'},
         's8': {'displayed_observations': len(tables['Table S8']['rows']) - 1,
-               'status': 'ORIGINAL_TURBIDITY_OBSERVATION_RECORDS_NOT_LOCATED',
+               'status': s8['status'], 'source_confirmation': s8,
                'limit': '12 observations in minutes, not the single in-situ DLS size trace. Do not infer extra repeats.'},
     }
     return report, comparison

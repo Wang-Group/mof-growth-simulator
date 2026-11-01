@@ -48,10 +48,14 @@ parameter manifests are already packaged; they need not be requested again.
    Distinguish independent repeats from continuations and unsuccessful/censored
    runs. Include a manifest linking raw inputs to the GitHub processed tables.
 3. **Experimental and entropy-calculation inputs:** author-confirmed raw
-   acquisitions, S8 turbidity observation records, and the actual geometry,
+   acquisitions and the actual geometry,
    solvent/model inputs and scripts behind the solution-entropy calculation.
    Include Gaussian inputs/outputs only if they were actually used. S6 now matches
    its derived source CSV, but this is not a full upstream calculation replay.
+
+Table S8's existing 12-row time table has been confirmed by the author as the
+original record. Its source request is closed; this archive plan does not request
+another observation sheet or a newly created Excel file for S8.
 
 ## Release Procedure
 

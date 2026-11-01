@@ -486,7 +486,18 @@
     },
     "s8": {
       "displayed_observations": 12,
-      "status": "ORIGINAL_TURBIDITY_OBSERVATION_RECORDS_NOT_LOCATED",
+      "status": "CLOSED_AUTHOR_CONFIRMED",
+      "source_confirmation": {
+        "status": "CLOSED_AUTHOR_CONFIRMED",
+        "confirmation_date": "2026-10-31",
+        "closure_recorded_date": "2026-11-01",
+        "evidence_type": "Author confirmation accepted by the user; closure explicitly requested by the user",
+        "source": "The existing 12-row Table S8 is the original recorded first-visible-turbidity time table",
+        "observations": 12,
+        "time_unit": "min",
+        "additional_raw_record_request": false,
+        "scope": "Provenance request closed; not an independent experimental remeasurement or a DLS trace"
+      },
       "limit": "12 observations in minutes, not the single in-situ DLS size trace. Do not infer extra repeats."
     }
   }

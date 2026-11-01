@@ -10,8 +10,10 @@ models were recovered, plot revisions were separated, and the S21 April 3
 source package was added. A second recovery now links small seeds/hosts, exact
 code versions and 975 external checkpoint/result pairs; S6's 18 displayed
 numbers match the recovered numerical source. Remaining gaps include the Fig. 5C
-analysis, final literature coding, upstream entropy computation, original S8
-turbidity observations and author release decisions. Manuscript/SI files,
+analysis, final S1/S2 literature coding, upstream S6 entropy computation and
+author release decisions. **Table S8 is closed:** the author confirmed that the
+existing table is the original recorded turbidity-time data; no additional raw
+record is requested (status updated 2026-11-01). Manuscript/SI files,
 large binary trajectories and credentials are not included.
 
 Start with [the publication checklist](docs/PUBLICATION_RELEASE.md), then use
@@ -35,7 +37,7 @@ a file is not the same as reproducing its full scientific workflow.
 | [10_plot_versions](10_plot_versions/) | Historical and shared-directory revisions of Fig. 6/S7 plotting code, including raw-u and seconds S7 renderers | Three former hash discrepancies now have separate, documented versions |
 | [11_s21_april03](11_s21_april03/) | April 3 Zr6/Zr12 saved trajectories, plotting code, artwork and an explicitly separated alternative source | Shared-source README identifies the main variant as S21; final document adoption still requires author confirmation |
 | [12_runtime_provenance](12_runtime_provenance/) | 206 recovered source locations, small seed/host inputs, 197 exact code/seed references, 1327 lineage rows and remote checkpoint hashes | Separate campaign families; six S7 results and four sampled historical results linked to seed/RNG/parameters/code |
-| [13_table_source_audit](13_table_source_audit/) | Original S1 selection evidence, final-view SI table extracts and S6 value comparison | S1 has 69 DOI records but 68 publication groups; S2 final labels and S8 original turbidity records remain missing |
+| [13_table_source_audit](13_table_source_audit/) | Original S1 selection evidence, final-view SI table extracts and S6 value comparison | S1/S2 classification and S6 upstream calculation remain pending; S8 is closed by author confirmation |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical
@@ -101,7 +103,7 @@ The seconds renderer is retained only as a historical version.
 - [metadata/source_manifest.csv](metadata/source_manifest.csv): copied-file hashes, original locations, and documented transformations. Historical paths are provenance only; they are not required at runtime.
 - [metadata/publication_sources.csv](metadata/publication_sources.csv): current source selection, hashes, exclusions and evidence scope for the added figure/table material.
 - [metadata/recovered_sources_20261031.json](metadata/recovered_sources_20261031.json): 42 byte-identical additions with original host/project or shared-directory paths; no login credentials.
-- [metadata/publication_decisions_20261031.json](metadata/publication_decisions_20261031.json): user-confirmed S7 time coordinate and Fig. 5D structure status, distinguished from independently tested facts.
+- [metadata/publication_decisions_20261031.json](metadata/publication_decisions_20261031.json): S7 time coordinate, Fig. 5D structure status and the S8 author-confirmed closure; confirmations are distinguished from independent checks.
 - [metadata/runtime_table_audit_20261031.json](metadata/runtime_table_audit_20261031.json): latest seed/code/checkpoint and S1/S2/S6/S8 audit, including explicit limits and document hashes.
 - [publication_verification.json](publication_verification.json): new numerical checks and exact-hash coverage of executed code recorded in six UiO-66 results.
 - [verification_results.json](verification_results.json): results from the complete local verification workflow.

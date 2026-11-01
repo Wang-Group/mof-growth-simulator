@@ -52,7 +52,12 @@ class SourceIntegrityTests(unittest.TestCase):
         self.assertEqual(report['runtime']['unmatched_version_references'], [])
         self.assertEqual(report['tables']['s1']['distinct_publication_groups'], 68)
         self.assertEqual(report['tables']['s6']['matched_values'], 18)
-        self.assertIn('NOT_LOCATED', report['tables']['s8']['status'])
+        self.assertEqual(report['tables']['s8']['status'], 'CLOSED_AUTHOR_CONFIRMED')
+        self.assertFalse(report['tables']['s8']['source_confirmation']['additional_raw_record_request'])
+        self.assertEqual(report['tables']['s8']['displayed_observations'], 12)
+        self.assertEqual(report['tables']['s1']['status'], 'COUNTING_UNIT_REQUIRES_AUTHOR_CONFIRMATION')
+        self.assertEqual(report['tables']['s2']['status'], 'FINAL_31_PUBLICATION_SELECTION_AND_DIRECTION_CODING_NOT_LOCATED')
+        self.assertEqual(report['tables']['s6']['status'], 'DERIVED_NUMERICAL_TABLE_MATCHED_NOT_FULL_CALCULATION_REPRODUCED')
 
     def test_packaged_pickle_allowlist(self):
         from verify_package import serialized_input_policy

@@ -49,13 +49,21 @@ mapping and solvent/model inputs. The inspected SI describes a solution-entropy
 correction, so a missing Gaussian output is not automatically the right diagnosis.
 Existing mass/inertia tables in group 08 do not by themselves establish that full chain.
 
-## S8: Original Turbidity Records Still Missing
+## S8: Closed By Author Confirmation
 
-The 12 supplied acetic-acid/induction-time observations are retained in the
+On 2026-10-31 the author confirmed that the existing Table S8 is the original
+recorded time table. The user accepted this clarification and explicitly closed
+the source request on 2026-11-01. No additional observation sheet or separately
+created spreadsheet is requested. The decision is recorded in
+`../metadata/publication_decisions_20261031.json` under `TableS8`.
+This confirmation supersedes earlier missing-source notes in archived material;
+those historical source files retain their original bytes.
+
+The 12 supplied acetic-acid/induction-time observations remain unchanged in the
 selected-table extraction. Times are in minutes and refer to first visible
-turbidity, not the in-situ DLS particle-size trace. The original sample-level
-observation sheets, preparation/start times and observation timestamps were not
-located. No extra repeats or uncertainty estimates are inferred.
+turbidity, not the in-situ DLS particle-size trace. This is author-confirmed
+provenance, not independent experimental remeasurement. No extra repeats or
+uncertainty estimates are inferred. S1/S2 and S6 remain pending as described above.
 
 The previously recovered `260316.csv` DLS trace supports the DLS fit in group 02;
 it must not be relabelled as the original source for these 12 observations.
