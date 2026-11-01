@@ -31,14 +31,19 @@ or a pending correction. Author confirmation is distinct from independently
 re-reading all cited papers or reconstructing the final direction labels, which
 this update does not claim to have done.
 
-## S2: Latest MS/SI Count Reconciliation Pending
+## S2: Confirmed 23 Of 30, MS/SI Aligned
 
-The preserved extraction totals 31 papers and is historical. The November 1
-read-only check of the newer MS/SI found a total of 30 in both, but **22**
-smaller/thinner outcomes in the MS versus **23** in SI Table S2. The SI classes
-are 23 + 2 + 2 + 1 + 2. Reconcile that difference and identify the corresponding
-final row-level classification; do not silently use the old 31-paper table.
-The broader catalogue in group 07 is not a substitute for final classification.
+The author confirmed that the checked study must be retained and the adopted
+result is **23 smaller/thinner outcomes among 30 publications**. A read-only
+final-view check of the subsequently updated NAS MS and SI found agreement on
+23/30; the SI classes are 23 + 2 + 2 + 1 + 2. The count discrepancy is closed.
+Do not remove that study or revert to 22 without a new author decision.
+
+The packaged extraction totalling 31 papers and the earlier MS count of 22
+are historical, not alternative adopted results. The decisions file records
+the current MS/SI hashes and the author's retention decision. This confirms
+document agreement; it does not claim an independent re-read of all 30 papers
+or a reconstruction of their row-level classification.
 
 ## S6: All 18 Displayed Numbers Matched
 
@@ -77,8 +82,8 @@ The 12 supplied acetic-acid/induction-time observations remain unchanged in the
 selected-table extraction. Times are in minutes and refer to first visible
 turbidity, not the in-situ DLS particle-size trace. This is author-confirmed
 provenance, not independent experimental remeasurement. No extra repeats or
-uncertainty estimates are inferred. S1 counts are confirmed; S2 reconciliation
-and S6 packaging remain pending as described above.
+uncertainty estimates are inferred. S1/S2 counts are confirmed; S6 packaging
+remains pending as described above.
 
 The previously recovered `260316.csv` DLS trace supports the DLS fit in group 02;
 it must not be relabelled as the original source for these 12 observations.

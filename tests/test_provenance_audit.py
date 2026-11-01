@@ -59,11 +59,12 @@ class SourceIntegrityTests(unittest.TestCase):
         s1 = report['tables']['s1']['author_confirmation']
         self.assertEqual((s1['adopted_total'], s1['adopted_zr_hf']), (69, 53))
         self.assertFalse(s1['additional_count_confirmation_request'])
-        self.assertEqual(report['tables']['s2']['status'], 'MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING')
+        self.assertEqual(report['tables']['s2']['status'], 'COUNTS_AUTHOR_CONFIRMED_MS_SI_ALIGNED')
         self.assertEqual(report['tables']['s2']['historical_packaged_total'], 31)
         self.assertEqual(report['tables']['s2']['current_total'], 30)
         nas = report['tables']['latest_nas_check_record']
-        self.assertEqual((nas['TableS2']['ms_smaller_or_thinner'], nas['TableS2']['si_only_smaller_or_thinner']), (22, 23))
+        self.assertEqual((nas['TableS2']['ms_smaller_or_thinner'], nas['TableS2']['si_only_smaller_or_thinner']), (23, 23))
+        self.assertFalse(nas['TableS2']['additional_count_confirmation_request'])
         self.assertEqual(report['tables']['s6']['status'], 'NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING')
         self.assertFalse(nas['TableS6']['source_payload_packaged'])
 

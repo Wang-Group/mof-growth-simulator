@@ -608,7 +608,7 @@
             {
               "role": "MS",
               "filename": "manuscript_defect_section_to_SI_20261031.docx",
-              "sha256": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd"
+              "sha256": "e85dccca306050e1c28de18acccd015c6b4324d1e92cb906a8c815fc7b70e056"
             },
             {
               "role": "SI",
@@ -617,9 +617,11 @@
             }
           ],
           "TableS2": {
-            "status": "MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING",
+            "status": "COUNTS_AUTHOR_CONFIRMED_MS_SI_ALIGNED",
+            "confirmation_date": "2026-11-01",
+            "evidence_type": "User confirmed retaining the checked study; updated NAS MS and SI were read in final view and both state 23 of 30",
             "current_total": 30,
-            "ms_smaller_or_thinner": 22,
+            "ms_smaller_or_thinner": 23,
             "si_only_smaller_or_thinner": 23,
             "si_outcome_counts": [
               23,
@@ -628,7 +630,10 @@
               1,
               2
             ],
-            "remaining": "Author to reconcile 22 versus 23 and identify the corresponding final row-level classification. The packaged 31-paper extraction is historical, not the latest adopted count."
+            "additional_count_confirmation_request": false,
+            "retention_decision": "Keep the study the author explicitly reconfirmed; do not exclude it or reduce the count to 22 without a new author decision.",
+            "historical_ms_sha256_with_22": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd",
+            "scope": "Count discrepancy closed. The packaged 31-paper extraction is historical, not the adopted total. This update checks document agreement and records the author decision; it does not claim an independent re-read of all 30 publications or a reconstruction of their row-level classification."
           },
           "TableS6": {
             "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
@@ -686,8 +691,8 @@
         "s2": {
           "historical_packaged_total": 31,
           "current_total": 30,
-          "status": "MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING",
-          "limit": "Author to reconcile 22 versus 23 and identify the corresponding final row-level classification. The packaged 31-paper extraction is historical, not the latest adopted count."
+          "status": "COUNTS_AUTHOR_CONFIRMED_MS_SI_ALIGNED",
+          "limit": "Count discrepancy closed. The packaged 31-paper extraction is historical, not the adopted total. This update checks document agreement and records the author decision; it does not claim an independent re-read of all 30 publications or a reconstruction of their row-level classification."
         },
         "s6": {
           "matched_values": 18,
@@ -914,7 +919,7 @@
         {
           "role": "MS",
           "filename": "manuscript_defect_section_to_SI_20261031.docx",
-          "sha256": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd"
+          "sha256": "e85dccca306050e1c28de18acccd015c6b4324d1e92cb906a8c815fc7b70e056"
         },
         {
           "role": "SI",
@@ -923,9 +928,11 @@
         }
       ],
       "TableS2": {
-        "status": "MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING",
+        "status": "COUNTS_AUTHOR_CONFIRMED_MS_SI_ALIGNED",
+        "confirmation_date": "2026-11-01",
+        "evidence_type": "User confirmed retaining the checked study; updated NAS MS and SI were read in final view and both state 23 of 30",
         "current_total": 30,
-        "ms_smaller_or_thinner": 22,
+        "ms_smaller_or_thinner": 23,
         "si_only_smaller_or_thinner": 23,
         "si_outcome_counts": [
           23,
@@ -934,7 +941,10 @@
           1,
           2
         ],
-        "remaining": "Author to reconcile 22 versus 23 and identify the corresponding final row-level classification. The packaged 31-paper extraction is historical, not the latest adopted count."
+        "additional_count_confirmation_request": false,
+        "retention_decision": "Keep the study the author explicitly reconfirmed; do not exclude it or reduce the count to 22 without a new author decision.",
+        "historical_ms_sha256_with_22": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd",
+        "scope": "Count discrepancy closed. The packaged 31-paper extraction is historical, not the adopted total. This update checks document agreement and records the author decision; it does not claim an independent re-read of all 30 publications or a reconstruction of their row-level classification."
       },
       "TableS6": {
         "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",

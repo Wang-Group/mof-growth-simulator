@@ -283,6 +283,12 @@ def table_checks():
     require(s1['adopted_total'] == 69 and s1['adopted_zr_hf'] == 53, 'S1 adopted counts must remain 69/53')
     require(s1['additional_count_confirmation_request'] is False, 'S1 must not repeat the closed count request')
     nas = decisions['NAS_followup_20261101']
+    s2 = nas['TableS2']
+    require(s2['status'] == 'COUNTS_AUTHOR_CONFIRMED_MS_SI_ALIGNED', 'S2 count confirmation must remain recorded')
+    require(s2['current_total'] == sum(s2['si_outcome_counts']) == 30, 'S2 adopted total must remain 30')
+    require(s2['ms_smaller_or_thinner'] == s2['si_only_smaller_or_thinner'] == s2['si_outcome_counts'][0] == 23,
+            'S2 must retain the author-confirmed 23 smaller/thinner studies')
+    require(s2['additional_count_confirmation_request'] is False, 'S2 must not repeat the closed count request')
     s8 = decisions['TableS8']
     require(s8['status'] == 'CLOSED_AUTHOR_CONFIRMED', 'S8 closure must retain its author-confirmation basis')
     require(s8['additional_raw_record_request'] is False, 'S8 must not request another raw record')
@@ -299,9 +305,9 @@ def table_checks():
                'status': s1['status'], 'author_confirmation': s1,
                'limit': 'Author-confirmed publication counts are 69/53. Archived grouping statistics are historical provenance, not alternative adopted counts or an open correction request. This check does not re-read all literature or reconstruct final direction labels.'},
         's2': {'historical_packaged_total': sum(int(r[1]) for r in tables['Table S2']['rows'][1:]),
-               'current_total': nas['TableS2']['current_total'],
-               'status': nas['TableS2']['status'],
-               'limit': nas['TableS2']['remaining']},
+               'current_total': s2['current_total'],
+               'status': s2['status'],
+               'limit': s2['scope']},
         's6': {'matched_values': len(comparison), 'maximum_absolute_difference': max(r['absolute_difference'] for r in comparison),
                'status': nas['TableS6']['status'],
                'offline_verification_scope': 'Packaged derived table only. The separately recorded NAS notebook recalculation is not rerun by this verifier.',
