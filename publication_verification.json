@@ -602,6 +602,55 @@
           "supporting_information_defect_section_to_SI_20261019.docx": "c232b12594aba4d57891bfae644bb2c29174baeb72a9052496c662d9f2d913e3",
           "supporting_information_defect_section_to_SI_20261019_text_synced_20261031.docx": "8828fa2409fb58b787a81a0dcb78f0a6d8e6c2568dd7f2d96d05eeb6e587398c"
         },
+        "latest_nas_check_record": {
+          "scope": "Read-only final-view check of the selected tables and related MS text; local S6 numerical recalculation. Not a complete document review or a packaged upstream replay.",
+          "documents": [
+            {
+              "role": "MS",
+              "filename": "manuscript_defect_section_to_SI_20261031.docx",
+              "sha256": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd"
+            },
+            {
+              "role": "SI",
+              "filename": "supporting_information_S2_updated_20261031_v2.docx",
+              "sha256": "d1c0d53d337a3ebb046958dff40cc4b9797df60bcd9bca8fb39d4643acf7ba75"
+            }
+          ],
+          "TableS2": {
+            "status": "MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING",
+            "current_total": 30,
+            "ms_smaller_or_thinner": 22,
+            "si_only_smaller_or_thinner": 23,
+            "si_outcome_counts": [
+              23,
+              2,
+              2,
+              1,
+              2
+            ],
+            "remaining": "Author to reconcile 22 versus 23 and identify the corresponding final row-level classification. The packaged 31-paper extraction is historical, not the latest adopted count."
+          },
+          "TableS6": {
+            "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
+            "source_relative_to_shared_project": "MOF_growth_Data/Entropy calculation/entropy",
+            "notebooks": {
+              "calculate_entropy.ipynb": "32a69bc84f93ec3d6ed7cf50e24113f294bfe5bd3215b57ebfddfec13113408e",
+              "calculate_molecular_properties.ipynb": "57342d4035d4526b0a3497680b738548feaa9ecabc6f5020a943fb5bcab98a60"
+            },
+            "matched_species": 6,
+            "matched_values": 18,
+            "maximum_absolute_difference_si": 4.546038212538406e-09,
+            "btb_geometry": "mol_xyz_files/BTBa_new.xyz",
+            "solvent_inputs_M_gmol_V_A3_density_gcm3_T_K": [
+              49.8505,
+              38.91547731,
+              1.024396285,
+              393
+            ],
+            "source_payload_packaged": false,
+            "remaining": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
+          }
+        },
         "s1": {
           "dose_doi_records": 69,
           "distinct_publication_groups": 68,
@@ -622,18 +671,30 @@
           },
           "zr_hf_doi_records": 53,
           "zr_hf_publication_groups": 52,
-          "status": "COUNTING_UNIT_REQUIRES_AUTHOR_CONFIRMATION",
-          "limit": "Current SI labels 69/53 as publications; source gives 68/52 distinct publication groups. Final 40/12/1 direction coding is not reconstructed."
+          "status": "COUNTING_SCOPE_AUTHOR_CONFIRMED",
+          "author_confirmation": {
+            "status": "COUNTING_SCOPE_AUTHOR_CONFIRMED",
+            "confirmation_date": "2026-11-01",
+            "evidence_type": "User confirms the literature was checked and the manuscript counts are correct",
+            "adopted_total": 69,
+            "adopted_zr_hf": 53,
+            "additional_count_confirmation_request": false,
+            "scope": "Keep the author-confirmed 69/53 publication counts. Archived grouping statistics are historical provenance, not an alternative publication count or an open correction request. This update does not independently re-read all papers or reconstruct the final direction labels."
+          },
+          "limit": "Author-confirmed publication counts are 69/53. Archived grouping statistics are historical provenance, not alternative adopted counts or an open correction request. This check does not re-read all literature or reconstruct final direction labels."
         },
         "s2": {
-          "displayed_total": 31,
-          "status": "FINAL_31_PUBLICATION_SELECTION_AND_DIRECTION_CODING_NOT_LOCATED"
+          "historical_packaged_total": 31,
+          "current_total": 30,
+          "status": "MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING",
+          "limit": "Author to reconcile 22 versus 23 and identify the corresponding final row-level classification. The packaged 31-paper extraction is historical, not the latest adopted count."
         },
         "s6": {
           "matched_values": 18,
           "maximum_absolute_difference": 4.546038212538406e-09,
-          "status": "DERIVED_NUMERICAL_TABLE_MATCHED_NOT_FULL_CALCULATION_REPRODUCED",
-          "limit": "Need actual entropy computation script, geometry-to-species mapping and solvent/model inputs. The SI describes a solution-entropy correction; Gaussian outputs are not assumed mandatory."
+          "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
+          "offline_verification_scope": "Packaged derived table only. The separately recorded NAS notebook recalculation is not rerun by this verifier.",
+          "limit": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
         },
         "s8": {
           "displayed_observations": 12,
@@ -821,7 +882,7 @@
   "user_confirmed_release_decisions": {
     "date": "2026-10-31",
     "last_updated": "2026-11-01",
-    "evidence": "User clarification in the project conversation; not a new MS/SI audit",
+    "evidence": "User confirmations and separately identified read-only NAS checks; not a new full MS/SI audit",
     "S7": {
       "status": "CONFIRMED",
       "time_coordinate": "raw algorithm time u",
@@ -837,6 +898,64 @@
     "Figure6": {
       "status": "FINAL_FILE_REGISTRATION_PENDING",
       "remaining": "Register adopted file path and SHA-256; do not infer adoption from file date"
+    },
+    "TableS1": {
+      "status": "COUNTING_SCOPE_AUTHOR_CONFIRMED",
+      "confirmation_date": "2026-11-01",
+      "evidence_type": "User confirms the literature was checked and the manuscript counts are correct",
+      "adopted_total": 69,
+      "adopted_zr_hf": 53,
+      "additional_count_confirmation_request": false,
+      "scope": "Keep the author-confirmed 69/53 publication counts. Archived grouping statistics are historical provenance, not an alternative publication count or an open correction request. This update does not independently re-read all papers or reconstruct the final direction labels."
+    },
+    "NAS_followup_20261101": {
+      "scope": "Read-only final-view check of the selected tables and related MS text; local S6 numerical recalculation. Not a complete document review or a packaged upstream replay.",
+      "documents": [
+        {
+          "role": "MS",
+          "filename": "manuscript_defect_section_to_SI_20261031.docx",
+          "sha256": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd"
+        },
+        {
+          "role": "SI",
+          "filename": "supporting_information_S2_updated_20261031_v2.docx",
+          "sha256": "d1c0d53d337a3ebb046958dff40cc4b9797df60bcd9bca8fb39d4643acf7ba75"
+        }
+      ],
+      "TableS2": {
+        "status": "MS_SI_DIRECTION_COUNT_CONFIRMATION_PENDING",
+        "current_total": 30,
+        "ms_smaller_or_thinner": 22,
+        "si_only_smaller_or_thinner": 23,
+        "si_outcome_counts": [
+          23,
+          2,
+          2,
+          1,
+          2
+        ],
+        "remaining": "Author to reconcile 22 versus 23 and identify the corresponding final row-level classification. The packaged 31-paper extraction is historical, not the latest adopted count."
+      },
+      "TableS6": {
+        "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
+        "source_relative_to_shared_project": "MOF_growth_Data/Entropy calculation/entropy",
+        "notebooks": {
+          "calculate_entropy.ipynb": "32a69bc84f93ec3d6ed7cf50e24113f294bfe5bd3215b57ebfddfec13113408e",
+          "calculate_molecular_properties.ipynb": "57342d4035d4526b0a3497680b738548feaa9ecabc6f5020a943fb5bcab98a60"
+        },
+        "matched_species": 6,
+        "matched_values": 18,
+        "maximum_absolute_difference_si": 4.546038212538406e-09,
+        "btb_geometry": "mol_xyz_files/BTBa_new.xyz",
+        "solvent_inputs_M_gmol_V_A3_density_gcm3_T_K": [
+          49.8505,
+          38.91547731,
+          1.024396285,
+          393
+        ],
+        "source_payload_packaged": false,
+        "remaining": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
+      }
     },
     "TableS8": {
       "status": "CLOSED_AUTHOR_CONFIRMED",

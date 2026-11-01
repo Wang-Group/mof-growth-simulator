@@ -50,8 +50,10 @@ parameter manifests are already packaged; they need not be requested again.
 3. **Experimental and entropy-calculation inputs:** author-confirmed raw
    acquisitions and the actual geometry,
    solvent/model inputs and scripts behind the solution-entropy calculation.
-   Include Gaussian inputs/outputs only if they were actually used. S6 now matches
-   its derived source CSV, but this is not a full upstream calculation replay.
+   Include Gaussian inputs/outputs only if they were actually used. S6's source
+   notebooks, mapped geometries and model inputs were recovered on NAS and
+   locally recalculated on November 1. Their lightweight packaging remains
+   pending; the current offline verifier checks only the older derived table.
 
 Table S8's existing 12-row time table has been confirmed by the author as the
 original record. Its source request is closed; this archive plan does not request

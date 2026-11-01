@@ -9,7 +9,10 @@ discussion. The 2026-10-31 audit matched all 18 displayed S6 numbers to the six
 reference-species rows of `entropy_results.csv`; the shared standalone CSV has
 the same bytes. See [the value audit](../13_table_source_audit/README.md).
 
-This closes the numerical-table correspondence, not the complete calculation
-chain. The actual entropy program, molecular geometry mapping and solvent/model
-inputs still need confirmation. The SI describes a solution-entropy correction;
-Gaussian outputs are not assumed to be mandatory inputs without further evidence.
+The November 1 NAS follow-up recovered the entropy and molecular-properties
+notebooks, mapped the six geometries and located the solvent/model inputs.
+Local recalculation matched all 18 displayed values; BTB maps to `BTBa_new.xyz`.
+Those new source payloads and a safe reproduction entry still need packaging.
+This directory remains the unchanged 13-table subset; the current offline
+verifier does not rerun the external NAS notebooks. See the updated group 13
+note and `metadata/publication_decisions_20261031.json` for the exact scope.
