@@ -10,8 +10,9 @@ models were recovered, plot revisions were separated, and the S21 April 3
 source package was added. A second recovery now links small seeds/hosts, exact
 code versions and 975 external checkpoint/result pairs; S6's 18 displayed
 numbers match the recovered numerical source. Remaining tasks include the Fig. 5C
-analysis, packaging the recovered S6 calculation,
-and author release decisions. **S1's 69/53 counts are author-confirmed** after
+analysis and author release decisions. S6's six code/notebook files and 33
+geometries are now packaged with a safe local reproduction entry.
+**S1's 69/53 counts are author-confirmed** after
 literature checking; the historical grouping audit is not an open correction
 request. **S2 is confirmed as 23 smaller/thinner outcomes among 30 publications**;
 the updated MS and SI agree. **Table S8 is closed:** the author confirmed that the
@@ -20,6 +21,7 @@ record is requested (status updated 2026-11-01). Manuscript/SI files,
 large binary trajectories and credentials are not included.
 
 Start with [the publication checklist](docs/PUBLICATION_RELEASE.md), then use
+[the code entry-point index](docs/CODE_INDEX.md) and
 [the source inventory](metadata/publication_sources.csv). Every inventory row
 distinguishes copied evidence from excluded, external or changed files. Finding
 a file is not the same as reproducing its full scientific workflow.
@@ -35,12 +37,12 @@ a file is not the same as reproducing its full scientific workflow.
 | [05_mixed_zr6_zr12](05_mixed_zr6_zr12/) | Four April 10 rerun records, composition traces, conditions, and initial/final structures | Historical comparison family; do not substitute for the April 3 S21 source in group 11 |
 | [06_vacancy_repair](06_vacancy_repair/) | Original-vacancy recovery table, initial/N=2800 structures, historical analysis code, and reference figures | Source family associated with SI Figs. S23-S24 |
 | [07_publication_sources](07_publication_sources/) | 670 byte-verified code/data/configuration copies, retaining supplied figure/table paths and version labels | Current figure/table source bundles; panel-specific limits apply |
-| [08_entropy_inputs](08_entropy_inputs/) | 13 supplied entropy-related tables extracted without changing their contents | S6 source notebooks/geometries recovered and checked on NAS; adding them to this package remains pending |
+| [08_entropy_inputs](08_entropy_inputs/) | 13 unchanged tables, six code/notebook files, 33 geometries and a safe S6 entry | All six geometry mappings and 18 S6 values reproduced locally; no batch writers executed |
 | [09_recovered_runtime](09_recovered_runtime/) | Two corrected engines and eight molecular models, recovered byte-identically from the 5090 | Exact UiO-66 engine matches all six recorded runs; full campaign replay still requires upstream inputs |
 | [10_plot_versions](10_plot_versions/) | Historical and shared-directory revisions of Fig. 6/S7 plotting code, including raw-u and seconds S7 renderers | Three former hash discrepancies now have separate, documented versions |
 | [11_s21_april03](11_s21_april03/) | April 3 Zr6/Zr12 saved trajectories, plotting code, artwork and an explicitly separated alternative source | Shared-source README identifies the main variant as S21; final document adoption still requires author confirmation |
 | [12_runtime_provenance](12_runtime_provenance/) | 206 recovered source locations, small seed/host inputs, 197 exact code/seed references, 1327 lineage rows and remote checkpoint hashes | Separate campaign families; six S7 results and four sampled historical results linked to seed/RNG/parameters/code |
-| [13_table_source_audit](13_table_source_audit/) | Original S1 evidence, historical final-view SI extracts, S6 comparison and current status note | S1/S2 counts confirmed; S8 closed; S6 source packaging pending |
+| [13_table_source_audit](13_table_source_audit/) | Original S1 evidence, historical final-view SI extracts, S6 comparison and current status note | S1/S2 counts confirmed; S8 closed; S6 sources and local reproduction complete |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical
@@ -57,6 +59,7 @@ python -m pip install -r requirements.txt
 python reproduce.py
 python verify_package.py
 python verify_publication.py --report publication_verification.json
+python tools/reproduce_entropy.py
 python -m unittest discover -s tests -v
 ```
 
@@ -124,7 +127,7 @@ MS, both documents state 23 smaller/thinner outcomes among 30 base-additive
 publications. The discrepancy is closed; current hashes and the retention
 decision are recorded in the existing decisions file. S6's six species and
 18 values were independently recalculated using recovered NAS notebooks and
-mapped geometries; those source payloads are not yet packaged. Neither follow-up
+mapped geometries; these sources and the reproduction entry are now packaged. Neither follow-up
 replaces a complete document review or the local verifier's narrower scope.
 
 ## Scientific Limits

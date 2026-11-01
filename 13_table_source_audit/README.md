@@ -63,10 +63,12 @@ displayed precision (maximum difference 4.54604e-9). BTB uses `BTBa_new.xyz`, no
 `BTBa.xyz`. Molecular moments of inertia match after the notebook's three-digit
 rounding; the recorded temperature is 393 K. No batch-writing cells were run.
 
-The remaining task is **source packaging and a safe reproduction entry**, not
-finding missing code. These NAS payloads have not yet been added to this branch;
-the offline verifier still checks only the packaged derived-table comparison.
-Notebook hashes and inputs are recorded in the existing decisions file.
+The reviewed sources are now packaged in `08_entropy_inputs/source/` with
+original and stored hashes. Run `python tools/reproduce_entropy.py`; the same
+six-species geometry and 18-value calculation check is included in
+`verify_publication.py`. Only reviewed numerical helpers run, never batch cells
+or in-place preprocessing. This S6 source/calculation request is complete;
+it does not claim independent validation of the model's physical approximations.
 
 ## S8: Closed By Author Confirmation
 
@@ -82,8 +84,8 @@ The 12 supplied acetic-acid/induction-time observations remain unchanged in the
 selected-table extraction. Times are in minutes and refer to first visible
 turbidity, not the in-situ DLS particle-size trace. This is author-confirmed
 provenance, not independent experimental remeasurement. No extra repeats or
-uncertainty estimates are inferred. S1/S2 counts are confirmed; S6 packaging
-remains pending as described above.
+uncertainty estimates are inferred. S1/S2 counts are confirmed and the S6
+source package and numerical reproduction are complete as described above.
 
 The previously recovered `260316.csv` DLS trace supports the DLS fit in group 02;
 it must not be relabelled as the original source for these 12 observations.

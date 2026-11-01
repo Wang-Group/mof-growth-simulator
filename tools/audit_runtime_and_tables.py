@@ -310,7 +310,7 @@ def table_checks():
                'limit': s2['scope']},
         's6': {'matched_values': len(comparison), 'maximum_absolute_difference': max(r['absolute_difference'] for r in comparison),
                'status': nas['TableS6']['status'],
-               'offline_verification_scope': 'Packaged derived table only. The separately recorded NAS notebook recalculation is not rerun by this verifier.',
+               'offline_verification_scope': 'This subcheck compares the packaged derived table. verify_publication.py additionally runs the local entropy_calculation check through tools/reproduce_entropy.py.',
                'limit': nas['TableS6']['remaining']},
         's8': {'displayed_observations': len(tables['Table S8']['rows']) - 1,
                'status': s8['status'], 'source_confirmation': s8,

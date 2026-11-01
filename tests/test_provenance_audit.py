@@ -65,8 +65,8 @@ class SourceIntegrityTests(unittest.TestCase):
         nas = report['tables']['latest_nas_check_record']
         self.assertEqual((nas['TableS2']['ms_smaller_or_thinner'], nas['TableS2']['si_only_smaller_or_thinner']), (23, 23))
         self.assertFalse(nas['TableS2']['additional_count_confirmation_request'])
-        self.assertEqual(report['tables']['s6']['status'], 'NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING')
-        self.assertFalse(nas['TableS6']['source_payload_packaged'])
+        self.assertEqual(report['tables']['s6']['status'], 'PACKAGED_S6_CALCULATION_AND_GEOMETRY_VERIFIED')
+        self.assertTrue(nas['TableS6']['source_payload_packaged'])
 
     def test_packaged_pickle_allowlist(self):
         from verify_package import serialized_input_policy

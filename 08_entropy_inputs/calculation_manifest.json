@@ -1,0 +1,397 @@
+{
+  "source_relative_to_shared_project": "MOF_growth_Data/Entropy calculation/entropy",
+  "imported_on": "2026-11-01",
+  "scope": "All six reviewed code/notebook files and all 33 supplied MOL/XYZ geometries. Original code cells retained; notebook outputs and metadata omitted. Existing data tables are in ../data.",
+  "files": [
+    {
+      "source_relative": "calculate_entropy.ipynb",
+      "release_path": "08_entropy_inputs/source/calculate_entropy.ipynb",
+      "source_bytes": 195942,
+      "source_sha256": "32a69bc84f93ec3d6ed7cf50e24113f294bfe5bd3215b57ebfddfec13113408e",
+      "stored_bytes": 13222,
+      "stored_sha256": "031f891f8ab816bcc89765b5f601c7cbda542f0ca84efe163bd3959a03d3a4e8",
+      "transformation": "notebook_outputs_metadata_cleared",
+      "cell_sources_sha256": "b7d45331c23faf8826fc04b3eb2174e8a9a8dc3e46100974ada7809ba8ac4c4a"
+    },
+    {
+      "source_relative": "calculate_molecular_properties.ipynb",
+      "release_path": "08_entropy_inputs/source/calculate_molecular_properties.ipynb",
+      "source_bytes": 19174,
+      "source_sha256": "57342d4035d4526b0a3497680b738548feaa9ecabc6f5020a943fb5bcab98a60",
+      "stored_bytes": 10303,
+      "stored_sha256": "2f01d1547afc189685d38b74b90492cb7b3cd29e1315b6142493936741118c84",
+      "transformation": "notebook_outputs_metadata_cleared",
+      "cell_sources_sha256": "e1f69833fa015f534c32bc92803b407806ac5181f0a0ddbf8857dda87554662b"
+    },
+    {
+      "source_relative": "data_fitting.ipynb",
+      "release_path": "08_entropy_inputs/source/data_fitting.ipynb",
+      "source_bytes": 226412,
+      "source_sha256": "b1bfcf426ad9b4f4380aa6b25b7d740454dd3db1b56c237925611e9fcb092825",
+      "stored_bytes": 5853,
+      "stored_sha256": "2e1edf4dc662a69618b86c749f16b446b855d5da71fd523e1d40caf63e4c0c59",
+      "transformation": "notebook_outputs_metadata_cleared",
+      "cell_sources_sha256": "44aaecea2b85a83a9e2a65ef017129a3ebcef56715fc985f9b9091e2491d0df0"
+    },
+    {
+      "source_relative": "Entropy.py",
+      "release_path": "08_entropy_inputs/source/Entropy.py",
+      "source_bytes": 16912,
+      "source_sha256": "6ec23c0dc466235eaf9b3a72dfb6a650b6112eb738fa19c696ef42c2a8d4aa5c",
+      "stored_bytes": 16912,
+      "stored_sha256": "6ec23c0dc466235eaf9b3a72dfb6a650b6112eb738fa19c696ef42c2a8d4aa5c",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "main.py",
+      "release_path": "08_entropy_inputs/source/main.py",
+      "source_bytes": 5839,
+      "source_sha256": "7523754fa72a6f22a53476c6b00fa86df3288c3752cc1ca7c50456550ebe4d53",
+      "stored_bytes": 5839,
+      "stored_sha256": "7523754fa72a6f22a53476c6b00fa86df3288c3752cc1ca7c50456550ebe4d53",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Acetone(opt).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Acetone(opt).xyz",
+      "source_bytes": 627,
+      "source_sha256": "7f2434f7bfc5a3f149d815409c2508c217b26b65a571dc6b5136a27e0176ffad",
+      "stored_bytes": 627,
+      "stored_sha256": "7f2434f7bfc5a3f149d815409c2508c217b26b65a571dc6b5136a27e0176ffad",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Acetone.mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Acetone.mol",
+      "source_bytes": 1003,
+      "source_sha256": "5516216fc978c14e981e7df7e38de270d5675ee34c8fb7a78093cb3497af9819",
+      "stored_bytes": 1003,
+      "stored_sha256": "5516216fc978c14e981e7df7e38de270d5675ee34c8fb7a78093cb3497af9819",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-06_21-37.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-06_21-37.xyz",
+      "source_bytes": 200796,
+      "source_sha256": "cddbcb2c1f4f561ae845853069d280ac82b6f102e60613da7d9fe5ac7876c734",
+      "stored_bytes": 200796,
+      "stored_sha256": "cddbcb2c1f4f561ae845853069d280ac82b6f102e60613da7d9fe5ac7876c734",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-06_21-45.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-06_21-45.xyz",
+      "source_bytes": 98823,
+      "source_sha256": "ba59bc66f705ebd5ca7111a1b1ba8296d12b1b1c57ef9517bb4c0713ba7e0f32",
+      "stored_bytes": 98823,
+      "stored_sha256": "ba59bc66f705ebd5ca7111a1b1ba8296d12b1b1c57ef9517bb4c0713ba7e0f32",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-06_23-13.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-06_23-13.xyz",
+      "source_bytes": 187503,
+      "source_sha256": "b12788e6bf434d0ecce478034960d1c2a9c611eee61f6fae2dc36b09c66be158",
+      "stored_bytes": 187503,
+      "stored_sha256": "b12788e6bf434d0ecce478034960d1c2a9c611eee61f6fae2dc36b09c66be158",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-09_20-16.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-09_20-16.xyz",
+      "source_bytes": 65625,
+      "source_sha256": "92747573dc5cfb3ef600cde0231979181fb835e025bd589f3115b539ef5e2696",
+      "stored_bytes": 65625,
+      "stored_sha256": "92747573dc5cfb3ef600cde0231979181fb835e025bd589f3115b539ef5e2696",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-09_20-42.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-09_20-42.xyz",
+      "source_bytes": 21842,
+      "source_sha256": "4cc52b9226ae01e932a5dc169b86aff704c8b5685dd16beba58fd646f828682e",
+      "stored_bytes": 21842,
+      "stored_sha256": "4cc52b9226ae01e932a5dc169b86aff704c8b5685dd16beba58fd646f828682e",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-09_22-20.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-09_22-20.xyz",
+      "source_bytes": 139885,
+      "source_sha256": "0be89fcba4e49b360c3d54df0905c9c5cf641cdc466d03e83215f2a7f2b08dfb",
+      "stored_bytes": 139885,
+      "stored_sha256": "0be89fcba4e49b360c3d54df0905c9c5cf641cdc466d03e83215f2a7f2b08dfb",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-09_22-52.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-09_22-52.xyz",
+      "source_bytes": 190714,
+      "source_sha256": "0a7fe8d9f715c90f48ae1cde8b359f2656bc95242b45b7db05989b0bd79325c9",
+      "stored_bytes": 190714,
+      "stored_sha256": "0a7fe8d9f715c90f48ae1cde8b359f2656bc95242b45b7db05989b0bd79325c9",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-10_11-58.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-10_11-58.xyz",
+      "source_bytes": 552421,
+      "source_sha256": "28817577dfd8841a38418f5ea120b51bc8a1db9f5a585df69e3d4fdd24b5d28e",
+      "stored_bytes": 552421,
+      "stored_sha256": "28817577dfd8841a38418f5ea120b51bc8a1db9f5a585df69e3d4fdd24b5d28e",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-10_13-41.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-10_13-41.xyz",
+      "source_bytes": 586492,
+      "source_sha256": "53117d366a9a5a5412a552649e91a0a1b77ce1c0a2effac3c6df08b53dae5da0",
+      "stored_bytes": 586492,
+      "stored_sha256": "53117d366a9a5a5412a552649e91a0a1b77ce1c0a2effac3c6df08b53dae5da0",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-10_18-51.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-10_18-51.xyz",
+      "source_bytes": 599526,
+      "source_sha256": "d335e23ae1d7f11fd5c2c832459cf001ff4f67a633a5178b2f80e44fd7e41c4a",
+      "stored_bytes": 599526,
+      "stored_sha256": "d335e23ae1d7f11fd5c2c832459cf001ff4f67a633a5178b2f80e44fd7e41c4a",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-11_04-26.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-11_04-26.xyz",
+      "source_bytes": 1103094,
+      "source_sha256": "175fea83613d4f893276a62e1e537efe83d2c8eaa2f259e8486e388f201d67e0",
+      "stored_bytes": 1103094,
+      "stored_sha256": "175fea83613d4f893276a62e1e537efe83d2c8eaa2f259e8486e388f201d67e0",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-27_19-59.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-27_19-59.xyz",
+      "source_bytes": 491597,
+      "source_sha256": "534d5ddc7240b0c885a32f176d33d8cbc137a6ce9c2c6c102cba920e9f256f77",
+      "stored_bytes": 491597,
+      "stored_sha256": "534d5ddc7240b0c885a32f176d33d8cbc137a6ce9c2c6c102cba920e9f256f77",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-27_22-20.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-27_22-20.xyz",
+      "source_bytes": 96087,
+      "source_sha256": "8166f6e1b046eef5df877f18039e7166f9bc965cb72436104a2ea8228957cb5f",
+      "stored_bytes": 96087,
+      "stored_sha256": "8166f6e1b046eef5df877f18039e7166f9bc965cb72436104a2ea8228957cb5f",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/assembly_2024-09-28_01-35.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/assembly_2024-09-28_01-35.xyz",
+      "source_bytes": 583651,
+      "source_sha256": "beadf32dcc08c238ae4644c085be9247c4dbddec36acf12a21cf7641998a1456",
+      "stored_bytes": 583651,
+      "stored_sha256": "beadf32dcc08c238ae4644c085be9247c4dbddec36acf12a21cf7641998a1456",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/BTBa.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/BTBa.xyz",
+      "source_bytes": 2559,
+      "source_sha256": "ca4f1fcc96e0cf375ac673c8d644924dd81f6895dbaf49245a2d1bc5c9f2f20b",
+      "stored_bytes": 2559,
+      "stored_sha256": "ca4f1fcc96e0cf375ac673c8d644924dd81f6895dbaf49245a2d1bc5c9f2f20b",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/BTBa_new.xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/BTBa_new.xyz",
+      "source_bytes": 2715,
+      "source_sha256": "e4d777b88e490551e835b2dc5b3c6f9c8b5403ea8c223cbfd7bcbf3c84ea3334",
+      "stored_bytes": 2715,
+      "stored_sha256": "e4d777b88e490551e835b2dc5b3c6f9c8b5403ea8c223cbfd7bcbf3c84ea3334",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/CH3COOH(opt).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/CH3COOH(opt).xyz",
+      "source_bytes": 496,
+      "source_sha256": "7ea443ca1b2300086110417cccaee06c3b75d71ce9cae7f4d74f214687ba3c5c",
+      "stored_bytes": 496,
+      "stored_sha256": "7ea443ca1b2300086110417cccaee06c3b75d71ce9cae7f4d74f214687ba3c5c",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/CH3COOH.mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/CH3COOH.mol",
+      "source_bytes": 815,
+      "source_sha256": "fb86fcb36471a0d40d8edbdbe6cc645f7480227c359c101ffda5c7601304fbad",
+      "stored_bytes": 815,
+      "stored_sha256": "fb86fcb36471a0d40d8edbdbe6cc645f7480227c359c101ffda5c7601304fbad",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/DMF(opt).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/DMF(opt).xyz",
+      "source_bytes": 624,
+      "source_sha256": "c135073dd2ec9550ef8fdded1e2761ece3864be888e62134cfaf10b6e0a49473",
+      "stored_bytes": 624,
+      "stored_sha256": "c135073dd2ec9550ef8fdded1e2761ece3864be888e62134cfaf10b6e0a49473",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/H2O(opt).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/H2O(opt).xyz",
+      "source_bytes": 159,
+      "source_sha256": "a91ffef2ea375a6b98709dd2f29a74af6e1b6ea8dde95a5ac7937acc9cf5258a",
+      "stored_bytes": 159,
+      "stored_sha256": "a91ffef2ea375a6b98709dd2f29a74af6e1b6ea8dde95a5ac7937acc9cf5258a",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/HCOOH(opt).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/HCOOH(opt).xyz",
+      "source_bytes": 221,
+      "source_sha256": "02d92b1570064b8db30de7f9591d3d4cfc9c7d683c7b33b31ad08115ba0296a0",
+      "stored_bytes": 221,
+      "stored_sha256": "02d92b1570064b8db30de7f9591d3d4cfc9c7d683c7b33b31ad08115ba0296a0",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_1').mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_1').mol",
+      "source_bytes": 15407,
+      "source_sha256": "6b7b13312cd374de0ce31bcd6b05b137145d628ebdcea134894387f4b4053d87",
+      "stored_bytes": 15407,
+      "stored_sha256": "6b7b13312cd374de0ce31bcd6b05b137145d628ebdcea134894387f4b4053d87",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_1').xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_1').xyz",
+      "source_bytes": 7915,
+      "source_sha256": "522f457c92e34ec1f0101ee1123216bb009210fc00e52da63e1fff3c649c8179",
+      "stored_bytes": 7915,
+      "stored_sha256": "522f457c92e34ec1f0101ee1123216bb009210fc00e52da63e1fff3c649c8179",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_1).mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_1).mol",
+      "source_bytes": 14688,
+      "source_sha256": "0af5180994fe22638275212999d91b5a357d6a3f49c9e4ee8dfb223ec9acab77",
+      "stored_bytes": 14688,
+      "stored_sha256": "0af5180994fe22638275212999d91b5a357d6a3f49c9e4ee8dfb223ec9acab77",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_1).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_1).xyz",
+      "source_bytes": 7759,
+      "source_sha256": "f684f0017306227b5699d6dfc9906cce3c418f7285022bab909155f16c465547",
+      "stored_bytes": 7759,
+      "stored_sha256": "f684f0017306227b5699d6dfc9906cce3c418f7285022bab909155f16c465547",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_2).mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_2).mol",
+      "source_bytes": 19917,
+      "source_sha256": "bd00e3aded8d3bb79c83675a3ea1faab70623fc555ace45b97d32c0095f5b836",
+      "stored_bytes": 19917,
+      "stored_sha256": "bd00e3aded8d3bb79c83675a3ea1faab70623fc555ace45b97d32c0095f5b836",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_2).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_2).xyz",
+      "source_bytes": 10359,
+      "source_sha256": "df7b656c020b1b0406976457b300997327ab939cb1eee354afdcd80b36c03769",
+      "stored_bytes": 10359,
+      "stored_sha256": "df7b656c020b1b0406976457b300997327ab939cb1eee354afdcd80b36c03769",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_3).mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_3).mol",
+      "source_bytes": 19564,
+      "source_sha256": "13778e6aa5aad9a07ac8a58209e66d8bcdb6bb3473acce081b5e05ff83d9fc11",
+      "stored_bytes": 19564,
+      "stored_sha256": "13778e6aa5aad9a07ac8a58209e66d8bcdb6bb3473acce081b5e05ff83d9fc11",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(MOL_3).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(MOL_3).xyz",
+      "source_bytes": 10151,
+      "source_sha256": "74ffab437912344de1cb633d2ff083337ad804c2bd6b8080b3896516448e633e",
+      "stored_bytes": 10151,
+      "stored_sha256": "74ffab437912344de1cb633d2ff083337ad804c2bd6b8080b3896516448e633e",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(SBU).mol",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(SBU).mol",
+      "source_bytes": 5666,
+      "source_sha256": "2dd8f841729921f4a00f176f0d1b3c7e95e57a524bebb174df70d9689ed171af",
+      "stored_bytes": 5666,
+      "stored_sha256": "2dd8f841729921f4a00f176f0d1b3c7e95e57a524bebb174df70d9689ed171af",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/Hf6(SBU).xyz",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/Hf6(SBU).xyz",
+      "source_bytes": 2871,
+      "source_sha256": "70bf4b0ad68f9b8c2210fc6fe79bbb37788d670bb7505a8105cddec64dd562b0",
+      "stored_bytes": 2871,
+      "stored_sha256": "70bf4b0ad68f9b8c2210fc6fe79bbb37788d670bb7505a8105cddec64dd562b0",
+      "transformation": "byte_identical",
+      "cell_sources_sha256": null
+    },
+    {
+      "source_relative": "mol_xyz_files/pre-process.ipynb",
+      "release_path": "08_entropy_inputs/source/mol_xyz_files/pre-process.ipynb",
+      "source_bytes": 7934,
+      "source_sha256": "1edfe4d4ec2190ba50eda4bfbf5d9961d4d801f14c3fe589f2fe12912c33790d",
+      "stored_bytes": 5738,
+      "stored_sha256": "fc5a2fa1d9abc149b117322335ae6a9bd352a3be404946931400d2d10c11f043",
+      "transformation": "notebook_outputs_metadata_cleared",
+      "cell_sources_sha256": "2f7d1d4dcdc7d9d7e4b13b49257dc650b8d1645a392c6420f4253ed555d0bb9f"
+    }
+  ]
+}

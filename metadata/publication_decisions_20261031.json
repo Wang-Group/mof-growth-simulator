@@ -55,7 +55,7 @@
       "scope": "Count discrepancy closed. The packaged 31-paper extraction is historical, not the adopted total. This update checks document agreement and records the author decision; it does not claim an independent re-read of all 30 publications or a reconstruction of their row-level classification."
     },
     "TableS6": {
-      "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
+      "status": "PACKAGED_S6_CALCULATION_AND_GEOMETRY_VERIFIED",
       "source_relative_to_shared_project": "MOF_growth_Data/Entropy calculation/entropy",
       "notebooks": {
         "calculate_entropy.ipynb": "32a69bc84f93ec3d6ed7cf50e24113f294bfe5bd3215b57ebfddfec13113408e",
@@ -66,8 +66,11 @@
       "maximum_absolute_difference_si": 4.546038212538406e-9,
       "btb_geometry": "mol_xyz_files/BTBa_new.xyz",
       "solvent_inputs_M_gmol_V_A3_density_gcm3_T_K": [49.8505, 38.91547731, 1.024396285, 393],
-      "source_payload_packaged": false,
-      "remaining": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
+      "source_payload_packaged": true,
+      "packaged_files": 39,
+      "calculation_manifest": "08_entropy_inputs/calculation_manifest.json",
+      "reproduction_entry": "tools/reproduce_entropy.py",
+      "remaining": "No missing S6 calculation source in the reviewed subset. The safe entry reproduces the six species using original rounded inputs and verifies their geometry mapping; notebook batch writers are not executed. This reproduces the supplied model, not an independent validation of its physical approximations."
     }
   },
   "TableS8": {

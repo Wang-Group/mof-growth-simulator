@@ -149,6 +149,253 @@
         "Stored time conventions are not newly calibrated physical clocks"
       ]
     },
+    "entropy_calculation": {
+      "status": "PASS_S6_CALCULATION_AND_GEOMETRY_MAPPING",
+      "source_files_verified": 39,
+      "stored_source_bytes": 5099439,
+      "species": 6,
+      "values": 18,
+      "maximum_absolute_difference_si": 4.546038212538406e-09,
+      "solvent_M_gmol_V_A3_density_gcm3_T_K": [
+        49.8505,
+        38.91547731,
+        1.024396285,
+        393
+      ],
+      "geometry": [
+        {
+          "species": "SBU",
+          "file": "Hf6(SBU).xyz",
+          "atoms": 54,
+          "mass_g_mol": 1731.0720000000001,
+          "volume_A3": 291.0156240010169,
+          "rg_A": 3.547178450982794,
+          "inertia_kg_m2": 1.551814629509819e-43,
+          "sigma_from_notebook": 12,
+          "rounded_notebook_inputs": [
+            1731.072,
+            291.015624,
+            3.547178451,
+            12,
+            1.55e-43
+          ]
+        },
+        {
+          "species": "BTB",
+          "file": "BTBa_new.xyz",
+          "atoms": 51,
+          "mass_g_mol": 438.435,
+          "volume_A3": 233.20377632973566,
+          "rg_A": 5.376506996588222,
+          "inertia_kg_m2": 1.4122482326522719e-43,
+          "sigma_from_notebook": 6,
+          "rounded_notebook_inputs": [
+            438.435,
+            233.2037763,
+            5.376506997,
+            6,
+            1.41e-43
+          ]
+        },
+        {
+          "species": "MOL_1",
+          "file": "Hf6(MOL_1).xyz",
+          "atoms": 148,
+          "mass_g_mol": 2517.908,
+          "volume_A3": 682.4617453887552,
+          "rg_A": 8.997496130828905,
+          "inertia_kg_m2": 1.3156385905047973e-42,
+          "sigma_from_notebook": 1,
+          "rounded_notebook_inputs": [
+            2517.908,
+            682.4617454,
+            8.997496131,
+            1,
+            1.32e-42
+          ]
+        },
+        {
+          "species": "MOL_1'",
+          "file": "Hf6(MOL_1').xyz",
+          "atoms": 151,
+          "mass_g_mol": 3810.545,
+          "volume_A3": 744.0893657084375,
+          "rg_A": 9.85265634561414,
+          "inertia_kg_m2": 2.911240984407624e-42,
+          "sigma_from_notebook": 1,
+          "rounded_notebook_inputs": [
+            3810.545,
+            744.0893657,
+            9.852656346,
+            1,
+            2.91e-42
+          ]
+        },
+        {
+          "species": "MOL_2",
+          "file": "Hf6(MOL_2).xyz",
+          "atoms": 198,
+          "mass_g_mol": 4203.963,
+          "volume_A3": 943.2990032285953,
+          "rg_A": 9.609332441959555,
+          "inertia_kg_m2": 3.5979587736267834e-42,
+          "sigma_from_notebook": 1,
+          "rounded_notebook_inputs": [
+            4203.963,
+            943.2990032,
+            9.609332442,
+            1,
+            3.6e-42
+          ]
+        },
+        {
+          "species": "MOL_3",
+          "file": "Hf6(MOL_3).xyz",
+          "atoms": 194,
+          "mass_g_mol": 4158.946,
+          "volume_A3": 905.882096718407,
+          "rg_A": 9.509379832146044,
+          "inertia_kg_m2": 3.452511173498281e-42,
+          "sigma_from_notebook": 1,
+          "rounded_notebook_inputs": [
+            4158.946,
+            905.8820967,
+            9.509379832,
+            1,
+            3.45e-42
+          ]
+        }
+      ],
+      "values_compared": [
+        {
+          "species": "SBU",
+          "quantity": "St/R",
+          "calculated": 17.782988056149016,
+          "si_value": "17.78298806",
+          "absolute_difference": 3.850985308417876e-09
+        },
+        {
+          "species": "SBU",
+          "quantity": "Sr/R",
+          "calculated": 14.972298051191748,
+          "si_value": "14.97229805",
+          "absolute_difference": 1.191748921769431e-09
+        },
+        {
+          "species": "SBU",
+          "quantity": "S/R",
+          "calculated": 32.755286107340766,
+          "si_value": "32.75528611",
+          "absolute_difference": 2.6592346102916053e-09
+        },
+        {
+          "species": "BTB",
+          "quantity": "St/R",
+          "calculated": 15.579610007822263,
+          "si_value": "15.57961001",
+          "absolute_difference": 2.177737101760613e-09
+        },
+        {
+          "species": "BTB",
+          "quantity": "Sr/R",
+          "calculated": 13.53717068905209,
+          "si_value": "13.53717069",
+          "absolute_difference": 9.47910194781798e-10
+        },
+        {
+          "species": "BTB",
+          "quantity": "S/R",
+          "calculated": 29.11678069687435,
+          "si_value": "29.1167807",
+          "absolute_difference": 3.1256490728992503e-09
+        },
+        {
+          "species": "MOL_1",
+          "quantity": "St/R",
+          "calculated": 18.930709133738933,
+          "si_value": "18.93070913",
+          "absolute_difference": 3.738932718988508e-09
+        },
+        {
+          "species": "MOL_1",
+          "quantity": "Sr/R",
+          "calculated": 14.155482695453962,
+          "si_value": "14.1554827",
+          "absolute_difference": 4.546038212538406e-09
+        },
+        {
+          "species": "MOL_1",
+          "quantity": "S/R",
+          "calculated": 33.0861918291929,
+          "si_value": "33.08619183",
+          "absolute_difference": 8.070983881225402e-10
+        },
+        {
+          "species": "MOL_1'",
+          "quantity": "St/R",
+          "calculated": 19.614474629663334,
+          "si_value": "19.61447463",
+          "absolute_difference": 3.3666580634417187e-10
+        },
+        {
+          "species": "MOL_1'",
+          "quantity": "Sr/R",
+          "calculated": 15.10349720283169,
+          "si_value": "15.1034972",
+          "absolute_difference": 2.8316904376879393e-09
+        },
+        {
+          "species": "MOL_1'",
+          "quantity": "S/R",
+          "calculated": 34.717971832495024,
+          "si_value": "34.71797183",
+          "absolute_difference": 2.4950210786300886e-09
+        },
+        {
+          "species": "MOL_2",
+          "quantity": "St/R",
+          "calculated": 19.93520829801637,
+          "si_value": "19.9352083",
+          "absolute_difference": 1.9836292608488293e-09
+        },
+        {
+          "species": "MOL_2",
+          "quantity": "Sr/R",
+          "calculated": 15.29776213969062,
+          "si_value": "15.29776214",
+          "absolute_difference": 3.093791889341446e-10
+        },
+        {
+          "species": "MOL_2",
+          "quantity": "S/R",
+          "calculated": 35.23297043770699,
+          "si_value": "35.23297044",
+          "absolute_difference": 2.293013778853492e-09
+        },
+        {
+          "species": "MOL_3",
+          "quantity": "St/R",
+          "calculated": 19.889222716972824,
+          "si_value": "19.88922272",
+          "absolute_difference": 3.027174955150258e-09
+        },
+        {
+          "species": "MOL_3",
+          "quantity": "Sr/R",
+          "calculated": 15.283993100407432,
+          "si_value": "15.2839931",
+          "absolute_difference": 4.0743231011219905e-10
+        },
+        {
+          "species": "MOL_3",
+          "quantity": "S/R",
+          "calculated": 35.17321581738025,
+          "si_value": "35.17321582",
+          "absolute_difference": 2.6197497504654166e-09
+        }
+      ],
+      "scope": "Original model with original rounded inputs and symmetry numbers; six geometry mappings checked. No notebook batch cells, full-folder preprocessing, production KMC or new physical-model validation."
+    },
     "runtime_and_table_provenance": {
       "status": "PASS_FOR_STATED_PROVENANCE_CHECKS",
       "publication_ready": false,
@@ -636,7 +883,7 @@
             "scope": "Count discrepancy closed. The packaged 31-paper extraction is historical, not the adopted total. This update checks document agreement and records the author decision; it does not claim an independent re-read of all 30 publications or a reconstruction of their row-level classification."
           },
           "TableS6": {
-            "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
+            "status": "PACKAGED_S6_CALCULATION_AND_GEOMETRY_VERIFIED",
             "source_relative_to_shared_project": "MOF_growth_Data/Entropy calculation/entropy",
             "notebooks": {
               "calculate_entropy.ipynb": "32a69bc84f93ec3d6ed7cf50e24113f294bfe5bd3215b57ebfddfec13113408e",
@@ -652,8 +899,11 @@
               1.024396285,
               393
             ],
-            "source_payload_packaged": false,
-            "remaining": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
+            "source_payload_packaged": true,
+            "packaged_files": 39,
+            "calculation_manifest": "08_entropy_inputs/calculation_manifest.json",
+            "reproduction_entry": "tools/reproduce_entropy.py",
+            "remaining": "No missing S6 calculation source in the reviewed subset. The safe entry reproduces the six species using original rounded inputs and verifies their geometry mapping; notebook batch writers are not executed. This reproduces the supplied model, not an independent validation of its physical approximations."
           }
         },
         "s1": {
@@ -697,9 +947,9 @@
         "s6": {
           "matched_values": 18,
           "maximum_absolute_difference": 4.546038212538406e-09,
-          "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
-          "offline_verification_scope": "Packaged derived table only. The separately recorded NAS notebook recalculation is not rerun by this verifier.",
-          "limit": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
+          "status": "PACKAGED_S6_CALCULATION_AND_GEOMETRY_VERIFIED",
+          "offline_verification_scope": "This subcheck compares the packaged derived table. verify_publication.py additionally runs the local entropy_calculation check through tools/reproduce_entropy.py.",
+          "limit": "No missing S6 calculation source in the reviewed subset. The safe entry reproduces the six species using original rounded inputs and verifies their geometry mapping; notebook batch writers are not executed. This reproduces the supplied model, not an independent validation of its physical approximations."
         },
         "s8": {
           "displayed_observations": 12,
@@ -947,7 +1197,7 @@
         "scope": "Count discrepancy closed. The packaged 31-paper extraction is historical, not the adopted total. This update checks document agreement and records the author decision; it does not claim an independent re-read of all 30 publications or a reconstruction of their row-level classification."
       },
       "TableS6": {
-        "status": "NAS_RECALCULATION_VERIFIED_PACKAGING_PENDING",
+        "status": "PACKAGED_S6_CALCULATION_AND_GEOMETRY_VERIFIED",
         "source_relative_to_shared_project": "MOF_growth_Data/Entropy calculation/entropy",
         "notebooks": {
           "calculate_entropy.ipynb": "32a69bc84f93ec3d6ed7cf50e24113f294bfe5bd3215b57ebfddfec13113408e",
@@ -963,8 +1213,11 @@
           1.024396285,
           393
         ],
-        "source_payload_packaged": false,
-        "remaining": "Package the recovered notebooks, six mapped geometries, model inputs and a safe reproduction entry. Local checks used the notebook's rounded inputs; no batch-writing cells were run. The current offline verifier checks the older packaged derived table, not these external notebooks."
+        "source_payload_packaged": true,
+        "packaged_files": 39,
+        "calculation_manifest": "08_entropy_inputs/calculation_manifest.json",
+        "reproduction_entry": "tools/reproduce_entropy.py",
+        "remaining": "No missing S6 calculation source in the reviewed subset. The safe entry reproduces the six species using original rounded inputs and verifies their geometry mapping; notebook batch writers are not executed. This reproduces the supplied model, not an independent validation of its physical approximations."
       }
     },
     "TableS8": {
