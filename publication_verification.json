@@ -396,6 +396,21 @@
       ],
       "scope": "Original model with original rounded inputs and symmetry numbers; six geometry mappings checked. No notebook batch cells, full-folder preprocessing, production KMC or new physical-model validation."
     },
+    "figure5_source_followup": {
+      "status": "PASS_PARTIAL_EVIDENCE_CHECKS",
+      "classification_rows": 284,
+      "row_status_counts": {
+        "STRUCTURE_CONDITIONS_ONLY": 8,
+        "AMBIGUOUS_TRACE_INDEX": 4,
+        "NOT_LOCATED": 272
+      },
+      "fully_linked_classification_rows": 0,
+      "packaged_large_structures": 9,
+      "incomplete_structure_name_count": 1,
+      "external_trajectory_hash_records": 3,
+      "fig5c_original_module_found": false,
+      "scope": "Offline source/parameter matching only. No classification rerun, no pickle deserialization, no claim that large structures are the classified small-entity snapshots."
+    },
     "runtime_and_table_provenance": {
       "status": "PASS_FOR_STATED_PROVENANCE_CHECKS",
       "publication_ready": false,

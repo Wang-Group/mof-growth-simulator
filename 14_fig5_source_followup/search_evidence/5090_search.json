@@ -1,0 +1,190 @@
+{
+  "archives": [
+    {
+      "bytes": 180483516,
+      "entries": 46081,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/seeded_propagation_v1_exact_fragments.tar.gz"
+    },
+    {
+      "bytes": 68356200,
+      "entries": 7722,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/production_results_20260901.tar.gz"
+    },
+    {
+      "bytes": 275130,
+      "entries": 12,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/MIXED_SOURCE_20260912_v1.tar.gz"
+    },
+    {
+      "bytes": 395636615,
+      "entries": 80641,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/common_response_surface_v2_exact_fragments.tar.gz"
+    },
+    {
+      "bytes": 11862224,
+      "entries": 2593,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/closure_pilot_v2_exact_fragments.tar.gz"
+    },
+    {
+      "bytes": 47398952,
+      "entries": 42,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/figure_rebuild_20260901/n10000_growth_campaign_v1/final_artifact_bundle_20260904/uio66_n10000_artifacts_20260904.tar.gz"
+    },
+    {
+      "bytes": 1241313,
+      "entries": 328,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/defect_322_analysis_20260914_v1/analysis_export.tar.gz"
+    },
+    {
+      "bytes": 325234,
+      "entries": 86,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/defect_50000steps_production_20260913_v1/frozen_50000step_bundle.tar.gz"
+    },
+    {
+      "bytes": 324739,
+      "entries": 85,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/defect_N5000_production_20260913_v2/frozen_production_bundle.tar.gz"
+    },
+    {
+      "bytes": 1883732,
+      "entries": 258,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/defect_integration_20260912_v1/verified_small_artifacts.tgz"
+    },
+    {
+      "bytes": 12811676,
+      "entries": 195,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/defect_radial_pilot_20260913_v1/evidence.tar.gz"
+    },
+    {
+      "bytes": 11099130,
+      "entries": 2593,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/results/closure_pilot_v1.tar.gz"
+    },
+    {
+      "bytes": 1647168,
+      "entries": 369,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/results/finite_bath_horizon_pilot_v2_planar_clock_fixed.tar.gz"
+    },
+    {
+      "bytes": 204351,
+      "entries": 49,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/results/boundary_validation_v2.tar.gz"
+    },
+    {
+      "bytes": 171162694,
+      "entries": 46081,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/results/seeded_propagation_v2_fixed_seeds.tar.gz"
+    },
+    {
+      "bytes": 14504230,
+      "entries": 4610,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/results/bond_accessibility_pilot_v1.tar.gz"
+    },
+    {
+      "bytes": 14450,
+      "entries": 5,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/steric_explicit_cap_pilot_20260912_v1/PILOT_CODE.tar.gz"
+    },
+    {
+      "bytes": 67658714,
+      "entries": 27648,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260830/steric_mixed_solvent_20260912_v1/grid_small_results_20260912_v1.tar.gz"
+    },
+    {
+      "bytes": 6133760,
+      "entries": 15,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260831/btb_unrestricted_v2/production_btb_unrestricted_v2.tar"
+    },
+    {
+      "bytes": 3367150,
+      "entries": 489,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260831/uio66_review_v1/uio66_bdc_geometry_validation_v1_outputs.tar.gz"
+    },
+    {
+      "bytes": 5859328,
+      "entries": 21,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_recalculation_20260831/uio66_review_v1/uio66_review_bundle_v1.tar"
+    },
+    {
+      "bytes": 26962819,
+      "entries": 6145,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_reviewed_20260831/results/surface_target30_v1.tar.gz"
+    },
+    {
+      "bytes": 91569304,
+      "entries": 11090,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_reviewed_20260831/results/seeded_crystal_layer_delta50_v3.tar.gz"
+    },
+    {
+      "bytes": 3758388,
+      "entries": 1537,
+      "matches": [],
+      "path": "/home/wave/MOL_growth_reviewed_20260831/results/surface_calibration_v1.tar.gz"
+    },
+    {
+      "bytes": 1117043,
+      "entries": 4802,
+      "matches": [],
+      "path": "/home/wave/mof_kmc/BDC_seeded_growth_sweep_20260830/seeded_results_v2.tar.gz"
+    },
+    {
+      "bytes": 1113448,
+      "entries": 4802,
+      "matches": [],
+      "path": "/home/wave/mof_kmc/BDC_seeded_growth_sweep_20260830/seeded_results.tar.gz"
+    },
+    {
+      "bytes": 3893455,
+      "entries": 1191,
+      "matches": [],
+      "path": "/home/wave/mof_kmc/REpzr_supplement_20260828/original_engine_full_20260828.tar.gz"
+    },
+    {
+      "bytes": 3865587,
+      "entries": 1190,
+      "matches": [],
+      "path": "/home/wave/mof_kmc/REpzr_supplement_20260828/full_results_20260828.tar.gz"
+    },
+    {
+      "bytes": 3868453,
+      "entries": 1190,
+      "matches": [],
+      "path": "/home/wave/mof_kmc/REpzr_supplement_20260828/full_results_v2_20260828.tar.gz"
+    }
+  ],
+  "code_read": 616,
+  "errors": [],
+  "files_seen": 806882,
+  "limits": [],
+  "matches": [],
+  "read_only": true,
+  "roots": [
+    "/home/wave/MOL_growth_recalculation_20260830",
+    "/home/wave/MOL_growth_recalculation_20260831",
+    "/home/wave/MOL_growth_reviewed_20260831",
+    "/home/wave/mof_kmc"
+  ]
+}

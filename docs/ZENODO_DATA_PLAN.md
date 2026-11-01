@@ -37,6 +37,13 @@ not downloaded into the Git branch. Do not simply add this total to the older
 606 MB ledger without checking overlap. Small seed/host pickles and compressed
 parameter manifests are already packaged; they need not be requested again.
 
+Group 14 adds three historical BTB trajectory hash records totaling 352,537,047
+bytes. They remain on NAS and were not deserialized or copied into GitHub. Their
+filename indices conflict with the parent directory, so archive selection must
+retain that ambiguity rather than silently assign classification rows. Nine
+small compressed large-assembly structures and the two recovered code sources
+are already packaged. Check overlap before adding this count to older ledgers.
+
 ## Proposed Datasets
 
 1. **Historical trajectory sources:** original pickles, run-folder parameters,

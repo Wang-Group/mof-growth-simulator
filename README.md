@@ -3,7 +3,7 @@
 This candidate combines the previously verified contribution package with the
 figure/table-organized sources supplied for the current manuscript and SI.
 
-**Status: local release candidate, not a complete-paper reproducibility release.**
+**Status: GitHub candidate branch, not a complete-paper reproducibility release.**
 New response-surface, seeded/surface-growth and finite-bath code and processed
 data are now included. On 2026-10-31, the exact corrected engines and eight
 models were recovered, plot revisions were separated, and the S21 April 3
@@ -12,6 +12,10 @@ code versions and 975 external checkpoint/result pairs; S6's 18 displayed
 numbers match the recovered numerical source. Remaining tasks include the Fig. 5C
 analysis and author release decisions. S6's six code/notebook files and 33
 geometries are now packaged with a safe local reproduction entry.
+The Fig. 5 follow-up adds two archived code sources, nine large structures and
+an explicit 284-row evidence map. Eight rows have structure-condition matches;
+four have ambiguous trajectory indices. Neither closes the original small-motif
+snapshot link. The exact panel C analysis module is still unlocated.
 **S1's 69/53 counts are author-confirmed** after
 literature checking; the historical grouping audit is not an open correction
 request. **S2 is confirmed as 23 smaller/thinner outcomes among 30 publications**;
@@ -43,6 +47,7 @@ a file is not the same as reproducing its full scientific workflow.
 | [11_s21_april03](11_s21_april03/) | April 3 Zr6/Zr12 saved trajectories, plotting code, artwork and an explicitly separated alternative source | Shared-source README identifies the main variant as S21; final document adoption still requires author confirmation |
 | [12_runtime_provenance](12_runtime_provenance/) | 206 recovered source locations, small seed/host inputs, 197 exact code/seed references, 1327 lineage rows and remote checkpoint hashes | Separate campaign families; six S7 results and four sampled historical results linked to seed/RNG/parameters/code |
 | [13_table_source_audit](13_table_source_audit/) | Original S1 evidence, historical final-view SI extracts, S6 comparison and current status note | S1/S2 counts confirmed; S8 closed; S6 sources and local reproduction complete |
+| [14_fig5_source_followup](14_fig5_source_followup/) | Classification notebook, grid plotter, nine large structures, 284-row evidence map and search records | Partial Fig. 5D provenance only; panel C original module still unlocated |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical

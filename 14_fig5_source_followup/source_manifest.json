@@ -1,0 +1,179 @@
+{
+  "checked_on": "2026-11-01",
+  "shared_project_basename": "2025-\u5b8b\u5b87\u822a-MOL_growth_mechanism",
+  "classification_table": "04_btb_motifs/data/unique_structures_result.csv",
+  "classification_table_sha256": "c9f360fb93aa8866b915e862f721a430458068b368939415dda94cecd359f008",
+  "archive": {
+    "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+    "bytes": 5886455,
+    "sha256": "4a0ded8762e41eaa43df57662deeb609a52e76024500486b13b70716ef2808af"
+  },
+  "files": [
+    {
+      "id": "notebook",
+      "kind": "classification_code_candidate",
+      "source_relative": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4/SI_Figure_S29/content_checked_20261023/original_code/unique_structures.ipynb",
+      "cell_sources_sha256": "c612935d1b94a85f428768ebed4c409039c44d7be0fa178968eb3c6cae446d6e",
+      "release_path": "14_fig5_source_followup/source/unique_structures.ipynb",
+      "encoding": "notebook_outputs_metadata_cleared",
+      "source_bytes": 33588,
+      "source_sha256": "29fed22beb9930e7b1c74fb0d45b6a18501c1d188e0ad29895abed9a278832c4",
+      "stored_bytes": 32624,
+      "stored_sha256": "59842c2ec55af41206f3c7804c260b92d0da45a06c56d08aedb20d724b4b0df5"
+    },
+    {
+      "id": "grid_plotter",
+      "kind": "plot_code",
+      "source_relative": "Figures/Figures/Figure3/unique_structures/make_entity_structure_grid.py",
+      "release_path": "14_fig5_source_followup/source/make_entity_structure_grid.py",
+      "encoding": "byte_identical",
+      "source_bytes": 17459,
+      "source_sha256": "6bf18b4f69c9a386b61340cb8a2eba5b0bb6523937c553a3edd3c95fcb433eda",
+      "stored_bytes": 17459,
+      "stored_sha256": "6bf18b4f69c9a386b61340cb8a2eba5b0bb6523937c553a3edd3c95fcb433eda"
+    },
+    {
+      "id": "geometry_01",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_20.96479499188878_FA_1762.775325444341_L_10.74149111543077_Ratio_0.6_Step_1e15.0_Index_1_SC_0.5570191434396956_KC_0.8927706030191717_2025-08-18_22_52_29/assembly_889.4922908858479.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_01.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 1820037,
+      "source_sha256": "4fc79d69e51806d497a0aa9a20ba675b1a87582fb0f48bb807163df8aa4b9fa8",
+      "stored_bytes": 644670,
+      "stored_sha256": "179df7be59f153fb8caf3374c0ee189ea37d78b34cf48c50e3801f47585c6eb4"
+    },
+    {
+      "id": "geometry_02",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_20.96479499188878_FA_1762.775325444341_L_10.74149111543077_Ratio_0.6_Step_1e15.0_Index_2_SC_0.5570191434396956_KC_0.8927706030191717_2025-08-18_22_52_29/assembly_1030.7618886999628.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_02.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 1518108,
+      "source_sha256": "88c657c39a0025d4abfadb99e29daf0036e510651ce9c8bc9e2b9949d5122f49",
+      "stored_bytes": 539455,
+      "stored_sha256": "5a318fcb3852188987384988a9c30101516688ad4e6eb08a10c8a7486de5cf06"
+    },
+    {
+      "id": "geometry_03",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_22.74849783101604_FA_9233.808364280261_L_23.25648703392383_Ratio_0.6_Step_1e15.0_Index_1_SC_1.424531639376294_KC_1.968902976786355_2025-08-18_22_52_33/assembly_3561.9720135586226.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_03.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 1142749,
+      "source_sha256": "d89b055c6a0966d3d786ea9b97e37b99e2df4c9c371a88c924f4c319a7bf2db3",
+      "stored_bytes": 402984,
+      "stored_sha256": "406b80e5fc1097b50608316eb80f19683badce17916f6ed6ff67831894abc910"
+    },
+    {
+      "id": "geometry_04",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_27.53559613364225_FA_861.5335455206781_L_24.0965991226136_Ratio_0.6_Step_1e15.0_Index_3_SC_1.874914462778555_KC_1.159629884717499_2025-08-18_22_52_30/assembly_113.86380861901625.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_04.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 4214043,
+      "source_sha256": "73af503443d5480b481f12a1a75be2bb2a33bbffdf68725f6beac7844b19fe1c",
+      "stored_bytes": 1490612,
+      "stored_sha256": "4f84101a723ac152e2ea081ceb8d9d2bd4a23748c44514edb66fb5864ef481b2"
+    },
+    {
+      "id": "geometry_05",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_35.22561141458016_FA_225.4450745851556_L_1.2954868823517_Ratio_0.6_Step_1e15.0_Index_3_SC_0.9318871641148884_KC_1.033566256088247_2025-08-18_22_52_35/assembly_359.13987942275634.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_05.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 2577345,
+      "source_sha256": "6debcb8314bc27656d60d740dd8e01e2e8c5a05aaefd074ce00cd2dd7bea9b28",
+      "stored_bytes": 897359,
+      "stored_sha256": "d7a3a84168fe7c6e4a867ed78d771b40b7da5c780212ca71a615c7185187ed53"
+    },
+    {
+      "id": "geometry_06",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_35.22561141458016_FA_225.4450745851556_L_1.29548_index0/assembly_255.50785171261293.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_06.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 2490986,
+      "source_sha256": "61d3ee6e667770d130117da419f32190bfd69958bbb41035408955f965db97fc",
+      "stored_bytes": 871451,
+      "stored_sha256": "1367a0d110e6981ed31d002216b74f5396676be0634fcce55911a3339209c6cc"
+    },
+    {
+      "id": "geometry_07",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_41.35102950525574_FA_2186.378431247531_L_8.931258139128085_Ratio_0.6_Step_1e15.0_Index_0_SC_0.402232569627718_KC_1.905584204816933_2025-08-18_22_52_37/assembly_540.9329583272307.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_07.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 1833499,
+      "source_sha256": "be86a841c79808ea80c7adc2a70627dd202d4fecd7c4fefc790bacea44670590",
+      "stored_bytes": 645835,
+      "stored_sha256": "0a9a437ce286abd62bdf0bd91c738c617c62fadf4b5550a69475d9267fca3a4f"
+    },
+    {
+      "id": "geometry_08",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_41.35102950525574_FA_2186.378431247531_L_8.931258139128085_Ratio_0.6_Step_1e15.0_Index_3_SC_0.402232569627718_KC_1.905584204816933_2025-08-18_22_52_37/assembly_277.2684370556596.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_08.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 1978998,
+      "source_sha256": "c47b0a6cfad47d4914f04fd7a109a38df6d58209458363ac4fa32a0c57dc70d8",
+      "stored_bytes": 707384,
+      "stored_sha256": "cfc935093e8dc0a4bc076a787c0b6bb4b821aac726af2953d784e8a9f59a646c"
+    },
+    {
+      "id": "geometry_09",
+      "kind": "large_structure",
+      "source_relative": "MOF_growth_Data/MOF assembly structure statistics/MOL_structrue/MOL_structrue_data.zip",
+      "source_member": "Zr_5.105651161087343_FA_516.9128052630062_L_6.621355055664632_Ratio_0.6_Step_1e15.0_Index_1_SC_1.705931167706811_KC_0.9692903161923302_2025-08-18_22_52_38/assembly_1431.1129017722856.mol2",
+      "release_path": "14_fig5_source_followup/structures/large_structure_09.mol2.gz",
+      "encoding": "gzip",
+      "source_bytes": 1725891,
+      "source_sha256": "51d371912470d5e5b8bbba0515f70e4f454bc1316fe4c2bcde49f6d4e6cfc86f",
+      "stored_bytes": 599701,
+      "stored_sha256": "ea198a35617baf7467ab1a7d4259615442a523ecc1d3bb7ab8e2f6af93b7418e"
+    },
+    {
+      "id": "trace_01",
+      "kind": "external_trajectory",
+      "source_relative": "Figures/Figures/Figure3/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29/entities_number_11719.294832898417_index1.pkl",
+      "source_bytes": 126505917,
+      "source_sha256": "5c1bd5afcd524ffc308517fd221557d8270ed58fc1be0f344957d6d85b1e0821",
+      "release_path": null,
+      "encoding": "external_not_deserialized",
+      "checked_on": "2026-11-01"
+    },
+    {
+      "id": "trace_02",
+      "kind": "external_trajectory",
+      "source_relative": "Figures/Figures/Figure3/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29/entities_number_1246.43316627056_index3.pkl",
+      "source_bytes": 100336833,
+      "source_sha256": "ef2f42b03210802e47a91bcb6756964466648efc6d531d8f483b0129834e2cc9",
+      "release_path": null,
+      "encoding": "external_not_deserialized",
+      "checked_on": "2026-11-01"
+    },
+    {
+      "id": "trace_03",
+      "kind": "external_trajectory",
+      "source_relative": "Figures/Figures/Figure3/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29/entities_number_3124.8659233585645_index2.pkl",
+      "source_bytes": 125694297,
+      "source_sha256": "e1a0c3f933be7be169f13c594b62e48ed9e2866e7aab356ab7769bc68a93b2d4",
+      "release_path": null,
+      "encoding": "external_not_deserialized",
+      "checked_on": "2026-11-01"
+    }
+  ],
+  "limits": [
+    "Directory condition matches are not proof of the original classification snapshot.",
+    "Three filenames have indices 1/2/3 inside an Index_0 parent. No index is silently selected.",
+    "Notebook is a supplied method candidate, not hash-linked to the historical 284-row execution."
+  ]
+}
