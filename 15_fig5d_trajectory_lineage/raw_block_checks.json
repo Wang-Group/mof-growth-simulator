@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "folder": "Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29",
+      "entity": 13,
+      "raw_chunk": "/public/home/yibinjiang/workspace/out1/MOL_batch0_selected/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_0_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29/all_molecules_41.0.mol2",
+      "raw_chunk_bytes": 489523367,
+      "block_index": 402156,
+      "local_block_index": 2155,
+      "snapshot_sha256": "03dea550ad1ba032c1854e9e3239e09fa7eda35a606894577c9dcab2bb885366",
+      "raw_block_sha256": "03dea550ad1ba032c1854e9e3239e09fa7eda35a606894577c9dcab2bb885366",
+      "matches": true
+    },
+    {
+      "folder": "Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_1_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29",
+      "entity": 13,
+      "raw_chunk": "/public/home/yibinjiang/workspace/out1/MOL_batch0_selected/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_1_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29/all_molecules_34.0.mol2",
+      "raw_chunk_bytes": 437554107,
+      "block_index": 337028,
+      "local_block_index": 7027,
+      "snapshot_sha256": "9b316915e2f97ae446449ead6ec9164840221cca7b2742af826b4ff60fa1d820",
+      "raw_block_sha256": "9b316915e2f97ae446449ead6ec9164840221cca7b2742af826b4ff60fa1d820",
+      "matches": true
+    },
+    {
+      "folder": "Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_2_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29",
+      "entity": 13,
+      "raw_chunk": "/public/home/yibinjiang/workspace/out1/MOL_batch0_selected/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_2_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_29/all_molecules_20.0.mol2",
+      "raw_chunk_bytes": 552887218,
+      "block_index": 190394,
+      "local_block_index": 393,
+      "snapshot_sha256": "2334c5ab58926a2b0b99b289112677cc2c51bae1d4a08688fefda14ce5d20954",
+      "raw_block_sha256": "2334c5ab58926a2b0b99b289112677cc2c51bae1d4a08688fefda14ce5d20954",
+      "matches": true
+    },
+    {
+      "folder": "Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_3_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_30",
+      "entity": 13,
+      "raw_chunk": "/public/home/yibinjiang/workspace/out1/MOL_batch0_selected/Zr_23.51473516375187_FA_14486.64624330687_L_28.22501429085254_Ratio_0.6_Step_1e15.0_Index_3_SC_1.449714838985524_KC_1.72260712693314_2025-08-18_22_52_30/all_molecules_13.0.mol2",
+      "raw_chunk_bytes": 487507804,
+      "block_index": 122275,
+      "local_block_index": 2274,
+      "snapshot_sha256": "b9e4ad536c36bb362e244e6ea8c55ae22c59d5ff8abc28fc064b5209285c5bb5",
+      "raw_block_sha256": "b9e4ad536c36bb362e244e6ea8c55ae22c59d5ff8abc28fc064b5209285c5bb5",
+      "matches": true
+    }
+  ],
+  "max_source_bytes": 1967472496
+}

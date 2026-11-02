@@ -114,7 +114,9 @@ def verify():
             filename_index = int(re.search(r'_index(\d+)\.pkl$', item['source_relative']).group(1))
             if parent_index == filename_index:
                 raise AssertionError('Expected explicitly unresolved index conflict')
-    return {'status': 'PASS_PARTIAL_EVIDENCE_CHECKS', 'classification_rows': len(rows),
+    return {'status': 'PASS_PARTIAL_EVIDENCE_CHECKS', 'as_of': '2026-11-01',
+            'current_fig5d_status': 'Superseded by 15_fig5d_trajectory_lineage on 2026-11-02',
+            'classification_rows': len(rows),
             'row_status_counts': counts, 'fully_linked_classification_rows': 0,
             'packaged_large_structures': len(structures), 'incomplete_structure_name_count': incomplete,
             'external_trajectory_hash_records': len(external), 'fig5c_original_module_found': False,

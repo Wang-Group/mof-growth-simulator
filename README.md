@@ -12,10 +12,12 @@ code versions and 975 external checkpoint/result pairs; S6's 18 displayed
 numbers match the recovered numerical source. Remaining tasks include the Fig. 5C
 analysis and author release decisions. S6's six code/notebook files and 33
 geometries are now packaged with a safe local reproduction entry.
-The Fig. 5 follow-up adds two archived code sources, nine large structures and
-an explicit 284-row evidence map. Eight rows have structure-condition matches;
-four have ambiguous trajectory indices. Neither closes the original small-motif
-snapshot link. The exact panel C analysis module is still unlocated.
+The November 2 Jiageng recovery now links **all 284 Fig. 5D classification rows**
+to original run folders and indexed snapshots. All 7,978 recorded assignments
+replayed correctly; 3,688 entity 1-13 snapshots are packaged for offline replay.
+The existing 90 figure representatives are byte-identical, and the three NAS
+repeat-index conflicts are resolved by original-file hashes. Group 15 supersedes
+group 14's earlier partial panel D status. The exact panel C module remains unlocated.
 **S1's 69/53 counts are author-confirmed** after
 literature checking; the historical grouping audit is not an open correction
 request. **S2 is confirmed as 23 smaller/thinner outcomes among 30 publications**;
@@ -37,7 +39,7 @@ a file is not the same as reproducing its full scientific workflow.
 | [01_uio66_long_growth](01_uio66_long_growth/) | 24 completed trajectories: first-passage statistics, residence times, representative traces, conditions, historical simulation source, and entity-13 structures | Main Fig. 3D; SI Fig. S7 |
 | [02_dls](02_dls/) | Original `260316.csv`, processing and Gualtieri fitting code, parameters, and curves | Main Fig. 3E; SI Section S3.2 |
 | [03_btb_trajectory](03_btb_trajectory/) | Compact full step-curve export, original plotting script/PNG, optional exporter, and raw-file fingerprint | Main Fig. 5A; time calibration still pending |
-| [04_btb_motifs](04_btb_motifs/) | Historical 284-row source table, 90 motif classes at entity 1-13, frequencies, and MOL2 structures | Main Fig. 5D; percentages recomputed and structures user-confirmed; row-to-trajectory provenance pending |
+| [04_btb_motifs](04_btb_motifs/) | Historical 284-row source table, 90 motif classes at entity 1-13, frequencies, and MOL2 structures | Main Fig. 5D; unchanged originals, now linked to raw runs through group 15 |
 | [05_mixed_zr6_zr12](05_mixed_zr6_zr12/) | Four April 10 rerun records, composition traces, conditions, and initial/final structures | Historical comparison family; do not substitute for the April 3 S21 source in group 11 |
 | [06_vacancy_repair](06_vacancy_repair/) | Original-vacancy recovery table, initial/N=2800 structures, historical analysis code, and reference figures | Source family associated with SI Figs. S23-S24 |
 | [07_publication_sources](07_publication_sources/) | 670 byte-verified code/data/configuration copies, retaining supplied figure/table paths and version labels | Current figure/table source bundles; panel-specific limits apply |
@@ -47,7 +49,8 @@ a file is not the same as reproducing its full scientific workflow.
 | [11_s21_april03](11_s21_april03/) | April 3 Zr6/Zr12 saved trajectories, plotting code, artwork and an explicitly separated alternative source | Shared-source README identifies the main variant as S21; final document adoption still requires author confirmation |
 | [12_runtime_provenance](12_runtime_provenance/) | 206 recovered source locations, small seed/host inputs, 197 exact code/seed references, 1327 lineage rows and remote checkpoint hashes | Separate campaign families; six S7 results and four sampled historical results linked to seed/RNG/parameters/code |
 | [13_table_source_audit](13_table_source_audit/) | Original S1 evidence, historical final-view SI extracts, S6 comparison and current status note | S1/S2 counts confirmed; S8 closed; S6 sources and local reproduction complete |
-| [14_fig5_source_followup](14_fig5_source_followup/) | Classification notebook, grid plotter, nine large structures, 284-row evidence map and search records | Partial Fig. 5D provenance only; panel C original module still unlocated |
+| [14_fig5_source_followup](14_fig5_source_followup/) | Earlier NAS/5090 sources and November 1 search records | Historical partial panel D audit; panel C original module still unlocated |
+| [15_fig5d_trajectory_lineage](15_fig5d_trajectory_lineage/) | 284 run mappings, 7978 indexed snapshots, 3688 packaged figure-size snapshots, original indices and source versions | Current Fig. 5D provenance; fixed-representative classifier replay and four raw-block hash spot checks |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical
@@ -65,6 +68,7 @@ python reproduce.py
 python verify_package.py
 python verify_publication.py --report publication_verification.json
 python tools/reproduce_entropy.py
+python -m tools.audit_fig5d_lineage
 python -m unittest discover -s tests -v
 ```
 
@@ -142,7 +146,7 @@ replaces a complete document review or the local verifier's narrower scope.
 - **DLS:** the last two raw columns already include preparation time. The fit uses 40 points spanning 117-1170 s, while the original display ends at 600 s. R-squared = 0.972658 refers to the processed monotonic apparent-progress proxy, not raw diameter or crystallinity. The implementation selects nG from {1, 2, 3}.
 - **BTB trajectory:** all step-plot changes are retained in 148,692 constant segments from 5,000,001 original rows. Interior timestamps within constant segments are omitted. The stored source clock is not relabeled as calibrated milliseconds.
 - **Recovered BTB run:** the Fig. 5A pickle matches archived run Index_2 by SHA-256. Its run-folder source saves raw `timing`, without multiplying by 0.1. The later plotter multiplies by 0.2405; this recovers the numeric plotting convention, not a new physical calibration. See [the recovered source note](03_btb_trajectory/source/README.md).
-- **BTB motifs:** frequencies are historical conditional statistics pooled over 71 encoded conditions, with per-size denominators of 283 or 284; they are not probabilities from the newer response-surface campaign.
+- **BTB motifs:** frequencies are historical conditional statistics pooled over 71 encoded conditions, with per-size denominators of 283 or 284 at entity 1-13; they are not probabilities from the newer response-surface campaign. The recovered extractor selects the last occurrence of each size before the first maximum, not first-passage structures. Group 15 reproduces historical radial-histogram class assignments, not graph isomorphism or exact RNG histories.
 - **Defect examples:** three distinct mixed-seed variants are preserved: April 3 `Zr6_Zr12_mix`, April 3 `initialize_structures1`, and the April 10 rerun. Their stored mean-Zr12-zero times differ (0.701327, 0.306265, and 0.270601 s); they must not be relabeled or pooled as the same cohort. Vacancy-fill fractions retain the original 591 BDC and 54 Zr vacancies as denominators. No new occupancy reconstruction from omitted checkpoints was performed.
 
 ## Branch and Release Status

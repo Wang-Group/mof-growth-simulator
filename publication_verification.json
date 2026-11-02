@@ -396,8 +396,10 @@
       ],
       "scope": "Original model with original rounded inputs and symmetry numbers; six geometry mappings checked. No notebook batch cells, full-folder preprocessing, production KMC or new physical-model validation."
     },
-    "figure5_source_followup": {
+    "figure5_source_followup_historical_20261101": {
       "status": "PASS_PARTIAL_EVIDENCE_CHECKS",
+      "as_of": "2026-11-01",
+      "current_fig5d_status": "Superseded by 15_fig5d_trajectory_lineage on 2026-11-02",
       "classification_rows": 284,
       "row_status_counts": {
         "STRUCTURE_CONDITIONS_ONLY": 8,
@@ -410,6 +412,17 @@
       "external_trajectory_hash_records": 3,
       "fig5c_original_module_found": false,
       "scope": "Offline source/parameter matching only. No classification rerun, no pickle deserialization, no claim that large structures are the classified small-entity snapshots."
+    },
+    "figure5d_trajectory_lineage": {
+      "status": "PASS_FIG5D_LINEAGE",
+      "classification_rows_linked": 284,
+      "indexed_classification_cells": 7978,
+      "replayed_cells_this_run": 3688,
+      "packaged_fig5d_snapshots": 3688,
+      "representatives_byte_matched_to_group04": 90,
+      "original_raw_block_hash_spot_checks": 4,
+      "resolved_external_trajectory_indices": 3,
+      "scope": "Frozen-representative radial-histogram replay and recorded provenance. Not a new classifier, graph-isomorphism proof, RNG replay, or full raw-stream re-extraction."
     },
     "runtime_and_table_provenance": {
       "status": "PASS_FOR_STATED_PROVENANCE_CHECKS",
@@ -1151,8 +1164,8 @@
   ],
   "user_confirmed_release_decisions": {
     "date": "2026-10-31",
-    "last_updated": "2026-11-01",
-    "evidence": "User confirmations and separately identified read-only NAS checks; not a new full MS/SI audit",
+    "last_updated": "2026-11-02",
+    "evidence": "User confirmations and separately identified read-only NAS/Jiageng checks; not a new full MS/SI audit",
     "S7": {
       "status": "CONFIRMED",
       "time_coordinate": "raw algorithm time u",
@@ -1163,7 +1176,17 @@
     "Figure5D": {
       "percentages": "Previously independently recomputed",
       "structures": "Confirmed by user; no new independent artwork check in this update",
-      "remaining": "Map each classification-table row to its original trajectory file"
+      "provenance_status": "ROW_TO_RUN_AND_CLASSIFIED_SNAPSHOT_LINKED",
+      "checked_on": "2026-11-02",
+      "evidence_path": "15_fig5d_trajectory_lineage/README.md",
+      "linked_rows": 284,
+      "replayed_assignments_on_recovery": 7978,
+      "packaged_figure_size_snapshots": 3688,
+      "byte_identical_existing_representatives": 90,
+      "raw_stream_block_spot_checks": 4,
+      "resolved_NAS_trajectory_indices": 3,
+      "remaining": "External raw-data archive scope and author wording; no further request for missing Fig. 5D run folders",
+      "limits": "Last occurrence before first maximum, not first passage. Frozen radial-histogram replay is not graph-isomorphism or RNG replay; raw-stream comparisons sampled rather than exhaustive."
     },
     "Figure6": {
       "status": "FINAL_FILE_REGISTRATION_PENDING",

@@ -39,10 +39,20 @@ parameter manifests are already packaged; they need not be requested again.
 
 Group 14 adds three historical BTB trajectory hash records totaling 352,537,047
 bytes. They remain on NAS and were not deserialized or copied into GitHub. Their
-filename indices conflict with the parent directory, so archive selection must
-retain that ambiguity rather than silently assign classification rows. Nine
+filename/parent conflict was resolved on November 2 by matching original Jiageng
+files to Index_1/2/3 by SHA-256; see group 15. Preserve the original and NAS paths
+as separate provenance, not separate independent trajectories. Nine
 small compressed large-assembly structures and the two recovered code sources
 are already packaged. Check overlap before adding this count to older ledgers.
+
+Group 15 adds about 34 MB of compact Fig. 5D sources to Git, including all 3688
+entity 1-13 snapshots and their indices/code. A separately recovered 100,385,146-byte
+archive contains all 7978 entity 1-29 snapshots plus supporting sources. Its
+fingerprint is in `15_fig5d_trajectory_lineage/manifest.json`; the remaining
+entity 14-29 snapshots can be selected for Zenodo without copying the roughly
+10 GB plot archive. Full raw multi-block MOL2 streams remain on Jiageng. Four
+sampled blocks were hash-matched; do not label the whole raw stream as verified
+or uploaded. No Zenodo upload was performed.
 
 ## Proposed Datasets
 

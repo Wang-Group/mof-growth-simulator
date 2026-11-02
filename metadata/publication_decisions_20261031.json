@@ -1,7 +1,7 @@
 {
   "date": "2026-10-31",
-  "last_updated": "2026-11-01",
-  "evidence": "User confirmations and separately identified read-only NAS checks; not a new full MS/SI audit",
+  "last_updated": "2026-11-02",
+  "evidence": "User confirmations and separately identified read-only NAS/Jiageng checks; not a new full MS/SI audit",
   "S7": {
     "status": "CONFIRMED",
     "time_coordinate": "raw algorithm time u",
@@ -12,7 +12,17 @@
   "Figure5D": {
     "percentages": "Previously independently recomputed",
     "structures": "Confirmed by user; no new independent artwork check in this update",
-    "remaining": "Map each classification-table row to its original trajectory file"
+    "provenance_status": "ROW_TO_RUN_AND_CLASSIFIED_SNAPSHOT_LINKED",
+    "checked_on": "2026-11-02",
+    "evidence_path": "15_fig5d_trajectory_lineage/README.md",
+    "linked_rows": 284,
+    "replayed_assignments_on_recovery": 7978,
+    "packaged_figure_size_snapshots": 3688,
+    "byte_identical_existing_representatives": 90,
+    "raw_stream_block_spot_checks": 4,
+    "resolved_NAS_trajectory_indices": 3,
+    "remaining": "External raw-data archive scope and author wording; no further request for missing Fig. 5D run folders",
+    "limits": "Last occurrence before first maximum, not first passage. Frozen radial-histogram replay is not graph-isomorphism or RNG replay; raw-stream comparisons sampled rather than exhaustive."
   },
   "Figure6": {
     "status": "FINAL_FILE_REGISTRATION_PENDING",

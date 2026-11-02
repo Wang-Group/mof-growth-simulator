@@ -18,6 +18,12 @@ Thumbs.db
 *.tar.gz
 *.log
 
+# Audited compact Fig. 5D bundles, each below 25 MB; all members are hash-indexed.
+!/15_fig5d_trajectory_lineage/data/metadata.zip
+!/15_fig5d_trajectory_lineage/data/representatives.zip
+!/15_fig5d_trajectory_lineage/data/snapshots_entity01_07.zip
+!/15_fig5d_trajectory_lineage/data/snapshots_entity08_13.zip
+
 # Audited small seed/host inputs only; verify_package.py enforces the hash allowlist.
 !/12_runtime_provenance/original/frozen_seed_ensemble_v2/btb_network/btb_mol_seed_0[0-7].pkl
 !/12_runtime_provenance/original/frozen_seed_ensemble_v2/btb_planar/btb_mol_seed_0[0-7].pkl

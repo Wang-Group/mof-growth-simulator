@@ -164,6 +164,7 @@ def additional_source_checks():
 
 def main():
     from tools.audit_fig5_sources import verify as verify_fig5_sources
+    from tools.audit_fig5d_lineage import verify as verify_fig5d_lineage
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
@@ -172,7 +173,8 @@ def main():
               'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks(),
               'recovered_sources': verify_recovered_sources(),
               'entropy_calculation': verify_entropy(),
-              'figure5_source_followup': verify_fig5_sources(),
+              'figure5_source_followup_historical_20261101': verify_fig5_sources(),
+              'figure5d_trajectory_lineage': verify_fig5d_lineage(),
               'runtime_and_table_provenance': verify_runtime_and_tables()}
     dependencies = dependency_audit()
     decisions = json.loads((ROOT/'metadata/publication_decisions_20261031.json').read_text(encoding='utf-8'))
