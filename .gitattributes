@@ -8,3 +8,8 @@
 
 # Generated comparison artwork, not hand-edited source text.
 16_fig5c_reconstruction/validation/*.svg binary
+17_submission_sources/figure6c/*.svg binary
+
+# Preserve instrument exports and official legal text without whitespace cleanup.
+17_submission_sources/nmr/acquisitions/**/auditp.txt -whitespace
+LICENSE-DATA.txt -whitespace

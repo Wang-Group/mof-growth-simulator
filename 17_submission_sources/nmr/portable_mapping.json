@@ -1,0 +1,212 @@
+[
+  {
+    "table_entry": 1,
+    "temperature_K_nominal_in_SI": 228,
+    "linewidth_Hz_as_reported_in_Table_S4": 5.21,
+    "exchange_rate_s_minus_1_as_reported": null,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S46",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/228K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/228K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/228K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/228K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/228K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/228K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/228K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/228K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/228K.jpg"
+    }
+  },
+  {
+    "table_entry": 2,
+    "temperature_K_nominal_in_SI": 238,
+    "linewidth_Hz_as_reported_in_Table_S4": 5.22,
+    "exchange_rate_s_minus_1_as_reported": null,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S47",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/238K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/238K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/238K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/238K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/238K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/238K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/238K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/238K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/238K.jpg"
+    }
+  },
+  {
+    "table_entry": 3,
+    "temperature_K_nominal_in_SI": 258,
+    "linewidth_Hz_as_reported_in_Table_S4": 5.15,
+    "exchange_rate_s_minus_1_as_reported": null,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S48",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/258K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/258K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/258K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/258K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/258K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/258K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/258K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/258K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/258K.jpg"
+    }
+  },
+  {
+    "table_entry": 4,
+    "temperature_K_nominal_in_SI": 268,
+    "linewidth_Hz_as_reported_in_Table_S4": 5.35,
+    "exchange_rate_s_minus_1_as_reported": 0.41,
+    "experiment_number": 2,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S49",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/268K/2/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/268K/2/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/268K/2/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/268K/2/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/268K/2/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/268K/2/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/268K/2/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/268K/2/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/268K.jpg"
+    }
+  },
+  {
+    "table_entry": 5,
+    "temperature_K_nominal_in_SI": 298,
+    "linewidth_Hz_as_reported_in_Table_S4": 7.04,
+    "exchange_rate_s_minus_1_as_reported": 5.72,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S50",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/298K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/298K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/298K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/298K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/298K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/298K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/298K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/298K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/298K.jpg"
+    }
+  },
+  {
+    "table_entry": 6,
+    "temperature_K_nominal_in_SI": 303,
+    "linewidth_Hz_as_reported_in_Table_S4": 8.28,
+    "exchange_rate_s_minus_1_as_reported": 9.61,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S51",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/303K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/303K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/303K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/303K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/303K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/303K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/303K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/303K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/303K.jpg"
+    }
+  },
+  {
+    "table_entry": 7,
+    "temperature_K_nominal_in_SI": 308,
+    "linewidth_Hz_as_reported_in_Table_S4": 10.49,
+    "exchange_rate_s_minus_1_as_reported": 16.56,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S52",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/308K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/308K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/308K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/308K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/308K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/308K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/308K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/308K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/308K.jpg"
+    }
+  },
+  {
+    "table_entry": 8,
+    "temperature_K_nominal_in_SI": 313,
+    "linewidth_Hz_as_reported_in_Table_S4": 13.76,
+    "exchange_rate_s_minus_1_as_reported": 26.83,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S53",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/313K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/313K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/313K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/313K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/313K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/313K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/313K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/313K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/313K.jpg"
+    }
+  },
+  {
+    "table_entry": 9,
+    "temperature_K_nominal_in_SI": 318,
+    "linewidth_Hz_as_reported_in_Table_S4": 18.07,
+    "exchange_rate_s_minus_1_as_reported": 40.37,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S54",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/318K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/318K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/318K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/318K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/318K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/318K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/318K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/318K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/318K.jpg"
+    }
+  },
+  {
+    "table_entry": 10,
+    "temperature_K_nominal_in_SI": 323,
+    "linewidth_Hz_as_reported_in_Table_S4": 22.75,
+    "exchange_rate_s_minus_1_as_reported": 55.07,
+    "experiment_number": 1,
+    "processing_number": 1,
+    "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+    "SI_figure": "S55",
+    "files": {
+      "raw_fid": "17_submission_sources/nmr/acquisitions/323K/1/fid",
+      "acquisition_parameters": "17_submission_sources/nmr/acquisitions/323K/1/acqus",
+      "acquisition_audit": "17_submission_sources/nmr/acquisitions/323K/1/audita.txt",
+      "pulse_program": "17_submission_sources/nmr/acquisitions/323K/1/pulseprogram",
+      "processed_real_spectrum": "17_submission_sources/nmr/acquisitions/323K/1/pdata/1/1r",
+      "processed_imaginary_spectrum": "17_submission_sources/nmr/acquisitions/323K/1/pdata/1/1i",
+      "processing_parameters": "17_submission_sources/nmr/acquisitions/323K/1/pdata/1/procs",
+      "processing_audit": "17_submission_sources/nmr/acquisitions/323K/1/pdata/1/auditp.txt",
+      "exported_spectrum_image": "17_submission_sources/nmr/spectra/323K.jpg"
+    }
+  }
+]

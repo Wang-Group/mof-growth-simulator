@@ -1,0 +1,22 @@
+{
+  "status": "PREPARING_PUBLIC_RELEASE",
+  "prepared_on": "2026-11-02",
+  "branch": "codex/publication-release-20261029",
+  "license_code": "MIT",
+  "license_project_data": "CC-BY-4.0",
+  "license_confirmation": "metadata/publication_decisions_20261031.json",
+  "data_source_manifest": "17_submission_sources/source_manifest.json",
+  "document_baseline": "metadata/release_document_baseline.json",
+  "pending_publication_actions": [
+    "Select and deposit the necessary external large datasets; record DOI and checksums",
+    "Freeze the formal release/tag and add its exact reference to the manuscript"
+  ],
+  "formal_release_created": false,
+  "zenodo_deposited": false,
+  "ms_si_modified": false,
+  "license_text_source": {
+    "MIT": "https://opensource.org/license/mit",
+    "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+  },
+  "cc_by_legalcode_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+}

@@ -1,0 +1,18 @@
+##TITLE= Audit trail, TOPSPIN		Version 3.2
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmr
+$$ F:/Wangcheng/data/SYH/nmr/Zr6-OMC-DMF-250812-(-5)/2/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-08-12 10:53:45.349 +0800>,<nmr>,<nmr-PC>,<go>,<TOPSPIN 3.2>,
+      <created by zg
+	started at 2025-08-12 10:49:27.214 +0800,
+	POWCHK disabled, PULCHK disabled,
+       configuration hash MD5:
+       DD 9C 83 04 16 B5 14 6F DB E4 F6 56 FA 5D 36 62
+       data hash MD5: 64K
+       A1 57 67 E0 C3 A6 E5 22 EC 26 F8 94 5D 0A 95 1D>)
+##END=
+
+$$ hash MD5
+$$ 39 00 AB CA FE 93 41 C5 12 81 B6 EF C1 89 FA 0C

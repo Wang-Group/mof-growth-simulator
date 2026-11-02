@@ -23,6 +23,7 @@ the historical `main` branch.
 | S6 entropy | `python tools/reproduce_entropy.py`, sources in `08_entropy_inputs/source/` | Six geometry mappings and 18 values reproduced, no batch-writing cells |
 | S7 algorithm-time panels | `python 10_plot_versions/render_s7.py` | Adopted raw-u entry; seconds scripts retained only as history |
 | April 3 S21 saved trace | `python 11_s21_april03/plot_saved_trace.py --help` | Plot-only entry; April 3 variants remain separate from April 10 |
+| Submission source supplement | `python -m tools.verify_submission_sources` | 99 source files; ten S4 acquisitions; seven identity regressions; current document/figure registration |
 | Whole candidate verification | `python verify_package.py`, `python verify_publication.py` | Source hashes and expressly listed numerical checks, not all archived scripts or every bootstrap |
 
 ## Remaining Coverage Limits
@@ -37,5 +38,7 @@ extraction notebooks, and resolves the three NAS repeat-index conflicts by hash.
 Its fixed-representative replay is not graph-isomorphism validation or RNG replay.
 
 Large checkpoints/raw trajectories require a selected external archive such as
-Zenodo. A manifest or a NAS path is not an uploaded dataset. Licensing, author
-credit and final release/archive identifiers remain author release decisions.
+Zenodo. A manifest or a NAS path is not an uploaded dataset. Code MIT and project
+data CC BY 4.0 are confirmed; see `LICENSING.md`. Final release/archive identifiers
+remain to be assigned. Current actions are in `docs/PUBLICATION_RELEASE.md`;
+historical-module provenance is not an unresolved source-data request.

@@ -1,7 +1,7 @@
 {
   "date": "2026-10-31",
   "last_updated": "2026-11-02",
-  "evidence": "User confirmations and separately identified read-only NAS/Jiageng checks; not a new full MS/SI audit",
+  "evidence": "Author confirmations, source-hash checks and November 2 final-view submission follow-up; historical checks remain dated separately",
   "S7": {
     "status": "CONFIRMED",
     "time_coordinate": "raw algorithm time u",
@@ -15,7 +15,11 @@
     "evidence_path": "16_fig5c_reconstruction/validation/validation_report.json",
     "entry_point": "16_fig5c_reconstruction/render.py",
     "input_conditions": 1260,
-    "selected_grid": [67, 75, 43],
+    "selected_grid": [
+      67,
+      75,
+      43
+    ],
     "historical_projected_iou": 0.9974086021298051,
     "finest_grid_projected_iou": 0.9988413564419425,
     "original_module_recovered": false,
@@ -34,12 +38,23 @@
     "byte_identical_existing_representatives": 90,
     "raw_stream_block_spot_checks": 4,
     "resolved_NAS_trajectory_indices": 3,
-    "remaining": "External raw-data archive scope and author wording; no further request for missing Fig. 5D run folders",
+    "remaining": "No missing row/run link; retain source sampling/classification definitions and archive scope.",
     "limits": "Last occurrence before first maximum, not first passage. Frozen radial-histogram replay is not graph-isomorphism or RNG replay; raw-stream comparisons sampled rather than exhaustive."
   },
   "Figure6": {
-    "status": "FINAL_FILE_REGISTRATION_PENDING",
-    "remaining": "Register adopted file path and SHA-256; do not infer adoption from file date"
+    "status": "ADOPTED_N2000_IMAGE_REGISTERED",
+    "checked_on": "2026-11-02",
+    "document_baseline": "metadata/release_document_baseline.json",
+    "reference_panel": "17_submission_sources/figure6c/Figure6C_N2000.svg",
+    "embedded_image": {
+      "docx_member": "word/media/image10.png",
+      "sha256": "3385a63246a16a295c1449fea4be5c608a33ed5e88217909135250a389879dff",
+      "bytes": 1109858,
+      "N": 2000,
+      "repeats_per_condition": 4,
+      "inspection": "Accepted embedded image visually checked; panel E caption present"
+    },
+    "panel_E_caption": "Present in reviewed final-view MS"
   },
   "TableS1": {
     "status": "COUNTING_SCOPE_AUTHOR_CONFIRMED",
@@ -71,7 +86,13 @@
       "current_total": 30,
       "ms_smaller_or_thinner": 23,
       "si_only_smaller_or_thinner": 23,
-      "si_outcome_counts": [23, 2, 2, 1, 2],
+      "si_outcome_counts": [
+        23,
+        2,
+        2,
+        1,
+        2
+      ],
       "additional_count_confirmation_request": false,
       "retention_decision": "Keep the study the author explicitly reconfirmed; do not exclude it or reduce the count to 22 without a new author decision.",
       "historical_ms_sha256_with_22": "a74b255ccfc89d8016eef8ba5c763f001bee27fb12f1b8a1a91704f472984bcd",
@@ -88,7 +109,12 @@
       "matched_values": 18,
       "maximum_absolute_difference_si": 4.546038212538406e-9,
       "btb_geometry": "mol_xyz_files/BTBa_new.xyz",
-      "solvent_inputs_M_gmol_V_A3_density_gcm3_T_K": [49.8505, 38.91547731, 1.024396285, 393],
+      "solvent_inputs_M_gmol_V_A3_density_gcm3_T_K": [
+        49.8505,
+        38.91547731,
+        1.024396285,
+        393
+      ],
       "source_payload_packaged": true,
       "packaged_files": 39,
       "calculation_manifest": "08_entropy_inputs/calculation_manifest.json",
@@ -107,5 +133,24 @@
     "additional_raw_record_request": false,
     "scope": "Provenance request closed; not an independent experimental remeasurement or a DLS trace"
   },
-  "scope": "Remaining work is primarily provenance reconciliation and submission preparation, not a claim of incorrect data"
+  "scope": "Current sources and version corrections integrated; selected large-data public archive and formal release identifier remain to be completed.",
+  "licenses": {
+    "confirmed_on": "2026-11-02",
+    "evidence": "User explicitly selected MIT for code and CC BY 4.0 for data",
+    "code": "MIT",
+    "project_data": "CC-BY-4.0",
+    "scope": "LICENSING.md",
+    "third_party_terms_preserved": true
+  },
+  "submission_followup_20261102": {
+    "source_manifest": "17_submission_sources/source_manifest.json",
+    "document_baseline": "metadata/release_document_baseline.json",
+    "identity_CSVs": "Three unchanged sources packaged; shared-copy hashes checked against source README",
+    "TableS4": "Ten author-confirmed acquisition mappings and 90 original files packaged; 268 K acquisition 2; no independent spectral refit",
+    "TableS7": "Current SI distinguishes maximum 2922 from final 2911",
+    "BTB_growth_range": "Corrected by author to 0.1-10",
+    "finite_bath": "Main text identifies separate concentration-to-rate mapping",
+    "historical_time_reference": "Raw algorithm time multiplied by 0.2405 ms as a 120 C site-opening reference; not absolute inter-framework calibration",
+    "entity13_and_DLS": "Current SI already includes snapshot/cohort limits and DLS fit-window/exponent-selection details"
+  }
 }

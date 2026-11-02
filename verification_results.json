@@ -6,7 +6,7 @@
   "matplotlib": "3.10.0",
   "checks": {
     "copied_sources_hash_verified": 209,
-    "immutable_package_files_hash_verified": 1238,
+    "immutable_package_files_hash_verified": 1380,
     "long_growth": {
       "completed": 24,
       "panel_values_matched": 216,
@@ -26,14 +26,14 @@
       "source_rows": 5000001,
       "plotted_segments": 148692,
       "source_hash_recorded": "e1a0c3f933be7be169f13c594b62e48ed9e2866e7aab356ab7769bc68a93b2d4",
-      "time_calibration": "pending"
+      "time_calibration": "120 C site-opening reference; not absolute growth calibration"
     },
     "btb_frequencies": {
       "classes": 90,
       "numerical_frequencies_match": true,
       "candidate_mol2_files_present": true,
       "structure_confirmation": "Confirmed by user; no new independent artwork check in this update",
-      "remaining_provenance": "Map each classification-table row to its original trajectory file"
+      "remaining_provenance": "No missing row/run link; retain source sampling/classification definitions and archive scope."
     },
     "mixed_seed": {
       "repeats": 4,

@@ -1,0 +1,722 @@
+{
+  "audit_date": "2026-11-02",
+  "source_SI": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/SI/supporting_information_S2_updated_20261031_v2.docx",
+  "source_SI_sha256": "d1c0d53d337a3ebb046958dff40cc4b9797df60bcd9bca8fb39d4643acf7ba75",
+  "source_HNMR": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR",
+  "scope": "Row-to-acquisition mapping; preserve author/software linewidth values; no spectral refitting, image-derived numeric linewidths, or source-file changes.",
+  "author_confirmation_268K": "使用第 2 次采集",
+  "rows": [
+    {
+      "table_entry": 1,
+      "temperature_K_nominal_in_SI": 228,
+      "linewidth_Hz_as_reported_in_Table_S4": 5.21,
+      "exchange_rate_s_minus_1_as_reported": null,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1",
+      "acqus_TE_K": 227.86,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-12T11:44:02+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S46",
+      "caption": "Figure S46. 1H NMR spectrum of Zr6-MAA clusters at 228 K.",
+      "docx_member": "word/media/image46.jpeg",
+      "embedded_image_sha256": "9515854b63ddc6343f45f212d631294292e861330309ef9c94d040efafa37ec8",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/fid",
+          "bytes": 262144,
+          "sha256": "ef95ce67171a33e1d107d2cbf58b17d5ff2139ca66e03060829eb383bce5f098"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/acqus",
+          "bytes": 8581,
+          "sha256": "e8dbaa9309b9da8fe139e2aa330e91adf252f9d171c586e9cde3eec3df65633e"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/audita.txt",
+          "bytes": 706,
+          "sha256": "b96e23a5e2fb1f6c050cf523b89fffc27e19bf08a1b11b27cc304de342ab8b99"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "71d6859d5256f7a34dc970d98a94caf60a93d8960c2c3b920ce18f145fcdc05b"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "9784a78686a5252c2f6323da433af16f999d2d9c72c223228bac000a1266f0f0"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/pdata/1/procs",
+          "bytes": 2147,
+          "sha256": "2f4f7d4b38d4b15726df905f0389e361b87d1f728c4b0bc64c8bfeeaaff889a6"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-228K/1/pdata/1/auditp.txt",
+          "bytes": 1174,
+          "sha256": "4fdd680c6f379e71b9ff675ff679a59ac59f5c52927f088af0c8e479f5a800fe"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/228K.jpg",
+          "bytes": 33319,
+          "sha256": "9515854b63ddc6343f45f212d631294292e861330309ef9c94d040efafa37ec8"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "not applicable",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 2,
+      "temperature_K_nominal_in_SI": 238,
+      "linewidth_Hz_as_reported_in_Table_S4": 5.22,
+      "exchange_rate_s_minus_1_as_reported": null,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1",
+      "acqus_TE_K": 237.26,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-12T11:27:24+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S47",
+      "caption": "Figure S47. 1H NMR spectrum of Zr6-MAA clusters at 238 K.",
+      "docx_member": "word/media/image47.jpeg",
+      "embedded_image_sha256": "ac2dacdbdd5c6686cacd1b23e58ee2d8d16ee5b7d80f08bb69765e934a7fcfc6",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/fid",
+          "bytes": 262144,
+          "sha256": "a178afcf6228930fe48c1ddc05e127a9f20de558dba587fe4724054de38b85e4"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/acqus",
+          "bytes": 8583,
+          "sha256": "25c2f1ba7b077c18ced2540829306b274f23aa3b148ef46c7ba624032f333452"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/audita.txt",
+          "bytes": 706,
+          "sha256": "1c5d100f04250d0df7201b43a233e185294d6521c0735001f27718c8ae775523"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "83ba5a65168353b5d9f5ea04f39db39b8197afadcfdbe6f48c7a7d130dc42abf"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "fe5fb6264aa9c0c7b7cb48815ae23df480066e30cbaca703295373a3ce94a6d3"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/pdata/1/procs",
+          "bytes": 2148,
+          "sha256": "2c06b9f07f226ef02fef0db8d2fbebd6aeb851baa9146617ed4042426ddc7e00"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-238K/1/pdata/1/auditp.txt",
+          "bytes": 998,
+          "sha256": "cec56ca791e868cecf0a7f30cb96e67204a4a1a2fd4024e937935bc660e3b9bb"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/238K.jpg",
+          "bytes": 34329,
+          "sha256": "ac2dacdbdd5c6686cacd1b23e58ee2d8d16ee5b7d80f08bb69765e934a7fcfc6"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "not applicable",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 3,
+      "temperature_K_nominal_in_SI": 258,
+      "linewidth_Hz_as_reported_in_Table_S4": 5.15,
+      "exchange_rate_s_minus_1_as_reported": null,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1",
+      "acqus_TE_K": 256.96,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-12T11:04:31+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S48",
+      "caption": "Figure S48. 1H NMR spectrum of Zr6-MAA clusters at 258 K.",
+      "docx_member": "word/media/image48.jpeg",
+      "embedded_image_sha256": "c89d6116217e9ebf7c9eb7931bb02f3d42b240f081b464a7f59da9f7cc541b08",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/fid",
+          "bytes": 262144,
+          "sha256": "582f3ffcb589bea38ebcb9b9897abe13843447046acf2697b37ed9e8f87d43b8"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/acqus",
+          "bytes": 8581,
+          "sha256": "37404a3ad62b08e9a83d3d03e63679e30c654e89d1a0e125f6e26a8650123fd6"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/audita.txt",
+          "bytes": 706,
+          "sha256": "bdcab80aa96d784e1d86dc0decadfc8ce737dad7d3ef5aedec799ff663d55168"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "cbbb6d60d5d509a789c891c45bb94d08dc6addeef1ac11643e80e9687ac9bb9e"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "7f35bcd1229f70a964850816bd28b957a2311d071bcc23770c0810981984959b"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/pdata/1/procs",
+          "bytes": 2147,
+          "sha256": "3118cee37eb728431eefc90f2b1014440d0dede56187c06dbe6d28b7d08c89f8"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-258K/1/pdata/1/auditp.txt",
+          "bytes": 719,
+          "sha256": "6c57c55a2505b00d2c80241c94d340a3948d4cfc18353fc5b92bd2e913639419"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/258K.jpg",
+          "bytes": 33127,
+          "sha256": "c89d6116217e9ebf7c9eb7931bb02f3d42b240f081b464a7f59da9f7cc541b08"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "not applicable",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 4,
+      "temperature_K_nominal_in_SI": 268,
+      "linewidth_Hz_as_reported_in_Table_S4": 5.35,
+      "exchange_rate_s_minus_1_as_reported": 0.41,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 2,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2",
+      "acqus_TE_K": 267.96,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-12T10:50:44+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S49",
+      "caption": "Figure S49. 1H NMR spectrum of Zr6-MAA clusters at 268 K.",
+      "docx_member": "word/media/image49.jpeg",
+      "embedded_image_sha256": "eb552367d7756d3f579a2f8a008ba5e2c62b86df01d1d9f51b47b77d9367c2e8",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/fid",
+          "bytes": 262144,
+          "sha256": "a940374e71ff01b9b131467e440db4a7d3587cee60cc3f0ae1dea38e52e07ae8"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/acqus",
+          "bytes": 8583,
+          "sha256": "22efa3d58485dc63ea19e223341abf986df95dca7c9f836312b9510778390726"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/audita.txt",
+          "bytes": 668,
+          "sha256": "778b8eb578647709785c72caa85983cebba39358ec238775bf6891087b42238c"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "d2f545256868b6db79eb470700c18580aece3adce077c6c690c9a6b1a0ffa14e"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "19e3cdb8457b4a067f087a595a8560394a98fa3989b51e0c5e5e7c6f693c3f59"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/pdata/1/procs",
+          "bytes": 2163,
+          "sha256": "4c37d2bdc31bc7d09f8d5f1bd712639f611d388f75d009c2e6061530c8c61522"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/2/pdata/1/auditp.txt",
+          "bytes": 960,
+          "sha256": "50ac08c6dd330b54427012b7f2325ec32884642a85d56119e407ab85e30fc12c"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/268K.jpg",
+          "bytes": 31244,
+          "sha256": "eb552367d7756d3f579a2f8a008ba5e2c62b86df01d1d9f51b47b77d9367c2e8"
+        }
+      },
+      "mapping_basis": "Author explicitly confirmed on 2026-11-02 that Table S4 uses acquisition 2, not acquisition 1.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": true,
+      "unused_alternative_acquisition": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/Low-temperature-temperature-change/Zr6-OMC-DMF-250812-268K/1"
+    },
+    {
+      "table_entry": 5,
+      "temperature_K_nominal_in_SI": 298,
+      "linewidth_Hz_as_reported_in_Table_S4": 7.04,
+      "exchange_rate_s_minus_1_as_reported": 5.72,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1",
+      "acqus_TE_K": 298.16,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-13T14:40:51+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S50",
+      "caption": "Figure S50. 1H NMR spectrum of Zr6-MAA clusters in DMF at 298 K.",
+      "docx_member": "word/media/image50.jpeg",
+      "embedded_image_sha256": "d2e10abe68d1ce2bfb5776dcf0938edcf90c4a59747dd2bbdfa0add59e5e3b22",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/fid",
+          "bytes": 262144,
+          "sha256": "ee96eb444d18c9a1359d4f134c5b36a967a1bf607963ca999932891c16db38a8"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/acqus",
+          "bytes": 8579,
+          "sha256": "8ee76f714cc361b98c939db0fe2dee4fba9ff2eaeca488dde63e78669c0a5eea"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/audita.txt",
+          "bytes": 666,
+          "sha256": "abd55ab10e317712869501f90db0ca4fad7ae21ddb8c8d2e88a3264190387202"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "09e194b9d42dc476cbb3739f0399991f0a138ceb7d8e05bea296012dd87129c8"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "a453df4dc89815955a3ca39e9995b17637ee90d7efcd3be86751ca581b97351a"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/pdata/1/procs",
+          "bytes": 2145,
+          "sha256": "7d4f937aefb7fa391d55412a4c54bb9329930e8f998fc7f05fdb435ad3876a73"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-298K/1/pdata/1/auditp.txt",
+          "bytes": 1134,
+          "sha256": "eac7a81050f5340836e5fa652b5c19d99dfee47b2d96db968185324f2d62099b"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/298K.jpg",
+          "bytes": 33615,
+          "sha256": "a13000047215081b9f1e14e286980ee8271dc3bcfe656e34f3d7959333d37cba"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": false,
+      "image_version_note": "The supplied 298K.jpg and current SI Figure S50 are different exported image versions (both 1088 x 759). Do not claim byte-identical figure provenance. Acquisition mapping uses the VT series and nominal temperature; the historical image-export link has not been independently established."
+    },
+    {
+      "table_entry": 6,
+      "temperature_K_nominal_in_SI": 303,
+      "linewidth_Hz_as_reported_in_Table_S4": 8.28,
+      "exchange_rate_s_minus_1_as_reported": 9.61,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1",
+      "acqus_TE_K": 303.16,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-13T14:53:25+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S51",
+      "caption": "Figure S51. 1H NMR spectrum of Zr6-MAA clusters at 303 K.",
+      "docx_member": "word/media/image51.jpeg",
+      "embedded_image_sha256": "e4e3e53879f5f5841cf5ba7f96a5ee8f496b9c6f20312791162a2754a4025de2",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/fid",
+          "bytes": 262144,
+          "sha256": "23c30f7d3e185f4463f833b35798e52ce2bd9dae9ccd84d70a667a1dc6732906"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/acqus",
+          "bytes": 8579,
+          "sha256": "048a2da4bdc003c32251cbe65e8ea4b8c958be4c267c4a0657571504ce5bfcb8"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/audita.txt",
+          "bytes": 666,
+          "sha256": "765fcb75dca9f928793c6c8fa402f752a2fe9e192c7c703491ec18744eba6f86"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "d7562c77e7f5f3606ffa053af06b703312be2a8bae8cd032b896464b70110c2f"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "af462dea39f545051d7fc23c4bacbe573eca0ca3807a3bcea938a1e064442801"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/pdata/1/procs",
+          "bytes": 2145,
+          "sha256": "4bc4db29248974078c139cf66813b77e70cc0133bcd6b2cebe704faa9bc15a36"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-303K/1/pdata/1/auditp.txt",
+          "bytes": 1134,
+          "sha256": "092dfddab3f9bd506454123c143c4980eaead55161d95b8eea200bd48c11cfe6"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/303K.jpg",
+          "bytes": 32739,
+          "sha256": "e4e3e53879f5f5841cf5ba7f96a5ee8f496b9c6f20312791162a2754a4025de2"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 7,
+      "temperature_K_nominal_in_SI": 308,
+      "linewidth_Hz_as_reported_in_Table_S4": 10.49,
+      "exchange_rate_s_minus_1_as_reported": 16.56,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1",
+      "acqus_TE_K": 308.26,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-13T15:06:32+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S52",
+      "caption": "Figure S52. 1H NMR spectrum of Zr6-MAA clusters at 308 K.",
+      "docx_member": "word/media/image52.jpeg",
+      "embedded_image_sha256": "eadb3ddea864f95940b3125cdd305dbf103fb03ae5329525c4a3b1cb17d1c7c0",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/fid",
+          "bytes": 262144,
+          "sha256": "3574d82159d6fced1680d85b4545b3f530898bc9750e49a9f253345ef7d1ef43"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/acqus",
+          "bytes": 8579,
+          "sha256": "2a879875a62c239f2f6bce8975eb9f24346e8c4597e3846148797ccdd2a9c070"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/audita.txt",
+          "bytes": 666,
+          "sha256": "a7d5f4cee42a15a74ae296b2d855b3a114d2a9de9cc9d833b92c3370d5daffbf"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "03b5aff435e152d7ddb6a2bc6b283395fcc5d239e74bd6ed1f01d2a04de7e5d9"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "d23fbafe594a5f85072a51bca9f1942177512cbfb940229346b402848df9af81"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/pdata/1/procs",
+          "bytes": 2143,
+          "sha256": "f72c3bef3bc7ff48103f42961d98cb8395d89e8ee924d0adf5d780bbd9d19c74"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-308K/1/pdata/1/auditp.txt",
+          "bytes": 1133,
+          "sha256": "cefe90d29e8c2029ac4435293808638a7ae9e7d0b3eeebec14c21cf8a72fc36d"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/308K.jpg",
+          "bytes": 33189,
+          "sha256": "eadb3ddea864f95940b3125cdd305dbf103fb03ae5329525c4a3b1cb17d1c7c0"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 8,
+      "temperature_K_nominal_in_SI": 313,
+      "linewidth_Hz_as_reported_in_Table_S4": 13.76,
+      "exchange_rate_s_minus_1_as_reported": 26.83,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1",
+      "acqus_TE_K": 313.16,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-13T15:20:17+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S53",
+      "caption": "Figure S53. 1H NMR spectrum of Zr6-MAA clusters at 313 K.",
+      "docx_member": "word/media/image53.jpeg",
+      "embedded_image_sha256": "0a0011550661f02ba7e32c6f5a145239c38e07b0c1040e405a537b62442674a0",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/fid",
+          "bytes": 262144,
+          "sha256": "34c40bf446f411e064161495b8baad628a7eb2e268ca2158ba5fe8467458c533"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/acqus",
+          "bytes": 8579,
+          "sha256": "38549382e90a0a2e320c526a9ef23117326ea5f18d79c75a0c56bc93158da8b9"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/audita.txt",
+          "bytes": 666,
+          "sha256": "4511cfc525339a50f2848238a7486de42d8dc9b4268a76069dec3ffb3d8c1d94"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "e9790f97b2ac5562d12ef5f322dd842368b6ecc67b96ca71f3321fd06b63ca71"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "f8272a4b463cd0c3ffa536581b2f520bce97a28918acc6eb67794b6a5e5b84df"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/pdata/1/procs",
+          "bytes": 2144,
+          "sha256": "ee2a824fc7eccc6b4967d4c8b5189fd234ebcadd2fdfab2634be168080d873e4"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-313K/1/pdata/1/auditp.txt",
+          "bytes": 1310,
+          "sha256": "500248dc591ea2bb1d7c4b37480280a6c2a288c752b663ef4767a2d71a0b46dd"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/313K.jpg",
+          "bytes": 30481,
+          "sha256": "0a0011550661f02ba7e32c6f5a145239c38e07b0c1040e405a537b62442674a0"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 9,
+      "temperature_K_nominal_in_SI": 318,
+      "linewidth_Hz_as_reported_in_Table_S4": 18.07,
+      "exchange_rate_s_minus_1_as_reported": 40.37,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1",
+      "acqus_TE_K": 318.26,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-13T15:33:43+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S54",
+      "caption": "Figure S54. 1H NMR spectrum of Zr6-MAA clusters at 318 K.",
+      "docx_member": "word/media/image54.jpeg",
+      "embedded_image_sha256": "51f628f88a1d219280c56bd2e4c13ac7047f0325f29fc22be7d1000de0722fac",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/fid",
+          "bytes": 262144,
+          "sha256": "40eda1d8786fa5e6689c46b4eff419e163875c6773ead3f011ed84951b0fcb69"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/acqus",
+          "bytes": 8578,
+          "sha256": "f81a26ee7ec55041da3aa6866198d14a45ed73b50763f409bb2ef1ff4da16c3e"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/audita.txt",
+          "bytes": 666,
+          "sha256": "74f0d13fad7916c4e87dabe0fd1426b6d29ae0150d06379d524a722a61248293"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "0d5d2f13a951b538f017492f7e7ae601991758470efe48acc5142f6d3c134258"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "3bdf1f63bdee6cba7cd728d0e0e8d39f3fd1bdc1eb7c752b34d6576d16034178"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/pdata/1/procs",
+          "bytes": 2143,
+          "sha256": "412176cc3aaae4042a972fec3888591f842034a331c7d491a6686e71937257e7"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-318K/1/pdata/1/auditp.txt",
+          "bytes": 1133,
+          "sha256": "bf7578f9cc532965e6a45a1b48b33081306d4306640bc3e14511010395c1aa24"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/318K.jpg",
+          "bytes": 31157,
+          "sha256": "51f628f88a1d219280c56bd2e4c13ac7047f0325f29fc22be7d1000de0722fac"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": true
+    },
+    {
+      "table_entry": 10,
+      "temperature_K_nominal_in_SI": 323,
+      "linewidth_Hz_as_reported_in_Table_S4": 22.75,
+      "exchange_rate_s_minus_1_as_reported": 55.07,
+      "linewidth_source": "Author's NMR-software measurement; numeric value transcribed from current SI Table S4. No independent refit in this audit.",
+      "experiment_number": 1,
+      "processing_number": 1,
+      "acquisition_directory": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1",
+      "acqus_TE_K": 323.26,
+      "acqus_SFO1_MHz": 399.93239958,
+      "acqus_NUC1": "<1H>",
+      "acqus_SOLVENT_parameter": "<DMSO>",
+      "acqus_DATE_UTC_plus_8": "2025-08-13T15:48:20+08:00",
+      "procs_LB_Hz": 0.3,
+      "procs_SI_points": 65536,
+      "SI_figure": "S55",
+      "caption": "Figure S55. 1H NMR spectrum of Zr6-MAA clusters at 323 K.",
+      "docx_member": "word/media/image55.jpeg",
+      "embedded_image_sha256": "4e01369812952b6be8701d0b9cef6a4ad6f700a1efe163ea0c22ce27c86a4af9",
+      "files": {
+        "raw_fid": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/fid",
+          "bytes": 262144,
+          "sha256": "c5fcb5b0f5bda8bd094a01bf2b7a488265b9b0ae98fdbad432d081a1f49d6c4e"
+        },
+        "acquisition_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/acqus",
+          "bytes": 8577,
+          "sha256": "fa9323bd3252d5983a5da35c4048f3f76161814d399ef276aedfdea05a0f9184"
+        },
+        "acquisition_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/audita.txt",
+          "bytes": 666,
+          "sha256": "26ac788620bdf212bdf47ffa6636cde384e8f0681808e18b9625874095445a6a"
+        },
+        "pulse_program": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/pulseprogram",
+          "bytes": 1912,
+          "sha256": "f793ed7d2f2cb488ab18f0f9213c0937392e864d8651f6e26eb9c82fb7193975"
+        },
+        "processed_real_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/pdata/1/1r",
+          "bytes": 262144,
+          "sha256": "38e0edc4acb651c51edcf98fcd323e40ea0a60bc4e9ceb522a0a675721c152ed"
+        },
+        "processed_imaginary_spectrum": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/pdata/1/1i",
+          "bytes": 262144,
+          "sha256": "695d50aab97ea13f776aea59d05323c1c9de389b33080433f4810c20ceea59e3"
+        },
+        "processing_parameters": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/pdata/1/procs",
+          "bytes": 2144,
+          "sha256": "4767a42cf58b4f7564fdec4e2ad9068cd6a29fb01187a7a01a474133fd358b15"
+        },
+        "processing_audit": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/Zr6-OMC-DMF-250813-323K/1/pdata/1/auditp.txt",
+          "bytes": 1134,
+          "sha256": "ff5b5aea332f5f1cf3acddd905bba83fab69c9dda4bae3aa96cb0e629536a30f"
+        },
+        "exported_spectrum_image": {
+          "path": "W:/光催化小组/0-papers-in-progress/2025-宋宇航-MOL_growth_mechanism/MOF_growth_Data/Experiment/HNMR/High-temperature-variable-temperature/323K.jpg",
+          "bytes": 31283,
+          "sha256": "4e01369812952b6be8701d0b9cef6a4ad6f700a1efe163ea0c22ce27c86a4af9"
+        }
+      },
+      "mapping_basis": "Unique temperature-labelled acquisition in the supplied VT series, checked against acqus TE and the SI spectrum caption.",
+      "exchange_rate_arithmetic_check": "pi * (linewidth - 5.22 Hz) agrees with Table S4 to 0.01 s^-1",
+      "spectrum_image_byte_identical_to_SI": true
+    }
+  ]
+}

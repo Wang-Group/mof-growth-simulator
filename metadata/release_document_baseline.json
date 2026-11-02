@@ -1,23 +1,55 @@
 {
-  "checked_on": "2026-10-29",
+  "checked_on": "2026-11-02",
   "documents": [
     {
       "role": "MS",
-      "filename": "manuscript_defect_section_to_SI_20261018.docx",
-      "bytes": 60490042,
-      "sha256": "6adc5771d2e35f2a46c0bc9726a15357b5e2cf9633b99dfc69c0f57146628035",
-      "insertions_in_document_xml": 17,
-      "deletions_in_document_xml": 45
+      "filename": "manuscript_defect_section_to_SI_20261031.docx",
+      "bytes": 60167942,
+      "sha256": "2c553784038b250a96b878ce27b052b35c71ef4d6fd970c8d66ea213e52b2a7a",
+      "insertions_in_document_xml": 30,
+      "deletions_in_document_xml": 53,
+      "adopted_figure6": {
+        "docx_member": "word/media/image10.png",
+        "sha256": "3385a63246a16a295c1449fea4be5c608a33ed5e88217909135250a389879dff",
+        "bytes": 1109858,
+        "N": 2000,
+        "repeats_per_condition": 4,
+        "inspection": "Accepted embedded image visually checked; panel E caption present"
+      }
     },
     {
       "role": "SI",
-      "filename": "supporting_information_defect_section_to_SI_20261019.docx",
-      "bytes": 13064774,
-      "sha256": "6d78cd1f7a28cb1dfd39780b8ef747ee24526b8e76fcef06d200e3c4c070eb75",
-      "insertions_in_document_xml": 39,
-      "deletions_in_document_xml": 9
+      "filename": "supporting_information_S2_updated_20261031_v2.docx",
+      "bytes": 13053365,
+      "sha256": "5038f6291d95c7b3ad69c9c8a24bd741ac0570ae92a561537c9716cce9478680",
+      "insertions_in_document_xml": 320,
+      "deletions_in_document_xml": 206
     }
   ],
   "documents_included_or_edited": false,
-  "view": "Final text includes insertions and excludes deletions, moved-from content, and deleted rows."
+  "view": "Final view: insertions retained; deletions and moved-from content excluded. Accepted Fig. 6 image visually checked.",
+  "review_scope": "Targeted submission follow-up and source integration, not a full rendered-page layout inspection.",
+  "previous_baseline": {
+    "checked_on": "2026-10-29",
+    "documents": [
+      {
+        "role": "MS",
+        "filename": "manuscript_defect_section_to_SI_20261018.docx",
+        "bytes": 60490042,
+        "sha256": "6adc5771d2e35f2a46c0bc9726a15357b5e2cf9633b99dfc69c0f57146628035",
+        "insertions_in_document_xml": 17,
+        "deletions_in_document_xml": 45
+      },
+      {
+        "role": "SI",
+        "filename": "supporting_information_defect_section_to_SI_20261019.docx",
+        "bytes": 13064774,
+        "sha256": "6d78cd1f7a28cb1dfd39780b8ef747ee24526b8e76fcef06d200e3c4c070eb75",
+        "insertions_in_document_xml": 39,
+        "deletions_in_document_xml": 9
+      }
+    ],
+    "documents_included_or_edited": false,
+    "view": "Final text includes insertions and excludes deletions, moved-from content, and deleted rows."
+  }
 }

@@ -107,7 +107,8 @@ def verify(output_dir=None):
     assert (segments.time_end_stored >= segments.time_start_stored).all()
     assert np.all(np.diff(segments.time_start_stored) >= 0)
     checks["btb_segments"] = dict(source_rows=info["raw_rows"], plotted_segments=len(segments),
-                                  source_hash_recorded=info["raw_sha256"], time_calibration="pending")
+                                  source_hash_recorded=info["raw_sha256"],
+                                  time_calibration="120 C site-opening reference; not absolute growth calibration")
 
     keys = ["entity", "structure_index"]
     expected_freq = pd.read_csv(ROOT / "04_btb_motifs/data/verified_frequencies.csv").sort_values(keys).reset_index(drop=True)

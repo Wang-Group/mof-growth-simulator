@@ -1225,6 +1225,48 @@
           "limit": "12 observations in minutes, not the single in-situ DLS size trace. Do not infer extra repeats."
         }
       }
+    },
+    "submission_source_supplement": {
+      "status": "PASS_SUBMISSION_SUPPLEMENT",
+      "files_verified": 99,
+      "bytes": 8578932,
+      "nmr_rows": 10,
+      "nmr_source_files": 90,
+      "linewidths": "Author/software values; no independent spectral refit",
+      "identity": {
+        "mol_constants": 25,
+        "chen_source_rows": 37,
+        "recomputed_comparisons": 7,
+        "maximum_absolute_difference": 0.0,
+        "archived_literature_only_comparison": "gibbons_50eq_four_acids",
+        "scope": "Regression of supplied source values; not refitting the original adsorption experiments"
+      },
+      "documents": [
+        {
+          "role": "MS",
+          "filename": "manuscript_defect_section_to_SI_20261031.docx",
+          "bytes": 60167942,
+          "sha256": "2c553784038b250a96b878ce27b052b35c71ef4d6fd970c8d66ea213e52b2a7a",
+          "insertions_in_document_xml": 30,
+          "deletions_in_document_xml": 53,
+          "adopted_figure6": {
+            "docx_member": "word/media/image10.png",
+            "sha256": "3385a63246a16a295c1449fea4be5c608a33ed5e88217909135250a389879dff",
+            "bytes": 1109858,
+            "N": 2000,
+            "repeats_per_condition": 4,
+            "inspection": "Accepted embedded image visually checked; panel E caption present"
+          }
+        },
+        {
+          "role": "SI",
+          "filename": "supporting_information_S2_updated_20261031_v2.docx",
+          "bytes": 13053365,
+          "sha256": "5038f6291d95c7b3ad69c9c8a24bd741ac0570ae92a561537c9716cce9478680",
+          "insertions_in_document_xml": 320,
+          "deletions_in_document_xml": 206
+        }
+      ]
     }
   },
   "executed_code_coverage": [
@@ -1394,7 +1436,7 @@
   "user_confirmed_release_decisions": {
     "date": "2026-10-31",
     "last_updated": "2026-11-02",
-    "evidence": "User confirmations and separately identified read-only NAS/Jiageng checks; not a new full MS/SI audit",
+    "evidence": "Author confirmations, source-hash checks and November 2 final-view submission follow-up; historical checks remain dated separately",
     "S7": {
       "status": "CONFIRMED",
       "time_coordinate": "raw algorithm time u",
@@ -1431,12 +1473,23 @@
       "byte_identical_existing_representatives": 90,
       "raw_stream_block_spot_checks": 4,
       "resolved_NAS_trajectory_indices": 3,
-      "remaining": "External raw-data archive scope and author wording; no further request for missing Fig. 5D run folders",
+      "remaining": "No missing row/run link; retain source sampling/classification definitions and archive scope.",
       "limits": "Last occurrence before first maximum, not first passage. Frozen radial-histogram replay is not graph-isomorphism or RNG replay; raw-stream comparisons sampled rather than exhaustive."
     },
     "Figure6": {
-      "status": "FINAL_FILE_REGISTRATION_PENDING",
-      "remaining": "Register adopted file path and SHA-256; do not infer adoption from file date"
+      "status": "ADOPTED_N2000_IMAGE_REGISTERED",
+      "checked_on": "2026-11-02",
+      "document_baseline": "metadata/release_document_baseline.json",
+      "reference_panel": "17_submission_sources/figure6c/Figure6C_N2000.svg",
+      "embedded_image": {
+        "docx_member": "word/media/image10.png",
+        "sha256": "3385a63246a16a295c1449fea4be5c608a33ed5e88217909135250a389879dff",
+        "bytes": 1109858,
+        "N": 2000,
+        "repeats_per_condition": 4,
+        "inspection": "Accepted embedded image visually checked; panel E caption present"
+      },
+      "panel_E_caption": "Present in reviewed final-view MS"
     },
     "TableS1": {
       "status": "COUNTING_SCOPE_AUTHOR_CONFIRMED",
@@ -1515,12 +1568,53 @@
       "additional_raw_record_request": false,
       "scope": "Provenance request closed; not an independent experimental remeasurement or a DLS trace"
     },
-    "scope": "Remaining work is primarily provenance reconciliation and submission preparation, not a claim of incorrect data"
+    "scope": "Current sources and version corrections integrated; selected large-data public archive and formal release identifier remain to be completed.",
+    "licenses": {
+      "confirmed_on": "2026-11-02",
+      "evidence": "User explicitly selected MIT for code and CC BY 4.0 for data",
+      "code": "MIT",
+      "project_data": "CC-BY-4.0",
+      "scope": "LICENSING.md",
+      "third_party_terms_preserved": true
+    },
+    "submission_followup_20261102": {
+      "source_manifest": "17_submission_sources/source_manifest.json",
+      "document_baseline": "metadata/release_document_baseline.json",
+      "identity_CSVs": "Three unchanged sources packaged; shared-copy hashes checked against source README",
+      "TableS4": "Ten author-confirmed acquisition mappings and 90 original files packaged; 268 K acquisition 2; no independent spectral refit",
+      "TableS7": "Current SI distinguishes maximum 2922 from final 2911",
+      "BTB_growth_range": "Corrected by author to 0.1-10",
+      "finite_bath": "Main text identifies separate concentration-to-rate mapping",
+      "historical_time_reference": "Raw algorithm time multiplied by 0.2405 ms as a 120 C site-opening reference; not absolute inter-framework calibration",
+      "entity13_and_DLS": "Current SI already includes snapshot/cohort limits and DLS fit-window/exponent-selection details"
+    }
   },
+  "release_preparation": {
+    "status": "PREPARING_PUBLIC_RELEASE",
+    "prepared_on": "2026-11-02",
+    "branch": "codex/publication-release-20261029",
+    "license_code": "MIT",
+    "license_project_data": "CC-BY-4.0",
+    "license_confirmation": "metadata/publication_decisions_20261031.json",
+    "data_source_manifest": "17_submission_sources/source_manifest.json",
+    "document_baseline": "metadata/release_document_baseline.json",
+    "pending_publication_actions": [
+      "Select and deposit the necessary external large datasets; record DOI and checksums",
+      "Freeze the formal release/tag and add its exact reference to the manuscript"
+    ],
+    "formal_release_created": false,
+    "zenodo_deposited": false,
+    "ms_si_modified": false,
+    "license_text_source": {
+      "MIT": "https://opensource.org/license/mit",
+      "CC-BY-4.0": "https://creativecommons.org/licenses/by/4.0/legalcode.txt"
+    },
+    "cc_by_legalcode_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+  },
+  "publication_ready_reason": "Formal tag and selected external dataset deposit are not yet published",
   "limits": [
     "No production KMC rerun",
     "Not every archived plotter is portable",
-    "No complete-paper reproducibility claim",
-    "Author license and archive decisions pending"
+    "Verification covers the numerical and provenance checks listed above"
   ]
 }

@@ -166,6 +166,7 @@ def main():
     from tools.audit_fig5_sources import verify as verify_fig5_sources
     from tools.audit_fig5d_lineage import verify as verify_fig5d_lineage
     from tools.audit_fig5c import verify as verify_fig5c
+    from tools.verify_submission_sources import verify as verify_submission_sources
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
@@ -177,16 +178,24 @@ def main():
               'figure5_source_followup_historical_20261101': verify_fig5_sources(),
               'figure5d_trajectory_lineage': verify_fig5d_lineage(),
               'figure5c_independent_reconstruction': verify_fig5c(),
-              'runtime_and_table_provenance': verify_runtime_and_tables()}
+              'runtime_and_table_provenance': verify_runtime_and_tables(),
+              'submission_source_supplement': verify_submission_sources()}
     dependencies = dependency_audit()
     decisions = json.loads((ROOT/'metadata/publication_decisions_20261031.json').read_text(encoding='utf-8'))
     require(decisions['S7']['time_coordinate'] == 'raw algorithm time u', 'Wrong S7 publication coordinate')
     require((ROOT/decisions['S7']['entry_point']).is_file(), 'S7 publication entry missing')
+    release = json.loads((ROOT/'metadata/release_preparation.json').read_text(encoding='utf-8'))
+    require(release['license_code'] == 'MIT' and release['license_project_data'] == 'CC-BY-4.0',
+            'Release licenses differ from author confirmation')
+    require(digest(ROOT/'LICENSE-DATA.txt') == release['cc_by_legalcode_sha256'],
+            'Changed CC BY 4.0 legal text')
     report = {'status': 'PASS_FOR_DECLARED_LOCAL_CHECKS', 'publication_ready': False,
               'checks': checks, 'executed_code_coverage': dependencies,
               'user_confirmed_release_decisions': decisions,
+              'release_preparation': release,
+              'publication_ready_reason': 'Formal tag and selected external dataset deposit are not yet published',
               'limits': ['No production KMC rerun', 'Not every archived plotter is portable',
-                         'No complete-paper reproducibility claim', 'Author license and archive decisions pending']}
+                         'Verification covers the numerical and provenance checks listed above']}
     if args.report:
         args.report.write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')
     print(json.dumps(report, indent=2))

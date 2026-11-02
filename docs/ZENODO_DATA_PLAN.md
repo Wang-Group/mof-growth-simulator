@@ -2,8 +2,9 @@
 
 This is a selection plan, not evidence of a Zenodo upload or an assigned DOI.
 The code candidate contains compact inputs and derived tables; external payloads
-remain at their supplied source locations. Resolve author permissions and the
-publication checklist before public release.
+remain at their supplied source locations. The author has confirmed MIT for code
+and CC BY 4.0 for project-produced data; preserve third-party rights and citations.
+Select the required external payloads before creating the deposit.
 
 Use `metadata/publication_sources.csv` as the machine-readable ledger. Its
 `source_relative` paths are relative to `MOL_figure_source_bundles_20261022_v4`.
@@ -15,11 +16,12 @@ belong to GitHub; the other decisions require the handling below.
 | EXTERNAL_LARGE_FILE | 3 | Original BTB, HKUST-1 and PCN-240 trajectory pickles; select for a raw-trajectory archive with exact plot/run mapping |
 | EXTERNAL_BINARY_OR_ARTWORK | 23 | Review individually: necessary smaller checkpoints/raw trajectories may belong in Zenodo; exported artwork is not a substitute for raw data |
 | EXTERNAL_NOTEBOOK_OUTPUTS_NOT_REVIEWED | 4 | Review source cells and embedded outputs first; do not publish credentials, personal output or unrestricted execution history |
-| EXTERNAL_RAW_EXPERIMENT | 213 | NMR acquisition candidates; confirm the exact acquisitions behind the paper's table rows before selecting complete acquisition folders |
-| VERSION_VARIANT_ARCHIVED | 3 | Now included separately in group 10 with both original and shared-revision provenance; final figure adoption still needs confirmation |
+| EXTERNAL_RAW_EXPERIMENT | 213 | Historical candidate ledger; the ten author-selected S4 acquisitions and mapping are now in group 17 (90 source files); do not request these again |
+| VERSION_VARIANT_ARCHIVED | 3 | Included separately in group 10; current Fig. 6 N=2000 adoption is registered in group 17 and the document baseline |
 
-These are file counts, not independent simulations or experiments. External
-records total about 606 MB in this selection; this is not the size of a complete
+These are historical ledger counts, not current missing files or independent
+simulations/experiments. Some have since been packaged, as noted above. External
+records originally totalled about 606 MB; this is not the size of a complete
 research archive. The two corrected engines and eight models are now included
 in group 09; required molecular seeds/hosts/checkpoints may expand the final
 archive. Group 11 retains April 3 sources separately from the April 10 rerun;
