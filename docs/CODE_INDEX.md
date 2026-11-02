@@ -15,6 +15,7 @@ the historical `main` branch.
 | BTB motif frequencies | `reproduce.py` and `04_btb_motifs/` | Original frequencies and representatives unchanged; all 284 rows now linked through group 15 |
 | Fig. 5D trajectory lineage | `python -m tools.audit_fig5d_lineage`, sources in `15_fig5d_trajectory_lineage/` | Offline replay of 3688 figure-size snapshots; full 7978-assignment recovery audit and raw-stream spot checks recorded |
 | Earlier Fig. 5 provenance search | `python -m tools.audit_fig5_sources`, archives in `14_fig5_source_followup/source/` | November 1 historical partial evidence; superseded for panel D by group 15, retained for panel C search scope |
+| Fig. 5C independent reconstruction | `python 16_fig5c_reconstruction/render.py`; `python -m tools.audit_fig5c` | Same 1260-condition probabilities; projected historical-boundary and four-grid convergence checks; not original module recovery |
 | Mixed-seed and vacancy repair | `05_mixed_zr6_zr12/original/`, `06_vacancy_repair/original/` | Historical code; use lightweight renderer rather than replaying the archived mixed-seed script |
 | Current response/seeded/surface/finite-bath campaigns | `07_publication_sources/SI_tables_sources_20261023/Table_S28/code/` | Supplied runners/selectors and processed input grids |
 | Corrected engines and molecular models | `09_recovered_runtime/` | Executed versions matched by recorded SHA-256 |
@@ -28,8 +29,9 @@ the historical `main` branch.
 
 The exact Fig. 5C module `analyze_figure6_current_parameter_phase_v1.py` remains
 unlocated in the bounded searches recorded in the publication checklist. Its
-supplied plotter and data are included; do not invent a replacement and call it
-the executed original. Group 14 records the expanded 5090/NAS search. Group 15
+supplied plotter and data are included. Group 16 now provides an explicitly labelled
+independent reconstruction with validated projected-boundary and mesh convergence;
+do not call it the executed original. Group 14 records the expanded 5090/NAS search. Group 15
 now links all Fig. 5D rows, preserves the co-located block-based classifier and
 extraction notebooks, and resolves the three NAS repeat-index conflicts by hash.
 Its fixed-representative replay is not graph-isomorphism validation or RNG replay.

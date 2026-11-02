@@ -9,6 +9,19 @@
     "entry_point": "10_plot_versions/render_s7.py",
     "seconds_variant": "Historical archive only; not the publication entry point"
   },
+  "Figure5C": {
+    "status": "INDEPENDENT_RECONSTRUCTION_VALIDATED",
+    "checked_on": "2026-11-02",
+    "evidence_path": "16_fig5c_reconstruction/validation/validation_report.json",
+    "entry_point": "16_fig5c_reconstruction/render.py",
+    "input_conditions": 1260,
+    "selected_grid": [67, 75, 43],
+    "historical_projected_iou": 0.9974086021298051,
+    "finest_grid_projected_iou": 0.9988413564419425,
+    "original_module_recovered": false,
+    "manuscript_artwork_replaced": false,
+    "scope": "User authorized publication-branch inclusion after boundary/trend and grid-stability validation. Independent implementation, not recovery of the historical module or exact original 3D mesh. Worst-case local mesh errors and single-projection limitations remain documented."
+  },
   "Figure5D": {
     "percentages": "Previously independently recomputed",
     "structures": "Confirmed by user; no new independent artwork check in this update",

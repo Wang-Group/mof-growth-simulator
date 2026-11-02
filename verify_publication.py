@@ -165,6 +165,7 @@ def additional_source_checks():
 def main():
     from tools.audit_fig5_sources import verify as verify_fig5_sources
     from tools.audit_fig5d_lineage import verify as verify_fig5d_lineage
+    from tools.audit_fig5c import verify as verify_fig5c
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
@@ -175,6 +176,7 @@ def main():
               'entropy_calculation': verify_entropy(),
               'figure5_source_followup_historical_20261101': verify_fig5_sources(),
               'figure5d_trajectory_lineage': verify_fig5d_lineage(),
+              'figure5c_independent_reconstruction': verify_fig5c(),
               'runtime_and_table_provenance': verify_runtime_and_tables()}
     dependencies = dependency_audit()
     decisions = json.loads((ROOT/'metadata/publication_decisions_20261031.json').read_text(encoding='utf-8'))

@@ -9,15 +9,19 @@ data are now included. On 2026-10-31, the exact corrected engines and eight
 models were recovered, plot revisions were separated, and the S21 April 3
 source package was added. A second recovery now links small seeds/hosts, exact
 code versions and 975 external checkpoint/result pairs; S6's 18 displayed
-numbers match the recovered numerical source. Remaining tasks include the Fig. 5C
-analysis and author release decisions. S6's six code/notebook files and 33
+numbers match the recovered numerical source. Remaining tasks include historical
+provenance limits and author release decisions. S6's six code/notebook files and 33
 geometries are now packaged with a safe local reproduction entry.
 The November 2 Jiageng recovery now links **all 284 Fig. 5D classification rows**
 to original run folders and indexed snapshots. All 7,978 recorded assignments
 replayed correctly; 3,688 entity 1-13 snapshots are packaged for offline replay.
 The existing 90 figure representatives are byte-identical, and the three NAS
 repeat-index conflicts are resolved by original-file hashes. Group 15 supersedes
-group 14's earlier partial panel D status. The exact panel C module remains unlocated.
+group 14's earlier partial panel D status. **Fig. 5C now has a validated independent
+reconstruction in group 16:** unchanged probabilities, 99.74% projected overlap
+with historical artwork, and stable grid refinement. The exact historical module
+remains unlocated; the new implementation is explicitly labelled, not passed off
+as the original. No manuscript artwork was replaced.
 **S1's 69/53 counts are author-confirmed** after
 literature checking; the historical grouping audit is not an open correction
 request. **S2 is confirmed as 23 smaller/thinner outcomes among 30 publications**;
@@ -51,6 +55,7 @@ a file is not the same as reproducing its full scientific workflow.
 | [13_table_source_audit](13_table_source_audit/) | Original S1 evidence, historical final-view SI extracts, S6 comparison and current status note | S1/S2 counts confirmed; S8 closed; S6 sources and local reproduction complete |
 | [14_fig5_source_followup](14_fig5_source_followup/) | Earlier NAS/5090 sources and November 1 search records | Historical partial panel D audit; panel C original module still unlocated |
 | [15_fig5d_trajectory_lineage](15_fig5d_trajectory_lineage/) | 284 run mappings, 7978 indexed snapshots, 3688 packaged figure-size snapshots, original indices and source versions | Current Fig. 5D provenance; fixed-representative classifier replay and four raw-block hash spot checks |
+| [16_fig5c_reconstruction](16_fig5c_reconstruction/) | Identical condition table, independent source, historical SVG geometry, portable entry and convergence report | Fig. 5C reproducible reconstruction; projected historical consistency, not original 3D-mesh recovery |
 
 Within each group, `data/` holds the numerical inputs. `source/`, `scripts/`,
 `original/`, and `structures/` preserve available code and structures. Historical
@@ -69,6 +74,8 @@ python verify_package.py
 python verify_publication.py --report publication_verification.json
 python tools/reproduce_entropy.py
 python -m tools.audit_fig5d_lineage
+python 16_fig5c_reconstruction/render.py
+python -m tools.audit_fig5c
 python -m unittest discover -s tests -v
 ```
 
@@ -82,6 +89,9 @@ pure event selector. It now verifies the recovered sources, all three mixed-seed
 variant means, and all 18 engine/runner/selector hash references in six UiO-66
 result records. The group 12/13 audit also checks source decompression, saved
 checkpoint lineage, exact seed/RNG/parameter matches and S1/S6 numerical evidence.
+Fig. 5C verification recalculates four mesh grids and compares historical projected
+boundaries. Its standalone commands write to `reproduced_local/`; frozen checks
+and previews are in group 16. This is not statistical uncertainty estimation.
 A passing
 check is deliberately not labelled publication-ready.
 

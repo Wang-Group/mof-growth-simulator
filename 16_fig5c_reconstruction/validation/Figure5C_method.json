@@ -1,0 +1,31 @@
+{
+  "implementation": "Independent reconstruction, not the missing historical module",
+  "input_sha256": "866fee5ec5a3b0e4f80bc776b4f1880bdfb0f0694cc0bc0e02ac0ddb95e31763",
+  "archived_script_sha256": "69e3cbf879e267e093e5ec81741006517cfb7fa70f559eab0e845f732d41888d",
+  "entry_sha256": "4f26db71dffe6cd43405f245cda88b23154fe1e3111d583fc272a5f3c75c7d38",
+  "grid": [
+    67,
+    75,
+    43
+  ],
+  "triangles": 32180,
+  "conditions": 1260,
+  "displayed": {
+    "low": 110,
+    "transition": 40,
+    "high": 134
+  },
+  "mesh_errors": {
+    "centroid_log10_rho_error_p95": 0.0029543511706000654,
+    "centroid_log10_rho_error_max": 0.03333832416193183,
+    "centroid_rho_relative_error_bound_max": 0.07978757096735234,
+    "centroid_error_max_fraction_full_logrho_axis": 0.006440830057546943,
+    "centroid_P_error_p95": 0.0036738493509441967,
+    "centroid_P_error_max": 0.05225338458424911,
+    "vertex_P_error_max": 1.446926956027994e-08
+  },
+  "coordinate_system": "log10(rho_off), log10(M/BTB), linear s_close",
+  "interpolation": "Trilinear; no smoothing, fitting, or extrapolation",
+  "historical_module_recovered": false,
+  "MS_SI_modified": false
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-02",
+  "baseline_commit": "b1fe1ffeac0f924b64873f87ebba622484292ea0",
+  "shared_bundle": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4",
+  "files": [
+    {
+      "path": "source/rebuild_figure5c_standalone.py",
+      "source": "MS_Figure_5/independent_Fig5C_replot_20261101/rebuild_figure5c_standalone.py",
+      "operation": "identity",
+      "bytes": 13400,
+      "sha256": "69e3cbf879e267e093e5ec81741006517cfb7fa70f559eab0e845f732d41888d",
+      "source_sha256": "69e3cbf879e267e093e5ec81741006517cfb7fa70f559eab0e845f732d41888d"
+    },
+    {
+      "path": "source/README_NAS_20261101.md",
+      "source": "MS_Figure_5/independent_Fig5C_replot_20261101/README.md",
+      "operation": "identity",
+      "bytes": 2293,
+      "sha256": "e80b81b525fef5a8f426e2c8182bb2d2c04e65b0a221948f8b4ba3102fb60388",
+      "source_sha256": "e80b81b525fef5a8f426e2c8182bb2d2c04e65b0a221948f8b4ba3102fb60388"
+    },
+    {
+      "path": "data/common_response_surface_v2_final_condition_summary.csv",
+      "source": "MS_Figure_5/independent_Fig5C_replot_20261101/input_data/common_response_surface_v2_final_condition_summary.csv",
+      "operation": "identity",
+      "bytes": 1084494,
+      "sha256": "866fee5ec5a3b0e4f80bc776b4f1880bdfb0f0694cc0bc0e02ac0ddb95e31763",
+      "source_sha256": "866fee5ec5a3b0e4f80bc776b4f1880bdfb0f0694cc0bc0e02ac0ddb95e31763"
+    },
+    {
+      "path": "reference/historical_panel_C.svg.gz",
+      "source": "MS_Figure_5/content_checked_20261023/latest_user_revision_20260916/source_inputs/figure6_panel_C_v4.svg",
+      "operation": "gzip",
+      "bytes": 203482,
+      "sha256": "377b5e3b179a1dfbeb3f7c28a41f08f8ff034a5e9747d155e9bd1974cfb8a817",
+      "source_sha256": "2dd3cacdec499ee3fd0447c2ca13777724ee8857e5d3b7d0abd628924f329425"
+    },
+    {
+      "path": "reference/author_surface_paths.json.gz",
+      "source": "MS_Figure_5/vector_artwork/0019_Figure5.svg",
+      "operation": "XML group path extraction then gzip",
+      "bytes": 272802,
+      "sha256": "f35697f5e8e727a066d7e6773474e8790acbbcad28d79db02661212081cb68fd",
+      "source_sha256": "15d66548b0ffa66110eba3bde1e722bd4832d1f27e5969909216fd1bc21dade0"
+    }
+  ],
+  "historical_mesh": {
+    "vertices": 7414,
+    "faces": 14488,
+    "source": "_shared/source_data_by_sha256/19dbd4875071afc3_figure6_legible_v4_manifest.json"
+  },
+  "limits": "Independent reconstruction, not recovery of the missing historical module; no MS/SI modification."
+}

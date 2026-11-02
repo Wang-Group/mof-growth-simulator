@@ -5,3 +5,6 @@
 *.xlsx binary
 *.gz binary
 *.pkl binary
+
+# Generated comparison artwork, not hand-edited source text.
+16_fig5c_reconstruction/validation/*.svg binary

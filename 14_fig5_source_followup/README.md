@@ -3,7 +3,9 @@
 **Historical search snapshot (2026-11-01).** The Fig. 5D gap described below was
 subsequently resolved by the [Jiageng recovery in group 15](../15_fig5d_trajectory_lineage/README.md)
 on November 2. Keep this earlier evidence map unchanged as history; it is not the
-current missing-data list. Panel C remains open.
+current missing-data list. The original panel C module is still unlocated;
+[group 16](../16_fig5c_reconstruction/README.md) now provides a validated,
+explicitly labelled independent reconstruction, not recovery of that module.
 
 Read-only search completed on 2026-11-01. This is **partial provenance**, not a
 completed reconstruction of panels C and D. No MS/SI or original source was edited.
