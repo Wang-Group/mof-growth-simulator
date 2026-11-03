@@ -167,6 +167,7 @@ def main():
     from tools.audit_fig5d_lineage import verify as verify_fig5d_lineage
     from tools.audit_fig5c import verify as verify_fig5c
     from tools.verify_submission_sources import verify as verify_submission_sources
+    from tools.reproduce_s20 import verify as verify_s20
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
@@ -175,6 +176,7 @@ def main():
               'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks(),
               'recovered_sources': verify_recovered_sources(),
               'entropy_calculation': verify_entropy(),
+              's20_reproduction': verify_s20(),
               'figure5_source_followup_historical_20261101': verify_fig5_sources(),
               'figure5d_trajectory_lineage': verify_fig5d_lineage(),
               'figure5c_independent_reconstruction': verify_fig5c(),

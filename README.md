@@ -34,6 +34,7 @@ offline entries are:
 ```bash
 python 10_plot_versions/render_s7.py
 python tools/reproduce_entropy.py
+python tools/reproduce_s20.py
 python -m tools.audit_fig5d_lineage
 python 16_fig5c_reconstruction/render.py
 python -m tools.audit_fig5c
@@ -45,6 +46,11 @@ SSH access. Fresh outputs go to `reproduced_local/`; supplied reference plots
 remain in `reproduced/`. See [CODE_INDEX.md](docs/CODE_INDEX.md) for source locations
 and the separate April 3 S21 plot-only entry. The default mixed-seed renderer
 retains the distinct April 10 comparison dataset.
+
+For Table S20, the [reproduction guide](docs/S20_REPRODUCTION.md) documents the
+recalculation from 27,648 per-trajectory records, comparison with the nine SI
+rows, and generated summaries for all 864 assay-condition groups. No original
+source file or manuscript is overwritten.
 
 ## Contents
 
@@ -97,7 +103,7 @@ covers immutable packaged files. [Publication preparation](docs/PUBLICATION_RELE
 lists only the remaining release actions; [provenance notes](docs/PROVENANCE_NOTES.md)
 retain the relevant historical distinctions.
 
-Branch: `codex/publication-release-20261029`. This independent-history publication
+Default branch: `publication-release-20261029`. This independent-history publication
 branch does not replace `main`. Original authorship and third-party notices remain
 with their sources. Cite the repository and exact release tag or commit used;
 the paper and dataset DOI should be added when assigned, not guessed.

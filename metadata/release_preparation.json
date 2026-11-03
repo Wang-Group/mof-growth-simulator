@@ -1,7 +1,7 @@
 {
   "status": "PREPARING_PUBLIC_RELEASE",
   "prepared_on": "2026-11-02",
-  "branch": "codex/publication-release-20261029",
+  "branch": "publication-release-20261029",
   "license_code": "MIT",
   "license_project_data": "CC-BY-4.0",
   "license_confirmation": "metadata/publication_decisions_20261031.json",

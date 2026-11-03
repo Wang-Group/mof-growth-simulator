@@ -396,6 +396,53 @@
       ],
       "scope": "Original model with original rounded inputs and symmetry numbers; six geometry mappings checked. No notebook batch cells, full-folder preprocessing, production KMC or new physical-model validation."
     },
+    "s20_reproduction": {
+      "status": "PASS_S20_FROM_TRAJECTORY_RECORDS",
+      "trajectory_records": 27648,
+      "condition_groups": 864,
+      "replicates_per_group": 32,
+      "outcome_counts": {
+        "observation_window": 12608,
+        "target_reached": 15040
+      },
+      "source": "07_publication_sources/SI_tables_sources_20261023/Table_S20/matched_source_files/source_trace_summary.csv",
+      "input_sha256": {
+        "source_trace_summary.csv": "bdce4ce6423f83fa4c3c81820fb8f3338be9d0e0be161cfa9b0e3b6041ded95f",
+        "steric_matched_nine_conditions.csv": "052b4f20c5969d5abb09bb8b868b0bbb0c083ee15c75c12d7ece56ff83f7581e"
+      },
+      "high_precision_reference": {
+        "rows": 9,
+        "checked_values": 90,
+        "undefined_values": 2,
+        "absolute_tolerance": 1e-12,
+        "maximum_absolute_difference_by_field": {
+          "median_growth_passage_time": 4.440892098500626e-16,
+          "50_over_median_growth_time": 3.552713678800501e-15,
+          "nucleation_wilson95_low": 2.7755575615628914e-17,
+          "nucleation_wilson95_high": 5.551115123125783e-17,
+          "growth_wilson95_low": 0.0,
+          "growth_wilson95_high": 0.0
+        }
+      },
+      "si_reference": {
+        "filename": "supporting_information_S2_updated_20261031_v2.docx",
+        "sha256": "af70b3677c4919b252cd5e18c89db515ce9b3c528108975a91fcad766b796779",
+        "checked_on": "2026-11-03",
+        "table": "Table S20",
+        "view": "Final-view OOXML: insertions included; deletions, moved-from content and deleted rows excluded",
+        "scope": "Only Table S20 caption and nine rows rechecked. Values unchanged from the November 2 audit; this is not a new whole-document baseline. MS/SI not modified or included."
+      },
+      "display_rows_matched": 9,
+      "definitions": {
+        "time": "Unscaled model_time from the trajectory endpoint records",
+        "probability": "target_reached / all 32 trajectories; window endpoints retained",
+        "interval": "Pointwise Wilson 95% interval; z=1.959963984540054; no continuity correction",
+        "passage_time": "Median model_time among target_reached trajectories only",
+        "conditional_growth_measure": "50 / median(successful growth time), not median(50/time)",
+        "undefined": "No successes: time and conditional growth measure are null, not zero"
+      },
+      "scope": "Reanalysis of archived per-trajectory terminal records. All 864 groups computed; nine matched rows checked against saved high-precision results and SI display. No KMC rerun, event-history reconstruction, time rescaling or MS/SI edit."
+    },
     "figure5_source_followup_historical_20261101": {
       "status": "PASS_PARTIAL_EVIDENCE_CHECKS",
       "as_of": "2026-11-01",
@@ -1592,7 +1639,7 @@
   "release_preparation": {
     "status": "PREPARING_PUBLIC_RELEASE",
     "prepared_on": "2026-11-02",
-    "branch": "codex/publication-release-20261029",
+    "branch": "publication-release-20261029",
     "license_code": "MIT",
     "license_project_data": "CC-BY-4.0",
     "license_confirmation": "metadata/publication_decisions_20261031.json",

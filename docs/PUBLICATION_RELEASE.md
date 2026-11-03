@@ -1,6 +1,6 @@
 # Publication Preparation
 
-Updated 2026-11-02. The current publication branch contains the recovered
+Updated 2026-11-03. The current publication branch contains the recovered
 code, compact data and source mappings. MIT for original code and CC BY 4.0 for
 project-produced data are confirmed; see [LICENSING.md](../LICENSING.md).
 MS/SI are neither edited nor included in this branch.
@@ -12,6 +12,7 @@ MS/SI are neither edited nor included in this branch.
 | S1 / S2 literature counts | Author-confirmed 69/53 and 23/30; the current document baseline is recorded, without substituting older extraction counts |
 | S6 entropy | Six species, source code and geometries; 18 values independently recalculated |
 | S8 turbidity | Author-confirmed original 12-row time record; closed, not a request for another experiment |
+| S20 matched comparisons | [Portable reanalysis](S20_REPRODUCTION.md) from 27,648 trajectory records; nine displayed rows and saved high-precision statistics checked; all 864 groups summarized |
 | Fig. 5B/C | Same 1260-condition inputs; variance results reproduced; group 16 supplies the validated interpolation/isosurface implementation and grid checks |
 | Fig. 5D | All 284 table rows linked to historical run folders; classification and figure-size snapshots in group 15 |
 | Runtime dependencies | Executed code/seed versions and checkpoint lineage in group 12; large payloads selected separately for external archiving |
@@ -47,5 +48,5 @@ claim that all published analyses were independently repeated.
 
 Historical search notes and older document baselines are provenance records, not
 current missing lists; see [PROVENANCE_NOTES.md](PROVENANCE_NOTES.md).
-The branch `codex/publication-release-20261029` retains independent history and
+The default branch `publication-release-20261029` retains independent history and
 does not replace the original `main`.

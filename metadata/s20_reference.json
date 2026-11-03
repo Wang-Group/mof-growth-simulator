@@ -1,0 +1,28 @@
+{
+  "document": {
+    "filename": "supporting_information_S2_updated_20261031_v2.docx",
+    "sha256": "af70b3677c4919b252cd5e18c89db515ce9b3c528108975a91fcad766b796779",
+    "checked_on": "2026-11-03",
+    "table": "Table S20",
+    "view": "Final-view OOXML: insertions included; deletions, moved-from content and deleted rows excluded",
+    "scope": "Only Table S20 caption and nine rows rechecked. Values unchanged from the November 2 audit; this is not a new whole-document baseline. MS/SI not modified or included."
+  },
+  "input_sha256": {
+    "source_trace_summary.csv": "bdce4ce6423f83fa4c3c81820fb8f3338be9d0e0be161cfa9b0e3b6041ded95f",
+    "steric_matched_nine_conditions.csv": "052b4f20c5969d5abb09bb8b868b0bbb0c083ee15c75c12d7ece56ff83f7581e"
+  },
+  "fixed_coordinates": {"rho_off": 1, "q_atomic_Zr_BDC": 1, "s_close": 1},
+  "fixed_coordinate_note": "s_close=1 is stated by the SI protocol; it is not a column independently measured in the endpoint CSV.",
+  "display_columns": ["Cap", "eta_S", "N=1 to 30 by model time 100", "N=76 to 126 by model time 20", "Median successful growth passage time"],
+  "display_rows": [
+    ["benzoate", "0.1", "31/32", "32/32", "2.246"],
+    ["benzoate", "0.5", "30/32", "32/32", "2.169"],
+    ["benzoate", "0.9", "32/32", "32/32", "1.577"],
+    ["4-OMe", "0.1", "20/32", "32/32", "9.790"],
+    ["4-OMe", "0.5", "28/32", "32/32", "2.736"],
+    ["4-OMe", "0.9", "32/32", "32/32", "1.530"],
+    ["4-tBu", "0.1", "0/32", "0/32", "Not reached"],
+    ["4-tBu", "0.5", "9/32", "31/32", "6.942"],
+    ["4-tBu", "0.9", "31/32", "32/32", "1.610"]
+  ]
+}

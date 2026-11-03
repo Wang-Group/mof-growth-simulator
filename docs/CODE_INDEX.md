@@ -22,6 +22,7 @@ the historical `main` branch.
 | Campaign-specific source versions and small seeds | `12_runtime_provenance/` | Exact code/seed references and checkpoint lineage; large checkpoints external |
 | S6 entropy | `python tools/reproduce_entropy.py`, sources in `08_entropy_inputs/source/` | Six geometry mappings and 18 values reproduced, no batch-writing cells |
 | S7 algorithm-time panels | `python 10_plot_versions/render_s7.py` | Adopted raw-u entry; seconds scripts retained only as history |
+| S20 matched geometry comparison | `python tools/reproduce_s20.py`; [method and outputs](S20_REPRODUCTION.md) | 27,648 trajectory endpoints; 864 groups recomputed; nine rows matched to saved precision and SI display; no time rescaling |
 | April 3 S21 saved trace | `python 11_s21_april03/plot_saved_trace.py --help` | Plot-only entry; April 3 variants remain separate from April 10 |
 | Submission source supplement | `python -m tools.verify_submission_sources` | 99 source files; ten S4 acquisitions; seven identity regressions; current document/figure registration |
 | Whole candidate verification | `python verify_package.py`, `python verify_publication.py` | Source hashes and expressly listed numerical checks, not all archived scripts or every bootstrap |
