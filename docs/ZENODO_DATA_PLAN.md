@@ -16,8 +16,8 @@ belong to GitHub; the other decisions require the handling below.
 | EXTERNAL_LARGE_FILE | 3 | Original BTB, HKUST-1 and PCN-240 trajectory pickles; select for a raw-trajectory archive with exact plot/run mapping |
 | EXTERNAL_BINARY_OR_ARTWORK | 23 | Review individually: necessary smaller checkpoints/raw trajectories may belong in Zenodo; exported artwork is not a substitute for raw data |
 | EXTERNAL_NOTEBOOK_OUTPUTS_NOT_REVIEWED | 4 | Review source cells and embedded outputs first; do not publish credentials, personal output or unrestricted execution history |
-| EXTERNAL_RAW_EXPERIMENT | 213 | Historical candidate ledger; the ten author-selected S4 acquisitions and mapping are now in group 17 (90 source files); do not request these again |
-| VERSION_VARIANT_ARCHIVED | 3 | Included separately in group 10; current Fig. 6 N=2000 adoption is registered in group 17 and the document baseline |
+| EXTERNAL_RAW_EXPERIMENT | 213 | Historical candidate ledger; the ten author-selected NMR acquisitions and mapping are now in group 17 (90 source files); do not request these again |
+| VERSION_VARIANT_ARCHIVED | 3 | Included separately in group 10; the matched N=2000 BTB scattering comparison is registered in group 17 and the dated document baseline |
 
 These are historical ledger counts, not current missing files or independent
 simulations/experiments. Some have since been packaged, as noted above. External
@@ -47,7 +47,7 @@ as separate provenance, not separate independent trajectories. Nine
 small compressed large-assembly structures and the two recovered code sources
 are already packaged. Check overlap before adding this count to older ledgers.
 
-Group 15 adds about 34 MB of compact Fig. 5D sources to Git, including all 3688
+Group 15 adds about 34 MB of compact BTB motif-lineage sources to Git, including all 3688
 entity 1-13 snapshots and their indices/code. A separately recovered 100,385,146-byte
 archive contains all 7978 entity 1-29 snapshots plus supporting sources. Its
 fingerprint is in `15_fig5d_trajectory_lineage/manifest.json`; the remaining
@@ -69,15 +69,15 @@ or uploaded. No Zenodo upload was performed.
 3. **Experimental and entropy-calculation inputs:** author-confirmed raw
    acquisitions and the actual geometry,
    solvent/model inputs and scripts behind the solution-entropy calculation.
-   Include Gaussian inputs/outputs only if they were actually used. S6's source
+   Include Gaussian inputs/outputs only if they were actually used. Entropy source
    notebooks, mapped geometries and model inputs were recovered on NAS and
    locally recalculated on November 1. The small sources are now in group 08
-   for GitHub, with a safe offline S6 reproduction entry; do not request them
+   for GitHub, with a safe offline entropy reproduction entry; do not request them
    again as missing Zenodo payloads.
 
-Table S8's existing 12-row time table has been confirmed by the author as the
+The existing 12-row turbidity-time table has been confirmed by the author as the
 original record. Its source request is closed; this archive plan does not request
-another observation sheet or a newly created Excel file for S8.
+another observation sheet or a newly created Excel file for these measurements.
 
 ## Release Procedure
 

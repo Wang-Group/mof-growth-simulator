@@ -1,4 +1,9 @@
-# Table S20 Reproduction
+# Controlled Modulator-Geometry Comparison
+
+Recompute assembly and seeded-growth outcomes for twelve monocarboxylate
+geometries under matched chemical parameters. The script and output names retain
+the historical `s20` identifier for compatibility, not as a dependency on the
+table number in a later manuscript.
 
 Run from the repository root with Python 3.11 or newer. This entry uses only the
 Python standard library and packaged files, without network access or KMC runs:
@@ -8,7 +13,7 @@ python tools/reproduce_s20.py
 ```
 
 The script returns a nonzero exit status if source hashes, cohort completeness,
-endpoint definitions, saved reference values or displayed S20 values disagree.
+endpoint definitions, saved reference values or the dated display snapshot disagree.
 It is also included in `python verify_publication.py` and the full unit-test suite.
 
 ## Inputs and Scope
@@ -34,8 +39,8 @@ The source grid has 12 molecular identities, two assays, four `rho_off` levels
 replicate 0-31. Run IDs must also be unique. Unexpected statuses, invalid physical
 outcomes, nonfinite times and inconsistent endpoints are rejected.
 
-Table S20 selects benzoate, 4-OMe and 4-tBu at `rho_off = q = 1` across the three
-`eta_S` values. The SI specifies `s_close = 1`; this fixed protocol parameter is
+The nine-condition subset selects benzoate, 4-OMe and 4-tBu at `rho_off = q = 1`
+across the three `eta_S` values. The archived protocol specifies `s_close = 1`; this fixed parameter is
 not independently encoded as a column in the terminal-record CSV.
 
 ## Statistics
@@ -57,7 +62,8 @@ model time 20. No time conversion is applied to the source `model_time` column.
 
 All 864 groups are recomputed. The nine matched rows are compared to the saved
 reference using exact count checks and an absolute tolerance of 1e-12 for numeric
-statistics. S20 fractions and three-decimal time strings must match exactly.
+statistics. Fractions and three-decimal time strings must match the frozen
+November 3 reference exactly; this does not assert the numbering of a later SI.
 This is a new portable reanalysis entry, not recovery of an original aggregation
 script or an independent validation of the KMC physical model.
 
