@@ -1,51 +1,51 @@
-# Analysis Entry Points by Scientific Topic
+# Code Entry Points
 
-Use the safe entries below first. Archived code is retained for provenance and
-may need external inputs; its presence is not a claim of full production replay.
-No manuscript, credentials, large trajectory directories or unreviewed notebook
-outputs belong in this branch. The independent release branch must not replace
-the historical `main` branch.
+Run the commands below from the repository root. Source folders retain their
+original names; this index organizes them by scientific topic.
 
-Topics below describe the inputs, calculation and verification scope independently
-of manuscript numbering. Paths retain their historical names for compatibility;
-for example, a script containing `s20` still reproduces the same controlled
-modulator comparison after the paper renumbers that table. Document-specific
-labels are explained in the [dated cross-reference guide](MANUSCRIPT_CROSSWALK.md).
+## Simulation Sources
 
-| Topic | Code location or entry | Verified scope |
+| Topic | Location | Contents |
 |---|---|---|
-| Lightweight figure reproduction | `python reproduce.py` | Groups 01-06 only; reads compact local tables |
-| UiO-66 long growth and entity-13 structures | `01_uio66_long_growth/source/` and `scripts/` | Historical simulator and analysis sources, 24-run compact inputs; not a new KMC run |
-| DLS/Gualtieri fit | `02_dls/fit_uio66_dls_gualtieri.py` | Original DLS input and processed-progress refit |
-| Historical BTB growth | `03_btb_trajectory/source/` and `original/` | Executed source and original plot convention retained |
-| BTB motif frequencies | `reproduce.py` and `04_btb_motifs/` | Original frequencies and representatives unchanged; all 284 rows now linked through group 15 |
-| BTB motif trajectory lineage | `python -m tools.audit_fig5d_lineage`, sources in `15_fig5d_trajectory_lineage/` | All row/index metadata checked; four small examples replayed; full-cohort replay requires the optional external archive |
-| Historical BTB source search | `python -m tools.audit_fig5_sources`, archives in `14_fig5_source_followup/source/` | November 1 partial evidence; superseded for motif lineage by group 15; retained as a dated source-search record |
-| BTB kinetic boundary reconstruction | `python 16_fig5c_reconstruction/render.py`; `python -m tools.audit_fig5c` | Same 1260-condition probabilities; projected historical-boundary and four-grid convergence checks; not original module recovery |
-| Mixed-seed and vacancy repair | `05_mixed_zr6_zr12/original/`, `06_vacancy_repair/original/` | Historical code; use lightweight renderer rather than replaying the archived mixed-seed script |
-| Current response/seeded/surface/finite-bath campaigns | `07_publication_sources/SI_tables_sources_20261023/Table_S28/code/` | Supplied runners/selectors and processed input grids |
-| Corrected engines and molecular models | `09_recovered_runtime/` | Executed versions matched by recorded SHA-256 |
-| Campaign-specific source versions and small seeds | `12_runtime_provenance/` | Exact code/seed references and checkpoint lineage; large checkpoints external |
-| Ring-closure entropy | `python tools/reproduce_entropy.py`, sources in `08_entropy_inputs/source/` | Six geometry mappings and 18 values reproduced, no batch-writing cells |
-| UiO-66 first-passage and residence-time panels | `python 10_plot_versions/render_s7.py` | Raw algorithm time u; seconds scripts retained only as history |
-| Controlled modulator-geometry comparison | `python tools/reproduce_s20.py`; [method and outputs](S20_REPRODUCTION.md) | 27,648 endpoints; 864 groups recomputed; nine matched rows checked against saved precision and a dated SI snapshot; no time rescaling |
-| April 3 mixed-node seed growth | `python 11_s21_april03/plot_saved_trace.py --help` | Plot-only entry; April 3 variants remain separate from April 10 |
-| Exchange and modulator-identity sources | `python -m tools.verify_submission_sources` | 99 source files; ten NMR acquisitions; seven identity regressions; recorded document/artwork snapshot |
-| Whole candidate verification | `python verify_package.py`, `python verify_publication.py` | Source hashes and expressly listed numerical checks, not all archived scripts or every bootstrap |
+| UiO-66 repeated growth | `01_uio66_long_growth/source/` | Simulation source and run conditions |
+| BTB growth | `03_btb_trajectory/source/` | Executed growth runner and assembly engine |
+| Mixed-node growth and vacancy repair | `05_mixed_zr6_zr12/original/`, `06_vacancy_repair/original/`, `11_s21_april03/source_archive/` | Growth/repair scripts and initialization variants |
+| Nucleation, seeded growth, surface growth and finite baths | `07_publication_sources/SI_tables_sources_20261023/Table_S28/code/` | Campaign runners, selectors and analysis scripts |
+| Molecular engines and models | `09_recovered_runtime/` | Executed engines and molecular models |
+| Campaign inputs | `12_runtime_provenance/` | Parameter manifests, small seed/host inputs and source-version mappings |
 
-## Remaining Coverage Limits
+Production runners use their corresponding model, parameter and seed paths.
+Consult the folder README and run manifest when configuring a new calculation;
+continuation runs also take the checkpoint specified by that runner.
 
-The historical BTB-boundary module `analyze_figure6_current_parameter_phase_v1.py` remains
-unlocated in the bounded searches recorded in the publication checklist. Its
-supplied plotter and data are included. Group 16 now provides an explicitly labelled
-independent reconstruction with validated projected-boundary and mesh convergence;
-do not call it the executed original. Group 14 records the expanded 5090/NAS search. Group 15
-now links all 284 BTB motif rows, preserves the co-located block-based classifier and
-extraction notebooks, and resolves the three NAS repeat-index conflicts by hash.
-Its fixed-representative replay is not graph-isomorphism validation or RNG replay.
+## Analysis and Plotting
 
-Large checkpoints/raw trajectories are intentionally outside the current tree;
-see [data scope](DATA_SCOPE.md). A manifest or a NAS path is not an uploaded dataset. Code MIT and project
-data CC BY 4.0 are confirmed; see `LICENSING.md`. Final release/archive identifiers
-remain unassigned; a bulk-data deposit is separate from the lightweight code package. Current actions are in `docs/PUBLICATION_RELEASE.md`;
-historical-module provenance is not an unresolved source-data request.
+| Topic | Entry | Output or operation |
+|---|---|---|
+| Combined plotting | `python reproduce.py --output-dir reproduced_local` | Plots for groups 01-06 from included analysis data |
+| UiO-66 trajectory statistics | `01_uio66_long_growth/scripts/` | First-passage, residence-time and structure analyses |
+| UiO-66 algorithm-time plots | `python 10_plot_versions/render_s7.py` | First-passage and residence-time panels in raw algorithm time u |
+| DLS/Gualtieri fit | `02_dls/fit_uio66_dls_gualtieri.py` | Apparent-progress fit, parameters and diagnostic plots |
+| BTB motif frequencies | `reproduce.py`, `04_btb_motifs/` | Frequencies and representative structures |
+| BTB motif classification | `15_fig5d_trajectory_lineage/data/metadata.zip` | Classifier/extractor notebook sources and per-run code |
+| BTB motif record checks | `python -m tools.audit_fig5d_lineage` | Row/index checks and classification of four packaged examples; use `--full-source-archive PATH` for the full cohort |
+| BTB kinetic boundary | `python 16_fig5c_reconstruction/render.py` | Interpolated P=0.5 isosurface and boundary plots |
+| Ring-closure entropy | `python tools/reproduce_entropy.py` | Entropy calculations for six species |
+| Controlled modulator geometry | `python tools/reproduce_s20.py` | Statistics for 864 groups and nine matched comparisons; [method](S20_REPRODUCTION.md) |
+| April 3 mixed-node growth | `python 11_s21_april03/plot_saved_trace.py --help` | Plotting of the saved April 3 dataset |
+| Exchange and modulator-identity data | `python -m tools.verify_submission_sources` | Source checks and identity regressions |
+
+The April 3 and April 10 mixed-seed datasets have separate plotting entries.
+The combined renderer uses the April 10 dataset. Notebook source code is provided
+inside the ZIP alongside its original per-run code and indices.
+
+## Verification
+
+```bash
+python verify_package.py
+python verify_publication.py
+python -m unittest discover -s tests -v
+```
+
+Machine-readable reports record the individual checks. Source versions and
+file hashes are retained in the group manifests and `metadata/`.
