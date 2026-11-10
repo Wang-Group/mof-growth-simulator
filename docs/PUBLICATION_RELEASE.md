@@ -1,6 +1,6 @@
 # Publication Preparation
 
-Updated 2026-11-05. The current publication branch contains the recovered
+Updated 2026-11-10. The current publication branch contains the recovered
 code, compact data and source mappings. MIT for original code and CC BY 4.0 for
 project-produced data are confirmed; see [LICENSING.md](../LICENSING.md).
 MS/SI are neither edited nor included in this branch.
@@ -18,7 +18,7 @@ to keep the manuscript layout fixed. See [cross-reference policy](MANUSCRIPT_CRO
 | Turbidity appearance times | Author-confirmed original 12-row time record; closed, not a request for another experiment |
 | Controlled modulator-geometry comparisons | [Portable reanalysis](S20_REPRODUCTION.md) from 27,648 trajectory records; nine matched results checked; all 864 groups summarized |
 | BTB variance and kinetic boundary | Same 1260-condition inputs; variance reproduced; group 16 supplies the validated interpolation/isosurface implementation and grid checks |
-| BTB motif lineage | All 284 rows linked to historical run folders; classification and entity 1-13 snapshots in group 15 |
+| BTB motif lineage | All 284 rows linked; classifier, reference structures and four regression examples retained; bulk snapshots intentionally external |
 | Runtime dependencies | Executed code/seed versions and checkpoint lineage in group 12; large payloads selected separately for external archiving |
 | BTB finite-cluster scattering | N=2000 and four trajectories per condition; reviewed artwork snapshot recorded and reference panel in group 17 |
 | Ligand-exchange NMR | Ten rows mapped to selected acquisitions; 90 acquisition/processed/export files packaged, including acquisition 2 at 268 K |
@@ -31,11 +31,12 @@ publication actions below, not a newly identified numerical failure.
 
 ## Remaining Publication Actions
 
-- [ ] Select and deposit necessary external raw trajectories/checkpoints, preserving
-  their recorded hashes and the distinction between independent runs and branches.
-  Record the returned Zenodo DOI. See [archive plan](ZENODO_DATA_PLAN.md).
-- [ ] Freeze a formal GitHub release/tag and cite that exact version and dataset DOI
-  in the final paper. Do not present an unassigned DOI or an uncreated tag as published.
+- [ ] Freeze a formal GitHub release/tag and cite that exact version in the final
+  paper. Do not present an unassigned DOI or an uncreated tag as published.
+
+Bulk raw simulation data are intentionally excluded under the November 10
+[data policy](DATA_SCOPE.md). An additional archive is a separate team/journal
+decision, not a prerequisite for running the packaged lightweight analyses.
 
 Licensing is settled. The literature counts, entropy sources, turbidity records,
 BTB motif lineage, NMR acquisition selection and matched-size scattering source

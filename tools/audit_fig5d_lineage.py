@@ -16,6 +16,7 @@ import zipfile
 import numpy as np
 
 from tools.audit_fig5_sources import conditions, matching_rows
+from tools.data_retention import excluded_payload, classifier_examples
 
 ROOT = Path(__file__).resolve().parents[1]
 GROUP = ROOT / '15_fig5d_trajectory_lineage'
@@ -88,13 +89,19 @@ def read_csv(path):
 def verify(full_source_archive=None):
     manifest = json.loads((GROUP / 'manifest.json').read_text(encoding='utf-8'))
     assert digest(TABLE.read_bytes()) == manifest['classification_table_sha256']
+    excluded_archives = set()
     for item in manifest['files']:
         path = (GROUP / item['path']).resolve()
         assert path.is_relative_to(GROUP.resolve())
+        if excluded_payload(path, item['bytes'], item['sha256']):
+            excluded_archives.add(item['path'])
+            continue
         raw = path.read_bytes()
         assert len(raw) == item['bytes'] and digest(raw) == item['sha256'], item['path']
     payload = {}
     for archive_name in manifest['archives']:
+        if archive_name in excluded_archives:
+            continue
         with zipfile.ZipFile(GROUP / archive_name) as archive:
             for member in archive.infolist():
                 name = PurePosixPath(member.filename)
@@ -103,11 +110,17 @@ def verify(full_source_archive=None):
                 key = (archive_name, member.filename)
                 assert key not in payload
                 payload[key] = archive.read(member)
-    sources = manifest['sources']
+    sources = [s for s in manifest['sources'] if s['archive'] not in excluded_archives]
     for item in sources:
         raw = payload[item['archive'], item['member']]
         assert len(raw) == item['bytes'] and digest(raw) == item['sha256']
     assert len(payload) == len(sources), 'Unindexed archive member'
+    examples = classifier_examples()
+    historical_sources = {(s['archive'], s['member']): s for s in manifest['sources']}
+    for key, raw in examples.items():
+        source = historical_sources[key]
+        assert source['kind'] == 'snapshot'
+        assert digest(raw) == source['sha256'] and len(raw) == source['bytes']
     rows = read_csv(TABLE)
     rowmap = read_csv(GROUP / 'row_to_run.csv')
     snapshots = read_csv(GROUP / 'snapshot_assignments.csv')
@@ -175,7 +188,7 @@ def verify(full_source_archive=None):
             raw = None
             if entity <= 13:
                 figure_cells += 1
-                raw = payload[item['archive'], item['member']]
+                raw = examples.get((item['archive'], item['member']))
             if full:
                 recovered = full[mapping['folder'] + f'/block_{block}.mol2']
                 assert raw is None or raw == recovered
@@ -189,7 +202,7 @@ def verify(full_source_archive=None):
                 score = similarity(value[2], representatives[entity][int(item['uid'])][2])
                 assert np.isclose(score, float(item['similarity_to_recorded_uid']), rtol=0, atol=1e-12)
                 verified += 1
-    assert figure_cells == 3688 and verified == (7978 if full else 3688)
+    assert figure_cells == 3688 and verified == (7978 if full else len(examples))
     original_manifest = json.loads((ROOT / '14_fig5_source_followup/source_manifest.json').read_text())
     external = [x for x in original_manifest['files'] if x['kind'] == 'external_trajectory']
     for item in external:
@@ -203,9 +216,14 @@ def verify(full_source_archive=None):
         assert by_cell[number, 13]['sha256'] == check['raw_block_sha256']
     return {'status': 'PASS_FIG5D_LINEAGE', 'classification_rows_linked': 284,
             'indexed_classification_cells': 7978, 'replayed_cells_this_run': verified,
-            'packaged_fig5d_snapshots': figure_cells, 'representatives_byte_matched_to_group04': existing,
+            'indexed_entity01_13_cells': figure_cells,
+            'packaged_fig5d_snapshots': len(examples),
+            'bulk_snapshot_archives_packaged': False,
+            'representatives_byte_matched_to_group04': existing,
             'original_raw_block_hash_spot_checks': 4, 'resolved_external_trajectory_indices': 3,
-            'scope': 'Frozen-representative radial-histogram replay and recorded provenance. Not a new classifier, graph-isomorphism proof, RNG replay, or full raw-stream re-extraction.'}
+            'scope': ('All row/index metadata checked; ' +
+                      ('full external snapshot replay' if full else 'four packaged regression examples replayed') +
+                      '. Not graph-isomorphism proof, RNG replay, or full raw-stream re-extraction.')}
 
 
 if __name__ == '__main__':

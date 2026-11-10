@@ -19,8 +19,10 @@ implementation is preserved as such; this version distinction is not a missing
 input dataset or a missing reproducible analysis entry.
 
 Group 15 supersedes the partial BTB motif-lineage search in group 14: all 284 rows are
-linked to run folders, 7978 assignments were checked at recovery, and 3688
-entity 1-13 snapshots can be reclassified offline. Historical selection takes
+linked to run folders and 7978 assignments were checked at recovery. After the
+November 10 cleanup, only four classifier examples are packaged; all indices,
+code and reference structures remain. Full reclassification requires the external
+archive. See [data scope](DATA_SCOPE.md). Historical selection takes
 the last occurrence before the first maximum. Composition/radial-histogram
 matching is not exact graph isomorphism. Four raw-stream spot checks are not
 an exhaustive re-extraction of every saved event.
@@ -68,6 +70,6 @@ accepted-text review confirmed that the newer SI no longer promises this export.
 This is historical provenance, not an active missing-data request. Calculation
 families remain separately indexed; no substitute is presented as the historical original.
 
-The final two publication actions are an external large-data deposit and a
-versioned release reference. A source path/hash identifies data but is not proof
-that a dataset has already been uploaded to Zenodo.
+The remaining code-publication action is a versioned release reference. A bulk
+raw-data deposit is separate from the compact GitHub scope. A source path/hash
+identifies data but is not proof that a dataset has been uploaded to Zenodo.

@@ -7,6 +7,7 @@ import json
 import math
 from pathlib import Path
 import re
+from tools.data_retention import excluded_payload
 
 ROOT = Path(__file__).resolve().parents[1]
 GROUP = ROOT / '14_fig5_source_followup'
@@ -74,6 +75,8 @@ def verify():
         path = (ROOT / item['release_path']).resolve()
         if not path.is_relative_to(GROUP.resolve()):
             raise AssertionError('Source outside group')
+        if excluded_payload(path, item['stored_bytes'], item['stored_sha256']):
+            continue
         stored = path.read_bytes()
         if len(stored) != item['stored_bytes'] or digest(stored) != item['stored_sha256']:
             raise AssertionError('Stored source changed')
@@ -118,7 +121,8 @@ def verify():
             'current_fig5d_status': 'Superseded by 15_fig5d_trajectory_lineage on 2026-11-02',
             'classification_rows': len(rows),
             'row_status_counts': counts, 'fully_linked_classification_rows': 0,
-            'packaged_large_structures': len(structures), 'incomplete_structure_name_count': incomplete,
+            'packaged_large_structures': 0, 'indexed_external_large_structures': len(structures),
+            'incomplete_structure_name_count': incomplete,
             'external_trajectory_hash_records': len(external), 'fig5c_original_module_found': False,
             'scope': 'Offline source/parameter matching only. No classification rerun, no pickle deserialization, no claim that large structures are the classified small-entity snapshots.'}
 

@@ -2,6 +2,13 @@
   "status": "PASS_FOR_DECLARED_LOCAL_CHECKS",
   "publication_ready": false,
   "checks": {
+    "data_retention": {
+      "status": "PASS_COMPACT_PAYLOAD",
+      "excluded_raw_files": 11,
+      "excluded_bytes": 30399771,
+      "classifier_examples": 4,
+      "scope": "Current tree only; earlier commits and original research copies are unchanged"
+    },
     "sources": {
       "verified_copies": 670,
       "version_variants_verified": 3,
@@ -454,7 +461,8 @@
         "NOT_LOCATED": 272
       },
       "fully_linked_classification_rows": 0,
-      "packaged_large_structures": 9,
+      "packaged_large_structures": 0,
+      "indexed_external_large_structures": 9,
       "incomplete_structure_name_count": 1,
       "external_trajectory_hash_records": 3,
       "fig5c_original_module_found": false,
@@ -464,12 +472,14 @@
       "status": "PASS_FIG5D_LINEAGE",
       "classification_rows_linked": 284,
       "indexed_classification_cells": 7978,
-      "replayed_cells_this_run": 3688,
-      "packaged_fig5d_snapshots": 3688,
+      "replayed_cells_this_run": 4,
+      "indexed_entity01_13_cells": 3688,
+      "packaged_fig5d_snapshots": 4,
+      "bulk_snapshot_archives_packaged": false,
       "representatives_byte_matched_to_group04": 90,
       "original_raw_block_hash_spot_checks": 4,
       "resolved_external_trajectory_indices": 3,
-      "scope": "Frozen-representative radial-histogram replay and recorded provenance. Not a new classifier, graph-isomorphism proof, RNG replay, or full raw-stream re-extraction."
+      "scope": "All row/index metadata checked; four packaged regression examples replayed. Not graph-isomorphism proof, RNG replay, or full raw-stream re-extraction."
     },
     "figure5c_independent_reconstruction": {
       "status": "PASS",
@@ -1646,11 +1656,13 @@
     "data_source_manifest": "17_submission_sources/source_manifest.json",
     "document_baseline": "metadata/release_document_baseline.json",
     "pending_publication_actions": [
-      "Select and deposit the necessary external large datasets; record DOI and checksums",
       "Freeze the formal release/tag and add its exact reference to the manuscript"
     ],
     "formal_release_created": false,
     "zenodo_deposited": false,
+    "bulk_raw_calculation_data_required_in_github": false,
+    "data_retention_policy": "metadata/data_retention.json",
+    "scope_update_date": "2026-11-10",
     "ms_si_modified": false,
     "license_text_source": {
       "MIT": "https://opensource.org/license/mit",
@@ -1658,7 +1670,7 @@
     },
     "cc_by_legalcode_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
   },
-  "publication_ready_reason": "Formal tag and selected external dataset deposit are not yet published",
+  "publication_ready_reason": "Formal release/tag is not yet published; bulk raw simulations are intentionally outside GitHub",
   "limits": [
     "No production KMC rerun",
     "Not every archived plotter is portable",

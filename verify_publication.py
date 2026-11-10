@@ -168,11 +168,13 @@ def main():
     from tools.audit_fig5c import verify as verify_fig5c
     from tools.verify_submission_sources import verify as verify_submission_sources
     from tools.reproduce_s20 import verify as verify_s20
+    from tools.data_retention import verify as verify_data_retention
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--report', type=Path)
     args = parser.parse_args()
-    checks = {'sources': manifest_checks(), 'figure5b': variance_checks(), 's25': repair_checks(),
+    checks = {'data_retention': verify_data_retention(),
+              'sources': manifest_checks(), 'figure5b': variance_checks(), 's25': repair_checks(),
               'selector_smoke': selector_smoke_checks(), 'additional_sources': additional_source_checks(),
               'recovered_sources': verify_recovered_sources(),
               'entropy_calculation': verify_entropy(),
@@ -195,7 +197,7 @@ def main():
               'checks': checks, 'executed_code_coverage': dependencies,
               'user_confirmed_release_decisions': decisions,
               'release_preparation': release,
-              'publication_ready_reason': 'Formal tag and selected external dataset deposit are not yet published',
+              'publication_ready_reason': 'Formal release/tag is not yet published; bulk raw simulations are intentionally outside GitHub',
               'limits': ['No production KMC rerun', 'Not every archived plotter is portable',
                          'Verification covers the numerical and provenance checks listed above']}
     if args.report:

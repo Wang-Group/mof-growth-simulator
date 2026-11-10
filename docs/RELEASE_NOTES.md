@@ -1,6 +1,6 @@
 # Prepared Release Notes
 
-Updated on 2026-11-05 for branch `publication-release-20261029`.
+Updated on 2026-11-10 for branch `publication-release-20261029`.
 This is a release-note draft, not an announcement of a published tag or DOI.
 
 ## Included
@@ -10,7 +10,7 @@ This is a release-note draft, not an announcement of a published tag or DOI.
 - Recovered executed engines, models, seeds and checkpoint lineage, with exact
   source versions retained rather than overwritten by later scripts.
 - Tested BTB kinetic-boundary interpolation and isosurface extraction, plus
-  complete motif-table-to-run mapping with small-assembly structures for offline reclassification.
+  complete motif-table-to-run mapping, reference structures and four classifier examples.
 - The November 2 source supplement: three identity CSVs, ten selected NMR
   acquisitions with row mappings, and the matched N=2000 BTB scattering reference panel.
 - Portable controlled modulator-geometry reanalysis from 27,648 terminal records,
@@ -26,6 +26,7 @@ lightweight workflow. MS/SI are distributed separately and were not edited.
 
 ## Publication Steps
 
-Record the final Git commit/tag after verification and pushing. Select necessary
-large raw files/checkpoints for Zenodo with checksums, then register the actual
-DOI and cross-reference both versions. No DOI or formal tag is assigned here.
+Record the final Git commit/tag after verification and pushing. Bulk theoretical
+outputs are intentionally excluded under the [data policy](DATA_SCOPE.md).
+Any additional raw-data deposit is a separate decision; record a DOI only if
+one is actually assigned. No DOI or formal tag is assigned here.

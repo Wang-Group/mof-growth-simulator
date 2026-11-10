@@ -26,10 +26,12 @@ class Fig5DLineageTests(unittest.TestCase):
     def test_empty_histogram_similarity(self):
         self.assertEqual(audit.similarity({}, {}), 0)
 
-    def test_all_figure_snapshots_replay_offline(self):
+    def test_metadata_and_small_examples_replay_offline(self):
         report = audit.verify()
         self.assertEqual(report['classification_rows_linked'], 284)
-        self.assertEqual(report['replayed_cells_this_run'], 3688)
+        self.assertEqual(report['replayed_cells_this_run'], 4)
+        self.assertEqual(report['indexed_entity01_13_cells'], 3688)
+        self.assertFalse(report['bulk_snapshot_archives_packaged'])
         self.assertEqual(report['representatives_byte_matched_to_group04'], 90)
 
 

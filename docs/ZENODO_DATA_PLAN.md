@@ -1,5 +1,11 @@
 # External Data Archive Plan
 
+**November 10 scope update:** this is an optional raw-data archive plan, not a
+requirement to place bulk calculations in GitHub. Code and essential analysis
+inputs are retained under the [compact data policy](DATA_SCOPE.md). Any deposit
+is a separate team decision subject to the final availability statement and
+journal requirements.
+
 This is a selection plan, not evidence of a Zenodo upload or an assigned DOI.
 The code candidate contains compact inputs and derived tables; external payloads
 remain at their supplied source locations. The author has confirmed MIT for code
@@ -43,12 +49,13 @@ Group 14 adds three historical BTB trajectory hash records totaling 352,537,047
 bytes. They remain on NAS and were not deserialized or copied into GitHub. Their
 filename/parent conflict was resolved on November 2 by matching original Jiageng
 files to Index_1/2/3 by SHA-256; see group 15. Preserve the original and NAS paths
-as separate provenance, not separate independent trajectories. Nine
-small compressed large-assembly structures and the two recovered code sources
-are already packaged. Check overlap before adding this count to older ledgers.
+as separate provenance, not separate independent trajectories. The two recovered
+code sources remain packaged; nine superseded large-assembly outputs were removed
+from the current Git tree on November 10, with hashes and original copies retained.
 
-Group 15 adds about 34 MB of compact BTB motif-lineage sources to Git, including all 3688
-entity 1-13 snapshots and their indices/code. A separately recovered 100,385,146-byte
+Group 15 originally added about 34 MB of BTB motif-lineage sources. The 3688 bulk
+entity 1-13 snapshots are no longer in the current Git tree; indices, code,
+reference structures and four test examples remain. A recovered 100,385,146-byte
 archive contains all 7978 entity 1-29 snapshots plus supporting sources. Its
 fingerprint is in `15_fig5d_trajectory_lineage/manifest.json`; the remaining
 entity 14-29 snapshots can be selected for Zenodo without copying the roughly

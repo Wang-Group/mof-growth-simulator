@@ -8,11 +8,13 @@
   "data_source_manifest": "17_submission_sources/source_manifest.json",
   "document_baseline": "metadata/release_document_baseline.json",
   "pending_publication_actions": [
-    "Select and deposit the necessary external large datasets; record DOI and checksums",
     "Freeze the formal release/tag and add its exact reference to the manuscript"
   ],
   "formal_release_created": false,
   "zenodo_deposited": false,
+  "bulk_raw_calculation_data_required_in_github": false,
+  "data_retention_policy": "metadata/data_retention.json",
+  "scope_update_date": "2026-11-10",
   "ms_si_modified": false,
   "license_text_source": {
     "MIT": "https://opensource.org/license/mit",

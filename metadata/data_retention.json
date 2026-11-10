@@ -1,0 +1,125 @@
+{
+  "updated_on": "2026-11-10",
+  "scope": "Current publication tree; earlier Git history is retained",
+  "keep": [
+    "All simulation and analysis code",
+    "Molecular models, small seeds and parameter manifests",
+    "Compact per-run endpoint statistics and plot-ready tables",
+    "Representative structures and four classifier regression fixtures",
+    "Experimental input data and provenance hashes"
+  ],
+  "exclude": [
+    "Full KMC event histories",
+    "Production checkpoints and raw trajectory dumps",
+    "Bulk per-run structure archives",
+    "Superseded large-assembly search outputs"
+  ],
+  "removed_payloads": [
+    {
+      "path": "15_fig5d_trajectory_lineage/data/snapshots_entity01_07.zip",
+      "bytes": 7478623,
+      "sha256": "72a509d07ccc35dbbdabf71e297084e213ea832400ea3b2959a0742a303d0ec8",
+      "reason": "Bulk per-run structural snapshots; not code or starting inputs"
+    },
+    {
+      "path": "15_fig5d_trajectory_lineage/data/snapshots_entity08_13.zip",
+      "bytes": 16121697,
+      "sha256": "06e8a8fa04e249cdf13b27a24f15904f3cf5ff889e3bbfb411843b5f2a8f3b5b",
+      "reason": "Bulk per-run structural snapshots; not code or starting inputs"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_01.mol2.gz",
+      "bytes": 644670,
+      "sha256": "179df7be59f153fb8caf3374c0ee189ea37d78b34cf48c50e3801f47585c6eb4",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_02.mol2.gz",
+      "bytes": 539455,
+      "sha256": "5a318fcb3852188987384988a9c30101516688ad4e6eb08a10c8a7486de5cf06",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_03.mol2.gz",
+      "bytes": 402984,
+      "sha256": "406b80e5fc1097b50608316eb80f19683badce17916f6ed6ff67831894abc910",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_04.mol2.gz",
+      "bytes": 1490612,
+      "sha256": "4f84101a723ac152e2ea081ceb8d9d2bd4a23748c44514edb66fb5864ef481b2",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_05.mol2.gz",
+      "bytes": 897359,
+      "sha256": "d7a3a84168fe7c6e4a867ed78d771b40b7da5c780212ca71a615c7185187ed53",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_06.mol2.gz",
+      "bytes": 871451,
+      "sha256": "1367a0d110e6981ed31d002216b74f5396676be0634fcce55911a3339209c6cc",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_07.mol2.gz",
+      "bytes": 645835,
+      "sha256": "0a9a437ce286abd62bdf0bd91c738c617c62fadf4b5550a69475d9267fca3a4f",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_08.mol2.gz",
+      "bytes": 707384,
+      "sha256": "cfc935093e8dc0a4bc076a787c0b6bb4b821aac726af2953d784e8a9f59a646c",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    },
+    {
+      "path": "14_fig5_source_followup/structures/large_structure_09.mol2.gz",
+      "bytes": 599701,
+      "sha256": "ea198a35617baf7467ab1a7d4259615442a523ecc1d3bb7ab8e2f6af93b7418e",
+      "reason": "Superseded large-assembly search evidence; not a classified motif or required starting input"
+    }
+  ],
+  "classifier_fixtures": [
+    {
+      "path": "15_fig5d_trajectory_lineage/examples/r141_entity13.mol2",
+      "archive": "data/snapshots_entity08_13.zip",
+      "member": "r141/entity_13.mol2",
+      "row_id": 141,
+      "entity": 13,
+      "bytes": 39440,
+      "sha256": "03dea550ad1ba032c1854e9e3239e09fa7eda35a606894577c9dcab2bb885366"
+    },
+    {
+      "path": "15_fig5d_trajectory_lineage/examples/r142_entity13.mol2",
+      "archive": "data/snapshots_entity08_13.zip",
+      "member": "r142/entity_13.mol2",
+      "row_id": 142,
+      "entity": 13,
+      "bytes": 39440,
+      "sha256": "9b316915e2f97ae446449ead6ec9164840221cca7b2742af826b4ff60fa1d820"
+    },
+    {
+      "path": "15_fig5d_trajectory_lineage/examples/r143_entity13.mol2",
+      "archive": "data/snapshots_entity08_13.zip",
+      "member": "r143/entity_13.mol2",
+      "row_id": 143,
+      "entity": 13,
+      "bytes": 40074,
+      "sha256": "2334c5ab58926a2b0b99b289112677cc2c51bae1d4a08688fefda14ce5d20954"
+    },
+    {
+      "path": "15_fig5d_trajectory_lineage/examples/r144_entity13.mol2",
+      "archive": "data/snapshots_entity08_13.zip",
+      "member": "r144/entity_13.mol2",
+      "row_id": 144,
+      "entity": 13,
+      "bytes": 39440,
+      "sha256": "b9e4ad536c36bb362e244e6ea8c55ae22c59d5ff8abc28fc064b5209285c5bb5"
+    }
+  ],
+  "removed_bytes": 30399771,
+  "fixture_bytes": 158394
+}

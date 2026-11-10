@@ -1,8 +1,13 @@
-# Fig. 5D: Recovered Trajectory-to-Motif Lineage
+# BTB Trajectory-to-Motif Lineage
 
-Recovered read-only from Jiageng on **2026-11-02**. This is the current Fig. 5D
-provenance record; group 14 preserves the earlier, partial NAS/5090 search.
+Recovered read-only from Jiageng on **2026-11-02**. The folder name retains its
+historical figure identifier; group 14 preserves the earlier NAS/5090 search.
 No manuscript, SI, classification table, structure ID or figure was changed.
+
+**November 10 compact scope:** code, indices, reference structures and four
+regression examples remain. Bulk per-run snapshots are external; see
+[data scope](../docs/DATA_SCOPE.md). The full-cohort result below is a historical
+recovery check, not the scope of the current lightweight verifier.
 
 ## Result
 
@@ -39,21 +44,20 @@ Roots are recorded in `manifest.json` and `remote_lineage.json`:
 /public/home/yibinjiang/workspace/out1/MOL_batch0_selected
 ```
 
-The four small ZIPs contain ordinary files and can be opened without Python:
+The two retained ZIPs contain ordinary files and can be opened without Python:
 
 | Archive | Contents |
 |---|---|
-| `data/snapshots_entity01_07.zip` | Every available entity 1-7 snapshot, organized by table row |
-| `data/snapshots_entity08_13.zip` | Every available entity 8-13 snapshot, organized by table row |
 | `data/representatives.zip` | 352 historical class representatives covering entity 1-29 |
 | `data/metadata.zip` | 284 original `level_idx.json` files, classification/extraction notebooks, 284 per-run runners, shared engine, and original morphology summary |
+| `examples/` | Four entity-13 classifier regression inputs, 158,394 bytes in total |
 
-Together the Git payload contains **3,688 Fig. 5D snapshots**. The entity 14-29
-snapshots remain in the external full recovery archive and on Jiageng; their
-hashes, class assignments and source locations are still indexed here. The
-external archive fingerprint is in `manifest.json`. Large trajectory pickles and
-raw multi-block MOL2 streams are not copied into Git. This addition is about
-34 MB including metadata, rather than the roughly 10 GB plot archive.
+The bulk entity 1-13 snapshot ZIPs have been removed from the current tree.
+All 7,978 snapshot hashes, class assignments and source locations remain indexed.
+`manifest.json` is the original recovery inventory; the explicit exclusions and
+four retained examples are registered in `metadata/data_retention.json` at the
+repository root. The external full-archive fingerprint is unchanged. Large
+trajectory pickles and raw multi-block MOL2 streams are not copied into Git.
 
 Within `metadata.zip`, `source/classification_test.ipynb` is the co-located
 classifier reading `block_*.mol2`. The extractor notebooks retain their original
@@ -77,7 +81,8 @@ applied in this package.
 The classifier first checks Zr6/BTB counts, then compares element-wise radial
 histograms (0-50 Angstrom, 50 bins) using mean cosine similarity > 0.8. It takes
 the first matching class in numeric UID order. Our read-only replay uses the
-recovered, frozen representatives and reproduces every recorded assignment;
+recovered, frozen representatives; the November 2 full-archive replay reproduced
+every recorded assignment, while the compact default checks four examples;
 it does not create new class IDs or depend on today's directory enumeration.
 This is **not a graph-isomorphism or unique-topology proof**. Co-located source
 and exact output replay establish reproducibility, not an unavailable historical
@@ -92,9 +97,9 @@ From the release root:
 python -m tools.audit_fig5d_lineage
 ```
 
-This replays all 3,688 packaged figure-size assignments, checks all 284 row
-keys, index arithmetic, source/ZIP hashes, representative identity and recorded
-raw-stream checks. It does not reconnect to Jiageng. With the external full
+This replays the four packaged regression examples and checks all 284 row
+keys, 7,978 assignment/index records, source/ZIP hashes, representative identity
+and recorded raw-stream checks. It does not reconnect to Jiageng. With the external full
 recovery archive, replay all 7,978 assignments instead:
 
 ```bash
@@ -102,5 +107,5 @@ python -m tools.audit_fig5d_lineage --full-source-archive /path/to/classified_so
 ```
 
 Remaining limits: raw-stream byte comparisons were sampled, not performed for
-all 7,978 blocks; complete pickle/RNG histories are not published here. Fig. 5C's
-separate analysis-module gap is unaffected. S1/S2/S6/S8 are not reopened.
+all 7,978 blocks; complete pickle/RNG histories are not published here. The compact
+check is not a fresh geometric reclassification of the complete cohort.

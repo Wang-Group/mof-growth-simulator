@@ -13,9 +13,13 @@ to preserve provenance and working commands; those names do not identify the
 latest manuscript layout. [Dated manuscript cross-references](docs/MANUSCRIPT_CROSSWALK.md)
 are secondary provenance records, not the repository's contents index.
 
+**Data scope:** code, required model/seed inputs, compact analysis tables and
+representative structures are retained; bulk raw calculation outputs are excluded.
+See [what is retained and why](docs/DATA_SCOPE.md). Experimental source data remain.
+
 Code is licensed under MIT and project-produced data under CC BY 4.0, subject to
 the [scope and third-party notices](LICENSING.md). The final release identifier
-and selected large-data Zenodo archive are still to be assigned. MS/SI documents
+is still to be assigned; any additional raw-data deposit is a separate decision. MS/SI documents
 are supplied separately and are not included here.
 
 ## Reproduce the Analyses
@@ -62,7 +66,7 @@ No original source file or manuscript is overwritten.
 |---|---|---|
 | UiO-66 first passage and small-assembly structures | [01](01_uio66_long_growth/) | 24 trajectories, nine first-passage thresholds, low-entity residence times and last-saved entity-13 structures |
 | Experimental DLS | [02](02_dls/) | Original size trace, apparent-progress processing, Gualtieri fit, parameters and diagnostic plots |
-| Historical BTB trajectories and motifs | [03](03_btb_trajectory/), [04](04_btb_motifs/), [15](15_fig5d_trajectory_lineage/) | Growth-curve segments, motif frequencies, 284 row/run mappings and 3,688 entity 1-13 snapshots |
+| Historical BTB trajectories and motifs | [03](03_btb_trajectory/), [04](04_btb_motifs/), [15](15_fig5d_trajectory_lineage/) | Growth-curve segments, motif frequencies, 284 row/run mappings, representative structures and four classifier examples; bulk snapshots external |
 | Mixed-node seeds and vacancy repair | [05](05_mixed_zr6_zr12/), [06](06_vacancy_repair/), [11](11_s21_april03/) | Zr6/Zr12 evolution, defect-filling curves and initial/intermediate structures; April 3 and April 10 families kept separate |
 | Nucleation, seeded growth and surface-domain simulations | [07](07_publication_sources/), [09](09_recovered_runtime/), [12](12_runtime_provenance/) | Response grids, endpoint statistics, finite-bath calculations, executed engines, models, seeds and checkpoint lineage |
 | Controlled modulator geometry | [source records](07_publication_sources/SI_tables_sources_20261023/Table_S20/matched_source_files/) | Twelve identities, 27,648 terminal records, 864 assay-condition groups and matched assembly/growth statistics |

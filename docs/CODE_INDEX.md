@@ -19,7 +19,7 @@ labels are explained in the [dated cross-reference guide](MANUSCRIPT_CROSSWALK.m
 | DLS/Gualtieri fit | `02_dls/fit_uio66_dls_gualtieri.py` | Original DLS input and processed-progress refit |
 | Historical BTB growth | `03_btb_trajectory/source/` and `original/` | Executed source and original plot convention retained |
 | BTB motif frequencies | `reproduce.py` and `04_btb_motifs/` | Original frequencies and representatives unchanged; all 284 rows now linked through group 15 |
-| BTB motif trajectory lineage | `python -m tools.audit_fig5d_lineage`, sources in `15_fig5d_trajectory_lineage/` | Offline replay of 3688 entity 1-13 snapshots; full 7978-assignment recovery audit and raw-stream spot checks recorded |
+| BTB motif trajectory lineage | `python -m tools.audit_fig5d_lineage`, sources in `15_fig5d_trajectory_lineage/` | All row/index metadata checked; four small examples replayed; full-cohort replay requires the optional external archive |
 | Historical BTB source search | `python -m tools.audit_fig5_sources`, archives in `14_fig5_source_followup/source/` | November 1 partial evidence; superseded for motif lineage by group 15; retained as a dated source-search record |
 | BTB kinetic boundary reconstruction | `python 16_fig5c_reconstruction/render.py`; `python -m tools.audit_fig5c` | Same 1260-condition probabilities; projected historical-boundary and four-grid convergence checks; not original module recovery |
 | Mixed-seed and vacancy repair | `05_mixed_zr6_zr12/original/`, `06_vacancy_repair/original/` | Historical code; use lightweight renderer rather than replaying the archived mixed-seed script |
@@ -44,8 +44,8 @@ now links all 284 BTB motif rows, preserves the co-located block-based classifie
 extraction notebooks, and resolves the three NAS repeat-index conflicts by hash.
 Its fixed-representative replay is not graph-isomorphism validation or RNG replay.
 
-Large checkpoints/raw trajectories require a selected external archive such as
-Zenodo. A manifest or a NAS path is not an uploaded dataset. Code MIT and project
+Large checkpoints/raw trajectories are intentionally outside the current tree;
+see [data scope](DATA_SCOPE.md). A manifest or a NAS path is not an uploaded dataset. Code MIT and project
 data CC BY 4.0 are confirmed; see `LICENSING.md`. Final release/archive identifiers
-remain to be assigned. Current actions are in `docs/PUBLICATION_RELEASE.md`;
+remain unassigned; a bulk-data deposit is separate from the lightweight code package. Current actions are in `docs/PUBLICATION_RELEASE.md`;
 historical-module provenance is not an unresolved source-data request.

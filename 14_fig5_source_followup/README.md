@@ -1,5 +1,10 @@
 # Fig. 5 Source Follow-up
 
+**November 10 payload update:** the nine superseded large-assembly files are no
+longer packaged. Their original hashes and source records remain below; source
+code is unchanged. See [data scope](../docs/DATA_SCOPE.md). Historical statements
+about packaged structures describe the original recovery, not the current tree.
+
 **Historical search snapshot (2026-11-01).** The Fig. 5D gap described below was
 subsequently resolved by the [Jiageng recovery in group 15](../15_fig5d_trajectory_lineage/README.md)
 on November 2. Keep this earlier evidence map unchanged as history; it is not the
