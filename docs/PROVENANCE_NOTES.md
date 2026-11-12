@@ -14,9 +14,10 @@ success fractions, interpolates in the documented coordinates and extracts the
 P=0.5 isosurface. The default 67 x 75 x 43 mesh has 99.74% projected overlap with
 the historical boundary and 99.88% overlap with the finer 133 x 149 x 85 mesh.
 These are projected-region checks, not an assertion of identical 3D vertices.
-The executed historical analysis module was not recovered. The independent
-implementation is preserved as such; this version distinction is not a missing
-input dataset or a missing reproducible analysis entry.
+The original combined analysis module is also included in group 16. The portable
+`tools/reproduce_btb_sensitivity.py` entry uses its original bootstrap functions;
+all six sensitivity indices and twelve confidence bounds match the saved table.
+The two boundary implementations remain separate source versions.
 
 Group 15 supersedes the partial BTB motif-lineage search in group 14: all 284 rows are
 linked to run folders and 7978 assignments were checked at recovery. After the

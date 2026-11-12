@@ -15,6 +15,7 @@ import pandas as pd
 from tools.verify_recovered_sources import verify as verify_recovered_sources
 from tools.audit_runtime_and_tables import verify as verify_runtime_and_tables
 from tools.reproduce_entropy import verify as verify_entropy
+from tools.reproduce_btb_sensitivity import verify as verify_btb_sensitivity
 
 ROOT = Path(__file__).resolve().parent
 SOURCES = ROOT / '07_publication_sources'
@@ -78,7 +79,7 @@ def variance_checks():
                                    atol=1e-12, rtol=0)
         results.append({'parameter': name, 'first_order': first, 'total_effect': total})
     return {'conditions': len(frame), 'repeats_per_condition': 32, 'results': results,
-            'bootstrap_intervals_recomputed': False}
+            'bootstrap_intervals_recomputed': True, 'bootstrap': verify_btb_sensitivity()}
 
 
 def repair_checks():

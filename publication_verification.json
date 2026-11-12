@@ -42,7 +42,49 @@
           "total_effect": 0.9661670255544478
         }
       ],
-      "bootstrap_intervals_recomputed": false
+      "bootstrap_intervals_recomputed": true,
+      "bootstrap": {
+        "status": "PASS",
+        "conditions": 1260,
+        "replicates_per_condition": 32,
+        "bootstrap_draws": 2000,
+        "random_seed": 20260901,
+        "checked_values": 18,
+        "bootstrap_intervals_recomputed": true,
+        "maximum_absolute_difference": 9.540979117872439e-17,
+        "results": [
+          {
+            "parameter": "s_close",
+            "first_order": 0.026624792801560077,
+            "first_order_ci_low": 0.026053441441445155,
+            "first_order_ci_high": 0.027118349318544177,
+            "total_effect": 0.15003252513853782,
+            "total_effect_ci_low": 0.1489130863108484,
+            "total_effect_ci_high": 0.15254926286739812
+          },
+          {
+            "parameter": "atomic_metal_linker_ratio",
+            "first_order": 0.005969576156529221,
+            "first_order_ci_low": 0.005717936583979695,
+            "first_order_ci_high": 0.006233516401644942,
+            "total_effect": 0.0595972998405494,
+            "total_effect_ci_low": 0.05825240975381442,
+            "total_effect_ci_high": 0.06267628521383437
+          },
+          {
+            "parameter": "rho_off",
+            "first_order": 0.8210854201390468,
+            "first_order_ci_low": 0.8177138422740641,
+            "first_order_ci_high": 0.822741445988359,
+            "total_effect": 0.9661670255544478,
+            "total_effect_ci_low": 0.9654049854721186,
+            "total_effect_ci_high": 0.9668398301795972
+          }
+        ],
+        "source_sha256": "2346424154dbc0e6c4eaf3bfc877ea564c9593bccd6450e9c9c0ad054d9ee0c7",
+        "input_sha256": "866fee5ec5a3b0e4f80bc776b4f1880bdfb0f0694cc0bc0e02ac0ddb95e31763",
+        "reference_sha256": "6ae0aa62a0314aba80fcca088a61f9de45036452cd384ce3381977d2abefe6af"
+      }
     },
     "s25": {
       "A": {
@@ -484,7 +526,7 @@
     "figure5c_independent_reconstruction": {
       "status": "PASS",
       "scope": "Projected historical boundary and new interpolant mesh convergence, not exact historical 3D-mesh recovery",
-      "source_files_verified": 5,
+      "source_files_verified": 6,
       "conditions": 1260,
       "traces_per_condition": 32,
       "probability_classes": [
@@ -707,7 +749,7 @@
         "Only one historical camera projection is available; full original 3D coordinates are unavailable.",
         "Pointwise centroid errors are unweighted across triangles; worst-case local rho error is reported.",
         "P uses 32 launched trajectories per condition; no bootstrap or physical-model uncertainty analysis here.",
-        "The missing historical module remains unrecovered. No MS/SI or author artwork is replaced."
+        "This check evaluates the independent boundary renderer; sensitivity bootstrap has a separate entry point."
       ]
     },
     "runtime_and_table_provenance": {

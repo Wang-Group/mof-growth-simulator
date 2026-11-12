@@ -15,7 +15,7 @@ class Figure5CReconstructionTests(unittest.TestCase):
         cls.frame, cls.axes, cls.cube = cls.mod.load_data()
 
     def test_packaged_sources_and_exact_probabilities(self):
-        self.assertEqual(audit.source_checks(), 5)
+        self.assertEqual(audit.source_checks(), 6)
         self.assertEqual(self.cube.shape, (10, 14, 9))
         np.testing.assert_array_equal(self.frame.P, self.frame.persistent_assembly_probability)
 

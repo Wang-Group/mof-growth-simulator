@@ -4,6 +4,15 @@
   "shared_bundle": "MOF_growth_Data/MOL_figure_source_bundles_20261022_v4",
   "files": [
     {
+      "path": "source/analyze_figure6_current_parameter_phase_v1.py",
+      "source": "author-supplied/analyze_figure6_current_parameter_phase_v1.py",
+      "provided_on": "2026-11-12",
+      "operation": "identity",
+      "bytes": 11441,
+      "sha256": "2346424154dbc0e6c4eaf3bfc877ea564c9593bccd6450e9c9c0ad054d9ee0c7",
+      "source_sha256": "2346424154dbc0e6c4eaf3bfc877ea564c9593bccd6450e9c9c0ad054d9ee0c7"
+    },
+    {
       "path": "source/rebuild_figure5c_standalone.py",
       "source": "MS_Figure_5/independent_Fig5C_replot_20261101/rebuild_figure5c_standalone.py",
       "operation": "identity",
@@ -49,5 +58,5 @@
     "faces": 14488,
     "source": "_shared/source_data_by_sha256/19dbd4875071afc3_figure6_legible_v4_manifest.json"
   },
-  "limits": "Independent reconstruction, not recovery of the missing historical module; no MS/SI modification."
+  "methods": "Original combined analysis and independent boundary implementation are preserved as separate sources."
 }

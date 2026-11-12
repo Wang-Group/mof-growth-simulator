@@ -21,7 +21,7 @@ plotting and fitting scripts. Browse the scientific topics below or the
 | Nucleation and seeded/surface growth | [07](07_publication_sources/), [09](09_recovered_runtime/), [12](12_runtime_provenance/) | Simulation engines, molecular models, parameter grids, seed inputs and endpoint statistics |
 | Controlled modulator geometry | [source data](07_publication_sources/SI_tables_sources_20261023/Table_S20/matched_source_files/) | Twelve identities, 27,648 terminal records and matched assembly/growth comparisons |
 | Ring-closure entropy | [08](08_entropy_inputs/) | Calculation code, molecular geometries and entropy results for six species |
-| BTB kinetic formation boundary | [16](16_fig5c_reconstruction/) | Success-probability data, interpolation, isosurface extraction and plots |
+| BTB kinetic boundary and sensitivity | [16](16_fig5c_reconstruction/) | Success probabilities, boundary plots, variance indices and bootstrap confidence intervals |
 | Modulator identity and ligand exchange | [17](17_submission_sources/) | Identity comparisons, NMR measurements and acquisition mappings |
 | Finite-cluster structure and scattering | [07](07_publication_sources/), [17](17_submission_sources/figure6c/) | PXRD analyses and matched-size BTB comparisons |
 | Source and plot records | [10](10_plot_versions/), [13](13_table_source_audit/), [14](14_fig5_source_followup/) | Plotting versions and source correspondence |

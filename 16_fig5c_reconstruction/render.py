@@ -107,14 +107,14 @@ def main():
         return original_line(*a, **kw)
     module.Line2D = line
     shown = module.plot_panel(frame, triangles, args.output, 'outlined', 1.2)
-    report = {'implementation': 'Independent reconstruction, not the missing historical module',
+    report = {'implementation': 'Independent boundary renderer; original combined analysis is supplied separately',
               'input_sha256': digest(INPUT), 'archived_script_sha256': SOURCE_HASH,
               'entry_sha256': digest(__file__), 'grid': list(args.grid),
               'triangles': len(triangles), 'conditions': len(frame),
               'displayed': shown, 'mesh_errors': mesh_errors(triangles, axes, cube),
               'coordinate_system': 'log10(rho_off), log10(M/BTB), linear s_close',
               'interpolation': 'Trilinear; no smoothing, fitting, or extrapolation',
-              'historical_module_recovered': False, 'MS_SI_modified': False}
+              'historical_module_recovered': True, 'MS_SI_modified': False}
     args.output.with_name(args.output.name+'_method.json').write_text(
         json.dumps(report, indent=2)+'\n', encoding='utf-8')
     print(json.dumps(report, indent=2))

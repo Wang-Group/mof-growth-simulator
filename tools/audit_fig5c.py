@@ -203,7 +203,7 @@ def verify(output=None):
               'limitations': ['Only one historical camera projection is available; full original 3D coordinates are unavailable.',
                   'Pointwise centroid errors are unweighted across triangles; worst-case local rho error is reported.',
                   'P uses 32 launched trajectories per condition; no bootstrap or physical-model uncertainty analysis here.',
-                  'The missing historical module remains unrecovered. No MS/SI or author artwork is replaced.']}
+                  'This check evaluates the independent boundary renderer; sensitivity bootstrap has a separate entry point.']}
     if output is not None:
         output = Path(output)
         output.mkdir(parents=True, exist_ok=True)

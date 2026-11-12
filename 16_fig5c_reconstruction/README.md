@@ -1,10 +1,9 @@
-# Figure 5C: Validated Independent Reconstruction
+# BTB Kinetic Boundary and Sensitivity
 
-**Status: reproducible numerical/plotting route validated on 2026-11-02.**
-This is not the recovered historical `analyze_figure6_current_parameter_phase_v1.py`.
-No MS/SI or author artwork was changed. Historical files remain in their original
-groups. The old-module search is a provenance limitation, not missing numerical
-input or a blocker for this explicitly identified reconstruction.
+Condition-level probabilities, variance-based sensitivity analysis with bootstrap
+intervals, and the interpolated P=0.5 kinetic boundary. The original combined
+analysis module and the independent boundary renderer are both included under
+`source/`; `render.py` continues to use the independent renderer.
 
 ## Run Offline
 
@@ -13,12 +12,21 @@ From the repository root, with the dependencies in `requirements.txt`:
 ```bash
 python 16_fig5c_reconstruction/render.py
 python -m tools.audit_fig5c
+python tools/reproduce_btb_sensitivity.py
 ```
 
 The first command writes Arial PNG/SVG and a method record to
 `reproduced_local/Fig5C/`. The second writes a comparison figure, convergence
 table, exact boundary roots and JSON report to `reproduced_local/Fig5C_validation/`.
-The checked-in `validation/` folder is the dated validation snapshot. No network,
+The third command recomputes the sensitivity indices and confidence intervals,
+writing CSV and JSON to `reproduced_local/btb_sensitivity/`. It uses the original
+`build_probability_cube`, `variance_indices` and `bootstrap_indices` functions:
+2,000 binomial resamples with RNG seed 20260901, followed by the 2.5th and 97.5th
+percentiles. All six central indices and twelve interval bounds reproduce the
+saved sensitivity table within 1e-12.
+
+The checked-in `validation/` folder is the November 2 boundary-validation snapshot,
+which predates inclusion of the original analysis module. No network,
 simulation, external archive, or private workstation path is needed.
 
 ## Data And Versions
@@ -92,6 +100,7 @@ an exactly flat P=0.5 interval), not an assumption of a unique root everywhere.
 Refinement reduces both typical and maximum centroid errors. These errors do
 not include binomial uncertainty from 32 traces or physical-model uncertainty.
 
-The historical module remains unlocated. The independent implementation,
-validated scope, remaining provenance limit and manuscript-adoption status must
-not be conflated. No bootstrap or new KMC campaign was run.
+The original `source/analyze_figure6_current_parameter_phase_v1.py` is preserved
+unchanged from the supplied file. Its sensitivity calculation operates on the
+included 1,260-condition table; no KMC rerun is required. The surface convergence
+results above describe the independent renderer, not the bootstrap intervals.

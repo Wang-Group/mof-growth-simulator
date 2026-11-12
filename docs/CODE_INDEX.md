@@ -31,6 +31,7 @@ continuation runs also take the checkpoint specified by that runner.
 | BTB motif classification | `15_fig5d_trajectory_lineage/data/metadata.zip` | Classifier/extractor notebook sources and per-run code |
 | BTB motif record checks | `python -m tools.audit_fig5d_lineage` | Row/index checks and classification of four packaged examples; use `--full-source-archive PATH` for the full cohort |
 | BTB kinetic boundary | `python 16_fig5c_reconstruction/render.py` | Interpolated P=0.5 isosurface and boundary plots |
+| BTB sensitivity | `python tools/reproduce_btb_sensitivity.py` | First-order/total-effect indices and 2,000-resample bootstrap confidence intervals |
 | Ring-closure entropy | `python tools/reproduce_entropy.py` | Entropy calculations for six species |
 | Controlled modulator geometry | `python tools/reproduce_s20.py` | Statistics for 864 groups and nine matched comparisons; [method](S20_REPRODUCTION.md) |
 | April 3 mixed-node growth | `python 11_s21_april03/plot_saved_trace.py --help` | Plotting of the saved April 3 dataset |
