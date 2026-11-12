@@ -16,6 +16,7 @@ plotting and fitting scripts. Browse the scientific topics below or the
 | UiO-66 growth trajectories | [01](01_uio66_long_growth/) | Analysis of 24 repeated trajectories, first-passage times, residence times and last-saved entity-13 structures |
 | Experimental DLS | [02](02_dls/) | Size measurements, apparent-progress processing, Gualtieri fitting and plots |
 | BTB growth and motifs | [03](03_btb_trajectory/), [04](04_btb_motifs/), [15](15_fig5d_trajectory_lineage/) | Growth curves, motif frequencies, classification code, reference structures and row-to-run mappings |
+| HKUST-1 and PCN-240 growth | [18](18_hkust1_pcn240/) | Framework-specific simulation engines, growth runners and molecular model inputs |
 | Mixed-node growth and vacancy repair | [05](05_mixed_zr6_zr12/), [06](06_vacancy_repair/), [11](11_s21_april03/) | Zr6/Zr12 evolution, defect-filling curves and representative structures |
 | Nucleation and seeded/surface growth | [07](07_publication_sources/), [09](09_recovered_runtime/), [12](12_runtime_provenance/) | Simulation engines, molecular models, parameter grids, seed inputs and endpoint statistics |
 | Controlled modulator geometry | [source data](07_publication_sources/SI_tables_sources_20261023/Table_S20/matched_source_files/) | Twelve identities, 27,648 terminal records and matched assembly/growth comparisons |

@@ -9,6 +9,7 @@ original names; this index organizes them by scientific topic.
 |---|---|---|
 | UiO-66 repeated growth | `01_uio66_long_growth/source/` | Simulation source and run conditions |
 | BTB growth | `03_btb_trajectory/source/` | Executed growth runner and assembly engine |
+| HKUST-1 and PCN-240 growth | [18_hkust1_pcn240](../18_hkust1_pcn240/) | Original runners, framework-specific engines, molecular models and setup instructions |
 | Mixed-node growth and vacancy repair | `05_mixed_zr6_zr12/original/`, `06_vacancy_repair/original/`, `11_s21_april03/source_archive/` | Growth/repair scripts and initialization variants |
 | Nucleation, seeded growth, surface growth and finite baths | `07_publication_sources/SI_tables_sources_20261023/Table_S28/code/` | Campaign runners, selectors and analysis scripts |
 | Molecular engines and models | `09_recovered_runtime/` | Executed engines and molecular models |

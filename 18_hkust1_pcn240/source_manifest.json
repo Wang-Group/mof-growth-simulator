@@ -1,0 +1,51 @@
+{
+  "source_repository": "https://github.com/Wang-Group/mof-growth-simulator",
+  "source_commit": "946020282ce93132029f455d158785838cd82780",
+  "files": [
+    {
+      "path": "HKUST-1/HKUST_1_Assembly_Large_Correction_conc.py",
+      "bytes": 69066,
+      "sha256": "eb9b429fee144b55b46e4758069318bfd839a9db8548121e00a3f65757a77174"
+    },
+    {
+      "path": "HKUST-1/HKUST_1_growth_main_conc.py",
+      "bytes": 11576,
+      "sha256": "7a9daa511ffb55569dcdd873f053e09f8e963106d7448f7989f18f70afc2b93c"
+    },
+    {
+      "path": "KMC_example/input_monomers/BDC_OH.mol",
+      "bytes": 1602,
+      "sha256": "252237ce3dd17a36e49ccdc86a14d28c8cbb38501d33f5518ed7697911177fc5"
+    },
+    {
+      "path": "KMC_example/input_monomers/BTC.mol",
+      "bytes": 1599,
+      "sha256": "b016fc5cebb43665369ab62dfc269637ffc87f6f78cf588c217de378f8a24f2c"
+    },
+    {
+      "path": "KMC_example/input_monomers/Cu2.mol",
+      "bytes": 1490,
+      "sha256": "9bd1bbb28a25296afe1f1b9b349cbf792955dbaa6eca170333f6c64cd8bf0f4e"
+    },
+    {
+      "path": "KMC_example/input_monomers/Fe_Co3.mol",
+      "bytes": 2818,
+      "sha256": "0b6cbcd72fc9f007952daa391072de7a115ea67591fe826b03f71aaebdc8aea7"
+    },
+    {
+      "path": "KMC_example/input_monomers/Zr12_AA.mol",
+      "bytes": 10142,
+      "sha256": "5005da0d4ebf0502fedd0c422bcf80791130f228940fd7b648f1402d1b294fb4"
+    },
+    {
+      "path": "PCN-240/PCN_240_Assembly_Large_Correction_conc.py",
+      "bytes": 69072,
+      "sha256": "f286e5b416a146e4758d08ef28517d976f915d4ebd7b7e90b3a3ceae2dd69a2b"
+    },
+    {
+      "path": "PCN-240/PCN_240_growth_main_conc.py",
+      "bytes": 11568,
+      "sha256": "16829e4df3db1214145f2de4a015d60b9f1e6c3930b769170f79f0851c1f883c"
+    }
+  ]
+}
