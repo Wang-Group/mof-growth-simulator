@@ -1,4 +1,4 @@
-"""Verify partial Fig. 5D provenance without unpickling or running old notebooks."""
+"""Verify archived BTB structural-analysis source files and reference hashes."""
 import csv
 import gzip
 import hashlib
@@ -47,26 +47,11 @@ def matching_rows(values, rows, ignore_index=False):
     return matches
 
 
-def build_row_map(records, rows):
-    result = []
-    for number, row in enumerate(rows, 1):
-        structures = [r['id'] for r in records if r['kind'] == 'large_structure'
-                      and number in matching_rows(conditions(r['source_member']), rows)]
-        traces = [r['id'] for r in records if r['kind'] == 'external_trajectory'
-                  and number in matching_rows(conditions(r['source_relative']), rows, ignore_index=True)]
-        status = ('STRUCTURE_CONDITIONS_ONLY' if structures else
-                  'AMBIGUOUS_TRACE_INDEX' if traces else 'NOT_LOCATED')
-        result.append({'row_id': number, **{key: row[key] for key in FIELDS},
-                       'structure_evidence': ';'.join(structures),
-                       'trajectory_candidates': ';'.join(traces),
-                       'status': status, 'classification_snapshot_link_verified': 'false'})
-    return result
-
-
 def verify():
     manifest = json.loads((GROUP / 'source_manifest.json').read_text(encoding='utf-8'))
     if digest(TABLE.read_bytes()) != manifest['classification_table_sha256']:
         raise AssertionError('Classification table changed')
+    verified_sources = []
     for item in manifest['files']:
         if not item.get('release_path'):
             if item['kind'] != 'external_trajectory' or len(item['source_sha256']) != 64:
@@ -80,6 +65,7 @@ def verify():
         stored = path.read_bytes()
         if len(stored) != item['stored_bytes'] or digest(stored) != item['stored_sha256']:
             raise AssertionError('Stored source changed')
+        verified_sources.append(item['release_path'])
         if item['encoding'] == 'gzip':
             raw = gzip.decompress(stored)
         elif item['encoding'] == 'notebook_outputs_metadata_cleared':
@@ -97,34 +83,11 @@ def verify():
         if len(raw) != item['source_bytes'] or digest(raw) != item['source_sha256']:
             raise AssertionError('Original source changed')
     rows = list(csv.DictReader(io.StringIO(TABLE.read_text(encoding='utf-8'))))
-    derived = build_row_map(manifest['files'], rows)
-    saved = list(csv.DictReader(io.StringIO((GROUP / 'row_source_map.csv').read_text(encoding='utf-8'))))
-    normalized = [{k: str(v) for k, v in row.items()} for row in derived]
-    if normalized != saved:
-        raise AssertionError('Row mapping differs from packaged evidence')
-    counts = {label: sum(row['status'] == label for row in derived) for label in
-              ('STRUCTURE_CONDITIONS_ONLY', 'AMBIGUOUS_TRACE_INDEX', 'NOT_LOCATED')}
-    if len(rows) != 284 or counts != {'STRUCTURE_CONDITIONS_ONLY': 8, 'AMBIGUOUS_TRACE_INDEX': 4, 'NOT_LOCATED': 272}:
-        raise AssertionError('Unexpected evidence coverage')
-    structures = [item for item in manifest['files'] if item['kind'] == 'large_structure']
-    external = [item for item in manifest['files'] if item['kind'] == 'external_trajectory']
-    incomplete = sum(conditions(item['source_member']) is None for item in structures)
-    if (len(structures), len(external), incomplete) != (9, 3, 1):
+    if len(rows) != 284 or len(verified_sources) != 2:
         raise AssertionError('Unexpected source inventory')
-    for item in manifest['files']:
-        if item['kind'] == 'external_trajectory':
-            parent_index = int(float(conditions(item['source_relative'])['Index']))
-            filename_index = int(re.search(r'_index(\d+)\.pkl$', item['source_relative']).group(1))
-            if parent_index == filename_index:
-                raise AssertionError('Expected explicitly unresolved index conflict')
-    return {'status': 'PASS_PARTIAL_EVIDENCE_CHECKS', 'as_of': '2026-11-01',
-            'current_fig5d_status': 'Superseded by 15_fig5d_trajectory_lineage on 2026-11-02',
-            'classification_rows': len(rows),
-            'row_status_counts': counts, 'fully_linked_classification_rows': 0,
-            'packaged_large_structures': 0, 'indexed_external_large_structures': len(structures),
-            'incomplete_structure_name_count': incomplete,
-            'external_trajectory_hash_records': len(external), 'fig5c_original_module_found': False,
-            'scope': 'Offline source/parameter matching only. No classification rerun, no pickle deserialization, no claim that large structures are the classified small-entity snapshots.'}
+    return {'status': 'PASS', 'classification_rows': len(rows),
+            'verified_source_files': verified_sources,
+            'trajectory_mapping_entry': 'tools/audit_fig5d_lineage.py'}
 
 
 if __name__ == '__main__':

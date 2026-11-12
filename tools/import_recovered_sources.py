@@ -111,7 +111,7 @@ def main():
             raise ValueError(f'Cannot resolve ledger version: {row["source_relative"]}')
         row['release_path'] = matches[0]['release_path']
         row['decision'] = 'VERSION_VARIANT_ARCHIVED'
-        row['scope'] = 'Shared revision archived separately; expected_sha256 identifies the historical version retained in 10_plot_versions/historical. See 10_plot_versions/README.md; final artwork adoption pending.'
+        row['scope'] = 'Shared revision archived separately; expected_sha256 identifies the historical version retained in 10_plot_versions/historical. See 10_plot_versions/README.md.'
         changed += 1
     if changed != 3:
         raise ValueError('Expected exactly three version-discrepancy ledger rows')

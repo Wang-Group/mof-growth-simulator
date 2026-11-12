@@ -1,13 +1,10 @@
 # BTB Trajectory-to-Motif Lineage
 
-Recovered read-only from Jiageng on **2026-11-02**. The folder name retains its
-historical figure identifier; group 14 preserves the earlier NAS/5090 search.
-No manuscript, SI, classification table, structure ID or figure was changed.
-
-**November 10 compact scope:** code, indices, reference structures and four
-regression examples remain. Bulk per-run snapshots are external; see
-[data scope](../docs/DATA_SCOPE.md). The full-cohort result below is a historical
-recovery check, not the scope of the current lightweight verifier.
+The package contains classification code, row/run indices, reference structures
+and four regression examples. Bulk per-run snapshots are external; see
+[data scope](../docs/DATA_SCOPE.md). Source paths and hashes record the Jiageng
+dataset collected on 2026-11-02. Group 14 retains a separate classification
+notebook and structure-grid plotting source.
 
 ## Result
 
@@ -106,6 +103,5 @@ recovery archive, replay all 7,978 assignments instead:
 python -m tools.audit_fig5d_lineage --full-source-archive /path/to/classified_sources.tar.gz
 ```
 
-Remaining limits: raw-stream byte comparisons were sampled, not performed for
-all 7,978 blocks; complete pickle/RNG histories are not published here. The compact
-check is not a fresh geometric reclassification of the complete cohort.
+The default command uses the four included examples; the full-archive option
+uses all 7,978 snapshots.

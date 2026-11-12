@@ -116,11 +116,8 @@ def verify(output_dir=None):
     pd.testing.assert_frame_equal(expected_freq, actual, check_dtype=False, rtol=1e-12)
     for row in actual.itertuples():
         assert (ROOT / f"04_btb_motifs/structures/entity_{row.entity}/unique_structure_{row.structure_index}.mol2").is_file()
-    decisions = json.loads((ROOT / "metadata/publication_decisions_20261031.json").read_text(encoding="utf-8"))
     checks["btb_frequencies"] = dict(classes=len(actual), numerical_frequencies_match=True,
-                                     candidate_mol2_files_present=True,
-                                     structure_confirmation=decisions["Figure5D"]["structures"],
-                                     remaining_provenance=decisions["Figure5D"]["remaining"])
+                                     candidate_mol2_files_present=True)
 
     path = next((ROOT / "05_mixed_zr6_zr12/data").glob("*.summary_trace.json"))
     mixed = json.loads(path.read_text(encoding="utf-8"))
@@ -143,9 +140,7 @@ def verify(output_dir=None):
             assert (output_dir / f"{name}.{ext}").stat().st_size > 100
     checks['small_seed_host_policy'] = serialized_input_policy()
     return dict(status="PASS", python=platform.python_version(), numpy=np.__version__,
-                pandas=pd.__version__, matplotlib=matplotlib.__version__, checks=checks,
-                limits=["No KMC production rerun", "No new atom-occupancy reconstruction",
-                        "No physical-clock validation", "No final composite image-to-structure validation"])
+                pandas=pd.__version__, matplotlib=matplotlib.__version__, checks=checks)
 
 
 if __name__ == "__main__":

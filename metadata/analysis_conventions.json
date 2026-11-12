@@ -1,0 +1,21 @@
+{
+  "uio66_ensemble": {
+    "time_coordinate": "raw algorithm time u",
+    "stored_time_per_u": 0.175,
+    "entry_point": "10_plot_versions/render_s7.py"
+  },
+  "literature": {
+    "metal_systems": {"doi_records": 69, "zr_hf_doi_records": 53},
+    "modulator_effects": {
+      "publications": 30,
+      "smaller": 23,
+      "outcome_counts": [23, 2, 2, 1, 2]
+    }
+  },
+  "turbidity": {"observations": 12, "time_unit": "min"},
+  "licenses": {
+    "code": "MIT",
+    "project_data": "CC-BY-4.0",
+    "cc_by_legalcode_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+  }
+}

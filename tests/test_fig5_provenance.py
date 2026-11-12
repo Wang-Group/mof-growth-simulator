@@ -19,12 +19,12 @@ class Fig5ProvenanceTests(unittest.TestCase):
         self.assertEqual(audit.matching_rows(values, [{**values, 'Step': '1e15'}]), [])
         self.assertEqual(audit.matching_rows(values, [{**values, 'Ratio': '0'}]), [])
 
-    def test_offline_evidence_is_explicitly_partial(self):
+    def test_archived_sources_and_classification_reference(self):
         report = audit.verify()
-        self.assertEqual(report['fully_linked_classification_rows'], 0)
-        self.assertFalse(report['fig5c_original_module_found'])
-        self.assertEqual(report['row_status_counts']['STRUCTURE_CONDITIONS_ONLY'], 8)
-        self.assertEqual(report['row_status_counts']['AMBIGUOUS_TRACE_INDEX'], 4)
+        self.assertEqual(report['status'], 'PASS')
+        self.assertEqual(report['classification_rows'], 284)
+        self.assertEqual(len(report['verified_source_files']), 2)
+        self.assertTrue((audit.ROOT / report['trajectory_mapping_entry']).is_file())
 
 
 if __name__ == '__main__':

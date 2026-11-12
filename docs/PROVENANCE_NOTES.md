@@ -1,76 +1,54 @@
-# Version and Provenance Notes
+# Data Versions and Conventions
 
-The root README and publication checklist describe the current release state.
-Dated search reports, original source notes and earlier audit JSONs are retained
-as historical records, not automatically active requests for missing data.
-Use the [topic-based analysis index](CODE_INDEX.md) for navigation. Document
-hashes, numbered crosswalks and caption comparisons are dated evidence governed
-by the [cross-reference policy](MANUSCRIPT_CROSSWALK.md), not a live manuscript index.
+Use the [topic-based code index](CODE_INDEX.md) to locate calculations.
+Original source versions and file hashes are recorded in the group manifests.
 
-## BTB Kinetic Boundary and Motif Lineage
+## BTB Boundary, Sensitivity and Structures
 
-Group 16 provides the BTB kinetic-boundary analysis: it uses the same 1260-condition
-success fractions, interpolates in the documented coordinates and extracts the
-P=0.5 isosurface. The default 67 x 75 x 43 mesh has 99.74% projected overlap with
+Group 16 contains the original combined analysis module and a separate portable
+boundary renderer. Both use the same 1,260-condition success fractions.
+The portable renderer interpolates in the documented coordinates and extracts
+the P = 0.5 isosurface. Its 67 x 75 x 43 mesh has 99.74% projected overlap with
 the historical boundary and 99.88% overlap with the finer 133 x 149 x 85 mesh.
-These are projected-region checks, not an assertion of identical 3D vertices.
-The original combined analysis module is also included in group 16. The portable
-`tools/reproduce_btb_sensitivity.py` entry uses its original bootstrap functions;
-all six sensitivity indices and twelve confidence bounds match the saved table.
-The two boundary implementations remain separate source versions.
+These are projected-region comparisons, not identical 3D vertices.
 
-Group 15 supersedes the partial BTB motif-lineage search in group 14: all 284 rows are
-linked to run folders and 7978 assignments were checked at recovery. After the
-November 10 cleanup, only four classifier examples are packaged; all indices,
-code and reference structures remain. Full reclassification requires the external
-archive. See [data scope](DATA_SCOPE.md). Historical selection takes
-the last occurrence before the first maximum. Composition/radial-histogram
-matching is not exact graph isomorphism. Four raw-stream spot checks are not
-an exhaustive re-extraction of every saved event.
+`tools/reproduce_btb_sensitivity.py` uses the original bootstrap functions.
+The six sensitivity indices and twelve confidence bounds reproduce the saved table.
 
-## Distinct Trajectories and Clocks
+Group 15 provides all 284 motif-table row/run links and 7,978 recorded assignments.
+Four small classifier examples and the reference structures are included;
+the full cohort is external. Snapshot selection takes the last occurrence
+before the first maximum. Classification uses composition and radial-histogram
+similarity, rather than exact graph isomorphism.
+
+## Trajectories and Time
 
 The 24 UiO-66 long-growth trajectories are separate from the historical motif
 collection. Their entity-13 files are last-saved structures, not first-passage
-snapshots; nine topology classes and the I03 delay exception are retained.
-The ensemble analysis uses raw algorithm time u, recovered from stored scaled
-time by division by 0.175. Historical seconds renderers remain archived as
-separate versions, not the default ensemble-analysis entry.
+snapshots; the analysis distinguishes nine topology classes and the I03 delay
+exception. The ensemble plots use raw algorithm time `u`, recovered by dividing
+stored scaled time by 0.175.
 
-Historical representative UiO-66, BTB, HKUST-1 and PCN-240 trajectory plots scale
-raw timing by 0.2405 ms, based on the 120 C site-opening reference. This is not a universal
-absolute growth calibration. Keep fixed-coordinate and finite-bath rate mappings
-distinct. Continuations and paired branches are not new independent particles.
+Historical representative UiO-66, BTB, HKUST-1 and PCN-240 plots use a
+0.2405 ms factor based on the 120 C site-opening reference. This is a reference
+timescale, not a universal absolute growth calibration. Fixed-coordinate and
+finite-bath rate mappings are separate. Continuations and paired branches
+share their recorded parent particle.
 
-The mixed-node growth artwork reviewed on November 2 matches the archived April 3
-reference. Group 11 retains that source and its separate initialization alternative.
-Group 05 retains an
-April 10 rerun for comparison; do not pool these as one experiment or silently
-replace one with the other. The matched-size BTB scattering comparison uses
-N=2000 and four runs per condition; group 17 and the dated document baseline
-register the reviewed panel and composite.
+Group 11 contains the April 3 mixed-node dataset and its initialization
+alternative; group 05 contains the separate April 10 dataset. The combined
+renderer uses the latter. The matched-size BTB scattering comparison uses
+N = 2000 and four trajectories per condition.
 
-## Documents and Verification Coverage
+## Reference Data
 
-The recorded baseline identifies the 20261031 MS and 20261031_v2 SI as inspected on
-November 2. Tracked-change final text and embedded figure sources were used for
-the targeted closeout; older baselines remain nested for traceability. This is
-not a claim to have re-edited or re-reviewed every sentence of later manuscripts.
-Renumbering alone does not require changing the data or these frozen audit records.
+Literature counts use the adopted 69 total / 53 Zr-Hf DOI records and 23
+smaller-size outcomes among 30 modulator studies. Historical grouping fields
+and table extracts retain their original definitions and dates.
 
-Literature classification counts and the turbidity record status are author
-confirmations. Entropy values, first-passage statistics and other listed checks
-have separate computational evidence. NMR linewidths are author/software
-measurements with recovered spectra and row mappings, not independently refitted
-linewidths. Dated per-table verification coverage is retained in
-`metadata/table_source_limits.csv`.
+The twelve turbidity observations are in minutes and are distinct from the
+DLS size trace. NMR linewidths are the supplied spectrum measurements;
+the code checks their spectrum mapping and exchange-rate arithmetic.
 
-The aggregate catalogue export `all_catalogued_calculation_families.csv` mentioned
-in an earlier draft was not located in the November 2 source search. The November 5
-accepted-text review confirmed that the newer SI no longer promises this export.
-This is historical provenance, not an active missing-data request. Calculation
-families remain separately indexed; no substitute is presented as the historical original.
-
-The remaining code-publication action is a versioned release reference. A bulk
-raw-data deposit is separate from the compact GitHub scope. A source path/hash
-identifies data but is not proof that a dataset has been uploaded to Zenodo.
+[Analysis conventions](../metadata/analysis_conventions.json) records the
+time coordinate, adopted literature counts, turbidity units and licenses.

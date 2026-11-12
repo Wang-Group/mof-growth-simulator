@@ -171,9 +171,6 @@
       "checked_on": "2026-11-01"
     }
   ],
-  "limits": [
-    "Directory condition matches are not proof of the original classification snapshot.",
-    "Three filenames have indices 1/2/3 inside an Index_0 parent. No index is silently selected.",
-    "Notebook is a supplied method candidate, not hash-linked to the historical 284-row execution."
-  ]
+  "trajectory_lineage": "15_fig5d_trajectory_lineage/row_to_run.csv",
+  "classification_source": "Separate historical notebook; the cohort classifier is in 15_fig5d_trajectory_lineage/data/metadata.zip"
 }

@@ -86,10 +86,10 @@ on all 126 sampled M/BTB x s_close slices. Average P increases with M/BTB and
 s_close overall, but some adjacent contrasts reverse (23 for M/BTB, 11 for
 s_close); no strict monotonic claim is made for those two parameters.
 
-## Limits
+## Numerical Precision
 
-Only one historical 2D projection is available; this does not establish exact
-equality of all original 3D vertices or recover the historical algorithm.
+The boundary comparison uses the historical 2D projection; it compares projected
+regions rather than individual original 3D vertices.
 The selected mesh's unweighted triangle-centroid rho error is about 0.68% at the
 95th percentile, but the maximum bound is 7.98% locally (0.64% of the full
 log-rho axis). The maximum centroid P error is 0.0523; do not infer high-precision

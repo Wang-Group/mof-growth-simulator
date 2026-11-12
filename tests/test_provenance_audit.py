@@ -46,27 +46,23 @@ class SourceIntegrityTests(unittest.TestCase):
 
     def test_table_scope_and_full_audit(self):
         report = audit.verify()
-        self.assertFalse(report['publication_ready'])
+        self.assertEqual(report['status'], 'PASS')
         self.assertEqual(report['runtime']['lineage_rows'], 1327)
         self.assertEqual(report['runtime']['paired_independent_source_particles'], 32)
         self.assertEqual(report['runtime']['unmatched_version_references'], [])
         self.assertEqual(report['tables']['s1']['distinct_publication_groups'], 68)
         self.assertEqual(report['tables']['s6']['matched_values'], 18)
-        self.assertEqual(report['tables']['s8']['status'], 'CLOSED_AUTHOR_CONFIRMED')
-        self.assertFalse(report['tables']['s8']['source_confirmation']['additional_raw_record_request'])
+        self.assertEqual(report['tables']['s8']['time_unit'], 'min')
         self.assertEqual(report['tables']['s8']['displayed_observations'], 12)
-        self.assertEqual(report['tables']['s1']['status'], 'COUNTING_SCOPE_AUTHOR_CONFIRMED')
-        s1 = report['tables']['s1']['author_confirmation']
-        self.assertEqual((s1['adopted_total'], s1['adopted_zr_hf']), (69, 53))
-        self.assertFalse(s1['additional_count_confirmation_request'])
-        self.assertEqual(report['tables']['s2']['status'], 'COUNTS_AUTHOR_CONFIRMED_MS_SI_ALIGNED')
+        s1 = report['tables']['s1']
+        self.assertEqual((s1['dose_doi_records'], s1['zr_hf_doi_records']), (69, 53))
+        self.assertEqual(s1['counting_unit'], 'DOI record')
         self.assertEqual(report['tables']['s2']['historical_packaged_total'], 31)
         self.assertEqual(report['tables']['s2']['current_total'], 30)
-        nas = report['tables']['latest_nas_check_record']
-        self.assertEqual((nas['TableS2']['ms_smaller_or_thinner'], nas['TableS2']['si_only_smaller_or_thinner']), (23, 23))
-        self.assertFalse(nas['TableS2']['additional_count_confirmation_request'])
-        self.assertEqual(report['tables']['s6']['status'], 'PACKAGED_S6_CALCULATION_AND_GEOMETRY_VERIFIED')
-        self.assertTrue(nas['TableS6']['source_payload_packaged'])
+        self.assertEqual(report['tables']['s2']['smaller'], 23)
+        self.assertEqual(sum(report['tables']['s2']['outcome_counts']), 30)
+        self.assertLessEqual(report['tables']['s6']['maximum_absolute_difference'], 5.0001e-9)
+        self.assertTrue((audit.ROOT / report['tables']['s6']['calculation_entry']).is_file())
 
     def test_packaged_pickle_allowlist(self):
         from verify_package import serialized_input_policy

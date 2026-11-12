@@ -47,3 +47,5 @@ id_ed25519*
 # Optional local rerenders and reports; supplied reference outputs stay tracked.
 /reproduced_local/
 /verification_local.json
+/publication_verification.json
+/verification_results.json

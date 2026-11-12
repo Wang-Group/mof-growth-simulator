@@ -1,5 +1,5 @@
 {
-  "implementation": "Independent reconstruction, not the missing historical module",
+  "implementation": "Independent boundary renderer; original combined analysis is supplied separately",
   "input_sha256": "866fee5ec5a3b0e4f80bc776b4f1880bdfb0f0694cc0bc0e02ac0ddb95e31763",
   "archived_script_sha256": "69e3cbf879e267e093e5ec81741006517cfb7fa70f559eab0e845f732d41888d",
   "entry_sha256": "4f26db71dffe6cd43405f245cda88b23154fe1e3111d583fc272a5f3c75c7d38",

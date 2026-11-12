@@ -47,6 +47,7 @@ python 10_plot_versions/render_s7.py
 python tools/reproduce_entropy.py
 python tools/reproduce_s20.py
 python 16_fig5c_reconstruction/render.py
+python tools/reproduce_btb_sensitivity.py
 python 11_s21_april03/plot_saved_trace.py --output-dir reproduced_local/mixed_seed_april03
 ```
 
@@ -65,6 +66,9 @@ python -m unittest discover -s tests -v
 ```
 
 Source hashes are recorded in [CHECKSUMS.sha256](CHECKSUMS.sha256).
+Included inputs and external simulation archives are described in
+[data scope](docs/DATA_SCOPE.md); [data conventions](docs/PROVENANCE_NOTES.md)
+define time coordinates and structure-selection methods.
 
 ## License and Citation
 
